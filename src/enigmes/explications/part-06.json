@@ -1,0 +1,554 @@
+{
+  "461": [
+    "Sophie colorie des kangourous en respectant toujours le même cycle : bleu, vert, rouge, noir. Quelle est la couleur du dix-septième ? C’est le bleu, proposition A.",
+    "Un cycle de quatre couleurs se répète indéfiniment. Pour savoir où l’on se trouve, vous divisez le rang du kangourou par 4 et vous lisez le reste. Un reste 1 correspond au bleu, un reste 2 au vert, un reste 3 au rouge, un reste 0 (multiple exact de 4) au noir.",
+    "Ici 17 = 4 × 4 + 1 : le reste vaut 1. Le dix-septième kangourou reçoit donc la même couleur que le premier, le cinquième, le neuvième et le treizième. Vous pouvez aussi aligner quatre groupes complets puis poser le premier crayon du groupe suivant : ce crayon est encore le bleu.",
+    "Le piège est de commencer le cycle au rang 0, ou de croire que l’ordre des crayons peut changer. À retenir : dans une suite périodique, le reste de la division par la longueur du motif donne immédiatement la case du cycle."
+  ],
+  "462": [
+    "Le père, la mère et le fils doivent s’asseoir l’un derrière l’autre dans un canoë à trois places. Combien d’arrangements distincts existent-ils ? Il y en a 6, proposition C.",
+    "Les trois places sont distinguées : avant, milieu et arrière. Il s’agit donc de ranger trois personnes différentes dans trois sièges distincts. Le premier siège peut être occupé de 3 façons, le deuxième de 2 façons, le dernier n’a plus qu’un choix : 3 × 2 × 1 = 6.",
+    "Vous pouvez aussi écrire les six files : père-mère-fils, père-fils-mère, mère-père-fils, mère-fils-père, fils-père-mère et fils-mère-père. Aucune autre permutation n’existe, et aucune n’est identique à une autre une fois les places nommées.",
+    "Le piège serait de compter 3 × 3 = 9 en autorisant deux fois la même personne, ou de ne retenir que les files « père devant ». À retenir : le nombre de façons d’aligner n personnes distinctes est la factorielle n !."
+  ],
+  "463": [
+    "Le kangourou veut aller du départ à l’arrivée en sautant le moins d’obstacles possible. Le total minimal vaut 10, proposition C.",
+    "Chaque segment porte un nombre d’obstacles. Un plus court chemin, ici, n’est pas le plus court en distance, mais celui dont la somme des nombres est la plus petite. Certains raccords entre intersections coûtent plus cher que le passage direct : vous pouvez les écarter dès qu’un autre accès aux mêmes carrefours est meilleur.",
+    "Quatre familles de trajets restent alors à comparer. Le couloir du haut totalise 3 + 6 + 2 = 11. Le zigzag long dépasse 18. Le couloir du bas totalise 5 + 2 + 5 = 12. La diagonale, elle, fait 5 + 3 + 2 = 10. C’est la plus économe, et aucune combinaison oubliée ne descend en dessous.",
+    "Le piège est d’additionner tous les nombres du dessin, ou de choisir le chemin qui « a l’air droit ». À retenir : sur un graphe valué, on compare des sommes de branches, pas des impressions visuelles."
+  ],
+  "464": [
+    "Huit kangourous occupent une grille, et l’on veut exactement deux kangourous par ligne et par colonne. Quel est le plus petit nombre de sauts ? Un seul suffit, proposition B.",
+    "Deux par ligne et deux par colonne, cela signifie que la grille, lue comme un tableau de 0 et de 1, doit avoir toutes ses sommes de lignes et de colonnes égales à 2. Certaines lignes ou colonnes sont déjà trop pleines, d’autres trop vides : il faut déplacer un occupant d’une case surchargée vers une case déficitaire.",
+    "Le corrigé officiel indique le mouvement utile : le kangourou de la deuxième ligne, troisième colonne, saute vers la quatrième ligne, deuxième colonne. Après cet unique saut, chaque ligne et chaque colonne compte exactement deux animaux. Zéro saut est impossible, car la configuration de départ n’est pas encore équilibrée.",
+    "Le piège est de croire qu’il faut d’abord vider toute une ligne, ou de déplacer plusieurs kangourous « pour faire plus propre ». À retenir : un seul transfert bien choisi peut corriger à la fois une ligne et une colonne en trop, et une ligne et une colonne en moins."
+  ],
+  "465": [
+    "Parmi les cartes 1 à 7, le kangourou en tire trois, le singe deux, et il en reste deux. Le kangourou, sûr de lui, affirme que la somme du singe est paire. Quelle est la somme de ses propres cartes ? Elle vaut 12, proposition B.",
+    "La somme de deux entiers est paire lorsque les deux sont pairs ou les deux sont impairs. Pour être certain de ce fait sans voir les cartes du singe, le kangourou doit savoir que les quatre cartes restantes — celles du singe plus celles de la boîte — sont toutes de la même parité. Sinon, le singe pourrait encore tirer un pair et un impair, et la somme serait impaire.",
+    "Entre 1 et 7, il n’y a que trois pairs (2, 4, 6) et quatre impairs (1, 3, 5, 7). Les quatre cartes restantes ne peuvent donc pas être toutes paires. La seule possibilité est qu’elles soient toutes impaires, ce qui force le kangourou à avoir pris les trois pairs. Leur somme est 2 + 4 + 6 = 12.",
+    "Le piège est de chercher une somme « moyenne » au hasard, ou d’oublier que le kangourou parle après avoir vu seulement ses trois cartes. À retenir : une certitude sur la parité d’une somme cachée trahit souvent une prise qui a vidé tout un camp, pair ou impair."
+  ],
+  "466": [
+    "Sept fruits sont posés en cercle : une poire au rang 1 et six pommes aux rangs 2 à 7. Le kangourou mange un fruit, avance de 7 fruits restants, et ainsi de suite. Par quelle pomme doit-il commencer pour finir par la poire ? Par la pomme numéro 3, proposition B.",
+    "Après chaque bouchée, le cercle des fruits encore présents rétrécit. « Avancer de 7 fruits restants » signifie compter 7 pas sur ce cercle réduit, donc se décaler du reste de la division de 7 par le nombre de fruits encore là. Le repas est ainsi entièrement déterminé par le point de départ.",
+    "Vous pouvez tester les cinq pommes proposées, ou remonter le film : le dernier fruit mangé doit être la poire. En reculant d’un pas de comptage à chaque étape, on reconstitue l’unique départ qui place la poire en dernière position. Cet inverse désigne la pomme 3, deux crans après la poire dans le sens des aiguilles d’une montre.",
+    "Le piège est de compter 7 pas sur le cercle initial à chaque fois, sans retirer le fruit déjà mangé. À retenir : ce genre de repas circulaire est un dénombrement de Josephus ; le modulo change dès qu’un fruit disparaît."
+  ],
+  "467": [
+    "Un kangourou part de l’origine et saute d’une unité horizontalement ou verticalement. Après 10 sauts, sur combien de points peut-il se trouver ? Sur 121 points, proposition A.",
+    "Chaque saut change une coordonnée de +1 ou de −1. Après n sauts, l’abscisse et l’ordonnée sont des entiers dont la somme des valeurs absolues ne dépasse pas n, et cette somme a la même parité que n : on ne peut pas être à une distance impaire après un nombre pair de sauts, et inversement.",
+    "On constate alors une formule simple, visible déjà sur les petits n : après 3 sauts on atteint 16 points, après 4 sauts 25 points. D’une manière générale, le nuage des positions possibles est un carré de côté n + 1 tourné sur la pointe, qui contient (n + 1)² points. Pour n = 10, cela fait 11² = 121.",
+    "Le piège est de compter seulement les points du bord (ceux à distance 10), ou de croire que le kangourou reste dans le premier quadrant. À retenir : les allers-retours sont permis, et ils remplissent tout l’intérieur du losange de la bonne parité."
+  ],
+  "468": [
+    "Parmi 2 009 kangourous clairs ou sombres, les clairs sont plus grands que 8, 9, 10… sombres, jusqu’à l’un d’eux plus grand que tous les sombres. Combien y a-t-il de clairs ? Il y en a 1 001, proposition B.",
+    "Chaque clair dépasse un nombre différent de sombres. Leurs tailles sont donc toutes distinctes : on peut les aligner du plus petit au plus grand. Le plus petit des clairs dépasse exactement 8 sombres, le suivant en dépasse un de plus, et le plus grand dépasse la totalité des sombres.",
+    "Cela force la disposition suivante : 8 sombres sous le plus petit clair, puis exactement un sombre entre deux clairs consécutifs, et aucun sombre au-dessus du plus grand clair. Si n désigne le nombre de clairs, il y a donc 8 + (n − 1) sombres. L’effectif total s’écrit n + 8 + n − 1 = 2 009, d’où 2n = 2 002 et n = 1 001.",
+    "Le piège est d’imaginer des clairs de même taille, ou d’oublier les 8 sombres déjà plus petits que tous les clairs. À retenir : une suite de records « plus grand que k, k + 1, … » intercalé un à un les individus de l’autre groupe."
+  ],
+  "469": [
+    "Lola a 24 animaux : vaches, chats et kangourous. Les trois quarts ne sont pas des vaches, les deux tiers ne sont pas des chats. Combien a-t-elle de kangourous ? Elle en a 10, proposition D.",
+    "« Les trois quarts ne sont pas des vaches » signifie qu’un quart seulement sont des vaches. Le quart de 24 vaut 6. De même, « les deux tiers ne sont pas des chats » signifie qu’un tiers sont des chats : le tiers de 24 vaut 8.",
+    "Les animaux qui ne sont ni vaches ni chats sont les kangourous. Il en reste 24 − 6 − 8 = 10. Vous pouvez vérifier les phrases de l’énoncé : 18 animaux sur 24 ne sont pas des vaches, et 16 sur 24 ne sont pas des chats.",
+    "Le piège est de prendre « les trois quarts ne sont pas des vaches » pour « les trois quarts sont des vaches ». À retenir : une phrase « les k/n ne sont pas des X » se traduit par « la fraction complémentaire sont des X »."
+  ],
+  "470": [
+    "La somme des âges d’un groupe de kangourous vaut 36 ans aujourd’hui et vaudra 60 ans dans deux ans. Combien sont-ils ? Ils sont 12, proposition B.",
+    "En deux ans, chaque kangourou vieillit de deux ans, ni plus ni moins. La somme des âges augmente donc de deux ans multipliés par le nombre d’individus. Ici cette augmentation vaut 60 − 36 = 24 ans.",
+    "On en déduit le nombre de kangourous : 24 ÷ 2 = 12. Autrement dit, 12 animaux × 2 ans = 24 ans de plus au total, ce qui fait bien passer la somme de 36 à 60.",
+    "Le piège est de croire qu’un nouveau-né est apparu, ou de diviser 60 par 36. À retenir : quand tout le monde vieillit du même nombre d’années, la hausse de la somme révèle l’effectif."
+  ],
+  "471": [
+    "Le corrigé officiel est une figure : elle montre comment quatre kangourous peuvent chacun parcourir un circuit de cavalier de seize sauts, visiter quinze champs et rentrer dans leur coin, sans qu’aucun ne traverse la médiane horizontale du grand carré.",
+    "Un saut de cavalier est le mouvement en L de l’échec : deux cases dans une direction, puis une case perpendiculaire. Chaque animal reste dans sa moitié du damier, ne partage aucun champ avec un autre, et revient à son départ après seize bonds, l’un des champs étant visité deux fois (le coin de départ).",
+    "Pour reconstruire un tel exploit, vous copiez la grille de l’énoncé, vous tracez la ligne médiane, puis vous cherchez, dans chaque demi-carré, un circuit de cavalier fermé qui s’appuie sur le coin attribué. Le dessin du corrigé fixe les quatre trajets. Sans cette figure, n’inventez pas de coordonnées.",
+    "Le piège est de laisser un kangourou franchir la médiane, ou de faire se croiser deux circuits sur la même case. À retenir : une contrainte géométrique (« ne pas traverser la ligne ») se traduit par quatre problèmes indépendants, un par quadrant horizontal."
+  ],
+  "472": [
+    "Le père a 36 ans et 36 voix, les enfants 13, 6 et 4 ans. Dans combien d’années les enfants, s’ils votent ensemble, dépasseront-ils le père ? Dans 7 ans, proposition C.",
+    "Aujourd’hui les enfants totalisent 23 voix, soit 13 de moins que le père. Chaque année, les trois enfants gagnent une voix chacun, donc 3 voix, tandis que le père n’en gagne qu’une. L’écart diminue donc de 2 voix par an.",
+    "Il faut rattraper 13 voix à raison de 2 par an : 13 n’est pas un multiple de 2, donc six années ne suffisent pas (il resterait 1 voix de retard). Après 7 ans, le père a 43 ans et les enfants 20, 13 et 11 ans, soit 44 voix : ils passent devant. Après 6 ans, on aurait 42 contre 41, encore insuffisant.",
+    "Le piège est de diviser 13 par 3, ou de croire que « au plus tôt » autorise l’égalité. À retenir : un rattrapage à vitesse constante se lit comme une division, puis on prend la première année où l’inégalité stricte est vraie."
+  ],
+  "473": [
+    "Un kangourou monte 7 marches par seconde, un lapin en descend 3, sur un escalier de 50 marches. Sur quelle marche se rencontrent-ils ? Sur la 35e, proposition B.",
+    "À chaque seconde, les deux animaux se rapprochent de 7 + 3 = 10 marches. S’ils sont initialement séparés par la hauteur de l’escalier, il leur faut 50 ÷ 10 = 5 secondes pour occuper la même marche.",
+    "En 5 secondes, le kangourou a gravi 7 × 5 = 35 marches : la rencontre a lieu sur la marche 35. Le lapin, de son côté, a descendu 3 × 5 = 15 marches depuis le sommet, et 50 − 15 = 35 confirme le même palier.",
+    "Le piège est d’additionner 7 et 3 sans diviser l’escalier, ou de numéroter les marches depuis le bas pour l’un et depuis le haut pour l’autre sans convertir. À retenir : deux mobiles qui se font face ferment la distance à la somme de leurs vitesses."
+  ],
+  "474": [
+    "La mère parcourt l’aller en bonds de 8 m, revient de même jusqu’à mi-chemin, puis termine en bonds de 4 m avec le petit. Elle fait 135 bonds en tout. Quelle distance le petit a-t-il sautée lui-même ? Il a parcouru 216 m.",
+    "Appelez L la longueur d’un trajet simple. L’aller demande L/8 bonds de 8 m. La première moitié du retour en demande encore L/16. La seconde moitié, en bonds deux fois plus courts, en demande L/8. Le total vaut 5L/16 = 135, donc L = 432 m.",
+    "Le petit ne saute sur ses pattes que pendant la dernière moitié du retour, longue de 216 m, à raison de 54 bonds de 4 m. Une autre lecture consiste à voir cinq « parts » égales de 27 bonds de 8 m : les trois premières parts font l’aller et le demi-retour, les deux dernières font le demi-retour en petits sauts.",
+    "Le piège est de croire que le petit a sauté tout le retour, ou de diviser 135 par 2. À retenir : lorsque la longueur des bonds est divisée par deux, le nombre de bonds, lui, est multiplié par deux."
+  ],
+  "475": [
+    "On place 3 kangourous dans 3 cases distinctes parmi 7 cases alignées, sans que deux soient voisines. Combien de placements existent-ils ? Il y en a 10, proposition D.",
+    "Choisir 3 cases non consécutives parmi 7 revient à un petit dénombrement. Une méthode commode consiste à « coller » un espace vide obligatoire entre deux kangourous : on pose d’abord les 3 animaux avec 2 séparations, ce qui consomme 5 cases, et il reste 2 cases vides à glisser dans les 4 zones possibles (bouts compris).",
+    "On peut aussi énumérer selon la case la plus à gauche. Avec un kangourou en 1, il reste 6 paires non voisines parmi les cases 3 à 7. Avec un kangourou en 2, il en reste 3. Sans kangourou en 1 ni 2, le seul triplet est 3-5-7. Le total 6 + 3 + 1 = 10.",
+    "Le piège est de compter les permutations des 3 kangourous alors qu’ils sont indiscernables, ou d’autoriser deux cases qui se touchent. À retenir : le nombre de façons de choisir k cases non consécutives parmi n vaut le nombre de combinaisons de k parmi n − k + 1."
+  ],
+  "476": [
+    "Dans un groupe, les trois plus lourds pèsent 60 % du total et les deux plus légers 25 %. Combien y a-t-il de kangourous ? Ils sont 6, proposition A.",
+    "Les trois plus lourds et les deux plus légers ne se recouvrent pas : ce sont cinq animaux distincts. Il reste 100 % − 60 % − 25 % = 15 % du poids pour le reste du groupe. Ces 15 % sont plus légers que les 25 % des deux plus petits.",
+    "Le reste ne peut donc pas compter deux animaux ou plus : deux « moyens » pèseraient au moins autant que deux légers, donc au moins 25 %, et non 15 %. Il reste exactement un kangourou intermédiaire. L’effectif total est 3 + 2 + 1 = 6.",
+    "Le piège est de conclure 5, en oubliant le reste, ou 8 en inventant plusieurs moyens. À retenir : un pourcentage résiduel plus petit que celui des plus légers ne peut correspondre qu’à un seul individu, éventuellement à personne, mais pas à deux."
+  ],
+  "477": [
+    "Neuf kangourous sont argentés ou dorés. Lorsque trois se rencontrent, il y a deux chances sur trois qu’aucun ne soit argenté. Combien sont dorés ? Ils sont 8, proposition E.",
+    "« Aucun n’est argenté » signifie que les trois tirés sont tous dorés. Si k désigne le nombre de dorés, la probabilité cherchée est le quotient du nombre de triplets dorés par le nombre de triplets parmi 9, c’est-à-dire [k(k − 1)(k − 2)] / [9 × 8 × 7].",
+    "On égale ce quotient à 2/3. Il vient k(k − 1)(k − 2) = 8 × 7 × 6. Le produit de trois consécutifs égal à 8 × 7 × 6 désigne k = 8. Avec 8 dorés et donc un seul argenté, un triplet pris au hasard évite l’argenté dans deux cas sur trois, ce qui retombe sur l’énoncé.",
+    "Le piège est de calculer 2/3 de 9, ou de confondre « aucun argenté » avec « au moins un doré ». À retenir : une probabilité d’évitement d’un type se traduit par un quotient de combinaisons, pas par une règle de trois sur l’effectif."
+  ],
+  "478": [
+    "Huit kangourous sont en file ; dès que deux se font face, ils échangent leur place en gardant leur direction. Combien de « hophops » avant qu’il n’en reste plus ? Il y en a 13, proposition D.",
+    "Un échange a lieu uniquement entre un kangourou qui va vers la droite et un autre, plus à droite, qui va vers la gauche. Chaque telle paire « se croise » exactement une fois, et les animaux qui marchent dans le même sens ne s’interceptent jamais.",
+    "Sur la file de l’énoncé, trois kangourous seulement regardent vers la gauche. Le plus à gauche de ces trois-là n’a que trois adversaires venant en sens inverse à croiser ; chacun des deux autres en a cinq. Le total des croisements vaut 3 + 5 + 5 = 13. Quand tous les « gauches » se retrouvent à gauche des « droits », plus aucun nez à nez n’est possible.",
+    "Le piège est de simuler seulement les premiers chocs, ou de croire qu’un kangourou peut changer de direction. À retenir : le nombre d’inversions entre deux sens de marche est exactement le nombre de dépassements."
+  ],
+  "479": [
+    "Un huitième des animaux de l’enclos sont des koalas, et trois septièmes des kangourous sont gris. Quelle fraction de l’enclos représentent les kangourous roux ? La moitié, proposition A.",
+    "Si un huitième sont des koalas, les sept huitièmes restants sont des kangourous. Parmi ces kangourous, trois septièmes sont gris, donc les quatre septièmes complémentaires sont roux.",
+    "La fraction des roux dans l’enclos tout entier est le produit (7/8) × (4/7). Les 7 se simplifient, et il reste 4/8, c’est-à-dire 1/2. Les roux forment donc la moitié des animaux.",
+    "Le piège est de répondre 4/7, en oubliant les koalas, ou 3/7 en prenant les gris. À retenir : une fraction « parmi un sous-groupe » se multiplie par la fraction de ce sous-groupe dans le tout."
+  ],
+  "480": [
+    "Dans un parc de 100 kangourous, 45 mâles et 55 femelles, on en tire deux au hasard. Quelle est la probabilité d’obtenir un mâle et une femelle ? Elle vaut 1/2, proposition A.",
+    "Le nombre de couples ordonnés (mâle, femelle) est 45 × 55, et l’on peut aussi tirer d’abord la femelle : le nombre de paires non ordonnées mixtes est donc 45 × 55. Le nombre total de paires parmi 100 vaut 100 × 99 / 2.",
+    "La probabilité s’écrit (2 × 45 × 55) / (100 × 99). Après simplification par 5, 9 et 11, il reste 1/2. Autrement dit, presque la moitié des paires possibles mélangent les deux sexes, et le calcul exact tombe pile sur la moitié.",
+    "Le piège est de faire 45/100 × 55/99 sans le facteur 2, ou de croire que l’équilibre 50-50 des sexes est obligatoire. À retenir : pour un tirage de deux types, on multiplie les effectifs croisés, puis on double si l’ordre du tirage n’importe pas."
+  ],
+  "481": [
+    "On demande où se trouve le kangourou par rapport au cercle, au triangle et au carré. Il est à l’intérieur du cercle et du carré, mais hors du triangle : proposition B.",
+    "Chaque proposition décrit une région du diagramme, intersection ou complémentaire de trois formes. Vous ne devez pas inventer le dessin : la figure de l’énoncé place déjà l’animal, et le corrigé officiel la rappelle.",
+    "Vous lisez d’abord si le kangourou est dans le disque, puis dans le carré, puis dans le triangle. Les deux premières appartenances sont vraies, la troisième est fausse. Seule la phrase B énonce exactement ce trio.",
+    "Le piège est de confondre « à l’intérieur du carré » avec « à l’intérieur du triangle », les deux polygones se chevauchant. À retenir : on traduit une position par trois oui ou non, puis on cherche la phrase qui recopie ce triplet."
+  ],
+  "482": [
+    "Mathilde a dessiné 36 kangourous avec du jaune, du brun et du noir : 25, 28 et 20 occurrences, dont 5 dessins aux trois couleurs. Combien sont unicolores ? Ils sont 4, proposition B.",
+    "Chaque dessin utilise une, deux ou trois couleurs. Notons x le nombre d’unicolores. Les 5 tricolores sont connus, donc les bicolores sont 36 − 5 − x = 31 − x. On compte ensuite le nombre total de « touches » de couleur de deux manières.",
+    "D’un côté, chaque unicolore contribue 1, chaque bicolore 2 et chaque tricolore 3 : x + 2(31 − x) + 3 × 5 = 77 − x. De l’autre, 25 + 28 + 20 = 73. L’égalité 77 − x = 73 donne x = 4. Quatre kangourous n’ont donc reçu qu’un seul crayon.",
+    "Le piège est d’additionner 25 + 28 + 20 et de croire que cela compte des dessins, alors que cela compte des couleurs. À retenir : un dénombrement double (objets d’un côté, étiquettes de l’autre) fait apparaître les objets qui portent une, deux ou trois étiquettes."
+  ],
+  "483": [
+    "Quatre arbres forment un rectangle : sapin-cyprès 60 m, noyer-cyprès 80 m, et le platane est plus proche du sapin que du cyprès. Quelle est la distance platane-cyprès ? Elle vaut 100 m, proposition B.",
+    "Dans un rectangle, les côtés consécutifs sont perpendiculaires et les diagonales sont égales. Le platane et le noyer occupent les deux sommets restants. La condition de proximité distingue lequel des deux sommets est le platane : il est du côté du sapin, donc diagonalement opposé au cyprès, ou bien adjacent au sapin selon l’orientation.",
+    "La lecture qui respecte « plus proche du sapin que du cyprès » place le platane de sorte que le segment platane-cyprès soit la diagonale du rectangle de côtés 60 m et 80 m. Le théorème de Pythagore donne √(60² + 80²) = √(3 600 + 6 400) = √10 000 = 100 m. C’est le triangle 3-4-5 agrandi 20 fois.",
+    "Le piège est de répondre 80 m ou 60 m, en prenant un côté pour la diagonale. À retenir : dès que trois sommets d’un rectangle sont liés par deux côtés, la distance au quatrième sommet opposé est une hypoténuse."
+  ],
+  "484": [
+    "Les cartes forment A G N U U K O O R et l’on veut le mot KANGOUROU en échangeant deux cartes à chaque coup. Quel est le minimum de coups ? Il en faut 3, proposition B.",
+    "Le mot cible est K, A, N, G, O, U, R, O, U. En comparant lettre à lettre avec la file de départ, six positions sont incorrectes. Chaque échange peut en corriger au plus deux. Il faut donc au moins 6 ÷ 2 = 3 coups, et l’on ne peut pas descendre à 2.",
+    "Trois échanges suffisent réellement. Un exemple : on échange R et K, puis G et N, puis le U mal placé avec le O mal placé. Après ces trois permutations, toutes les lettres sont à leur place. Le minimum est donc atteint.",
+    "Le piège est de croire qu’il faut une correction par lettre (6 coups), ou de déplacer une lettre déjà bien placée. À retenir : le nombre minimal de transpositions est au moins la moitié du nombre de cases encore fausses, et il faut ensuite exhiber une suite qui y parvient."
+  ],
+  "485": [
+    "Un parc compte 15 animaux : koalas, autruches et kangourous. Dix ne sont pas des koalas, huit ne sont pas des autruches. Combien y a-t-il de kangourous ? Il y en a 3, proposition C.",
+    "Si 10 animaux ne sont pas des koalas, alors 15 − 10 = 5 animaux sont des koalas. Si 8 ne sont pas des autruches, alors 15 − 8 = 7 animaux sont des autruches.",
+    "Koalas et autruches sont deux espèces distinctes, donc déjà 5 + 7 = 12 animaux. Il reste 15 − 12 = 3 kangourous. Vous retrouvez bien 10 non-koalas (7 autruches + 3 kangourous) et 8 non-autruches (5 koalas + 3 kangourous).",
+    "Le piège est de répondre 10 ou 8, en prenant les « ne sont pas » pour l’effectif cherché. À retenir : le complémentaire d’un décompte « ceux qui ne sont pas X » est précisément le nombre de X."
+  ],
+  "486": [
+    "Chaque hiver le poids du kangourou augmente de 5 %, chaque été il diminue de 4 kg. Au printemps 2008 il pèse 100 kg. Que pesait-il à l’automne 2004 ? Il pesait 92 kg, proposition A.",
+    "Autour de 100 kg, 5 % représentent 5 kg. En une année complète (hiver puis été, printemps et automne n’y changeant rien), le bilan annoncé par le concours est donc +5 kg − 4 kg = +1 kg. Le poids croît d’un kilogramme par an dans ce modèle.",
+    "Au printemps 2008 le kangourou pèse 100 kg ; après l’été suivant, à l’automne 2008, il pèse 96 kg. Quatre automnes plus tôt, en 2004, il pesait 4 kg de moins, soit 92 kg. On remonte simplement d’un kilogramme par année.",
+    "Le piège est d’appliquer les 5 % après la perte de 4 kg, ou de compter les saisons dans le mauvais ordre. À retenir : lorsqu’une variation en pourcentage est prise sur une valeur ronde de référence, le concours la convertit souvent en kilogrammes constants, puis on remonte année par année."
+  ],
+  "487": [
+    "Le gardien peint une lettre de KANGOUROU par jour, en commençant un jeudi. Quel jour peint-il la dernière lettre ? Un vendredi, proposition D.",
+    "Le mot KANGOUROU compte 9 lettres. La première, K, est peinte le jeudi. Il reste donc 8 jours à avancer pour atteindre la neuvième lettre.",
+    "Jeudi plus 8 jours, c’est vendredi : 8 = 7 + 1, une semaine complète plus un jour. Vous pouvez aussi aligner les jours : jeudi K, vendredi A, samedi N, dimanche G, lundi O, mardi U, mercredi R, jeudi O, vendredi U.",
+    "Le piège est de compter 9 jours après le jeudi, ce qui décalerait d’un jour de trop, ou d’oublier le second O. À retenir : si l’on commence le jour J par la première unité, la n-ième tombe le jour J + (n − 1)."
+  ],
+  "488": [
+    "Le kangourou saute d’une case à droite, puis d’une case vers le haut, puis d’une case à gauche. Quel dessin montre sa position finale ? Le dessin B.",
+    "Les trois sauts se composent. Droite puis gauche s’annulent : le kangourou ne change pas d’abscisse. Il ne reste que le saut vers le haut, qui le place une case au-dessus de son départ.",
+    "Le corrigé officiel est une figure : parmi les cinq grilles proposées, seule B montre l’animal décalé d’une case vers le haut, sans décalage latéral. Ne redessinez pas une sixième grille ; comparez les cinq dessins à ce déplacement net.",
+    "Le piège est de cumuler droite et gauche au lieu de les compenser, ou de tourner la feuille. À retenir : une suite de pas opposés se réduit d’abord, avant de regarder les propositions."
+  ],
+  "489": [
+    "Un kangourou fait 4 bonds en 6 secondes. En combien de secondes en fait-il 10 ? En 15 secondes, proposition C.",
+    "Le rythme est constant : 4 bonds durent 6 secondes, donc 2 bonds durent 3 secondes. Pour passer de 2 bonds à 10 bonds, on multiplie le nombre de bonds par 5, donc aussi la durée par 5.",
+    "On obtient 5 × 3 = 15 secondes. Autrement dit, le temps est proportionnel au nombre de bonds : 10/4 × 6 = 15. Un bond isolé durerait 1,5 seconde, et dix bonds dureraient 15 secondes.",
+    "Le piège est de répondre 10, en collant le nombre de bonds, ou 12, en ajoutant 6 + 6. À retenir : une proportionnalité « n objets en t secondes » se prolonge par une règle de trois."
+  ],
+  "490": [
+    "Quatre kangourous A, B, C, D parlent de leurs tailles ; un seul ment. Qui est le plus grand ? C’est B, proposition B.",
+    "A dit n’être ni le plus grand ni le plus petit, B dit n’être pas le plus petit, C dit être le plus grand, D dit être le plus petit. Vous testez les quatre hypothèses « un seul menteur ».",
+    "Si A ment, alors C et D diraient vrai : C serait le plus grand et D le plus petit, ce qui rendrait la phrase de A vraie, contradiction. Si B ment, il serait le plus petit en même temps que D, impossible. Si D ment, plus personne n’est le plus petit, impossible. Il reste C comme unique menteur : D est bien le plus petit, A n’est ni extrême, donc B est le plus grand.",
+    "Le piège est d’accorder d’emblée la phrase « je suis le plus grand », souvent le mensonge. À retenir : avec un seul menteur, on élimine les scénarios qui créent deux extrêmes identiques ou zéro extrême."
+  ],
+  "491": [
+    "Kangourou saute de 2 m, 4 m ou 7 m. Quel est le nombre minimal de bonds pour faire 1 000 m pile ? Il vaut 144, proposition B.",
+    "Pour minimiser le nombre de sauts, on privilégie les plus longs, ceux de 7 m. Or 1 000 = 7 × 142 + 6, et 6 m s’obtiennent par un saut de 4 m plus un saut de 2 m. Cela fait 142 + 2 = 144 sauts, et la distance tombe juste.",
+    "Peut-on faire mieux ? 143 sauts de 7 m feraient 1 001 m, trop. Remplacer davantage de 7 m par des 4 m et des 2 m allonge le nombre de bonds. Comme 7, 4 et 2 permettent d’écrire 1 000 avec 144 termes dont 142 valent 7, ce total est minimal.",
+    "Le piège est de n’utiliser que des 7 m et de s’arrêter à 994 m, ou de croire que 175 sauts de 4 m et 2 m iraient plus vite. À retenir : le minimum de termes d’une somme fixée s’obtient en maximisant la plus grande part, puis en ajustant le reste."
+  ],
+  "492": [
+    "60 % des mamans kangourous ont un bébé, 20 % en ont deux, et les 5 restantes en ont trois. Combien de bébés au total ? Il y en a 40, proposition C.",
+    "Les 5 mamans à trois bébés forment le complément de 60 % + 20 %, soit 20 % de l’assemblée. Si 20 % correspondent à 5 mamans, alors 100 % correspondent à 25 mamans.",
+    "Parmi ces 25, il y a 60 % × 25 = 15 mamans à un bébé, 20 % × 25 = 5 mamans à deux bébés, et 5 mamans à trois bébés. Le nombre de petits vaut 15 × 1 + 5 × 2 + 5 × 3 = 15 + 10 + 15 = 40.",
+    "Le piège est de compter 5 + 15 + 10 mamans, ou d’oublier que 20 % de 25 n’est pas 20. À retenir : un effectif connu égal à un pourcentage donne d’abord le tout, ensuite seulement les parties."
+  ],
+  "493": [
+    "Jumpy et sa mère sautent autour d’un stade de 330 m, à 2 m/s et 5 m/s. Après 25 s Jumpy s’arrête. Combien de temps après la mère repassera-t-elle à sa hauteur ? 51 secondes, proposition C.",
+    "En 25 secondes, Jumpy a parcouru 50 m et s’immobilise. Sa mère a parcouru 125 m. Elle est donc 75 m devant le petit, sur la même boucle de 330 m.",
+    "Pour le rejoindre à nouveau, elle doit encore parcourir le reste du tour, soit 330 − 75 = 255 m, à 5 m par seconde. Le temps vaut 255 ÷ 5 = 51 s. À cet instant elle aura fait, depuis l’arrêt de Jumpy, un peu plus des trois quarts du stade et se retrouvera pile sur le point 50 m.",
+    "Le piège est de diviser 75 par 5 (le temps pour « revenir en arrière »), alors qu’elle continue dans le même sens. À retenir : sur un circuit, rattraper un mobile arrêté devant soi, c’est finir le tour, pas reculer."
+  ],
+  "494": [
+    "Kang fait des bonds de 6 m ; Rourou fait des bonds de 1 m, 2 m, 3 m… Combien de bonds faut-il à Rourou pour rejoindre Kang ? 11 bonds, proposition B.",
+    "Après n secondes, Kang a parcouru 6n mètres. Rourou, lui, a parcouru la somme 1 + 2 + … + n = n(n + 1)/2. On cherche le plus petit n tel que ces deux distances soient égales.",
+    "L’équation n(n + 1)/2 = 6n se simplifie, pour n non nul, en n + 1 = 12, donc n = 11. Après 11 bonds, Rourou a sauté 66 m, comme Kang. Avant cela, Rourou était en retard ; au sixième bond les deux font 6 m, puis Rourou commence à rattraper son retard accumulé.",
+    "Le piège est de s’arrêter à n = 12, en oubliant de simplifier par n, ou de comparer les derniers bonds seulement. À retenir : une poursuite à pas croissants contre un pas constant se traduit par l’égalité d’une somme d’entiers et d’un multiple."
+  ],
+  "495": [
+    "Parmi cinq figures, laquelle contient plus de kangourous noirs que de blancs ? La figure A, proposition A.",
+    "Il s’agit d’un simple dénombrement visuel, figure par figure. Vous comptez les silhouettes noires, puis les blanches, et vous comparez. Le corrigé officiel s’appuie sur ces dessins : n’en inventez pas d’autres.",
+    "Dans A, on trouve 4 noirs et 3 blancs : les noirs l’emportent. Dans B, C et D, les blancs sont plus nombreux. Dans E, les deux camps sont à égalité. Seule A satisfait donc la question.",
+    "Le piège est de compter une ombre ou un kangourou à moitié caché deux fois, ou de se fier à une impression de « plus sombre ». À retenir : une comparaison d’effectifs se fait en deux totaux explicites, pas à l’œil."
+  ],
+  "496": [
+    "Un kangourou fait deux sauts en 1,5 s et court à 12 km/h. Combien de sauts pour parcourir 100 m ? Il lui en faut 40.",
+    "Douze kilomètres à l’heure, c’est 12 000 m en 3 600 s. Le temps pour parcourir 100 m vaut donc 100 × 3 600 / 12 000 = 30 s. En 1,5 s il fait 2 sauts, soit 4/3 de saut par seconde.",
+    "En 30 secondes, le nombre de sauts est 30 × (2 / 1,5) = 40. Autrement dit, 100 m représentent 100/12 000 de l’heure, et l’heure contient 3 600 / 1,5 × 2 sauts ; le produit donne encore 40.",
+    "Le piège est de convertir 12 km/h en 12 m/s, ou d’oublier le 1,5. À retenir : on aligne d’abord les unités (mètres et secondes), puis on enchaîne deux règles de trois, distance puis cadence."
+  ],
+  "497": [
+    "Il restait quatre boules noires et sept blanches dans la poche. Combien la mère doit-elle en tirer, au minimum, pour être certaine d’avoir au moins une blanche ? Elle doit en tirer 5.",
+    "« Être certaine » impose de envisager le pire des cas. Le pire, ici, est de ne sortir que des noires aussi longtemps que possible. Il en reste quatre.",
+    "Après quatre tirages tous noirs, la cinquième boule ne peut plus être noire : elle est forcément blanche. Quatre boules ne suffisent pas à garantir une blanche, puisque les quatre noires existent encore. Le minimum qui force la conclusion est donc 5 = 4 + 1.",
+    "Le piège est de répondre 2, en pensant à une chance sur deux, ou 8, en ajoutant toutes les blanches. À retenir : un « au minimum pour être sûr » est un principe des tiroirs : on épuise d’abord le camp adverse, puis on ajoute un."
+  ],
+  "498": [
+    "De 1979 à 1988, il est tombé 631 mm d’eau en moyenne ; de 1980 à 1989, 601 mm ; 1989 n’a reçu que 450 mm. L’année 1979 a-t-elle été sèche pour les kangourous ? Non : il y est tombé 750 mm.",
+    "Dix années à 631 mm, cela fait une somme de 6 310 mm pour 1979-1988. Dix années à 601 mm, cela fait 6 010 mm pour 1980-1989. Ces deux décennies partagent les huit années 1980 à 1988.",
+    "En soustrayant les deux sommes, il reste 1979 − 1989 = 6 310 − 6 010 = 300 mm. Or 1989 vaut 450 mm, donc 1979 vaut 450 + 300 = 750 mm. C’est une année nettement plus arrosée que la moyenne, pas une année de sécheresse.",
+    "Le piège est de comparer 631 et 450 sans compenser le glissement de fenêtre. À retenir : deux moyennes glissantes se soustraient pour isoler la première année moins la dernière."
+  ],
+  "499": [
+    "Cinq groupes de 9, 15, 17, 19 et 21 kangourous sont unisexes. Quatre groupes réunis donnent trois fois plus de femelles que de mâles. Quel groupe est à l’écart ? Celui de 21, proposition E.",
+    "Les quatre groupes retenus forment 1 groupe de mâles et 3 groupes de femelles, et les mâles pèsent alors le quart du total réuni. La somme des cinq effectifs vaut 81 ; on écarte à tour de rôle un groupe et l’on regarde si le quart du reste est lui-même l’effectif d’un groupe.",
+    "Écarter 9 laisse 72, dont le quart 18 n’est pas un effectif. Écarter 15 laisse 66, non divisible par 4. Écarter 17 laisse 64, dont le quart 16 n’est pas un effectif. Écarter 19 laisse 62, non divisible par 4. Écarter 21 laisse 60, dont le quart 15 : or 15 est précisément un groupe, et 9 + 17 + 19 = 45 = 3 × 15. Seul ce cas convient.",
+    "Le piège est de prendre le plus petit groupe pour l’écart, ou d’oublier que les quatre groupes doivent être un mâle et trois femelles. À retenir : on teste les cinq exclusions ; la condition « un quart entier égal à un groupe » n’en laisse qu’une."
+  ],
+  "500": [
+    "Cinq petits a, b, c, d, e ont pour mères A, B, C, D, E. Sur la première image, exactement deux petits touchent leur mère ; sur la seconde, exactement trois. Qui est la mère de a ? C’est D, proposition D.",
+    "Les cinq paires « petit-mère » de l’ensemble des deux photos sont toutes distinctes, et il y en a 2 + 3 = 5. Chaque petit apparaît donc exactement une fois à côté de sa propre mère. Le petit a n’a ainsi que deux mères possibles : celles qui le touchent sur l’une ou l’autre image, à savoir B ou D.",
+    "Si la mère de a était B, la mère de e, qui n’est alors plus B, serait E, et la mère de c serait D. Cela créerait trois paires sur la première image, ce que l’énoncé interdit. L’hypothèse B tombe. Il reste D pour a. Les autres paires, une fois cette clé posée, sont e avec B, c avec E, b avec C et d avec A.",
+    "Le piège est de lire « à côté » seulement à l’horizontale, ou de réutiliser la même paire sur les deux photos. À retenir : deux instantanés avec des totaux complémentaires recouvrent souvent chaque lien une seule fois ; on teste alors les deux candidats du personnage demandé."
+  ],
+  "501": [
+    "Kanga répète un grand saut puis deux petits, part de 0 et atteint 16. Combien de sauts fait-elle ? Elle en fait 12, proposition D.",
+    "La figure de l’énoncé montre les premiers atterrissages : 0, puis 2, 3 et 4. Le grand saut avance de 2, chaque petit saut avance de 1. Un cycle complet avance donc de 4 et compte 3 sauts.",
+    "De 0 à 16, il y a 16 unités, soit exactement 4 cycles de 4. Quatre cycles de 3 sauts font 12 sauts, et Kanga s’arrête pile sur 16, sans saut de trop. Vous pouvez aussi compter 0-4, 4-8, 8-12, 12-16 : quatre fois le même motif.",
+    "Le piège est de compter 16 sauts d’une unité, ou 8 grands sauts seulement. À retenir : on lit d’abord l’amplitude du motif sur la figure, puis on divise la distance totale par l’avancée d’un cycle."
+  ],
+  "502": [
+    "Kangy répète deux grands sauts de 3 puis trois petits sauts de 1, en partant de 0. Sur lequel des nombres 82 à 86 va-t-il passer ? Sur 84, proposition C.",
+    "Un cycle avance de 3 + 3 + 1 + 1 + 1 = 9. Les positions de Kangy sont donc tous les nombres que l’on atteint en ajoutant, à un multiple de 9, l’une des sommes partielles 0, 3, 6, 7, 8 ou 9.",
+    "Le multiple de 9 juste sous 82 est 81. À partir de 81, le premier grand saut mène à 84, le deuxième à 87, puis les petits à 88, 89, 90. Parmi les cinq propositions, seul 84 apparaît dans cette liste. Kangy pose donc le pied sur 84, pas sur 82, 83, 85 ni 86.",
+    "Le piège est de tester la divisibilité par 9 des propositions, alors que Kangy s’arrête aussi entre deux multiples. À retenir : une suite périodique de pas se décrit par un reste, ou par le multiple inférieur plus une somme partielle du motif."
+  ],
+  "503": [
+    "Les âges 2, 4, 5, 6, 8 et 10 ans ont, pour quatre d’entre eux, une somme de 22. Quels sont les deux autres âges ? 5 ans et 8 ans, proposition C.",
+    "La somme des six âges vaut 2 + 4 + 5 + 6 + 8 + 10 = 35. Si quatre kangourous totalisent 22 ans, les deux exclus totalisent 35 − 22 = 13 ans.",
+    "Parmi les paires proposées, seule 5 + 8 = 13. Les autres font 10, 9, 14 ou 16. Les deux kangourous restés hors du groupe de quatre ont donc 5 ans et 8 ans, et les quatre autres 2, 4, 6 et 10, dont la somme 22 confirme le calcul.",
+    "Le piège est d’essayer d’additionner quatre nombres au hasard parmi les six, sans passer par le complément. À retenir : la somme des exclus est la somme globale moins la somme annoncée."
+  ],
+  "504": [
+    "Trois lièvres font la ronde avec des kangourous : trois kangourous sont consécutifs, aucun lièvre n’est à côté d’un autre lièvre. Quel est le nombre minimal de kangourous ? Il vaut 5, proposition C.",
+    "Les trois lièvres doivent être séparés les uns des autres : il faut au moins un kangourou entre chaque paire, y compris en refermant le cercle. Cela demande déjà trois kangourous « séparateurs ». Mais l’énoncé exige en plus un bloc de trois kangourous côte à côte.",
+    "On fusionne trois séparateurs en un seul bloc KKK, et l’on garde deux kangourous isolés pour écarter les autres lièvres. La ronde minimale s’écrit, à une rotation près, KKK, L, K, L, K, L. Elle compte 5 kangourous et 3 lièvres, sans deux lièvres voisins. Avec 4 kangourous, le cercle recollerait deux lièvres.",
+    "Le corrigé officiel dessine cette ronde : recopiez-la, n’inventez pas un autre schéma. Le piège est de poser LLL d’un côté et KKK de l’autre. À retenir : dans un cercle, séparer k objets coûte k séparateurs, et un bloc imposé se greffe sur l’un d’eux."
+  ],
+  "505": [
+    "À l’aller le kangourou ne fait que des sauts de 3 m, au retour que des sauts de 1 m, pour 2 024 sauts en tout. Quelle distance aller-retour a-t-il parcourue ? 3 036 m, proposition D.",
+    "Soit S le nombre de sauts de 3 m. La distance d’un trajet simple vaut 3S mètres. Au retour, les sauts de 1 m sont donc au nombre de 3S. Le total des sauts s’écrit S + 3S = 4S = 2 024, d’où S = 506.",
+    "Un trajet simple mesure 506 × 3 = 1 518 m. L’aller et le retour mesurent le double, 3 036 m. Autrement dit, le quart des sauts se fait à l’aller, et chaque saut d’aller « vaut » trois sauts de retour.",
+    "Le piège est de répondre 2 024 m, en confondant le nombre de sauts avec la distance, ou 4 048 m en comptant 2 m par saut. À retenir : on lie d’abord les deux comptes de sauts par l’égalité des distances, puis on convertit en mètres."
+  ],
+  "506": [
+    "Six élèves kangourous copient 6 lignes en 6 minutes, tous au même rythme. Combien d’élèves faut-il pour copier 100 lignes en 100 minutes ? Il en faut encore 6.",
+    "Les six élèves, ensemble, copient une ligne par minute. En 100 minutes, ce même groupe copie donc 100 lignes, exactement la tâche demandée. Inutile d’embaucher davantage, inutile d’en renvoyer.",
+    "Vous pouvez aussi descendre à l’élève : chacun copie 1 ligne en 6 minutes, donc 100/6 de ligne en 100 minutes. Pour obtenir 100 lignes en 100 minutes, il faut 6 élèves, car 6 × (100/6) = 100. Le rapport « lignes / minutes / élèves » est le même dans les deux phrases de l’énoncé.",
+    "Le piège, classique, est de répondre 100, ou 60, en multipliant les données au lieu de voir qu’elles sont homothétiques. À retenir : lorsque le temps et la quantité de travail sont multipliés par le même facteur, l’effectif ne change pas."
+  ],
+  "507": [
+    "Papa et Maman Kangourou ont trois filles, et chacune de ces filles a deux frères. Combien la famille compte-t-elle de membres ? Elle en compte 7, proposition D.",
+    "Les trois filles parlent des mêmes deux frères : il n’y a pas deux frères par fille, mais deux garçons pour toute la fratrie. On a donc 3 filles et 2 garçons, soit 5 enfants.",
+    "Avec les deux parents, le foyer compte 2 + 3 + 2 = 7 personnes. Vous pouvez relire la phrase « chacune a deux frères » : elle reste vraie pour chaque fille dès que la fratrie contient exactement deux garçons.",
+    "Le piège est de faire 3 × 2 = 6 frères, ce qui inventerait une tribu immense. À retenir : « chacun a k frères » décrit la même fratrie vue par chacun, pas k nouveaux garçons par enfant."
+  ],
+  "508": [
+    "Arno a écrit KANGOUROU avec des cartes, certaines tournées. Combien faut-il en retourner pour remettre toutes les lettres à l’endroit ? Il faut en tourner 5, proposition B.",
+    "Certaines lettres restent lisibles après une rotation d’un demi-tour, d’autres non. Un O, par exemple, a le même aspect à l’envers. Un U, un A ou un R, eux, trahissent aussitôt qu’on les a fait pivoter.",
+    "Le corrigé officiel, s’appuyant sur le dessin des cartes, désigne cinq lettres à redresser : le A, le N, le R et les deux U. Les O et le K, dans la position où ils sont montrés, n’ont pas besoin d’être retournés. Vous comparez chaque carte à la lettre attendue de KANGOUROU, sans inventer une autre file.",
+    "Le piège est de tourner aussi les O, ou de compter les 9 cartes. À retenir : on ne retourne que les symboles dont l’orientation actuelle ne coïncide pas avec la lettre voulue."
+  ],
+  "509": [
+    "On cache sous un carré gris le dessin symétrique du kangourou par rapport à la droite en pointillés. Quel est ce dessin ? C’est la proposition C.",
+    "Une symétrie axiale renverse la figure comme un miroir posé sur la droite. Ce qui était à gauche de l’axe passe à droite, à la même distance ; ce qui regardait vers la droite regardera vers la gauche. Les distances à l’axe sont conservées, les mesures d’angles aussi.",
+    "Le corrigé officiel est une figure : elle superpose le kangourou de l’énoncé et son image, de part et d’autre des pointillés. Parmi les cinq silhouettes proposées, seule C est cette image. N’inventez pas un sixième croquis ; écartez les dessins qui ont simplement été translatés ou tournés sans retournement miroir.",
+    "Le piège est de confondre symétrie axiale et rotation d’un demi-tour. À retenir : le test fiable est de plier mentalement la feuille sur l’axe : les deux kangourous doivent alors coïncider."
+  ],
+  "510": [
+    "Des carreaux gris et des carreaux blancs à kangourou ont été posés régulièrement ; un trou est apparu. Combien de carreaux gris sont tombés ? Sept, proposition C.",
+    "Le mur suit un motif périodique, visible sur la partie encore intacte. Une fois le motif reconnu — l’alternance ou le décalage des gris et des kangourous — vous le prolongez sous le trou, case par case.",
+    "Le corrigé officiel numérote les sept carreaux gris manquants dans le trou. Vous ne devez pas inventer une autre mosaïque : recopiez le pavage de l’énoncé, puis comptez uniquement les cases qui, selon le motif, auraient dû être grises. Les propositions 5, 6, 8 ou 9 correspondent à un motif mal lu ou à un double comptage du bord.",
+    "Le piège est de compter toutes les cases du trou, y compris les blanches. À retenir : un pavage régulier se continue par périodicité ; on ne devine pas, on répète le motif."
+  ],
+  "511": [
+    "Koko le koala mange 5 feuilles par heure quand il est éveillé, et il a dormi 20 heures sur 24. Combien de feuilles a-t-il mangées hier ? Il en a mangé 20, proposition C.",
+    "Sur une journée de 24 heures, 20 heures de sommeil laissent 4 heures d’éveil. Pendant ces 4 heures seulement, Koko se nourrit.",
+    "Quatre heures à 5 feuilles par heure donnent 5 × 4 = 20 feuilles. Les propositions 0, 10, 40 ou 100 supposent soit qu’il n’a rien mangé, soit qu’il a mangé aussi en dormant, soit qu’il a brouté les 24 heures.",
+    "Le piège est de multiplier 5 par 20, le nombre d’heures de sommeil. À retenir : un débit « par heure d’activité » se multiplie par le temps d’activité, pas par le temps total."
+  ],
+  "512": [
+    "Le koala tient trois branches de 20 feuilles. Il en mange quelques-unes sur la première, autant qu’il en reste sur la première lorsqu’il passe à la deuxième, puis 2 sur la troisième. Combien lui en reste-t-il ? Il lui en reste 38, proposition E.",
+    "Appelez k le nombre de feuilles mangées sur la première branche. Il en reste alors 20 − k. Sur la deuxième, il mange précisément ce reste, donc 20 − k feuilles, et il y en reste k. Les deux premières branches, une fois le repas commencé, totalisent encore (20 − k) + k = 20 feuilles, quel que soit k.",
+    "Sur la troisième branche, 2 feuilles disparaissent, il en reste 18. Au total, 20 + 18 = 38 feuilles sont encore là. Autrement dit, le koala a mangé 20 feuilles sur les deux premières branches réunies, plus 2, soit 22, et 60 − 22 = 38.",
+    "Le piège est de chercher k, alors que k s’élimine. À retenir : quand on mange sur un tas le reste de l’autre, la somme des deux restes égale la taille d’un seul tas initial."
+  ],
+  "513": [
+    "Le corrigé officiel est une figure : elle trace un chemin de 24 zones qui répète une même séquence de trois animaux, sans boucle, en se déplaçant seulement à l’horizontale ou à la verticale.",
+    "Vous partez d’un animal, puis vous enchaînez toujours le même trio, comme un motif musical. Chaque pas change de case par un côté commun, jamais en diagonale, et vous n’avez pas le droit de revenir sur une zone déjà visitée. Le but est le plus long de ces chemins.",
+    "Pour le reconstruire, vous copiez la carte du zoo, vous choisissez un départ compatible avec le motif, puis vous avancez tant que le troisième animal du trio possède encore un voisin libre du bon type. Le dessin du corrigé montre un trajet de 24 cases : ne l’inventez pas, suivez-le sur la figure.",
+    "Le piège est de couper le motif, ou de sauter en diagonale pour « gagner » une case. À retenir : un plus long chemin à motif imposé se cherche d’abord sur les corridors où le trio se répète naturellement."
+  ],
+  "514": [
+    "Le corrigé officiel est une figure : elle montre un chemin qui visite toutes les cases du tableau, sans se recouper, en n’autorisant que les enchaînements de paires d’animaux permis par l’énoncé.",
+    "Deux cases successives ne peuvent pas porter la même paire dans le même ordre. En revanche, la paire inversée est acceptée, de même qu’une paire tout à fait différente. Le déplacement reste celui d’une tour d’une case : gauche, droite, haut ou bas, sans passer deux fois au même endroit.",
+    "Il s’agit donc d’un chemin hamiltonien sur la grille, avec une contrainte de labels. Vous partez d’une case, vous notez la paire, puis vous n’empruntez qu’un voisin dont l’étiquette est licite. Le tracé du corrigé parcourt tout le tableau : recopiez-le plutôt que d’en inventer un.",
+    "Le piège est d’interdire aussi la paire inversée, alors que la figure 2 de l’énoncé l’autorise. À retenir : on lit d’abord les exemples OUI et NON, puis on cherche un serpent qui respecte ces règles locales jusqu’à épuisement de la grille."
+  ],
+  "515": [
+    "Tristan traverse le labyrinthe du zoo en suivant le message N, S1, E2, S1, O2, S2, E3, N4, E1, O, E, S2, E1, S. Vers quel animal arrive-t-il ? Vers le chameau.",
+    "Chaque lettre est une direction : N nord, S sud, E est, O ouest. Un chiffre collé à la lettre indique le nombre de pas dans cette direction. Un symbole sans chiffre vaut un pas. Vous posez le doigt sur l’entrée, puis vous exécutez la liste dans l’ordre, sans prendre de raccourci.",
+    "Le labyrinthe de l’énoncé canalise ces pas : un ordre « E3 » avance de trois carrefours vers l’est, pas d’un seul. Au terme de la dernière instruction vers le sud, Tristan débouche face aux cinq animaux alignés. Le corrigé officiel le place devant le chameau, au milieu de la rangée antilope-buffle-chameau-dromadaire-éléphant.",
+    "Le piège est d’inverser O et E, ou de compter un « E2 » comme un seul pas. À retenir : un message de parcours se suit comme une recette, un verbe après l’autre, sur la figure donnée et non sur un plan inventé."
+  ],
+  "516": [
+    "Les reptiles plats du nid, tous identiques, s’assemblent sans trou. L’individu aux yeux ouverts mesure 3 cm du menton à la queue. Quelle est son aire ? Elle vaut 3√3 / 2 cm², soit environ 2,60 cm².",
+    "Le corrigé s’appuie sur la figure : trois demi-reptiles bien choisis reconstituent un triangle équilatéral de 3 cm de côté. L’aire de ce triangle est (√3 / 4) × 3² = 9√3 / 4 cm². Trois moitiés d’animal, c’est une fois et demie un reptile.",
+    "L’aire d’un spécimen est donc les deux tiers de l’aire du triangle : (2/3) × (9√3 / 4) = 3√3 / 2. Vous ne redessinez pas le nid : vous lisez sur la figure officielle quels trois demi-corps forment le triangle, puis vous calculez.",
+    "Le piège est de prendre le triangle entier pour un seul reptile, ou d’inventer un rectangle 3 × 1. À retenir : un pavage révèle souvent une figure simple (ici un triangle équilatéral) dont l’aire, une fois partagée, donne celle de la tuile."
+  ],
+  "517": [
+    "Un rectangle à 12 nœuds (quadrillage 2 × 3) doit être découpé en triangles non plats, à sommets sur les nœuds, deux à deux non superposables même après retournement. Pour combien de lamas au maximum ? Pour 7 lamas.",
+    "Chaque enclos est un triangle dont les trois sommets sont des poteaux. Deux triangles sont interdits s’ils ont la même forme et la même taille, qu’on puisse ou non les retourner comme une crêpe. On cherche donc le plus grand paquet de triangles incongruents qui remplissent le rectangle.",
+    "Le corrigé officiel est une figure : elle montre un découpage en 7 triangles tous différents. On ne peut pas aller à 8 : il n’existe pas assez de classes de triangles distincts sur ces 12 points pour paver davantage sans répéter une forme. Recopiez le dessin, n’inventez pas d’autres sommets.",
+    "Le piège est d’accepter deux triangles images l’un de l’autre dans un miroir, ou de compter un triangle plat aligné sur un bord. À retenir : « non superposables même retournés » signifie que l’on classe les triangles à isométrie près, réflexions comprises."
+  ],
+  "518": [
+    "Un couple de lapins, isolé, engendre chaque mois un nouveau couple à partir de son troisième mois, et personne ne meurt. Combien de couples a-t-on au bout d’un an ? On en a 144.",
+    "Au début des mois 1 et 2, il n’y a qu’un couple, encore trop jeune. Au début du mois 3, ce couple devient fécond et l’on passe à 2. Ensuite, chaque mois, tous les couples déjà présents le mois précédent sont encore là, et s’y ajoutent autant de nouveau-nés qu’il y avait de couples il y a deux mois (les seuls assez âgés).",
+    "On obtient la suite 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144 : chaque terme est la somme des deux précédents. C’est la suite de Fibonacci, et le douzième mois affiche 144 couples. Aucun lapin n’a disparu ; la croissance vient seulement des naissances décalées de deux mois.",
+    "Le piège est de doubler la population chaque mois, ce qui donnerait 4 096 couples. À retenir : un délai de maturation de deux mois transforme une croissance « fois deux » en une addition des deux derniers effectifs."
+  ],
+  "519": [
+    "Un lapin a déjà 77 sauts d’avance. Pendant 13 sauts de lapin, le kangourou en fait 9, et 3 sauts de kangourou égalent 8 sauts de lapin. Combien de sauts le kangourou doit-il pour rattraper le lapin ? Il lui en faut 63.",
+    "D’abord on met les longueurs dans la même unité. Trois sauts de kangourou valent huit sauts de lapin, donc neuf sauts de kangourou valent vingt-quatre sauts de lapin. Pendant que le kangourou fait ces neuf sauts, le lapin, lui, en ajoute 13.",
+    "À chaque bloc de neuf sauts, le kangourou gagne donc 24 − 13 = 11 sauts de lapin sur son retard. Le retard initial est de 77 sauts de lapin, et 77 = 7 × 11. Il faut 7 blocs, soit 7 × 9 = 63 sauts de kangourou, pour que l’avance soit entièrement résorbée.",
+    "Le piège est d’égaliser seulement les cadences 13 et 9, sans convertir les longueurs. À retenir : une poursuite se calcule dans une unité commune (ici le saut de lapin), puis on regarde ce que le poursuivant gagne à chaque cycle."
+  ],
+  "520": [
+    "Jeannot a deux fois plus de sœurs que de frères ; Blanchette, née de la même portée, a deux fois plus de frères que de sœurs. De combien de jeunes la portée se compose-t-elle ? De 4 jeunes : 2 mâles et 2 femelles.",
+    "Soit m le nombre de mâles et f celui de femelles. Jeannot, qui est un mâle, compte m − 1 frères et f sœurs, d’où f = 2(m − 1). Blanchette, qui est une femelle, compte f − 1 sœurs et m frères, d’où m = 2(f − 1).",
+    "On substitue : m = 2(2(m − 1) − 1) = 4m − 6, donc 3m = 6 et m = 2. Alors f = 2(2 − 1) = 2. La portée compte bien deux garçons et deux filles. Jeannot a 1 frère et 2 sœurs ; Blanchette a 2 frères et 1 sœur.",
+    "Le piège est de compter Jeannot parmi ses propres frères. À retenir : quand un enfant parle de ses frères ou de ses sœurs, on retire cet enfant de l’effectif de son sexe."
+  ],
+  "521": [
+    "Le clapier carré affiche 29 lapins sur chaque rangée du bord. Maître Renard vole pendant 7 jours sans que ces totaux changent. Comment les lapins sont-ils répartis au bout de 7 jours, et combien en a-t-il pris par jour ? Les bords portent 11, 1 et 17 (et le motif opposé 17, 1, 11), et il a pris 4 lapins par jour, soit 28 en tout.",
+    "Les quatre rangées du bord partagent les quatre coins : un même lapin d’angle est compté deux fois si l’on additionne les quatre 29. L’effectif réel n’est donc pas 116, mais 88. Renard peut diminuer ce total tout en maintenant 29 par rangée, en retirant des lapins au centre de chaque côté et en en ajoutant aux coins, ou l’inverse.",
+    "Le mouvement qui préserve les rangées consiste à ajouter ℓ lapins à chaque coin et à en retirer 2ℓ au milieu de chaque côté. Le total baisse alors de 4ℓ. Pour que les milieux restent positifs pendant 7 jours, ℓ = 1 chaque jour. On aboutit à la répartition 11, 1, 17 sur deux côtés opposés, et 1, 17, 1, 11 en regard. Renard a pris 4 lapins par jour, soit 28 en une semaine.",
+    "Le piège est de croire que 4 × 29 lapins occupent le clapier. À retenir : des totaux de bords qui se recouvrent aux coins permettent de déplacer des unités des milieux vers les angles sans alerter Mme Vubass, qui ne contrôle que les rangées."
+  ],
+  "522": [
+    "Vingt couples et dix lapins seuls se saluent tous, sauf les partenaires d’un même couple. Combien de fois le mot SALUT est-il prononcé ? 2 410 fois.",
+    "Il y a 20 × 2 + 10 = 50 lapins. Si chacun disait SALUT à chacun des 49 autres, on entendrait 50 × 49 = 2 450 salutations, car chaque paire échange deux mots, un dans chaque sens.",
+    "Les 20 couples s’abstiennent : cela retire 20 × 2 = 40 salutations (chaque partenaire ne dit pas le mot à l’autre). Il en reste 2 450 − 40 = 2 410. Les dix lapins seuls, eux, saluent tout le monde.",
+    "Le piège est de retrancher 20 seulement, en oubliant que SALUT est dit dans les deux sens, ou de compter 50 × 50. À retenir : un graphe presque complet moins quelques arêtes se calcule par le total moins les arêtes interdites, en respectant l’orientation si la parole est réciproque."
+  ],
+  "523": [
+    "Neuf enclos forment un carré magique : quatre d’entre eux contiennent 12, 15, 17 et 18 lapins, et chaque rangée, colonne ou diagonale a le même total. De combien de lapins Albin est-il propriétaire ? De 180.",
+    "Les quatre nombres donnés et leurs écarts de 3 (12, 15, 18) suggèrent une progression sur une diagonale. En poursuivant cette progression, le centre reçoit 20 et le coin opposé 23. La diagonale 17 + 20 + 23 vaut 60 : c’est la constante magique.",
+    "Trois rangées de somme 60 totalisent 180 lapins, chaque enclos n’étant compté qu’une fois. Une configuration compatible est 25, 12, 23 / 18, 20, 22 / 17, 28, 15. Toutes les lignes, colonnes et diagonales font 60, et les quatre cases de l’énoncé sont à leur place.",
+    "Le piège est d’additionner seulement 12 + 15 + 17 + 18. À retenir : dans un carré magique 3 × 3, le triple de la constante est l’effectif total, et la constante se lit souvent sur une diagonale une fois le centre trouvé."
+  ],
+  "524": [
+    "Sur un carré 6 × 6 de carottes, un lapin se déplace en ligne ou en colonne et doit pouvoir tout manger, quel que soit le départ. Sur un 5 × 5 de roches, il peut tout fouler mais pas refermer la boucle. Pourquoi ? Parce que le 6 × 6 admet un circuit fermé, alors que le 5 × 5, de taille impaire, n’admet qu’un chemin, pas une boucle.",
+    "Le quadrillage 6 × 6 a un nombre pair de cases. Il possède un cycle qui visite chaque caillou une fois et revient au départ : une série d’allers-retours en peigne, par exemple, referme la promenade. Dès qu’un tel cycle existe, on peut le « casser » n’importe où : le lapin part de la case de votre choix et parcourt le même cycle décalé. Le corrigé officiel dessine un de ces circuits ; recopiez-le.",
+    "Le 5 × 5 a 25 cases, un nombre impair. Coloriez le damier en noir et blanc : chaque pas change de couleur. Un tour fermé de 25 pas devrait revenir à la couleur de départ après un nombre impair de changements, ce qui est impossible. Un chemin qui visite les 25 roches existe (le corrigé en montre un), mais ses extrémités ont la même parité de somme ligne + colonne, donc ne sont pas voisines.",
+    "Le piège est de croire que « tout visiter » implique « revenir ». À retenir : un graphe biparti n’a de cycle impair ; une grille n × n n’a de circuit hamiltonien que si n est pair."
+  ],
+  "525": [
+    "Océanne a 40 lapins, 5 par enclos, 15 par côté de trois enclos. Quatre lapins changent d’enclos, et chaque côté de trois enclos affiche 16. Quelle répartition est possible le matin ? 6 lapins à chaque coin et 4 au milieu de chaque côté.",
+    "Huit enclos forment le pourtour d’un carré : quatre coins et quatre milieux de côtés. Au départ, chacun contient 5 lapins, et un côté (coin + milieu + coin) vaut 15. Après la nuit, chacun de ces côtés vaut 16, donc a gagné 1 lapin en lecture de bord.",
+    "Une répartition qui convient place 6 lapins dans chaque coin et 4 dans chaque milieu : chaque côté fait 6 + 4 + 6 = 16, et le total reste 4 × 6 + 4 × 4 = 40. Quatre lapins ont quitté les milieux pour les coins, un par côté. Le corrigé officiel écrit précisément 6, 4, 6, 4, 4, 6, 4, 6 autour du carré.",
+    "Le piège est de déplacer 4 lapins tous dans le même enclos, ce qui casserait trois côtés sur quatre. À retenir : augmenter d’une unité chaque somme de bord, à effectif constant, se fait en transférant des milieux vers les coins."
+  ],
+  "526": [
+    "Chaque jour, Pétronille donne la même quantité de carottes. Le premier jour : 5 par lapin et 9 de reste ; après le départ de 2 lapins : 6 par lapin et 9 de reste ; après le retour de 5 : 4 par lapin et 9 de reste. Combien y a-t-il de lapins, au minimum, le troisième jour ? Il y en a 15.",
+    "Soit n le nombre de lapins le premier jour. L’égalité des stocks s’écrit 5n + 9 = 6(n − 2) + 9. Les +9 s’annulent, et 5n = 6n − 12, donc n = 12. Le deuxième jour, il reste 10 lapins.",
+    "Cinq lapins reviennent, ce qui fait 15 le troisième jour. On vérifie le stock : 5 × 12 + 9 = 69, 6 × 10 + 9 = 69, 4 × 15 + 9 = 69. Les trois matins puisent dans le même sac de 69 carottes, et 15 est l’effectif forcé, pas seulement un minimum commode.",
+    "Le piège est d’oublier le reste de 9 et de chercher un multiple commun de 4, 5 et 6. À retenir : un même stock « quota × têtes + reste » sur plusieurs jours se traduit par des égalités qui fixent l’effectif."
+  ],
+  "527": [
+    "Chaque jour, Tibbar mange soit 2 choux et 3 carottes, soit 1 chou et 5 carottes. La semaine dernière, il a mangé 27 carottes. Combien de choux a-t-il mangés ? 11, proposition E.",
+    "En 7 jours, si x désigne le nombre de jours « 5 carottes », alors 7 − x jours sont des jours « 3 carottes ». On a 5x + 3(7 − x) = 27, soit 2x + 21 = 27, donc 2x = 6 et x = 3. Trois jours à 5 carottes et quatre jours à 3 carottes : 15 + 12 = 27.",
+    "Les choux suivent : 3 jours à 1 chou et 4 jours à 2 choux, soit 3 + 8 = 11. Aucune autre décomposition de 27 en 7 paquets de 3 ou de 5 ne tombe juste (par exemple 5 × 5 + 2 × 3 dépasse la semaine, et 1 × 5 + 6 × 3 = 23, trop court).",
+    "Le piège est de répondre 7, un chou par jour, ou 27. À retenir : deux menus quotidiens se traduisent par une équation à une inconnue, le nombre de jours de chaque type, encadrée par la longueur de la semaine."
+  ],
+  "528": [
+    "Trois lapins vident 45 carottes, 21 navets et 5 choux, avec des reports : le blanc mange une carotte ; le marron un navet ou sinon 3 carottes ; le noir un chou, sinon 3 navets, sinon 5 carottes. Pendant combien de jours tiendront-ils à trois ? Pendant 13 jours.",
+    "Les 5 choux durent 5 soirs : chaque soir le noir prend un chou, le marron un navet, le blanc une carotte. Il reste alors 40 carottes et 16 navets. Dès lors le noir passe aux navets : à eux deux, noir et marron en consomment 4 par soir. Ces 16 navets font encore 4 soirs.",
+    "Après 9 soirs, il reste 45 − 9 = 36 carottes, et plus aucun navet ni chou. Chaque soir désormais, les trois lapins prennent 1 + 3 + 5 = 9 carottes. 36 ÷ 9 = 4 soirs de plus. Le total est 5 + 4 + 4 = 13 jours, et le quatorzième soir les carottes manqueraient.",
+    "Le piège est de diviser chaque légume séparément par trois, ou d’oublier que le noir se rabat sur les navets avant les carottes. À retenir : un régime à reports se découpe en phases, selon le légume encore disponible pour le plus exigeant."
+  ],
+  "529": [
+    "Cinq lapins donnent chacun deux indications, une vraie et une fausse. Quel est l’ordre d’arrivée ? Barnabé, Caligula, Dodu, Aristide, Eustache.",
+    "Caligula et Eustache se disputent la deuxième place et placent Dodu premier ou troisième. Dans les deux lectures cohérentes, Dodu n’est donc pas deuxième. La phrase d’Aristide « Dodu était deuxième » est fausse, ce qui force sa seconde phrase à être vraie : Aristide est quatrième.",
+    "Dodu n’est ni deuxième ni, d’après ses propres paroles compatibles, dernier : sa phrase « j’ai fini dernier » est donc le mensonge, et « Barnabé a gagné » est la vérité. Barnabé est premier, ce qui écarte Dodu de la tête. Dodu est alors troisième, Caligula deuxième, et Eustache, dernier restant, cinquième.",
+    "Le piège est d’attendre la réplique de Barnabé : la tortue n’en a pas besoin. À retenir : avec une vraie et une fausse par personne, on commence par les faits impossibles à deux (deux deuxièmes, deux Dodu), puis on en déduit quelle moitié de phrase tomber."
+  ],
+  "530": [
+    "Mathilde colle 90 autocollants : une part sur le frigo, le triple dans la salle de bains, le quintuple dans la chambre. Combien sur chaque support ? 10 sur le frigo, 30 dans la salle de bains, 50 dans la chambre.",
+    "Si f désigne le nombre collé sur le frigo, alors la salle de bains en reçoit 3f et la chambre 5f. Le total s’écrit f + 3f + 5f = 9f = 90.",
+    "D’où f = 10. La salle de bains en a 30, la chambre 50. La somme 10 + 30 + 50 = 90, et les rapports 3 et 5 sont respectés.",
+    "Le piège est de partager 90 en trois parts égales, ou de prendre 3 + 5 = 8 parts au lieu de 1 + 3 + 5. À retenir : un objet « une fois, trois fois, cinq fois » pèse 9 parts ; on divise le total par 9."
+  ],
+  "531": [
+    "Le clapier a cinq niveaux de quatre cages. Treize cages ont un lapin, avec sept indices de lignes et de colonnes. Quelles cages Pierre voit-il occupées ? Le niveau 3 est plein, le niveau 4 a ses trois cages de droite, le niveau 1 ses trois cages de gauche, le niveau 5 la seule cage de gauche, le niveau 2 les deux cages du milieu.",
+    "Le troisième niveau est plein (indice 6). La colonne de gauche alterne (indice 3) : comme le niveau 3 y a un lapin, les niveaux 2 et 4 y sont vides, et les niveaux 1 et 5 y sont occupés. Le quatrième niveau a trois lapins (indice 2) : les trois cages restantes de ce niveau sont donc occupées.",
+    "La colonne de droite n’a que deux lapins (indice 4) : or les niveaux 3 et 4 y sont déjà occupés, donc les niveaux 1, 2 et 5 y sont vides. Le premier niveau doit avoir trois lapins (indice 1) : hors la droite vide, ses trois autres cages sont occupées. Le cinquième niveau n’a qu’un lapin (indice 5) : c’est celui de gauche déjà placé. Il manque encore deux lapins pour faire 13 : ce sont les deux cages centrales du deuxième niveau.",
+    "Le piège est de noircir toute une colonne dès qu’on y voit un lapin. À retenir : on commence par les lignes saturées (toutes pleines ou déjà au quota), puis les colonnes dont le quota est atteint, et l’on termine par le total."
+  ],
+  "532": [
+    "Cochons, vaches, lapins et chevaux étaient en nombre égal. Une vache sur cinq est morte ; il y a autant de chevaux morts que de cochons survivants ; les lapins survivants forment 5/14 des animaux encore en vie. Combien de lapins sont morts ? Aucun.",
+    "Vous pouvez poser 100 bêtes de chaque espèce au départ, la proportion finale ne dépendant pas de cette échelle. Il reste alors 80 vaches. Si c cochons survivent, c chevaux sont morts, donc 100 − c chevaux survivent. Soit ℓ le nombre de lapins survivants.",
+    "Le total des survivants vaut c + ℓ + 80 + (100 − c) = ℓ + 180. L’énoncé donne ℓ / (ℓ + 180) = 5/14. D’où 14ℓ = 5ℓ + 900, donc 9ℓ = 900 et ℓ = 100. Tous les lapins sont encore là : aucun n’est mort. Le c des cochons s’est éliminé tout seul.",
+    "Le piège est de tuer aussi un cinquième des lapins, par analogie avec les vaches. À retenir : une proportion parmi les survivants, jointe à des effectifs initiaux égaux, peut forcer un groupe à n’avoir subi aucune perte."
+  ],
+  "533": [
+    "Jeannot part d’un point du bord d’une pelouse circulaire de 10 m de diamètre, atterrit toujours sur le bord, ne se répète pas, et rejoint le point diamétralement opposé en 4 sauts égaux de plus de 5 m. Quelle est la longueur d’un saut ? Environ 9,24 m, soit 5√(2 + √2) m.",
+    "Le départ et l’arrivée sont les extrémités d’un diamètre. Quatre cordes égales, à extrémités sur le cercle, relient ces deux points. Si l’on restait sur un même demi-cercle, chaque corde sous-tendrait 45° au centre et mesurerait 10 sin(22,5°) ≈ 3,83 m, ce qui contredit l’exigence « plus de 5 m ».",
+    "Il faut donc les cordes plus longues, d’angle au centre 135°. Leur longueur vaut 10 sin(67,5°) ≈ 9,24 m, et l’on a la valeur exacte 5√(2 + √2) m. Les quatre atterrissages sont distincts, tous sur le bord, et le cinquième point (l’arrivée) est bien l’antipode. Le corrigé officiel dessine les points sur le cercle : recopiez ce principe, n’inventez pas un autre polygone.",
+    "Le piège est de prendre le demi-périmètre 5π / 2, comme si Jeannot glissait sur l’arc. À retenir : un saut d’un bord à l’autre est une corde, et l’angle au centre se lit en partageant 180° plus éventuellement un tour entier, pour respecter la longueur minimale."
+  ],
+  "534": [
+    "Daniel dit 35 œufs, Hillary 29, Joelle 28, Paul 33, Richelle 30. Une personne a raison ; les autres se trompent de 1, 2, 3 et 5 œufs. Qui a bien deviné ? Richelle.",
+    "Vous testez chaque candidat comme vérité, puis vous regardez si les quatre écarts restants reproduisent exactement l’ensemble {1, 2, 3, 5}. Si Daniel a raison (35), personne n’a proposé 34 ni 36 : l’écart 1 manque. Si Hillary a raison (29), l’écart 2 exigerait 27 ou 31, absents. Si Joelle a raison (28), l’écart 3 exigerait 25 ou 31, absents. Si Paul a raison (33), l’écart 1 exigerait 32 ou 34, absents.",
+    "Il reste Richelle et 30 œufs. Les écarts sont alors 35 − 30 = 5 (Daniel), 30 − 29 = 1 (Hillary), 30 − 28 = 2 (Joelle) et 33 − 30 = 3 (Paul). On retrouve précisément 1, 2, 3 et 5. Seule cette hypothèse ferme le puzzle.",
+    "Le piège est de choisir 33, proche de 35 et 30, sans vérifier la présence de tous les écarts. À retenir : une unique vérité plus une liste d’erreurs se valide en épuisant les candidats, pas en prenant le nombre du milieu."
+  ],
+  "535": [
+    "Trottin avait 20 carottes, en mange 2 par jour, et a mangé la douzième un mercredi. Quel jour a-t-il mangé la première ? Un vendredi, proposition E.",
+    "Chaque jour, Trottin croque deux carottes de rangs consécutifs : 1 et 2 le premier jour, 3 et 4 le deuxième, et ainsi de suite. La douzième carotte est donc jumelée à la onzième, et ce couple occupe le sixième jour.",
+    "Si le sixième jour est un mercredi, on remonte : mardi (9-10), lundi (7-8), dimanche (5-6), samedi (3-4), vendredi (1-2). La première carotte a donc été mangée un vendredi. Cinq jours avant mercredi, c’est vendredi.",
+    "Le piège est de croire que la douzième carotte est seule dans sa journée, ou de remonter de 12 jours. À retenir : avec deux objets par jour, le numéro pair 2k tombe le k-ième jour ; on convertit ensuite k en jour de la semaine."
+  ],
+  "536": [
+    "Un canard s’échange contre deux poules, un lapin contre une oie et trois canards, une oie contre deux canards et deux poules. Combien d’oies vaut un lapin ? Deux oies, proposition A.",
+    "On cherche un taux de change commun. L’oie s’échange contre deux canards plus deux poules, et deux poules valent un canard. Donc une oie vaut trois canards.",
+    "Le lapin s’échange contre une oie plus trois canards. Or trois canards, c’est précisément une oie. Un lapin vaut donc une oie plus une oie, c’est-à-dire deux oies. Les cinq propositions plus grandes supposent qu’on additionne les animaux sans convertir.",
+    "Le piège est de compter « 1 oie + 3 canards » comme 4 oies. À retenir : on exprime chaque animal dans une même unité (ici le canard, ou l’oie), puis on compare."
+  ],
+  "537": [
+    "Le lapin part vers l’est, tourne à droite, puis deux fois à gauche, et repart vers l’est. L’angle marqué d’un point d’interrogation mesure 92°, proposition E.",
+    "Les deux segments est, initial et final, sont parallèles. Sur la figure, un angle de 44° et un angle de 132° sont donnés. Le supplémentaire de 132° est 48° : c’est l’angle aigu formé par le même coude, de l’autre côté de la droite.",
+    "En menant une parallèle auxiliaire, comme le fait le corrigé officiel, les angles alternes-internes recopient 44° et 48° le long de la trajectoire. L’angle cherché, au sommet du zigzag, est la somme 44° + 48° = 92°. Vous lisez ces reports sur la figure officielle, sans inventer d’autres mesures.",
+    "Le piège est de répondre 88°, en faisant 132° − 44°, ou 90° par « impression de rectangle ». À retenir : deux droites parallèles coupées par des sécantes transmettent les angles, et un supplémentaire (180° − x) apparaît à chaque coude plat."
+  ],
+  "538": [
+    "Deux pesées équilibrent Zap et Zip, l’une avec 8 kg, l’autre avec 2 kg. Combien pèse Zap ? Il pèse 3 kg, proposition B.",
+    "La seconde balance dit, une fois lue sur la figure, que Zip pèse autant que Zap plus 2 kg. Autrement dit Zip = Zap + 2. La première balance oppose 8 kg à Zap et Zip réunis, ou une configuration équivalente qui, après substitution, isole deux Zap.",
+    "En remplaçant Zip par Zap + 2 kg dans le premier équilibre, on obtient que deux fois le poids de Zap vaut 6 kg, donc Zap = 3 kg. Alors Zip = 5 kg, et l’on vérifie les deux plateaux : les masses affichées retombent juste.",
+    "Le piège est d’attribuer les 8 kg à Zap seul. À retenir : deux équilibres sont un système de deux équations ; on substitue le plus simple dans l’autre."
+  ],
+  "539": [
+    "La famille Lapin a mangé 32 carottes : les cinq petits en ont pris 10 à eux tous, et le papa en a mangé 6 de plus que la maman. Combien Jeannot, le père, en a-t-il mangées ? Il en a mangé 14.",
+    "Les deux parents se partagent 32 − 10 = 22 carottes. Si la mère en a pris m, le père en a pris m + 6. On a 2m + 6 = 22, donc 2m = 16 et m = 8.",
+    "Le père a donc mangé 8 + 6 = 14 carottes. Contrôle : 10 + 8 + 14 = 32. Les petits, encore jeunes, n’entrent pas dans l’écart de 6, qui ne concerne que les deux adultes.",
+    "Le piège est de faire 32 − 6 = 26, puis de diviser par 2, en oubliant les 10 carottes des petits. À retenir : on retire d’abord les parts déjà chiffrées, puis on partage le reste selon l’écart annoncé."
+  ],
+  "540": [
+    "Même potager que plus haut : 45 carottes, 21 navets, 5 choux, et les mêmes reports alimentaires. Pendant combien de jours les trois lapins se nourrissent-ils ensemble ? Pendant 13 jours.",
+    "La première phase dure autant qu’il y a de choux : 5 jours, à raison d’un chou, d’un navet et d’une carotte par soir. Il reste 16 navets. La deuxième phase, où le noir se rabat sur 3 navets et le marron sur 1, consomme 4 navets par soir et dure 4 jours.",
+    "Après 9 jours, 36 carottes restent. La troisième phase coûte 9 carottes par soir (1 + 3 + 5) et dure 4 jours. Le total 5 + 4 + 4 = 13 est le même que pour l’énigme jumelle : les données n’ont pas changé, seule la source du problème diffère.",
+    "Le piège, ici, est de croire qu’un second énoncé presque identique cache un autre chiffre. À retenir : on relit les stocks ; s’ils sont les mêmes, la durée est la même, qu’on recalcule par phases pour s’en assurer."
+  ],
+  "541": [
+    "Cinq lapins sont en cercle ; chacun dit : « je suis assis entre deux menteurs ». Les malins mentent toujours, les autres disent toujours vrai. Combien y a-t-il de malins ? Il y en a 3.",
+    "Un lapin sincère dit vrai : ses deux voisins sont donc malins. Un malin ment : il n’est donc pas entre deux malins. On en déduit qu’il est interdit d’avoir trois malins consécutifs (le central dirait alors la vérité). Il est aussi interdit d’avoir deux sincères consécutifs (chacun exigerait deux voisins malins, or ils se touchent).",
+    "Dans un cercle de 5, la seule configuration qui alterne assez est : malin, sincère, malin, sincère, malin. Chaque sincère est bien entre deux malins ; chaque malin a au moins un voisin sincère, donc ment légitimement. Deux malins ne suffisent pas, quatre en créent trois d’affilée. Alice ne peut pas nommer les sièges, mais elle sait qu’ils sont trois.",
+    "Le piège est d’imaginer cinq menteurs, ce qui rendrait leur phrase vraie. À retenir : une phrase identique dite par tous, autour d’une table, force souvent une alternance, corrigée par l’imparité de l’effectif."
+  ],
+  "542": [
+    "Un lapin à 10 m/s et un hérisson à 1 m/s partent en sens opposés sur 550 m, se rencontrent, puis le hérisson fait demi-tour. Le lapin s’arrête au point de départ. Combien de temps attend-il le hérisson ? 45 s, proposition A.",
+    "Tant qu’ils se font face, ils ferment les 550 m à 11 m/s. Ils se rencontrent au bout de 550 ÷ 11 = 50 s. Le lapin a alors parcouru 500 m, le hérisson 50 m. Il reste 50 m au lapin pour rentrer, et les mêmes 50 m au hérisson une fois retourné.",
+    "Le lapin couvre ces 50 m en 5 s et s’arrête. Le hérisson, à 1 m/s, met 50 s pour les mêmes 50 m. La différence d’attente est 50 − 5 = 45 s. Pendant ce temps le lapin est déjà au départ, immobile.",
+    "Le piège est de faire attendre 50 s, en oubliant que le lapin a encore un bout de piste, ou 500 s en lui faisant refaire le tour. À retenir : après la rencontre, on reprend les distances restantes avec les mêmes vitesses, le hérisson ayant seulement changé de sens."
+  ],
+  "543": [
+    "Le lapin veut rejoindre sa carotte sans passer deux fois au même endroit. Combien de chemins existent-ils ? Il y en a 12.",
+    "Le corrigé officiel est une figure : le labyrinthe de l’énoncé, avec ses embranchements, n’est pas à redessiner. Un chemin licite est une promenade de l’entrée (le lapin) jusqu’à l’arrivée (la carotte) qui n’emprunte aucun nœud deux fois.",
+    "On dénombre en partant du lapin et en marquant, à chaque carrefour, les suites encore ouvertes. Certains corridors se rejoignent : il ne faut pas compter deux fois le même tracé. L’énumération exhaustive, celle du corrigé, aboutit à 12 trajectoires distinctes.",
+    "Le piège est d’autoriser les allers-retours, ce qui inventerait une infinité de chemins. À retenir : « sans passer deux fois au même endroit » transforme le labyrinthe en un arbre de choix finis, que l’on parcourt jusqu’aux feuilles-carottes."
+  ],
+  "544": [
+    "Les trois Lapin ont mangé 73 carottes ; Jeannot en a pris 12, le père 5 de plus que la mère. Combien la mère en a-t-elle mangées ? 28, proposition B.",
+    "Les parents se partagent 73 − 12 = 61 carottes. Si la mère en a mangé m, le père en a mangé m + 5, et 2m + 5 = 61.",
+    "On retire d’abord l’écart : 61 − 5 = 56, puis on partage en deux : m = 28. Le père a donc pris 33 carottes, et 12 + 28 + 33 = 73. Les propositions 27 ou 31 viennent d’un oubli de l’écart ou d’une mauvaise soustraction.",
+    "Le piège est d’attribuer les 5 carottes de plus à Jeannot. À retenir : on isole la part connue, on retranche l’écart, on divise le reste pair par deux."
+  ],
+  "545": [
+    "Trois animaux ont couru. Le lapin est arrivé avant le chien ; le chien n’est pas dernier. Dans quel ordre sont-ils arrivés ? Lapin, chien, chat : proposition E.",
+    "« Le lapin avant le chien » interdit au chien la première place parmi ces deux-là : le chien est deuxième ou troisième. « Le chien n’est pas dernier » écarte la troisième place. Le chien est donc exactement deuxième.",
+    "Le lapin, arrivé avant le chien, ne peut plus être que premier. Le chat, seul restant, est troisième. Parmi les cinq tableaux, seule la colonne E affiche cet ordre. Les autres mettent le chien premier ou dernier, ce que les deux phrases interdisent ensemble.",
+    "Le piège est d’accorder au chat une phrase qu’il n’a pas dite, ou de placer le lapin deuxième. À retenir : deux comparaisons qui encadrent un même coureur (avant X, et X pas dernier) fixent souvent X au milieu."
+  ],
+  "546": [
+    "Huit lapins, blancs ou gris, sont placés sur un pentagramme avec quatre alignements dont on connaît le décompte de couleurs. Le corrigé officiel est une figure : elle donne la place et la couleur de chacun.",
+    "Un alignement de quatre lapins à « 2 gris et 2 blancs » est équilibré ; un alignement annoncé « 3 gris et 1 blanc » est presque tout gris. Ces totaux se recoupent : un même lapin appartient à deux droites, donc sa couleur est comptée deux fois, et l’on peut en déduire les cases forcées.",
+    "Vous posez les noms sur l’étoile de l’énoncé — Alcofribas, Biscotte, Coco, Dicite, Elvis, Fripouille, Gaufrette, Hope — puis vous coloriez pour satisfaire les quatre phrases à la fois. Le dessin du corrigé fixe l’unique disposition. N’inventez pas un autre pentagramme.",
+    "Le piège est de colorier chaque droite séparément, sans vérifier les sommets communs. À retenir : des alignements qui se croisent forment un petit système ; on commence par la droite la plus contrastée, puis on propage."
+  ],
+  "547": [
+    "Il faut remplir une grille 5 × 5 avec L, A, P, I, N, sans répéter une lettre dans une ligne ni dans une colonne. Quelle est la grille complète ? L A P I N / N I L P A / I P N A L / P L A N I / A N I L P.",
+    "C’est un carré latin sur l’alphabet LAPIN. Les lettres déjà posées interdisent, dans leur ligne et leur colonne, toute seconde occurrence. On avance case par case, en commençant par les lignes les plus remplies.",
+    "La première ligne se complète en L A P I N. La deuxième devient N I L P A, la troisième I P N A L, la quatrième P L A N I, la cinquième A N I L P. Chaque lettre apparaît une fois par ligne et par colonne, et les lettres de l’énoncé sont à leur place.",
+    "Le piège est de répéter un P déjà vu dans la même colonne, ou de sortir de l’alphabet LAPIN. À retenir : dès qu’une ligne n’a plus qu’une case vide, la lettre manquante y est forcée, à condition qu’elle n’occupe pas déjà la colonne."
+  ],
+  "548": [
+    "Trois phrases utilisent une seule fois Mon / Son / Ton, léopard / lion / tigre, et court / marche / se repose. Quelles sont-elles ? Mon lion court ; son léopard se repose ; ton tigre marche.",
+    "L’indice 3 dit que l’animal qui vous appartient marche : Ton … marche. L’indice 4 dit que l’animal qui se repose lui appartient : Son … se repose. Il reste Mon … court pour la première phrase.",
+    "L’indice 1 : le tigre ne vous appartient pas (donc Son ou Ton) et il se déplace (court ou marche). Combiné à « Ton … marche », cela force Ton tigre marche. L’indice 2 : le léopard ne vous appartient pas (Mon ou Son) et ne court pas (marche ou se repose). Combiné à « Son … se repose », cela force Son léopard se repose. Le dernier trio est alors Mon lion court.",
+    "Le piège est d’attribuer le tigre à « Mon », malgré « le tigre ne m’appartient pas ». À retenir : on place d’abord les verbes liés aux possessifs, puis on injecte les espèces par élimination."
+  ],
+  "549": [
+    "Le directeur ouvre seul ; l’adjoint ouvre avec n’importe quel chef ; trois chefs ouvrent ensemble. Combien de serrures faut-il ? Il en faut 7.",
+    "On pose une serrure pour chaque coalition minimale qui ne doit pas pouvoir ouvrir, et l’on donne la clé de cette serrure à tous ceux qui n’appartiennent pas à la coalition. Ainsi, cette coalition-là rate toujours une clé, tandis que tout groupe un peu plus grand la possède.",
+    "Les coalitions interdites minimales sont : l’adjoint tout seul, et chacune des six paires de chefs (il y a 4 chefs, donc 6 paires). Cela fait 1 + 6 = 7 serrures. L’adjoint n’a pas la clé n° 1, que tous les chefs ont ; chaque paire de chefs rate la clé qui lui est dédiée, que l’adjoint et les deux autres chefs possèdent. Le directeur a les sept clés.",
+    "Le piège est de mettre une serrure par personne (5), ou une par chef (4). À retenir : le nombre de serrures d’un tel protocole est le nombre d’équipes « presque autorisées » que l’on veut encore bloquer."
+  ],
+  "550": [
+    "Le corrigé officiel est une figure : elle montre un parcours de cavalier qui visite une seule fois chacune des vingt parcelles du chenil, du coin supérieur gauche au coin inférieur droit ouvert sur l’extérieur.",
+    "Un mouvement de cavalier saute en L, par-dessus les murets, d’une parcelle à une autre qui n’est pas voisine au sens habituel. Le lévrier doit réaliser un chemin hamiltonien sur le graphe du cavalier de ce rectangle 4 × 5, avec départ et arrivée imposés. Dudeney en recensait 12.",
+    "Pour en trouver un, vous marquez la case de départ, puis vous avancez vers une case encore libre atteignable en L, en gardant l’arrivée pour la fin. Le dessin du corrigé en exhibe un : recopiez-le, n’inventez pas une autre numérotation des vingt cases.",
+    "Le piège est de marcher d’une case à sa voisine orthogonale, comme un roi ou une tour. À retenir : « mouvement de cavalier » change complètement le graphe ; les cases « loin » au regard du chenil deviennent les seules adjacentes."
+  ],
+  "551": [
+    "Le Lion ment lundi, mardi, mercredi ; la Licorne ment jeudi, vendredi, samedi. Tous deux disent : « hier, c’était un de mes jours de mensonge. » Quel jour sommes-nous ? Un jeudi.",
+    "Un menteur qui dit « j’ai menti hier » décrit en réalité un jour de vérité la veille — mais comme il ment aujourd’hui, la phrase est fausse, donc hier n’était pas un jour de mensonge. Un sincère qui dit la même phrase dit vrai : hier était bien un jour de mensonge. On dresse, pour chaque jour, si chacun peut prononcer cette phrase.",
+    "Le Lion ne peut la dire que le lundi (premier jour de mensonge, la veille étant un dimanche sincère) et le jeudi (premier jour de vérité après trois mensonges). La Licorne ne peut la dire que le jeudi et le dimanche, par le même basculement. Le seul jour commun est le jeudi : ce jour-là le Lion dit vrai (la veille mercredi il mentait) et la Licorne ment (la veille mercredi elle disait vrai, donc « j’ai menti hier » est faux).",
+    "Le piège est de conclure « dimanche », jour où la Licorne est sincère mais où le Lion, sincère aussi, n’a pas menti la veille. À retenir : deux calendriers de mensonge se recoupent aux jours de bascule ; on cherche l’intersection des jours possibles."
+  ],
+  "552": [
+    "Sur un circuit fait de trois-quarts de cercle et des diagonales d’un carré, la tortue est 363 fois plus lente que le lièvre. Après 2 005 rencontres (dépassements ou croisements au carrefour, hors départ), le lièvre abandonne. Combien de fois a-t-il croisé la tortue au carrefour ? 11 fois.",
+    "Pendant que la tortue parcourt une moitié de circuit, le lièvre en parcourt 363 demi-circuits, soit 181 tours complets plus une demi-boucle. Il a alors dépassé la tortue 181 fois et se retrouve au carrefour, en position de la croiser. La seconde moitié du circuit de la tortue reproduit le même décompte : encore 181 dépassements, puis un nouveau croisement, et l’on est revenu aux positions de départ.",
+    "Les rencontres s’organisent donc en cycles de 182 = 181 dépassements + 1 croisement. Or 2 005 = 11 × 182 + 171. On a donc 11 cycles complets, soit 11 croisements au carrefour, suivis de 171 dépassements qui n’ont pas encore atteint le croisement suivant. Quand le lièvre s’arrête, il a croisé la tortue 11 fois au carrefour.",
+    "Le piège est de répondre 2 005, en comptant tous les dépassements comme des croisements, ou 181. À retenir : on identifie la période (beaucoup de dépassements, puis un croisement), on divise le total de rencontres par cette période, et le quotient est le nombre de croisements achevés."
+  ]
+}

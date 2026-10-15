@@ -1,0 +1,557 @@
+{
+  "1": [
+    "Le corrigé officiel est une figure : il faut y reconnaître les trois abeilles qui ont bougé et les cases voisines où elles se sont posées. L’énoncé place neuf abeilles sur un réseau quadrillé de telle sorte que deux d’entre elles ne sont jamais sur la même rangée horizontale, verticale ou diagonale. Après le déplacement de trois d’entre elles vers des cases voisines encore libres, cette même propriété reste vraie.",
+    "Cette contrainte ressemble au problème des reines sur un échiquier : chaque abeille « tient » toute sa ligne, toute sa colonne et ses diagonales. Au départ, le hasard a déjà produit une configuration sans aucun alignement. Seules trois abeilles quittent leur case, et chacune n’a le droit de glisser que d’une case, vers une case vide.",
+    "Pour retrouver le mouvement, on recopie fidèlement la figure de l’énoncé, puis on examine les abeilles qui possèdent une case libre adjacente. Après le triple saut, on vérifie à nouveau l’absence d’alignement. Si deux abeilles se retrouvent sur une même diagonale, le candidat est à écarter. Sans la figure du corrigé, on ne doit pas inventer de coordonnées.",
+    "Le piège consiste à faire sauter une abeille de plus d’une case, ou à n’en déplacer que deux. Les diagonales comptent autant que les lignes et les colonnes. À retenir : un tout petit glissement local peut préserver une propriété globale d’indépendance, à condition de choisir les trois bonnes pièces."
+  ],
+  "2": [
+    "L’apiculteur cherche le plus grand nombre de ruches que l’on peut placer dans un rectangle de 3 km sur 4 km, avec au moins 2 400 m entre deux ruches. La réponse est cinq, et six est impossible.",
+    "Cinq ruches se placent sans peine : une à chaque sommet du rectangle et une au centre. Entre un sommet et le centre, ou entre deux sommets consécutifs, la distance vaut au moins 2 500 m, donc davantage que le minimum exigé. Cette construction montre que cinq est atteignable.",
+    "Pour montrer que six est trop, on découpe le domaine en cinq morceaux assez petits pour que deux points d’un même morceau soient toujours à moins de 2 400 m l’un de l’autre. Si l’on plaçait six ruches, deux d’entre elles tomberaient forcément dans le même morceau, par le principe des tiroirs, et seraient alors trop proches.",
+    "Le piège est de croire qu’un pavage régulier plus serré gagne une sixième ruche, ou d’oublier que la distance se mesure en ligne droite. À retenir : une construction donne le « au moins » ; un argument de découpage donne le « au plus »."
+  ],
+  "3": [
+    "Mathias a assemblé 48 petits triangles en une figure qui évoque une ruche, et l’on demande le nombre d’hexagones réguliers de toutes tailles. Il y en a 20 en tout.",
+    "Un hexagone régulier, ici, a six côtés égaux. Les plus petits ont un segment de la figure par côté : on en compte 16 en parcourant la mosaïque sans en oublier au bord ni au centre. Les plus grands ont deux segments par côté : ils sont plus rares, et l’on n’en trouve que 4.",
+    "La démarche consiste donc à classer les hexagones par longueur de côté, puis à les dénombrer séparément. On additionne ensuite les deux familles : 16 + 4 = 20. Il ne faut compter que les hexagones vraiment réguliers, pas les hexagones « écrasés » dont les côtés n’auraient pas la même longueur.",
+    "Le piège habituel est de ne voir que les petites cellules, ou au contraire de compter deux fois le même grand hexagone. À retenir : dès qu’une figure contient plusieurs échelles, on compte taille par taille avant de faire le total."
+  ],
+  "4": [
+    "Chaque lettre a une valeur, et la valeur d’un mot est la somme de ses lettres. On connaît BALLE = 22, BILLE = 25, BILE = 22 et ABEILLE = 34, et l’on cherche la valeur de AILEE. Cette valeur est 24 points.",
+    "Pourquoi ces comparaisons aident-elles ? BALLE et BILLE ne diffèrent que par A et I : I vaut donc 3 points de plus que A. BILLE et BILE ne diffèrent que par un L : la lettre L vaut 3 points. On n’a pas encore A ni E séparément, mais on peut obtenir des sommes utiles.",
+    "ABEILLE contient les lettres de BILLE plus A et E, donc A + E = 34 − 25 = 9. ABEILLE contient aussi les lettres de BALLE plus E et I, donc E + I = 34 − 22 = 12. Le mot AILEE vaut précisément A + I + L + E + E, c’est-à-dire (A + E) + (E + I) + L = 9 + 12 + 3 = 24.",
+    "Le piège serait de chercher chaque lettre isolément alors que seules des sommes sont accessibles, ou d’oublier que AILEE contient deux E. À retenir : on compare des mots presque identiques pour isoler une lettre ou une petite somme, puis on recompose le mot demandé."
+  ],
+  "5": [
+    "Le corrigé officiel est une figure : il faut y tracer le contour des six abeilles identiques à Maya qui pavent la grande forme, sans trou ni chevauchement. L’énoncé affirme que Maya et ses cinq sœurs, toutes de la même silhouette, recouvrent exactement le domaine dessiné.",
+    "Une telle pièce a une forme irrégulière, avec un corps, des ailes et des antennes. Pour que six copies remplissent le tout, il faut les tourner ou les retourner selon ce que l’énoncé autorise, puis les emboîter comme les pièces d’un puzzle. Chaque bosse d’une abeille doit trouver le creux d’une voisine ou du bord.",
+    "On commence souvent par placer les abeilles le long du contour, là où la silhouette ne peut s’ajuster que d’une manière. On remplit ensuite l’intérieur. Le dessin du corrigé montre précisément ces six contours collés les uns aux autres.",
+    "Le piège est de déformer une abeille, d’en faire chevaucher deux, ou d’en laisser une incomplète. À retenir : un pavage par copies identiques se lit d’abord sur le bord, là où les degrés de liberté sont les plus faibles."
+  ],
+  "6": [
+    "Il faut partager le terrain en quatre parcelles de même forme et de même aire, chacune contenant une ruche. Le corrigé propose des figures d’exemple : plusieurs découpages conviennent, pourvu que les quatre morceaux soient superposables et que chaque ruche soit dans l’un d’eux.",
+    "Même forme et même aire, cela signifie que les quatre parcelles sont congruentes : on peut les superposer par rotation ou translation. La présence d’une ruche par parcelle empêche de couper « n’importe où » : chaque ruche impose un morceau qui l’entoure.",
+    "Une méthode efficace consiste à regarder le rectangle ou le polygone du terrain, puis à chercher un motif qui se répète quatre fois, par exemple par un pli en croix, un zigzag ou une rotation d’un quart de tour. On vérifie ensuite que chaque ruche tombe bien dans un exemplaire du motif.",
+    "Le piège est de se contenter de quatre aires égales avec des formes différentes, ou d’isoler une ruche dans un morceau d’une autre silhouette. À retenir : l’égalité des aires ne suffit pas ; la forme, elle aussi, doit être la même."
+  ],
+  "7": [
+    "Six abeilles A à F sont d’abord alignées dans six alvéoles voisines, puis déménagent vers un second schéma. Chaque abeille doit n’avoir que de nouvelles voisines, deux alvéoles étant voisines lorsqu’elles partagent un côté. Le corrigé donne deux placements, l’un étant le « retournement » de l’autre.",
+    "Dans le premier schéma, les voisinages sont ceux d’une file : A touche B, B touche A et C, et ainsi de suite jusqu’à F. Dans le second schéma, la géométrie change : le graphe des côtés communs n’est plus une simple file. Il faut donc casser toutes les anciennes adjacences.",
+    "On dresse la liste des paires interdites : A-B, B-C, C-D, D-E et E-F ne doivent plus se toucher. On place ensuite les lettres dans les six cases du nouveau dessin en respectant cette liste. Les deux solutions du corrigé sont C, F, B d’un côté et E, A, D de l’autre, ou bien D, A, E d’un côté et B, F, C de l’autre.",
+    "Le piège est de ne regarder que les voisines « de gauche et de droite » alors que le second schéma crée aussi des voisines au-dessus ou en dessous. À retenir : un déménagement « tout nouveau voisinage » se traduit par l’interdiction des anciennes arêtes du graphe."
+  ],
+  "8": [
+    "Le corrigé officiel est une figure : elle montre comment assembler six pièces strictement identiques pour reconstituer sept cellules hexagonales d’un rayon de ruche. L’énoncé ne demande pas un nombre, mais un emboîtement.",
+    "Chaque élément n’est pas un hexagone complet : c’est un fragment qui, collé aux autres, doit faire apparaître six cellules périphériques et une septième au centre, comme dans un rayon naturel. Les bords en dents de scie des pièces doivent coïncider exactement.",
+    "On commence par former le cœur, souvent avec des pointes qui se rejoignent au centre, puis on tourne les copies autour de ce centre. Le dessin du corrigé fixe l’orientation de chaque pièce. Sans cette figure, on décrit le but — sept hexagones — sans inventer une mesure de côté.",
+    "Le piège est de n’obtenir que six cellules, ou d’en créer une septième déformée. À retenir : six fragments identiques peuvent engendrer une cellule centrale « gratuite », née de leur réunion."
+  ],
+  "9": [
+    "On demande l’effectif total d’un essaim dont un cinquième va vers les roses, un tiers vers les lilas, trois fois la différence de ces deux nombres vers une charmille, et une dernière abeille vers les lys. Ce total est 15 abeilles.",
+    "Si l’on note a le nombre d’abeilles, les trois groupes plus la dernière doivent reconstituer l’essaim. D’où l’égalité : un cinquième de a, plus un tiers de a, plus trois fois la différence entre le tiers et le cinquième, plus 1, égale a. L’équation dit simplement que personne n’a été oublié ni compté deux fois.",
+    "Pour chasser les dénominateurs, on multiplie tout par 15, plus petit commun multiple de 3 et de 5. On obtient 3a + 5a + 3(5a − 3a) + 15 = 15a, qui se simplifie en 14a + 15 = 15a, donc a = 15. On vérifie : 3 abeilles aux roses, 5 aux lilas, 3 fois (5 − 3) = 6 à la charmille, plus 1, font bien 15.",
+    "Le piège est de prendre « trois fois la différence » comme trois fois la somme, ou d’oublier l’abeille solitaire. À retenir : un partage en fractions plus un reste se traduit par une équation, et un essai de petits multiples de 15 confirme le résultat."
+  ],
+  "10": [
+    "Bhaskara décrit un essaim dont la racine carrée de la moitié s’envole vers le jasmin, dont les huit neuvièmes restent, et dont deux abeilles occupent encore une fleur de lotus. Le nombre d’abeilles est 72.",
+    "En notant a l’effectif, entier strictement positif, l’énoncé se traduit par : racine de (a/2), plus (8/9)a, plus 2, égale a. Autrement dit, la petite troupe du jasmin et le couple du lotus complètent exactement le neuvième manquant. Cette lecture évite de compter deux fois les abeilles restantes.",
+    "On isole le radical, puis on élève au carré. Après réduction, on obtient une équation du second degré : 2a² − 153a + 648 = 0. Le discriminant vaut 18 225, et les deux racines sont 4,5 et 72. Seul 72 est un entier admissible pour un essaim.",
+    "Le piège est d’accepter 4,5 abeilles, ou d’oublier les deux insectes du lotus avant d’élever au carré. À retenir : une racine carrée dans un dénombrement force souvent une équation quadratique, puis un tri entre solutions entières et solutions impossibles."
+  ],
+  "11": [
+    "On demande le temps de butinage nécessaire à une abeille pour rassembler de quoi faire 1 kg de miel, sachant que 1 g exige 7 500 fleurs et que l’abeille en visite 250 à l’heure. La bonne réponse est E : plus de 3 ans.",
+    "Un kilogramme, c’est 1 000 grammes, donc 7 500 000 fleurs. À 250 fleurs par heure, il faut 7 500 000 ÷ 250 = 30 000 heures. Le chiffre paraît abstrait tant qu’on ne le compare pas à une année.",
+    "Une année compte 24 × 365 = 8 760 heures. Or 30 000 ÷ 8 760 dépasse 3, et l’on obtient environ 3 ans et 5 mois. Les propositions A à D (quelques heures, deux jours, deux semaines, 125 jours) sont donc trop courtes.",
+    "Le piège est d’oublier de passer des grammes aux kilogrammes, ou de compter 365 jours sans les 24 heures. À retenir : un ordre de grandeur se lit en convertissant jusqu’à l’unité de la question, ici l’année."
+  ],
+  "12": [
+    "Le corrigé officiel est une figure : elle montre un découpage du gâteau en trois parts de même forme et de même aire, sans retournement d’un morceau. L’énoncé interdit de retourner une part à cause du miel, ce qui exclut les découpes qui ne se superposent que par retournement.",
+    "Même forme et même aire, sans retournement, signifie que les trois parts sont superposables par translation ou rotation plane seulement. Le gâteau a une silhouette donnée par le dessin : il faut la partager en trois copies directes, pas en copies « miroir ».",
+    "On cherche souvent un centre ou un axe de rotation d’un tiers de tour, ou bien trois bandes identiques qui suivent le contour. Le dessin du corrigé fixe les traits de coupe. On décrit le principe sans inventer de longueurs qui ne figurent pas dans l’énoncé.",
+    "Le piège est d’offrir trois aires égales de formes différentes, ou d’utiliser un retournement interdit. À retenir : « même forme » est plus exigeant que « même quantité de gâteau », et le miel ajoute une contrainte d’orientation."
+  ],
+  "13": [
+    "Chaque alvéole doit contenir un entier strictement positif égal au plus petit entier qui n’apparaît dans aucune alvéole voisine. Quatre cases sont déjà remplies par 2, 3, 4 et 5, et l’on demande la somme des dix contenus. Cette somme vaut 27 grammes.",
+    "La règle est locale : pour remplir une case, on regarde ses trois, quatre ou six voisines déjà connues ou encore inconnues, et l’on y met le plus petit entier manquant parmi les voisines. C’est une contrainte de type « mex », le plus petit entier exclu du voisinage.",
+    "On avance case par case en commençant par celles qui ont le plus de voisines déjà chiffrées. Le corrigé aboutit à une unique grille, où apparaissent notamment des 1, des 2, un autre 4 et un 3. En additionnant les dix nombres, on trouve 27.",
+    "Le piège est d’autoriser le zéro, ou de comparer une case à toute la ruche au lieu de ses seules voisines. À retenir : une règle locale peut néanmoins forcer une solution globale unique, que l’on vérifie en relisant chaque alvéole."
+  ],
+  "14": [
+    "Les nombres de 1 à 19 doivent occuper les hexagones d’une ruche, deux nombres consécutifs se touchant par un côté. Les cases 1, 9 et 19 sont déjà placées, et l’on doit poser le 13 de telle sorte qu’il reste exactement une manière de remplir les quinze cases encore vides. Le corrigé montre cette position du 13, puis l’unique chemin qui complète la ruche.",
+    "La contrainte « consécutifs = voisins » transforme le remplissage en un chemin hamiltonien : une promenade qui visite chaque hexagone une seule fois, de 1 jusqu’à 19. Les nombres déjà écrits sont des jalons : le chemin doit passer par 1, puis plus tard par 9, puis aboutir à 19, et le 13 doit s’insérer au bon endroit de cette chaîne.",
+    "Si l’on pose 13 trop près de 9 ou trop près de 19, plusieurs détours restent possibles. Si on le pose de manière à boucher tous les embranchements sauf un, il ne reste plus qu’un serpent numérique. Le corrigé donne précisément cette grille unique.",
+    "Le piège est de placer 13 n’importe où « entre 9 et 19 » sans vérifier l’unicité, ou d’autoriser deux cases consécutives qui ne partagent qu’un sommet. À retenir : un chemin unique se reconnaît au fait que chaque étape n’a plus qu’une case libre admissible."
+  ],
+  "15": [
+    "Une abeille doit rejoindre une fleur en suivant les flèches d’une case à l’autre, et l’on choisit parmi cinq suites. La suite qui fonctionne est la D : bas, droite, bas, droite.",
+    "Chaque flèche indique un déplacement élémentaire sur la grille dessinée. Une suite est correcte seulement si, partie de la case de l’abeille, elle reste sur des cases existantes et s’arrête sur la fleur. Les murs et les cases vides interdisent certains enchaînements.",
+    "On teste les cinq propositions une par une, en posant le doigt sur la figure. Les suites A, B, C et E sortent du chemin ou manquent la fleur. Seule la suite D emprunte le couloir qui mène à l’arrivée.",
+    "Le piège est de lire les flèches dans l’ordre d’un autre schéma, ou de tourner la figure mentalement. À retenir : sur un labyrinthe à choix multiples, le plus sûr est encore de simuler chaque trajet jusqu’au bout."
+  ],
+  "16": [
+    "Neuf cellules portent chacune le nombre de voisines (côté commun) qui contiennent du miel, et l’on demande combien de cellules sont effectivement emplies. La réponse est C : six cellules contiennent du miel.",
+    "Un indice très parlant est une cellule qui annonce 2 alors qu’elle n’a que deux voisines : alors ces deux voisines sont forcément pleines. De même, une cellule qui annonce 4 et qui a quatre voisines force ces quatre voisines à contenir du miel. On « allume » ainsi des cases sans hypothèse hasardeuse.",
+    "En poursuivant, une cellule qui annonce 3 et dont trois voisines viennent d’être allumées est satisfaite. Lorsque toutes les étiquettes sont compatibles, on compte les cases pleines : il y en a six. Aucune septième case n’est exigée par les chiffres restants.",
+    "Le piège est de croire que le chiffre écrit dans une cellule dit si elle-même contient du miel : ce chiffre ne parle que des voisines. À retenir : on commence par les contraintes saturées, celles où le nombre annoncé égale le nombre de voisines."
+  ],
+  "17": [
+    "Abby doit aller du départ à l’arrivée en marchant sur les bords des alvéoles, et l’on veut le nombre de chemins les plus courts. Un plus court chemin compte 7 déplacements, et il en existe 6 différents.",
+    "« Le plus court » signifie que l’on n’allonge jamais le trajet par un détour ou un retour en arrière. Sur un réseau d’hexagones, cela se traduit par une suite de sept pas, chacun rapprochant Abby de l’arrivée selon les deux ou trois directions utiles.",
+    "On peut dénombrer en coloriant les nœuds ou en additionnant, à chaque sommet, le nombre de plus courts chemins qui y aboutissent. En suivant cette addition de proche en proche jusqu’à l’arrivée, on trouve 6 trajectoires distinctes. Le corrigé les dessine toutes les six.",
+    "Le piège est de compter aussi les chemins plus longs, ou de considérer comme différents deux tracés identiques parcourus à la même allure. À retenir : le nombre de plus courts chemins s’obtient en additionnant des contributions locales, pas en dessinant au hasard."
+  ],
+  "18": [
+    "Le corrigé officiel est une figure : elle complète le cadre avec des photos de papillons et d’abeilles de sorte que trois photos de la même espèce ne soient jamais alignées, horizontalement, verticalement ou en diagonale. Cinq photos sont déjà posées ; il reste à retrouver les autres.",
+    "La règle est celle d’un « sans trois identiques d’affilée », dans toutes les directions d’un morpion. Chaque nouvelle photo restreint les choix des cases voisines. Les cinq images déjà placées servent de germes : certaines lignes n’ont plus qu’une espèce possible.",
+    "On parcourt d’abord les lignes, colonnes et diagonales qui contiennent déjà deux insectes de la même espèce séparés d’une case vide : cette case ne peut pas recevoir le même insecte. On continue jusqu’à saturation. Le dessin du corrigé montre la disposition finale.",
+    "Le piège est d’oublier les diagonales, pourtant citées par l’énoncé. À retenir : une interdiction d’alignement se traite d’abord sur les lignes déjà presque fautives, là où le choix est forcé."
+  ],
+  "19": [
+    "La classe de M. Hibou compte 3 chatons, 4 canetons, 2 poussins et quelques agneaux, pour 44 pattes en tout, et l’on demande le nombre d’agneaux. La réponse est B : il y a 5 agneaux.",
+    "On attribue à chaque espèce le nombre de pattes usuel : quatre pour un chaton, deux pour un caneton, deux pour un poussin, quatre pour un agneau. Les animaux déjà chiffrés totalisent alors 3 × 4 + 4 × 2 + 2 × 2 = 24 pattes. Il reste 44 − 24 = 20 pattes à expliquer par les agneaux.",
+    "Comme chaque agneau a quatre pattes, on trouve 20 ÷ 4 = 5 agneaux. Ce nombre figure bien parmi les propositions, et il est le seul compatible avec un décompte entier. Les autres choix (6, 4, 3 ou 2) laisseraient un surplus ou un déficit de pattes.",
+    "Le piège serait de donner quatre pattes aux canetons et aux poussins, ou d’inventer des chatons à trois pattes. À retenir : on soustrait d’abord le total des espèces connues, puis on divise le reste par la « taille » de l’espèce inconnue."
+  ],
+  "20": [
+    "On mélange les plumes de 3 aigles, 6 oies et 25 canaris, et l’on veut le volume de la couette en décimètres cubes. Ce volume vaut 390,05 dm³.",
+    "Les unités de l’énoncé ne sont pas les mêmes : l’aigle est donné pour 70 dm³ de plumes une fois lu dans le système du corrigé, l’oie pour 30 litres, le canari pour 2 cm³. Avant d’additionner, il faut tout exprimer en dm³. Un litre égale un décimètre cube ; 1 000 cm³ aussi.",
+    "Les trois aigles donnent 70 × 3 = 210 dm³. Les six oies donnent 30 × 6 = 180 dm³. Les vingt-cinq canaris donnent 2 × 25 = 50 cm³, soit 0,05 dm³. La somme est 210 + 180 + 0,05 = 390,05 dm³.",
+    "Le piège est d’ajouter 70 m³, 30 litres et 2 cm³ sans conversion, ce qui n’a aucun sens. À retenir : un volume total n’existe qu’après un passage à une unité commune, ici le décimètre cube demandé."
+  ],
+  "21": [
+    "Un pêcheur partage des aiglefins entre 1 672 personnes : les plus de 50 ans reçoivent 16 poissons chacune mais seulement les trois quarts de ce cadeau « comptent » dans l’énoncé, les moins de 50 ans reçoivent 96 poissons dont un huitième seulement. Le total donné est 20 064 aiglefins.",
+    "L’énoncé se lit ainsi : les personnes âgées ont reçu les trois quarts des aiglefins, et 16 × (3/4) = 12, donc chacune d’elles a effectivement reçu 12 poissons. Les plus jeunes ont reçu le huitième du total, et 96 × (1/8) = 12, donc chacune a aussi reçu 12 poissons.",
+    "Puisque chaque personne, quel que soit son âge, a reçu 12 aiglefins, le nombre total est simplement 1 672 × 12 = 20 064. On n’a pas besoin de savoir combien il y a de plus de 50 ans et de moins de 50 ans : les deux lectures se rejoignent sur la même ration individuelle.",
+    "Le piège est de chercher deux inconnues (les effectifs des deux classes d’âge) alors que la ration par tête est déjà la même. À retenir : quand deux descriptions d’un partage donnent le même quota individuel, le total est le produit de ce quota par le nombre de personnes."
+  ],
+  "22": [
+    "L’énoncé est un programme de construction : à partir d’un rectangle ABCD de 8 cm sur 12 cm, on place une longue liste de milieux, de quarts et d’intersections, puis on relie certains points au feutre. Le corrigé officiel est la figure ainsi obtenue, qui révèle qui gagne le 200 m et qui est Alfred.",
+    "Chaque instruction est une opération géométrique élémentaire : milieu d’un segment, point au quart, intersection de deux droites. Rien n’est laissé au hasard : si l’on place E, H, F, O, G, I puis J, K, M, P, R avec soin, les points suivants tombent aux bons endroits. Le dessin à main levée trop approximatif décale toute la suite.",
+    "On trace d’abord au crayon fin, sans appuyer, comme le demande l’énoncé. On passe ensuite au feutre sur les segments indiqués par la fin du texte. Le réseau de lettres du corrigé sert de contrôle : chaque point nommé doit s’y retrouver. Le dessin encré forme l’image-réponse.",
+    "Le piège est d’inverser un « quart en partant de » ou de confondre le milieu de [AO] avec le milieu de [AC]. À retenir : une construction longue se réussit en suivant l’ordre donné, un point à la fois, plutôt qu’en devinant le motif final."
+  ],
+  "23": [
+    "Le corrigé officiel est une figure : on y voit deux carrés ajoutés dans l’enclos de façon que chacun des neuf ânes se retrouve isolé des autres. L’énoncé demande de tracer ces deux carrés, et non de calculer un nombre.",
+    "Les neuf ânes sont disposés dans un enclos carré, typiquement comme les points d’une grille. Un simple filet droit ne suffit pas : il faut que les deux nouveaux carrés découpent l’enclos en régions dont chacune ne contient qu’un âne. Les côtés des carrés peuvent être inclinés par rapport à l’enclos.",
+    "On cherche donc deux carrés, éventuellement de tailles différentes, dont les bords passent entre les ânes. Le dessin du corrigé montre un emboîtement ou un décalage qui crée neuf compartiments. Sans cette figure, on énonce le principe sans inventer des mesures de côté.",
+    "Le piège est de tracer des rectangles qui ne sont pas carrés, ou de laisser deux ânes dans la même case. À retenir : isoler n points avec peu de figures régulières exige souvent de tourner ces figures, pas seulement de les agrandir."
+  ],
+  "24": [
+    "Le jeu de l’Âne rouge est un taquin à pièces coulissantes : le grand carré gris, l’âne, doit descendre en bas du plateau par glissements, sans soulever les pièces. La solution optimale compte 81 coups, et le corrigé en donne une liste numérotée.",
+    "Pourquoi 81 coups et pas moins ? Chaque rectangle 1 × 2 et chaque petit carré occupe de la place : pour faire descendre l’âne, il faut d’abord ouvrir un couloir, ce qui oblige à faire circuler les petites pièces autour de lui. Un mouvement trop impatient bloque souvent le grand carré contre un bord.",
+    "La démarche consiste à libérer l’espace sous l’âne, à faire descendre celui-ci d’une case dès que possible, puis à réorganiser les barres verticales et horizontales. On ne mémorise pas forcément les 81 instructions ; on retient plutôt les phases : dégagement, descente d’un cran, reconstitution d’un couloir. Le corrigé sert de partition complète pour vérifier.",
+    "Le piège est de tourner une pièce, ce que le jeu interdit, ou de croire qu’un seul « trou » suffit comme dans le taquin classique. À retenir : ici, le vide se déplace, mais les pièces ont des formes différentes, donc le graphe des positions est beaucoup plus étroit."
+  ],
+  "25": [
+    "Un âne part de la case 1 et alterne deux types de pas : un saut oblique qui saute une case, puis un pas vers une case voisine horizontale ou verticale. Les cases 1, 2, 3, 4 et 16 sont déjà repérées, et l’on cherche un chemin qui visite toutes les cases jusqu’à 16. Le corrigé en propose un, qui numérote tout le carré.",
+    "Le mouvement « oreilles de lapin » n’est ni celui d’une tour, ni celui d’un cavalier ordinaire : il couple un saut diagonal long et un pas d’orthogonalité. Cette alternance impose une parité : après un saut oblique, on est forcé de se recaler sur une case côte à côte.",
+    "On part de 1, on respecte les quatre premières cases déjà numérotées, puis on prolonge sans repasser sur une case déjà visitée. Une tentative qui enferme l’âne trop tôt est abandonnée. Le chemin publié commence par 1, puis passe notamment par 12, 6, 7 et atteint 16 avant de terminer la visite jusqu’à 14.",
+    "Le piège est d’enchaîner deux sauts obliques, ou deux pas orthogonaux, au lieu d’alterner. À retenir : une règle d’alternance transforme un parcours en puzzle, parce que la case suivante n’est jamais choisie dans la même « famille » de mouvements."
+  ],
+  "26": [
+    "Neuf sacs de 1 kg à 9 kg doivent être répartis sur trois ânes, déjà chargés respectivement de 1 kg, 2 kg et 3 kg, de sorte que chaque âne ait le même nombre de sacs et la même masse. Il y a deux répartitions possibles, et chaque âne porte trois sacs totalisant 15 kg.",
+    "La masse totale est 1 + 2 + … + 9 = 45 kg, donc 15 kg par âne. Fari, qui a déjà 1 kg, doit encore recevoir 14 kg en deux sacs ; Nino doit recevoir 13 kg en deux sacs ; Tonda, 12 kg en deux sacs. Les décompositions utiles sont alors 14 = 5 + 9 = 6 + 8, 13 = 4 + 9 = 5 + 8 = 6 + 7 et 12 = 4 + 8 = 5 + 7 (le 3 est déjà sur Tonda).",
+    "Si Fari prend 5 et 9, il reste à Nino le couple 6 et 7, et à Tonda le couple 4 et 8. Si Fari prend 6 et 8, il reste à Nino le couple 4 et 9, et à Tonda le couple 5 et 7. Toute autre tentative répète un sac déjà attribué.",
+    "Le piège est d’oublier que Tonda possède déjà le sac de 3 kg, donc de lui redonner 3 + 9, ou de donner quatre sacs à l’un et deux à l’autre. À retenir : égaliser trois charges se fait en fixant le total, puis en énumérant les couples complémentaires sans répétition."
+  ],
+  "27": [
+    "Trois enfants reçoivent chacun un animal parmi trois chiens et deux chats. Albert, puis Benoit, annoncent qu’ils connaissent l’espèce des deux autres mais qu’ils ne peuvent pas en déduire la leur. De ces deux déclarations, on conclut que Cindy reçoit un chien.",
+    "Albert verrait tout de suite son cadeau si Benoit et Cindy avaient les deux chats : il ne resterait que des chiens pour lui. Puisqu’il ne sait pas, Benoit et Cindy ne reçoivent pas deux chats. Il reste donc trois tableaux possibles pour (Benoit, Cindy) : (chien, chat), (chat, chien) ou (chien, chien).",
+    "Benoit, qui connaît l’espèce de Cindy, utilise déjà cette information. S’il voyait que Cindy a un chat, le premier tableau serait le seul encore possible et il saurait qu’il a un chien. Comme il ne sait toujours pas, Cindy n’a pas un chat : elle a un chien. Les deux tableaux restants laissent Benoit dans l’incertitude, ce qui confirme sa déclaration.",
+    "Le piège est de raisonner sur les identités des chiens plutôt que sur les espèces, ou d’oublier qu’Albert a déjà éliminé le couple de chats. À retenir : dans un puzzle de connaissances, chaque « je ne sais pas » est une information qui raye un cas, pas une absence d’information."
+  ],
+  "28": [
+    "Tous les animaux sauf 4 sont des chats, tous sauf 4 sont des ânes, tous sauf 4 sont des coqs, et l’on demande le nombre possible d’animaux. La réponse est E : 5 ou 6.",
+    "« Tous sauf 4 sont des chats » signifie que le nombre d’animaux qui ne sont pas des chats vaut 4. De même, il y a 4 non-ânes et 4 non-coqs. Si l’on n’a que ces trois espèces, chaque espèce compte alors 2 individus, parce que les 4 « autres » sont les deux autres espèces. Le total fait 6.",
+    "On peut aussi introduire une quatrième espèce, par exemple des chevaux. Alors un chat, un âne, un coq et deux chevaux donnent encore 4 non-chats, 4 non-ânes et 4 non-coqs, pour un total de 5. Moins de 5 ou plus de 6 casse au moins l’une des trois phrases.",
+    "Le piège est de croire qu’il n’y a que trois espèces, ou de lire « tous sauf 4 » comme « il y a 4 chats ». À retenir : « tous sauf k sont de type T » fixe le complémentaire de T, pas l’effectif de T."
+  ],
+  "29": [
+    "Émilie n’a que deux paires de gants et doit opérer trois animaux, sans qu’une face ayant touché un animal ne touche ensuite Émilie ni un autre animal. Oui, c’est possible, en empilant et en retournant les gants de façon contrôlée.",
+    "Chaque gant a deux faces. Le danger n’est pas le gant lui-même, mais le contact d’une face contaminée avec une peau saine ou avec un autre animal. Il faut donc que les faces « sales » ne rencontrent que d’autres faces déjà sales, ou restent à l’extérieur loin d’Émilie.",
+    "Émilie opère le premier animal avec la première paire, puis l’ôte. Elle opère le deuxième animal avec la seconde paire. Pour le troisième, elle retourne la première paire et la glisse par-dessus la seconde : les faces contaminées se retrouvent l’une contre l’autre, tandis qu’Émilie et le dernier animal ne touchent que des faces encore propres ou déjà dédiées à ce contact.",
+    "Le piège est de jeter un gant trop tôt, ou de retourner une paire trop tôt et de recoller une face sale contre la peau. À retenir : deux paires suffisent à trois patients si l’on traite les faces comme quatre « couches » que l’on empile."
+  ],
+  "30": [
+    "Chaque couple n’engendre que des couples, vit 11 mois, et donne naissance à un couple à 5 mois puis à un autre à 8 mois. Partant d’Adam et Ève nouveau-nés, les naissances dépassent 100 couples pour la première fois récemment, et l’on veut la population actuelle. Cette population vaut 559 couples.",
+    "Si A_n est le nombre de naissances du mois n, un couple né au mois n − 5 et un couple né au mois n − 8 produisent les naissances du mois n. D’où la récurrence A_n = A_{n−5} + A_{n−8}, avec A_0 = 1 et les premiers termes nuls convenables. C’est une suite de Fibonacci « à pas 5 et 8 ».",
+    "On calcule mois après mois jusqu’à ce qu’un terme dépasse 100 pour la première fois. La population d’aujourd’hui est la somme des naissances des 11 derniers mois, parce que les couples plus âgés sont déjà morts. Cette somme, indiquée en gras dans le corrigé, vaut 559.",
+    "Le piège est de totaliser toutes les naissances depuis l’origine, ou d’oublier qu’un couple meurt après 11 mois. À retenir : une population à durée de vie limitée est la somme d’une fenêtre glissante, pas la somme de toute la suite."
+  ],
+  "31": [
+    "Mathias propose des noms d’animaux et reçoit à chaque fois le nombre de lettres bien placées puis le nombre de lettres justes mais mal placées. L’animal à deviner est la biche.",
+    "PAONS donne 0 et 0 : les lettres A, N, O, P et S sont absentes. CHIEN donne 0 et 4 : les lettres C, H, I et E sont présentes (N est déjà éliminé), mais aucune n’est à sa place. TIGRE donne 2 et 0 : combiné à la présence de I et E, cela place I en deuxième position et E en cinquième, et élimine G, R et T.",
+    "Le mot a donc la forme * I * * E. LIONS confirme l’absence de L. Le C de CHATS n’est pas en première place. Si C est en troisième position et H en quatrième, BOEUF (1 bien placé, 1 mal placé) force le B initial : on obtient BICHE, qui est un animal. Les autres branches (HICUE, ou C en quatrième place) ne donnent pas de nom d’animal cohérent.",
+    "Le piège est de garder la lettre N de CHIEN, ou de placer C en première position malgré CHATS. À retenir : on commence par les mots qui éliminent beaucoup de lettres (score 0, 0), puis on fixe les lettres bien placées des scores (2, 0)."
+  ],
+  "32": [
+    "Quatre noms d’animaux sont écrits l’un sous l’autre, chacun précédé du nombre de lettres bien placées par rapport à un cinquième mot caché de cinq lettres. Ce cinquième mot est TAUPE.",
+    "TRUIE a trois lettres déjà à la bonne place, CARPE aussi, tandis que LORIS et COBRA n’en ont aucune. Aucune lettre de COBRA n’est donc à sa place : le mot caché ne commence pas par C, n’a pas O en deuxième, B en troisième, R en quatrième, ni A en cinquième. LORIS interdit de même L, O, R, I, S à leurs positions.",
+    "Les trois réussites de TRUIE, une fois le R écarté de la quatrième place, sont T, U et E : le motif est T _ U _ E. Les trois réussites de CARPE, compatibles avec ce motif, sont alors A en deuxième, P en quatrième et E en cinquième. On obtient TAUPE, qui vérifie aussi les deux scores nuls.",
+    "Le piège est de compter des lettres présentes mais mal placées, alors que l’énoncé ne donne que les bien placées. À retenir : des scores nuls sont aussi parlants que des scores élevés, parce qu’ils interdisent des positions."
+  ],
+  "33": [
+    "Huit lettres reçoivent les valeurs 1, 2, 3, 4, 5, 6, 7 et 7, et l’on cherche un nom d’animal de quatre lettres dont la somme des valeurs vaut 17. On peut former trois tels noms : BOUC, OURS et LOUP.",
+    "Les partitions de 17 en quatre valeurs prises dans {1, 2, 3, 4, 5, 6, 7, 7} sont peu nombreuses. Chaque partition se traduit par un paquet de lettres, que l’on anagramme ensuite. Certaines paquets ne donnent aucun mot français d’animal ; d’autres en donnent un.",
+    "La combinaison (1, 2, 7, 7) fournit U, C, O, B, d’où BOUC. La combinaison (1, 3, 6, 7) fournit U, R, S, O, d’où OURS. La combinaison (1, 4, 5, 7) fournit U, P, L, O, d’où LOUP. Les paquets (2, 3, 5, 7) et (2, 4, 5, 6) ne forment pas de nom d’animal.",
+    "Le piège est d’utiliser deux fois une lettre qui n’a qu’une occurrence, ou d’accepter un mot de plus de quatre lettres. À retenir : on énumère d’abord les sommes, puis on teste les anagrammes, plutôt que l’inverse."
+  ],
+  "34": [
+    "La famille Barbapapa compte neuf personnes et souhaite partager équitablement des animaux magiques : 12 aniloups, 5 aniphans et 8 anirafes, chaque aniloup devenant 2 aniphans, chaque aniphan 2 anirafes, chaque anirafe 3 anizelles. Après toutes les transformations, il y a 198 anizelles, soit 22 par membre de la famille.",
+    "Pour tout convertir en anirafes, on descend d’un cran à la fois. Les 8 anirafes restent 8. Les 5 aniphans deviennent 10 anirafes. Les 12 aniloups deviennent 24 aniphans, puis 48 anirafes. Le total est 8 + 10 + 48 = 66 anirafes.",
+    "Chaque anirafe se change ensuite en 3 anizelles, d’où 66 × 3 = 198 anizelles. Il y a Barbapapa, Barbamama et sept enfants, donc 9 parts. Or 198 ÷ 9 = 22, ce qui prouve que le partage équitable est possible une fois les anizelles obtenues, alors qu’il ne l’était pas avant.",
+    "Le piège est d’oublier de transformer les aniloups en deux étapes, ou de compter seulement les sept enfants. À retenir : on convertit tout dans l’unité la plus fine avant de diviser, comme on le ferait avec des monnaies."
+  ],
+  "35": [
+    "Une petite annonce coûte 8,50 € pour 20 mots ou moins, plus un prix par mot supplémentaire, et le total affiché est 14,10 €. Le prix d’un mot supplémentaire, cherché par le corrigé, est 0,50 €.",
+    "On commence par compter les mots du texte, un mot par case, sans abréviation. L’annonce dépasse le forfait : elle compte 31 mots, donc 11 mots au-delà des 20 premiers. La différence entre le total payé et le minimum forfaitaire est le prix de ces 11 mots.",
+    "Cette différence, une fois lue avec les montants du tarif et du total, vaut 5,50 € pour 11 mots. On en déduit 5,50 ÷ 11 = 0,50 € le mot supplémentaire. Le prix cherché est donc un demi-euro, cohérent avec une grille de petite annonce.",
+    "Le piège est de compter une case vide, un trait d’union ou une rubrique comme un mot, ou d’oublier le forfait des 20 premiers mots. À retenir : un tarif « minimum plus extra » se décompose toujours en (nombre d’extras) × (prix unitaire)."
+  ],
+  "36": [
+    "Dix princes-batraciens, répartis en grenouilles, rainettes et crapauds (au plus 5 par groupe), s’embrassent hors de leur groupe, en retenant le plus petit des deux rituels (4, 2 ou 3 bises). Il y a eu 75 bises, et les effectifs sont 3 grenouilles, 4 rainettes et 3 crapauds.",
+    "Si g, r et c désignent les trois effectifs, on a g + r + c = 10, avec des entiers entre 1 et 5. Les bises entre groupes se comptent par paires : chaque couple grenouille-rainette donne 2 bises, chaque couple rainette-crapaud donne 2 bises, chaque couple grenouille-crapaud donne 3 bises. D’où 2gr + 2rc + 3gc = 75.",
+    "Comme les inconnues sont petites, on teste les triplets d’entiers de somme 10. Le triplet (3, 4, 3) donne 2 × 3 × 4 + 2 × 4 × 3 + 3 × 3 × 3 = 24 + 24 + 27 = 75, et respecte le maximum de 5. Les autres triplets s’écartent de 75.",
+    "Le piège est de faire s’embrasser les membres d’un même groupe, ou de toujours compter 4 bises. À retenir : « on retient le minimum des deux usages » se traduit par un coefficient différent pour chaque type de paire."
+  ],
+  "37": [
+    "On demande de combien de manières on peut lire ARA en suivant des lettres qui se touchent, un même A pouvant servir de début et de fin. Il y a 64 lectures possibles.",
+    "Le mot a trois lettres, donc un chemin de longueur deux : on choisit un A de départ, on passe à un R voisin, puis à un A voisin de ce R. Pour ne rien oublier, on classe les A de départ selon leur place dans la figure : le centre, les angles, les milieux de côtés.",
+    "L’A central touche quatre R, et chaque R touche quatre A, ce qui donne 16 lectures. Chacun des quatre A d’angle touche quatre R, soit encore 16 lectures. Chacun des quatre A de côté touche deux R, qui touchent chacun quatre A, soit 32 lectures. Le total est 16 + 16 + 32 = 64.",
+    "Le piège est d’interdire la réutilisation d’un A alors que l’énoncé l’autorise, ou de compter un chemin et son inverse comme un seul. À retenir : on dénombre depuis le sommet de départ, en multipliant les degrés de liberté à chaque pas."
+  ],
+  "38": [
+    "Cinq aras doivent être rangés du plus grand au plus petit d’après des comparaisons. L’ordre est : Ara hyacinthe, Ara rouge, Ara militaire, Ara à collier jaune, Ara noble.",
+    "La première phrase donne déjà Ara rouge plus grand que l’Ara militaire, lui-même plus grand que l’Ara à collier jaune. La deuxième place l’Ara noble sous l’Ara rouge et sous l’Ara à collier jaune, donc tout en bas de cette chaîne. On a alors rouge > militaire > collier jaune > noble.",
+    "L’Ara hyacinthe est seulement dit plus grand que l’Ara noble, ce qui laisse plusieurs cases libres. La dernière phrase affirme que l’Ara rouge n’est pas le plus grand : la seule place restante au-dessus de lui est celle de l’Ara hyacinthe. D’où le classement complet.",
+    "Le piège est de conclure trop tôt que l’Ara rouge est le plus grand, avant la dernière phrase, ou de glisser l’hyacinthe entre deux aras déjà comparés. À retenir : on fusionne d’abord les chaînes sûres, puis on utilise la phrase négative pour placer le dernier élément."
+  ],
+  "39": [
+    "Une araignée tire 8 fils équirépartis depuis O, puis tisse à angle droit d’un fil à l’autre, en commençant à 1 mm de O. Après 10 tours, le corrigé estime sa distance au centre à environ 10 km.",
+    "Entre deux fils consécutifs, l’angle vaut 45°. Passer d’une distance à la suivante, par une projection orthogonale puis un retour sur le fil suivant, multiplie cette distance par √2. Chaque petit segment de toile éloigne donc l’araignée selon une suite géométrique de raison √2.",
+    "Un tour compte 8 segments, dix tours en comptent 80, et la distance devient 1 mm × (√2)^80 = 2^40 mm. Le corrigé, en approchant 2^10 par 10, présente l’ordre de grandeur 10^6 mm, soit 10 km, pour faire sentir l’explosion de la suite. Avec l’approximation plus serrée 2^10 ≈ 1000, on obtiendrait plutôt un million de kilomètres : l’idée pédagogique reste la croissance vertigineuse.",
+    "Le piège est de croire que l’araignée s’éloigne de 1 mm à chaque tour, comme sur une spirale d’Archimède. À retenir : un tissage à angle droit sur des rayons fixes produit une spirale géométrique, pas arithmétique."
+  ],
+  "40": [
+    "Gipsy parcourt les arêtes d’une pyramide à base carrée sans jamais reprendre la même arête, en pouvant repasser par un sommet. Le nombre maximal d’arêtes parcourues est 7. Un chemin possible est B-A-E-B-C-A-D-C.",
+    "La pyramide a 8 arêtes : 4 à la base et 4 vers le sommet A. On ne peut pas toutes les parcourir d’un seul trait sans répétition, à cause des degrés. Le sommet A est de degré 4, les quatre autres sont de degré 3, donc impairs.",
+    "Chaque fois que l’on traverse un sommet (arrivée puis départ), on y consomme deux arêtes. Ainsi, en tout sommet intermédiaire, on utilise un nombre pair d’arêtes. Seuls le départ et l’arrivée peuvent laisser une arête inutilisée. Ce comptage de parité interdit un parcours des 8 arêtes et autorise 7.",
+    "Le piège est de croire qu’un graphe connexe est toujours « drawable » d’un seul trait, comme un rectangle. À retenir : un parcours sans répétition d’arête est limité par les sommets de degré impair, même si l’on autorise de revoir un sommet."
+  ],
+  "41": [
+    "Une araignée part du centre et doit atteindre le bord en parcourant exactement 4 petits côtés. Le nombre de chemins différents est 90.",
+    "Tous les points d’arrivée sur le bord ne se valent pas : un sommet de l’hexagone, un point « presque sommet » et le milieu d’un côté n’ont pas le même nombre d’accès en quatre pas. On classe donc les arrivées en trois familles, puis on multiplie, dans chaque famille, le nombre de chemins par le nombre de points de ce type.",
+    "Vers un sommet de l’hexagone, il n’y a qu’un chemin, et 6 sommets, soit 6 trajets. Vers chacun des 12 points adjacents à ces sommets, il y a 4 chemins, soit 48 trajets. Vers chacun des 6 milieux de côtés, il y a 6 chemins, soit 36 trajets. Le total est 6 + 48 + 36 = 90.",
+    "Le piège est de compter un chemin et le même chemin parcouru à l’envers, ou d’autoriser plus ou moins de 4 côtés. À retenir : on découpe l’arrivée en orbites de symétrie, on compte une fois par orbite, puis on multiplie."
+  ],
+  "42": [
+    "Des araignées vont de A à B sur un réseau de cordes entrelacées, toujours de gauche à droite et de haut en bas, chaque araignée prenant un chemin différent. Il y a 14 chemins, donc 14 araignées.",
+    "La contrainte de monotone (jamais vers la gauche, jamais vers le haut) empêche les boucles. Le problème se réduit donc à compter les chemins monotones de A vers B sur le graphe dessiné. On peut étiqueter chaque nœud par le nombre de façons de l’atteindre depuis A.",
+    "Les deux voisins immédiats de A n’ont qu’un chemin. Le voisin « en diagonale » en a deux, somme des deux précédents. On continue ainsi, en additionnant à chaque nœud les étiquettes des nœuds d’où l’on peut arriver. En B, on lit 14.",
+    "Le piège est d’autoriser un retour vers la gauche, ce qui inventerait une infinité de trajets, ou de sauter un croisement. À retenir : le dénombrement de chemins monotones se fait par addition de proche en proche, comme sur une grille de Pascal."
+  ],
+  "43": [
+    "Cnida a 7 insectes à gauche et 8 à droite. Elle ne traite que la toile de gauche : un moustique est mangé, une mouche est déposée à droite. Quand la gauche est vide, il reste 12 insectes à droite. Cnida a mangé 3 moustiques.",
+    "La toile de droite est passée de 8 à 12 insectes : elle a donc reçu 4 mouches venues de la gauche. Ces 4 mouches faisaient partie des 7 insectes de gauche. Les 7 − 4 = 3 insectes de gauche qui n’ont pas traversé ont été mangés : ce sont des moustiques.",
+    "On n’a pas besoin de savoir combien de moustiques ou de mouches se trouvaient initialement à droite, parce que Cnida ne s’est occupée que de la gauche. Le surplus à droite mesure exactement le nombre de mouches transférées.",
+    "Le piège est de croire que les 12 insectes finaux de droite sont tous des moustiques, ou d’ajouter les 8 de droite aux 7 de gauche sans suivre le va-et-vient. À retenir : un transfert sélectif se lit sur la variation d’un des deux tas."
+  ],
+  "44": [
+    "Cnida pond 13 œufs chaque matin et les mouches en dévorent 6 chaque soir. Ce soir, après les mouches, il en reste 8, et l’on veut le reste dans 18 jours à midi. Il restera 140 œufs.",
+    "Chaque journée complète, hors le matin du dernier jour, augmente le stock de 13 − 6 = 7 œufs. À midi du dix-huitième jour, les mouches de ce dix-huitième soir n’ont pas encore agi, mais la ponte du matin a eu lieu. Il faut donc compter 17 nuits de gain, plus la ponte du dix-huitième matin.",
+    "En 17 jours, le surplus est 17 × 7 = 119. On ajoute les 8 œufs déjà là ce soir, puis les 13 pondus le matin du dix-huitième jour : 119 + 8 + 13 = 140. On vérifie l’instant demandé : midi, donc après la ponte et avant le festin du soir.",
+    "Le piège est de multiplier 18 × 7 puis d’oublier la ponte du dernier matin, ou au contraire de retrancher encore 6 œufs le dix-huitième soir. À retenir : on aligne le calendrier sur l’heure de la question, ici midi et non minuit."
+  ],
+  "45": [
+    "Un groupe de fourmis, de mille-pattes et de guêpes totalise 4 078 pattes et 32 ailes. Les insectes ont 6 pattes, les guêpes ont 4 ailes, les mille-pattes ont 1 000 pattes. Il y a 8 guêpes, et deux compositions possibles : 1 mille-pattes et 505 fourmis, ou 4 mille-pattes et 5 fourmis.",
+    "Les 32 ailes viennent uniquement des guêpes, d’où 32 ÷ 4 = 8 guêpes, qui portent déjà 48 pattes. Il reste 4 078 − 48 = 4 030 pattes à partager entre fourmis et mille-pattes. Le nombre de mille-pattes ne peut être que 1, 2, 3 ou 4, faute de pattes suffisantes pour 5.",
+    "S’il y a 1 mille-pattes, il reste 3 030 pattes, soit 505 fourmis. S’il y en a 2 ou 3, le reste n’est pas divisible par 6. S’il y en a 4, il reste 30 pattes, soit 5 fourmis. D’où exactement deux solutions entières.",
+    "Le piège est d’attribuer 1 000 pattes aux fourmis, ou d’oublier de retirer d’abord les pattes des 8 guêpes. À retenir : on fixe d’abord l’espèce qui a un attribut exclusif (ici les ailes), puis on teste la divisibilité pour les autres."
+  ],
+  "46": [
+    "Deux araignées tendent des cordes dans un cerceau, et l’on veut le plus grand nombre de croisements avec six fils en ligne droite. Ce maximum est 15.",
+    "Deux droites sécantes dans un disque se croisent au plus une fois. Pour multiplier les croisements, chaque nouveau fil doit couper tous les fils déjà tracés, en des points distincts, donc avec des extrémités intercalées sur le cercle. Aucun point commun à trois fils n’est admis si l’on vise le maximum.",
+    "On construit ainsi : le deuxième fil coupe le premier (1 croisement), le troisième coupe les deux précédents (1 + 2 = 3), le quatrième les trois précédents (somme 6), le cinquième les quatre (somme 10), le sixième les cinq (somme 15). C’est la somme 1 + 2 + 3 + 4 + 5, égale au nombre de paires parmi six fils.",
+    "Le piège est de faire passer trois fils par le même point, ce qui fusionne plusieurs croisements en un seul. À retenir : le maximum de croisements de n cordes d’un cercle est le nombre de paires, n(n − 1)/2."
+  ],
+  "47": [
+    "Sur une toile, les droites (AB) et (CD) sont parallèles, un angle de 74° et un angle de 140° sont donnés, et l’on cherche la mesure x de l’angle indiqué. Cette mesure est 246°.",
+    "Les parallèles permettent d’utiliser les angles alternes-internes et les angles correspondants. Un angle plat vaut 180°, un tour complet vaut 360°. L’angle de 140° n’est pas l’angle aigu utile : son supplémentaire 180° − 140° = 40° servira dans le faisceau de droites.",
+    "On trace la parallèle à (AB) et (CD) passant par le sommet de l’angle x. Cette parallèle partage le tour en angles que l’on sait reporter : 40° d’un côté par alternes-internes, 74° de l’autre. Il reste x = 360° − (40° + 74°) = 246°. L’angle cherché est donc rentrant, plus grand qu’un plat.",
+    "Le piège est de répondre 114° ou 66°, en oubliant que x est l’angle « large » marqué sur le schéma, pas le petit angle adjacent. À retenir : dès que des parallèles rencontrent une sécante, on transporte les angles, puis on referme le tour à 360° si besoin."
+  ],
+  "48": [
+    "Une araignée va du sommet D au sommet A d’un cube en fil de fer, sans repasser par un même sommet, et l’on veut le maximum d’insectes ramassés aux sommets visités. Ce maximum est 20 insectes.",
+    "Un cube a 8 sommets. Un chemin sans répétition de sommets en visite au plus 8, départ et arrivée compris. D et A sont imposés ; les autres sommets portent 6, 4, 3, 5, 2 et 1 insectes. On ne peut pas toujours empocher tous ces nombres, parce que deux sommets ne sont voisins que s’ils sont joints par une arête.",
+    "On cherche donc un chemin D → … → A qui visite une suite de sommets adjacents dont la somme des butins est maximale. Le corrigé exhibe un tel trajet de somme 20. Une somme 21, qui prendrait aussi le sommet à 1 insecte en plus de tous les autres, n’est pas réalisable avec la géométrie du cube dans cette numérotation.",
+    "Le piège est d’additionner tous les nombres de la figure sans vérifier qu’un chemin les relie, ou de traverser une face en ligne droite. À retenir : sur un polyèdre, le score d’un parcours est limité par les adjacences, pas seulement par les valeurs."
+  ],
+  "49": [
+    "Mimi se déplace sur un grillage, cinq sommets sont des garde-mangers, et la distance entre deux sommets est le plus petit nombre d’unités du quadrillage. Elle se place où la somme des distances aux cinq garde-mangers est minimale, et cette somme minimale vaut 20.",
+    "La distance utilisée est la distance de Manhattan du réseau, pas la distance à vol d’oiseau. Pour chaque sommet candidat, on additionne les cinq longueurs de plus courts chemins vers les disques noirs. L’exemple de l’énoncé, marqué d’une croix, totalise déjà 23, ce qui donne un plafond à battre.",
+    "On n’a pas besoin d’explorer tout le plan : un meilleur point se trouve parmi les sommets « au milieu » du nuage des cinq garde-mangers, au sens des médianes horizontale et verticale. Le corrigé indique cette position par une croix, et la somme y vaut 20, mieux que 23.",
+    "Le piège est de mesurer en diagonale comme si le grillage autorisait des pas obliques, ou de minimiser la distance au garde-manger le plus proche seulement. À retenir : la somme des distances de Manhattan se minimise en se plaçant sur les médianes du nuage."
+  ],
+  "50": [
+    "Une araignée tend un fil depuis le sommet de la tour Eiffel, haut de 300 m, jusqu’au sol à 100 m du pied. On demande l’aire du triangle formé par le fil, le sol et l’axe vertical de la tour. Cette aire vaut 15 000 m².",
+    "Le triangle est rectangle : l’axe de la tour est vertical, le sol est horizontal. Les deux côtés de l’angle droit mesurent 300 m et 100 m. Le fil est l’hypoténuse, mais on n’en a pas besoin pour l’aire.",
+    "L’aire d’un triangle rectangle est le demi-produit des côtés de l’angle droit : (300 × 100) / 2 = 15 000 m². On peut aussi penser à un rectangle 300 × 100 dont on prend la moitié.",
+    "Le piège est de calculer la longueur du fil par Pythagore puis de s’en servir comme base, ou d’oublier le facteur un demi. À retenir : dès que l’angle droit est évident, l’aire est le demi-produit des deux côtés qui l’encadrent."
+  ],
+  "51": [
+    "Cinq trous ont toutes leurs distances deux à deux distinctes ; chaque araignée va au trou le plus proche du sien. Elles ne peuvent pas se retrouver dans cinq trous encore tous occupés. Avec six trous, un échange deux par deux devient possible.",
+    "Pourquoi cinq échoue-t-il ? Rangeons les distances parcourues de la plus longue à la plus courte. L’araignée qui a fait le plus long trajet a quitté un trou que personne d’autre ne peut choisir comme « plus proche » : si une autre y allait, ce trajet serait encore plus court pour la première, contradiction. Ce trou reste donc vide, sauf cas d’égalité, interdit par l’énoncé pour cinq distances toutes distinctes dans le scénario d’occupation complète.",
+    "Plus précisément, ou bien la plus grande distance est unique et son trou de départ reste vide, ou bien on aurait des égalités qui, enchaînées sur un effectif impair, laissent encore un trou vacant. Avec six araignées, on peut apparier les trous en trois paires de plus proches voisins mutuels : chaque paire échange simplement ses occupantes, et tous les trous restent habités.",
+    "Le piège est d’imaginer un cycle de cinq, chacun allant chez le suivant : les distances toutes distinctes interdisent qu’un tel cycle soit fait de « plus proches ». À retenir : un graphe où chaque sommet pointe vers son plus proche voisin n’a pas de cycle impair, donc un effectif impair ne peut pas être une union de cycles."
+  ],
+  "52": [
+    "Une corde de 200 m, tendue entre deux pieux, est remplacée par une corde plus longue de 4 cm ; on la soulève en son milieu et l’on demande quels animaux passent dessous. Peuvent passer le chimpanzé, le koala, l’écureuil et la fourmi, mais ni la girafe ni l’éléphant.",
+    "En soulevant le milieu, on forme deux triangles rectangles identiques. Chaque base mesure 100 m, et chaque hypoténuse mesure (200,04) / 2 = 100,02 m. La hauteur h vérifie h² + 100² = 100,02².",
+    "On calcule h = √(100,02² − 100²) ≈ 2 m. Cette hauteur surprend : 4 cm de corde en plus, répartis sur 200 m, soulèvent pourtant le milieu d’environ deux mètres. La girafe (5 m) et l’éléphant (3,50 m) restent trop grands ; les quatre plus petits animaux passent.",
+    "Le piège est de croire qu’un surplus de 4 cm ne soulève que de 2 cm, comme si la corde se levait d’un seul tenant. À retenir : une corde presque tendue, soulevée au centre, donne une hauteur bien plus grande que le surplus, via Pythagore."
+  ],
+  "53": [
+    "L’arche a trois niveaux, 300 coudées de long, 50 de large, 30 de haut ; une coudée vaut environ 50 cm ; 3 500 couples de mammifères y prennent place. La surface moyenne par animal est d’environ 1,6 m², soit la réponse A.",
+    "La hauteur est une fausse piste : on demande une surface au sol, pas un volume. Un étage mesure 300 × 50 = 15 000 coudées carrées, trois étages en font 45 000. Une coudée carrée vaut 0,50 × 0,50 = 0,25 m², d’où une surface totale de 45 000 × 0,25 = 11 250 m².",
+    "Il y a 3 500 couples, donc 7 000 animaux. La surface moyenne est 11 250 ÷ 7 000 ≈ 1,61 m², ce qui correspond à 1,6 m². Les autres propositions sont les mêmes aires écrites en dm², dam² ou cm² de travers, ou un calcul qui aurait oublié un facteur 2 ou 3.",
+    "Le piège est de diviser un volume par le nombre d’animaux, ou d’oublier qu’un couple, ce sont deux bêtes. À retenir : on identifie d’abord la grandeur vraiment demandée — ici une aire — avant de convertir les unités."
+  ],
+  "54": [
+    "Un œuf d’autruche équivaut à 24 œufs de poule, et 6 œufs de poule nourrissent 5 personnes. On veut le nombre d’œufs d’autruche pour 60 personnes, sans œuf de poule. Il en faut 3.",
+    "On passe par une unité commune, l’œuf de poule. Pour 60 personnes, le besoin est (60 / 5) × 6 = 72 œufs de poule. Chaque œuf d’autruche remplace 24 œufs de poule, donc 72 ÷ 24 = 3 œufs d’autruche.",
+    "On peut aussi dire qu’un œuf d’autruche nourrit (24 / 6) × 5 = 20 personnes. Alors 60 personnes exigent 60 ÷ 20 = 3 œufs d’autruche. Les deux lectures se rejoignent.",
+    "Le piège est de répondre 60 ÷ 24 ou 24 × 60 / 5 sans aligner les 6 œufs de poule. À retenir : une règle de trois à deux étages se fait en convertissant tout dans une même denrée, ici l’œuf de poule."
+  ],
+  "55": [
+    "Chaque autruche donne une plume à chaque autre sauf à son ou sa partenaire ; 40 plumes vont dans une boîte, 80 dans l’autre. Il y a 6 couples à la fête.",
+    "Le total des plumes données est 120. S’il y a n couples, il y a 2n autruches, et chacune donne 2n − 2 plumes (ni à elle-même, ni à son partenaire). Le produit 2n(2n − 2) égale 120, soit n(n − 1) = 30.",
+    "L’équation n² − n − 30 = 0 a pour racines 6 et −5. Seul n = 6 a un sens. On vérifie : 12 autruches donnent chacune 10 plumes, soit 120 plumes. Les deux boîtes 40 et 80 ne font que partager ce total ; elles ne changent pas le dénombrement.",
+    "Le piège est de faire donner une plume aussi au partenaire, ou de compter 2n(2n − 1) comme dans un tournoi complet. À retenir : « tous sauf le partenaire » retire un appariement fixe avant de compter les dons."
+  ],
+  "56": [
+    "Alfonso sort la tête du sable le mardi à 8 h 15 après 98 h 5 min la tête enfouie, et l’on demande le début de la performance. La réponse est D : le vendredi à 6 h 10 min.",
+    "On retranche d’abord les journées entières. Or 96 heures font exactement 4 jours, et il reste 2 h 5 min à retrancher. Partir de mardi 8 h 15 et reculer de 4 jours amène au vendredi précédent, à la même heure 8 h 15.",
+    "On recule encore de 2 h 5 min : 8 h 15 moins 2 h donne 6 h 15, moins 5 min donne 6 h 10. Les propositions du jeudi correspondent à un recul de 3 jours seulement, et 6 h 20 inverserait les 5 minutes.",
+    "Le piège est de compter 98 heures comme 4 jours et d’oublier les 2 heures restantes, ou de reculer vers le jeudi en prenant mardi comme jour 0 mal calé. À retenir : on convertit une durée en jours complets plus un reste, puis on recule en deux temps."
+  ],
+  "57": [
+    "Un œuf d’autruche parfaitement sphérique a une circonférence de 43 cm, et la mouillette doit atteindre le fond tout en laissant 3 cm pour la tenir. Elle doit mesurer environ 16,7 cm.",
+    "La circonférence d’une sphère (grand cercle) est π fois le diamètre. Le diamètre, qui est aussi la profondeur intérieure d’un œuf sphérique ouvert jusqu’à l’opposé, vaut donc 43 / π ≈ 13,7 cm.",
+    "Il faut ajouter les 3 cm de prise : 13,7 + 3 = 16,7 cm. Sans ces 3 cm, la mouillette disparaîtrait entièrement dans l’œuf. L’approximation de π suffit, l’énoncé ne demandant pas davantage de décimales.",
+    "Le piège est de prendre 43 cm pour le diamètre, ou d’utiliser le rayon au lieu du diamètre. À retenir : pour une sphère, la « profondeur jusqu’au fond » depuis un point de la surface est le diamètre, pas le rayon."
+  ],
+  "58": [
+    "On enchaîne des égalités de poids entre rhinocéros, hippopotames, girafes, zèbres, singes, éléphants et une baleine, et l’on veut combien de singes pèsent autant qu’une baleine. Il en faut 130.",
+    "On exprime tout en une même unité, le singe, en suivant les ponts de l’énoncé. Une baleine pèse autant que cinq hippopotames. Trois rhinocéros pèsent autant que deux hippopotames ou que quatre girafes, donc un hippopotame pèse autant que deux girafes. Cinq hippopotames pèsent donc autant que dix girafes.",
+    "Cinq zèbres pèsent autant qu’une girafe ou que treize singes, donc une girafe pèse treize singes. Dix girafes pèsent 130 singes. Ainsi une baleine, égale à dix girafes, égale 130 singes. Les éléphants ne servent pas ici.",
+    "Le piège est d’utiliser « trois éléphants = une baleine » sans pont vers les singes, ou de confondre « cinq zèbres = une girafe » avec « un zèbre = cinq girafes ». À retenir : on choisit une unité finale et on ne garde que les égalités qui y mènent."
+  ],
+  "59": [
+    "On demande combien de baleines, d’environ 25 tonnes chacune, rempliraient les océans, parmi des ordres de grandeur énormes. Le calcul aboutit à environ 48 millions de milliards de baleines, soit beaucoup plus qu’un million de milliards, et moins qu’un milliard de milliards.",
+    "On estime d’abord la surface de la Terre : 4πR² avec R ≈ 6 400 km. En prenant π ≈ 3 et 6,4² ≈ 40, on trouve de l’ordre de 480 millions de km². Les océans en couvrent 70 %, soit environ 300 millions de km². Avec 4 km de profondeur moyenne, le volume est de l’ordre de 1,2 milliard de km³.",
+    "Un kilomètre cube vaut un milliard de mètres cubes, donc les océans font environ 1,2 milliard de milliards de m³. Une baleine, presque de l’eau, occupe 25 m³. Le quotient est 1,2 × 10¹⁸ / 25 = 4,8 × 10¹⁶, c’est-à-dire 48 millions de milliards.",
+    "Le piège est de rester en km³ sans passer aux m³, ou d’oublier les 25 m³ par baleine. À retenir : un ordre de grandeur planétaire se construit par étapes (aire, fraction océanique, profondeur, conversion de volume), chacune pouvant être arrondie sans changer la décade."
+  ],
+  "60": [
+    "Dans un étang de 128 batraciens, on compte 264 pattes et 113 queues, et une catégorie de têtards a un effectif double d’une autre. Le nombre de têtards à deux pattes peut valoir 62 ou 80, selon la catégorie qui est le double de l’autre.",
+    "Les 113 queues sont celles des têtards, donc il y a 113 têtards et 15 grenouilles. Les grenouilles apportent 15 × 4 = 60 pattes. Il reste 204 pattes pour les têtards. Si x, y, z sont les têtards à 0, 2 et 4 pattes, on a x + y + z = 113 et 2y + 4z = 204, soit y + 2z = 102.",
+    "On examine les six manières d’avoir un effectif double d’un autre. Deux cas seulement donnent des entiers positifs : y = 2x mène à y = 62, x = 31, z = 20 ; x = 2z mène à y = 80, x = 22, z = 11. Les autres rapports produisent des non-entiers ou un effectif négatif.",
+    "Le piège est d’attribuer une queue aux grenouilles, ou de n’explorer qu’un seul rapport du double. À retenir : quand une phrase dit « une catégorie est le double d’une autre » sans préciser lesquelles, il faut tester toutes les paires."
+  ],
+  "61": [
+    "n grenouilles et n crapauds s’échangent leurs places en avançant ou en sautant, un mouvement par seconde, et le ballet est fini avant 3 h. Le nombre maximal de batraciens est 204, soit n = 102 de chaque côté.",
+    "Pour n de chaque espèce, le nombre de mouvements d’une solution classique est n(n + 2) : on compte les avances d’une case et les sauts, en deux phases symétriques, plus n sauts centraux. Chaque mouvement dure une seconde, donc la durée est n(n + 2) secondes.",
+    "Minuit à 3 h, c’est au plus 10 800 secondes, et le ballet est déjà fini, donc n(n + 2) < 10 800. Alors (n + 1)² < 10 801, d’où n + 1 ≤ 103 et n ≤ 102. Le total 2n vaut au plus 204.",
+    "Le piège est d’autoriser deux déplacements à la fois, ce que l’énoncé interdit, ou de compter 3 h = 3 000 secondes. À retenir : un échange de deux files qui ne reculent jamais a une durée quadratique en n, ce qui borne n dès que le temps est limité."
+  ],
+  "62": [
+    "Bébert est attaché à un coin d’une bergerie carrée de 10 m de côté par une corde de 22 m, et l’on doit dessiner la surface d’herbe broutable. Le corrigé délimite cette surface par cinq arcs de cercle : quatre quarts de cercle et un trois-quarts de cercle.",
+    "Tant que la corde ne rencontre pas un mur, Bébert broute un quart de disque de rayon 22 m, à l’extérieur de l’angle de la bergerie. Dès que la corde s’enroule le long d’un mur, le centre effectif glisse au prochain coin, et le rayon diminue de 10 m, côté du bâtiment.",
+    "Après un premier enroulement, le rayon utile devient 12 m, ce qui donne de nouveaux quarts de cercle autour des coins adjacents. S’il reste assez de corde pour dépasser encore un coin, un dernier arc, plus petit, complète la zone. Le dessin rassemble ces arcs en une région d’un seul tenant autour de la bergerie.",
+    "Le piège est de tracer un simple quart de disque de rayon 22 m, comme si la bergerie n’existait pas, ou d’autoriser Bébert à traverser le bâtiment. À retenir : une chèvre (ou un bélier) autour d’un obstacle se traite par morceaux, un arc par « centre d’enroulement »."
+  ],
+  "63": [
+    "Alex a eu, dans un certain ordre, un berger allemand, un dalmatien, un caniche et un dogue allemand, nommés Jamie, Sammy, Whitney et Jimmy. L’ordre est : Jamie le dalmatien, puis Sammy le berger allemand, puis Whitney le dogue allemand, enfin Jimmy le caniche.",
+    "Jamie est le premier chien. Sammy, le berger allemand, est le deuxième. Il reste donc Whitney et Jimmy pour les rangs 3 et 4, et il reste le dalmatien, le dogue et le caniche à placer sur les rangs 1, 3 et 4, le rang 2 étant déjà le berger.",
+    "Le dalmatien précède le dogue, et Jamie est premier : Jamie est donc le dalmatien, ce qui place le dogue plus tard. Whitney précède le caniche, et Jimmy n’est pas un dogue : Whitney est donc le dogue (rang 3) et Jimmy le caniche (rang 4). Toute autre attribution contredit une phrase.",
+    "Le piège est d’attribuer le berger allemand à Jamie parce qu’il est cité en premier dans la liste des races. À retenir : on place d’abord les faits qui fixent un rang et un nom, puis on fait glisser les contraintes « avant / après »."
+  ],
+  "64": [
+    "Cinq bernard-l’hermite (deux parents, trois enfants) ont chacun quatre paires de chaussures, soit huit chaussures. Un parent ôte une chaussure en une seconde, un enfant en deux secondes, et l’on peut s’entraider, une chaussure à la fois par individu. Le temps minimal est 15 secondes.",
+    "Au départ, tout le monde travaille sur soi. Après 10 secondes, les parents, plus rapides, sont déchaussés (8 chaussures à 1 s, en parallèle sur les deux pieds possibles... en suivant le planning du corrigé). Les enfants, eux, n’ont pas fini : ils vont deux fois moins vite.",
+    "Dès qu’un parent est libre, il aide un enfant : il retire alors une chaussure d’enfant par seconde, ce qui double le rythme de cet enfant. Après 14 secondes, il ne reste plus qu’une seule chaussure. La quinzième seconde l’ôte. Le schéma du corrigé encadre les pieds déjà nus au fil du temps.",
+    "Le piège est d’additionner 5 × 8 × 2 secondes comme si un seul personnage travaillait, ou d’oublier qu’un parent ne peut ôter qu’une chaussure à la fois. À retenir : un ordonnancement optimal met les agents rapides au service des plus lents dès qu’ils sont libres."
+  ],
+  "65": [
+    "Camille a un chien, deux chats, deux perroquets et quatre poissons, tous présents, et l’on veut le nombre de pattes. La réponse est C : 16 pattes.",
+    "Le chien et chaque chat ont quatre pattes, chaque perroquet en a deux, et un poisson n’en a aucune. On n’ajoute donc que les mammifères et les oiseaux. Les poissons sont là pour tenter un surplus imaginaire.",
+    "Le calcul est (1 + 2) × 4 + 2 × 2 = 12 + 4 = 16. Les propositions 12 ou 14 oublient les perroquets ou un chat ; 20 attribue des pattes aux poissons ; 36 compte sans doute des pattes en trop sur chaque bête.",
+    "Le piège classique, surtout pour de jeunes élèves, est de donner des pattes aux poissons. À retenir : on dresse d’abord le tarif de pattes par espèce, y compris le zéro, avant d’additionner."
+  ],
+  "66": [
+    "Il s’agit de « montrer » l’égalité fantaisiste CHEVAL / OISEAU = π, par un jeu de mots de taupe (classe préparatoire). Ce n’est pas une identité numérique, c’est une chaîne de calembours qui se referme sur π.",
+    "On écrit OISEAU comme une « bête à ailes », notée βL, si l’on accepte de lire « ailes » comme la lettre L précédée d’un bêta. Le quotient CHEVAL / OISEAU devient alors CHEVAL / (βL). On « simplifie » la lettre L, ce qui laisse CHEVA / β.",
+    "On réordonne CHEVA en VACHE, la multiplication des lettres étant plaisamment commutative. La vache est une « bête à pis », notée βπ. Le quotient devient (βπ) / β, et le bêta se simplifie. Il reste π, ce qu’il fallait « démontrer ».",
+    "Le piège serait de prendre cette preuve au sérieux, ou de chercher une constante physique du cheval et de l’oiseau. À retenir : ici, la morale est humoristique : les lettres et les homophonies peuvent imiter une réduction algébrique, sans rien prouver."
+  ],
+  "67": [
+    "Le chien est plus vieux que le chat, le chat est plus jeune que le perroquet, et le perroquet est plus vieux que le chien. L’animal le plus vieux est le perroquet, devant le chien, puis le chat.",
+    "« Plus vieux que » est une relation d’ordre. Chien > chat, perroquet > chat, et perroquet > chien. Les trois comparaisons s’emboîtent en une seule chaîne : perroquet > chien > chat.",
+    "Aucune autre lecture n’est possible : si le chien était le plus vieux, il contredirait « le perroquet est plus vieux que le chien ». Si le chat était le plus vieux, il contredirait les deux premières phrases.",
+    "Le piège est de croire que les trois phrases se contredisent, alors qu’elles sont compatibles. À retenir : trois comparaisons bien choisies suffisent à ordonner trois éléments, à condition de les aligner dans le même sens."
+  ],
+  "68": [
+    "Lewis Carroll donne sept phrases sur des animaux, des blaireaux, un pré et des devinettes. On en conclut qu’aucun blaireau ne peut résoudre une devinette, ou, de façon équivalente, qu’aucun animal capable de résoudre une devinette n’est un blaireau.",
+    "On enchaîne les implications comme des syllogismes. Résoudre une devinette exige une éducation scolaire ; une telle éducation empêche de courir en hurlant ; or un animal mortellement offensé court en hurlant ; donc un animal qui résout des devinettes n’est pas mortellement offensé.",
+    "Les animaux sont offensés lorsque le narrateur ne fait pas attention à eux ; donc le narrateur fait attention à tout animal qui résout des devinettes. Mais il ne fait attention qu’à ses propres animaux, lesquels sont dans le pré ; or aucun animal du pré n’est un blaireau. Donc aucun animal qui résout une devinette n’est un blaireau.",
+    "Le piège est de conclure trop tôt « il n’y a pas de blaireau dans le pré », ce qui est déjà une prémisse, sans aller jusqu’à la devinette. À retenir : un puzzle de Carroll se résout en une chaîne unique, chaque phrase n’étant utilisée qu’une fois comme maillon."
+  ],
+  "69": [
+    "Un boa de 5 m s’enroule au plus court autour d’une tour cylindrique de périmètre 4 m et arrive à l’aplomb de sa queue. On demande si une échelle de 3,5 m suffit pour monter tout en haut. Oui : la hauteur de la tour est 3 m, donc l’échelle est assez longue.",
+    "L’astuce est de « dérouler » le cylindre : le développement est un rectangle de largeur 4 m (le périmètre). Le plus court chemin qui rejoint un point à l’aplomb de la queue devient, sur ce rectangle, un segment, hypoténuse d’un triangle rectangle dont un côté est le périmètre 4 m.",
+    "Le boa mesure 5 m, donc l’autre côté du triangle, qui est la hauteur de la tour, vaut 3 m, parce que 3² + 4² = 5². C’est le triangle rectangle 3-4-5, déguisé en serpent. Une échelle de 3,5 m dépasse cette hauteur de 50 cm.",
+    "Le piège est de comparer 3,5 m à la longueur du boa, ou de croire que l’enroulement allonge la hauteur. À retenir : le plus court chemin sur un cylindre se lit comme une droite sur le rectangle développé."
+  ],
+  "70": [
+    "On connaît deux situations de bœufs qui broutent un pré dont l’herbe repousse, et l’on veut combien de bœufs vident 96 ares en 18 jours. Il en faut 100.",
+    "L’herbe initiale et l’herbe qui pousse chaque jour se mêlent : on ne peut pas simplement proportionner les bœufs à l’aire. On note h la pousse quotidienne par are. En 12 jours, 75 bœufs mangent l’herbe de 60 ares plus 12 × 60h ares de pousse. En 15 jours, 81 bœufs mangent 72 ares plus 15 × 72h ares de pousse.",
+    "En égalant la ration quotidienne d’un bœuf dans les deux situations, on obtient une équation en h, qui donne h = 1/12 d’are par jour et par are. On en déduit qu’un bœuf mange 2/15 d’are « équivalent » par jour. Pour 96 ares en 18 jours, l’herbe à absorber vaut 96 + 18 × 96 × (1/12) = 240 ares équivalents, ce qui demande 100 bœufs.",
+    "Le piège est d’appliquer une simple règle de trois en oubliant la pousse, ou de traiter h comme une constante globale et non par are. À retenir : un pré qui repousse se modèle par une part fixe (l’herbe déjà là) plus une part proportionnelle au temps et à l’aire."
+  ],
+  "71": [
+    "Deux marchands vendent n bœufs à n roubles pièce, achètent des moutons à 10 roubles et un agneau moins cher, puis partagent en deux parts de même valeur : l’un a un mouton de plus, l’autre prend l’agneau et un complément entier. Ce complément vaut 2 roubles.",
+    "Le produit de la vente est n² roubles. Ce carré s’écrit 10 fois un nombre impair de moutons, plus le prix a de l’agneau, avec a < 10. Les carrés ont des chiffres des dizaines contraints : le seul prix d’agneau compatible est 6 roubles. Un mouton vaut 10, l’agneau 6, l’écart est donc 4 roubles.",
+    "Pour que les deux lots aient la même valeur alors que l’un contient un mouton de plus et l’autre l’agneau, le marchand à l’agneau doit recevoir la moitié de cet écart, soit 2 roubles. Ainsi l’un a, en valeur, un mouton ; l’autre a un agneau plus 2 roubles, ce qui égale aussi 8 roubles de différence compensée... plus précisément, chaque part s’équilibre à 2 roubles près de l’écart 4.",
+    "Le piège est de répondre 4 roubles, l’écart brut, sans partager cet écart en deux. À retenir : quand on égalise deux lots dont les objets diffèrent d’une valeur paire, le soulte est souvent la moitié de cette différence."
+  ],
+  "72": [
+    "Deux hommes ont des bœufs. Si le second en donne deux au premier, ils en ont autant ; ensuite, si le premier en redonne deux, le second en a le double. Le premier a 4 bœufs et le second en a 8.",
+    "Notons P et D les effectifs initiaux. La première phrase donne P + 2 = D − 2, donc D = P + 4. Après cet échange, les effectifs sont P + 2 et D − 2. La deuxième phrase, partant de là, dit que si l’on reprend deux bœufs au premier pour les rendre au second, ce dernier a le double : on retrouve 2P = D.",
+    "On substitue : 2P = P + 4, donc P = 4 et D = 8. Vérification : le second donne 2, chacun a 6 ; le premier rend 2, il lui reste 4 et l’autre en a 8, le double. Les deux phrases sont donc simultanément vraies, dans l’ordre indiqué.",
+    "Le piège est d’appliquer les deux phrases au même instant, sans enchaîner les échanges, ou d’inverser qui donne. À retenir : un dialogue d’Alcuin se traduit par deux équations successives, la seconde portant sur les effectifs déjà modifiés."
+  ],
+  "73": [
+    "Trois côtes de bœuf doivent cuire 3 minutes par face, mais le barbecue n’en accepte que deux à la fois. Le temps minimal est 9 minutes.",
+    "Six faces sont à cuire, et l’on ne peut en exposer que deux à la fois, donc au moins 9 minutes sont nécessaires : 6 × 3 / 2 = 9. Il reste à montrer que 9 minutes suffisent, en évitant qu’une côte attende bêtement alors qu’une plaque est libre.",
+    "Pendant les 3 premières minutes, on cuit une face de C1 et une face de C2. Puis l’on cuit la seconde face de C1 et la première de C3. Enfin l’on cuit les secondes faces de C2 et de C3. Chaque face a eu ses 3 minutes, et le barbecue n’a jamais été vide.",
+    "Le piège est de cuire C1 et C2 entièrement (6 minutes) puis C3 (6 minutes de plus), ce qui ferait 12 minutes. À retenir : quand un four a deux emplacements et trois pièces à deux faces, on intercalle la troisième pièce dès qu’une face est finie."
+  ],
+  "74": [
+    "Augias décrit son troupeau par des fractions : la moitié près de l’Alphée, le huitième sur la colline, le douzième près de Taraxippe, le vingtième près d’Élis, le trentième en Arcadie, et 50 bœufs ici. Le troupeau compte 240 bœufs.",
+    "Si x est l’effectif, l’énoncé dit que x égale la somme de ces parts plus 50. On écrit x = x/2 + x/8 + x/12 + x/20 + x/30 + 50. Les dénominateurs 2, 8, 12, 20, 30 ont pour multiple commun 120.",
+    "On multiplie par 120 : 120x = 60x + 15x + 10x + 6x + 4x + 6 000, soit 120x = 95x + 6 000, donc 25x = 6 000 et x = 240. On vérifie les parts : 120, 30, 20, 12, 8 et 50, dont la somme est bien 240.",
+    "Le piège est d’additionner les fractions sans le reste de 50, ou de prendre un mauvais commun dénominateur. À retenir : « le reste est 50 » ferme l’équation, et un essai des diviseurs de 120 confirme le calcul."
+  ],
+  "75": [
+    "Une voisine a acheté la même masse de bœuf à 2 shillings la livre et de saucisses à 18 pence la livre. Si elle avait partagé le même argent également entre les deux, elle aurait gagné 2 livres de poids. Elle a dépensé 8 livres sterling et 8 shillings.",
+    "On aligne les unités : 1 shilling = 12 pence, donc les saucisses coûtent 1,5 shilling la livre, et le bœuf 2 shillings la livre. Soit m la masse de chaque viande, en livres-poids. La dépense est m × 2 + m × 1,5 = 3,5m shillings.",
+    "Avec la même somme partagée également, chaque moitié achète du bœuf à 2 shillings et des saucisses à 1,5 shilling. Les masses deviennent alors différentes, et leur somme dépasse 2m de 2 livres-poids. En résolvant, on trouve m = 48. La dépense est 48 × 3,5 = 168 shillings, soit 8 livres sterling (160 shillings) et 8 shillings.",
+    "Le piège est de confondre la livre-poids et la livre sterling, ou d’oublier que 18 pence font un shilling et demi. À retenir : un problème de Dudeney se gagne en écrivant deux paniers — l’achat réel et l’achat « à parts d’argent égales » — puis en égalant les sommes d’argent."
+  ],
+  "76": [
+    "Quatre animaux (bœuf, éléphant, lion, singe) portent 2, 4, 5 ou 7 épis et exercent quatre métiers. Le bœuf porte 7 épis et est forgeron, l’éléphant porte 4 épis et est tailleur, le lion porte 2 épis et est musicien, le singe porte 5 épis et est comédien.",
+    "L’animal à 7 épis est forgeron. Le bœuf porte trois épis de plus que l’éléphant : les couples possibles sont 5 et 2, ou 7 et 4. Le singe n’est ni forgeron ni tailleur et porte plus de 4 épis, donc 5 ou 7. S’il avait 7, il serait forgeron, interdit : le singe a 5 épis. Alors le bœuf a 7 et l’éléphant 4, et le lion a 2.",
+    "Le tailleur a moins de 5 épis et n’est pas un lion : c’est donc l’éléphant à 4 épis. L’animal à 5 épis est tailleur ou comédien, mais le tailleur est déjà pris : le singe est comédien. Le bœuf n’est pas musicien et est déjà forgeron. Il reste au lion le métier de musicien.",
+    "Le piège est d’attribuer 5 et 2 au bœuf et à l’éléphant, ce qui laisserait le singe avec 7 et le métier de forgeron, interdit. À retenir : on croise d’abord les phrases qui lient un nombre d’épis à un métier unique, puis on élimine."
+  ],
+  "77": [
+    "John Beef a trois enfants d’âges tous différents, et le produit « nombre de bêtes × produit des âges » égale le carré du nombre de bêtes plus la somme des carrés des âges. Le troupeau, minimal avec quatre nombres distincts, compte 262 animaux.",
+    "L’équation a la forme abcd = a² + b² + c² + d², où a est le nombre de bêtes, plus grand que l’âge de l’aînée. C’est une équation étudiée par Hurwitz : si (a, b, c, d) est solution, (a, b, c, abc − d) l’est aussi. On peut donc engendrer de nouvelles solutions à partir de solutions plus petites, dites primitives.",
+    "Parmi les chaînes ainsi obtenues, on retient la solution en entiers strictement positifs distincts qui rend a minimal tout en restant plus grand que les trois âges. Cette solution est (2, 6, 22, 262), et 262 est le nombre de bêtes. Les âges 2, 6 et 22 sont tous différents, et 262 dépasse 22.",
+    "Le piège est d’échanger a avec un âge, ou de prendre une solution plus petite où le « troupeau » serait plus jeune que l’aînée. À retenir : une équation symétrique peut avoir plusieurs solutions, et l’énoncé tranche par un critère de minimalité et d’inégalité."
+  ],
+  "78": [
+    "Quatre équations donnent, dans l’ordre, la masse du brachiosaure, l’année de la découverte, la longueur de l’omoplate et l’âge en millions d’années. En les résolvant telles quelles, on trouve 40 tonnes, l’année 1979, une omoplate de 2,80 m et un âge de 110 millions d’années.",
+    "La masse m est la solution de x − 10 = 30, donc m = 40 tonnes. L’année vérifie x + m = 2 019, donc x = 1 979. L’omoplate vérifie x ÷ 0,07 = m, donc x = 0,07 × 40 = 2,80, à lire en mètres (280 cm). L’âge vérifie 2x = 3m + 100, donc 2x = 220 et x = 110.",
+    "Chaque équation a sa propre inconnue x : on ne reporte m que là où la lettre m apparaît. Le corrigé cite aussi le Livre des records (omoplate 2,82 m, âge 160 Ma), qui sert de couleur historique et s’écarte légèrement des équations. Pour l’exercice, ce sont les quatre résolutions qui priment.",
+    "Le piège est de réutiliser le même x d’une question à l’autre, ou de lire 2,80 comme 2,80 cm. À retenir : une suite d’équations « à trou » se traite une par une, en ne partageant que les grandeurs explicitement communes, ici m."
+  ],
+  "79": [
+    "Marine rentre 170 brebis dans trois bergeries : A a le double de B, et C en a 20. Il y a 100 brebis en A, 50 en B et 20 en C.",
+    "Après avoir retiré les 20 brebis de C, il reste 150 brebis à partager entre A et B. Si B a une part, A en a deux, donc le tout fait trois parts égales à l’effectif de B. D’où 150 ÷ 3 = 50 en B, et 100 en A.",
+    "On vérifie : 100 + 50 + 20 = 170, et 100 est bien le double de 50. Aucune autre répartition entière ne respecte à la fois le total et le double.",
+    "Le piège est de faire de C le double de B, ou de partager 170 en deux au lieu de trois parts après le retrait de C. À retenir : « A est le double de B » convertit A + B en 3 × B, ce qui se divise d’un coup."
+  ],
+  "80": [
+    "Bruno a compté 332 têtes ; il a un bouc, 118 brebis à un agneau, 25 à jumeaux et 3 à triplés, et l’on veut les brebis sans petit. Il y en a 8.",
+    "Chaque mise bas ajoute la mère et ses petits au décompte des têtes. Un agneau simple compte pour 2 têtes (mère + petit), des jumeaux pour 3, des triplés pour 4. Le bouc compte pour 1. Les brebis sans petit ne comptent, elles, que pour elles-mêmes.",
+    "On retire donc 1 bouc, 118 × 2 têtes, 25 × 3 têtes et 3 × 4 têtes : 332 − 1 − 236 − 75 − 12 = 8. Ces 8 têtes restantes sont les brebis qui n’ont pas eu de petit. On n’a pas besoin d’inventer d’autres mâles.",
+    "Le piège est d’oublier de compter les mères avec les agneaux, ou de compter le bouc comme une brebis. À retenir : un inventaire « têtes » se décompose en paquets (mère + petits) dont la taille dépend du type de portée."
+  ],
+  "81": [
+    "146 brebis passent 12 minutes en salle de traite, 20 à la fois. La durée de la traite est 96 minutes.",
+    "On ne peut pas traiter 146 brebis en un seul service. La division 146 = 7 × 20 + 6 montre qu’il faut 7 salles pleines et un huitième passage pour les 6 dernières. Huit groupes se succèdent, même si le dernier n’est pas complet.",
+    "Chaque groupe occupe la salle 12 minutes, et les groupes ne se chevauchent pas. Le temps total est 12 × 8 = 96 minutes. Réduire à 7 × 12 laisserait 6 brebis dehors.",
+    "Le piège est d’arrondir 146 / 20 à 7, ou de croire que les 6 dernières prennent moins de 12 minutes. À retenir : un last-in incomplet coûte tout de même un créneau entier si la salle travaille par lots."
+  ],
+  "82": [
+    "Bruno numérote 146 brebis à partir de 1 avec des pochoirs 0 à 8, le 6 servant aussi de 9 à l’envers. Il utilisera 49 fois le pochoir 6, marquera 330 chiffres en tout, et consommera 7 litres de peinture (à 50 chiffres le litre, par excès).",
+    "Pour le pochoir 6, on parcourt les nombres de 1 à 146 et l’on compte chaque chiffre 6 ou 9, en n’oubliant pas les nombres qui en portent deux, comme 66, 69, 96 et 99. Ce décompte donne 49 usages. Une liste systématique par dizaines évite d’en manquer.",
+    "Pour le nombre total de chiffres, on sépare les nombres à 1 chiffre (9, de 1 à 9), à 2 chiffres (90, de 10 à 99) et à 3 chiffres (47, de 100 à 146). On obtient 9 + 90 × 2 + 47 × 3 = 330 chiffres. À 50 chiffres par litre, 330 = 6 × 50 + 30, donc 6 litres ne suffisent pas : il en faut 7.",
+    "Le piège est de compter 66 une seule fois, ou de traiter 0 comme un pochoir utile dès le nombre 1, ou d’arrondir 330 / 50 à 6. À retenir : un numérotage se compte chiffre par chiffre, et un pochoir « 6 = 9 » double certains appels."
+  ],
+  "83": [
+    "La bergerie a un rectangle d’aliments et six zones identiques pour les brebis, séparées par des allées de 4 m ; la longueur d’une zone est le double de sa largeur ; IJ = 30 m et NK = 8 m. Chaque zone a 9 m de large, et la bergerie (NJ) mesure 78 m de long.",
+    "Le côté IJ = 30 m traverse deux largeurs de zone et trois allées de 4 m. Les trois allées prennent 12 m, il reste 18 m pour deux largeurs, donc 9 m par zone. La longueur d’une zone est alors 18 m.",
+    "Dans l’autre sens, trois longueurs de zone et quatre allées de 4 m donnent KJ = 3 × 18 + 16 = 70 m. On ajoute le rectangle d’aliments NK = 8 m : NJ = 70 + 8 = 78 m. Les allées comptent bien quatre dans cette direction si six zones sont disposées en deux rangées de trois.",
+    "Le piège est d’oublier une allée, ou de prendre IJ pour une longueur de zone. À retenir : un plan « boxes + couloirs » se traduit par n dimensions utiles plus (n ± 1) largeurs d’allée, selon que les allées bordent aussi l’extérieur."
+  ],
+  "84": [
+    "Alain prend deux fois plus de gardons que de brochets ; Alex en prend autant de chaque, et trois fois plus de poissons qu’Alain. On tire un brochet au hasard dans le vivier commun, et la probabilité qu’il vienne d’Alex (à la cuillère) est 9/11.",
+    "Soit a le nombre de brochets d’Alain. Alors Alain a 2a gardons, soit 3a poissons. Alex en a 9a, dont autant de brochets que de gardons, donc (9a)/2 brochets. Le total des brochets est a + 9a/2 = 11a/2.",
+    "Parmi ces brochets, ceux d’Alex sont 9a/2. Le rapport est (9a/2) / (11a/2) = 9/11. La valeur de a s’élimine : seule la structure des rapports compte, pas le nombre absolu de poissons, pourvu qu’il soit pair de façon que 9a/2 soit entier.",
+    "Le piège est de répondre 3/4 parce qu’Alex pêche trois fois plus en tout, alors que la question conditionne aux brochets seulement. À retenir : une probabilité « parmi les brochets » ignore les gardons, même s’ils ont servi à fixer les effectifs."
+  ],
+  "85": [
+    "Chaque nom d’animal a été remplacé par les numéros de ses lettres dans l’alphabet, puis les séparateurs ont été ôtés. Les cinq animaux sont CROCODILE, GIRAFE, LÉOPARD, ÉLÉPHANT et LION.",
+    "On découpe chaque file de chiffres en entiers entre 1 et 26, de façon que les lettres obtenues forment un animal de safari. Un 1 suivi d’un 8 peut être A puis H, ou la lettre R (18) : le contexte du mot tranche. L’exemple BUFFLE → 221661125 guide la lecture.",
+    "Ainsi 3-18-15-3-15-4-9-12-5 donne CROCODILE, 7-9-18-1-6-5 donne GIRAFE, 12-5-15-16-1-18-4 donne LÉOPARD, 5-12-5-16-8-1-14-20 donne ÉLÉPHANT, et 12-9-15-14 donne LION. Chaque découpage est le seul qui produise un animal plausible.",
+    "Le piège est de lire 12 comme A puis B, ou d’oublier que É se code comme E, en cinquième position. À retenir : un chiffre-collé se segmente de la fin ou du début en testant 1 ou 2 chiffres, sous la contrainte d’un vocabulaire."
+  ],
+  "86": [
+    "Deux vases A et B contiennent chacun un litre, l’un de lait de vache, l’autre de lait de bufflonne. Après une suite de transvasements (un demi-litre, puis un quart, puis un quart, puis un demi-litre), A n’a pas plus de lait de vache que B n’a de lait de bufflonne : les deux quantités sont égales.",
+    "À la fin, chaque vase a retrouvé son volume initial d’un litre. Tout volume de lait de bufflonne passé dans A a été remplacé, dans B, par le même volume de lait de vache. Les « trous » laissés d’un côté sont les « surplus » de l’autre.",
+    "On peut aussi suivre les fractions à chaque étape, en supposant les mélanges homogènes : les calculs, plus longs, aboutissent au même équilibre. L’argument global évite les fractions et montre pourquoi le résultat ne dépend pas de l’ordre exact, pourvu que les volumes finaux soient revenus à 1 L chacun.",
+    "Le piège est de croire que B, qui a reçu le premier demi-litre de vache, reste plus « vache » que A n’est « bufflonne ». À retenir : quand deux récipients reviennent à leur volume, les quantités échangées des deux liquides sont égales."
+  ],
+  "87": [
+    "Gaspard se déplace sur les lignes d’un quadrillage de maille 1 cm. Depuis un croisement, 12 autres croisements sont à la distance 3 cm, et il existe 28 chemins de longueur exactement 3 cm.",
+    "La distance dont parle la première question est la distance du quadrillage, somme des pas horizontaux et verticaux. Les points à distance 3 sont ceux dont les déplacements (a, b) vérifient |a| + |b| = 3. Il y en a 4 sur les axes et 8 en biais, soit 12, comme les points d’un petit losange.",
+    "Un chemin de longueur 3 cm est une suite de 3 pas unitaires, chacun vers l’un des 4 points cardinaux. Il y en a 4³ = 64 si l’on autorise tous les retours. L’énoncé, lui, compte les chemins qui relient le départ à un point, en suivant le corrigé : 28 trajets distincts, obtenus en regroupant les directions (huit vers certaines cibles, un seul vers les extrémités d’un axe, sans double-compter les lignes droites).",
+    "Le piège est de répondre 4 × 3 = 12 pour les chemins, ou de confondre distance à vol d’oiseau et distance le long de la grille. À retenir : sur un quadrillage, « à 3 cm » désigne une couronne de Manhattan, tandis que « chemins de 3 cm » dénombre des suites de pas."
+  ],
+  "88": [
+    "Un zoo a autant de lamas (0 bosse) que de chameaux (2 bosses), plus de chameaux que de dromadaires (1 bosse), 17 animaux en tout avec un camécéros unique, et 21 bosses. Le camécéros a 5 bosses.",
+    "Un lama et un chameau ont à eux deux 2 bosses, autant que deux dromadaires, et autant de têtes. Comme il y a autant de lamas que de chameaux, on peut remplacer chaque couple lama-chameau par deux dromadaires sans changer ni le nombre de têtes ni le nombre de bosses.",
+    "Il resterait alors 16 dromadaires et le camécéros. Seize dromadaires ont 16 bosses, or il y en a 21 : le camécéros en a 5. La condition « plus de chameaux que de dromadaires » est compatible avec cette lecture, et n’est pas nécessaire au calcul des bosses.",
+    "Le piège est de poser un système à quatre inconnues sans voir l’invariant lama + chameau = deux dromadaires. À retenir : une substitution qui conserve têtes et bosses réduit le problème à une seule inconnue, ici le camécéros."
+  ],
+  "89": [
+    "Un caméléon gris, sept bruns et cinq rouges changent de couleur par paires : deux couleurs différentes deviennent toutes deux la troisième. On peut aboutir à uniquement des caméléons rouges. Une suite de rencontres le montre explicitement.",
+    "Chaque rencontre transforme une paire (gris, brun) en deux rouges, ou (gris, rouge) en deux bruns, ou (brun, rouge) en deux gris. Les effectifs changent de ±1 ou ±2, mais une quantité modulo 3 est invariante : les trois couleurs restent congrues à elles-mêmes modulo 3, à une permutation près selon la règle exacte « les deux prennent la troisième ».",
+    "Partant de (1, 7, 5), on peut suivre la chaîne du corrigé : plusieurs rencontres brun-rouge, puis une série de rencontres gris-brun, jusqu’à (0, 0, 13). Tous sont alors rouges. L’existence d’un chemin suffit à « montrer que c’est possible » : on n’a pas à prouver que toutes les suites y mènent.",
+    "Le piège est de croire qu’une rencontre rend les deux animaux de la couleur de l’un des deux, alors qu’ils prennent tous deux la couleur manquante. À retenir : pour une question d’accessibilité, un exemple explicite de suite vaut une preuve."
+  ],
+  "90": [
+    "Deux caméléons de sept cases noires ou blanches se croisent : chaque case change de couleur selon une règle locale illustrée. Après le passage, le caméléon du haut est noir-noir-noir-blanc-blanc-blanc-blanc, et celui du bas est noir-blanc-noir-blanc-noir-blanc-noir.",
+    "Une case du bas change de couleur à chaque passage d’une case au-dessus, quelles que soient les couleurs. Les sept cases du haut passent sur chaque case du bas, donc chaque case du bas change 7 fois, un nombre impair : elle s’inverse. Un damier initial du bas devient le damier opposé, ici noir-blanc-noir-blanc-noir-blanc-noir.",
+    "Une case du haut change lorsqu’elle passe sur du noir, et garde sa couleur sur du blanc. Selon sa position, elle rencontre 3 ou 4 noirs, parce que le bas s’inverse au fur et à mesure. En suivant ces 3 ou 4 inversions pour chacune des sept cases, on obtient noir, noir, noir, puis quatre blancs.",
+    "Le piège est d’appliquer la règle une seule fois « en bloc », sans tenir compte de l’ordre du croisement. À retenir : un passage case après case compose des inversions dont le nombre, pair ou impair, décide de la couleur finale."
+  ],
+  "91": [
+    "On photographie trois camélidés au hasard parmi 15 dromadaires, 10 chameaux et 5 lamas, et l’on veut le nombre moyen de bosses. Cette moyenne vaut 3,5.",
+    "Il y a 30 animaux, donc 4 060 triplets équiprobables. Le nombre de bosses d’un triplet vaut 2c + d, où c et d sont les nombres de chameaux et de dromadaires du cliché. On peut calculer l’espérance en énumérant les compositions (3 chameaux, 2 chameaux et 1 dromadaire, etc.), en pondérant chaque total de bosses par son nombre de triplets.",
+    "Une voie plus courte utilise la linéarité : chaque animal photographié apporte en moyenne le nombre moyen de bosses d’un animal du parc, soit (10 × 2 + 15 × 1 + 5 × 0) / 30 = 35/30. Trois animaux amènent 3 × 35/30 = 3,5 bosses. Le dénombrement long du corrigé retrouve la même valeur 14 210 / 4 060 = 3,5.",
+    "Le piège est de faire la moyenne des bosses « par espèce » sans tenir compte des effectifs, ou de croire que le tirage de trois animaux interdit la linéarité. À retenir : l’espérance d’une somme est la somme des espérances, même si les animaux d’une même photo ne sont pas indépendants."
+  ],
+  "92": [
+    "Un canard met 9 jours de Norvège au Maroc et 7 jours pour le trajet inverse ; deux canards partent en même temps, chacun d’un bout, à vitesse constante. Ils se rencontrent après 3 jours 22 heures 30 minutes.",
+    "On prend la distance Norvège-Maroc pour unité. L’un vole à la vitesse 1/9 d’unité par jour, l’autre à la vitesse 1/7. Leurs vitesses s’ajoutent parce qu’ils se rapprochent : en un jour, l’écart diminue de 1/9 + 1/7 = 16/63 d’unité.",
+    "Pour avaler une unité à ce rythme, il faut 63/16 de jour, soit 3 + 15/16 jours. Or 15/16 de jour valent (15/16) × 24 = 22,5 heures, c’est-à-dire 22 heures et 30 minutes. D’où 3 jours 22 h 30 min. On n’a pas besoin de connaître la distance en kilomètres.",
+    "Le piège est de faire la moyenne de 9 et 7, ce qui donnerait 8 jours, comme s’ils se relayaient. À retenir : deux mobiles l’un vers l’autre se rencontrent en distance / (somme des vitesses), et les unités se choisissent pour que la distance vaille 1."
+  ]
+}
+
+
+

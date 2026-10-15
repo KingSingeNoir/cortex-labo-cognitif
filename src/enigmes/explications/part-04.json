@@ -1,0 +1,555 @@
+{
+  "277": [
+    "Une coccinelle parcourt les treize cases grisées d’un circuit, à raison d’une case par seconde, sans jamais reculer, le premier pas suivant la flèche. Vous devez marquer toutes les cases où elle peut se trouver au bout de exactement onze secondes. Ces positions possibles sont les quatre cases croisées sur la figure officielle.",
+    "Le circuit n’est pas une simple boucle : des fourches apparaissent. À chaque embranchement, deux suites restent licites, mais le sentier d’où vient l’insecte est interdit. En énumérant sans oubli ni double emploi, vous obtenez sept trajets distincts de onze pas.",
+    "Ces sept chemins ne s’achèvent pas tous au même endroit, pourtant plusieurs se rejoignent avant la onzième seconde. Il suffit donc de noter la case d’arrivée de chaque trajet, puis de supprimer les doublons : il reste quatre cases.",
+    "Le piège serait de ne suivre qu’un seul parcours, ou au contraire de marquer tout le circuit. Ce qui est demandé, c’est l’ensemble des cases atteignables en exactement onze secondes, pas une case de plus, pas une de moins."
+  ],
+  "278": [
+    "Cinq coccinelles portent des points ; vous devez désigner celle qui s’envole pour que les quatre restantes totalisent 20 points. C’est la coccinelle B, qui porte 3 points.",
+    "Additionnez d’abord tous les points visibles : 5 + 3 + 5 + 6 + 4 = 23. Pour descendre à 20, il faut retirer exactement 3 points.",
+    "Une seule des cinq coccinelles affiche 3 points, et c’est celle de l’option B. Enlever 4, 5 ou 6 points laisserait 19, 18 ou 17, ce qui n’est pas le total demandé.",
+    "À retenir : quand une pièce doit disparaître pour atteindre une somme cible, calculez la somme globale, puis la différence à ôter, avant de regarder les dessins."
+  ],
+  "279": [
+    "Cinq coccinelles s’envoient un SMS dès qu’elles ont un point d’écart. Vous devez compter tous les messages partis. Il y en a 6, ce qui correspond à l’option C.",
+    "Repérez d’abord les effectifs : deux, trois, quatre, six et sept points. Un SMS n’existe qu’entre deux voisins d’un point, et chaque envoi est unidirectionnel : si A écrit à B, B peut aussi écrire à A, ce qui fait deux messages.",
+    "Le couple 2–3 s’écrit deux fois, le couple 3–4 s’écrit deux fois, le couple 6–7 s’écrit deux fois. Entre 4 et 6, l’écart vaut 2 : aucun SMS. Le 4 et le 2, le 7 et les petits, non plus.",
+    "Vous obtenez 2 + 2 + 2 = 6 messages. Le piège est de compter une « liaison » pour deux SMS, ou d’oublier qu’un écart de deux points coupe tout contact."
+  ],
+  "280": [
+    "Une fermière vend 13 cochons selon une suite de baisses, puis donne les derniers à sa voisine. Vous cherchez le total encaissé. Elle recueille 2 212,50 €.",
+    "Le premier cochon part à 450 € ; il en reste 12. Elle vend alors la moitié de ces 12, soit 6 bêtes, à la moitié du prix, donc à 225 € l’une, ce qui fait 1 350 €.",
+    "Il reste 6 cochons. Elle en vend le tiers, soit 2, après une baisse d’un tiers : 225 − 75 = 150 €, et 2 × 150 = 300 €. Il reste 4 bêtes ; elle en vend le quart, donc 1, après une baisse d’un quart : 150 − 37,50 = 112,50 €.",
+    "Le cumul 450 + 1 350 + 300 + 112,50 = 2 212,50 €. Les trois cochons restants sont donnés : ils n’ajoutent rien à la recette. Attention à baisser le prix à chaque étape, et pas seulement le nombre de bêtes."
+  ],
+  "281": [
+    "Pat et un cochon partent de deux coins distants de 100 mètres ; le cochon fuit en ligne droite vers la passerelle, tandis que Pat court toujours vers la position actuelle de l’animal, deux fois plus vite. Vous demandez si Pat rattrape le cochon et, le cas échéant, quelle distance celui-ci a parcourue. Pat l’attrape après que le cochon a couru 200/3 mètres, soit 66 mètres et deux tiers.",
+    "Si Pat visait d’abord la porte pour la fermer, le calcul serait banal. Ici, sa trajectoire est une courbe de poursuite : à chaque instant, sa vitesse pointe vers le cochon, qui, lui, ne dévie pas.",
+    "Lorsque le poursuivant va n fois plus vite que le fuyard, et que la distance initiale vaut a, la longueur de la courbe se calcule exactement. Avec n = 2 et a = 100, le cochon est rejoint après a n / (n² − 1) = 200/3 mètres, et Pat a couru le double, soit 400/3 mètres.",
+    "Le porc n’atteint donc pas la passerelle. Le piège est de croire qu’une course « toujours vers la cible » est plus longue qu’un aller vers la porte : ici, la courbe est assez courte pour conclure avant l’échappée."
+  ],
+  "282": [
+    "Vous devez colorier, sur le plan du village, tous les emplacements où une porcherie peut s’installer à plus de 500 m de chacune des sept fermes. La zone licite est celle que le corrigé officiel noircit, à l’intérieur du territoire.",
+    "Autour de chaque ferme, imaginez un disque de rayon 500 m, lu sur l’échelle du plan. Tout point de ce disque, y compris le bord, est trop proche : l’odeur y serait insupportable.",
+    "L’ensemble interdit est donc l’union des sept disques. Ce qui reste, intersecté avec l’intérieur du contour du village, est l’ensemble des points à plus de 500 m de toutes les fermes.",
+    "Vous ne coloriez ni l’extérieur du village, ni les disques, ni leurs bords. Seule l’intersection des « dehors » des sept disques, encore dans le territoire, convient. La figure officielle montre précisément cette région."
+  ],
+  "283": [
+    "Un cochon blanc et un cochon noir pèsent ensemble 320 kg, le noir pesant 32 kg de plus que le blanc. Vous cherchez le poids du blanc. Il pèse 144 kg, option B.",
+    "Si vous retirez d’abord les 32 kg d’écart, il reste 288 kg à partager également entre les deux animaux : ce reste représente deux fois le blanc.",
+    "288 ÷ 2 = 144, donc le blanc pèse 144 kg et le noir 176 kg. La somme 144 + 176 = 320 et la différence 32 confirment le partage.",
+    "Le piège est de couper 320 en deux et d’additionner 32, ce qui donnerait 192 kg pour le blanc, option E, clairement trop lourd. On enlève l’écart avant de partager."
+  ],
+  "284": [
+    "Un cochon vaut 25 lapins, un lapin vaut 4 poules, une poule vaut 3 douzaines d’œufs. Vous cherchez combien d’œufs vaut un cochon. Il en vaut 3 600, option E.",
+    "Remplacez d’abord le cochon par des poules : 25 lapins font 25 × 4 = 100 poules.",
+    "Une poule équivaut à 3 × 12 = 36 œufs. Donc 100 poules équivalent à 100 × 36 = 3 600 œufs.",
+    "Le piège est d’oublier qu’une douzaine compte 12 œufs, ou de s’arrêter à 100 poules. Les options 1 200 et 2 700 correspondent à de telles omissions."
+  ],
+  "285": [
+    "Un cochon entre par la porte, déracine 64 plants de pommes de terre et ressort, en ne faisant que des virages à angle droit et sans franchir la barre noire. Vous cherchez le plus petit nombre de tels virages. Ce minimum vaut 14, et le tracé figurant au corrigé officiel le réalise.",
+    "Le parcours doit visiter chaque plant une fois, entrer et sortir par la même porte, et n’utiliser que des segments horizontaux ou verticaux. Chaque changement de direction compte pour un angle droit.",
+    "Vingt-et-un virages suffisent, mais ce n’est pas optimal : en resserrant les allers-retours et en évitant les détours inutiles autour de la barre, on descend à 14 angles.",
+    "Inutile d’inventer une autre grille : la solution se lit sur la figure officielle. Le piège est de croire qu’il faut un virage à chaque plant ; plusieurs plants peuvent s’aligner sur un même segment."
+  ],
+  "286": [
+    "À Fermenrond, les enclos du cochon, de l’âne et de la poule s’emboîtent en droites et demi-cercles ; le cochon et l’âne ont la même aire. Vous cherchez le rapport de l’aire de la ferme à celle de l’enclos de la poule. Ce rapport vaut 9.",
+    "Appelez a le grand rayon, b et c les deux plus petits, avec a = b + c. L’aire de la ferme est π a², celle de la poule π c², celle du cochon π b². L’égalité des aires du cochon et de l’âne se traduit par 2 π b² + π c² = π a².",
+    "En remplaçant a par b + c, il vient b² = 2 b c, donc b = 2 c puisque les rayons sont positifs. Alors a = 3 c, et le rapport des aires est (a / c)² = 9.",
+    "L’enclos de la poule occupe donc le neuvième de la ferme. Le piège serait d’égaliser les rayons plutôt que les aires, ou d’oublier le facteur π qui, de toute façon, se simplifie."
+  ],
+  "287": [
+    "Leia voit 4 poules, 7 vaches et des cochons, et compte 56 pattes en tout. Vous cherchez le nombre de cochons. Elle en voit 5.",
+    "Les poules ont 2 pattes chacune : 4 × 2 = 8. Les vaches ont 4 pattes : 7 × 4 = 28. Ces deux espèces fournissent déjà 36 pattes.",
+    "Il reste 56 − 36 = 20 pattes, qui sont celles des cochons. Chaque cochon en a 4, donc 20 ÷ 4 = 5 cochons.",
+    "Vérification : 8 + 28 + 20 = 56. N’attribuez pas 2 pattes aux cochons : ce sont des mammifères à quatre pattes, comme les vaches."
+  ],
+  "288": [
+    "Vous devez compter tous les triangles de la figure, quelle que soit leur taille. Il y en a 35.",
+    "Classez-les par aire, en prenant pour unité le plus petit triangle. Vous en trouvez 16 d’aire 1, obtenus en parcourant chaque petite cellule triangulaire.",
+    "Ensuite, les triangles d’aire 2, formés de deux unités collées : il y en a 12. Ceux d’aire 4, deux fois plus grands encore, sont au nombre de 6. Enfin, un unique triangle d’aire 8 recouvre toute une moitié de la figure.",
+    "Le total 16 + 12 + 6 + 1 = 35. Le piège est de ne compter que les plus petits, ou d’oublier ceux qui penchent dans l’autre sens. Une classification par taille évite les omissions."
+  ],
+  "289": [
+    "Chaque boomerang porte trois dessins — colibri, soleil, kangourou — à ses deux extrémités et à l’angle. Vous devez compléter le carré pour que, sur chaque ligne et chaque colonne, chaque dessin apparaisse exactement deux fois. Le remplissage correct est celui de la figure officielle.",
+    "Commencez par les lignes et colonnes déjà les plus garnies : dès qu’un motif y figure deux fois, il y est interdit ailleurs ; dès qu’il n’y figure qu’une fois, il doit encore apparaître une fois parmi les cases vides de cette ligne ou de cette colonne.",
+    "Les trois motifs ne sont pas indépendants sur un même boomerang : poser un soleil à l’angle force les extrémités. Propagez ces contraintes de proche en proche, sans jamais inventer un quatrième dessin.",
+    "N’essayez pas de reconstituer un dessin de mémoire : la solution se lit sur la figure du corrigé. Le critère à retenir est le « deux fois par ligne, deux fois par colonne », analogue à un carré latin assoupli."
+  ],
+  "290": [
+    "Un magicien a 47 colombes dans deux chapeaux ; 11 s’envolent du bleu et 8 du rouge, après quoi les deux chapeaux contiennent autant de colombes. Vous cherchez les effectifs de départ. Il y en avait 25 dans le bleu et 22 dans le rouge.",
+    "Après les envols, il reste 47 − 11 − 8 = 28 colombes, également réparties : 14 dans chaque chapeau.",
+    "Le bleu a perdu 11 oiseaux, donc il en contenait 14 + 11 = 25. Le rouge a perdu 8, donc 14 + 8 = 22. Et 25 + 22 = 47, ce qui referme le compte.",
+    "Le piège est de partager 47 en deux dès le départ. Il faut d’abord retirer les envols, égaliser ce qui reste, puis rajouter ce qui est parti."
+  ],
+  "291": [
+    "Une colombe perchée voit d’autres colombes et dit que, si l’on en ajoutait autant, puis encore autant que la première fois, et enfin elle-même, on obtiendrait 100. Vous cherchez combien elle en a vues. Elle en a vu 33.",
+    "Appelez c le nombre de colombes en vol. « Autant » une première fois donne un deuxième groupe de c, et « encore autant que la première fois » un troisième groupe de c. Avec la perchée, on a 3 c + 1 = 100.",
+    "Donc 3 c = 99 et c = 33. On vérifie à l’ancienne : 33, plus 33, plus encore 33, font 99, et la perchée porte le total à 100.",
+    "Le texte médiéval est un peu solennel, mais l’idée est un triplement plus une unité. N’ajoutez pas 100 à ce qu’elle voit : 100 est déjà le total final, elle comprise."
+  ],
+  "292": [
+    "Jean aligne 5 colombes blanches et 8 grises ; à chaque fois, deux voisines sont remplacées par une blanche si elles sont de couleurs différentes, par une grise si elles sont de même couleur, jusqu’à n’en laisser qu’une. Vous devez trouver la couleur de la dernière. Elle est blanche.",
+    "Inutile de simuler tous les choix du public : un invariant suffit. Observez le nombre de blanches. Deux blanches voisines deviennent une grise : le nombre de blanches diminue de 2. Deux grises deviennent une grise : ce nombre ne change pas. Une blanche et une grise deviennent une blanche : il reste autant de blanches.",
+    "Dans tous les cas, la parité du nombre de blanches est conservée. Au départ, 5 est impair. À la fin, une seule colombe : si elle était grise, on aurait 0 blanche, un nombre pair, contradiction. Elle est donc blanche.",
+    "Cet argument montre aussi que l’ordre des disparitions n’importe pas. Le piège est de croire que le résultat dépend du hasard des désignations."
+  ],
+  "293": [
+    "Tarzan cherche son partenaire de tennis, caché dans la forêt ; ses compagnons vous dictent une longue construction géométrique, puis des segments à tracer. Le personnage obtenu est celui de la figure officielle, qu’il suffit de suivre point par point.",
+    "Vous partez du rectangle abcd de 12 cm sur 14 cm, vous placez les milieux et les parallèles dans l’ordre indiqué, sans intervertir les longueurs : KJ = 4 cm n’est pas JM = 2 cm, et le cercle de centre e a pour rayon 2,5 cm, pas 3,5 cm.",
+    "Chaque nouvelle lettre est l’intersection d’objets déjà construits. Si une intersection semble ambiguë, l’énoncé précise le côté (à droite de J, le plus proche de B, O sur le segment [BX], etc.). Respectez ces filtres.",
+    "Une fois les points posés, reliez-les comme le demande la liste finale. N’inventez aucun raccourci : le dessin du corrigé officiel est le portrait cherché."
+  ],
+  "294": [
+    "Un coq vaut 5 qian, une poule 3 qian, trois poussins 1 qian ; avec 100 qian on achète 100 volailles, aucune espèce n’étant vide. Vous cherchez les triplets possibles. Il y en a trois : 4 coqs, 18 poules et 78 poussins ; 8 coqs, 11 poules et 81 poussins ; 12 coqs, 4 poules et 84 poussins.",
+    "Si x, y, z sont les effectifs, on a x + y + z = 100 et 5 x + 3 y + z / 3 = 100, puisque trois poussins coûtent 1 qian, soit z poussins à z / 3 qian. En chassant z, on obtient 7 x + 4 y = 100.",
+    "y = 25 − (7 x) / 4 doit être un entier positif. Donc x est un multiple de 4 : x = 4 k avec k = 1, 2 ou 3, sinon y cesserait d’être positif. On trouve alors les trois triplets ci-dessus, et z = 75 + 3 k.",
+    "Le problème n’a pas une unique réponse : c’est un système diophantien sous-déterminé. Vérifiez chaque triplet sur les deux équations avant de conclure."
+  ],
+  "295": [
+    "Vous devez compter les manières de lire le mot COQ en suivant des lettres qui se touchent dans la grille. Il y en a 12.",
+    "Chaque lecture commence par un C, continue par un O adjacent, puis un Q adjacent à cet O. Classez les C selon leur place.",
+    "Un C coincé dans un coin n’a qu’un voisin utile : il donne 1 mot COQ. Un C situé sur un côté, mais pas au coin, en donne 2. En faisant le tour de la figure, les coins fournissent 4 lectures et les côtés 8.",
+    "Total : 12. N’inventez pas de saut en diagonale si les lettres ne se touchent pas, et ne comptez pas deux fois le même chemin parcouru en sens inverse : le mot se lit C-O-Q, pas Q-O-C."
+  ],
+  "296": [
+    "William code chaque nombre par une « crête » : après le premier chiffre, on monte en diagonale si le suivant est plus grand, on reste à l’horizontale s’il est égal ou nul, on descend s’il est plus petit. Vous devez compter les crêtes distinctes parmi les nombres de 100 à 999. Il y en a 9.",
+    "Un nombre de trois chiffres produit deux segments. Chaque segment n’a que trois allures possibles : montée, palier, descente. Le dessin ne retient pas la valeur des chiffres, seulement ces comparaisons.",
+    "On a donc 3 choix pour le deuxième point, puis encore 3 pour le troisième, soit 3 × 3 = 9 formes. Des nombres très différents, comme 5 592 et 3 081 dans l’exemple, peuvent partager la même crête.",
+    "Le zéro, toujours collé à l’horizontale, ne crée pas de quatrième direction. Inutile de dessiner les 900 nombres : la combinatoire des deux comparaisons suffit."
+  ],
+  "297": [
+    "Un coq circule sur 16 trèfles, en ligne ou en colonne, sans repasser par le même endroit sauf sur un trèfle, et vous cherchez le plus grand nombre de petits carrés fermés de quatre trèfles qu’il peut créer. Ce maximum vaut 5.",
+    "Chaque espace fermé est un petit carré dont les quatre sommets sont des trèfles et dont les quatre côtés ont été parcourus. Le coq peut enchaîner plusieurs de ces boucles en réutilisant un trèfle comme « porte ».",
+    "Un parcours soigneux, par exemple en partant du deuxième trèfle du haut et en enroulant des U successifs, produit cinq tels carrés. On ne peut pas en obtenir six : la grille 4 × 4 n’offre que neuf petits carrés possibles, et le chemin unique du coq ne peut pas tous les border.",
+    "La figure officielle marque ces cinq espaces. Le piège est d’autoriser la diagonale, que l’énoncé interdit, ou de compter un contour qui n’est pas entièrement tracé."
+  ],
+  "298": [
+    "La Fontaine affirme que certains animaux de ses fables sont musiciens, et que les musiciens ne mangent que des frites. Parmi cinq répliques, vous devez dire qui dit vrai. Le corbeau et le renard disent la vérité.",
+    "« Ne manger que des frites » signifie : tout musicien mange des frites, et il ne mange rien d’autre. La contraposée est claire : si quelqu’un ne mange pas de frites, ce n’est pas un musicien. C’est exactement la phrase du corbeau.",
+    "Le renard ajoute qu’aucun musicien ne se nourrit de salade : c’est une conséquence directe, la salade n’étant pas une frite. En revanche, la fourmi généralise à tous les animaux ; le lièvre et la tortue prétendent que seuls les musiciens ont droit aux frites, ce que l’énoncé ne dit pas.",
+    "Deux personnages peuvent donc avoir raison en même temps. Le piège est de croire qu’une seule réplique est vraie, ou de confondre « les musiciens ne mangent que des frites » avec « seuls les musiciens mangent des frites »."
+  ],
+  "299": [
+    "Vous placez huit corbeaux sur les centres d’un damier 8 × 8, sans que deux soient sur la même rangée, colonne ou diagonale, et de sorte qu’un chasseur ne puisse jamais aligner trois oiseaux. Une disposition qui satisfait toutes ces contraintes est celle de la figure officielle.",
+    "La première exigence est celle des huit dames au jeu d’échecs : une pièce par ligne, par colonne, et aucune diagonale partagée. Cela empêche déjà les tirs « en file indienne » trop évidents.",
+    "Il reste l’alignement quelconque, pas seulement horizontal ou diagonal de damier : trois centres alignés, même selon une pente 2/1 ou 3/1, offriraient un tir. Il faut donc, parmi les solutions du problème des dames, en choisir une sans triplet colinéaire.",
+    "Ne reconstituez pas de tête un placement « presque » royal : le corrigé officiel donne un piquetage vérifié. Le piège est d’oublier les alignements obliques autres que les diagonales du damier."
+  ],
+  "300": [
+    "Quatre corneilles sont sur un fil : Diane est au milieu d’Anne et Léa, la distance Anne–Diane égale Léa–Zoé, et Diane est à 4 m de Zoé. Vous cherchez la distance Anne–Zoé. Elle vaut 6 m, option B.",
+    "L’ordre sur le fil est Anne, Diane, Léa, Zoé. Diane milieu d’Anne et Léa signifie que Anne–Diane = Diane–Léa. Cette même longueur égale aussi Léa–Zoé.",
+    "Entre Diane et Zoé, il y a donc deux de ces petits segments : Diane–Léa et Léa–Zoé. Comme Diane–Zoé = 4 m, chaque petit segment mesure 2 m. Anne–Diane en mesure autant, d’où Anne–Zoé = 2 + 4 = 6 m.",
+    "Le piège est de placer Zoé entre Diane et Léa, ou de croire que 4 m est déjà la distance Anne–Zoé. Un croquis coté, même schématique, suffit à éviter l’inversion."
+  ],
+  "301": [
+    "Suzanne dispose les nombres 1 à 12 sur le bord d’une couette, les coins 1, 2, 3, 4 étant déjà posés, de sorte que chaque côté porte le même total d’animaux. Vous devez compléter. Chaque côté totalise 22, et il existe six familles de solutions, les paires opposées aux coins pouvant encore être permutées.",
+    "La somme de 1 à 12 vaut 78. En additionnant les quatre côtés, chaque coin est compté deux fois, donc 4 S = 78 + (1 + 2 + 3 + 4) = 88, et S = 22.",
+    "Le côté du haut, qui contient déjà 1 et 2, exige que les deux nombres restants fassent 19. De même, les autres côtés demandent les sommes 17, 15 et 17. Les six remplissages du corrigé officiel réalisent ces quatre sommes avec les entiers de 5 à 12, chacun une fois.",
+    "Une fois une paire (a, b) trouvée, l’échanger en (b, a) ne change pas le total du côté. Le piège est d’oublier que les coins, déjà écrits, sont partagés par deux bords."
+  ],
+  "302": [
+    "Deux couleuvres notent les numéros 2, 3 et 7 des oiseaux qu’elles voient ; la rayée totalise 42 et a vu trois fois l’oiseau 2, la tachetée totalise 60 et a vu une fois de plus que la rayée les oiseaux 3 et 7. Vous cherchez combien de fois la tachetée a vu l’oiseau 2. Elle l’a vu 7 fois.",
+    "La rayée a 3 × 2 = 6 points grâce à l’oiseau 2, donc 42 − 6 = 36 points issus des oiseaux 3 et 7. La tachetée a vu chacun de ces deux oiseaux une fois de plus, ce qui ajoute 3 + 7 = 10 points « extra » par rapport à la même base.",
+    "En retirant ces 10 points du total 60, il reste 50. La différence 50 − 36 = 14 est alors entièrement due à l’oiseau 2 chez la tachetée. Or 14 ÷ 2 = 7.",
+    "On peut reconstituer les fréquences : rayée 3, 5, 3 et tachetée 7, 6, 4 pour les oiseaux 2, 3, 7. Les deux sommes et l’écart d’une visite sur 3 et sur 7 sont bien vérifiés."
+  ],
+  "303": [
+    "Dans la cour : huit poules, un coq, un chien, une cane et six canetons, deux chats, un âne, deux tourterelles. La somme des têtes et des pattes est le double de l’âge du fermier. Vous cherchez cet âge, puis combien de poules ajouter pour qu’il ait 40 ans. Le fermier a 37 ans, et il faudrait 2 poules de plus.",
+    "Comptez 22 animaux, donc 22 têtes. Les oiseaux (poules, coq, cane, canetons, tourterelles) sont 18 et ont 2 pattes ; chien, chats et âne sont 4 et ont 4 pattes. Cela fait 36 + 16 = 52 pattes.",
+    "Têtes et pattes : 22 + 52 = 74, le double de l’âge, donc 37 ans. Pour 40 ans, il faudrait un total de 80, soit 6 de plus.",
+    "Chaque poule supplémentaire apporte 1 tête et 2 pattes, donc 3. Deux poules apportent 6. Le piège est d’oublier les canetons ou de donner 4 pattes aux oiseaux."
+  ],
+  "304": [
+    "Sur 61 cellules hexagonales, un nombre indique combien d’œufs fécondés se trouvent dans la cellule et ses voisines. Vous devez colorier les cellules fécondées. Le coloriage exact est celui de la figure officielle.",
+    "Commencez par les zéros : une cellule marquée 0, et toutes ses adjacentes, sont stériles. Cela éteint d’un coup de larges zones et force des stériles contre les bords.",
+    "Ensuite, les 1 et les 2 deviennent parlants : si une cellule « 1 » a déjà un voisin fécondé, tous les autres sont stériles ; si elle n’en a encore aucun et qu’il ne reste qu’une case possible, celle-ci l’est. Les 5, trop exigeants, se résolvent presque seuls.",
+    "Ne colorez pas au hasard au milieu : propagez depuis les zéros, comme dans un démineur hexagonal. La grille du corrigé officiel est la seule compatible avec tous les indices."
+  ],
+  "305": [
+    "Une sorcière mange 5 crapauds par jour, ou 10 les jours où elle regarde la télé ; en 9 jours, elle en a mangé 60. Vous cherchez le nombre de jours de télé. Il y en a 3, option C.",
+    "Sans aucune télé, elle aurait mangé 9 × 5 = 45 crapauds. Elle en a mangé 15 de plus.",
+    "Chaque jour de télé ajoute exactement 5 crapauds. Donc 15 ÷ 5 = 3 jours devant l’écran.",
+    "Le piège est de diviser 60 par 10 et de répondre 6, comme si tous les jours étaient des jours de télé. Il faut comparer au régime de base, pas au régime exceptionnel."
+  ],
+  "306": [
+    "La queue d’un crocodile est le tiers de sa longueur totale ; sa tête mesure 93 cm, et cela vaut le quart du crocodile sans la queue. Vous cherchez la longueur totale. Elle vaut 558 cm, option A.",
+    "Sans la queue, le corps (tête comprise) mesure 93 × 4 = 372 cm. Cette partie est les deux tiers de l’animal, puisque la queue en est le tiers.",
+    "La longueur totale est donc 372 × 3 / 2 = 558 cm. La queue mesure alors 186 cm, et l’on vérifie que 186 est bien le tiers de 558, et que 93 est le quart de 372.",
+    "Le piège est de prendre 93 cm pour le quart du crocodile entier, ce qui donnerait 372 cm, option D. L’énoncé dit bien : le quart du crocodile sans sa queue."
+  ],
+  "307": [
+    "Une chenille de carrés et de triangles pèse 27 g, un poisson 42 g ; le cygne, fait des mêmes pièces, n’a pas pu être pesé. Vous cherchez le poids du cygne. Il pèse 56 g.",
+    "D’après les assemblages, la chenille contient 4 carrés et 3 triangles, le poisson 4 carrés et 6 triangles, le cygne 7 carrés et 7 triangles. Les deux premiers ont le même nombre de carrés ; leur écart 42 − 27 = 15 g vient donc de 3 triangles.",
+    "Un triangle pèse 5 g. Dans la chenille, les 3 triangles pèsent 15 g, donc les 4 carrés pèsent 12 g, et un carré pèse 3 g.",
+    "Le cygne, fait de 7 carrés et 7 triangles, pèse donc 7 × 3 + 7 × 5 = 21 + 35 = 56 g. Le piège est de compter les pièces à l’œil sans distinguer carrés et triangles, ou d’additionner chenille et poisson sans retirer les doublons de formes."
+  ],
+  "308": [
+    "Deux dindes pèsent 20 livres à elles deux ; la petite coûte 2 cents de plus la livre que la grande, Mme Smith a payé 82 cents pour la petite et Mme Brown 2,96 dollars pour la grande. Vous cherchez les deux poids. La petite pèse 4 livres, la grande 16 livres.",
+    "Un dollar vaut 100 cents, donc la grande a coûté 296 cents. Si x et y sont les poids, x + y = 20 et 82 / x = 296 / y + 2.",
+    "En remplaçant x par 20 − y, on obtient une équation du second degré en y. La racine positive compatible avec un poids est y = 16, d’où x = 4.",
+    "Vérification : 82 / 4 = 20,5 cents la livre, 296 / 16 = 18,5, et l’écart est bien de 2 cents. Le piège est de partager 20 en deux parts égales : les prix à la livre interdisent cette symétrie."
+  ],
+  "309": [
+    "Lisa a 618 dindons, poules et lapins. Ernest lui fait d’abord des enclos de 9 dindons, 5 lapins et 7 poules, puis, les dindons épuisés, des enclos de 6 lapins et 9 poules, le tout avec le moins d’enclos possible. Vous cherchez les trois effectifs. Lisa a 252 dindons, 152 lapins et 214 poules.",
+    "Un enclos du premier type contient 21 bêtes. 618 ÷ 21 n’est pas entier : 29 tels enclos prendraient 609 bêtes, et les 9 restantes ne suffisent pas à former un enclos du second type, qui exige 15 animaux.",
+    "Avec 28 enclos de 21, on place 588 bêtes et il en reste 30, soit exactement deux enclos de 15. C’est le minimum d’enclos qui vide le cheptel.",
+    "Le premier tour pose 28 × 9 = 252 dindons, 28 × 5 = 140 lapins, 28 × 7 = 196 poules. Le second ajoute 12 lapins et 18 poules. D’où 252, 152 et 214."
+  ],
+  "310": [
+    "Les squelettes sont numérotés à partir de 1 avec des étiquettes-chiffres ; on a utilisé 29 zéros et 38 neuf. Vous cherchez le nombre de squelettes. Le musée en compte 198.",
+    "Dressez le cumul des chiffres 0 et 9 le long des entiers. De 1 à 99, on rencontre 9 zéros et 20 neuf. De 100 à 189, on ajoute beaucoup de zéros dans les 10x et un neuf par dizaine, ce qui mène à 29 zéros et 29 neuf à la fin de 189.",
+    "Les nombres 190 à 198 apportent encore des neuf dans les unités, mais pas le double neuf de 199. En s’arrêtant à 198, on a exactement 38 neuf et toujours 29 zéros.",
+    "Au-delà, 199 introduirait deux neuf de trop, et 200 une ribambelle de zéros. Le piège est de compter comme si l’on commençait à 0, ou d’oublier que 10, 20, …, 90 n’ont qu’un zéro chacun."
+  ],
+  "311": [
+    "Tom a 54 €. Trois dinosaures lui laisseraient 15 €, mais pour cinq il lui manque 11 €. Vous demandez s’il peut en acheter quatre, et l’écart. Oui : il lui restera 2 €.",
+    "Si d est le prix d’un modèle, 3 d + 15 = 54, ou encore 5 d − 11 = 54. Les deux lectures donnent la même richesse. En égalant 5 d − 11 et 3 d + 15, on trouve 2 d = 26, donc d = 13 €.",
+    "Quatre dinosaures coûtent 52 €. Tom possède 54 €, il peut payer et il lui reste 2 €.",
+    "Vérifications : 3 × 13 = 39, reste 15 ; 5 × 13 = 65, il manque 11. Le piège est de répondre avec le prix unitaire au lieu de traiter la question des quatre modèles."
+  ],
+  "312": [
+    "Un œuf d’autruche équivaut à 18 œufs de poule, et 4 œufs de poule nourrissent 3 personnes ; un œuf de diplodocus équivaut à 35 œufs d’autruche. Vous cherchez d’abord combien d’œufs d’autruche faut-il pour 27 personnes, puis combien de personnes nourrissent 6 œufs de diplodocus. Il faut 2 œufs d’autruche, et 6 œufs de diplodocus nourriraient 2 835 personnes.",
+    "Pour 3 personnes : 4 œufs de poule. Pour 27 personnes, neuf fois plus : 36 œufs de poule. Or 36 = 2 × 18, donc 2 œufs d’autruche suffisent.",
+    "Un diplodocus vaut 35 autruches, six valent 210 autruches. Comme 2 autruches nourrissent 27 personnes, 210 autruches en nourrissent 105 × 27 = 2 835.",
+    "Gardez une chaîne de proportions, sans mélanger poules et diplodocus trop tôt. Le piège est d’oublier le facteur 2 entre 27 personnes et une autruche."
+  ],
+  "313": [
+    "Un dragon à 3 têtes et 3 queues meurt lorsqu’il n’a plus ni tête ni queue. Couper une tête n’y change rien ; couper deux têtes les ôte ; couper une queue en fait pousser deux ; couper deux queues fait pousser une tête. Vous cherchez une stratégie minimale. Neuf coups suffisent, et c’est le minimum.",
+    "Une lecture utile est de viser un nombre pair de têtes sans queue, car alors de simples coupes de deux têtes achèvent le monstre. Pour cela, il faut d’abord « fabriquer » des têtes en coupant des paires de queues.",
+    "Un déroulement possible : couper une queue trois fois de suite, jusqu’à 6 queues et 3 têtes ; puis couper deux queues trois fois, ce qui convertit les queues en têtes et aboutit à 6 têtes sans queue ; enfin couper deux têtes trois fois. On tombe à zéro en 9 coups.",
+    "D’autres suites existent, de même longueur. Moins de 9 coups laisse toujours un reliquat magique. Le piège est de couper une tête isolée : cela ne fait que perdre un geste."
+  ],
+  "314": [
+    "Douze châteaux ont chacun un dragon sur une case voisine par un côté ; les nombres en bordure donnent le total de dragons par ligne et par colonne. Vous devez retrouver les douze emplacements. Ils sont ceux de la figure officielle.",
+    "Commencez par les zéros : toute une ligne ou colonne à 0 est vide de dragons, ce qui interdit les cases adjacentes aux châteaux de cette bande.",
+    "Les 3, au contraire, saturent presque leurs bandes : chaque château doit y « accrocher » son dragon du bon côté. Quand deux dragons touchent le même château, un seul lui est attribué, mais les deux comptent dans les totaux de lignes et colonnes.",
+    "Ne placez pas un dragon en diagonale du château : l’énoncé exige un côté commun. La grille du corrigé officiel est la seule qui respecte à la fois les adjacences et les 16 nombres du cadre."
+  ],
+  "315": [
+    "Cinq dragons doivent être isolés, un par zone, en dessinant seulement trois carrés qui se superposent. La figure officielle donne un tel tracé : c’est elle, et non un croquis improvisé, qui constitue la réponse.",
+    "Un carré seul crée une région intérieure et l’extérieur. Deux carrés qui se chevauchent en créent davantage, mais rarement cinq compartiments occupés chacun par un dragon. Le troisième carré doit recouper les deux premiers de façon à séparer le dragon encore trop « à l’air libre ».",
+    "Travaillez sur les positions relatives : deux dragons proches demanderont un petit carré local, tandis qu’un dragon excentré sera isolé par un grand cadre. Les côtés peuvent se croiser ; les carrés n’ont pas à être disjoints ni concentriques.",
+    "N’ajoutez pas un quatrième carré, et ne dessinez pas de rectangles. Une fois votre essai fait, comparez-le à la figure du corrigé, qui est la solution du recueil."
+  ],
+  "316": [
+    "Dans une grotte sombre, cinq espèces de dragons forment des groupes connexes de 1, 2, 3, 4 et 5 individus. Vous devez retrouver chaque groupe. Le remplissage est celui qu’indique le corrigé, en commençant par les volcans et les montagnes.",
+    "Les espèces sont compactes : deux dragons de même sorte se touchent, et les cardinaux 1 à 5 sont tous distincts, ce qui identifie chaque tache par sa taille une fois le puzzle avancé.",
+    "Le second dragon des volcans, s’il n’est pas placé dès la première ligne, mange l’espace nécessaire aux quatre dragons des montagnes. Cette observation force la première ligne, puis les trois dragons des forêts se glissent dans la poche restante, et les mers, plus nombreuses, occupent le grand bloc continu.",
+    "Ne dispersez pas une espèce. En cas de doute, c’est la figure officielle qui tranche le dernier pixel : le raisonnement ci-dessus en explique l’ordre, pas un dessin inventé."
+  ],
+  "317": [
+    "On plie une bande toujours dans le même sens, on l’ouvre à angles droits, et l’on obtient la courbe du dragon. Vous devez dessiner l’étape 5. Le tracé à reproduire est celui de la figure officielle de cette étape.",
+    "Le geste élémentaire consiste, en parcourant la ligne, à remplacer chaque segment par deux segments perpendiculaires, via une rotation de 45°, tantôt vers la droite, tantôt vers la gauche, en alternant.",
+    "On peut aussi coder les plis par une suite de G et de D : G, puis GGD, puis GGDGGDD, et ainsi de suite. Le mot de l’étape n s’obtient en intercalant alternativement G et D dans le mot précédent, en commençant par G, ou encore en concaténant le mot précédent, un G, et le précédent lu à l’envers en échangeant G et D.",
+    "Ne sautez pas l’alternance : un oubli de côté à l’étape 4 se propage en une courbe fausse à l’étape 5. Appuyez-vous sur la figure du corrigé plutôt que sur une esquisse de mémoire."
+  ],
+  "318": [
+    "Un dragon a 5 têtes ; chaque fois qu’on lui en coupe une, il en repousse 5. Après six coupes d’une tête, vous cherchez combien il lui en reste. Il en a 29, option C.",
+    "Couper une tête et en voir repousser cinq, c’est en gagner net 4. L’opération n’est pas « revenir à cinq », elle augmente la population.",
+    "Six coupes rapportent 6 × 4 = 24 têtes supplémentaires. Au départ il y en avait 5, donc 5 + 24 = 29.",
+    "Le piège est de multiplier 5 × 6 = 30, option D, comme si l’on remplaçait chaque tête coupée par cinq sans ôter celle que l’on coupe. Il faut retrancher 1 à chaque geste."
+  ],
+  "319": [
+    "Sur un échiquier 7 × 7, saint Georges part de la case centrale et doit visiter chaque case une seule fois par sauts de cavalier, en capturant le dragon au dernier coup. Un itinéraire qui réussit, et qui forme un dessin agréable, est celui de la figure officielle.",
+    "Le cavalier saute en L : deux cases dans une direction, une perpendiculairement. Sur 49 cases, un tel parcours est un circuit ouvert, un « chemin hamiltonien » du graphe du cavalier, d’extrémité imposée (le dragon) et de départ imposé (le centre).",
+    "Plusieurs chemins existent ; l’auteur en a choisi un dont les segments, tracés de centre de case à centre de case, composent une figure symétrique. C’est ce tracé qu’il faut lire sur le corrigé.",
+    "N’essayez pas de reconstituer de mémoire un enchaînement de 48 sauts : une case oubliée ou un dernier coup qui n’est pas sur le dragon invalide le tout. La figure officielle est la réponse."
+  ],
+  "320": [
+    "Trois dragons ont plusieurs têtes : le rouge en a 5 de moins que le vert, le jaune 4 de plus que le vert, et jaune et vert totalisent 28 têtes. Vous cherchez les trois effectifs. Le vert en a 12, le jaune 16, le rouge 7.",
+    "Jaune et vert ensemble, c’est deux fois le vert plus 4, puisque le jaune a 4 têtes d’avance. Donc 2 × (têtes du vert) + 4 = 28, soit 2 × (têtes du vert) = 24.",
+    "Le vert a 12 têtes, le jaune 16, le rouge 12 − 5 = 7. La somme jaune + vert = 16 + 12 = 28 confirme l’énoncé.",
+    "Le piège est d’attribuer les 28 têtes aux trois dragons. Seuls le jaune et le vert sont dans ce total ; le rouge s’en déduit ensuite par l’écart de 5."
+  ],
+  "321": [
+    "Deux dragons volent dans l’espace selon deux trajectoires paramétrées par le temps t, l’une d’elles faisant intervenir un sinus et une partie entière. Vous demandez s’ils se percutent, et à quels instants. Ils n’entrent en collision qu’une seule fois, à t = 7/3 secondes.",
+    "Égaler les coordonnées y force une expression du type 2 sin²(…) = 17/6 − t. Or 2 sin² reste entre 0 et 2, donc t est coincé dans l’intervalle [5/6 , 17/6]. Hors de cette fenêtre, aucune rencontre n’est possible.",
+    "La coordonnée z, à cause de la partie entière, n’est compatible que si t − 1/3 est entier, c’est-à-dire si t = n + 1/3. Dans l’intervalle, seules 4/3 et 7/3 survivent.",
+    "Il reste à comparer les positions complètes en ces deux instants. Elles coïncident pour t = 7/3, pas pour t = 4/3. Une unique collision, donc. Le piège est d’oublier que le sinus borne t, ou de traiter la partie entière comme un réel ordinaire."
+  ],
+  "322": [
+    "Mathilde coupe les têtes d’un dragon une à une ; dès qu’elle en a coupé 3, une tête repousse. Elle a tranché 14 têtes au total avant de vaincre la bête. Vous cherchez le nombre de têtes initial. Il y en avait 10, option B.",
+    "Un cycle « 3 coupées, 1 qui revient » fait perdre net 2 têtes au dragon. Mathilde peut enchaîner 4 tels cycles, soit 12 coupes, et le dragon a alors perdu 8 têtes.",
+    "Il lui reste 2 têtes, qu’elle coupe sans déclencher de nouveau cycle, ce qui porte le total des coupes à 14. Le nombre de départ est donc 8 + 2 = 10.",
+    "Le piège est de répondre 14, ou 14 − 3 = 11. Ce qui compte, c’est le nombre de cycles complets contenus dans 14, puis le reliquat de 2 coupes « propres »."
+  ],
+  "323": [
+    "Arthur, Charlotte et Sabine ont pris trois livres distincts : dragons, gobelins, princesses. D’après leurs propos et celui de la bibliothécaire, vous devez attribuer chaque livre. Arthur a les gobelins, Charlotte les princesses, Sabine les dragons.",
+    "Arthur a laissé l’histoire de princesses à une fille : ce n’est donc pas lui qui l’a. Charlotte affirme qu’Arthur n’a pas les dragons, et rien ne la contredit. Arthur n’a dès lors ni princesses ni dragons : il a les gobelins.",
+    "La bibliothécaire rappelle que Charlotte a déjà lu les dragons la semaine dernière : Charlotte ne les reprend pas. Il lui reste les princesses, et Sabine reçoit les dragons. Sabine avait dit n’avoir pas les gobelins : c’est cohérent.",
+    "L’autre répartition (Sabine en princesses, Charlotte en dragons) heurte le souvenir de la bibliothécaire. Le piège est de traiter chaque phrase isolément, sans croiser les interdits."
+  ],
+  "324": [
+    "Sur Fantastica, chaque jour du cycle, les dragons avalent un monstre, puis les vampires un dragon, puis les monstres un vampire ; le quatrième jour, on digère. Six lunes et un jour après un recensement fait un jour de digestion, deux dragons avalent les deux derniers monstres. Vous cherchez les trois effectifs du recensement. Il y avait 1 190 dragons, 1 744 monstres et 812 vampires.",
+    "Le plus sûr est de remonter le temps. Juste avant ce dernier repas, on a 2 dragons, 2 monstres et 0 vampire, et l’on se trouve au matin d’un jour 1, donc au lendemain d’une digestion.",
+    "Un cycle complet à l’envers se lit ainsi : les vampires d’avant égalent ceux d’après plus les monstres ; les dragons d’avant égalent dragons + monstres + vampires d’après ; les monstres d’avant égalent dragons d’avant plus les monstres d’après. En partant de (2, 2, 0), six remontées donnent successivement (4, 6, 2), (12, 18, 8), (38, 58, 26), (120, 176, 82), (378, 554, 258) puis (1 190, 1 744, 812).",
+    "Six lunes, ce sont six cycles ; le « un jour » supplémentaire est déjà consommé par le dernier repas. Le piège est d’itérer vers le futur depuis un recensement inconnu, au lieu de revenir depuis la fin connue."
+  ],
+  "325": [
+    "Un « dragon » de 3n écailles porte 3n nombres consécutifs ; la tête (n écailles, le tiers supérieur) et la queue (2n écailles, les deux tiers inférieurs) ont la même somme. Vous cherchez un dragon de 21 écailles, un de 24, et la condition d’existence. Celui de 21 existe et commence à 4 (écailles 4 à 24) ; celui de 24 n’existe pas ; en général, n doit être impair, et le dragon commence alors à (n + 1) / 2.",
+    "Pour 21 écailles, n = 7. La somme des 14 premiers nombres d’une suite consécutive doit égaler celle des 7 derniers. En notant a le premier nombre, un peu d’algèbre donne a = (n + 1) / 2 = 4, d’où le dragon 4, 5, …, 24, dont les deux totaux valent 147.",
+    "Pour 24 écailles, n = 8, pair : la formule de a n’est plus entière. Aucune suite de 24 consécutifs ne peut égaliser un tiers contre deux tiers.",
+    "Le petit dragon 2 à 10 de l’énoncé correspond à n = 3, impair, et commence à 2 = (3 + 1) / 2. C’est le même mécanisme. Le piège est de croire que « assez long » suffit : la parité de n décide."
+  ],
+  "326": [
+    "Les dragons rouges ont 6 têtes, 8 jambes, 2 queues ; les verts 8 têtes, 6 jambes, 4 queues. On compte 44 queues, et 6 jambes vertes de moins que de têtes rouges. Vous cherchez le nombre de dragons tout rouge. Il y en a 8.",
+    "Si R et V sont les effectifs, les queues donnent 2 R + 4 V = 44, soit R + 2 V = 22. Les « 6 jambes vertes de moins que de têtes rouges » se lisent 6 V = 6 R − 6, donc V = R − 1.",
+    "On injecte : R + 2 (R − 1) = 22, soit 3 R = 24, R = 8 et V = 7. Les queues : 2 × 8 + 4 × 7 = 16 + 28 = 44. Les têtes rouges : 6 × 8 = 48 ; les jambes vertes : 6 × 7 = 42, bien 6 de moins.",
+    "Le piège est d’échanger vert et rouge dans la seconde phrase. Une fois le système posé, deux équations à deux inconnues suffisent, sans les têtes vertes ni les jambes rouges."
+  ],
+  "327": [
+    "Quatre pèlerins doivent tous traverser un pont en 17 minutes, au plus deux à la fois, en tenant toujours l’anneau magique ; ils mettent 1, 2, 5 et 10 minutes. Vous cherchez comment faire. La suite Alain–Bernard (2 min), retour d’Alain (1), Clovis–David (10), retour de Bernard (2), Alain–Bernard (2) totalise 17 minutes.",
+    "L’anneau impose qu’un porteur revienne, sauf au dernier passage. Pour ne pas gaspiller 10 minutes en navettes, on envoie les deux lents ensemble, et l’on fait assurer les retours par les deux rapides.",
+    "Envoyer Clovis et David séparément coûterait deux traversées à 10 et 5, plus des retours, bien au-delà de 17. D’où le regroupement des lents, encadré par deux allers des rapides.",
+    "Le détail des rôles compte : après la traversée des lents, l’anneau est de l’autre côté, avec Bernard. C’est donc lui qui revient, pas Alain, resté au départ."
+  ],
+  "328": [
+    "Derrière une barrière, vous voyez 7 bosses, mélange de chameaux (2 bosses) et de dromadaires (1 bosse), avec au moins un animal de chaque sorte. Vous cherchez les compositions possibles. Il y en a trois : 1 chameau et 5 dromadaires ; 2 chameaux et 3 dromadaires ; 3 chameaux et 1 dromadaire.",
+    "Si c est le nombre de chameaux, les bosses s’écrivent 2 c + 1 × (le reste) = 7, donc le nombre de dromadaires vaut 7 − 2 c. Il faut c ≥ 1, 7 − 2 c ≥ 1, et 7 − 2 c entier positif, donc c = 1, 2 ou 3.",
+    "c = 0 donnerait 7 dromadaires sans chameau, c = 4 donnerait un chameau « négatif » de dromadaires. Ces extrêmes sont exclus par l’énoncé, qui demande un mélange.",
+    "Le piège est d’attribuer 2 bosses au dromadaire. Un croquis de bosses au-dessus de la barrière, groupées par 1 ou par 2, suffit à voir les trois paquets."
+  ],
+  "329": [
+    "Un troupeau mélange dromeaux à 3 bosses et chamadaires à 4 bosses ; on compte 85 têtes et 269 bosses. Vous cherchez le nombre de dromeaux. Il y en a 71.",
+    "Chaque animal a une tête, donc 85 bêtes en tout. Si tous avaient 4 bosses, on verrait 340 bosses. Il n’y en a que 269, soit 71 de moins.",
+    "Chaque dromau « économise » une bosse par rapport à un chamadaire. Il faut donc 71 dromeaux, et 85 − 71 = 14 chamadaires.",
+    "Vérification : 71 × 3 + 14 × 4 = 213 + 56 = 269. Le piège est d’inverser les 3 et les 4, ce qui donnerait 71 chamadaires, incompatible avec le déficit de bosses."
+  ],
+  "330": [
+    "Un écureuil a plus de 3 noisettes ; il lui en reste 1 quand il les compte par 2, par 3 ou par 4. Vous cherchez le plus petit nombre possible. Il en a au moins 13.",
+    "Reste 1 à la division par 2, 3 et 4 signifie que le nombre est un multiple commun de 2, 3 et 4, plus une unité. Le plus petit multiple commun de 2, 3 et 4 est 12.",
+    "Donc le plus petit candidat strictement supérieur à 3 est 12 + 1 = 13. On vérifie : 13 = 6 × 2 + 1 = 4 × 3 + 1 = 3 × 4 + 1.",
+    "Le suivant serait 25, puis 37, etc. L’énoncé demande le minimum. Le piège est de répondre 7, qui marche pour 2 et 3 mais pas pour 4."
+  ],
+  "331": [
+    "Cinq écureuils A à E, aussi rapides les uns que les autres, visent toujours la noisette la plus proche parmi six noisettes marquées. Vous cherchez lequel en attrapera deux. C’est C, option C.",
+    "Au premier sprint, A, C, D et E atteignent chacun une noisette, simultanément. B, trop loin de sa plus proche au départ, n’a encore rien.",
+    "Il reste deux noisettes. B, maintenant le plus près de l’une, la prend (c’est sa première). C, plus proche que D de la dernière, s’en empare : c’est sa deuxième. A est distancé sur ce reliquat.",
+    "Le piège est de croire que B, resté les mains vides un moment, rattrapera deux noisettes. La géométrie de la figure officielle montre que la seconde restante penche vers C."
+  ],
+  "332": [
+    "Quatre écureuils ont mangé 11 noix, chacun au moins une, tous des nombres distincts ; trois d’entre eux en ont mangé 9 à eux trois, et l’un a mangé exactement 3 noix. Vous cherchez le maximum individuel. Il vaut 5, option C.",
+    "Celui qui n’est pas dans le trio a mangé 11 − 9 = 2 noix. Un autre a mangé 3. Il reste 6 noix pour les deux derniers, en parts distinctes, non nulles, et différentes de 2 et de 3.",
+    "Les parts 4 et 2 sont interdites, 2 étant déjà pris. Restent 5 et 1. La répartition est donc 1, 2, 3 et 5, dont le plus grand est 5.",
+    "Le piège est de répondre 6, comme si un seul écureuil avait avalé le reste du trio. Les contraintes « tous différents » et « au moins une » interdisent 6."
+  ],
+  "333": [
+    "Quatre écureuils ont mangé 1 999 noisettes, chacun au moins 100 ; le premier en a mangé le plus, et le deuxième et le troisième en ont mangé 1 265 à eux deux. Vous cherchez la part du premier. Il en a mangé 634, option D.",
+    "Le premier et le quatrième se partagent 1 999 − 1 265 = 734 noisettes. Comme le quatrième en a au moins 100, le premier en a au plus 634.",
+    "Parmi les deux du milieu, l’un au moins a mangé 633 noisettes, car 1 265 / 2 = 632,5, et les parts sont entières : le plus grand des deux est au moins 633. Le premier, qui mène, a donc mangé au moins 634.",
+    "Le seul entier à la fois ≥ 634 et ≤ 634 est 634. Le piège est de répondre 734 ou 598, en oubliant soit le plancher du quatrième, soit le plafond imposé par le milieu."
+  ],
+  "334": [
+    "Cinq frères marchent en file, le Petit Poucet dernier. André passe avant Bernard, Joseph avant Mario, et un seul frère sépare André de Mario. Vous cherchez les ordres possibles. Il y en a deux : André, Joseph, Mario, Bernard, Petit Poucet ; et Joseph, André, Bernard, Mario, Petit Poucet.",
+    "Le Petit Poucet est fixé en cinquième position. André et Mario ont exactement une place entre eux, donc ils occupent les positions (1, 3) ou (2, 4) parmi les quatre premiers, dans un ordre ou dans l’autre.",
+    "Joseph avant Mario interdit que Mario soit en tête. André avant Bernard interdit qu’André soit le dernier des quatre. Ces deux filtres ne laissent que les deux files indiquées.",
+    "Toute autre intercalation (Mario avant André, ou deux frères entre eux) viole une consigne. Le piège est d’oublier que le Petit Poucet, sèmeur, est forcément dernier."
+  ],
+  "335": [
+    "Anni, Ossi et Elli se partagent 7 noix, chacun au moins une, tous des nombres différents ; Anni en a le moins, Ossi le plus. Vous cherchez la part d’Elli. Elli en a 2, option B.",
+    "Il s’agit de trois entiers distincts ≥ 1, de somme 7, strictement croissants de Anni à Ossi. La seule triple possible est 1, 2, 4.",
+    "Pourquoi pas 1, 3, 3 ? Les deux derniers ne sont pas distincts. Pourquoi pas 2, 3, 2 ? Même obstacle, et Anni ne serait plus minimale. 1, 2, 5 dépasse 7. Donc Elli, au milieu, a 2.",
+    "Le piège est de répondre « impossible de le savoir », option E, en imaginant plusieurs triples. La double contrainte min/max les réduit à une seule."
+  ],
+  "336": [
+    "Un écureuil reste à au plus 5 m du tronc P et à au moins 5 m de la niche N. Vous devez choisir le dessin de la zone accessible. C’est l’option E.",
+    "« Pas plus de 5 m de P » décrit le disque plein de centre P et de rayon 5 m, bord compris.",
+    "« Pas moins de 5 m de N » décrit l’extérieur du disque de centre N et de rayon 5 m, bord exclu ou compris selon que l’inégalité est stricte ; l’énoncé dit « moins de 5 m », donc le cercle de N est encore permis, mais l’intérieur ne l’est pas.",
+    "La zone est l’intersection de ces deux ensembles : un « croissant » ou une calotte du disque P, selon que N est assez proche de P. Les options qui montrent un disque entier, une bande, ou l’inverse (autour de N plutôt que de P) sont fausses. La figure E est celle qui respecte les deux conditions à la fois."
+  ],
+  "337": [
+    "Un écureuil mange les deux cinquièmes de sa réserve en deux mois, puis le quart de ce qui reste le troisième mois, et il lui reste 81 noisettes. Vous cherchez d’abord ce qui restait au début du troisième mois, puis la réserve initiale. Il restait 108 noisettes au début du troisième mois, et il en avait amassé 180.",
+    "Après le troisième mois, les 81 noisettes sont les trois quarts de ce qui restait au début de ce mois, puisqu’un quart a été mangé. Un quart de cette quantité vaut 81 / 3 = 27, donc le stock d’alors valait 81 + 27 = 108.",
+    "Ces 108 noisettes sont les trois cinquièmes de la réserve de départ, les deux cinquièmes ayant déjà été consommés. Un cinquième vaut 108 / 3 = 36, donc la réserve initiale vaut 5 × 36 = 180.",
+    "Vérification : 180 × 2/5 = 72 mangées, reste 108 ; puis 108 / 4 = 27, reste 81. Le piège est de prendre 81 pour les trois cinquièmes, en oubliant l’étape du quart."
+  ],
+  "338": [
+    "Chaque jour, Tac prend le matin la moitié du stock de Tic, puis Tic prend l’après-midi la moitié du stock de Tac. Après six jours, Tic a 2 013 glands, toujours des nombres entiers positifs. Vous cherchez le stock de Tac à ce moment. Tac a 1 007 glands.",
+    "Le total S des glands est invariant. Une journée complète rapproche les deux stocks de la répartition (2 S / 3 , S / 3), en divisant par 4 l’écart à cet équilibre. Après six jours, l’écart résiduel est divisible par 4⁶ = 4 096.",
+    "Les seules valeurs de S qui gardent des stocks entiers et strictement positifs à chaque étape, du matin du jour 1 au soir du jour 6, se réduisent à S = 3 020. Alors Tac possède S − 2 013 = 1 007 glands.",
+    "On peut aussi remonter les 12 manipulations : inverser un après-midi, c’est doubler le stock de Tac et retirer autant à Tic ; inverser un matin, c’est doubler Tic. En partant de (2 013, t) et en exigeant l’intégrité, on trouve t = 1 007. Le piège est de croire que les stocks s’égalent ou que Tac a le tiers de 2 013."
+  ],
+  "339": [
+    "Un écureuil cache 1 noisette au premier arbre, 2 au deuxième, 3 au troisième, et ainsi de suite, jusqu’à épuiser 28 noisettes. Vous cherchez à quel arbre il dépose la dernière. Au septième arbre.",
+    "Après l’arbre n, il a déposé 1 + 2 + … + n = n (n + 1) / 2 noisettes. On cherche le plus petit n tel que cette somme atteigne 28.",
+    "Les sommes triangulaires : 1, 3, 6, 10, 15, 21, 28. À n = 7, on tombe exactement sur 28. L’écureuil vide ses joues sur le septième arbre, sans reste pour un huitième.",
+    "Le piège est de répondre 28, en confondant le rang de l’arbre et le nombre de noisettes. Un tableau « arbre / reste » (27, 25, 22, 18, 13, 7, 0) rend la descente visible."
+  ],
+  "340": [
+    "2 021 noix numérotées sont posées en cercle. À l’étape k, Jumpy échange les deux noix voisines de la noix k. Vous devez montrer qu’il existe un k pour lequel les deux noix échangées a et b vérifient a < k < b. Cette inégalité est inévitable, par un invariant de coloration.",
+    "Raisonnez par l’absurde : supposez qu’à chaque étape k, les deux voisines de k sont toutes deux plus petites que k, ou toutes deux plus grandes. Coloriez une noix en sombre dès que son numéro a servi de pivot. Alors k, encore clair au moment de son geste, a toujours deux voisines de la même couleur.",
+    "Recolorier k en sombre crée alors un nouveau bloc sombre de taille 1, ou fusionne deux blocs sombres déjà de taille impaire en un bloc encore impair. Tous les blocs sombres restent de taille impaire.",
+    "Après 2 020 étapes, il reste une seule noix claire, celle numérotée 2 021. Sur un cercle, les 2 020 noix sombres forment un unique bloc de longueur 2 020, un nombre pair. Cela contredit l’invariant. Donc l’hypothèse est fausse : un certain k a bien eu une voisine plus petite et une plus grande.",
+    "Vous n’avez pas à exhiber k ni la permutation initiale. Le piège, dans ce type d’olympiade, est de chercher un exemple au lieu d’un invariant global."
+  ],
+  "341": [
+    "Monsieur Écureuil mise 2 noisettes et tire une noisette dans chaque urne : l’une contient 2 noires et 2 blanches, l’autre 1 noire et 3 blanches. Deux blanches lui en rapportent 4, sinon il perd. Vous devez le conseiller. Mieux vaut refuser le jeu : il a plus de chances de perdre que de gagner.",
+    "Les deux tirages sont indépendants. La probabilité d’une blanche dans la première urne est 2/4 = 1/2 ; dans la seconde, 3/4.",
+    "Gagner exige deux blanches, donc une probabilité (1/2) × (3/4) = 3/8. La probabilité de perdre est 1 − 3/8 = 5/8, strictement plus grande.",
+    "Même si le gain (4 noisettes contre 2 mises, soit un profit de 2) égale la mise, l’espérance est négative puisque l’on perd plus souvent. Le piège est de voir 3 blanches dans une urne et de conclure trop vite à « plutôt gagnant »."
+  ],
+  "342": [
+    "Skippy a noix + noisettes = 200, glands + noisettes = 100, noix + glands = 240. Vous cherchez le total des trois sortes. Il vaut 270, option A.",
+    "Additionnez les trois égalités : chaque sorte est comptée exactement deux fois, et la somme des membres de droite vaut 200 + 100 + 240 = 540.",
+    "Le total cherché est donc la moitié de 540, soit 270.",
+    "On peut même retrouver chaque sorte : noix = 270 − 100 = 170, noisettes = 270 − 240 = 30, glands = 270 − 200 = 70. Le piège est d’additionner 200 + 100 + 240 sans diviser par 2, ce qui donne 540, hors QCM."
+  ],
+  "343": [
+    "Un écureuil rentre à 19 h et ressort le lendemain à 9 h. Vous cherchez la durée passée dans le nid. Il y est resté 14 heures, option E.",
+    "De 19 h à minuit, il s’écoule 5 heures. De minuit à 9 h, il s’écoule 9 heures.",
+    "Le total 5 + 9 = 14. On peut aussi calculer 9 + 24 − 19 = 14, en passant par le lendemain.",
+    "Le piège est de faire 19 − 9 = 10, comme si les deux horaires étaient le même jour. Le nid chevauche minuit, il faut ajouter les deux bouts."
+  ],
+  "344": [
+    "Frankie trouve un gland en 15 min, Glenn en 12 min, et Alex en mange un toutes les 20 min, tous sans interruption. Vous cherchez le surplus de glands au bout de 24 h. Il y a 144 glands de plus.",
+    "En une heure, Frankie en trouve 60/15 = 4, Glenn 60/12 = 5, et Alex en mange 60/20 = 3.",
+    "Le bilan horaire est 4 + 5 − 3 = 6 glands. Sur 24 heures : 6 × 24 = 144.",
+    "Alex commence avec les glands de la veille, mais cela ne change pas le rythme net une fois le régime permanent installé sur 24 h. Le piège est d’oublier de retrancher le goinfre, ou de convertir 15 min en 15 glands."
+  ],
+  "345": [
+    "Un écureuil part de A et y revient, sans jamais reprendre le même sentier, en récoltant les noisettes inscrites sur huit sentiers. Vous cherchez le maximum. Il ramène 28 noisettes, sur le circuit 2 + 7 + 5 + 8 + 6.",
+    "Le plan a 5 carrefours et 8 sentiers. Un tour fermé sans répéter d’arête est un circuit, pas nécessairement eulérien : on n’est pas obligé d’utiliser les 8 sentiers. La somme de tous les nombres vaudrait 36, mais aucun circuit issu de A ne les prend tous.",
+    "En énumérant les circuits (il y en a une trentaine), le plus riche utilise cinq sentiers dont les valeurs 2, 7, 5, 8 et 6. Le tracé correspondant figure au corrigé officiel.",
+    "Le piège est d’additionner 8 + 7 + 6 + 5 + 4 + 3 + 2 + 1. Sans circuit eulérien complet depuis A, 36 est inaccessible. La figure officielle évite d’inventer un autre chemin."
+  ],
+  "346": [
+    "Un écureuil entre sur la case 1, sort sur la 16, se déplace en ligne ou colonne, sans obligation de tout visiter. Vous cherchez le plus petit et le plus grand total de noisettes récoltées. Le minimum est 46, le maximum 134.",
+    "Pour minimiser, on vise un chemin court vers 16. La trajectoire 1-2-3-4-8-12-16 totalise 46 et ne peut guère être raccourcie : il faut bien relier le coin d’entrée au coin de sortie.",
+    "Pour maximiser, on ramasse presque tout, mais on évite impérativement la case 2, trop coûteuse en détour par rapport à son contenu une fois le reste pris. Un chemin de 15 cases, par exemple 1-5-9-13-14-10-6-7-3-4-8-12-11-15-16, totalise 134.",
+    "D’autres chemins atteignent ces deux records. Le piège est d’autoriser la diagonale, ou de croire que le maximum impose les 16 cases : la case 2, précisément, doit rester de côté."
+  ],
+  "347": [
+    "Milora l’éléphant transporte 1 500 bananes vers un marché à 15 km, et en dévore 1, puis 2, puis 4, etc., tous les 3 km. Vous cherchez combien il en reste à l’arrivée. Il en reste 1 469.",
+    "Le trajet se découpe en 5 tronçons de 3 km. Les appétits successifs sont les puissances de 2 : 1, 2, 4, 8 et 16.",
+    "La somme 1 + 2 + 4 + 8 + 16 = 31. Donc 1 500 − 31 = 1 469 bananes parviennent au marché.",
+    "Le piège est de continuer la suite au-delà de 15 km, ou d’additionner 1 + 2 + … + 15. Ici, la raison est géométrique, pas arithmétique, et elle s’arrête au cinquième palier."
+  ],
+  "348": [
+    "Au zoo, pattes plus trompes égalent 120, et il y a deux fois plus d’éléphants d’Afrique (grandes oreilles) que d’éléphants d’Asie. Vous cherchez le nombre de grandes oreilles. Il y en a 32.",
+    "Chaque éléphant contribue pour 4 pattes et 1 trompe, soit 5. Le nombre d’animaux est 120 ÷ 5 = 24.",
+    "Le tiers sont asiatiques, les deux tiers africains : 8 et 16. Chaque Africain a 2 grandes oreilles, d’où 16 × 2 = 32.",
+    "Les petites oreilles des Asiatiques ne sont pas demandées. Le piège est de compter 4 oreilles par éléphant, ou d’appliquer 120 aux oreilles directement."
+  ],
+  "349": [
+    "Isabelle compte 5 pattes à chaque éléphant qu’elle voit (elle prend la trompe pour une patte), Caro en compte 6 (trompe et queue), Marina voit tout le troupeau, et l’on dénombre 2 003 pattes ainsi comptées, en minimisant le nombre d’éléphants à 6 pattes. Vous cherchez ce nombre. Il y a 3 éléphants à 6 pattes.",
+    "Aucun animal n’est vu avec 4 pattes : tout éléphant du troupeau est recensé à 5 ou à 6. Si n est le total et b le nombre d’éléphants à 6 pattes, on a 5 n + b = 2 003.",
+    "Donc b = 2 003 − 5 n, avec 0 < b ≤ n. On veut b minimal. Or 2 003 = 5 × 400 + 3, donc le plus petit b positif compatible est 3, avec n = 400 : 397 éléphants à 5 pattes et 3 à 6 pattes.",
+    "Vérification : 5 × 397 + 6 × 3 = 1 985 + 18 = 2 003. Le piège est de prendre le multiple de 6 le plus proche, ce qui augmenterait b au lieu de le minimiser."
+  ],
+  "350": [
+    "Léonie a dessiné un éléphant en petits carrés ; vous devez le partager en cinq parties identiques. Chaque partie est un pentamino en F, et le pavage est celui de la figure officielle.",
+    "L’éléphant contient 25 petits carrés. Cinq parts égales en ont donc 5 chacune : ce sont des pentaminos, parmi les douze formes possibles.",
+    "La forme qui pave cette silhouette est le pentamino F, reconnaissable à son aspect de « pas » ou de « té un peu tordu ». Cinq F identiques, éventuellement tournés ou retournés, recouvrent l’éléphant sans trou ni chevauchement.",
+    "N’inventez pas un découpage en rectangles 1 × 5 : la silhouette ne s’y prête pas. Appuyez-vous sur la figure du corrigé pour le placement exact des cinq F."
+  ],
+  "351": [
+    "Un territoire de 56 cases doit être protégé : un éléphant couvre sa case et les quatre diagonales, et quatre éléphants diplômés peuvent en plus couvrir un sixième voisin. Vous cherchez le nombre minimal d’éléphants. Il en faut 12, selon une disposition donnée par la figure officielle.",
+    "Sans diplôme, chaque éléphant couvre au plus 5 cases, et 56 / 5 = 11,2, donc au moins 12 animaux. Ce plancher est atteint si le recouvrement est presque sans chevauchement.",
+    "On peut scinder le territoire en deux rectangles 3 × 4 et deux carrés 4 × 4. Dans les rectangles, on poste les diplômés, dont le sixième rayon bouche les cases qui échapperaient aux diagonales. Les carrés 4 × 4 se couvrent par des éléphants ordinaires bien calés.",
+    "La figure officielle montre un tel placement de 12 pions. Moins de 12 laisserait au moins une case hors de portée, diplôme compris."
+  ],
+  "352": [
+    "Florida a 140 éléphants sur trois tablettes : le milieu contient trois fois le haut plus 10, le bas deux fois le milieu moins 10. Vous cherchez les trois effectifs. Il y en a 12 en haut, 46 au milieu, 82 en bas.",
+    "Si le haut porte h pièces, le milieu en porte 3 h + 10 et le bas 2 (3 h + 10) − 10 = 6 h + 10. La somme h + (3 h + 10) + (6 h + 10) = 10 h + 20 = 140.",
+    "Donc 10 h = 120 et h = 12. Le milieu vaut 36 + 10 = 46, le bas 82. Et 12 + 46 + 82 = 140.",
+    "Le piège est de lire « trois fois plus et 10 en plus » comme 3 (h + 10). L’énoncé ajoute 10 après le triplement, pas avant."
+  ],
+  "353": [
+    "On doit transporter 17 éléphants de 6 tonnes, la charge de l’avion étant limitée à 15 tonnes. Vous cherchez le nombre de trajets. L’avion ne peut emporter que 2 éléphants à la fois, soit 9 allers ; cela fait 17 trajets si l’appareil reste au parc d’arrivée, 18 s’il doit revenir à son point de départ.",
+    "15 / 6 = 2,5, mais l’on ne scie pas un éléphant : 2 bêtes pèsent 12 tonnes, 3 en pèseraient 18, trop. Chaque vol utile emporte donc 2 éléphants, sauf le dernier qui n’en emporte qu’un.",
+    "Neuf allers livrent 16 + 1 = 17 animaux. Entre deux allers, un retour à vide (ou presque) est nécessaire, soit 8 retours, et 9 + 8 = 17 trajets en terminant à Addo.",
+    "Si le contrat exige le retour final au Kruger, on ajoute un dix-huitième trajet. Le piège est de répondre 17 / 2 = 8,5, donc 9, en oubliant les retours."
+  ],
+  "354": [
+    "Un mobile en équilibre mélange pommes de 30 g, cochons, kangourous et éléphants, les objets identiques ayant le même poids ; un kangourou pèse autant que deux éléphants. Vous cherchez le poids d’un éléphant. Il pèse 20 g, option B.",
+    "Deux pommes pèsent 60 g et équilibrent un cochon, donc le cochon pèse 60 g. Cochon plus deux pommes : 120 g, qui équilibrent l’autre plateau (deux kangourous et deux éléphants).",
+    "Un kangourou = deux éléphants, donc deux kangourous = quatre éléphants. Avec les deux éléphants déjà présents, le plateau pèse autant que six éléphants. Six éléphants = 120 g, un éléphant = 20 g.",
+    "Le piège est d’attribuer 30 g à l’éléphant par analogie avec la pomme, ou d’oublier que le kangourou vaut deux éléphants. Lisez chaque fléau comme une égalité de poids."
+  ],
+  "355": [
+    "Un dresseur lave un éléphant en 40 min, son fils en 2 h. Vous cherchez le temps qu’ils mettront ensemble pour en laver 3. Il leur faudra 1 h 30.",
+    "En une heure, le père lave 60/40 = 1,5 éléphant, le fils 1/2 = 0,5 éléphant. À eux deux : 2 éléphants par heure.",
+    "Trois éléphants demandent donc 3/2 = 1,5 heure, soit 1 h 30 min.",
+    "Le piège est de moyenner 40 min et 120 min, ce qui donnerait 80 min par éléphant, n’importe quoi. On additionne les cadences, pas les durées."
+  ],
+  "356": [
+    "Mowgli met 40 min pour aller à la plage à pied et revenir à dos d’éléphant, et 32 min pour l’aller-retour entier à dos d’éléphant. Vous cherchez la durée d’un aller-retour à pied. Elle vaut 48 min, option D.",
+    "À vitesse constante, l’aller simple à éléphant dure 32 / 2 = 16 min. Le trajet mixte de 40 min est donc 16 min d’éléphant plus 24 min à pied.",
+    "Un aller-retour à pied, c’est deux fois 24 min, soit 48 min.",
+    "Le piège est d’ajouter 40 et 32, ou de répondre 24 min, qui n’est que le simple à pied. On double le simple piéton, pas le mixte."
+  ],
+  "357": [
+    "Deux éléphants identiques ont une masse entière en kilogrammes ; deux balances déséquilibrées opposent l’un à 12 kg et les deux à 20 kg. Vous cherchez la masse d’un éléphant. Elle vaut 11 kg, option E.",
+    "La première figure montre un éléphant plus léger que 12 kg. La seconde montre que deux éléphants pèsent plus que 20 kg, donc chacun pèse plus que 10 kg.",
+    "L’entier strictement compris entre 10 et 12 est 11. C’est la seule option restante.",
+    "Le piège est de « partager » 20 en 10, option D, alors que la balance 20 kg penche précisément contre cette égalité. Un déséquilibre n’est pas une égalité."
+  ],
+  "358": [
+    "Furax se pèse habillé : la balance affiche 3 t, 4 q, 53 kg et 210 g ; pull, short, baskets, slip, baladeur et casquette ont des masses données dans des unités variées. Vous cherchez sa masse réelle en kg. Elle vaut 3 028,528 kg.",
+    "D’abord, tout convertir en kilogrammes. L’affichage : 3 000 + 400 + 53 + 0,210 = 3 453,210 kg. Le pull : 0,185 t = 185 kg. Le short : 664 hg = 66,4 kg. Les baskets : 137,5 kg. Le slip : 2 532 dag = 25,32 kg. Le baladeur : 612 g = 0,612 kg. La casquette : 985 000 cg = 9,85 kg.",
+    "Les vêtements et accessoires pèsent 185 + 66,4 + 137,5 + 25,32 + 0,612 + 9,85 = 424,682 kg.",
+    "Furax nu : 3 453,210 − 424,682 = 3 028,528 kg. Le piège est un oubli de conversion, notamment le hectogramme (0,1 kg) et le centigramme. Alignez toutes les unités avant de soustraire."
+  ],
+  "359": [
+    "Un éléphant enrhumé change de mouchoir toutes les demi-heures pendant 8 jours ; chaque mouchoir est un carré de 6 m de côté. Vous cherchez la surface totale en hectares, ares et centiares. Elle vaut 1 hectare 38 ares 24 centiares.",
+    "Huit jours, c’est 8 × 24 = 192 heures, donc 384 demi-heures, et 384 mouchoirs.",
+    "Chaque mouchoir a pour aire 6 × 6 = 36 m². Le total est 36 × 384 = 13 824 m².",
+    "Or 1 hectare = 10 000 m², 1 are = 100 m², 1 centiare = 1 m². Donc 13 824 m² = 1 ha 38 a 24 ca. Le piège est de compter 8 × 24 mouchoirs seulement, en oubliant les deux changements par heure."
+  ],
+  "360": [
+    "Cinq éléphants ont 24 ans de moyenne ; les trois plus jeunes ont 19 de moyenne, les trois plus âgés 28. Vous cherchez l’âge médian. Il vaut 21 ans, option B.",
+    "La somme des cinq âges est 5 × 24 = 120. Celle des trois plus jeunes est 3 × 19 = 57, celle des trois plus âgés 3 × 28 = 84.",
+    "En additionnant les deux triples, on compte deux fois le médian et une fois chacun des autres : 57 + 84 = 141 = 120 + âge médian.",
+    "Donc l’âge médian vaut 141 − 120 = 21. Le piège est de répondre 24, la moyenne globale, ou 19, la moyenne des jeunes. Le médian n’est ni l’une ni l’autre."
+  ],
+  "361": [
+    "Neuf éléphants, grands et petits, marchent en file puis se séparent à gauche ou à droite à un carrefour. Vous devez reconnaître la configuration après la séparation. C’est l’option D.",
+    "Le premier de la file est grand : donc, sur l’une des deux routes, l’éléphant le plus à droite (le premier arrivé) est grand. Cela élimine E. Le dernier de la file est petit : donc l’éléphant le plus à gauche de l’une des routes est petit. Cela élimine C.",
+    "Le deuxième est petit : il se retrouve soit juste derrière le premier grand (même route), soit en tête de l’autre route. L’option A ne respecte pas cette alternative. L’option B, elle, ferait précéder un certain grand par un petit qui n’est devant lui sur aucune des deux routes, contradiction avec l’ordre initial.",
+    "Il reste D, seule compatible avec l’ordre d’arrivée sur chaque branche. Le piège est de ne regarder que le nombre de grands et de petits, sans l’ordre de passage."
+  ],
+  "362": [
+    "Eddie mange 110 bananes en 10 min, Hugo 56 en 8 min. Vous cherchez le temps qu’ils mettront ensemble pour 954 bananes. Il leur faudra 53 minutes.",
+    "Eddie avale 110 / 10 = 11 bananes par minute. Hugo avale 56 / 8 = 7 bananes par minute.",
+    "À eux deux : 11 + 7 = 18 bananes par minute. Le temps cherché est 954 / 18 = 53 min.",
+    "Le piège est de moyenner 10 et 8, ou d’additionner 110 et 56 sans ramener à la minute. On additionne les cadences, puis on divise la quantité totale."
+  ],
+  "363": [
+    "Un escargot grimpe 3 m le jour et glisse de 2 m la nuit, sur un mur de 10 m, en partant un matin. Vous cherchez le nombre de jours pour atteindre le sommet. Il lui faut 8 jours.",
+    "Chaque journée complète, nuit comprise, fait gagner 1 m net. Après 7 jours et 7 nuits, l’escargot est à 7 m du sol, au matin du huitième jour.",
+    "Ce huitième jour, il gravit 3 m et parvient à 10 m le soir. Il est au sommet : il ne glisse plus, car il n’y a plus de nuit à passer sur le mur.",
+    "Le piège classique est de diviser 10 par 1 et de répondre 10 jours. Le dernier jour, le glissement nocturne n’a pas lieu. On peut aussi écrire 3 x − 2 (x − 1) = 10, ce qui donne x = 8."
+  ],
+  "364": [
+    "Tom, Pom et Pam ont laissé des traces cotées sur des pavés rectangulaires ; Tim a laissé la sienne, non cotée. Vous cherchez la longueur du trajet de Tim. Elle vaut 35 dm.",
+    "Tom a parcouru 5 diagonales pour 25 dm, donc une diagonale mesure 5 dm. Pom a parcouru 5 diagonales et 4 largeurs pour 37 dm : les 4 largeurs mesurent 37 − 25 = 12 dm, une largeur 3 dm.",
+    "Pam a parcouru 4 largeurs et 5 longueurs pour 32 dm : les 5 longueurs mesurent 32 − 12 = 20 dm, une longueur 4 dm. (On vérifie au passage que 3-4-5 est bien un triangle rectangle, cohérent avec la diagonale.)",
+    "Le tracé de Tim compte 3 diagonales, 4 largeurs et 2 longueurs : 15 + 12 + 8 = 35 dm. Le piège est de compter ses segments sans d’abord extraire les trois mesures unitaires sur les autres escargots."
+  ],
+  "365": [
+    "Roméo doit visiter les 64 maisons une fois chacune, en marchant horizontalement, verticalement ou en diagonale, avant de rejoindre Juliette, en minimisant les changements de direction. L’itinéraire optimal est celui de la figure officielle : c’est elle qu’il faut suivre, sans en inventer un autre.",
+    "Un changement de direction, c’est un coin sur le trajet, pas un simple passage d’une case à la suivante dans le même azimut. Plus les alignements (y compris diagonaux) sont longs, moins il y a de virages.",
+    "On commence souvent par un grand « tour d’horizon » qui rase plusieurs bords d’un seul tenant, puis l’on balaie l’intérieur par de longues diagonales parallèles. Roméo n’a pas le droit de sauter une maison ni d’en revisiter une.",
+    "Plusieurs chemins existent, mais le recueil en retient un, au plus petit nombre de coudes. Comparez votre essai à la figure du corrigé plutôt que de figer un dessin de mémoire."
+  ],
+  "366": [
+    "Roméo, posé sur une case blanche, n’avance qu’en diagonale, sans traverser de case noire ; il peut retraverser une case, mais pas un même coin. Vous cherchez le trajet qui visite toutes les blanches avec le moins de changements de direction. Ce trajet est celui de la figure officielle.",
+    "Se déplacer en diagonale sur les blanches, c’est rester sur une même couleur d’échiquier. Les coins de case sont les nœuds du parcours : les réutiliser ferait un X interdit.",
+    "Minimiser les virages, c’est aligner le plus longtemps possible les centres des blanches selon une même diagonale, puis « rebondir » sur un bord pour une diagonale parallèle. La contrainte des coins empêche de refermer trop tôt une étoile.",
+    "N’empruntez pas un côté de case, et n’inventez pas le dessin : la solution du recueil est la figure du corrigé, que l’énoncé de Dudeney accompagne précisément pour cette seconde course."
+  ],
+  "367": [
+    "Une boîte contient 14 chocolats : 8 escargots, le reste en tortues ; 7 sont noirs, le reste blancs ; exactement 2 tortues ne sont pas noires. Vous cherchez le nombre d’escargots blancs. Il y en a 5, option D.",
+    "Il y a 14 − 8 = 6 tortues et 14 − 7 = 7 chocolats blancs. « Deux tortues qui ne sont pas noires », alors que chaque chocolat est noir ou blanc, signifie : 2 tortues blanches.",
+    "Parmi les 7 blancs, 2 sont des tortues, donc 5 sont des escargots.",
+    "On en déduit aussi 8 − 5 = 3 escargots noirs et 6 − 2 = 4 tortues noires, ce qui fait bien 3 + 4 = 7 noirs. Le piège est de répondre 2, en confondant escargots blancs et tortues blanches."
+  ],
+  "368": [
+    "Un escargot va de A à B en gravissant puis redescendant un escalier de 10 marches aussi hautes que profondes ; il parcourt 7 m, dont 1,3 m de palier supérieur. Vous cherchez la hauteur du sommet au-dessus du sol. Elle vaut 1,50 m.",
+    "La montée compte 10 contre-marches et 9 girons, le dixième giron étant remplacé par le palier de 1,3 m. La descente est symétrique. Hors palier, l’escargot parcourt donc 2 × 19 = 38 fois la hauteur d’une marche.",
+    "Cette longueur égale 7 − 1,3 = 5,7 m, donc une marche mesure 5,7 / 38 = 0,15 m. Le sommet, après 10 contre-marches, est à 10 × 0,15 = 1,50 m du sol.",
+    "Le piège est de partager 7 m en 10, ou d’oublier que le palier de 1,3 m n’est pas une marche carrée. On isole d’abord ce palier, puis on divise le reste par 38."
+  ]
+}

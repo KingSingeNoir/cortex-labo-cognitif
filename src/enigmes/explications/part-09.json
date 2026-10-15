@@ -1,0 +1,555 @@
+{
+  "737": [
+    "On vous demande combien de tuiles une poule peut ergoter au maximum sur un rectangle 4 × 6, en marchant surtout en diagonale, sans jamais recouper son chemin. Elle peut en marquer 20 sur les 24 tuiles du dallage.",
+    "Le dessin de l’énoncé montre le piège classique : si vous enchaînez les diagonales sans plan d’ensemble, vous isolez très vite une case. Arrivée à la septième tuile, la poule ne peut plus avancer sans couper le trait déjà tracé.",
+    "Pour aller plus loin, imaginez un balayage par bandes de deux rangées. Vous traversez d’abord les deux rangées du haut en diagonale, vous revenez à cheval sur les deux rangées du milieu, puis vous parcourez de même les deux rangées du bas, toujours sans croiser le chemin.",
+    "Quatre tuiles restent alors hors d’atteinte, parce qu’y poser un ergot forcerait un recoupement. Vingt est donc le maximum. Le corrigé officiel numérote un tel parcours de 1 à 20 : c’est ce schéma qu’il faut suivre, plutôt qu’un nouveau dessin inventé."
+  ],
+  "738": [
+    "On vous demande combien de petits carrés gris il faut ajouter pour faire disparaître la poule dessinée. Il en faut 26.",
+    "La poule est un assemblage de carreaux déjà gris et de carreaux encore blancs. Faire disparaître la figure, c’est griser exactement les carreaux blancs qui appartiennent encore à la silhouette, pas le fond autour.",
+    "Comptez donc, sur la figure officielle, chaque petit carré de la poule qui n’est pas encore gris. N’ajoutez ni n’oubliez un cran d’aile ou de patte : le total de ces cases manquantes vaut 26.",
+    "À retenir : sur une mosaïque, « effacer » un dessin coloré revient à un dénombrement, pas à une estimation à l’œil."
+  ],
+  "739": [
+    "On vous demande où Félix a placé son entrepôt 2 × 2, sur un terrain 8 × 8 partagé en cinq zones identiques chacune munie d’une tour-poulailler, l’entrepôt n’étant pas dans un coin. L’entrepôt occupe la parcelle 2 × 2 noire du partage officiel.",
+    "Le terrain compte 64 petits carreaux. Cinq zones de même forme et de même grandeur laissent 64 − 4 = 60 carreaux pour les poules, soit 12 carreaux par zone. Trois tours sont déjà dans des coins : cela oriente le puzzle vers des blocs 2 × 2 que l’on assemble ensuite.",
+    "En regroupant ces parcelles 2 × 2, vous reconstituez cinq polyominos congruents, et il reste exactement un pavé 2 × 2 intérieur. Ce pavé, coloré en noir sur le corrigé, est l’entrepôt.",
+    "Le piège serait de coller l’entrepôt dans un coin : l’énoncé l’interdit, et la symétrie des cinq zones le place bien à l’intérieur, comme sur la figure officielle."
+  ],
+  "740": [
+    "On vous demande combien Darine a de poules, d’après trois scénarios de distribution de coquilles. Elle en a 26 : 9 dans l’enclos A et 17 dans l’enclos B.",
+    "Appelez C le nombre de coquilles, a et b les effectifs des deux enclos. Donner 4 coquilles à chaque poule ferait manquer 14 coquilles, donc C + 14 = 4(a + b). Donner 3 à A et 4 à B ferait manquer 5 coquilles ; donner 4 à A et 3 à B en laisserait 3.",
+    "Comparez le troisième scénario au deuxième : l’écart de 14 − 5 = 9 coquilles ne porte que sur l’enclos A, qui reçoit une coquille de plus par poule. Il y a donc 9 poules en A. Comparez le troisième au premier : l’écart 14 − (−3) = 17 ne porte que sur B, d’où 17 poules en B.",
+    "Vérification : 4 × 9 + 3 × 17 = 87, et 87 + 3 = 90 coquilles. Avec 3 et 4 inversés, il en faudrait 95, soit 5 de trop. Avec 4 partout, 4 × 26 = 104, soit 14 de trop. Tout concorde."
+  ],
+  "741": [
+    "On vous demande la valeur exacte de la longueur d marquée sur le plan de la cocotte en papier, sachant que le grillage fait 165 m. On trouve d = 330 / (4 + 3√2) mètres.",
+    "Sur le plan officiel, plusieurs bords sont les côtés égaux x d’un triangle rectangle isocèle. La longueur d coupe ce triangle de sorte que la moitié de d soit l’hypoténuse : (d/2)² = x² + x², donc x = d√2 / 4.",
+    "Le contour grillagé se décompose en six segments de longueur x et deux segments de longueur d, d’où 6x + 2d = 165. En remplaçant x, on obtient (3√2 / 2) d + 2d = 165, soit d (3√2 + 4) / 2 = 165.",
+    "Il reste à isoler d : d = 330 / (4 + 3√2). Vous pouvez rationaliser le dénominateur si vous le souhaitez ; la forme ci-dessus est déjà exacte. Le piège est de prendre d pour un côté de l’angle droit au lieu de l’hypoténuse du petit triangle isocèle."
+  ],
+  "742": [
+    "On vous demande ce que Mathurin voit après avoir emballé 1 000 œufs par paquets de 6 : boîtes, cartons, puis caisses. Il voit 4 caisses pleines, 3 cartons pleins, 4 boîtes pleines et 4 œufs encore en vrac.",
+    "Une boîte contient 6 œufs. Un carton de 6 boîtes en contient 36. Une caisse de 6 cartons en contient 216. Vous convertissez 1 000 comme on convertit un nombre en base 6.",
+    "Division successive : 1 000 = 4 × 216 + 136, puis 136 = 3 × 36 + 28, puis 28 = 4 × 6 + 4. Chaque reste devient le chiffre du rang suivant.",
+    "À retenir : dès que l’on empile des contenants tous de même capacité k, compter les objets restants, c’est écrire le total en base k. Ici k = 6, et le « nombre » 4 344 en base 6 vaut bien 1 000."
+  ],
+  "743": [
+    "On vous demande combien de jours ensoleillés il y a eu en mars dans le poulailler de Piticoq, sachant que l’on a récolté 753 œufs. Il y a eu 9 jours de soleil.",
+    "Mars compte 31 jours. Chaque poule pond un œuf par jour, sauf Carmelita qui ne pond que s’il fait soleil. Le total 753 n’est donc pas un multiple exact de 31.",
+    "Divisez : 753 = 31 × 24 + 9. Les 24 œufs quotidiens viennent des poules régulières. Le reste 9 correspond aux œufs supplémentaires de Carmelita, un par jour de soleil.",
+    "Le piège serait de répondre 24, qui est le quotient, ou 31, le nombre de jours du mois. La question porte uniquement sur les journées ensoleillées, donc sur le reste de la division."
+  ],
+  "744": [
+    "On vous demande le plus petit nombre d’œufs que les huit poules d’Eustache doivent pondre pour que chaque case ait au moins un œuf et que chaque rangée et chaque colonne en totalisent exactement 10. Ce minimum est 22 œufs.",
+    "Le poulailler a la forme d’un cadre de huit cases (un carré 3 × 3 privé du centre). Si vous placez d’abord un œuf partout, vous avez déjà 8 œufs, mais les lignes de trois cases n’en ont que 3 : il en manque 7 sur chacune.",
+    "Un œuf posé dans une case d’angle compte à la fois pour une rangée et pour une colonne. Un œuf posé dans une case « milieu de bord » ne sert qu’une seule ligne. Pour minimiser le total, vous laissez donc 1 œuf sur les milieux de bord et vous chargez deux coins opposés.",
+    "Une répartition minimale consiste à mettre 8 œufs dans un coin, 8 dans le coin opposé, et 1 partout ailleurs : 8 + 8 + 6 × 1 = 22. Chaque grande rangée et chaque grande colonne fait alors 10, et aucune case n’est vide."
+  ],
+  "745": [
+    "On vous demande de partager le plancher disponible de Josée en cinq pièces de même forme et de même grandeur, quatre carreaux étant bloqués par des piliers. Le partage officiel se fait en cinq « L » de quatre carreaux.",
+    "Sur 24 petits carrés, 4 sont noircis, il en reste 20. Cinq parties égales comptent donc 4 carreaux chacune. Avec les piliers placés comme sur la figure, la seule forme qui pave le reste est le tétromino en L.",
+    "Chaque L recouvre trois carreaux d’une ligne et un carreau qui dépasse, en évitant les colonnes. Le corrigé officiel montre comment emboîter les cinq L autour des quatre piliers : suivez ce dessin, n’en inventez pas un autre.",
+    "À retenir : avant de tracer, calculez l’aire d’une pièce. Ici 20 ÷ 5 = 4 impose des tétrominos ; la forme en L vient ensuite de la géométrie des obstacles."
+  ],
+  "746": [
+    "On vous demande combien d’œufs pondront trois poules en neuf jours, si six poules pondent huit œufs en trois jours. La réponse est 12 œufs, choix B.",
+    "La ponte est proportionnelle au nombre de poules et à la durée, si l’on suppose un rythme constant. Avec deux fois moins de poules, on obtient deux fois moins d’œufs dans le même temps : trois poules pondent donc 4 œufs en trois jours.",
+    "Neuf jours, c’est trois fois plus long que trois jours. Les mêmes trois poules pondent alors 3 × 4 = 12 œufs.",
+    "Le piège du choix E (24) consiste à tripler à la fois les poules et les jours, ou à oublier que l’on a déjà divisé l’effectif par deux. Le choix A (9) mélange les données sans proportion."
+  ],
+  "747": [
+    "On vous demande le plus petit nombre de poules à apporter au marché de Troc-village pour repartir avec une oie, une dinde et un coq. Il en faut 16, choix C.",
+    "La dinde vaut 5 coqs. Pour avoir une dinde et un coq, il faut donc l’équivalent de 6 coqs. Or 1 oie + 2 poules = 3 coqs, donc 2 oies + 4 poules = 6 coqs.",
+    "Il vous faut encore une oie en plus de la dinde et du coq : au total 3 oies et 4 poules. Comme 4 poules = 1 oie, 3 oies = 12 poules. En ajoutant les 4 poules déjà comptées, vous arrivez à 16 poules.",
+    "Les distracteurs 15 et 17 viennent d’un oubli ou d’un double compte d’une oie. Vérifiez en reconvertissant tout en poules, qui sont l’unité la plus petite du tarif."
+  ],
+  "748": [
+    "On vous demande combien d’œufs pondent les 10 poules de Jacques en 10 jours. Elles en pondent 75, choix E.",
+    "Cinq poules pondent un œuf chaque jour : en 10 jours, cela fait 5 × 10 = 50 œufs. Les cinq autres pondent un jour sur deux : chacune donne 5 œufs en 10 jours, soit 25 œufs.",
+    "Le total est 50 + 25 = 75. Vous pouvez aussi dire que le rythme moyen de la seconde équipe est d’un demi-œuf par poule et par jour, donc 0,5 × 5 × 10 = 25.",
+    "Le piège C (50) n’oublie que les poules quotidiennes. Le piège D (60) invente un rythme intermédiaire. Lisez bien « un jour sur deux », qui divise exactement par deux la ponte de la seconde moitié."
+  ],
+  "749": [
+    "On vous demande la proportion, sous forme de fraction irréductible, des poules qui ont à la fois des dents et des plumes bleues. Cette proportion vaut 1/35.",
+    "Une poule sur cinq a des plumes bleues, donc 4/5 n’en ont pas. Parmi celles sans plumes bleues, il y en a autant avec dents que sans dents. La moitié de 4/5, c’est 2/5 : ainsi 2/5 des poules ont des dents sans plumes bleues.",
+    "On sait aussi que 3/7 des poules ont des dents (avec ou sans bleu). Celles qui ont dents et bleu sont donc toutes les dentées moins celles qui ont des dents sans bleu : 3/7 − 2/5.",
+    "Mettez au même dénominateur : 15/35 − 14/35 = 1/35. À retenir : un tableau à double entrée (bleu / pas bleu, dents / pas dents) évite de compter deux fois le même groupe."
+  ],
+  "750": [
+    "On vous demande combien d’œufs on peut placer dans la caisse, avec déjà deux œufs posés, sans jamais aligner plus de deux œufs dans une même direction. On peut en placer 12.",
+    "« Chaque direction » signifie les rangées, les colonnes et les diagonales, y compris les diagonales courtes. La contrainte n’interdit pas deux œufs alignés, elle interdit le troisième sur la même ligne de visée.",
+    "Les deux œufs déjà pondus, marqués O sur la figure, bloquent certaines lignes. En remplissant au maximum sans créer de triple alignement, on atteint 12 positions, comme le montre le schéma du corrigé officiel.",
+    "Le piège est de s’arrêter à 8 ou 10 par analogie avec un jeu d’échecs, ou au contraire de viser 16 comme un carré plein : au-delà de 12, un alignement de trois devient inévitable."
+  ],
+  "751": [
+    "On vous demande combien d’œufs la fermière a vendus au premier client. Elle en a vendu 29, choix E.",
+    "Après cette vente, il reste deux fois plus d’œufs de poule que d’œufs de cane. Le reste est donc un multiple de 3 (deux parts de poule, une part de cane).",
+    "Au départ, 4 + 6 + 12 + 13 + 22 + 29 = 86 œufs. Parmi les six paniers, seul 29 donne un reste multiple de 3 : 86 − 29 = 57 = 3 × 19. Les autres différences 82, 80, 74, 73 et 64 ne le sont pas.",
+    "Vous n’avez pas besoin de savoir combien il y a de poules et de canes dans chaque panier : la condition « multiple de 3 » suffit à identifier le panier de 29. C’est le seul compatible avec l’observation de la fermière."
+  ],
+  "752": [
+    "On vous demande comment Catherine a réparti 138 œufs dans 28 boîtes de 4 ou de 6 œufs. Elle a utilisé 15 boîtes de quatre et 13 boîtes de six.",
+    "Si x est le nombre de boîtes de 4 et y celui des boîtes de 6, on a x + y = 28 et 4x + 6y = 138. En remplaçant y par 28 − x, il vient 4x + 6(28 − x) = 138.",
+    "Calculez : 4x + 168 − 6x = 138, donc 168 − 2x = 138, puis 2x = 30, x = 15 et y = 13. Vérification : 15 × 4 + 13 × 6 = 60 + 78 = 138, et 15 + 13 = 28.",
+    "Autre voie : 28 boîtes de 6 donneraient 168 œufs, soit 30 de trop. Chaque fois que vous remplacez une boîte de 6 par une de 4, vous perdez 2 œufs. Il faut donc 15 remplacements, ce qui laisse 15 boîtes de 4 et 13 boîtes de 6."
+  ],
+  "753": [
+    "On vous demande le nombre de poules du poulailler, d’après les pontes de lundi à jeudi qui totalisent 604 œufs. Il y a 240 poules.",
+    "La moitié a pondu lundi, les deux tiers mardi, les trois cinquièmes mercredi et les trois quarts jeudi, chaque poule pondant au plus un œuf par jour. Si p est l’effectif, (1/2 + 2/3 + 3/5 + 3/4) p = 604.",
+    "Le dénominateur commun de 2, 3, 5 et 4 est 60. On obtient (30 + 40 + 36 + 45) / 60 p = 151p / 60 = 604, donc 151p = 604 × 60. Or 604 = 4 × 151, d’où p = 4 × 60 = 240.",
+    "À retenir : un effectif réel doit être un multiple de tous les dénominateurs 2, 3, 5 et 4, donc un multiple de 60. Ici 240 = 4 × 60 tombe juste, ce qui confirme le calcul."
+  ],
+  "754": [
+    "On vous demande à quelle distance de son départ se trouve la poule A lorsqu’elle rencontre la poule B. Elle est alors à 16 pas de poule de son point de départ.",
+    "A avance de 3 pas puis recule d’1, soit un gain net de 2 pas tous les 4 pas. B avance de 5 puis recule de 2, soit un gain net de 3 pas tous les 7 pas. Elles partent en même temps, à 30 pas l’une de l’autre, au même rythme.",
+    "Après 28 pas (le produit 4 × 7), A a gagné 7 × 2 = 14 pas. B a gagné 4 × 3 = 12 pas depuis son bord, donc se trouve à la position 30 − 12 = 18 si l’on compte depuis le départ de A. Il reste 4 pas entre elles.",
+    "Les deux recommencent un cycle en avançant. Après deux pas supplémentaires, A arrive en 16 et B en 16 : elles se rencontrent. Un tableau pas à pas, comme dans le corrigé, permet de vérifier qu’elles ne se croisent pas plus tôt."
+  ],
+  "755": [
+    "On vous demande combien Mamie a de poules, sachant que le chat et les poules ont ensemble 10 pattes. Elle a 3 poules, choix C.",
+    "Un chat a 4 pattes. Il reste 10 − 4 = 6 pattes pour les poules. Chaque poule a 2 pattes, donc 6 ÷ 2 = 3 poules.",
+    "Les choix 1, 2, 4 et 5 donneraient 2, 4, 8 ou 10 pattes de poule, donc 6, 8, 12 ou 14 pattes en tout, jamais 10.",
+    "Le piège, très jeune public, est d’oublier le chat ou de compter 4 pattes par poule. Relisez : « son chat et toutes ses poules »."
+  ],
+  "756": [
+    "On vous demande combien Lyne possède de poules. Elle en a 48.",
+    "Moins de 60 poules, un nombre pair, multiple de 3 (cages de 3 sans reste), et dont la somme des chiffres dépasse 10. Pair et multiple de 3 signifie multiple de 6.",
+    "Les multiples de 6 strictement inférieurs à 60 sont 6, 12, 18, 24, 30, 36, 42, 48 et 54. Seul 48 a une somme des chiffres 4 + 8 = 12 supérieure à 10. (54 donne 9, 42 donne 6, etc.)",
+    "Le zéro n’a pas de sens ici. À retenir : « divisible par 2 et par 3 » se résume à « divisible par 6 » lorsque 2 et 3 sont premiers entre eux, ce qui raccourcit fortement la liste à tester."
+  ],
+  "757": [
+    "On vous demande quel jour Claude pourra de nouveau ramasser 4 œufs, après le 1er octobre où les quatre poules ont pondu le jour même. Ce sera le 13 octobre.",
+    "La première poule pond tous les jours, la deuxième tous les deux jours, la troisième tous les trois jours, la quatrième tous les quatre jours. Pour que les quatre pondent le même jour, la date doit être un multiple commun de 2, 3 et 4 après le 1er octobre, la première étant de toute façon présente.",
+    "Le plus petit commun multiple de 2, 3 et 4 est 12. Douze jours après le 1er octobre, on est le 13. Un petit calendrier avec des croix pour les poules 2, 3 et 4 le confirme : la première colonne commune après le 1er est bien le 13.",
+    "Le piège est de répondre le 12 octobre (12 jours plus tard en oubliant que le 1er compte comme jour 1) ou le 7 octobre (PPCM de 2 et 3 seulement, sans le 4)."
+  ],
+  "758": [
+    "On vous demande le prix entier, en dollars, de chaque oiseau. Le poulet vaut 2 $, le canard 4 $ et l’oie 5 $.",
+    "L’affiche dit que trois poulets et un canard se vendent autant que deux oies, et qu’un poulet, deux canards et trois oies coûtent ensemble 25 $. En notant p, c et o les prix, on a 3p + c = 2o et p + 2c + 3o = 25, avec des entiers positifs.",
+    "Essayez o = 5 : alors 3p + c = 10. Le couple entier p = 2, c = 4 convient. Le second marché : 2 + 8 + 15 = 25, exact.",
+    "D’autres essais (oie à 4 $ ou 6 $) ne donnent pas trois prix entiers positifs cohérents. Le mot « nombre exact de dollars » vous autorise à tester de petites valeurs plutôt qu’à déployer un gros système."
+  ],
+  "759": [
+    "On vous demande trois chemins qui relient les trois voisins à leurs grilles sans jamais se croiser. Une telle configuration existe : elle est dessinée sur la figure du corrigé officiel.",
+    "Ne tracez pas de nouveaux couloirs de votre invention. La grande maison a déjà fermé une allée de sa porte jusqu’à la grille du bas ; cet axe occupe une bande du parc et force les deux autres chemins à le contourner.",
+    "L’homme de droite doit rejoindre la porte de gauche, l’homme de gauche la porte de droite. Ils y parviennent en glissant le long des murs et en utilisant les espaces autour des maisons, exactement comme sur le dessin de Sam Loyd reproduit dans le recueil.",
+    "À retenir : dans ce type de « chemins qui ne se coupent pas », la solution est topologique et tient tout entière dans la figure officielle. Un tracé improvisé recoupe presque toujours l’allée déjà construite."
+  ],
+  "760": [
+    "On vous demande combien de poulets les paysans ont apportés au marché. Ils en ont amené 175.",
+    "D’après le tarif, 85 poulets valent un cheval plus une vache, et 5 chevaux valent 12 vaches. On en déduit qu’une vache vaut 25 poulets et un cheval 60 poulets : en effet 5 × 85 poulets achètent 5 chevaux et 5 vaches, soit 17 vaches, d’où 425 ÷ 17 = 25 poulets par vache, puis 300 ÷ 5 = 60 poulets par cheval.",
+    "Le dialogue se traduit par un système. Si x chevaux et y vaches ont déjà été pris : en doublant les chevaux on aurait 2x + y = 17 bêtes à nourrir ; en doublant les vaches on aurait x + 2y = 19. Soustraire après avoir doublé la seconde équation donne 3y = 21, donc y = 7 et x = 5.",
+    "Les 7 vaches, à 25 poulets l’une, correspondent à 175 poulets, total retenu par le corrigé. Le piège est de convertir aussi les chevaux dans le même total sans relire ce que le recueil demande : ici l’échange chiffré final porte sur ces 175 poulets."
+  ],
+  "761": [
+    "On vous demande la couleur et l’emplacement de chaque poulet. Divo est gris au nord, Ovo est roux au centre, Pavo est blanc au sud.",
+    "La cage du centre est occupée par un poulet roux (indice 3). Divo n’est pas roux, Pavo n’est pas au centre : le roux du centre est donc Ovo. Ovo n’est pas blanc, ce qui est déjà cohérent, et il n’est pas au nord, ce qui confirme le centre.",
+    "Divo n’est pas au sud, donc il est au nord (le centre étant pris). Il n’est pas roux ; Pavo n’est pas gris : Divo, restant, est gris, et Pavo, au sud, est blanc.",
+    "Dressez un petit tableau poulet × couleur × lieu et barrez au fur et à mesure. Chaque indice élimine deux cases d’un coup ; au bout de quatre phrases, plus aucune ambiguïté."
+  ],
+  "762": [
+    "On vous demande de quel pourcentage les ailes de poulet sont plus chères que les croquettes. Elles le sont de 25 %.",
+    "Supposons que Houda reçoive n croquettes à x euros pièce. Mélissa reçoit 20 % d’ailes de plus, soit 1,2 n ailes à y euros pièce. Elle paie 50 % de plus, donc 1,2 n × y = 1,5 × (n x).",
+    "Simplifiez par n (non nul) : 1,2 y = 1,5 x, d’où y = 1,5 / 1,2 x = 1,25 x. Le prix unitaire des ailes est 25 % au-dessus de celui des croquettes.",
+    "Le piège est de répondre 50 % (l’écart de ticket) ou 20 % (l’écart de quantité). Ces deux pourcentages se compensent partiellement : 1,50 ÷ 1,20 = 1,25, et seul ce quotient mesure le surcoût par pièce."
+  ],
+  "763": [
+    "On vous demande de placer les volatiles pour que chacun apparaisse une seule fois par ligne, par colonne et sur les deux diagonales principales. Il existe deux telles grilles, ce sont des carrés latins d’ordre 4 (diagonaux).",
+    "La contrainte est celle d’un sudoku 4 × 4 réduit à un seul symbole par ligne et colonne, plus les deux grandes diagonales. Avec quatre animaux distincts, cela revient à un carré latin diagonal.",
+    "Le corrigé officiel présente les deux remplissages possibles. Suivez ces deux figures : n’inventez pas un troisième arrangement, il n’y en a pas d’autre à rotation ou échange de symboles près dans le recueil.",
+    "À retenir : une fois la première ligne fixée, les diagonales déterminent presque tout le reste. Si une case force un doublon, revenez en arrière plutôt que de forcer."
+  ],
+  "764": [
+    "On vous demande le résultat du match Coqs contre Œufs. Les Coqs ont gagné contre les Œufs.",
+    "Les Poussins ont 1 victoire et 2 nuls, zéro défaite. Leurs deux nuls ne peuvent être que contre Coqs et Œufs, donc leur unique victoire est contre Ferme.",
+    "Ferme a 1 victoire, 0 nul, 2 défaites, et n’a pas gagné contre Œufs. Sa seule victoire est donc contre Coqs. Il reste le match Coqs–Œufs : Coqs a déjà 1 victoire, 1 nul, 1 défaite en vue. Le nul est contre Poussins, la défaite contre Ferme, donc la victoire restante est contre Œufs.",
+    "On en déduit aussi qu’Œufs a battu Ferme, ce qui achève le tableau. Le piège est d’attribuer à Ferme une victoire contre Œufs, alors que l’énoncé l’interdit."
+  ],
+  "765": [
+    "On vous demande la suite minimale de sauts, chacun perpendiculaire au précédent et plus long d’une unité, pour que la puce revienne en D. Le parcours officiel compte 7 sauts, numérotés de 1 à 7 sur la figure du corrigé.",
+    "Les deux premiers sauts sont déjà dessinés : longueurs 1 puis 2, à angle droit. Le troisième doit mesurer 3, le quatrième 4, et ainsi de suite, toujours sur les lignes du quadrillage.",
+    "Revenir au départ, c’est fermer un polygone dont les côtés consécutifs sont orthogonaux et de longueurs 1, 2, 3, … Le plus court circuit qui y parvient utilise 7 côtés, comme le montre le tracé officiel (sauts 1 à 7 autour de D).",
+    "N’ajoutez pas de sauts superflus et ne changez pas les longueurs : la figure du recueil est la solution. Un essai à 6 sauts laisse un écart d’une unité, impossible à combler sans casser l’angle droit."
+  ],
+  "766": [
+    "On vous demande la longueur du dernier bond de la puce qui gravit 2 005 marches par cycles 1, 2, 3, 4, 5, puis le nombre total de bonds. Le dernier bond mesure 4 marches ; en comptant chaque bond, elle en a fait 669.",
+    "Une série 1 + 2 + 3 + 4 + 5 vaut 15 marches et compte 5 bonds. Divisez : 2 005 = 133 × 15 + 10. Après 133 séries complètes, il reste 10 marches, et 10 = 1 + 2 + 3 + 4.",
+    "Le dernier bond est donc le saut de 4 marches. Le nombre de bonds est 133 × 5 + 4 = 669. Le corrigé additionne 133 + 4 = 137, c’est-à-dire les séries plus les bonds restants, sans multiplier les séries par 5.",
+    "Pour la question « de combien de marches sera le dernier bond », tout le monde s’accorde sur 4. Pour le décompte des bonds, fiez-vous au produit 133 × 5 + 4 si l’on compte vraiment chaque saut."
+  ],
+  "767": [
+    "On vous demande combien de sauts vers l’avant Ptit a effectués, sur 20 sauts de 5 cm avec un gain net de 60 cm. Elle en a fait 16 vers l’avant.",
+    "Soixante centimètres, c’est 12 sauts nets vers l’avant, puisque 12 × 5 = 60. Mais Ptit a sauté 20 fois, donc 8 sauts « en trop » par rapport à ce minimum.",
+    "Chaque paire (un saut avant, un saut arrière) s’annule et consomme deux sauts sans changer la position nette. Les 8 sauts surnuméraires forment 4 telles paires. On ajoute donc 4 sauts avant (et 4 arrière) aux 12 sauts avant déjà comptés : 16 vers l’avant, 4 vers l’arrière.",
+    "Algèbre : si a sauts avant et r sauts arrière, a + r = 20 et 5a − 5r = 60, donc a − r = 12. En additionnant, 2a = 32, a = 16. Le piège est de répondre 12, en oubliant les allers-retours."
+  ],
+  "768": [
+    "On vous demande où se trouve la puce à 10 h du matin. Elle est sur le chiffre 2 de l’horloge.",
+    "La puce part à minuit, dos à l’aiguille des heures, à contre-sens. Appelons v sa vitesse initiale en tours par heure. De 8 h à 16 h elle va à (3/4) v, puis à (1/2) v jusqu’à minuit suivant. En 24 h elle parcourt 8v + 6v + 4v = 18v tours. L’aiguille, elle, fait 2 tours.",
+    "Ils se croisent chaque fois que la somme de leurs parcours vaut un nombre entier de tours. En 24 h cette somme vaut 18v + 2 = 2 012, d’où v = 2 010 / 18 = 335/3 tours par heure.",
+    "De minuit à 8 h, la puce fait 8v = 893 tours plus un tiers de tour, à contre-sens : elle se trouve sur le 8. De 8 h à 10 h, à la vitesse (3/4)v, elle ajoute encore 167 tours et demi, toujours à contre-sens, ce qui la mène du 8 au 2. C’est la position demandée."
+  ],
+  "769": [
+    "On vous demande quelle distance un élève de 1,50 m pourrait sauter en gardant les mêmes proportions qu’une puce de 1,5 mm qui saute 30 cm. Il sauterait 300 m, choix C.",
+    "La puce mesure 1,5 mm, soit 0,0015 m, et saute 0,30 m. L’élève mesure 1,50 m, c’est-à-dire 1 000 fois plus que la puce (1,50 ÷ 0,0015 = 1 000).",
+    "Le saut homothétique vaut donc 1 000 × 0,30 m = 300 m. Autrement dit, la puce saute 200 fois sa taille (300 mm ÷ 1,5 mm) ; l’élève sauterait 200 × 1,50 m = 300 m.",
+    "Les distracteurs 3 m, 30 m, 900 m et 3 km viennent d’erreurs d’unités (oublier de convertir les millimètres, ou multiplier 1,50 m par 2000). Alignez toutes les longueurs en mètres avant de proportionner."
+  ],
+  "770": [
+    "On vous demande où se trouve la puce, partie du point 5, après 8 sauts puis après 2 016 sauts. Elle est sur le point 2 après 8 sauts, et sur le point 4 après 2 016 sauts.",
+    "Sur un impair, elle saute au voisin ; sur un pair, elle saute par-dessus le voisin. Depuis 5 (impair) elle va en 1. Ensuite le cycle 1 → 2 → 4 → 1 se répète indéfiniment, de longueur 3.",
+    "Après le premier saut (5 → 1), il reste 7 sauts pour la question 1. Or 7 = 2 × 3 + 1 : deux tours du cycle plus un saut, qui mène de 1 à 2. Pour 2 016 sauts, il reste 2 015 sauts après l’arrivée en 1, et 2 015 = 671 × 3 + 2 : deux sauts de plus dans le cycle, 1 → 2 → 4.",
+    "À retenir : dès qu’une règle de saut produit un cycle, réduisez le grand nombre modulo la longueur du cycle, sans oublier le préfixe (ici le tout premier saut hors cycle)."
+  ],
+  "771": [
+    "On vous demande combien de décilitres de peinture sont nécessaires pour trois couches de l’assemblage, face inférieure comprise. Il en faut 228 dL.",
+    "On compte les faces exposées du solide, y compris le dessous : 6 dessus, 6 dessous, 7 devant, 7 derrière, 6 à gauche, 6 à droite, soit 38 faces visibles. Les faces collées cube contre cube ne se peignent pas.",
+    "Trois couches équivalent à 38 × 3 = 114 faces élémentaires à couvrir. À 2 dL par face et par couche, 114 × 2 = 228 dL.",
+    "Le piège est d’oublier le dessous, ou de peindre aussi les faces internes, ou de n’appliquer qu’une couche. Relisez : « y compris la face inférieure » et « sur trois couches »."
+  ],
+  "772": [
+    "On vous demande au bout de combien de secondes les puces A et B se poseront ensemble sur la même case. Elles s’y retrouvent au bout de 13 secondes.",
+    "Le circuit officiel a 17 cases. Numérotez-les dans le sens des aiguilles. À chaque seconde, A avance de 3 cases dans ce sens, B de 2 cases à contre-sens.",
+    "Un tableau temps × positions, comme dans le corrigé, montre les couples (1 ; 15), puis (4 ; 13), (7 ; 11), et ainsi de suite. La première coïncidence a lieu à t = 13, sur la case 6.",
+    "Vous pouvez aussi résoudre 1 + 3t ≡ 15 − 2t (modulo 17), soit 5t ≡ 14 (modulo 17). La plus petite solution positive est t = 13. Le dessin numéroté du recueil évite les erreurs de départ."
+  ],
+  "773": [
+    "On vous demande combien de parcours mènent de la case 1 à la case 12, en suivant les flèches, sans revisiter une case, les numéros croissant de 1 en 1. Il y a exactement deux parcours possibles.",
+    "Chaque flèche impose la direction du prochain saut, mais pas sa longueur : vous pouvez sauter une ou plusieurs cases vides, à condition de rester dans l’alignement indiqué et de ne jamais revenir en arrière sur une case déjà visitée.",
+    "En explorant depuis 1, deux chaînes seulement atteignent 12 en visitant toutes les étapes 1, 2, …, 12. Elles sont numérotées sur les deux grilles du corrigé officiel : suivez ces deux figures plutôt que d’en inventer une troisième.",
+    "Le piège est de croire que l’on doit passer par toutes les cases du rectangle, ou au contraire de sauter trop loin et de bloquer l’accès à 12. La contrainte « déjà visitée » élimine très vite les branches mortes."
+  ],
+  "774": [
+    "On vous demande combien de chemins de A vers B passent par exactement six tuiles numérotées, sans mouvement oblique. Il y en a 10.",
+    "Le puceron ne va qu’à droite, ou verticalement. Les six tuiles sont donc une suite de six numéros croissants « en escalier », extraite de la figure 1 à 9.",
+    "Les dix suites possibles, toutes listées dans le corrigé, commencent par 1 ou par 2 et se terminent par 7 ou par 8, en passant par le « couloir » central 3-4-5-6. Par exemple (1, 3, 2, 4, 5, 7) ou (2, 4, 5, 7, 6, 8).",
+    "Pour les retrouver sans les recopier de mémoire, dessinez le graphe des tuiles voisines et énumérez les chemins de longueur 6 (six sommets). Il n’y en a pas plus de dix qui respectent les directions autorisées."
+  ],
+  "775": [
+    "On vous demande la longueur minimale du trajet de Bérénice, de A à B, pour desservir les 24 mangeoires. Ce minimum est 48 mètres.",
+    "Chaque bloc fait 2 m de long, et l’on néglige la largeur des allées. Desservir une mangeoire coûte au moins 2 m, que l’on fasse un aller-retour jusqu’à elle ou que l’on traverse toute l’allée jusqu’au carrefour suivant.",
+    "Vingt-quatre mangeoires imposent donc un plancher théorique de 24 × 2 = 48 m. Le tracé du corrigé officiel atteint exactement ce plancher : aucun détour, aucun double passage inutile.",
+    "Si votre parcours dépasse 48 m, vous avez recroisé une allée déjà servie. Calquez le dessin officiel plutôt que d’inventer un nouveau filaire : le minimum y est réalisé."
+  ],
+  "776": [
+    "On vous demande si la trajectoire de D (trois demi-cercles) est plus longue que celles de A, B et C. Non : les quatre trajectoires ont exactement la même longueur.",
+    "Tous les bonds sont des demi-cercles, et la distance au sol est la même pour chacun : 4 m. La longueur d’un demi-cercle est π fois le rayon, ou encore (π/2) fois le diamètre.",
+    "A fait un seul demi-cercle de diamètre 4 m, longueur 2π m. B en fait deux de diamètre 2 m : 2 × π = 2π m. C en fait quatre de diamètre 1 m : 4 × (π/2) = 2π m. D en fait trois de diamètre 4/3 m : 3 × (2π/3) = 2π m.",
+    "Le piège visuel est de croire que « plus de bosses » allonge le trajet. Comme les diamètres se partagent le même segment de 4 m, le facteur π/2 se factorise et tout s’annule : seule compte la distance au sol, identique."
+  ],
+  "777": [
+    "On vous demande le nombre minimal de sauts pour que la rainette atterrisse exactement sur le nénuphar A, avec la séquence 1, 2, 3, 1, 2, 3, … Ce minimum est 12 sauts.",
+    "Elle peut changer de direction entre deux sauts, mais pas au milieu d’un saut : un saut de 3 nénuphars est un bond d’un seul tenant sur la figure. Quatre cycles 1-2-3 feraient 24 nénuphars de « budget », trop pour un parcours court ; trois cycles font 12 sauts et un budget de 24 unités de distance, ce qui suffit tout juste.",
+    "Le corrigé officiel numérote un chemin en 12 étapes qui arrive pile sur A. Suivez cette numérotation sur la figure du recueil : c’est le parcours minimal, obtenu en combinant avances, reculs et virages entre les sauts.",
+    "Avec 9 sauts seulement (trois cycles), on n’atteint pas A pile : le reste de parcours ne tombe pas sur la case. Douze est donc le premier multiple de 3 qui fonctionne."
+  ],
+  "778": [
+    "On vous demande le nombre exact de rats chez l’animalier, sachant que deux des trois filles ont menti. Il n’y a aucun rat.",
+    "Hélène dit « plus de 10 », Clotilde dit « au plus 10 ». Ces deux phrases sont contradictoires : l’une des deux est vraie, l’autre est fausse. Elles ne peuvent pas mentir toutes les deux, ni dire vrai toutes les deux.",
+    "Comme il y a exactement deux menteuses parmi les trois, et qu’une seule des deux premières ment, Virginie ment forcément. Or Virginie affirme qu’il y a au moins un rat. Sa phrase fausse signifie qu’il n’y en a aucun.",
+    "Cela rend Hélène menteuse (il n’y a pas plus de 10 rats) et Clotilde sincère (au plus 10, et même 0). Le piège est de chercher un nombre entre 1 et 10, en croyant Virginie."
+  ],
+  "779": [
+    "On vous demande le nombre maximal de rats que Félix a pu voir, chacun volant moins de 10 morceaux, tous des quantités différentes, aucun ne volant la moitié d’un autre. Ce maximum est 6 rats.",
+    "Les quantités possibles sont les entiers de 1 à 9. Les paires interdites, parce que l’une est le double de l’autre, sont (1, 2), (2, 4), (3, 6) et (4, 8).",
+    "Dans la chaîne {1, 2, 4, 8}, on ne peut garder que deux nombres qui ne se doublent pas, par exemple 1 et 8, ou 1 et 4, ou 2 et 8. Dans {3, 6}, on n’en garde qu’un. Les nombres 5, 7 et 9 n’ont pas de double dans 1…9 : on les prend tous.",
+    "Total : 2 + 1 + 3 = 6. Un septième rat forcerait une paire « double ». Le piège est d’oublier que 4 est à la fois le double de 2 et la moitié de 8."
+  ],
+  "780": [
+    "On vous demande les numéros des portes encore ouvertes après 10 jours de manœuvres. Ce sont les portes 1, 4 et 9.",
+    "Le premier jour, tout est ouvert. Chaque jour k, on inverse l’état des portes multiples de k. C’est le problème classique des casiers : la porte n est touchée autant de fois qu’elle a de diviseurs.",
+    "Une porte finit ouverte si elle a un nombre impair de diviseurs. Or les diviseurs vont par paires, sauf lorsque n est un carré parfait : le diviseur médian √n n’a pas de partenaire. Parmi 1 à 10, les carrés sont 1, 4 et 9.",
+    "Vous pouvez aussi dresser le tableau O/F jour par jour, comme dans le corrigé : au dixième jour, seules 1, 4 et 9 restent ouvertes. La généralisation « carré parfait » permet de traiter 1 000 portes d’un coup."
+  ],
+  "781": [
+    "On vous demande combien de rats, tête contre queue, il faut pour couvrir les 216 km de l’autoroute Paris–Lille. Il en faut 800 000.",
+    "Un rat mesure 5 + 10 + 12 = 27 cm. La distance de 216 km vaut 216 × 100 000 = 21 600 000 cm, car 1 km = 100 000 cm.",
+    "Le quotient 21 600 000 ÷ 27 = 800 000. Aucun reste : 27 × 800 000 = 21 600 000 exactement.",
+    "Le piège est l’unité : oublier de convertir les kilomètres en centimètres, ou convertir en millimètres, décale le résultat d’un facteur 10 ou 100. Alignez tout en centimètres, l’unité du rat."
+  ],
+  "782": [
+    "On vous demande comment identifier, en moins de 26 heures, la unique bouteille empoisonnée parmi 1 000, avec 10 rats. Vous numérotez les bouteilles de 0 à 999 en binaire sur 10 bits, et chaque rat goûte toutes les bouteilles dont son bit vaut 1.",
+    "Un rat qui meurt ou survit fournit un bit d’information. Dix rats fournissent 2¹⁰ = 1 024 configurations, assez pour 1 000 bouteilles (il reste même une petite marge).",
+    "Concrètement, le rat n° k goûte la bouteille n si le k-ième chiffre binaire de n est un 1. Le lendemain, la liste des rats morts, lue comme un nombre binaire, est exactement le numéro de la bouteille empoisonnée.",
+    "Vous n’avez droit qu’à un seul test, car le poison met jusqu’à 24 h et le mariage est à 14 h le lendemain. C’est pourquoi toutes les dégustations se font en une seule tournée, à midi, et non rat après rat."
+  ],
+  "783": [
+    "On vous demande en combien de bonds le chien rattrapera le renard, qui a 27 bonds d’avance. Le chien y parvient en 108 de ses propres bonds.",
+    "Trois bonds de renard ont la même longueur que deux bonds de chien. Pendant que le chien fait 4 bonds, le renard en fait 5. Mettez ces deux informations dans la même unité de longueur, par exemple le bond de renard.",
+    "Dans le temps de 4 bonds de chien, le renard avance de 5 de ses bonds, tandis que le chien, dont 4 bonds valent 4 × (3/2) = 6 bonds de renard, gagne l’équivalent d’un bond de renard. Il lui faut donc 27 de ces « périodes » pour avaler les 27 bonds d’avance.",
+    "27 périodes de 4 bonds de chien font 108 bonds. Le piège est de répondre 27 (en oubliant les 4 bonds par période) ou 135 (en comptant les bonds du renard)."
+  ],
+  "784": [
+    "On vous demande combien de grains de raisin le renard a mangés le premier jour, sur un total de 100 grains en 5 jours, à raison de 6 grains de plus chaque jour. Il en a mangé 8 le premier jour.",
+    "Appelez n la ration du premier jour. Les cinq jours donnent n, n + 6, n + 12, n + 18 et n + 24. La somme vaut 5n + 60 = 100.",
+    "Les « extra » 6 + 12 + 18 + 24 = 60 grains s’ajoutent à cinq fois la ration initiale. Il reste 100 − 60 = 40, donc n = 40 ÷ 5 = 8.",
+    "Vérification : 8 + 14 + 20 + 26 + 32 = 100. Le piège est de partager 100 en 5 parts égales (20) en oubliant la progression, ou de compter les extras une fois de trop."
+  ],
+  "785": [
+    "On vous demande qui a le moins de chemin à faire vers l’étoile, puis vers la lune, en évitant les cases grises. Le renard atteint l’étoile le premier, en 7 cases. La tortue et l’oiseau arrivent ensemble sur la lune.",
+    "Les déplacements se font d’une case à une voisine par un côté, jamais en diagonale, et les cases grises sont des murs. Il s’agit donc de plus courts chemins sur une grille à obstacles.",
+    "Comptez, sur la figure officielle, les cases du trajet de chaque animal jusqu’à l’étoile : le renard n’en a que 7, moins que la tortue et l’oiseau. Jusqu’à la lune, tortue et oiseau ont la même longueur, meilleure que celle du renard.",
+    "Ne redessinez pas la grille : le corrigé identifie visuellement ces deux vainqueurs. Le piège, pour un jeune public, est de couper à travers une case grise."
+  ],
+  "786": [
+    "On vous demande s’il peut exister un zoo avec des hippopotames, mais ni girafe ni rhinocéros. Oui, un tel zoo est possible.",
+    "Les trois phrases de l’énoncé sont des implications qui ne s’appliquent que dans certaines configurations : « s’il y a hippos et rhinos, alors pas de girafe », « s’il y a rhinos sans girafe, alors il y a hippos », « s’il y a hippos et girafes, alors il y a rhinos ».",
+    "Un zoo qui n’a que des hippopotames (sans girafe, sans rhino) ne déclenche aucune de ces trois prémisses. Aucune contrainte n’est donc violée.",
+    "Le piège de la logique des prédicats est de croire que « dans tous les zoos où… » décrit tous les zoos du monde. Une implication est muette lorsque son hypothèse est fausse."
+  ],
+  "787": [
+    "On vous demande lequel des cinq dessins montre Rhino, Pato et Jojo dans l’ordre de marche, du plus léger au plus lourd compatible avec les masses. C’est le dessin A.",
+    "Rhino marche devant, Pato au milieu, Jojo derrière. Rhino pèse 500 kg de plus que Pato ; Pato pèse 1 000 kg de moins que Jojo. Donc Pato est le plus léger, Jojo le plus lourd, et Rhino est l’intermédiaire : Pato < Rhino < Jojo.",
+    "Devant, on doit donc voir le personnage de taille moyenne (Rhino), puis le petit (Pato), puis le gros (Jojo). C’est exactement le dessin A.",
+    "Les autres dessins inversent le moyen et le petit, ou placent le plus lourd en tête. Relisez l’ordre de marche avant de lire les masses : les deux informations se recollent ensuite."
+  ],
+  "788": [
+    "On vous demande combien M. Yang avait payé le lot de corne, sachant que la fraude sur la balance lui a rapporté 63 dollars de superprofit. Il l’avait payé 200 dollars.",
+    "Un fléau est plus court que l’autre. À l’achat, le fournisseur doit poser 1 100 g pour équilibrer le « kilo » de M. Yang : le rapport des bras est 1,1. À la vente, M. Yang inverse les plateaux : les 1 100 g reçus sont facturés 1 100 × 1,1 = 1 210 g au client.",
+    "La marge affichée est déjà de 50 % : si x est le prix d’achat d’un kilo « honnête », le prix de vente affiché est y = 1,5 x, et le profit licite serait 0,5 x. Avec la balance, il encaisse 1,21 y, soit un profit réel de 1,21 × 1,5 x − x = 0,815 x.",
+    "Le superprofit, c’est l’écart 0,815 x − 0,5 x = 0,315 x. On a 0,315 x = 63, donc x = 63 / 0,315 = 200. M. Yang a donc déboursé 200 dollars pour ce lot."
+  ],
+  "789": [
+    "On vous demande comment les trois pêcheurs se partagent les 30 florins versés par les trois arrivants. Le premier (six truites) reçoit 20 florins, le deuxième (quatre truites) en reçoit 10, le troisième (deux truites) ne reçoit rien.",
+    "Ils sont six à table et il y a 12 truites : chacun mange donc 2 truites. Celui qui en avait 6 en cède 4 ; celui qui en avait 4 en cède 2 ; celui qui en avait 2 ne cède rien, il mange exactement sa pêche.",
+    "Les 30 florins paient les 6 truites cédées, soit 5 florins par truite. D’où 4 × 5 = 20 florins pour le premier et 2 × 5 = 10 florins pour le deuxième.",
+    "Le piège, très classique (le « pourboire des dîneurs »), est de partager 30 florins en trois parts égales. Ce qui se vend, ce n’est pas la présence à table, ce sont les truites effectivement cédées."
+  ],
+  "790": [
+    "On vous demande à quelle heure le second saumon rattrapera le premier. Il le rattrape à 11 h 30.",
+    "Le premier part à 9 h 30 à 3 nœuds ; le second part à 10 h à 4 nœuds, dans la même direction. À 10 h, le premier a déjà 3 × 0,5 = 1,5 mille d’avance.",
+    "L’écart de vitesse est de 1 nœud : le second reprend 1 mille par heure. Il lui faut 1,5 ÷ 1 = 1,5 heure pour combler l’avance, soit 1 h 30 après 10 h, donc 11 h 30.",
+    "La conversion en mètres (1 852 m par mille) est inutile : les nœuds suffisent, car la question demande une heure, pas une distance. Le piège est de partir de 9 h 30 pour les deux, ou d’additionner les vitesses comme s’ils se dirigeaient l’un vers l’autre."
+  ],
+  "791": [
+    "On vous demande de combien de manières une sauterelle peut parcourir 7 m avec des bonds de 1 m ou de 3 m. Il y a 9 manières, l’ordre des bonds comptant.",
+    "Trois cas selon le nombre de grands bonds. Zéro bond de 3 m : sept bonds de 1 m, une seule suite. Un bond de 3 m : il reste 4 m en bonds de 1 m, soit 5 bonds en tout ; le grand bond peut occuper n’importe laquelle des 5 places, d’où 5 suites.",
+    "Deux bonds de 3 m : il reste 1 m, soit 3 bonds en tout ; le petit bond peut être premier, deuxième ou troisième, d’où 3 suites. Trois bonds de 3 m feraient 9 m, trop.",
+    "Total : 1 + 5 + 3 = 9. On ne distingue pas les bonds de 1 m entre eux, seulement leur place par rapport aux bonds de 3 m. C’est un dénombrement de mots sur un alphabet à deux lettres, de somme 7."
+  ],
+  "792": [
+    "On vous demande combien de pas chacun des quatre animaux fera pour les 24 m jusqu’à la source. Le rhinocéros en fait 12, l’éléphant 6, la gazelle 30 et le singe 150.",
+    "Un pas de rhinocéros mesure 2 m, donc 24 ÷ 2 = 12 pas. Le rhinocéros fait deux fois plus de pas que l’éléphant sur une même distance : l’éléphant n’en fait que 6 (ses pas mesurent alors 4 m).",
+    "Quand l’éléphant fait 3 pas, la gazelle en fait 15. Ici l’éléphant en fait 6, c’est-à-dire deux fois 3, donc la gazelle en fait 2 × 15 = 30. Le singe fait cinq fois plus de pas que la gazelle : 30 × 5 = 150.",
+    "Vérifiez les pas : éléphant 4 m, gazelle 0,8 m, singe 0,16 m, rhinocéros 2 m. Les rapports 3 : 15 et « 5 fois la gazelle » sont bien respectés. Le piège est de donner à l’éléphant 3 pas (le nombre de l’énoncé) au lieu de 6 (ceux qu’il faut pour 24 m)."
+  ],
+  "793": [
+    "On vous demande les effectifs du premier matin, sachant qu’il ne reste qu’un mouton le soir du quatrième jour. Il y avait 60 moutons, 41 loups et 28 serpents.",
+    "Il est plus simple de remonter le temps que d’avancer. Le soir, chaque mouton « rend » un serpent ; à midi, chaque serpent rend un loup ; le matin, chaque loup rend un mouton. On part de 0 loup, 1 mouton, 0 serpent après le dernier repas, et l’on inverse les trois repas du quatrième jour, puis du troisième, du deuxième et du premier.",
+    "En remontant le jeudi, on trouve successivement 1 serpent et 1 mouton, puis 1 loup en plus, puis 2 moutons. Le mercredi soir, les 2 moutons avaient mangé 2 serpents : 3 serpents, 1 loup, 2 moutons, et ainsi de suite. On obtient le mardi matin 19 moutons, 13 loups, 9 serpents, puis le lundi matin 60, 41 et 28.",
+    "Vérification en avançant depuis lundi : après quatre journées de trois repas, il ne reste plus qu’un mouton. Les suites d’effectifs sont linéaires ; une erreur d’un repas décale tout, d’où l’intérêt de redescendre jour par jour comme dans le corrigé."
+  ],
+  "794": [
+    "On vous demande de placer les chiffres 1 à 9, une fois chacun, dans le serpent d’opérations pour obtenir 66. Deux familles de solutions existent ; l’une d’elles s’écrit, en suivant les cases du dessin : 5, 2, 1 en haut, puis 9, 6, 7, 4, puis 3 et 8 (les facteurs 7 et 8 pouvant être échangés). Une variante remplace 5 et 6 par 6 et 5.",
+    "Les multiplications et divisions se calculent avant les additions et soustractions, conformément à l’énoncé. Le squelette 66 = … − … + … × …, avec les 11, 10, 13, 12 déjà écrits, contraint fortement les produits.",
+    "Cherchez d’abord les blocs × et ÷ qui donnent des entiers (les chiffres 1 à 9 sont tous utilisés, donc les divisions doivent « tomber juste »). Une fois un produit comme 7 × 8 = 56 identifié, les additions et soustractions restantes se testent à la main.",
+    "Le corrigé officiel dessine les deux grilles. Calquez-les plutôt que d’inventer un troisième remplissage : avec 9! ordres possibles, seule l’exploitation des priorités opératoires rend la recherche raisonnable."
+  ],
+  "795": [
+    "On vous demande un chemin hamiltonien sur les 36 intersections, découpé en 9 sections de 4 segments toutes distinctes même après rotation ou retournement. Cinq tels chemins existent ; le premier du corrigé officiel est le « idéal », chaque section enchaînant la suivante par un changement de direction.",
+    "Sans la contrainte de diversité, n’importe quelle visite des 36 points suffirait. Ici, chaque bloc de 4 pas doit avoir une forme unique, non superposable aux autres par un retournement de pièce (comme des polyominos d’ordre 4 différents).",
+    "L’exemple de l’énoncé échoue parce que les sections 2 et 8 sont la même forme, de même que 7 et 9. Il faut donc énumérer les formes de tetrominos de chemin (droite, L, S, U, etc.) et n’en répéter aucune.",
+    "Les cinq dessins sont ceux du recueil : la première figure, marquée d’une étoile, respecte en plus la perpendicularité d’une section à la suivante. N’inventez pas un sixième tracé ; reportez-vous à ces cinq solutions officielles."
+  ],
+  "796": [
+    "On vous demande de remplir le serpent avec 1 à 25, 13 et 20 déjà placés, de sorte que deux cases voisines par un côté aient pour somme un carré parfait. Trois remplissages existent ; ils sont donnés par le corrigé officiel.",
+    "Les sommes possibles entre 1 et 25 vont de 3 à 49. Les carrés dans cet intervalle sont 4, 9, 16, 25, 36 et 49. En pratique, les paires utiles sont surtout celles qui font 25 (1+24, 2+23, …) et 36 (11+25, 12+24, …), plus quelques 16 et 49.",
+    "Dessinez le graphe dont les sommets sont les nombres 1 à 25 et dont les arêtes relient les paires de somme carrée. Il s’agit de trouver un chemin hamiltonien qui passe par l’arête déjà imposée au voisinage de 20 et de 13.",
+    "Les trois chemins du corrigé commencent tous par 20 — 5 — 11 — 25, puis se séparent. Suivez l’une de ces trois figures plutôt que d’en inventer une quatrième : le graphe n’en contient pas d’autre compatible avec les cases déjà remplies."
+  ],
+  "797": [
+    "On vous demande combien de fois César est passé par la salle centrale. Il y est passé 5 fois.",
+    "Coloriez le plan en damier : salles « blanches » et salles « grises » alternées, la salle d’entrée et la salle de sortie étant de la même couleur (blanche). Chaque passage d’une salle à une voisine change de couleur.",
+    "Juste avant de sortir, César a donc visité autant de salles blanches que de salles grises, plus la salle blanche de sortie. Si x est le total des passages blancs et y celui des passages gris, on a x = y + 1.",
+    "En notant n les passages au centre (blanc ou gris selon le damier officiel), les nombres déjà inscrits donnent n + (1 + 4 + 8 + 3) = (7 + 2 + 5 + 6) + 1, d’où n = 5. Le piège est d’additionner les 8 nombres visibles et d’oublier la parité du damier."
+  ],
+  "798": [
+    "On vous demande combien de points il y avait à la place du point d’interrogation sur le serpent de dominos. Il y en avait 4, choix C.",
+    "Des carrés qui se touchent portent le même nombre de points. On peut donc reconstituer les deux moitiés manquantes : le point d’interrogation apparaît deux fois, une sur chaque moitié du domino retiré attenant.",
+    "La somme visible plus les deux copies du point d’interrogation vaut 33. En additionnant les nombres encore lisibles, on trouve 25 + 2 × ? = 33, donc 2 × ? = 8, ? = 4.",
+    "Les choix 3 ou 5 cassent soit l’égalité des faces jointives, soit le total 33. Un domino a deux carrés : n’oubliez pas de compter le ? deux fois."
+  ],
+  "799": [
+    "On vous demande combien de serpents j’ai comptés, parmi 27 têtes et 70 pieds, avec deux fois plus de lézards que de gens. J’en ai compté 6.",
+    "Une personne a 2 pieds, un lézard 4, un serpent 0. Le paquet « 1 personne + 2 lézards » a 3 têtes et 2 + 8 = 10 pieds. Or 70 pieds se partagent exactement en 7 tels paquets : 7 personnes et 14 lézards.",
+    "Ces 21 êtres ont 21 têtes. Il en reste 27 − 21 = 6, toutes sans pieds : ce sont les serpents.",
+    "Vérification : 7 têtes et 14 pieds de gens, 14 têtes et 56 pieds de lézards, 6 têtes de serpents. Total 27 têtes et 70 pieds. Le piège est d’attribuer 2 pieds aux serpents, ou d’oublier le facteur « deux fois plus de lézards »."
+  ],
+  "800": [
+    "On vous demande la probabilité que le singe tape le mot « banane » en six lettres, sur un clavier de 50 touches, chaque frappe étant indépendante. Cette probabilité vaut (1/50)⁶.",
+    "La première lettre doit être un b : une chance sur 50. La deuxième un a : encore 1/50, et ainsi de suite jusqu’à la sixième lettre.",
+    "Les six événements sont indépendants (le clavier n’a pas de mémoire). On multiplie donc les six facteurs : 1/50 × 1/50 × … = 1 / 50⁶.",
+    "Le piège serait de compter les anagrammes de « banane » ou les occurrences du mot dans un texte plus long. Ici le bloc a exactement six lettres, dans cet ordre précis, d’où une seule « faveur » sur 50⁶."
+  ],
+  "801": [
+    "On vous demande le plus petit nombre de bananes cueillies par les cinq marins. Ils en avaient cueilli 5 039.",
+    "On suppose qu’aucune banane n’est jamais coupée, et que le lendemain matin il en reste exactement 6, une pour chaque marin et une pour le singe. On remonte alors les cinq nuits.",
+    "Si le matin il reste 6 bananes, c’est le sixième du tas après le don de 5 bananes au singe : ce tas valait 6 × 6 + 5 = 41. En répétant « multiplier par le dénominateur, puis ajouter le don », on obtient ((((6 × 6 + 5) × 5 + 4) × 4 + 3) × 3 + 2) × 2 + 1 = 5 039.",
+    "Vérifiez en descendant : 5 039 − 1 est pair, la moitié est entière, et ainsi de suite jusqu’au matin. Un grain de moins casserait une division. C’est le classique « singe et noix de coco » à cinq marins, avec des dons 1, 2, 3, 4, 5 au lieu d’un seul fruit."
+  ],
+  "802": [
+    "On vous demande comment faire passer 3 humains, 1 grand singe et 2 petits singes, la barque portant au plus deux êtres, seuls les humains et le grand singe ramant, sans jamais laisser les humains en infériorité numérique. Une solution optimale compte 13 traversées ; le corrigé officiel en donne une, et il en existe 4 au total.",
+    "Les petits singes ne manœuvrent pas : chaque trajet qui les emmène doit inclure un rameur (humain ou grand singe). Dès que, sur une rive, les singes (grand + petits) sont strictement plus nombreux que les humains présents, l’attaque a lieu.",
+    "La stratégie consiste à « navette » le grand singe avec un petit, à ramener le rameur, puis à faire passer deux humains, à renvoyer un humain avec un petit, et ainsi de suite, jusqu’à ce que tout le monde soit à l’arrivée. Le tableau du recueil détaille les 13 étapes rive par rive : suivez-le, n’inventez pas un quatorzième schéma.",
+    "Les 4 solutions optimales se distinguent seulement par le premier aller-retour (grand singe + petit, ou humain + petit) et par le dernier. Toutes durent 13 trajets ; moins, on bloque sur la contrainte d’infériorité ou sur la place dans la barque."
+  ],
+  "803": [
+    "On vous demande le numéro et le nom du singe. Le singe habite la niche n° 4 et s’appelle Groumpf.",
+    "La niche 3 est occupée par un chien, Petitpois est au n° 2, la n° 1 est jaune, Loukoum habite la verte, un lapin habite la rouge, le chat s’appelle Slurp. Groumpf n’a qu’un voisin, un chien : il est donc au bout de la rangée, en 4 (seul 1 et 4 n’ont qu’un voisin, et 1 n’est pas à côté du chien de la 3).",
+    "Les niches bleue et jaune ne sont pas voisines : le jaune est en 1, donc le bleu est en 4 (et non en 2). La verte, Loukoum, reste en 3 avec le chien. La rouge, au n° 2 avec Petitpois, est celle du lapin. Slurp le chat est en 1, jaune. Le singe, dernier animal, est Groumpf en 4, bleu.",
+    "Un tableau à quatre colonnes (numéro, animal, nom, couleur) se remplit en cinq ou six barres. Le piège est de placer Groumpf en 1, en oubliant que son unique voisin doit être un chien."
+  ],
+  "804": [
+    "On vous demande combien d’êtres comptait la troupe de singes du poème de Bhāskara. La troupe compte 16 singes, ou bien 48.",
+    "Si s est l’effectif, « un huitième au carré » gambadait dans les bois, et 12 criaient sur la colline. L’équation est s − (s/8)² = 12, ou encore s² − 64s + 768 = 0 après avoir tout multiplié par 64.",
+    "Le discriminant vaut 64² − 4 × 768 = 1 024 = 32². Les racines sont (64 ± 32) / 2, soit 48 et 16. Les deux conviennent : pour 16, (16/8)² = 4 et 16 − 4 = 12 ; pour 48, (48/8)² = 36 et 48 − 36 = 12.",
+    "Bhāskara acceptait les deux effectifs. Le piège moderne est de n’en retenir qu’un, ou de lire « un huitième au carré » comme (s²)/8 au lieu de (s/8)²."
+  ],
+  "805": [
+    "On vous demande le plus petit nombre de noix du sac. Ce nombre est 2 179.",
+    "Le nombre n vérifie n ≡ 1 (modulo 11), n ≡ 8 (modulo 13) et n ≡ 3 (modulo 17). De plus, n n’est divisible ni par 41 (les trois cages ensemble), ni par 24, 28 ou 30 (les cages prises deux à deux).",
+    "Les modules 11, 13 et 17 sont premiers entre eux deux à deux : le théorème chinois s’applique. Avec M = 11 × 13 × 17 = 2 431, on construit n ≡ 1 × 221 × 1 + 8 × 187 × 8 + 3 × 143 × 5 (modulo 2 431), soit n ≡ 14 334 ≡ 2 179 (modulo 2 431).",
+    "2 179 n’est multiple d’aucun des 41, 24, 28, 30. C’est le plus petit entier positif qui satisfait tout l’énoncé. Le piège est d’arrêter au reste chinois sans vérifier les conditions « il en resterait toujours » pour les réunions de cages."
+  ],
+  "806": [
+    "On vous demande lequel des quatre nombres peut compléter la phrase selon le critère caché. C’est le mot « cinq ».",
+    "Comptez les lettres : « J’ai » (3), « mis » (3) — attendez, le critère annoncé par le corrigé est : chaque terme a une lettre de plus que le précédent. Relisez la phrase mot à mot : chaque mot compte une lettre de plus que le mot d’avant.",
+    "Le mot manquant, à l’emplacement du blanc, doit donc avoir quatre lettres. Parmi trois, quatre, cinq, six, seul « cinq » a quatre lettres (c-i-n-q).",
+    "« Trois » en a 5, « quatre » en a 6, « six » en a 3. Le contenu sémantique (singes, ingénieurs) est un leurre : la clé est la longueur des mots, pas la zoologie."
+  ],
+  "807": [
+    "On vous demande l’ordre des quatre parcours de singes, du plus court au plus long. L’ordre est B, puis A, puis D, puis C.",
+    "Sur le quadrillage, notez ℓ la longueur d’un côté, d celle d’une diagonale de carré, q celle d’un quart de cercle inscrit. On a ℓ < d < q < 2ℓ, parce qu’une diagonale est plus longue qu’un côté, et qu’un quart de cercle (π/2) r ≈ 1,57 r dépasse la diagonale √2 r ≈ 1,41 r tout en restant plus court que deux côtés.",
+    "En décomposant les dessins officiels : A = 7ℓ + 5d + 5q, B = 8ℓ + 4d + 5q, C = 6ℓ + 4d + 7q, D = 6ℓ + 5d + 6q. Alors B − A = ℓ − d < 0 donc B < A ; D − A = q − ℓ > 0 donc D > A ; D − C = d − q < 0 donc D < C.",
+    "On enchaîne B < A < D < C. Inutile de mesurer au double-décimètre : les trois inégalités ℓ < d < q suffisent, une fois les chemins décomposés en ℓ, d et q."
+  ],
+  "808": [
+    "On vous demande si le chat rattrapera la souris. Non : la souris rentre dans son trou, de justesse.",
+    "Un bond de chat vaut 10 pas de souris, et le chat est à 5 bonds d’elle, donc à 50 pas. La souris, elle, est à 20 pas de son trou. Pendant un bond du chat, la souris avance de 3 pas.",
+    "À chaque bond, la souris se rapproche de 3 pas du trou, tandis que le chat se rapproche de 10 − 3 = 7 pas de la souris (il gagne 10 pas, mais elle s’est déplacée de 3). Après 6 bonds, la souris n’est plus qu’à 2 pas du trou, et le chat encore à 8 pas d’elle.",
+    "Au bond suivant, la souris parcourt 3 pas et entre dans le trou (il ne lui en fallait que 2). Le chat n’a pas le temps de refermer les 8 pas restants. Dressez le tableau des distances : il rend le « de justesse » visible, sans équation."
+  ],
+  "809": [
+    "On vous demande combien de sacs de blé John aura perdus lorsque les chats auront mangé toutes les souris. Il aura perdu 30 sacs.",
+    "Hier soir : 40 souris. Chaque souris dévore un quart de sac par nuit, et elles finissent un sac entamé avant d’en ouvrir un autre. Chaque matin, les 8 chats mangent 8 souris.",
+    "Nuit 1 : 40 souris mangent 10 sacs, puis 8 souris sont croquées. Nuit 2 : 32 souris mangent 8 sacs, et ainsi de suite : 24 souris → 6 sacs, 16 → 4 sacs, 8 → 2 sacs. Le matin suivant, les derniers 8 rongeurs disparaissent, plus de nuit.",
+    "Total : 10 + 8 + 6 + 4 + 2 = 30 sacs. Le piège est de compter 40 × (1/4) = 10 sacs seulement (une seule nuit), ou d’oublier que l’effectif diminue de 8 chaque matin."
+  ],
+  "810": [
+    "On vous demande ce que chacune a mangé et ce qu’il reste dans le sac. Astrid et Bérengère ont chacune mangé 1 chèvre et 2 brebis ; Charlotte a mangé les 3 vaches ; il reste le fromage d’ânesse.",
+    "Une mangeuse qui aurait pris l’ânesse, ou les 2 chèvres, ou les 3 vaches, saurait quel type les autres ne pourront plus goûter. Astrid, puis Bérengère, déclarent ne pas le savoir : aucune n’a donc pris A, ni 2 C, ni 3 V.",
+    "Charlotte, après ses 3 morceaux, sait à la fois le type restant et l’assiette exacte de chacune. Cela n’est possible que si Astrid et Bérengère ont tiré la même combinaison, et que les 4 morceaux restants sont 3 vaches plus l’ânesse — le seul cas sans ambiguïté de permutation.",
+    "Si Charlotte avait tiré 2 vaches et l’ânesse, le dernier morceau pourrait encore être une vache, une brebis ou une chèvre selon d’autres scénarios encore vivants. Elle a donc forcément tiré les 3 vaches, laissant l’ânesse au fond du sac. C’est le seul dénouement compatible avec les trois déclarations."
+  ],
+  "811": [
+    "On vous demande les deux lettres inscrites sur la 500ᵉ souris mécanique. Ce sont T et F, soit « TF ».",
+    "Les noms parcourent l’alphabet comme un compteur en base 26 : AA, AB, …, AZ, BA, … Chaque première lettre couvre 26 souris. La 26ᵉ est AZ, la 52ᵉ BZ, la 26k-ième est la lettre k suivie de Z.",
+    "Or 500 = 19 × 26 + 6, car 19 × 26 = 494. La 494ᵉ s’appelle SZ (S est la 19ᵉ lettre). Les six suivantes sont TA, TB, TC, TD, TE, puis TF pour la 500ᵉ.",
+    "Le piège est de compter à partir de 0 (AA = 0) ou d’oublier que Z termine un bloc. Traitez le problème comme la conversion de 500 en « base alphabet » partant de 1, pas de 0."
+  ],
+  "812": [
+    "On vous demande la stratégie qui garantit au chat d’attraper la souris. Le chat doit d’abord laisser la souris descendre de la tour, puis aller lui-même au sommet de la tour pour casser l’alternance des couleurs, et seulement ensuite rabattre la souris dans un coin.",
+    "Les cases de la grille sont colorées en damier. Tant que le chat reste dans le grand rectangle, la souris peut toujours répondre en se tenant sur une case de la même couleur qu’elle, diagonalement opposée au chat dans un petit carré : elle reste hors d’atteinte.",
+    "La tour (le triangle) contient deux cases claires successives. En y passant, le chat occupe deux claires de suite et inverse la parité. Au retour, il « possède » la couleur, et peut alors pousser la souris vers un cul-de-sac.",
+    "Le corrigé officiel commente ce plan sur la figure du recueil. N’inventez pas un autre graphe : sans le détour par la tour, le damier protège la souris indéfiniment."
+  ],
+  "813": [
+    "On vous demande quel jour la distance parcourue par les trois voyageuses est la plus courte. C’est le mercredi et le jeudi (ex æquo), lorsque C ou D reçoit.",
+    "Les distances au sol entre litières sont 100 (A–B), 85 (A–C), 65 (B–C), 50 (C–D). Pour aller chez A, les trois autres prennent les plus courts chemins sur ce petit réseau : 100 + 135 + 85 = 320 sourimètres.",
+    "Chez B : 65 + 115 + 100 = 280. Chez C : 50 + 65 + 135 = 250. Chez D : 85 + 50 + 115 = 250. Les deux derniers totaux sont les plus petits, et égaux.",
+    "Le mercredi, C reçoit ; le jeudi, D reçoit. Le piège est de sommer les arêtes sans chercher, pour chaque invitée, le chemin le plus court (parfois via une quatrième souris)."
+  ],
+  "814": [
+    "On vous demande où le joueur des souris peut poser son troisième rongeur, et qui gagne. Une seule case reste licite (celle encadrée sur le corrigé officiel) ; après ce coup, plus aucun éléphant ne peut être posé, donc les souris gagnent.",
+    "Éléphants et souris ne doivent jamais s’aligner, même en diagonale — comme des dames ennemies qui ne se voient pas. On ne déplace pas un animal déjà posé.",
+    "Barrez d’abord toutes les cases alignées avec un éléphant déjà présent : il ne reste qu’une intersection libre pour la troisième souris. Posez-la, puis barrez toutes les cases alignées avec une souris : le plateau est saturé, l’adversaire ne peut plus jouer.",
+    "Suivez la figure officielle (souris encadrée, croix et ronds grisés) plutôt que d’inventer une autre case : le « unique coup légal » est visuel. C’est un problème d’alignement, pas de poursuite."
+  ],
+  "815": [
+    "On vous demande combien de temps les trois souris mettront à dévorer ensemble le dernier morceau. Il leur faudra 2 minutes et 30 secondes.",
+    "La petite finit un morceau en 15 min, soit 4 morceaux à l’heure. La moyenne, 7 min 30 s par morceau, en fait 8 à l’heure. La grosse, 5 min par morceau, en fait 12 à l’heure.",
+    "Ensemble, elles avalent 4 + 8 + 12 = 24 morceaux par heure. Un seul morceau leur prend donc 1/24 d’heure, c’est-à-dire 60/24 = 2,5 min, ou 2 min 30 s.",
+    "Le piège est d’additionner 15 + 7,5 + 5 = 27,5 min (comme si elles mangeaient l’une après l’autre) ou de faire une moyenne des trois durées. Ce sont des débits que l’on additionne, pas des temps."
+  ],
+  "816": [
+    "On vous demande le chemin que doit prendre la souris pour sortir, les portes inversant toutes leur état à chaque passage d’une porte ouverte. Le parcours officiel emprunte la boucle centrale, puis l’allée de gauche jusqu’à la sortie E.",
+    "Au départ, les ronds blancs sont ouverts, les noirs fermés. Franchir une porte ouverte bascule tout le labyrinthe : les ouvertes se ferment, les fermées s’ouvrent. On ne passe donc une porte noire (initialement fermée) qu’après un nombre impair de franchissements déjà effectués.",
+    "La boucle du centre sert à changer la parité au bon moment, afin d’ouvrir le couloir de gauche qui était fermé. Le tracé du corrigé, marqué d’un A sur la figure, réalise exactement cette bascule puis rejoint E.",
+    "N’inventez pas un autre fil : un chemin qui ignore la boucle reste coincé derrière une porte noire. Calquez la figure officielle, c’est toute la solution."
+  ],
+  "817": [
+    "On vous demande si Grisette ment, et combien de tranches de gouda il lui restait. Oui, elle ment ; il lui restait 3 tranches.",
+    "Suivez la différence d = (nombre de biscottes) − (nombre de tranches) chez Grisette. À l’ouverture de son premier sachet, d = 3. Chaque nouveau sachet de 3 biscottes augmente d de 3 ; chaque échange « 2 biscottes contre 1 tranche » diminue d de 3.",
+    "À la fin, Grisette n’a plus de biscotte mais encore du fromage : d est strictement négatif. Sans ouverture ni échange superflu, d vaut alors −3, donc 3 tranches restantes. Pour passer de +3 à −3 par pas de 3, d a nécessairement valu 0 à un moment, c’est-à-dire qu’elle a eu autant de biscottes que de fromage.",
+    "Or Grisette prétend qu’à tout moment il lui manquait l’un ou l’autre. C’est faux : elle a connu un équilibre. Elle ment, et le reste de fromage est de 3 tranches."
+  ],
+  "818": [
+    "On vous demande quel chemin Souricette a emprunté pour manger tous les fromages et pourtant sortir du château. Ce chemin est celui tracé sur la figure du corrigé officiel.",
+    "Chaque fromage mangé ferme le couloir du retour : on ne peut plus rebrousser chemin par le même segment. Il s’agit donc d’un parcours eulérien dirigé, qui visite chaque « bout de fromage » une fois et aboutit à une issue, pas à une impasse.",
+    "La gourmandise force à tout prendre ; la sortie prouve qu’il existe une porte encore accessible après le dernier morceau. Le dessin du recueil est précisément cette chaîne : suivez-le sans ajouter de corridor.",
+    "À retenir : dès qu’un mécanisme « barre le retour », pensez à un tracé sans arête répétée. La solution tient tout entière dans la figure officielle, non dans un nouveau plan de château."
+  ],
+  "819": [
+    "On vous demande la meilleure stratégie de Jacob, puis le nombre moyen d’essais. Il doit ouvrir le tiroir du milieu chaque fois que c’est possible ; le nombre moyen d’essais vaut alors 28/9, soit un peu plus de 3.",
+    "La commode est un carré 3 × 3. Le tiroir central a quatre voisins, les coins en ont deux, les milieux de bord en ont trois. En ouvrant d’abord le centre, soit Jacob attrape la souris (1 chance sur 9), soit il apprend qu’elle était dans un coin ou sur un bord, ce qui restreint fortement ses déplacements suivants.",
+    "On note n₀ la moyenne au départ, n₁ la moyenne sachant que la souris vient de quitter un coin, n₂ sachant qu’elle vient de quitter un bord. En écrivant que chaque ouverture coûte 1, plus la moyenne des situations futures pondérées par les probabilités de transition, on obtient un petit système linéaire.",
+    "La résolution donne n₀ = 28/9 ≈ 3,1. Inutile de mémoriser toutes les fractions intermédiaires : l’idée clé est « jouer le centre dès que possible », parce que c’est le carrefour qui coupe le plus de fuites."
+  ],
+  "820": [
+    "On vous demande le nombre maximal de morceaux que Jerry peut manger sans repasser au même endroit. Il peut en manger 11, choix B.",
+    "Le réseau a 14 fromages. Un parcours sans répétition est un chemin simple : on ne peut pas tout prendre, car le graphe a des impasses et des « ponts ».",
+    "Le morceau en bas à gauche est un cul-de-sac : le prendre trop tôt (ou trop tard) bloque Jerry. Si, dès le premier fromage, elle continue tout droit, elle abandonne au moins les deux branches latérales plus un troisième morceau. Si elle part d’un côté, elle crée une impasse de l’autre, et les deux files de 5 fromages ne peuvent être parcourues toutes les deux sans en laisser un.",
+    "Dans tous les cas, au moins 3 fromages restent ; 14 − 3 = 11 est atteignable, et le corrigé officiel en donne trois exemples de chemins. Les choix 13 et 14 sont trop optimistes : un graphe avec des nœuds de degré 1 ne possède pas de parcours eulérien fermé ici."
+  ],
+  "821": [
+    "On vous demande combien il y avait de souris au départ. Il y en avait 27.",
+    "Chaque jour le chat en prend le tiers, donc il en laisse les deux tiers. Le quatrième jour, il coinçe les 8 dernières, qui sont donc les deux tiers de ce qui restait le matin du quatrième jour.",
+    "Remontez : 8 = (2/3) × 12, donc 12 souris le matin du jour 4, c’est-à-dire le soir du jour 3. De même 12 = (2/3) × 18, et 18 = (2/3) × 27. On retrouve 27 au premier matin.",
+    "Vérification en descendant : 27, il en prend 9, restent 18 ; il en prend 6, restent 12 ; il en prend 4, restent 8 ; il prend les 8. Le piège est d’ajouter trois fois un tiers de 8, ou de multiplier 8 par 3³ = 27 sans vérifier les deux tiers restants — ici le hasard fait que 27 tombe juste, mais la bonne méthode est la remontée par les 3/2."
+  ],
+  "822": [
+    "On vous demande la longueur du chemin de Sophie, fait de 18 segments groupés par paires de même longueur 1 cm, 2 cm, … La longueur totale est 90 cm.",
+    "Les segments 1 et 2 mesurent 1 cm chacun, les segments 3 et 4 mesurent 2 cm, et ainsi de suite jusqu’aux segments 17 et 18, qui mesurent 9 cm chacun. Il y a 9 paires, de longueurs 1 à 9.",
+    "Le total vaut 2 × (1 + 2 + … + 9). La somme 1 + … + 9 = 9 × 10 / 2 = 45, donc 2 × 45 = 90 cm.",
+    "Le piège est de n’additionner qu’une fois 1 à 9 (45 cm) ou de croire qu’il y a 18 longueurs distinctes. Relisez : deux segments pour chaque longueur entière de 1 à 9."
+  ],
+  "823": [
+    "On vous demande combien de souris Lucifer a attrapées le premier jour, pour un total de 55, à raison de deux de plus chaque jour. Il en a attrapé 7 le premier jour.",
+    "Si S est la première journée et N le nombre de jours, le total est N S + 2(0 + 1 + … + (N − 1)) = N S + N(N − 1). Ce total, 55, est impair, donc N est impair (un N pair rendrait la somme paire).",
+    "N = 3 donnerait un multiple de 3, or 55 ne l’est pas. N = 5 : 5S + 20 = 55, donc S = 7. Vérification : 7 + 9 + 11 + 13 + 15 = 55. N = 7 donne 7S + 42 = 55, non entier. Au-delà, le total dépasse 55 même avec S = 1.",
+    "Le piège est de prendre 11 jours (moyenne 5) ou de croire que 55 se factorise en une unique progression. Le test des N impairs successifs tranche en quelques lignes."
+  ],
+  "824": [
+    "On vous demande l’ordre des cinq souris, de la robe la plus claire à la plus foncée, par leurs initiales. L’ordre est B, D, E, C, A.",
+    "Aline est plus foncée que Bérénice. Bérénice est plus claire que Camille et que Delphine. Elma est plus foncée que Delphine, mais plus claire que Camille. Camille n’a pas la robe la plus foncée.",
+    "De là : B est plus claire que D, D plus claire que E, E plus claire que C. Comme C n’est pas la plus foncée, A est plus foncée que C (et l’on savait déjà A plus foncée que B). On aligne B < D < E < C < A.",
+    "Écrivez les cinq initiales sur une droite « clair → foncé » et glissez les contraintes une à une. Le piège est de mettre A entre C et E, alors que « C n’est pas la plus foncée » force A au bout foncé."
+  ],
+  "825": [
+    "On vous demande la probabilité que les trois souris, partant des sommets d’un triangle équilatéral à la même vitesse, ne se rencontrent jamais. Cette probabilité est 2/8 = 1/4, soit 25 %.",
+    "Chaque souris choisit un des deux sens, indépendamment. Il y a 2 × 2 × 2 = 8 configurations équiprobables.",
+    "Elles ne se rencontrent jamais précisément lorsqu’elles tournent toutes les trois dans le même sens : toutes vers la gauche, ou toutes vers la droite. Cela fait 2 cas favorables. Dans tout autre cas, au moins deux se dirigent l’une vers l’autre et se rencontrent au milieu d’un côté (la troisième les rattrapera ou les rencontrera au sommet).",
+    "2/8 = 25 %. Le piège est de compter 6 « cas de rencontre » sans voir que les 2 cas unanimes sont les seuls sans collision, ou de croire que le choix du sens n’est pas libre pour chacune."
+  ],
+  "826": [
+    "On vous demande de recouvrir exactement le Sphinx avec neuf pièces de type 1 ou de type 2, rotations autorisées. Un tel pavage existe : il est dessiné sur la figure du corrigé officiel.",
+    "Les deux types sont des polyiamants (assemblages de triangles équilatéraux) d’aires complémentaires de celle du grand Sphinx. Neuf pièces, éventuellement tournées, doivent remplir le contour sans trou ni débord.",
+    "Cherchez d’abord où placer les pièces qui calent les « pattes » et la tête du Sphinx, puis remplissez le corps. Plusieurs orientations sont possibles, mais le recueil n’en retient qu’une, reproduite dans le corrigé.",
+    "N’inventez pas un autre calepinage : la solution demandée est la figure officielle. Un pavage improvisé laisse presque toujours un triangle orphelin au centre ou à une encoche."
+  ],
+  "827": [
+    "On vous demande quelle unique question poser pour être sûr de prendre le chemin du paradis. Demandez à l’un des sphinx : « Que répondrait l’autre si je lui demandais où est le chemin du paradis ? » puis empruntez l’autre chemin que celui qu’il indique.",
+    "Un sphinx dit toujours vrai, l’autre ment toujours, et vous ne savez pas qui est qui. La question « que dirait l’autre ? » compose un mensonge et une vérité, ce qui produit un mensonge dans les deux cas.",
+    "Si vous interrogez le véridique, il rapporte fidèlement le mensonge de l’autre : on vous montre l’enfer. Si vous interrogez le menteur, il déforme la vérité de l’autre : on vous montre encore l’enfer. Dans les deux cas, l’index pointe vers l’enfer ; vous prenez donc l’autre route.",
+    "Une variante, donnée par le corrigé, est de demander à un sphinx ce qu’il vous aurait répondu une minute plus tôt : le menteur ment sur son mensonge, ce qui revient à dire vrai, et les deux vous indiquent alors le paradis. Une seule question suffit, dans les deux formulations."
+  ],
+  "828": [
+    "On vous demande le jour où le Sphinx dit la vérité. Il dit vrai le mardi (et vous l’avez rencontré un dimanche, un lundi et un mardi).",
+    "Il ment 6 jours sur 7, donc une seule de ses trois phrases peut être vraie, ou aucune, selon que le jour de vérité tombe dans la fenêtre des trois jours ou non. On teste les sept hypothèses pour le « jour 1 ».",
+    "Si le jour 1 est lundi ou mardi, on obtient une contradiction (une phrase vraie en forcerait une deuxième, ou une phrase se nierait elle-même). Les mercredi, jeudi, vendredi, samedi se réfutent de même. Reste le dimanche comme jour 1 : le Sphinx ment ce jour-là (sinon le mercredi suivant, jour 3, ruminerait un mensonge incompatible). Il ne peut dire vrai le lundi (cela contredirait la phrase 2). Il dit donc vrai le mardi, et les trois phrases s’accordent : 1 et 2 sont des mensonges, 3 est vraie parce que, le mardi, « je mens le mercredi et le vendredi » est correct.",
+    "Le piège est d’arrêter au premier scénario non immédiatement absurde. Seule l’hypothèse « dimanche – lundi – mardi, vérité le mardi » survit à la confrontation des trois énoncés."
+  ]
+}
+

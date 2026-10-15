@@ -1,0 +1,556 @@
+{
+  "93": [
+    "On vous demande le prix d’un petit canard et celui d’un gros, sachant qu’un gros coûte deux fois un petit, et que remplacer cinq gros plus trois petits par trois gros plus cinq petits fait économiser 20 euros. Un petit canard coûte 10 euros, un gros en coûte 20.",
+    "Le plus simple est de tout compter en « petits canards ». Un gros vaut deux petits, donc cinq gros valent dix petits. Avec les trois vrais petits, le premier achat équivaut à treize petits. De même, trois gros valent six petits : le second achat équivaut à onze petits.",
+    "Entre treize petits et onze petits, il n’y a que deux petits d’écart. Or cet écart vaut 20 euros. Chaque petit vaut donc 10 euros, et le gros, exactement le double, vaut 20 euros.",
+    "Vous pouvez vérifier en euros : cinq gros et trois petits font 5 × 20 + 3 × 10 = 130 euros, tandis que trois gros et cinq petits font 110 euros. La différence est bien 20 euros. Inutile d’introduire deux inconnues : le changement d’unité suffit."
+  ],
+  "94": [
+    "Dans la cour, il y a autant de porcs, de canards et de poules, et l’on compte 144 pattes en tout. On vous demande combien il y a de canards. Il y en a 18, ce qui correspond à la réponse E.",
+    "Prenez un « trio » : un porc, un canard et une poule. Le porc a quatre pattes, le canard et la poule en ont deux chacun. Ce trio possède donc huit pattes.",
+    "Comme les trois espèces sont en nombre égal, tout le monde se range en tels trios. Il y a 144 ÷ 8 = 18 trios. Vous avez donc 18 animaux de chaque sorte, et en particulier 18 canards.",
+    "Le piège serait de croire que tous les animaux ont deux pattes, ou d’oublier que le porc en a quatre. Une fois le paquet de huit pattes vu clairement, le calcul n’est plus qu’une division."
+  ],
+  "95": [
+    "Chaque élève prend un billet de trois parties : deux fois le même jeu et une fois un autre, parmi les fléchettes, les quilles et la pêche aux canards. On cherche tous les billets possibles. Il en existe 18, donc les 20 élèves ne pourront pas avoir chacun un billet différent.",
+    "Choisissez d’abord le jeu joué deux fois : trois possibilités. Choisissez ensuite le jeu joué une seule fois : il en reste deux. Enfin, placez la partie « seule » en première, deuxième ou troisième position : trois emplacements.",
+    "Le produit 3 × 2 × 3 donne 18 billets. On peut aussi les lister : QCC, CQC, CCQ, puis les mêmes schémas avec F et C, puis avec C et Q, et ainsi de suite jusqu’à FFQ. Aucun n’est oublié, aucun n’est doublé.",
+    "La classe a 20 élèves et seulement 18 billets distincts. Au moins deux élèves devront donc choisir le même arrangement. L’énoncé n’invente pas un dix-neuvième jeu : la contrainte « deux fois le même, une fois un autre » suffit à tout compter."
+  ],
+  "96": [
+    "Dix canards forment déjà trois rangées de quatre. On vous demande de les réorganiser pour obtenir cinq rangées de quatre, en déplaçant le moins de canards possible. Il suffit d’en déplacer deux.",
+    "Une rangée de quatre, ici, est une alignement : quatre canards sur une même droite. Au départ, la figure géométrique n’en montre que trois. Il faut donc créer de nouvelles droites qui passent chacune par quatre canards, sans en ajouter.",
+    "En ne bougeant que deux oiseaux, vous pouvez faire apparaître des diagonales et des transversales supplémentaires. Les huit canards immobiles servent de « clous » : les deux que vous déplacez vont se poser à des carrefours où plusieurs alignements se croisent.",
+    "Le corrigé est une figure, pas un nouveau dénombrement. Ne cherchez pas à obtenir cinq rangées en alignant simplement tous les canards : vous en déplaceriez beaucoup trop. Deux mouvements bien choisis suffisent, comme l’indique le recueil."
+  ],
+  "97": [
+    "François compare deux canaris : A, le plus petit parmi les plus grands de chaque rangée, et B, le plus grand parmi les plus petits de chaque colonne. Les deux oiseaux sont différents : A est toujours plus grand que B.",
+    "Imaginez la grille 4 × 4 comme un tableau de tailles. Dans chaque ligne, A est un « champion de ligne », puis on garde le plus frêle de ces champions. Dans chaque colonne, B est un « plus petit de colonne », puis on garde le plus costaud de ces petits.",
+    "Si A et B sont sur la même ligne, A est le plus grand de cette ligne, donc plus grand que B. S’ils sont sur la même colonne, B est le plus petit de cette colonne, donc plus petit que A. S’ils sont ailleurs, regardez le canari C au croisement de la ligne de A et de la colonne de B : C est plus petit que A et plus grand que B.",
+    "Dans tous les cas, A dépasse B. Le piège serait de croire que le résultat dépend du hasard des places. La comparaison passe toujours, soit directement, soit par ce troisième canari C qui sert de pont."
+  ],
+  "98": [
+    "Quatre enfants ont respectivement un chat, un chien, un poisson rouge et un canari. On vous demande quelle phrase est fausse. C’est A : Fabien n’a pas un chien.",
+    "Nicolas a un oiseau : parmi les quatre animaux, seul le canari est un oiseau. Nicolas a donc le canari, et la phrase B est vraie. Manon a un animal à poil, donc un chat ou un chien, mais elle n’aime pas les chats : elle a le chien. La phrase E est vraie.",
+    "Fabien a un animal à quatre pattes. Le chien est déjà à Manon, il reste le chat. Fabien a donc le chat : D est vraie, et A devient fausse. Julien reçoit le dernier animal, le poisson rouge : C est vraie.",
+    "Vous éliminez ainsi les phrases une par une. La seule affirmation incorrecte est « Fabien a un chien ». Le chat à quatre pattes et le chien à poil ne doivent pas être confondus : les deux indices se complètent au lieu de se contredire."
+  ],
+  "99": [
+    "On vous demande de passer de COQ à ÂNE, ou de CANE à ŒUF, en ne changeant qu’une lettre à la fois et en gardant l’ordre des places. Plusieurs chaînes existent ; en voici des exemples utilisables.",
+    "Un doublet de Carroll est une échelle de mots : à chaque barreau, un seul caractère change, les autres restent. Pour COQ, vous pouvez par exemple suivre COQ, COI, CRI, CRE, ARE, AIE, ANE, ou bien COQ, COL, CIL, AIL, AIE, ANE. Les deux arrivent au même mot.",
+    "Pour CANE vers ŒUF, une échelle possible est CANE, CENE, CENT, VENT, VEUT, VEUF, ŒUF. À chaque pas, une seule lettre a bougé, et le mot reste un mot français lisible.",
+    "Il n’y a pas une unique « bonne » suite : le recueil en signale plusieurs. L’essentiel est la règle, pas la longueur minimale. Évitez de permuter les lettres ou d’en ajouter : ici, seul le remplacement d’une lettre est autorisé."
+  ],
+  "100": [
+    "Six paniers contiennent 15, 6, 29, 14, 12 et 23 œufs, chacun d’une seule sorte, poule ou cane. Si l’on retire le panier montré par le marchand, il reste exactement deux fois plus d’œufs de poule que d’œufs de cane. Ce panier est celui de 12 œufs.",
+    "Le total fait 15 + 6 + 29 + 14 + 12 + 23 = 99 œufs. Après le retrait, si les poules sont le double des canes, le reste se partage en trois parts égales : deux pour les poules, une pour les canes. Ce reste est donc un multiple de 3.",
+    "Comme 99 est déjà multiple de 3, le panier retiré l’est aussi. Seuls 15, 6 et 12 conviennent. Retirer 15 laisse 84 œufs, soit 28 œufs de cane : aucune somme de paniers restants ne fait 28. Retirer 6 laisse 93, soit 31 œufs de cane : impossible également.",
+    "Retirer 12 laisse 87 œufs, soit 29 œufs de cane. Or 29 est exactement le contenu d’un panier. Les autres paniers forment alors les œufs de poule, le double. C’est donc le panier de 12 œufs dont parle le marchand."
+  ],
+  "101": [
+    "Le fermier a vendu 100 œufs, poules et canes, pour la même recette des deux côtés. Aux prix inversés, les œufs de poule rapporteraient 45 euros et ceux de cane 20 euros. Un œuf de cane coûtait 75 centimes.",
+    "Appelez p le prix d’un œuf de poule et c celui d’un œuf de cane. S’il y a un peu plus d’œufs de poule que de cane, notez ces nombres 50 + x et 50 − x. Les recettes égales, plus les deux ventes « à l’envers », donnent trois relations entre p, c et x.",
+    "En confrontant les ventes inversées avec l’égalité des recettes réelles, on obtient 3p = 2c : le prix de cane vaut une fois et demie le prix de poule. On en déduit x = 10, donc 60 œufs de poule et 40 œufs de cane.",
+    "La vente inversée des 60 œufs de poule au prix c fait 45 euros, d’où c = 45 ÷ 60 = 0,75 euro. C’est 75 centimes. Vérification : 40 œufs de cane au prix de poule font 20 euros, donc p = 0,50 euro, et 60 × 0,50 = 40 × 0,75."
+  ],
+  "102": [
+    "Le 15 mars 2012, les canetons ont 20 jours. On demande le jour de leur naissance, sachant que février 2012 a 29 jours. Ils sont nés le 24 février, réponse D.",
+    "Avoir 20 jours le 15 mars, c’est être né 20 jours plus tôt. Reculez d’abord des 15 jours de mars déjà écoulés : vous arrivez au 29 février, puisque 2012 est bissextile.",
+    "Il reste encore 5 jours à reculer dans février : 28, 27, 26, 25, puis 24. La naissance tombe donc le 24 février. Si vous oubliiez le 29 février, vous tomberiez à tort sur le 23.",
+    "Les propositions A, B, C et E correspondent à des erreurs de décompte d’un ou plusieurs jours, souvent liées au 29 février. Ici, l’année bissextile n’est pas un décor : elle décale toute la chaîne."
+  ],
+  "103": [
+    "Quatre oiseaux chantent chacun sur une plateforme pendant 2, 3, 5 ou 7 minutes. Le cardinal chante 3 minutes au hangar, le merle 7 minutes à la grange, la perruche 2 minutes à la tour, et le rossignol 5 minutes au belvédère.",
+    "La grange dure 7 minutes. Cet oiseau chante plus longtemps que le rossignol, donc le rossignol n’est pas à la grange et chante 2, 3 ou 5 minutes. Le cardinal chante deux minutes de moins que l’oiseau du belvédère : le couple possible est belvédère 5 minutes et cardinal 3 minutes, car 7 minutes est déjà pris par la grange.",
+    "La perruche chante moins de 5 minutes et n’est pas au hangar. Il lui reste 2 minutes, donc la tour. Le hangar revient au cardinal. Le merle, dernier oiseau, occupe la grange pendant 7 minutes, et le rossignol le belvédère pendant 5 minutes.",
+    "Dressez un tableau oiseau–lieu–durée et rayez au fur et à mesure. Le piège est de donner 7 minutes au belvédère : cela casserait l’écart de deux minutes du cardinal. Une fois ce couple fixé, le reste se place tout seul."
+  ],
+  "104": [
+    "Quatre dames ont eu, avant puis après le concours, des carpes de quatre couleurs, jamais la même couleur deux fois. Aujourd’hui : Ada Fishtail a le rouge (elle avait le vert), Betty Jester le bleu (elle avait le rouge), Cybil Longheart le vert (elle avait le jaune), Diane Kipper le jaune (elle avait le bleu).",
+    "Betty a actuellement le bleu et n’est pas Mme Longheart. Mme Kipper a maintenant le jaune et avait le bleu. Cybil n’est pas Mme Kipper. Ada Fishtail et Mme Jester n’ont jamais eu de jaune, donc le jaune actuel de Mme Kipper n’est ni Ada ni Jester.",
+    "Diane et Ada n’ont jamais partagé une couleur. Celle qui a le vert aujourd’hui avait le jaune : ce ne peut être Ada ni Jester. Cybil est donc Longheart, avec le vert maintenant et le jaune avant. Diane est Kipper.",
+    "Betty, qui a le bleu, est Jester et avait le rouge. Ada Fishtail a le rouge et avait le vert. Vérifiez qu’aucune dame ne répète une couleur et que Diane et Ada n’ont aucune couleur en commun, ni avant ni maintenant."
+  ],
+  "105": [
+    "Monsieur Zanoli a photographié les quatre faces de la case de son meilleur ami, puis les toits des six cases voisines. La case de l’ami est la case à Lapin.",
+    "Chaque photo de face, de derrière, de droite et de gauche montre un motif de toits et de murs. Votre travail est de faire tourner ces quatre vues dans votre tête, comme si vous marchiez autour du bâtiment.",
+    "Parmi les six toits vus du drone, un seul peut présenter à la fois les quatre façades photographiées, dans le bon ordre circulaire. Les autres cases ont un créneau, une cheminée ou un pignon qui ne revient pas sur les photos rapprochées.",
+    "Le corrigé désigne la case à Lapin et en redessine le plan. Ne inventez pas un numéro de case : c’est une identification visuelle. Si une façade « de droite » ne correspond pas à la rotation de la façade « de face », vous n’êtes pas sur la bonne case."
+  ],
+  "106": [
+    "Quatre castors A, B, C, D traversent une suite de tunnels noirs et blancs. Ils ressortent dans l’ordre D, C, B, A.",
+    "Un tunnel noir inverse complètement la file. Un tunnel blanc échange seulement le premier et le dernier, et laisse le milieu inchangé. Ces deux règles se composent : un blanc placé entre deux noirs ne donne pas le même résultat que un blanc tout seul.",
+    "Partez de A B C D. Après le premier tunnel (noir), la file est D C B A. Après le deuxième (blanc), le premier et le dernier s’échangent : on obtient A C B D. Après le troisième (noir), on inverse encore : D C B A.",
+    "C’est cette dernière file qui sort. Le plus sûr est d’appliquer les tunnels dans l’ordre du dessin, plutôt que de « simplifier » trop vite. Deux inversions séparées par un échange ne s’annulent pas."
+  ],
+  "107": [
+    "Castor explore lacs et rivières en prenant toujours, s’il le peut, la rivière de gauche encore inconnue, sinon la seule restante, sinon il rebrousse chemin. Il note chaque animal à la première rencontre. L’ordre est : Poisson, Grenouille, Tortue, Crocodile, Cigogne, Loutre, Canard, Serpent.",
+    "Cette règle est celle d’un parcours en profondeur. À chaque lac, Castor choisit d’abord la branche gauche non visitée. Quand un cul-de-sac est atteint, il revient au lac précédent et reprend l’autre rivière, s’il en reste une.",
+    "Le départ est indiqué sur le schéma. Le premier animal nouveau est le Poisson, puis la Grenouille, puis la Tortue. Ensuite seulement apparaissent le Crocodile et la Cigogne, avant la Loutre, le Canard et enfin le Serpent.",
+    "Vous ne devez pas inventer un autre ordre : le corrigé fixe cette liste. Si vous preniez la droite en premier, vous rencontreriez les mêmes animaux, mais dans une autre séquence. Ici, « gauche d’abord » décide de tout."
+  ],
+  "108": [
+    "Les maisons des castors sont déjà reliées au barrage, mais une seule ligne coupée peut encore isoler une maison. On demande le plus petit nombre de lignes à ajouter. Il en faut 3, et le corrigé les place sur une figure.",
+    "Imaginez le réseau comme des fils entre des perles. Si un fil est le seul chemin vers une maison, le couper éteint cette maison. Il faut donc que chaque maison ait au moins deux chemins distincts vers le barrage.",
+    "Ajouter une ligne crée une boucle. Trois boucles bien choisies suffisent à « doubler » tous les passages fragiles, sans en construire davantage. C’est le minimum annoncé par le recueil.",
+    "La réponse n’est pas un tracé que l’on peut inventer au hasard : le corrigé est un dessin de ces trois lignes. Retenez le nombre 3 et l’idée de redondance, sans inventer d’autres longueurs ou d’autres comptes de maisons."
+  ],
+  "109": [
+    "Le robot obéit aux notes Do, Mi, La et Si, chacune liée à une direction. Après « Mi, Mi, La, La, Si », il a déjà avancé ; Castor doit l’amener au palais. Deux suites de sept notes conviennent : Do, Si, Si, La, Mi, La, Si, ou La, Mi, La, Si, Si, Do, Si.",
+    "Cinq notes ont été sifflées pour le premier trajet. Sur la carte, un départ vers la gauche fait cinq pas jusqu’à la position actuelle, un départ vers la droite en ferait sept. On retient donc le chemin de cinq pas : deux vers la gauche, deux vers le haut, un vers la droite.",
+    "On aligne ces cinq déplacements avec Mi, Mi, La, La, Si. Ainsi Mi veut dire « gauche », La « haut » et Si « droite ». Il reste Do pour « bas », la seule direction encore libre.",
+    "Du point actuel au palais, deux chemins de sept pas existent, l’un par le bas, l’autre par le haut. En traduisant chaque pas par sa note, on obtient les deux mélodies ci-dessus. Sans la carte, on ne peut pas inventer un plus court sifflement."
+  ],
+  "110": [
+    "Dans le réseau de grottes à sens unique, un castor ramasse toutes les pommes de pin des grottes qu’il traverse. Le maximum est 28, obtenu en suivant les grottes 5, 2, 6, 6, 3, 3 et 3.",
+    "Les flèches interdisent de remonter un tunnel. Vous cherchez donc un chemin, pas un circuit quelconque. À chaque grotte, vous ajoutez le nombre écrit, et vous ne pouvez pas revenir prendre deux fois le même tas si le graphe ne le permet pas.",
+    "Additionnez le chemin indiqué : 5 + 2 + 6 + 6 + 3 + 3 + 3 = 28. Tout autre passage autorisé par les flèches donne un total inférieur. Les grottes riches mais mal placées, en cul-de-sac ou trop tôt dans le flux, ne compensent pas.",
+    "Le piège est de somer toutes les grottes du dessin : plusieurs sont inaccessibles une fois que l’on en a choisi une autre. On ne garde que les tas d’un même trajet compatible avec les flèches."
+  ],
+  "111": [
+    "Castor exécute une fois l’activité « courir », faite de sous-activités emboîtées. Il parcourt 1 200 pas, réponse D.",
+    "Tout en bas, « courir le long de la route » fait 100 pas, puis un quart de tour. « Courir autour du bloc » répète cette route quatre fois : 4 × 100 = 400 pas, ce qui correspond à un tour complet du pâté de maisons.",
+    "L’activité « courir » répète trois fois le tour du bloc. Cela fait 3 × 400 = 1 200 pas, ou encore 12 fois 100 pas. Les rotations ne rajoutent aucun pas : elles changent seulement la direction.",
+    "Les réponses 100, 300 ou 400 oublient un étage de répétition. Dès que l’on voit des activités qui en appellent d’autres, on multiplie les nombres de répétitions au lieu de les additionner n’importe comment."
+  ],
+  "112": [
+    "La grille 5 × 5 doit contenir une fois par ligne et par colonne chacun des maillons Re, Oi, Co, Pu, Ro, avec un trait seulement entre deux voisins directs de la chaîne. Une grille qui convient est : Oi Pu Ro Co Re ; Ro Co Re Oi Pu ; Re Oi Pu Ro Co ; Co Re Oi Pu Ro ; Pu Ro Co Re Oi.",
+    "La chaîne alimentaire est Renard–Oiseau–Coccinelle–Puceron–Rose. Deux cases reliées par un trait doivent être deux maillons qui se touchent dans cette liste, par exemple Oi et Co, jamais Re et Pu.",
+    "Sans trait entre deux cases voisines, les deux êtres ne se mangent pas l’un l’autre. Cela élimine beaucoup de placements. Les lettres déjà posées (Pu, Re, Oi, Co, Oi) ancrent le remplissage, comme les chiffres d’un sudoku.",
+    "Le corrigé est cette grille remplie. Si une ligne contient deux fois le même animal, ou si un trait relie le renard à la rose, la contrainte est violée. Travaillez ligne par ligne, puis vérifiez tous les traits."
+  ],
+  "113": [
+    "Un héritage de 17 chameaux doit aller pour moitié, pour un tiers et pour un neuvième aux trois fils, alors que 17 n’est divisible par aucun de ces nombres. Le sage ajoute son propre chameau, partage 18 bêtes en 9, 6 et 2, puis reprend la sienne.",
+    "La moitié de 18 vaut 9, le tiers vaut 6, le neuvième vaut 2. La somme 9 + 6 + 2 = 17 : il reste exactement le chameau du sage. Personne n’a coupé un animal, et le testament, lu sur 18 plutôt que sur 17, devient praticable.",
+    "Pourquoi cela marche-t-il ? Parce que 1/2 + 1/3 + 1/9 = 17/18, et non 1. Les fils se partagent 17 dix-huitièmes du troupeau, pas la totalité. Le dix-huitième « manquant » est précisément le chameau ajouté puis retiré.",
+    "Le même tour existe pour d’autres totaux, comme 7, 11 ou 19 chameaux, dès que la somme des fractions prévues laisse un reste d’une bête. Ici, retenez 9, 6, 2 et le chameau de trop qui revient à son maître."
+  ],
+  "114": [
+    "Huit dromadaires âgés de 8 à 15 ans doivent occuper les parcelles sans que deux âges consécutifs se touchent, même par un coin. Une disposition, unique aux symétries près, est 10, 12, 14 et 8 d’un côté, 15 au centre, puis 9, 11 et 13 de l’autre.",
+    "« Consécutif » signifie ici 8 et 9, 9 et 10, et ainsi de suite. Deux parcelles qui partagent un côté ou seulement un sommet sont trop proches : leurs âges doivent différer d’au moins deux ans.",
+    "Placez d’abord les âges extrêmes, 8 et 15, qui n’ont qu’un seul voisin interdit chacun. Puis intercalez les pairs et les impairs : les pairs 8, 10, 12, 14 d’un groupe, les impairs 9, 11, 13, 15 de l’autre, en tenant compte de la forme du terrain.",
+    "Le corrigé donne précisément 10-12-14-8-15-9-11-13 sur le plan du recueil. Si 14 touche 15, ou 8 touche 9, la contrainte tombe. Retournez ou miroitez la figure si besoin : c’est la même solution."
+  ],
+  "115": [
+    "Neuf cruches de 3, 6, 10, 11, 15, 17, 23, 25 et 30 litres reviennent avec deux fois plus de lait que d’huile, et trois fois plus d’eau que de lait ; une cruche reste vide. La vide est celle de 23 litres : huile dans 3 et 10, lait dans 11 et 15, eau dans 6, 17, 25 et 30.",
+    "Si l’huile fait y litres, le lait fait 2y et l’eau 6y. Le total rempli vaut 9y, et égale 140 − v, où v est la contenance de la cruche vide. Donc 9y = 140 − v.",
+    "Pour que 140 − v soit divisible par 9, v doit valoir 23. Alors y = 13, le lait 26 litres et l’eau 78 litres. La seule façon d’obtenir 13 avec les contenances restantes est 3 + 10. Pour 26 litres de lait, il reste 11 + 15.",
+    "Les quatre cruches 6, 17, 25 et 30 font bien 78 litres d’eau. Marquez H, L, E, V au-dessus de 3, 6, 10, 11, 15, 17, 23, 25, 30 dans cet ordre : H, E, H, L, L, E, V, E, E. Toute autre cruche vide casse la divisibilité par 9."
+  ],
+  "116": [
+    "Un quart du troupeau est en forêt, deux fois la racine carrée du troupeau est en montagne, et quinze chameaux restent au bord de l’eau. Le troupeau compte 36 chameaux.",
+    "Si c est le nombre de chameaux, on a c = c/4 + 2√c + 15. Isoler le terme en racine donne (3c/4) − 15 = 2√c. On élève alors les deux côtés au carré pour faire disparaître la racine.",
+    "On obtient une équation du second degré. Une racine n’est pas entière, l’autre vaut 36. On ne garde que 36, car on compte des animaux. Contrôle : le quart de 36 est 9, le double de √36 est 12, et 9 + 12 + 15 = 36.",
+    "Le piège est d’oublier que 3 × 5 = 15, ou d’accepter une racine non entière. Ici, la racine carrée doit être un entier, ce qui guide déjà vers un carré parfait plausible, comme 36."
+  ],
+  "117": [
+    "Sept chameaux boivent sept bonbonnes en sept jours, et cinq dromadaires boivent cinq bonbonnes en cinq jours. On compare un chameau et un dromadaire. C’est le dromadaire qui boit davantage.",
+    "Un chameau boit une bonbonne en sept jours, soit un septième de bonbonne par jour. Un dromadaire boit une bonbonne en cinq jours, soit un cinquième de bonbonne par jour.",
+    "Un cinquième est plus grand qu’un septième : 1/5 = 0,2 tandis que 1/7 est un peu plus que 0,14. Chaque jour, le dromadaire absorbe donc plus que le chameau.",
+    "Les effectifs 7 et 5 de l’énoncé sont un leurre : ils s’annulent dès que l’on ramène la consommation à un seul animal et à un seul jour. Comparez les parts quotidiennes, pas les tas de bonbonnes sur la semaine."
+  ],
+  "118": [
+    "Le chamelier doit porter de l’eau à un camp à 16 km, avec deux chameaux, puis ressortir du désert avec eux. La livraison maximale au camp est de 30 litres.",
+    "Un chameau chargé marche à 4 km/h et boit 4 litres par heure ; à l’arrêt, 1 litre par heure. Le chamelier boit 2 litres par heure en marchant et 1 litre à l’arrêt. Un chameau seul ne sait pas se diriger : on peut seulement l’attacher à un piquet.",
+    "Le scénario efficace consiste à avancer avec les deux bêtes jusqu’à un piquet, à n’y garder qu’un chameau et 50 litres, puis à finir vers le camp et à revenir. En notant t le temps jusqu’au piquet, les deux stocks de 50 litres donnent t = 7/3 heures et une livraison de 30 litres.",
+    "Les 100 litres du départ ne peuvent pas tous arriver : une partie est bue sur la route, une autre sert au retour. Trente litres est le maximum compatible avec la sortie de tout le monde. Un aller simple sans piquet laisserait moins d’eau au camp, ou abandonnerait une bête."
+  ],
+  "119": [
+    "Dans l’enclos, chameaux, dromadaires et kangourous totalisent 2 005 têtes et 1 005 bosses, chaque espèce étant présente. Le nombre de pattes peut être n’importe quel entier pair de 5 016 à 6 018, soit 502 valeurs possibles.",
+    "Un kangourou a deux pattes et aucune bosse, un dromadaire quatre pattes et une bosse, un chameau quatre pattes et deux bosses. Les 1 005 bosses sont donc portées seulement par les camélidés.",
+    "Pour minimiser les pattes, on maximise les kangourous : 502 chameaux, 1 dromadaire et 1 502 kangourous donnent 5 016 pattes. Pour les maximiser, on minimise les kangourous : 1 chameau et 1 003 dromadaires donnent 6 018 pattes.",
+    "En échangeant un chameau contre deux dromadaires, ou l’inverse, on fait varier le nombre de kangourous de 1 en 1, donc les pattes de 2 en 2. Tous les pairs entre les deux extrêmes sont atteints, et eux seuls."
+  ],
+  "120": [
+    "Cinq chasseurs, M. Biche, M. Lièvre, M. Cerf, M. Sanglier et M. Chevreuil, ont chacun tué une bête et en ont raté une autre, jamais la leur. M. Lièvre rate le sanglier et tue le chevreuil ; M. Biche rate le lièvre et tue le cerf ; M. Cerf rate le chevreuil et tue le lièvre ; M. Sanglier rate le cerf et tue la biche ; M. Chevreuil rate la biche et tue le sanglier.",
+    "L’énoncé donne déjà que M. Cerf a raté un chevreuil et tué un lièvre. M. Chevreuil ne peut donc pas avoir tué le cerf, d’après la phrase qui lie le cerf tué au gibier raté par M. Chevreuil, une fois les interdits de noms appliqués.",
+    "La biche est tuée par celui dont le nom est le gibier raté par M. Lièvre. Ni M. Lièvre, ni M. Chevreuil, ni M. Biche ne peuvent l’avoir tuée. Il reste M. Sanglier : il tue la biche, donc M. Lièvre a raté le sanglier, et M. Chevreuil a raté la biche.",
+    "Le cerf est alors tué par M. Biche, et le chevreuil par M. Lièvre. Dressez le tableau « rate / tue » et rayez chaque animal déjà pris. Le point délicat est de ne jamais aligner un nom avec la même bête, ni en réussite, ni en échec."
+  ],
+  "121": [
+    "Sept maisons, chacune avec sept chats, chaque chat mangeant sept souris, chaque souris sept épis, chaque épi sept héqats de grain : combien d’objets en tout ? Le total est 19 607.",
+    "On aligne les quantités : 7 maisons, puis 7 × 7 = 49 chats, puis 7 × 49 = 343 souris, puis 7 × 343 = 2 401 épis, puis 7 × 2 401 = 16 807 héqats. Chaque ligne multiplie la précédente par 7.",
+    "Il reste à additionner ces cinq nombres : 7 + 49 + 343 + 2 401 + 16 807 = 19 607. On ne compte pas seulement le grain, ni seulement les chats : l’énoncé demande toutes les « choses » énumérées.",
+    "C’est la somme des cinq premiers termes d’une suite géométrique de premier terme 7 et de raison 7. Le piège, vieux de plus de trois millénaires, est d’oublier une catégorie ou de s’arrêter au dernier produit sans faire la somme."
+  ],
+  "122": [
+    "Treize souris forment un cercle, une seule est blanche. Le chat compte jusqu’à 13, croque chaque treizième, et veut manger la blanche en dernier. Il doit commencer par la souris qui occupe la septième place après la blanche.",
+    "Numérotez la blanche 1, puis les autres autour du cercle. En avançant toujours de 13 en 13 et en retirant la souris atteinte, la dernière restante porte le numéro 8 dans ce numérotage de départ.",
+    "Faites ensuite tourner tous les numéros, sans changer leur ordre circulaire, jusqu’à ce que le 8 tombe sur la souris blanche. Le numéro 1 se retrouve alors sur la souris située sept places plus loin. C’est elle la première croquée.",
+    "Le cercle se rétrécit à chaque bouchée, donc on ne peut pas simplement « sauter 13 » sur les places fixes du début. Si vous commencez trop tôt ou trop tard d’une place, la blanche disparaît avant la fin."
+  ],
+  "123": [
+    "À Math-City, 10 000 chiens et chats vivent ensemble ; 10 % de chaque espèce se trompe d’identité, et 26 % des animaux se disent chiens. Il y a 8 000 chats.",
+    "Notez x le nombre de chats et y celui des chiens, avec x + y = 10 000. Ceux qui se prétendent chiens sont 10 % des chats plus 90 % des chiens, soit 2 600 animaux.",
+    "Cela s’écrit x/10 + 9y/10 = 2 600, ou encore x + 9y = 26 000. En retranchant x + y = 10 000, il reste 8y = 16 000, donc y = 2 000 chiens et x = 8 000 chats.",
+    "Le sondage ne mesure pas la réalité, seulement ce que les animaux déclarent. Si vous preniez 26 % de 10 000 comme nombre de vrais chiens, vous tomberiez à 2 600 au lieu de 2 000. Les 10 % « névrosés » déplacent le pourcentage."
+  ],
+  "124": [
+    "Une piscine carrée a 100 mètres de périmètre. Félix tourne à deux mètres du bord, à l’extérieur, pour éviter les éclaboussures. Son parcours mesure 100 + 4π mètres, soit environ 112,57 mètres.",
+    "Chaque côté du bassin fait 100 ÷ 4 = 25 mètres. Le long d’un côté, le chat marche parallèle au bord, donc encore 25 mètres. Aux quatre coins, il ne peut pas « couper » : il décrit un quart de cercle de rayon 2 mètres.",
+    "Quatre quarts de cercle font un cercle complet de rayon 2, dont la longueur est 2π × 2 = 4π. Le trajet total est donc 4 × 25 + 4π = 100 + 4π mètres.",
+    "On n’agrandit pas le côté de 2 mètres tout autour comme si le chat suivait un plus grand carré : cela compterait trop aux coins. Les coins sont arrondis. N’oubliez pas non plus que 2 mètres sont pris à l’extérieur, pas dans l’eau."
+  ],
+  "125": [
+    "Trois chats, Fido, Calin et Toudou, ont pelage long ou ras, et robe blanche, noire ou tachetée. Fido est le blanc aux poils longs, et Calin a les poils bouclés.",
+    "Fido a le pelage long. Celui qui a le poil ras est tout noir, donc Fido n’est pas noir. Calin est tacheté, donc ni blanc ni noir. Il reste Toudou pour le noir à poil ras.",
+    "Fido, qui n’est ni tacheté ni noir, est blanc, avec ses poils longs. Calin, tacheté, n’a ni le poil ras (réservé au noir) ni le poil long de Fido : ses poils sont bouclés.",
+    "Trois chats, trois couleurs, trois types de poils : chaque trait n’apparaît qu’une fois. Le mot « bouclés » n’est pas dans les indices de départ ; il est la seule texture encore libre une fois « long » et « ras » attribués."
+  ],
+  "126": [
+    "Le chat et le lapin pèsent 10 kg, le chien et le lapin 20 kg, le chat et le chien 24 kg. Les trois animaux réunis pèsent 27 kg.",
+    "Additionnez les trois pesées : vous comptez deux fois le chat, deux fois le chien et deux fois le lapin, pour un total de 10 + 20 + 24 = 54 kg. Le double du trio pèse 54 kg.",
+    "Le trio lui-même pèse donc 54 ÷ 2 = 27 kg. Si l’on veut les masses séparées, le chien fait 27 − 10 = 17 kg, le chat 27 − 20 = 7 kg, et le lapin 27 − 24 = 3 kg.",
+    "Inutile de résoudre un système savant pour la question posée : la demi-somme des trois couples suffit. Vérifiez néanmoins 7 + 3 = 10, 17 + 3 = 20 et 7 + 17 = 24."
+  ],
+  "127": [
+    "Sébastien, Fatou et Clara reçoivent un chat, un poisson ou un canari. Sébastien aura le poisson, Fatou le canari, Clara le chat.",
+    "L’animal de Sébastien n’a pas de plume : ce n’est pas le canari. Sébastien est aussi allergique aux poils : ce n’est pas le chat. Il ne lui reste que le poisson.",
+    "Fatou a déjà un chat et en veut un autre : elle n’aura pas le chat. Clara n’a pas d’animal à écailles : elle n’aura pas le poisson. Le chat, encore libre, va donc à Clara, et le canari à Fatou.",
+    "Un tableau à trois lignes et trois colonnes, avec des « oui » et des « non », évite de tourner en rond. Dès que Sébastien prend le poisson, les deux autres cases de cette colonne et de cette ligne se ferment."
+  ],
+  "128": [
+    "Cinq chats, verts s’ils disent vrai et noirs s’ils mentent, prononcent cinq phrases. Exactement deux chats sont verts, et trois sont noirs.",
+    "Le premier dit « Je suis vert » et le troisième « Le premier est noir » : ces deux phrases s’opposent. L’un des deux est donc vert, l’autre noir. De même, « au moins trois verts » et « au moins trois noirs » ne peuvent être vrais ensemble : parmi le deuxième et le quatrième, l’un est vert, l’autre noir.",
+    "Les quatre premiers comptent donc déjà deux verts et deux noirs. La cinquième phrase, « Nous sommes tous noirs », est alors fausse, puisque deux verts existent déjà. Le cinquième chat ment : il est noir.",
+    "Au total : deux verts, trois noirs. Vous n’avez pas besoin de savoir lequel du premier ou du troisième est vert. Le décompte des couleurs, pas l’identité précise, répond à la question."
+  ],
+  "129": [
+    "En 2017, un vétérinaire a reçu 100 chats adultes, dont la moitié de femelles, la moitié de ces femelles venant avec une portée de 4 chatons en moyenne. 200 chats ont été amenés en tout.",
+    "Parmi 100 adultes, 50 sont des femelles. La moitié de ces femelles, soit 25, sont accompagnées de leurs petits. À 4 chatons par portée, cela fait 25 × 4 = 100 chatons.",
+    "Les adultes et les chatons se cumulent : 100 + 100 = 200. Les mâles adultes, eux, ne rajoutent pas de portées dans ce décompte.",
+    "Le piège est de prendre la « moitié des femelles » pour 50 au lieu de 25, ou d’oublier que les 100 adultes sont déjà dans le total. La moyenne de 4 s’applique seulement aux 25 portées présentes."
+  ],
+  "130": [
+    "A, B et C ont des chats. A fois (B + C) vaut 70, B fois (A + C) vaut 78, C fois (A + B) vaut 88. Monsieur A a 5 chats, Monsieur B en a 6, Monsieur C en a 8.",
+    "A, B et C sont des entiers plus grands que 2, diviseurs respectivement de 70, 78 et 88. Les candidats utiles sont donc, pour A : 5, 7, 10, 14 ; pour B : 3, 6, 13, 26 ; pour C : 4, 8, 11, 22.",
+    "On cherche un triplet, un dans chaque liste, tel que le premier multiplié par la somme des deux autres redonne 70, 78 ou 88 selon le cas. Seuls 5, 6 et 8 passent les trois tests à la fois.",
+    "Contrôle : 5 × (6 + 8) = 70, 6 × (5 + 8) = 78, 8 × (5 + 6) = 88. Un 1 ou un 2 serait trop petit pour ces produits, et les autres diviseurs ne se recollent pas entre les trois listes."
+  ],
+  "131": [
+    "Cinq phrases lient dressage, goût du poisson, queue, moustaches et yeux verts. Les chats aux yeux verts ne jouent pas avec les gorilles.",
+    "D’après (4), un chat aux yeux verts n’est pas dressé. D’après (1), un chat non dressé n’aime pas le poisson. D’après (3), s’il n’aime pas le poisson, il n’a pas de moustaches.",
+    "D’après (5), sans moustaches, il n’a pas de queue. D’après (2), un chat sans queue ne joue pas avec un gorille. En enchaînant, les yeux verts interdisent le jeu avec les gorilles.",
+    "C’est un raisonnement en cascade, comme les syllogismes de Carroll. Chaque phrase est une implication : on ne « saute » aucune case. La réponse est non, ils ne jouent pas avec les gorilles."
+  ],
+  "132": [
+    "Dans une pièce carrée, un chat est dans chaque coin, et chaque chat a un chat à sa droite, à sa gauche et en face. Il y a seulement quatre chats.",
+    "Un carré a quatre coins. Placez un chat dans chacun. Pour le chat du coin « sud-ouest », le voisin de droite est celui du sud-est, le voisin de gauche celui du nord-ouest, et le chat en face celui du nord-est.",
+    "La même lecture tourne pour les trois autres. Aucun cinquième chat n’est nécessaire : les quatre se regardent et se flanquent déjà. L’énoncé décrit précisément cette géométrie, pas une file infinie.",
+    "On a envie d’ajouter des chats « à droite » comme s’il s’agissait d’une rue. Dans un carré, droite, gauche et face se referment sur les trois autres coins. Quatre suffisent, et quatre sont déjà posés."
+  ],
+  "133": [
+    "Six chatons ont les robes blanc, noir, roux, blanc-noir, blanc-roux et noir-roux. Louise en prend trois tels que chaque paire partage au moins une couleur. Elle a 4 choix possibles, réponse C.",
+    "Premier choix : les trois bicolores. Blanc-noir et blanc-roux partagent le blanc, blanc-noir et noir-roux le noir, blanc-roux et noir-roux le roux. Chaque paire est liée.",
+    "Les trois autres choix consistent à prendre un unicolore et les deux bicolores qui portent cette couleur. Exemple : le tout blanc, plus blanc-noir et blanc-roux. On obtient ainsi le paquet « blanc », le paquet « noir » et le paquet « roux ».",
+    "Cela fait 1 + 3 = 4 sélections. Prendre les trois unicolores échoue : blanc et noir n’ont aucune couleur commune. Les réponses 6 ou 7 comptent des triplets interdits."
+  ],
+  "134": [
+    "Sous la véranda, il y a deux fois plus de mouches que d’araignées, et trois araignées de plus que de chatons, pour 184 pattes en tout. Isabelle a 6 chats : la mère et 5 chatons.",
+    "Si x est le nombre d’araignées, il y a 2x mouches et x − 3 chatons. Les pattes font 8x pour les araignées, 6 × 2x pour les mouches, 4(x − 3) pour les chatons, plus 4 pattes de la chatte.",
+    "On obtient 8x + 12x + 4x − 12 + 4 = 184, soit 24x = 192, donc x = 8. Il y a 8 araignées, 16 mouches et 5 chatons.",
+    "N’oubliez pas la mère : sans ses 4 pattes, l’équation donnerait un x faux. 8 + 16 + 5 + 1 = 30 êtres, mais la question demande les chats, soit 6."
+  ],
+  "135": [
+    "Six chatons, trois portées de deux, s’assoient autour d’une table ronde sans que deux frères soient voisins, et chaque jour autrement. Ils peuvent venir 16 jours.",
+    "Les paires interdites sont (1, 2), (3, 4) et (5, 6). Autour du cercle, on alterne donc les portées : jamais deux numéros d’un même couple côte à côte. Une rotation ou un retournement de la même ronde compte pour un seul jour, comme l’explique l’énoncé.",
+    "En partant du chaton 1, on choisit à chaque pas un chaton d’une autre portée. On dresse ainsi 16 rondes distinctes, de 132546 jusqu’à 154236.",
+    "S’il n’y avait pas la règle des frères, il y aurait bien plus de placements. Ici, 16 est le nombre après identification des dispositions que le restaurant considère comme identiques. Au dix-septième jour, on répéterait forcément une table déjà vue."
+  ],
+  "136": [
+    "En passant d’une case à une voisine par un côté, on lit le mot CHAT dans le tableau. On le lit 11 fois.",
+    "On part d’un C, on glisse vers un H touchant par un côté, puis vers un A, puis vers un T. Les diagonales sont interdites : seulement haut, bas, gauche, droite. Plusieurs chemins peuvent partager les mêmes lettres de départ.",
+    "Le corrigé marque 11 traces dans la grille. Certaines commencent sur le C du haut, d’autres sur un C intérieur. Un même H peut servir à deux mots différents si les A et les T divergent ensuite.",
+    "Comptez méthodiquement depuis chaque C, sans sauter de case et sans réutiliser un passage déjà noté. Onze n’est pas le nombre de C : c’est le nombre de chemins complets de quatre lettres."
+  ],
+  "137": [
+    "Le Chat Botté avance de 7 lieues, ou bien multiplie par 7 la distance déjà parcourue. Pour faire exactement 700 lieues au plus vite, il fait deux enjambées simples, deux super-enjambées, puis encore deux enjambées simples.",
+    "Deux pas de 7 lieues l’amènent à 14. Une super-enjambée multiplie par 7 : il est à 98. Une deuxième le propulse à 686. Il lui manque 14 lieues, soit encore deux pas simples. On a (7 + 7) × 7 × 7 + 7 + 7 = 700.",
+    "C’est le plus court, car 700 s’écrit 2 × 7³ + 2 × 7. Moins de super-enjambées forcerait beaucoup trop de pas de 7. Davantage de multiplications dépasserait 700 ou exigerait des pas « en arrière », que l’énoncé n’autorise pas.",
+    "Une super-enjambée au tout début ne sert à rien : 0 × 7 = 0. Il faut d’abord accumuler quelques lieues. L’ordre ci-dessus est celui qui atteint Kazan en six gestes."
+  ],
+  "138": [
+    "Dix chats sont figés dans un grand cercle. On vous demande de tracer trois cercles intérieurs de sorte qu’aucun chat ne puisse en rejoindre un autre sans franchir une ligne. Le corrigé n’est pas un chiffre : c’est précisément ce dessin à trois cercles.",
+    "Les chats ne bougent pas. Ce n’est donc pas un problème de déplacement, mais de cloisonnement. Chaque cercle que vous ajoutez coupe le disque et crée de nouvelles régions fermées, surtout si les cercles se croisent.",
+    "L’objectif est qu’il y ait au moins dix enclos occupés, un par chat. Deux chats dans la même région, et le sortilège échoue. Une région vide n’est pas interdite, mais elle gaspille une cloison dont vous avez besoin ailleurs.",
+    "N’inventez ni une longueur, ni un rayon, ni un nombre de chats différent de dix. Reprenez la figure de l’énoncé et cherchez trois cercles qui s’enlacent jusqu’à isoler chaque point. Le recueil répond par cette figure, non par un calcul."
+  ],
+  "139": [
+    "La chatte a déchiré un sudoku 6 × 6 en trois morceaux ; 12 chiffres restent visibles, et chaque ligne, colonne et bloc gras contient les nombres de 1 à 6. La réponse consiste à redessiner les contours des trois morceaux dans la grille, comme le montre le corrigé.",
+    "Les trois lambeaux ont une forme irrégulière, mais les chiffres qui y figurent doivent se retrouver aux bonnes places d’une grille cohérente. Vous glissez donc les morceaux, sans les tourner n’importe comment, jusqu’à ce que les 12 chiffres cessent de se contredire.",
+    "Un 2 trop proche d’un autre 2 dans la même ligne, ou deux 5 dans le même rectangle gras, signale un mauvais calage. Les chiffres manquants se déduisent ensuite, mais l’énoncé demande surtout les contours.",
+    "Le corrigé est une figure : les trois pièces y sont recollées, avec les 12 chiffres à leur place. N’inventez pas un « code » numérique à la place de ce dessin. Une fois les bords trouvés, le sudoku se referme tout seul."
+  ],
+  "140": [
+    "Six chatons, deux roux, deux gris, deux noirs, sont alignés. L’ordre, de gauche à droite, est noir, gris, roux, gris, noir, roux.",
+    "Un noir est tout à gauche. Les deux noirs ont trois chatons entre eux, donc l’autre noir est en cinquième position. Entre eux se trouvent les places 2, 3 et 4.",
+    "Les deux gris n’ont qu’un chaton entre eux, les deux roux en ont deux. La seule façon de caser cela dans les places restantes 2, 3, 4 et 6 est : gris en 2 et 4, roux en 3 et 6.",
+    "Si vous mettiez un roux en 2, l’écart de deux places entre roux ne tomberait plus juste, ou les gris se toucheraient. Vérifiez : un seul entre les gris, deux entre les roux, trois entre les noirs, et un noir à gauche."
+  ],
+  "141": [
+    "Deux mouches et trois araignées ont autant de pattes que dix oiseaux plus un certain nombre de chats. Il faut 4 chats, réponse C.",
+    "Une mouche a 6 pattes, une araignée 8. Deux mouches et trois araignées font 2 × 6 + 3 × 8 = 12 + 24 = 36 pattes.",
+    "Dix oiseaux ont 2 × 10 = 20 pattes. Il manque 36 − 20 = 16 pattes. Chaque chat en a 4, donc 16 ÷ 4 = 4 chats.",
+    "Les distracteurs 2, 3, 5 ou 6 chats correspondent à des oublis (compter 2 pattes pour une araignée, ou 4 pour un oiseau). Posez les trois produits séparément avant de comparer."
+  ],
+  "142": [
+    "Un jardin a 30 chiens, chats et souris. Après 6 chiens changés en chats, puis 5 chats changés en souris, les trois espèces sont à égalité. Il y avait 9 chats au départ, réponse C.",
+    "À la fin, les 30 animaux sont partagés en trois tas égaux : 10, 10 et 10. Les transformations ont enlevé 6 chiens, ajouté 5 souris, et modifié les chats de +6 puis −5, soit un chat de plus qu’au départ.",
+    "Donc, à la fin, 10 chats = (chats du départ) + 1, d’où 9 chats au départ. Les chiens finaux valent 10, donc il y avait 16 chiens. Les souris finales valent 10, donc il y en avait 5.",
+    "Contrôle : 16 + 9 + 5 = 30. Après les deux tours de magie : 10 chiens, 10 chats, 10 souris. Choisir 10 ou 11 chats au départ casserait l’égalité finale."
+  ],
+  "143": [
+    "Plusieurs chats ont tué ensemble 999 919 souris, chacun le même nombre, plus d’un chat, plus d’une souris par chat, et chaque chat a tué plus de souris qu’il n’y avait de chats. Il y avait 991 chats, 1 009 souris chacun.",
+    "999 919 n’est pas premier : il se factorise en 991 × 1 009, et ces deux facteurs sont premiers. Les découpages « 1 chat » ou « 999 919 chats » sont exclus par les pluriels de l’énoncé.",
+    "Il ne reste donc que deux lectures : 991 chats tuant 1 009 souris, ou 1 009 chats tuant 991 souris. La phrase « chaque chat a tué plus de souris qu’il n’y avait de chats » impose 1 009 > 991.",
+    "On retient 991 chats. S’il existait un troisième facteur, plusieurs réponses resteraient possibles ; ici la factorisation est unique, donc la réponse l’est aussi."
+  ],
+  "144": [
+    "Sur 112 chats, il y a chaque soir 7 fois plus de chats sans casserole que de chats avec casserole, et retirer une casserole coûte 15 euros. En 365 jours, la collectivité dépense 76 650 euros.",
+    "Les chats avec casserole et ceux sans casserole forment 8 parts égales : 1 part « avec », 7 parts « sans ». Une part vaut 112 ÷ 8 = 14. Chaque soir, 14 casseroles sont attachées.",
+    "Une nuit coûte 14 × 15 = 210 euros. Sur une année non bissextile de 365 jours, la facture est 210 × 365 = 76 650 euros.",
+    "Le huitième de 112 se calcule avant de multiplier par 15 et par 365. Si vous preniez le septième de 112, vous compteriez les chats sans casserole au lieu de ceux qu’il faut détacher."
+  ],
+  "145": [
+    "Chatouille attrape chaque jour deux souris de plus que la veille, et le troisième jour le double du premier. En trois jours, il en a attrapé 18, réponse C.",
+    "Appelez n le nombre du premier jour. Le deuxième jour fait n + 2, le troisième n + 4. Or le troisième est aussi le double du premier : n + 4 = 2n, donc n = 4.",
+    "Les trois journées sont 4, 6 et 8. La somme vaut 18. On peut aussi dire que le troisième jour dépasse le premier de 4, et que ce décalage égale le premier nombre lui-même.",
+    "Les totaux 12 ou 15 supposent un premier jour trop petit. 24 doublerait tout une fois de trop. Une fois n fixé à 4, plus aucune liberté ne reste."
+  ],
+  "146": [
+    "Sur 45 chats, 27 sont rayés et 32 ont une oreille noire ; seuls les rayés à oreille noire sont finalistes. Il y en a au minimum 14, réponse D.",
+    "18 chats ne sont pas rayés, et 13 n’ont pas d’oreille noire. Pour minimiser les finalistes, on maximise ceux qui échouent, en évitant qu’un même chat soit compté deux fois dans les « hors critères ».",
+    "Le maximum de chats distincts hors finale est 18 + 13 = 31, si aucun non rayé n’est aussi sans oreille noire… plutôt : si ces 31 défauts portent sur 31 chats différents. Alors il reste 45 − 31 = 14 chats qui ont les deux qualités.",
+    "C’est le principe du pigeon : |A ∩ B| ≥ |A| + |B| − total, soit 27 + 32 − 45 = 14. Moins de 14 forcerait plus de 45 chats. 13 est donc trop bas, 27 trop haut pour un minimum."
+  ],
+  "147": [
+    "Il y a deux ans, Tony et Pacha avaient 15 ans à eux deux ; Tony a maintenant 13 ans. Pacha a 6 ans, réponse D.",
+    "En deux ans, chaque chat a vieilli de deux ans, donc le total a augmenté de 4. Aujourd’hui, les deux âges additionnés valent 15 + 4 = 19.",
+    "Tony a 13 ans, donc Pacha a 19 − 13 = 6 ans. Il y a deux ans, Tony avait 11 ans et Pacha 4 ans, et 11 + 4 = 15.",
+    "On ne soustrait pas 13 à 15 : ce 15 est un total ancien, pas l’âge actuel de Pacha. Le +4 des deux années écoulées est le geste à ne pas oublier."
+  ],
+  "148": [
+    "Des chats ont 18 pattes de plus que de langues. Il y a 6 chats, réponse C.",
+    "Chaque chat a 4 pattes et 1 langue, donc 3 pattes de plus que de langue. L’écart total de 18 pattes se partage en paquets de 3.",
+    "18 ÷ 3 = 6, d’où 6 chats. Ils ont 24 pattes et 6 langues : l’écart est bien 18.",
+    "Les réponses 4, 5, 8 ou 9 ne redonnent pas un écart de 18. Inutile d’imaginer des chats à trois pattes : le modèle est régulier, un écart de 3 par animal."
+  ],
+  "149": [
+    "Dans une cour, le nombre de pattes de chats égale le nombre d’oreilles de chiens. Le nombre de chats est la moitié du nombre de chiens, réponse C.",
+    "Chaque chat a 4 pattes, chaque chien 2 oreilles. Si c est le nombre de chats et d celui de chiens, on a 4c = 2d, donc d = 2c.",
+    "Il y a donc deux fois plus de chiens que de chats, ou encore les chats sont deux fois moins nombreux que les chiens. C’est exactement la moitié.",
+    "On n’a pas besoin du nombre total d’animaux. Quatre pattes contre deux oreilles, le rapport 2 suffit. « Le double » serait la phrase vraie pour les chiens, pas pour les chats."
+  ],
+  "150": [
+    "Cinq chats de même masse équilibrent une balance avec des masses de 5 kg, 2 kg et 3 kg. Un chat pèse 4 kg, réponse D.",
+    "Retirez deux chats de chaque plateau : l’équilibre demeure, car on enlève la même masse des deux côtés. Il reste un chat avec 3 kg d’un côté, contre 5 kg + 2 kg de l’autre.",
+    "Le chat plus 3 kg valent donc 7 kg, d’où une masse de 7 − 3 = 4 kg. Les cinq chats pèsent 20 kg au total, ce que l’on peut revérifier sur la figure d’origine.",
+    "Soustraire les mêmes objets des deux plateaux est le geste clé. Si vous additionniez 5, 2 et 3 puis divisiez par 5, vous obtiendriez 2 kg, ce qui ignore la répartition des chats."
+  ],
+  "151": [
+    "En décembre, Pacha a dormi exactement 3 semaines. Cela représente 3 × 7 × 24 heures, réponse B.",
+    "Une semaine, c’est 7 jours. Trois semaines, c’est 21 jours. Un jour, c’est 24 heures, donc 21 × 24 heures, que l’on écrit 3 × 7 × 24.",
+    "Décembre a 31 jours, mais l’énoncé ne dit pas qu’il a dormi tout le mois : il dit que le total de ses siestes ajoute trois semaines. On ne multiplie donc pas par 31.",
+    "Les choix C et E introduisent des minutes (60) au lieu des heures, ou oublient les 24 heures du jour. B est la seule écriture qui convertit clairement des semaines en heures."
+  ],
+  "152": [
+    "Cathie a commencé une tête de chat au stylo noir ; on demande lequel des cinq dessins peut être le dessin terminé. C’est le dessin B.",
+    "Le croquis de départ fixe déjà des traits : oreilles noires, nez triangulaire pointe en bas, et certaines proportions. Un dessin fini doit prolonger ce début, non le contredire.",
+    "Le dessin A a un nez plus petit que celui déjà tracé : on ne peut pas « rétrécir » un trait à l’encre. Parmi les autres, seul B garde les oreilles noires et le nez dans le bon sens.",
+    "C, D et E changent une oreille, retournent le nez ou ajoutent un détail incompatible avec l’amorce. On compare, trait pour trait, plutôt que de choisir le chat « le plus joli »."
+  ],
+  "153": [
+    "Un chat part à 3 milles à l’heure, revient deux fois plus vite, et s’absente un quart d’heure. Quelle distance a-t-il parcourue jusqu’à son point de demi-tour ? Un demi-mille.",
+    "Comme le retour est deux fois plus rapide, il dure deux fois moins longtemps que l’aller. Sur 15 minutes d’absence, 10 minutes vont à l’aller et 5 minutes au retour.",
+    "À 3 milles à l’heure, le chat parcourt un mille en 20 minutes. En 10 minutes, il n’en fait donc que la moitié : un demi-mille. C’est la distance entre la maison et l’endroit où la faim l’a fait rebrousser chemin.",
+    "En algèbre, si d est cette distance d’aller, le temps total est d/3 + d/6 = 1/4 d’heure, d’où d = 1/2. Le retour, à 6 milles à l’heure, reprend le même demi-mille en cinq minutes. L’aller et le retour durent bien un quart d’heure à eux deux."
+  ],
+  "154": [
+    "Ali a plus de chats que de chiens. Un chat devient chien, et les deux nombres s’égalisent ; plus tard, un chien devient chat, et les chats sont alors le double des chiens. Au départ, Ali avait 7 chats et 5 chiens.",
+    "Notez a les chats et b les chiens. Après la première métamorphose : a − 1 = b + 1, donc a = b + 2. Après la dernière : a + 1 = 2(b − 1).",
+    "Remplacez a par b + 2 dans la seconde équation : b + 3 = 2b − 2, d’où b = 5 et a = 7. Entre les deux tours « méchants », le bon magicien n’a fait que restaurer l’état initial.",
+    "Vérification : 7 chats et 5 chiens ; un chat devient chien → 6 et 6 ; on revient à 7 et 5 ; un chien devient chat → 8 et 4, et 8 = 2 × 4. D’autres couples ne passent pas les deux égalités à la fois."
+  ],
+  "155": [
+    "Un homme a deux chats, dont au moins un mâle. La probabilité qu’ils soient tous les deux mâles est 1/3.",
+    "Sans information, quatre couples équiprobables existent : mâle-mâle, mâle-femelle, femelle-mâle, femelle-femelle. L’indice « au moins un mâle » élimine seulement femelle-femelle.",
+    "Parmi les trois cas restants, un seul est mâle-mâle. La probabilité vaut donc une chance sur trois. On ne confond pas « au moins un mâle » avec « un mâle précis déjà désigné ».",
+    "Le piège classique est de répondre 1/2, en se disant « l’autre est mâle ou femelle ». Cela serait vrai si l’on montrait un chat particulier. Ici, l’information porte sur le couple entier, et les trois couples restants pèsent autant."
+  ],
+  "156": [
+    "Deux chats, un blanc et un noir : on sait que le noir est un mâle. La probabilité que les deux soient mâles est 1/2.",
+    "Le noir est fixé comme mâle. Il ne reste qu’à tirer le sexe du blanc : mâle ou femelle, avec la même chance si l’on suppose les deux sexes également possibles.",
+    "Dans un cas, on a deux mâles ; dans l’autre, un mâle noir et une femelle blanche. La probabilité demandée est donc une sur deux. Contrairement à l’énigme précédente, un individu précis est identifié.",
+    "Ne réutilisez pas le 1/3 de « au moins un mâle ». Ici, la couleur nomme le chat dont on connaît le sexe. C’est cette désignation qui change le dénombrement."
+  ],
+  "157": [
+    "Trois enfants, trois animaux, trois âges. Bérénice a un chat de 4 ans, Mia un hamster de 2 ans, Léana un furet de 5 ans.",
+    "Léana n’aime pas les chats et son animal a plus de 2 ans : elle a le furet ou le hamster, âgé de 4 ou 5 ans. L’animal de 2 ans n’est pas à Bérénice et n’est pas un furet, donc c’est le hamster de Mia.",
+    "Mia a déjà eu un chat et a choisi autrement : elle a bien le hamster. Le chat n’a pas 5 ans ; Bérénice, à qui il reste le chat, l’a donc à 4 ans. Léana reçoit le furet de 5 ans.",
+    "Un tableau enfants–animaux–âges, rempli indice par indice, suffit. Le 2 ans ancre Mia, le « pas chat » ancre Léana, et le dernier couple va à Bérénice."
+  ],
+  "158": [
+    "Cinq chats pour trois jeunes filles, l’une n’en a qu’un, les deux autres deux chacun. Alma a Huko, Bianca a Duko et Muko, Elsa a Guko et Juko.",
+    "Alma a croisé la propriétaire de Guko et Juko : cette propriétaire n’est donc pas Alma, et ces deux chats vivent ensemble. Bianca n’a ni Huko ni Juko.",
+    "Duko et Muko partagent le même toit. Bianca, qui ne peut prendre ni Huko ni Juko, peut prendre précisément cette paire Duko-Muko. Elsa reçoit alors Guko et Juko, et Alma le chat restant, Huko.",
+    "Alma n’a qu’un chat, ce que l’énoncé autorise. Si Bianca prenait un autre couple, elle devrait accepter Huko ou Juko, ce que l’indice 1 interdit. La répartition ci-dessus est la seule qui ferme toutes les portes."
+  ],
+  "159": [
+    "Le grand-parent partage tous ses chats entre Aurore, Julien et Zoé selon trois formules à fractions de chat. Chacun a reçu exactement un chat : personne n’en a plus que les autres.",
+    "Ces phrases du type « les deux septièmes plus un septième de chat » sont faites pour tomber juste sur un entier. En partant de Zoé et en remontant, on trouve que sa part z vérifie 17z = 7z + 10, donc z = 1.",
+    "La formule de Julien donne de même j = 1, et celle d’Aurore a = 1. Le troupeau initial était donc de 3 chats, un par petit-enfant. Les « septièmes de chat » ne sont qu’un habillage : aucun animal n’est découpé.",
+    "La question « auquel ai-je donné le plus ? » a une réponse un peu malicieuse : à aucun, car les trois parts sont égales. Si vous cherchiez un vainqueur unique, relisez le calcul : les trois équations convergent vers 1."
+  ],
+  "160": [
+    "Un cube est tombé de la construction de Nicolas ; parmi cinq solides, un seul peut être l’état d’avant. C’est la construction E, le cube le plus haut étant celui qui est tombé.",
+    "Après la chute, il reste un tas dont on voit encore certaines faces et un « trou » en altitude. La pièce manquante doit pouvoir se reposer au sommet sans modifier les cubes plus bas.",
+    "Les constructions A à D ont, une fois le cube supérieur ôté, un profil différent de celui que le chat a laissé. Seule E, privée de son cube le plus haut, recolle au dessin de l’énoncé.",
+    "On ne compte pas les cubes au hasard : on compare les silhouettes. Le corrigé désigne E. N’inventez pas un nombre de cubes tombés autre que celui de l’énoncé, à savoir un seul."
+  ],
+  "161": [
+    "Inès reçoit 5 euros par semaine, dépense un magazine à 1,80 euro et quatre bonbons à 0,30 euro, et vise un chaton à 57,40 euros. Elle l’aura en 29 semaines ; pour l’acheter avant l’âge adulte, elle devra se passer du magazine pendant 7 semaines au minimum.",
+    "Chaque semaine, les bonbons coûtent 1,20 euro, le magazine 1,80 euro, soit 3 euros de dépenses et 2 euros de reste. 57,40 ÷ 2 = 28,7, donc il faut 29 semaines d’épargne habituelle.",
+    "Le chaton a 9 semaines et sera adulte à 32 semaines : Inès a 23 semaines devant elle. En 16 semaines « normales », elle met 32 euros de côté. En 7 semaines sans magazine, elle économise 3,80 euros par semaine, soit 26,60 euros.",
+    "Le total 32 + 26,60 = 58,60 euros dépasse 57,40, juste à temps. Moins de 7 semaines sans magazine ne suffirait pas en 23 semaines. La première question ignore l’âge ; la seconde combine calendrier et budget."
+  ],
+  "162": [
+    "17 ours mangent autant que 170 ouistitis, 100 000 chauves-souris autant que 50 ouistitis, 10 ours autant que 4 éléphants. Pour nourrir 12 éléphants chinois, il faut 600 000 chauves-souris.",
+    "Un ouistiti égale 2 000 chauves-souris, car 50 ouistitis égalent 100 000 chauves-souris. Un ours égale 10 ouistitis, d’après 17 ours pour 170 ouistitis.",
+    "Un éléphant égale 2,5 ours, puisque 4 éléphants égalent 10 ours. Enchaînez : un éléphant vaut 2,5 × 10 = 25 ouistitis, donc 25 × 2 000 = 50 000 chauves-souris.",
+    "Douze éléphants demandent 12 × 50 000 = 600 000 chauves-souris. Convertissez toujours vers la plus petite unité, ici la chauve-souris, plutôt que de croiser les espèces dans le désordre."
+  ],
+  "163": [
+    "Cent chauves-souris adultes occupent cinq cavités, chacune ayant deux adultes de plus que sa voisine de droite si l’on suit l’alignement. Les effectifs sont 24, 22, 20, 18 et 16.",
+    "Appelez n le nombre de la cavité la plus petite. Les autres sont alors n + 2, n + 4, n + 6 et n + 8. La somme des « bonus » vaut 20, et les cinq cavités font 5n + 20 = 100.",
+    "On en tire 5n = 80, donc n = 16. Les cinq loges contiennent 16, 18, 20, 22 et 24 adultes. Le corrigé les présente dans l’ordre 22, 20, 18, 16, 24 selon la figure du rallye.",
+    "Le total 100 et le pas de 2 suffisent : on n’a pas besoin d’un système à cinq inconnues. Si les cavités formaient un cercle fermé avec +2 à chaque pas, la somme augmenterait d’un tour, ce qui est impossible : la figure les oriente en chaîne."
+  ],
+  "164": [
+    "Cinquante bébés occupent quatre boîtes, au moins trois par boîte, tous les effectifs distincts. Le maximum dans une même boîte est 38.",
+    "Pour gonfler une boîte, on réduit les trois autres au plus juste, tout en les gardant différentes et au moins égales à 3. Le plus économe est 3, 4 et 5.",
+    "Il reste 50 − 3 − 4 − 5 = 38 bébés pour la quatrième boîte. 38 est bien distinct de 3, 4 et 5, et respecte le minimum.",
+    "Mettre 3, 4 et 6 laisserait seulement 37 dans la grande boîte, ce qui est moins. On ne peut pas descendre sous 3. Trente-huit est donc le plafond."
+  ],
+  "165": [
+    "Un naturaliste parle de chauves-souris voyant de l’œil droit, de l’œil gauche, ou aveugles d’un côté. Le plus petit nombre d’animaux examinés est 7.",
+    "Deux voient de l’œil droit, trois de l’œil gauche, quatre ne voient pas de l’œil gauche, cinq ne voient pas de l’œil droit. En additionnant ces quatre comptes, chaque chauve-souris est recensée deux fois, une par œil.",
+    "La somme 2 + 3 + 4 + 5 = 14, divisée par 2, donne 7 individus. On peut réaliser ces totaux de trois façons, par exemple : 2 à vue parfaite, 1 aveugle de l’œil droit seulement, 4 totalement aveugles.",
+    "Les deux autres répartitions mélangent autrement vues parfaites, cécités d’un seul côté et cécités totales. Aucune n’utilise moins de 7 bêtes : en dessous, un des quatre chiffres de l’enquête manquerait."
+  ],
+  "166": [
+    "Une chauve-souris lit une heure digitale, revient la tête en bas, et relit une heure qui a le même dessin. Elle est sortie 5 h 42 min, réponse E.",
+    "Le départ correspond à 20 h 20 et le retour à 02 h 02 : ce sont les deux affichages qui, retournés, se ressemblent sur une pendule digitale. De 20 h 20 à minuit, il s’écoule 3 h 40 min.",
+    "De minuit à 02 h 02, il s’écoule encore 2 h 02 min. Le total est 3 h 40 + 2 h 02 = 5 h 42 min. Les choix 3 h 40 ou 3 h 42 oublient le morceau après minuit, ou le comptent mal.",
+    "On ne « soustrait » pas les deux heures comme si elles étaient le même jour dans l’après-midi. Le vol traverse minuit. Sans la figure de la pendule, retenez la paire 20 h 20 / 02 h 02 donnée par le corrigé."
+  ],
+  "167": [
+    "Les lettres de ROMAIN sont reliées par des segments ; on échange deux lettres reliées pour obtenir MARION. Le minimum est de 3 échanges.",
+    "Chaque échange permute deux sommets voisins du schéma. Trois mouvements suffisent, et le recueil en donne deux suites. Première : échanger I et R, puis I et N, puis N et O.",
+    "Seconde : échanger I et M, puis O et R, puis I et R. Dans les deux cas, le mot affiché devient MARION, et le schéma se remplit avec ces lettres à leurs nouvelles places.",
+    "Deux échanges ne peuvent pas réaliser toutes les transpositions nécessaires : trop de lettres sont encore mal placées. Quatre échanges marcheraient, mais ce ne serait plus le minimum. Trois est le plancher."
+  ],
+  "168": [
+    "Bouly Mic part de la boule 28 et saute seulement en ajoutant 5 ou en retranchant 3, sans reprendre un chemin. Elle mange les boules dans l’ordre 28, 33, 30, 35, 32, 37, 34, 31, 36, 41, 38, 43, 40, 45, 50, 47, 44, 49, et s’arrête sur 49.",
+    "Depuis 28, 28 + 5 = 33 et 28 − 3 = 25. Seul 33 est présent parmi les voisines. Depuis 33, on vise 38 ou 30 : seule 30 est accessible sur la structure.",
+    "On continue ainsi : chaque numéro n’a souvent qu’une seule voisine encore libre qui vaille n + 5 ou n − 3. La chaîne se déroule sans choix réel, jusqu’à 49.",
+    "Vérifiez qu’aucune boule du dessin n’a été oubliée et qu’aucune n’est visitée deux fois. Finir ailleurs que sur 49 signifierait qu’un embranchement a été mal lu. La règle « +5 ou −3 » est le seul moteur."
+  ],
+  "169": [
+    "Quatre chevaux, deux noirs et deux blancs, se déplacent comme des cavaliers. On les intervertit en 16 coups. Le corrigé numérote les cases de (0) à (16) et indique la suite des sauts.",
+    "Le cavalier saute en L : deux cases dans une direction, une sur le côté. Sur le petit plateau de l’énigme, les positions forment un circuit que les quatre pièces peuvent parcourir sans se bloquer trop longtemps.",
+    "En résumé, les quatre chevaux avancent chacun d’un cran sur ce circuit : (0) vers (3), (4) vers (7), (8) vers (11), (12) vers (15), et ainsi de suite jusqu’à l’échange des couleurs. Seize déplacements remplissent la grille demandée.",
+    "Moins de seize coups ne referme pas le basculement noir-blanc sur ce tracé. Le corrigé est une table de marches, pas un nombre d’animaux. Suivez les numéros plutôt que d’inventer un autre échiquier."
+  ],
+  "170": [
+    "On compte les sauts de cavalier possibles, depuis chaque case d’un échiquier 8 × 8. Il y en a 336.",
+    "Dans un coin, le cavalier n’a que 2 cibles ; près d’un bord, 3 ou 4 ; un peu plus à l’intérieur, 6 ; au centre, 8. En écrivant ces nombres sur les 64 cases, on obtient quatre 2, huit 3, vingt 4, seize 6 et seize 8.",
+    "Calculez 4 × 2 + 8 × 3 + 20 × 4 + 16 × 6 + 16 × 8 = 8 + 24 + 80 + 96 + 128 = 336. Chaque saut est compté depuis sa case de départ, comme le demande « depuis une case » de l’énoncé.",
+    "Sur un échiquier n × n, la même idée donne 8(n − 2)(n − 1) sauts. Pour n = 8, on retrouve 8 × 6 × 7 = 336. Les coins et les bords pèsent peu, mais il ne faut pas leur attribuer 8 sorties."
+  ],
+  "171": [
+    "Le maquignon veut 1 centime pour le premier clou, puis le double à chaque clou, jusqu’au vingt-quatrième. Le prix du cheval est 16 777 215 centimes, soit 167 772,15 euros.",
+    "On somme 1 + 2 + 4 + … + 2²³. C’est une série géométrique de raison 2, dont la somme vaut 2²⁴ − 1. Or 2²⁴ = 16 777 216, donc la somme fait 16 777 215 centimes.",
+    "En euros d’aujourd’hui, on divise par 100 : 167 772,15 euros. Le « courrier mignon » vaudrait une fortune, ce qui est précisément la morale de la récréation.",
+    "Le piège est de s’arrêter à 2²³ sans retrancher 1, ou de compter 24 termes en commençant à 2⁰ = 1. Vingt-quatre clous, premier terme 1 centime : la formule 2²⁴ − 1 est la bonne."
+  ],
+  "172": [
+    "Un père et son fils ont 60 km à faire, avec un cheval à 12 km/h qui ne porte qu’une personne ; le père marche à 6 km/h, le fils à 8 km/h, et ils arrivent ensemble. Ils mettent 6 heures 40 minutes, dans le modèle où chacun monte la distance que l’autre parcourt à pied.",
+    "Si le père marche L kilomètres et chevauche le reste, son temps est L/6 + (60 − L)/12. Le fils, lui, marche ce que le père a chevauché, et monte ce que le père a marché : L/12 + (60 − L)/8.",
+    "En égalant les deux temps, on trouve L = 20. Le temps commun vaut 20/6 + 40/12 = 10/3 heures, c’est-à-dire 6 heures 40 minutes.",
+    "L’énoncé, pris à la lettre, ne dit pas comment ils s’échangent le cheval en route. S’ils doivent s’attendre ou caler le cheval sur le pas du marcheur, d’autres durées deviennent possibles. Le corrigé retient 6 h 40 dans l’hypothèse d’un échange « comptable » des distances."
+  ],
+  "173": [
+    "Cinq parieurs ont chacun un quintet sur huit chevaux, et monsieur Z indique combien de chevaux chacun a « dans l’ordre » ou « dans le désordre ». L’arrivée qu’il a en tête est : Gonthan II, Fabre I, As de pique, Églantine, Berthan.",
+    "« Placé dans l’ordre » signifie le bon cheval à la bonne place. « Dans le désordre » signifie un cheval du quintet exact, mais à une autre place. Les phrases de Z sont des contraintes sur les cinq grilles.",
+    "On croise ensuite les colonnes des cinq tickets. Un cheval trop souvent annoncé premier ne peut pas l’être, et les comptes « un dans l’ordre, deux dans le désordre » éliminent la plupart des permutations.",
+    "Le corrigé fixe cette unique ligne d’arrivée. Sans la grille complète des cinq tickets sous les yeux, retenez ces cinq noms dans cet ordre, et l’idée que chaque avis de Z est un filtre, non un commentaire vague."
+  ],
+  "174": [
+    "Cinq chevaux, cinq jockeys, cinq toques, cinq couleurs, cinq arrivées. Le n° 3 Azalia, blanc, monté par Patrick toque rouge, gagne ; puis Bali noir monté par Olivier toque jaune ; puis Corfou isabelle monté par Marc toque grise ; puis Delta bai monté par Norbert toque rose ; puis Élian pommelé n° 1 monté par Régis toque orange.",
+    "Le n° 4 arrive juste avant le n° 5, qui est dernier, et Patrick gagne. Azalia porte le n° 3 et arrive juste avant la toque jaune. L’isabelle est troisième, le pommelé est le n° 1.",
+    "Marc monte le 5, donc il est dernier, toque grise s’il s’agit de Corfou. Norbert a la toque rose. Olivier monte un noir. En enchaînant les indices dans l’ordre 5, 8, 9, puis les couleurs et les noms, le tableau se fige.",
+    "Le corrigé donne ce tableau complet. Le cheval blanc est bien celui de Patrick, et la toque orange celle de Régis. Un seul décalage de toque fait tout basculer : avancez case par case, sans deviner une arrivée « vraisemblable »."
+  ],
+  "175": [
+    "On coupe un fer à cheval selon deux lignes droites, et l’on cherche le plus grand nombre de morceaux. On peut en obtenir 6, pas davantage.",
+    "Une première droite traverse le fer une ou deux fois. Elle le sépare alors en deux ou trois pièces, parce que le fer est recourbé et qu’une droite peut le rencontrer en deux segments.",
+    "La deuxième droite, si elle croise la première à l’intérieur du métal, crée quatre secteurs autour du point de croisement, puis peut encore recouper la branche du fer en deux endroits, ce qui ajoute deux pièces. Le total plafonne à 6.",
+    "Si les deux droites ne se coupent pas dans le fer, on reste à 5 morceaux au mieux. L’exemple du corrigé est une figure à 6 régions. Deux coupes droites ne feront jamais 7 morceaux sur cette forme."
+  ],
+  "176": [
+    "Deux chevaux et des harnais à 44 $. Avec les harnais, le premier vaut le double du second ; avec les harnais sur le second, celui-ci vaut 56 $ de moins que le premier. Le premier cheval vaut 244 $, le second 144 $.",
+    "Notez p1 et p2 les prix nus. Alors p1 + 44 = 2 p2, et p2 + 44 = p1 − 56. La seconde égalité donne p1 = p2 + 100.",
+    "Remplacez dans la première : p2 + 100 + 44 = 2 p2, donc p2 = 144 et p1 = 244. Les harnais « basculent » 44 $ d’un côté ou de l’autre, ce qui crée l’écart de 100 $ entre les deux bêtes nues.",
+    "Contrôle : 244 + 44 = 288, et le double de 144 est 288. Puis 144 + 44 = 188, et 244 − 188 = 56. Les deux phrases de l’énoncé sont satisfaites ensemble, et ensemble seulement."
+  ],
+  "177": [
+    "Des chevaux à 186 francs et des bœufs à 120 francs ont coûté 42 francs de plus pour les bœufs que pour les chevaux. La solution usuelle est 3 chevaux et 5 bœufs.",
+    "Si c et b sont les effectifs, 120b = 186c + 42, ce que l’on simplifie en 20b = 31c + 7. Le couple b = 5, c = 3 convient, car 20 × 5 = 100 et 31 × 3 + 7 = 100.",
+    "D’autres solutions entières existent : 36 bœufs et 23 chevaux, 67 et 43, et ainsi de suite, en ajoutant 31 bœufs et 20 chevaux à chaque cran. Le manuel retient la plus petite, 3 et 5.",
+    "Sans la contrainte d’un petit troupeau, l’équation a une infinité de solutions positives. Dans le cadre d’un problème d’école de 1842, on donne 3 chevaux et 5 bœufs, le couple minimal."
+  ],
+  "178": [
+    "Trois chevaux : le premier plus la moitié des deux autres font 530 francs, le deuxième plus le tiers des deux autres 460, le troisième plus le quart des deux autres 430. Les prix sont 240, 280 et 300 francs.",
+    "En chassant les dénominateurs, on a 2a + b + c = 1 060, a + 3b + c = 1 380, a + b + 4c = 1 720. On élimine a en combinant les lignes.",
+    "On trouve d’abord c = 300, puis b = 280, puis a = 240. Chaque équation d’origine se relit alors clairement : par exemple 240 + (280 + 300)/2 = 240 + 290 = 530.",
+    "Le système a une unique solution positive. Un essai-erreur sur des ronds (200, 250, 300) s’approche, mais seules 240, 280 et 300 ferment les trois phrases à la fois."
+  ],
+  "179": [
+    "Quatre mousquetaires, quatre chevaux. Athos monte Sassafra, Porthos Quasimodo, Aramis Piquedesdeux, et d’Artagnan Rossinante, comme l’énoncé le montre déjà pour ce dernier.",
+    "Athos n’a jamais monté Rossinante ni Quasimodo, donc Athos est sur Piquedesdeux ou Sassafra. Celui qui monte Sassafra s’est disputé avec Porthos et Aramis : ce n’est donc ni Porthos ni Aramis.",
+    "Porthos et d’Artagnan s’entendent avec le cavalier de Piquedesdeux, donc ce cavalier n’est ni Porthos ni d’Artagnan. Comme d’Artagnan est vu sur Rossinante, Athos ne peut plus être que sur Sassafra, et Aramis sur Piquedesdeux.",
+    "Il reste Quasimodo pour Porthos. Vérifiez les rancunes : Sassafra (Athos) est bien en froid avec Porthos et Aramis, et le cavalier de Piquedesdeux (Aramis) n’est en conflit ni avec Porthos ni avec d’Artagnan selon l’énoncé."
+  ],
+  "180": [
+    "Le code de Tornado a quatre chiffres distincts, commence par 6, et n’a que trois diviseurs. Ce code est 6 241.",
+    "Un entier a ses diviseurs par paires, sauf lorsqu’il est un carré : le diviseur du milieu est alors répété. Avoir exactement trois diviseurs signifie être le carré d’un nombre premier : 1, p, et p².",
+    "Les carrés de nombres premiers à quatre chiffres commençant par 6 sont 79² = 6 241 et 83² = 6 889. Or 6 889 répète le chiffre 8, ce que l’énoncé interdit.",
+    "73² = 5 329 commence par 5, 89² = 7 921 par 7. Il reste 6 241, chiffres tous différents. C’est le seul code possible."
+  ],
+  "181": [
+    "Le produit des dossards premier × second vaut 437, second × troisième 391, premier × troisième 323. Le tiercé dans l’ordre est 19, 23, 17.",
+    "437 = 19 × 23, et ce sont les seuls facteurs utiles (1 × 437 ferait un dossard absurde). 391 = 17 × 23. Le facteur commun 23 est donc le numéro du second.",
+    "Alors le premier porte le 19 et le troisième le 17. On confirme 19 × 17 = 323. On peut aussi multiplier les trois produits : cela donne (abc)², d’où abc = 7 429, puis a = 7 429 / 391 = 19.",
+    "Les trois numéros sont premiers, ce qui rend la décomposition unique. Inverser 19 et 23 casserait le produit 391. L’ordre 19-23-17 est le seul tiercé compatible."
+  ],
+  "182": [
+    "On vous dit que le nombre de policiers à cheval égale les douze treizièmes de ce nombre, plus douze treizièmes de policier. Ils sont 12.",
+    "Si x est l’effectif, (12/13)x + 12/13 = x. Multipliez par 13 : 12x + 12 = 13x. Il vient x = 12.",
+    "Les 12/13 des 12 policiers font 144/13, plus 12/13, cela fait 156/13 = 12. La phrase un peu ensorcelée retombe sur un entier, ce qui est le signe qu’on a le bon x.",
+    "C’est le même ressort que les « parts de chat » : une fraction de personne n’existe pas, mais l’équation est conçue pour s’annuler sur un entier. Douze est la seule solution positive."
+  ],
+  "183": [
+    "Le champ a 100 m de large. Une vache traverse la largeur en 25 min, le cheval la longueur en 4 min, et le cheval va 30 fois plus vite que la vache. La surface est 4,8 hectares.",
+    "La vache parcourt 100 m en 25 min, soit 4 m/min. Le cheval, trente fois plus rapide, avance à 120 m/min. En 4 minutes, il couvre 480 m : c’est la longueur du champ.",
+    "L’aire est 480 × 100 = 48 000 m². Un hectare vaut 10 000 m², donc 48 000 m² = 4,8 ha.",
+    "Ne multipliez pas 100 m par 4 min : les unités ne colleraient pas. Passez d’abord par les vitesses, puis par la longueur, puis par l’aire. Le facteur 30 relie les deux animaux, pas les deux dimensions directement."
+  ],
+  "184": [
+    "Huit enfants doivent occuper trois chevaux, deux voitures, une soucoupe, un camion et un carrosse, chacun avec ses exigences. Une disposition qui les satisfait tous place Marc et Pauline sur le premier cheval et le camion, Lisette sur le carrosse, Betty et Jean sur une voiture et un cheval, Robert sur un cheval, Didier sur la soucoupe et Sylvie sur la dernière voiture.",
+    "Robert exige un cheval, Didier la soucoupe, Betty une voiture à côté de Jean. Lisette veut s’intercaler entre Marc et Robert, donc Marc, Lisette et Robert forment un bloc de trois places consécutives.",
+    "Pauline se colle à Marc sans prendre de cheval : le camion, à côté du cheval de Marc, lui convient. Sylvie se colle à Didier, donc à la voiture qui jouxte la soucoupe.",
+    "Le corrigé est ce plan du manège, pas un numéro de ticket. Si vous échangez Betty et Jean, Betty perd sa voiture, ou Jean n’est plus son voisin. Respectez d’abord les blocs (Marc–Lisette–Robert, Betty–Jean, Didier–Sylvie), puis glissez-les sur l’anneau."
+  ]
+}
+
+

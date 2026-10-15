@@ -1,0 +1,554 @@
+{
+  "553": [
+    "On vous demande la couleur, l’âge et le lieu de promenade de trois lièvres. Le blanc a 8 mois et se promène dans la prairie ; le gris a 3 mois et se promène dans la forêt ; le roux a 5 mois et se promène dans le champ.",
+    "Commencez par l’indice le plus contraignant : le lièvre de 5 mois n’est pas gris et se promène dans le champ. Il n’est donc pas blanc non plus, puisque le blanc n’est pas dans le champ. Ce lièvre de 5 mois est donc roux, et c’est lui qui occupe le champ.",
+    "Le gris n’a pas 8 mois et n’est pas dans la prairie. Comme le champ est déjà pris par le roux, le gris ne peut plus se promener que dans la forêt. Il lui reste l’âge de 3 mois. Le blanc, dernier en lice, a donc 8 mois et se promène dans la prairie, ce qui est bien un lieu autre que le champ, et n’est pas la forêt.",
+    "À retenir : dans un tableau âge–couleur–lieu, placez d’abord le personnage fixé par deux indices à la fois. Les cases restantes se remplissent alors presque toutes seules."
+  ],
+  "554": [
+    "Cinq spectateurs attendent en rang : trois lièvres (feuille de saule, de bouleau, d’érable) et deux tortues (médaille rouge, médaille bleue). De gauche à droite, l’ordre est : lièvre au saule, lièvre au bouleau, tortue à la médaille rouge, lièvre à l’érable, tortue à la médaille bleue.",
+    "Le lièvre au bouleau est voisin et à droite du lièvre au saule : ces deux-là forment donc le bloc « saule – bouleau ». La tortue rouge est voisine et à droite du lièvre au bouleau : le bloc s’allonge en « saule – bouleau – tortue rouge ».",
+    "Le lièvre à l’érable est entre deux tortues. La tortue rouge est déjà placée ; l’érable doit donc s’insérer juste après elle, suivi de la tortue bleue. Vous obtenez la file complète de cinq places, sans contradiction.",
+    "À retenir : quand un énoncé donne des voisinages orientés (« à droite de »), construisez d’abord les blocs, puis emboîtez-les comme des pièces de puzzle."
+  ],
+  "555": [
+    "Le lièvre, sur le contour d’une plateforme 10 × 10, part de la case 1 et dit 181 en y revenant. L’un des deux sauts a quatre unités de plus que l’autre. Les longueurs cherchées sont 3 unités et 7 unités.",
+    "Sur l’exemple 5 × 5, le lièvre avance de 40 unités avant de revenir (il dit 41). La moitié du tour, jusqu’au coin opposé, vaut 20 unités. Les sauts de 2 et de 3 s’y combinent quatre fois, car le côté mesure 5 : 1 + 4 × 2 + 4 × 3 = 21, donc 20 unités après le départ.",
+    "Sur la grille 10 × 10, l’avance totale est 180 unités, donc 90 jusqu’au coin opposé. Le côté vaut 10, on divise donc par 9 : 90 ÷ 9 = 10. La somme des deux longueurs de saut est 10, et leur différence est 4. Le système x + y = 10 et x − y = 4 donne 7 et 3.",
+    "Vérifiez que 3 et 7 jouent le même rôle que 2 et 3 sur la petite grille, simplement agrandis. À retenir : un exemple chiffré sert de modèle réduit ; on y lit le rapport, puis on l’applique à la grande figure."
+  ],
+  "556": [
+    "Un lièvre adulte et son petit doivent, ensemble, parcourir toutes les tuiles sans jamais repasser au même endroit. L’adulte avance de deux tuiles pendant que le petit n’en avance que d’une. Une seule tuile restera forcément intacte.",
+    "Le pavage compte 18 tuiles. Deux d’entre elles sont déjà occupées au départ, A pour l’adulte et P pour le petit. Il reste 16 tuiles à franchir.",
+    "À chaque « temps », les deux animaux consomment trois tuiles neuves (deux pour l’un, une pour l’autre). Or 16 = 3 × 5 + 1 : ils peuvent faire cinq temps communs, ce qui couvre 15 tuiles, et il en demeure une, impossible à partager sans casser la règle du rythme 2 contre 1.",
+    "La figure officielle du corrigé montre un parcours possible où cette tuile restante est marquée en noir. Le piège est de chercher un chemin plus malin : le reste 1 est arithmétique, aucun tracé n’y échappe."
+  ],
+  "557": [
+    "La tortue met 2 h 20 pour aller du départ à l’arrivée, et le lièvre court 35 fois plus vite. Ils arrivent pile à égalité. Le lièvre a attendu 2 h 16 avant de s’élancer. C’est la réponse B.",
+    "Convertissez 2 h 20 en 140 minutes. Si la tortue avance à la vitesse v, le lièvre avance à 35v. Ils parcourent la même distance, donc 140 × v = 35v × t, où t est le temps de course du lièvre.",
+    "On simplifie : t = 140 ÷ 35 = 4 minutes. Le lièvre n’a donc couru que 4 minutes. L’attente est 140 − 4 = 136 minutes, c’est-à-dire 2 h 16.",
+    "Le piège des distracteurs (2 h 19, 2 h 05…) consiste à soustraire 1 minute ou à oublier le facteur 35. À retenir : égalité à l’arrivée signifie même distance, pas même durée de course."
+  ],
+  "558": [
+    "Le lièvre court 5 fois plus vite que la tortue sur 5 km, mais il part d’abord perpendiculairement, puis fonce en ligne droite vers l’arrivée. Ils franchissent le fil ensemble. Le point où le lièvre a changé de direction est à 13 km de l’arrivée. C’est la réponse C.",
+    "Pendant que la tortue parcourt 5 km, le lièvre, cinq fois plus rapide, en parcourt 25. Appelez x la distance cherchée : c’est l’hypoténuse du triangle rectangle dont un côté de l’angle droit est le trajet correct de 5 km, et l’autre le premier écart, égal à 25 − x.",
+    "Le théorème de Pythagore s’écrit x² = 5² + (25 − x)². En développant : x² = 25 + 625 − 50x + x². Les x² s’annulent, il reste 50x = 650, donc x = 13.",
+    "Treize kilomètres est bien l’une des propositions. À retenir : quand un mobile plus rapide fait un détour et arrive en même temps, la longueur du détour se lit dans un triangle rectangle, pas en soustrayant les vitesses."
+  ],
+  "559": [
+    "Les lièvres ont visité le potager de Grand-Père. Ils ont mangé 15 salades et 14 choux.",
+    "Le dessin et le texte décrivent une régularité de lignes. En haut : 3 choux et 2 salades. La ligne suivante accueille une salade de plus. La troisième ligne a 4 choux et 3 salades. On continue ainsi jusqu’à la dernière ligne du potager.",
+    "En reconstituant toutes les plantations initiales, on compte 26 salades (2 + 3 + 3 + 4 + 4 + 5 + 5) et 30 choux (3 + 3 + 4 + 4 + 5 + 5 + 6). Après le passage des lièvres, il reste 11 salades et 16 choux visibles sur la figure.",
+    "La différence donne ce qui a disparu : 26 − 11 = 15 salades, et 30 − 16 = 14 choux. Vous pouvez aussi redessiner les plants manquants selon la même régularité, puis les dénombrer : le total est le même."
+  ],
+  "560": [
+    "On vous demande de retrouver, sur chacun des deux patrons, la trace laissée par la limace sur le cube. La réponse est la figure officielle du corrigé : c’est elle, et elle seule, qui montre comment le trait se reporte sur chaque patron.",
+    "Imaginez le cube déjà parcouru. Chaque fois que la limace franchit une arête, le trait continue sur la face voisine. Sur un patron, ces faces sont rabattues dans le plan : le trait doit donc se raccorder exactement aux côtés qui, une fois le cube refermé, deviennent la même arête.",
+    "Pour chaque patron, identifiez quelles bandes du dessin se touchent vraiment dans l’espace. Un raccord qui a l’air naturel sur le papier peut être faux si les deux bords ne sont pas collés l’un à l’autre sur le cube.",
+    "Ne cherchez pas un autre tracé que celui du corrigé officiel. Le piège habituel est d’inventer un parcours « plausible » qui ne respecte pas les identifications d’arêtes."
+  ],
+  "561": [
+    "Une limace fait le tour d’un chou dans sa plus grande longueur en 10 heures, à 6 cm par heure. On demande le diamètre du chou : il mesure environ 19,1 cm.",
+    "En 10 heures, la limace parcourt 6 × 10 = 60 cm. Ce tour dans la plus grande longueur est le pourtour d’un grand cercle du chou, autrement dit une circonférence.",
+    "La circonférence d’un cercle vaut π fois le diamètre. D’où le diamètre : 60 ÷ π. Avec π ≈ 3,14, on obtient à peu près 19,1 cm.",
+    "À retenir : « tour dans la plus grande longueur » désigne le plus grand cercle, pas une spirale ni un méridien quelconque. Une fois la longueur connue, il ne reste qu’à diviser par π."
+  ],
+  "562": [
+    "Dans la réserve d’Amboseli, 156 lionnes ont mis bas. Combien de lionceaux sont nés cette année-là ? Il en est né 282.",
+    "Quinze femelles ont eu 4 petits, soit 60 lionceaux. Vingt-et-une ont eu 5 petits, soit 105. Une lionne a eu 6 petits. Huit femelles ont perdu toute leur portée : elles comptent pour 0 naissance.",
+    "Les portées particulières concernent 15 + 21 + 1 + 8 = 45 lionnes. Il reste 156 − 45 = 111 femelles, qui n’ont eu chacune qu’un seul lionceau.",
+    "Le total est 60 + 105 + 6 + 0 + 111 = 282. N’oubliez pas de retrancher les huit femelles sans petit avant d’attribuer un lionceau à « toutes les autres »."
+  ],
+  "563": [
+    "Suzy choisit un premier animal qu’elle nourrira, puis un second que le soigneur nourrira, parmi la girafe, le lion, l’éléphant et la tortue. Elle ne peut pas nourrir le lion. Elle a 9 manières de choisir. C’est la réponse D.",
+    "Suzy peut se charger de la girafe, de l’éléphant ou de la tortue : trois premiers choix. Pour chacun, le soigneur reçoit l’un des trois animaux qui restent, y compris le lion.",
+    "Trois fois trois font neuf couples ordonnés. Les voici, en mettant l’animal de Suzy en premier : girafe puis lion, girafe puis éléphant, girafe puis tortue ; éléphant puis girafe, éléphant puis lion, éléphant puis tortue ; tortue puis girafe, tortue puis lion, tortue puis éléphant.",
+    "Le piège est de compter des paires non ordonnées, ou d’interdire aussi au soigneur de nourrir le lion. L’énoncé n’interdit que le premier choix de Suzy."
+  ],
+  "564": [
+    "Le lion de bronze peut remplir le bassin par les deux yeux, la gueule et le pied droit à la fois. Le temps demandé, à la seconde près, est 4 h 43 min 17 s.",
+    "Traduisez chaque orifice en fraction de bassin par jour. L’œil droit remplit 1/2 bassin par jour, l’œil gauche 1/3, le pied 1/4. La gueule met 6 heures, soit le quart d’un jour, donc elle remplit 4 bassins par jour.",
+    "La somme des débits est 1/2 + 1/3 + 1/4 + 4. Sur le dénominateur 12, cela fait 6/12 + 4/12 + 3/12 + 48/12 = 61/12. En un jour, les quatre jets remplissent 61/12 de bassin. Le temps pour un bassin est donc 12/61 de jour.",
+    "Multipliez : (12/61) × 24 h = 288/61 h, soit 4 heures et 44/61 heure. Puis (44/61) × 60 min = 2640/61 min, soit 43 minutes et 17/61 minute, et (17/61) × 60 s ≈ 17 secondes. D’où 4 h 43 min 17 s."
+  ],
+  "565": [
+    "Il faut découper la pièce carrée, uniquement sur les pointillés, en quatre pièces de même forme et de même taille, chacune contenant un lion et une couronne. La découpe qui convient est celle de la figure officielle du corrigé.",
+    "Vous cherchez une tessellation : quatre pièces superposables, éventuellement après rotation, qui recouvrent le carré sans trou ni chevauchement. Chaque pièce doit emporter exactement un lion et une couronne.",
+    "Les pointillés limitent les coupes possibles. Explorez les bandes et les « marches d’escalier » qui partagent le carré en quatre régions congruentes, puis vérifiez le contenu de chaque région.",
+    "N’inventez pas un autre découpage que celui du corrigé officiel. C’est cette figure, et non un schéma improvisé, qui constitue la solution."
+  ],
+  "566": [
+    "Le lion miniature part de la case 1 et doit visiter chaque case une fois, pour finir sur la case 31, en ne se déplaçant que vers une case voisine horizontale ou verticale. Un tel chemin existe ; le premier pas part nécessairement vers la gauche.",
+    "La case 31 est collée à la case 1. Si le lion commençait vers la droite, il s’enfermerait dans une région d’où il ne pourrait plus atteindre 31 qu’en revisitant une case. Partir à gauche laisse 31 pour la toute fin.",
+    "La figure officielle du corrigé donne un parcours complet, numéroté de 1 à 31. Vous pouvez le suivre case par case : chaque numéro est voisin du précédent, toutes les cases apparaissent, et l’arrivée est bien 31.",
+    "À retenir : dans un parcours de type « visitant toutes les cases », le voisinage de l’arrivée impose souvent le premier pas. Bloquez d’abord cette contrainte, puis construisez le reste."
+  ],
+  "567": [
+    "Après le premier coup de sifflet, 6 rangs de 4 lions se sont formés. Après le second, ils forment 8 rangs. Chaque rang contient alors 3 lions. C’est la réponse C.",
+    "Le premier dispositif donne l’effectif total : 6 × 4 = 24 lions. Cet effectif ne change pas d’un sifflet à l’autre.",
+    "On répartit les mêmes 24 lions en 8 rangs : 24 ÷ 8 = 3. Il y a donc trois lions par rang.",
+    "Le distracteur « 4 » reprend simplement l’ancienne densité. À retenir : quand on change le nombre de rangs, on divise le même total, on ne recopie pas l’ancien quota."
+  ],
+  "568": [
+    "On cherche les placements de quatre lions sur l’échiquier de l’énoncé, à raison d’au plus un lion par rangée et par colonne, en identifiant deux dessins qui se déduisent par rotation ou par réflexion. Il n’existe que sept dispositions réellement distinctes.",
+    "Le problème est cousin de celui des quatre tours, ou des quatre dames sans attaque orthogonale. On peut d’abord énumérer toutes les façons de choisir quatre cases « une par ligne, une par colonne », puis éliminer celles qui ont deux lions dans la même diagonale si l’énoncé l’interdit visuellement — ici la contrainte dite est seulement rangée et colonne.",
+    "Parmi ces placements, beaucoup sont le même dessin vu dans un miroir ou tourné d’un quart de tour. L’exemple de l’énoncé le rappelle : les deux diagonales principales ne comptent que pour une seule classe.",
+    "Après cette mise en classes, il reste sept types. La figure officielle du corrigé les présente tous. Comptez les classes, pas les copies."
+  ],
+  "569": [
+    "Le soigneur avait mis le même nombre de doses dans chaque gobelet. Après avoir donné 14 doses à chaque lori, le reste des trois gobelets réunis égale le contenu initial d’un seul gobelet. Chaque gobelet contenait 21 doses.",
+    "Appelez n le nombre initial par gobelet. Après la distribution, il reste n − 14 dans chacun, donc 3(n − 14) en tout. Cette somme vaut n, le contenu de départ d’un gobelet.",
+    "L’équation 3n − 42 = n devient 2n = 42, donc n = 21. On vérifie : il reste 7 doses par gobelet, et 7 × 3 = 21, égal au remplissage initial.",
+    "Vous pouvez aussi tâtonner au-dessus de 14. Avec 18, le reste total serait 12, trop petit. Seul 21 égalise reste global et contenu initial. À retenir : « le même nombre que dans chaque gobelet avant » désigne n, pas 3n."
+  ],
+  "570": [
+    "Un homme doit faire passer un loup, une chèvre et un panier de choux, le bateau ne portant qu’un seul de ces trois compagnons avec lui, sans jamais laisser chèvre et loup, ni chèvre et choux, seuls ensemble. Deux solutions symétriques existent ; la plus classique commence par la chèvre.",
+    "Passez d’abord la chèvre. Revenez seul. Passez le loup (ou, variante, les choux). Ramenez la chèvre. Passez les choux (ou, variante, le loup). Revenez seul. Passez enfin la chèvre.",
+    "Le moment délicat est le retour de la chèvre : c’est elle le « catalyseur » du danger. En la ramenant, vous laissez face à face deux compagnons qui ne se menacent pas (loup et choux), puis vous évacuez le second objet dangereux.",
+    "Alcuin, dès le VIIIe siècle, donnait déjà ces deux trajets. À retenir : le personnage incompatible avec les deux autres doit voyager le plus souvent, y compris en retour, pour séparer les paires interdites."
+  ],
+  "571": [
+    "Huit loups mettent 8 jours à creuser 8 × 8 terriers. On demande le temps nécessaire à 16 loups pour creuser 4 × 4 terriers. Il leur faut un seul jour.",
+    "Huit loups creusent 64 terriers en 8 jours. Pour n’en creuser que 16, soit le quart, les mêmes huit loups n’ont besoin que du quart du temps, donc de 2 jours.",
+    "En doublant l’effectif, on double aussi le rythme. Seize loups font en un jour le travail que huit loups font en deux jours. Ils achèvent donc les 16 terriers en une journée.",
+    "Le piège est de reculer devant les produits 8 × 8 et 4 × 4 comme s’il s’agissait d’un autre ordre de grandeur. Réduisez d’abord le volume de travail, puis l’effectif."
+  ],
+  "572": [
+    "Le Loup fait un bond de trois pas du Petit Chaperon pendant qu’elle en fait deux. Elle emprunte un raccourci de 92 pas, alors que le chemin du Loup en mesure 141. C’est elle qui arrive la première, avec 3 pas d’avance, soit un bond de loup.",
+    "Le rapport des vitesses est 3 contre 2 en faveur du Loup, si l’on mesure tout en pas du Petit Chaperon. Pendant qu’elle parcourt 92 pas, le Loup parcourt l’équivalent de 92 × 3 ÷ 2 = 138 de ses pas à elle.",
+    "Or son propre chemin en mesure 141. Il lui manque donc encore 141 − 138 = 3 pas — exactement la longueur d’un de ses bonds — quand elle atteint la maison.",
+    "Sans le raccourci, le Loup gagnerait largement. C’est le 92, plus court que 141 × 2 ÷ 3 = 94, qui inverse le résultat. À retenir : comparez les distances après les avoir exprimées dans la même unité de temps."
+  ],
+  "573": [
+    "Le Petit Chaperon rouge va de A à B en ne marchant que vers le nord ou vers l’ouest, chaque choix ayant la probabilité 1/2 lorsqu’il y a alternative. Le loup attend en L. La probabilité qu’elle passe par L, et soit dévorée, vaut 5/16, soit 31,25 %.",
+    "Dénombrez les chemins de A à B qui touchent L. Chacun a une probabilité égale au produit des facteurs 1/2 rencontrés aux carrefours, les passages forcés valant 1.",
+    "La figure officielle du corrigé recense quatre tels chemins, de probabilités 1/8, 1/16, 1/16 et 1/16. On additionne : 2/16 + 1/16 + 1/16 + 1/16 = 5/16.",
+    "Ces événements sont disjoints (un trajet réalisé est unique), donc la somme est licite. À retenir : on n’ajoute des probabilités de chemins que lorsqu’ils ne peuvent pas être empruntés en même temps."
+  ],
+  "574": [
+    "Cinq mille lapins voient arriver des lynx : chaque lynx mange un lapin par jour, puis chaque lapin survivant donne naissance à deux petits, et chaque lynx à un petit. Avec un seul couple de lynx, les lapins pullulent. Avec mille couples, ils s’éteignent au bout de cinq jours.",
+    "Si, un soir, il reste ℓ lapins et L lynx, le lendemain soir on a 3(ℓ − L) lapins et 2L lynx. Le rapport lapins/lynx passe de ℓ/L à (3/2) × (ℓ/L − 1).",
+    "Chaque jour, on retranche 1 au rapport, puis on multiplie par 1,5. En partant d’un rapport A, le rapport du soir n vaut 3 + 1,5ⁿ × (A − 3).",
+    "Pour un couple, A = 5000 ÷ 2 = 2500, très supérieur à 3 : le rapport explose. Pour mille couples, A = 5000 ÷ 2000 = 2,5, inférieur à 3 : le rapport s’effondre et les lapins disparaissent en cinq jours. Le destin tient tout entier à ce seuil 3."
+  ],
+  "575": [
+    "Paulo donne chaque jour 7 poissons au premier poussin vu et 5 au second. L’un des deux a mangé 44 poissons. L’autre en a mangé 52. C’est la réponse D.",
+    "Les 44 poissons sont une somme de 5 et de 7. Parmi les multiples de 7 inférieurs à 44 (0, 7, 14, 21, 28, 35, 42), seul 14 laisse un complément multiple de 5 : 44 − 14 = 30 = 6 × 5. Donc 2 jours à 7 poissons et 6 jours à 5.",
+    "La période commune dure 8 jours. L’autre poussin a alors reçu 7 poissons les 6 jours où le premier n’en recevait que 5, et 5 poissons les 2 jours restants : 6 × 7 + 2 × 5 = 42 + 10 = 52.",
+    "Le total des deux poussins sur 8 jours est 8 × 12 = 96, et 44 + 52 = 96. Cette vérification confirme le couple (44, 52)."
+  ],
+  "576": [
+    "Derrière les trois rochers se cachent Mangouste, qui ne ment jamais, Zamba, qui ment parfois, et Cochon, qui ment toujours. Derrière le rocher 1 se trouve Mangouste, derrière le 2 Cochon, derrière le 3 Zamba.",
+    "Le rocher 2 dit « Je suis Zamba ». S’il était Mangouste, il dirait vrai, donc il serait Zamba : absurde. S’il était Zamba, la phrase serait vraie, ce qui est possible, mais il faut tester le reste. S’il est Cochon, la phrase est forcément fausse, donc il n’est pas Zamba : cohérent pour l’instant.",
+    "Si Mangouste est au 1, elle dit vrai : Cochon est au milieu, donc au 2. Le 3 est alors Zamba, qui affirme « Mangouste est au milieu ». C’est faux, et Zamba a le droit de mentir. Tout s’accorde.",
+    "Les autres hypothèses cassent. Si Mangouste était au 3, elle mentirait en se plaçant au milieu. Si elle était au 2, on a déjà vu la contradiction. La répartition 1-2-3 est donc unique."
+  ],
+  "577": [
+    "En suivant pas à pas les milieux et les chemins indiqués dans le rectangle ABCD, vous obtenez un dessin mystère qui désigne le vainqueur du concours de saut. La réponse est la figure officielle du corrigé, une fois tous les traits au feutre posés.",
+    "Reproduisez d’abord le rectangle de 12 cm sur 10 cm, puis placez chaque milieu dans l’ordre donné, au crayon très léger. Un point mal situé (surtout P, R, O, qui dépendent déjà d’autres milieux) décale tout le dessin.",
+    "Tracez ensuite au feutre le chemin VLPYEQFNGRS, le chemin HWNU, les segments demandés, et les deux gros points. Gommez le crayon : le motif restant est le message.",
+    "N’ajoutez aucun ornement qui ne figure pas dans le corrigé officiel. C’est cette figure, et non une interprétation libre, qui identifie le premier du concours."
+  ],
+  "578": [
+    "Les instructions de milieux et de symétrie d’axe (AB) produisent un dessin mystère : l’animal que Marcel a choisi de chasser. La réponse est la figure officielle obtenue après le tracé au feutre et le gommage du crayon.",
+    "Placez J, milieu de [AB], puis K, milieu de [CJ]. Construisez ensuite tous les symétriques demandés (I de H, L de C, et ainsi de suite jusqu’à T de S). La symétrie doit être exacte, sinon les chemins ne se referment pas.",
+    "Au feutre, suivez SAIJFBNJHAT et JKPGBQDMJ, ajoutez les quatre segments, le demi-cercle de diamètre [RC] tourné vers la gauche, et son symétrique. Effacez alors tout le crayon.",
+    "Le dessin achevé est celui du corrigé officiel. N’inventez ni un autre animal ni un autre contour."
+  ],
+  "579": [
+    "Le rectangle, les milieux, les cercles et les intersections demandés forment un nouveau dessin mystère : le modèle que Marcel a choisi pour apprendre à voler. La réponse est la figure officielle du corrigé.",
+    "Construisez d’abord tous les milieux, puis le point J, croisement de (AG) et (HE). Les trois cercles doivent avoir les rayons prescrits : sinon K, L, Q, R, Y, T et V glissent, et le feutre ne rassemblera plus un motif lisible.",
+    "Une fois les points obtenus, suivez strictement le programme de tracé au feutre noir indiqué par l’énoncé. Le crayon disparaît ensuite, ne laissant que le dessin.",
+    "Reportez-vous à la figure officielle : c’est elle qui constitue la solution, sans ajout décoratif."
+  ],
+  "580": [
+    "Simon aligne ses sept animaux selon six contraintes. Le premier de la file est le canard.",
+    "Le serpent est deuxième. La girafe voit trois animaux devant elle : elle est quatrième. Le crocodile n’a personne derrière lui : il est septième.",
+    "Le lion n’est pas devant la girafe, donc il est cinquième ou sixième. Comme l’éléphant le suit, le lion est cinquième et l’éléphant sixième. L’autruche n’est pas première : la seule place restante pour elle est la troisième.",
+    "Il reste la première place, pour le canard. L’ordre complet est : canard, serpent, autruche, girafe, lion, éléphant, crocodile. À retenir : figez d’abord les positions numériques dites en clair (2, 4, 7), puis les blocs « X suit Y »."
+  ],
+  "581": [
+    "Trois marchands, Hodge, Jakes et Durrant, proposent des échanges d’animaux. Au total, il y avait 39 bêtes sur le marché : 11 pour Hodge, 7 pour Jakes, 21 pour Durrant.",
+    "Notez H, J et D les effectifs. Après l’échange de Hodge (six cochons contre un cheval de Jakes), Jakes a deux fois plus de bêtes que Hodge : J + 5 = 2(H − 5). Après l’échange de Durrant (quatorze moutons contre un cheval de Hodge) : H + 13 = 3(D − 13). Après celui de Jakes (quatre vaches contre un cheval de Durrant) : D + 3 = 6(J − 3).",
+    "Le système se résout en nombres entiers positifs : H = 11, J = 7, D = 21. On vérifie chaque phrase : 7 + 5 = 12 et 2 × 6 = 12 ; 11 + 13 = 24 et 3 × 8 = 24 ; 21 + 3 = 24 et 6 × 4 = 24.",
+    "La somme 11 + 7 + 21 = 39. À retenir : chaque réplique compare les effectifs après un échange fictif ; traduisez-la avant d’additionner."
+  ],
+  "582": [
+    "Cinq amis voient de 1 à 5 marmottes, tous un nombre différent, et seul celui qui en a vu le plus a dit vrai. Audrey en a vu 2, Cyril 3, Fabrice 5, Nicolas 4 et Vanessa 1.",
+    "Si Audrey avait vu 3 marmottes, sa phrase serait vraie, donc elle devrait en avoir vu 5 : contradiction. Elle n’en a donc ni 3 ni 5. Si Vanessa disait vrai, elle aurait vu 5, et aurait attribué 5 à Cyril, ce qui est faux : Vanessa n’a pas dit vrai, donc ni elle ni Cyril n’ont le maximum.",
+    "Cyril n’ayant pas le maximum, sa phrase est fausse : Audrey n’en a pas 4. Audrey est donc à 1 ou 2. La phrase de Nicolas (Audrey = Vanessa + 2) est alors fausse, donc Nicolas n’a pas 5 non plus. Le seul qui puisse avoir vu 5 marmottes est Fabrice.",
+    "Sa phrase est donc la bonne : Vanessa a trois de moins que Nicolas, soit 1 et 4. Audrey, qui n’a ni 1 (pris) ni 3, a 2. Cyril a les 3 restantes. Tout s’emboîte, et une seule phrase est vraie."
+  ],
+  "583": [
+    "Quatre marmottes brunes et quatre grises échangent leurs terriers : les premières de chaque famille partent ensemble, puis une marmotte de chaque famille toutes les deux minutes. Seules les grises saluent de la patte avant droite. Il y a eu 14 saluts de ce type.",
+    "Chaque trajet dure 5 minutes et demie. Si le premier couple part à une heure H, le deuxième part à H + 2 min, le troisième à H + 4 min, le quatrième à H + 6 min.",
+    "En comparant les intervalles de présence sur le chemin, la première grise croise les trois premières brunes ; les deux grises suivantes croisent les quatre brunes ; la dernière grise croise les trois dernières brunes. On additionne 3 + 4 + 4 + 3 = 14.",
+    "Chaque croisement d’une grise et d’une brune produit exactement un salut de la patte droite. Les saluts de la patte gauche, ceux des brunes, ne sont pas demandés."
+  ],
+  "584": [
+    "Six terriers reliés par des galeries doivent être attribués aux marmottes A, B, C, D, E et F. La répartition qui respecte toutes les contraintes est : A en 1, C en 2, D en 3, E en 4, B en 5 et F en 6, conformément à la figure officielle.",
+    "A ne peut aller que chez B, C et D, et C que chez A, D et E : A et C sont donc les deux sommets de degré 3, les maisons 1 et 2 du schéma. F ne peut pas aller chez B, ce qui élimine une des deux tentatives.",
+    "Si l’on met C en 1 et A en 2, D est forcé en 3, B en 4, E en 5 et F en 6 : alors F est relié à B, ce qui est interdit. Il faut donc inverser : A en 1, C en 2. Le reste se place sans conflit.",
+    "À retenir : commencez par les sommets de degré extrême, puis testez les deux orientations ; la contrainte négative (« F ne peut pas aller chez B ») départage."
+  ],
+  "585": [
+    "On sait que 95 % des marsupiaux bleus sont tachés, et que 95 % des tachés sont bleus. Ces données ne suffisent pas, à elles seules, à dire s’il y a plus de tachés chez les gris ou chez les bleus : tout dépend de la part des gris dans la population.",
+    "Les bleus tachés sont à la fois 95 % des bleus et 95 % des tachés. Il y a donc autant de bleus que de tachés. Les gris tachés représentent alors 5 % des tachés, donc aussi 5 % des bleus.",
+    "Le pourcentage de tachés chez les bleus est 95 %. Chez les gris, il vaut 5 % du nombre de bleus, divisé par le nombre de gris. Ce pourcentage est inférieur à 95 % précisément lorsque les gris dépassent 5 % de l’effectif total, et supérieur dans le cas contraire.",
+    "L’assistant doit encore estimer cette proportion de gris. Sans elle, la « lancinante question » reste ouverte. Le piège est de croire que deux pourcentages à 95 % forcent déjà la comparaison."
+  ],
+  "586": [
+    "Stéphane affirme qu’une des quatre cartes de mascarins est un intrus. Il n’y a pas une seule bonne carte : chacune peut l’être, pourvu que vous justifiiez un critère qui la sépare des trois autres.",
+    "La carte A est la seule où l’oiseau regarde vers la droite, les trois autres regardant vers la gauche. La carte B est la seule qui montre deux oiseaux au lieu d’un.",
+    "La carte C est la seule dont le corps, hors ailes, est noir, les autres ayant le corps blanc. La carte D est la seule où l’oiseau siffle — ou, selon un autre argument, la seule qui ne soit pas un perroquet.",
+    "L’exercice entraîne le regard : un intrus n’existe que relativement à une règle. Énoncez la règle, montrez qu’elle isole une carte, et votre réponse est recevable."
+  ],
+  "587": [
+    "On vous demande la particularité commune à ces phrases françaises, anglaises, allemandes ou suédoises. Chacune est un palindrome : la suite des lettres est la même de gauche à droite et de droite à gauche.",
+    "Lisez « Ce reptile lit Perec » à l’envers, en ne gardant que les lettres : vous retrouvez la même suite. Il en va de même pour « Un rêve de ver nu », « Was it a rat I saw ? » ou « Step on no pets ! ».",
+    "Les espaces et la ponctuation sont parfois ignorés, parfois, comme dans le long palindrome suédois, ils se correspondent aussi. Le sens, lui, n’a pas besoin d’être profond : c’est la symétrie qui fait le jeu.",
+    "Les traductions aident à savourer les phrases étrangères, mais elles ne sont pas nécessaires pour voir le mécanisme. À retenir : un palindrome se juge sur les lettres, pas sur le vocabulaire savant."
+  ],
+  "588": [
+    "Louise décrit ses amis : tous sont des chiens sauf trois, tous des chats sauf trois, tous des poissons sauf trois, tous des hamsters sauf trois. Elle a 4 amis.",
+    "« Tous sont des chiens sauf trois » signifie qu’il y a exactement trois non-chiens. De même, il y a trois non-chats, trois non-poissons et trois non-hamsters.",
+    "Si chaque espèce n’apparaît qu’une fois, les trois « sauf » d’une phrase sont précisément les trois amis des autres espèces. Cela donne un chien, un chat, un poisson et un hamster.",
+    "Quatre amis, et pour chaque espèce on en compte bien trois qui ne sont pas de cette espèce. Un cinquième ami casserait au moins une des quatre phrases."
+  ],
+  "589": [
+    "La ménagerie compte des cigales à 6 pattes, plusieurs souris à 4 pattes et quelques couleuvres sans pattes, pour 12 têtes et 34 pattes. Il y a 3 cigales, 4 souris et 5 couleuvres.",
+    "Notez c, s et k les effectifs. Les têtes donnent c + s + k = 12. Les pattes donnent 6c + 4s = 34, ou encore 3c + 2s = 17. Les couleuvres n’apparaissent que dans la première équation.",
+    "c doit être impair (car 17 est impair et 2s est pair) et au plus 5. L’énoncé exige des cigales et plusieurs souris, donc c ≥ 1 et s ≥ 2. Les candidats sont c = 3 (alors s = 4, k = 5) et c = 5 (alors s = 1, k = 6).",
+    "On écarte s = 1, qui n’est pas « plusieurs souris ». Il reste 3 cigales, 4 souris et 5 couleuvres. Vérification : 3 + 4 + 5 = 12 têtes, 18 + 16 + 0 = 34 pattes."
+  ],
+  "590": [
+    "Ondine remplit une grille où cinq animaux apparaissent une fois par ligne et par colonne. L’animal à placer dans la case marquée d’un point d’interrogation est celui de la proposition C.",
+    "Regardez la quatrième colonne : parmi les cinq animaux de la première ligne, trois s’y trouvent déjà. Il ne reste, pour cette colonne, que le canard et le lapin.",
+    "Un lapin figure déjà sur la deuxième ligne. On ne peut donc plus y placer un second lapin. La case située à droite du point d’interrogation, qui appartient à cette ligne et à la quatrième colonne, reçoit alors le placement forcé qui débloque toute la grille.",
+    "Ce déblocage désigne l’animal C pour la case « ? ». Comme dans un sudoku d’images, une interdiction de doublette suffit souvent à tout décider."
+  ],
+  "591": [
+    "Moins de trente merles occupent cinq hêtres. Après une « valse » de transferts (1, puis 2, 3, 4, puis 5 oiseaux), chaque arbre en porte autant. Avant la valse, les effectifs étaient 1, 6, 6, 6 et 6.",
+    "La position finale est au moins 5 sur chaque arbre, puisque cinq merles quittent le cinquième pour le premier. Avec 6 partout on aurait 30 merles, ce que l’énoncé interdit. La finale est donc 5, 5, 5, 5, 5 — soit 25 oiseaux, bien moins de trente.",
+    "Remontez les mouvements. Le premier arbre a reçu 5 et donné 1, donc il avait 5 − 5 + 1 = 1. Le deuxième a reçu 1 et donné 2, donc il avait 5 − 1 + 2 = 6. De même, les trois suivants avaient 6.",
+    "On vérifie en rejouant la valse vers l’avant : on aboutit bien à cinq merles partout. À retenir : partez de la configuration finale, la seule presque imposée, et inversez chaque transfert."
+  ],
+  "592": [
+    "Soixante merles se gavaient dans trois cerisiers. Après le coup de fusil, 6, 8 et 4 s’envolent, et il en reste autant sur chaque arbre. L’arbre le plus chargé au départ en avait 22.",
+    "Appelez k le nombre restant sur chaque cerisier. Les effectifs initiaux sont alors k + 6, k + 8 et k + 4. Leur somme vaut 60, donc 3k + 18 = 60, et k = 14.",
+    "On retrouve 20, 22 et 18 merles. Le maximum est 22, sur le deuxième cerisier, celui d’où huit oiseaux se sont envolés.",
+    "Le piège est de croire que l’arbre le plus chargé est celui d’où le plus d’oiseaux sont partis, sans calculer k. Ici les deux coïncident, mais seul le calcul le prouve."
+  ],
+  "593": [
+    "Chaque membre de la famille a 750 pattes. Les parents chaussent une patte en 3 secondes, les enfants en 5, tous en même temps, puis les parents aident les enfants. Les parents ont fini leurs propres chaussures en 2 250 secondes, soit 37 min 30 s. Toute la famille est chaussée, au plus vite, en 52 min 30 s.",
+    "Un parent pose 750 chaussures à 3 secondes l’une : 750 × 3 = 2 250 s. Pendant ce temps, chaque enfant, à 5 secondes l’une, en pose 2 250 ÷ 5 = 450. Il lui en reste 300.",
+    "Dès que les parents ont fini, chacun se consacre à un enfant. Trois cents chaussures à 3 secondes font 900 s. Le temps total est 2 250 + 900 = 3 150 s, soit 52 min 30 s.",
+    "On ne gagne rien à faire autrement : tant que les parents n’ont pas fini leurs propres pattes, ils ne peuvent pas aider, et chaque mille-pattes ne pose qu’une chaussure à la fois."
+  ],
+  "594": [
+    "Le Minotaure doit parcourir toutes les cellules du labyrinthe. Le chemin qui convient est celui de la figure officielle du corrigé, indiqué par les flèches.",
+    "Vous cherchez un parcours qui visite chaque salle une fois et respecte les ouvertures du labyrinthe. Les flèches de l’énoncé fixent le sens d’entrée : partez dans cette direction, puis n’empruntez que des portes encore libres.",
+    "Si vous vous retrouvez bloqué avec des salles non visitées, revenez au dernier carrefour et changez de branche. Dans ce dessin, un seul tracé recouvre tout le réseau.",
+    "Ne substituez pas un autre serpentin à celui du corrigé officiel. C’est cette figure, et non une variante inventée, qui est la solution."
+  ],
+  "595": [
+    "Deux mites courent de la tête à la queue d’un tigre, l’une sur les rayures jaunes de 3,50 m, l’autre sur les noires, plus courtes de 35 cm. La mite jaune gagne 1 cm par minute sur l’autre, qui avance à 5,50 m/h. Elles atteignent la queue en même temps.",
+    "Travaillez en centimètres et en minutes. Les rayures noires mesurent 350 − 35 = 315 cm. Convertie, l’allure de la mite noire donne 9 cm par minute : elle met 315 ÷ 9 = 35 min pour atteindre la queue.",
+    "La mite jaune gagne 1 cm par minute, donc file à 10 cm/min. Sur les 350 cm de rayures jaunes, elle met 350 ÷ 10 = 35 min. Les deux durées sont identiques.",
+    "L’avantage de vitesse de la mite jaune compense exactement le surplus de longueur des rayures jaunes. À retenir : le plus rapide ne gagne pas toujours si son chemin est plus long — comparez les temps, pas les allures."
+  ],
+  "596": [
+    "Après un coup de fusil et un aboiement, il reste 13 oiseaux sur le fil. On demande le nombre maximal de moineaux au tout début. Ce maximum est 14.",
+    "Huit moineaux s’envolent, cinq reviennent : la population de moineaux a diminué de 3. Trois corbeaux s’envolent, deux reviennent : celle des corbeaux a diminué de 1. Au total, il manque 4 oiseaux par rapport au départ.",
+    "Comme il en reste 13, il y en avait 17 au départ. Lors de l’aboiement, trois corbeaux s’envolent : il y avait donc au moins 3 corbeaux. Le nombre de moineaux est alors au plus 17 − 3 = 14.",
+    "On atteint bien 14 en prenant exactement 3 corbeaux et 14 moineaux. C’est le maximum demandé."
+  ],
+  "597": [
+    "McLeod affirme que la bête mesure 20 mètres plus la moitié de sa propre longueur. Le monstre du Loch Ness mesure 40 mètres.",
+    "Appelez t la taille. L’énoncé se traduit par t = 20 + t/2. En retranchant t/2 de chaque côté, il reste t/2 = 20, donc t = 40.",
+    "Vous pouvez aussi penser : la moitié de la longueur égale 20 m, donc la longueur entière vaut le double, 40 m.",
+    "Le piège classique est de répondre 30 m, en ajoutant 20 et « la moitié de 20 ». Or la moitié dont parle McLeod est la moitié de la taille encore inconnue, pas la moitié de 20."
+  ],
+  "598": [
+    "Deux TGV distants de 200 km se rapprochent à 100 km/h chacun. Une mouche fait des allers-retours à 150 km/h jusqu’à leur croisement. Elle parcourt 150 km.",
+    "Les trains ferment 200 km à la vitesse relative de 200 km/h. Ils se rencontrent au bout d’une heure.",
+    "Pendant cette unique heure, la mouche vole sans interruption à 150 km/h. La distance est donc simplement 150 km.",
+    "Le piège, rendu célèbre par une anecdote sur von Neumann, est de sommer la série infinie des allers-retours. C’est correct, mais inutile : le temps de vol suffit."
+  ],
+  "599": [
+    "Dans une pièce de 22 m sur 9 m, haute de 9 m, une araignée et une mouche sont au milieu de deux murs carrés opposés, l’une à 1 m du plafond, l’autre à 1 m du sol. L’araignée reste sur les parois. La plus courte distance qui les sépare est 30 m.",
+    "Le chemin n’est pas le détour « descendre, traverser 22 m, remonter », qui ferait 31 m. On déplie la pièce en patron, de sorte que le trajet devienne un segment dans le plan.",
+    "Sur le patron officiel, le triangle rectangle a pour côtés 1 + 22 + 1 = 24 m et 4,5 + 9 + 4,5 = 18 m. Le théorème de Pythagore donne 24² + 18² = 576 + 324 = 900, donc une hypoténuse de 30 m.",
+    "Trente mètres est plus court que trente et un. À retenir : sur une surface, le plus court chemin se lit sur un patron, pas en suivant les arêtes une à une."
+  ],
+  "600": [
+    "Une mouche, à l’extérieur d’un verre cylindrique de 5 cm de diamètre, veut rejoindre une goutte de miel à l’intérieur, diamétralement opposée, toutes deux à 2 cm du bord. Le plus court trajet mesure environ 8,81 cm.",
+    "Pour passer de l’extérieur à l’intérieur, la mouche doit franchir le rebord. On développe la surface latérale et l’on considère le point intérieur rabattu de l’autre côté du bord.",
+    "Sur ce rectangle, le déplacement horizontal est un demi-périmètre du cercle, soit 2,5π cm, et le déplacement vertical vaut 2 + 2 = 4 cm. Pythagore donne √((2,5π)² + 16) = √(6,25π² + 16) ≈ 8,81 cm.",
+    "Un trajet qui descendrait jusqu’au fond serait plus long. À retenir : le plus court chemin sur un cylindre est une droite du patron, souvent une diagonale qui coupe le bord."
+  ],
+  "601": [
+    "Des mouches doivent couvrir tout le réseau : chacune part d’une intersection et n’a pas le droit de réemprunter un segment déjà parcouru. Il faut au minimum 7 mouches.",
+    "Une seule mouche peut suivre un très long chemin, indiqué sur la figure officielle, d’un bout à l’autre du réseau. Il reste alors des segments isolés, notamment sur la première et la quatrième ligne, plus la deuxième et la troisième.",
+    "Deux mouches achèvent la première ligne, deux autres la quatrième, une la deuxième, une la troisième. Avec la première exploratrice, cela fait sept.",
+    "On ne peut pas descendre en dessous : trop de segments « en impasse » restent après le plus long parcours possible. Sept est donc le minimum, pas seulement un exemple."
+  ],
+  "602": [
+    "La mouche va de A à B en marchant sur les lignes, sans longer une case marquée d’une fleur, tout en pouvant passer entre deux fleurs. Un chemin possible est celui de la figure officielle du corrigé.",
+    "Les cases fleuries interdisent leurs bords, pas leurs sommets partagés. Vous pouvez donc glisser dans un couloir étroit entre deux fleurs, pourvu de ne jamais coller au côté d’une case interdite.",
+    "Partez de A et visez les passages laissés libres jusqu’à B, en évitant les cul-de-sac. Le tracé du corrigé relie les deux points sans enfreindre la règle.",
+    "N’inventez pas un autre itinéraire que celui de la figure officielle : c’est ce chemin qui est donné pour solution."
+  ],
+  "603": [
+    "Dora a relié 11 roches par des ficelles. La mouche va toujours de gauche à droite, sans revenir sur ses pas, de la roche de gauche à celle de droite. Elle peut emprunter au maximum 13 chemins distincts.",
+    "Étiquetez les roches pour ne pas en oublier. Depuis le départ A, trois premières arêtes s’offrent : vers le haut, le milieu ou le bas. On énumère ensuite toutes les suites qui atteignent l’arrivée.",
+    "Cinq chemins commencent par la branche haute, cinq par la branche médiane, trois par la branche basse. Le total est 5 + 5 + 3 = 13, à condition de compter deux routes comme distinctes dès qu’elles diffèrent d’un seul brin.",
+    "La figure officielle du corrigé liste ces treize suites. À retenir : un arbre de choix, lu de gauche à droite, évite à la fois les oublis et les doubles comptes."
+  ],
+  "604": [
+    "Zandoli se déplace seulement vers le haut ou vers la droite, du point Z jusqu’à la mouche M. Il existe 10 chemins différents.",
+    "Comptez, sur le quadrillage, combien de pas à droite et combien de pas vers le haut séparent Z de M. Ici, le total de ces pas vaut 5, répartis en deux types (par exemple 2 d’un côté et 3 de l’autre).",
+    "Le nombre de chemins est alors le nombre de mots de 5 lettres écrits avec ces deux pas, soit 5 ! ÷ (2 ! × 3 !) = 10. On peut aussi les dessiner un par un, comme le fait la figure officielle.",
+    "La formule générale, pour un rectangle de m pas sur n pas, est (m + n) ! ÷ (m ! n !). À retenir : seuls les déplacements « avant » comptent ; aucun retour n’est permis, donc on combine, on ne permute pas avec répétition libre."
+  ],
+  "605": [
+    "La mouche fait le tour des quatre côtés de la base du cube en 4 minutes, et l’on demande le temps du trajet de A au sommet opposé B. Elle met environ 2,236 minutes.",
+    "Les quatre arêtes de la base en 4 minutes : chaque arête vaut donc 1 minute, et l’on peut prendre l’arête comme unité de longueur 1.",
+    "Sur un patron du cube, le plus court chemin de A à B devient le segment qui traverse deux faces collées, formant un rectangle 2 × 1. Sa longueur est √(2² + 1²) = √5 ≈ 2,236.",
+    "Au même rythme, le temps est 2,236 minutes. Passer par trois arêtes prendrait 3 minutes, nettement plus. À retenir : encore une fois, dépliez avant de mesurer."
+  ],
+  "606": [
+    "Une mouche est collée au bout d’une pale d’éolienne de 20 m de rayon, tournant à 30 tours par minute. Sa vitesse, à 1 km/h près, est 223 km/h. C’est la réponse E.",
+    "Le cadavre parcourt un cercle de rayon 20 m, donc de périmètre 40π mètres, et cela 30 fois par minute, soit 1 800 fois par heure.",
+    "La distance horaire est 40π × 1 800 mètres, soit 72π kilomètres. Comme π dépasse 3, le produit dépasse 216 km/h. Parmi les propositions, seule 223 km/h est au-dessus de 210 km/h.",
+    "Vous n’avez donc pas besoin d’une valeur précise de π : un simple encadrement élimine 147, 166, 185 et 204. À retenir : dans un QCM, l’ordre de grandeur suffit souvent à désigner la bonne case."
+  ],
+  "607": [
+    "L’alphabet des moustiques n’a que deux lettres, B et Z. Le nombre de mots de six lettres est 64.",
+    "Avec deux lettres, les mots de longueur 1 sont B et Z : 2 possibilités. Chaque lettre ajoutée double le nombre de mots, car on suffixe B ou Z à chaque mot déjà formé.",
+    "On obtient 2, puis 4, puis 8, puis 16, puis 32, puis 64. Autrement dit 2⁶ = 64. L’arbre des choix, dessiné pour les petites longueurs, rend ce doublement visible.",
+    "À retenir : un alphabet de k lettres produit kⁿ mots de longueur n, les répétitions étant autorisées et l’ordre comptant."
+  ],
+  "608": [
+    "L’hexagone en L, « aile de moustique », est partagé en deux parties de même aire par le segment [CG]. Le segment [BC] mesure 17,5.",
+    "Les dimensions 80 et 70 permettent de calculer l’aire du grand triangle AGC : 80 × 70 ÷ 2 = 80 × 35. On y reconnaît un petit carré de côté 35, plus un rectangle 45 × 35.",
+    "Ce rectangle 45 × 35 est aussi l’aire d’un triangle de base 45 et de hauteur 70. En égalant les aires des deux morceaux de l’hexagone, on trouve que les triangles ABC et GCH ont la même aire et la même hauteur 70, donc des bases égales : BC = CH.",
+    "Or BH = 80 − 45 = 35, donc BC = 35 ÷ 2 = 17,5. La figure officielle du corrigé place les points auxiliaires H et J qui rendent ce découpage d’aires visible."
+  ],
+  "609": [
+    "Une bergerie de 200 pieds sur 100 pieds doit loger des moutons occupant chacun 5 pieds sur 4. On peut y loger 1 000 moutons.",
+    "L’aire de la bergerie est 200 × 100 = 20 000 pieds carrés. Chaque mouton occupe 5 × 4 = 20 pieds carrés. Le quotient 20 000 ÷ 20 = 1 000.",
+    "Alcuin présentait le même compte en étapes : le cinquième de 100, pris deux fois, fait 40 ; le quart de 100 fait 25 ; et 40 × 25 = 1 000. C’est la même division, écrite autrement.",
+    "On suppose que les moutons se rangent sans perte, 4 pieds le long de 100 et 5 pieds le long de 200, ou l’inverse. À retenir : quand les côtés sont multiples des dimensions individuelles, l’aire suffit."
+  ],
+  "610": [
+    "On lit le mot MOUTON dans le réseau en suivant les segments, sans réutiliser une même lettre pour un même mot. On peut le lire de 28 manières.",
+    "Chaque M est un départ possible. Depuis un M d’extrémité, quatre chemins mènent à un N en épelant M-O-U-T-O-N. Depuis un M central, le réseau s’ouvre davantage : vingt-quatre lectures.",
+    "En additionnant ces familles, on obtient 28 mots. Le plus sûr est de marquer les M, puis de compter les branches O, U, T, O, N sans jamais revenir sur une lettre déjà prise pour ce mot-là.",
+    "À retenir : deux lectures qui passent par des sommets différents sont distinctes, même si elles écrivent les mêmes six lettres."
+  ],
+  "611": [
+    "Sept barrières de 11, 10, 9, 7, 4, 3 et 2 mètres doivent former un rectangle d’aire maximale. Cette aire vaut 132 m².",
+    "Le périmètre est 46 m, donc la somme longueur + largeur vaut 23 m. La largeur, réalisable deux fois avec les barres, dépasse 7 m, et la longueur dépasse 12 m. Les couples candidats sont (7 ; 16), (8 ; 15), (9 ; 14), (10 ; 13) et (11 ; 12).",
+    "Seuls les trois derniers se partagent vraiment en deux paires de côtés égaux : 9 = 7 + 2 et 14 = 11 + 3 = 10 + 4 ; 10 = 7 + 3 et 13 = 11 + 2 = 9 + 4 ; 11 = 7 + 4 et 12 = 10 + 2 = 9 + 3. Les aires sont 126, 130 et 132.",
+    "L’énoncé demande la plus grande aire possible : 132 m², pour le rectangle 11 × 12. À retenir : à périmètre fixé, plus le rectangle est « carré », plus l’aire est grande — encore faut-il que les barres le permettent."
+  ],
+  "612": [
+    "Trois bandes de maraudeurs prennent chacune la moitié du troupeau restant plus un demi-mouton, et il reste 20 moutons. Le troupeau initial comptait 167 bêtes.",
+    "Le plus commode est de remonter le temps. Avant le troisième pillage, il restait un nombre R tel que R/2 − 1/2 = 20, donc R = 41. Avant le deuxième, de même, on trouve 83. Avant le premier, on trouve 167.",
+    "Chaque étape consiste à « inverser » la prise d’une moitié plus un demi : on ajoute un demi, puis on double. 20 + 1/2 = 20,5, le double fait 41 ; 41,5 × 2 = 83 ; 83,5 × 2 = 167.",
+    "Aucun mouton n’est coupé : à chaque fois, le troupeau restant est impair, si bien que la moitié plus un demi tombe juste. C’est le secret de ces problèmes médiévaux."
+  ],
+  "613": [
+    "Deux fermiers achètent l’un le tiers, l’autre le quart d’un troupeau. Si le premier avait pris 10 moutons de plus, il en aurait le double du second. Le troupeau comptait 60 moutons.",
+    "Le premier achète T/3, le second T/4. La deuxième phrase s’écrit T/3 + 10 = 2 × (T/4), soit T/3 + 10 = T/2.",
+    "On isole 10 = T/2 − T/3 = T/6, donc T = 60. Le premier a 20 moutons, le second 15, et 20 + 10 = 30 = 2 × 15.",
+    "Vérifiez aussi que 20 + 15 = 35, le reste du troupeau n’étant pas acheté par eux. À retenir : « un tiers » et « un quart » parlent du même total T."
+  ],
+  "614": [
+    "Le troupeau se vend autant de francs qu’il y a de moutons, en pièces de 10 F plus un appoint. L’aîné prend la dernière pièce de 10 F, le cadet l’appoint, puis l’aîné égalise avec quelques pièces de 1 F. Il en sort 2 de sa poche.",
+    "Le prix est un carré n². Le nombre de pièces de 10 F est impair (l’aîné en a une de plus). Les seuls carrés dont le chiffre des unités est 6 et dont le nombre de dizaines est impair se terminent par 16 ou 36. Dans les deux cas, l’appoint vaut 6 francs.",
+    "L’aîné a donc reçu 10 F de plus que le cadet sur le tas de pièces, mais le cadet a les 6 F d’appoint. L’écart net est 10 − 6 = 4 francs en faveur de l’aîné.",
+    "Pour égaliser, l’aîné donne la moitié de cet écart, soit 2 francs : deux pièces de 1 F. À retenir : on égalise un écart en transférant sa moitié, pas la totalité."
+  ],
+  "615": [
+    "Dans chaque labyrinthe, il faut relier les deux moutons blancs et relier les deux moutons noirs, sans que les chemins se croisent ni se chevauchent. Les tracés qui conviennent sont ceux de la figure officielle du corrigé.",
+    "Vous cherchez deux chemins disjoints. Si vous reliez d’abord trop vite les blancs en coupant le labyrinthe en deux, les noirs peuvent se retrouver séparés. Il faut parfois « contourner » pour laisser un couloir à la seconde paire.",
+    "Observez les goulets : un passage étroit ne peut servir qu’à une seule couleur. Réservez-le à la paire qui n’a pas d’autre issue.",
+    "N’inventez pas d’autres fils que ceux du corrigé officiel. C’est cette figure, pour chaque labyrinthe, qui constitue la solution."
+  ],
+  "616": [
+    "Quinze moutons à 4 pieds et des bergers à 2 pieds occupent un pré. La moitié des bergers ramène le tiers des moutons ; il reste 50 pieds. Au début, il y avait 80 pieds. C’est la réponse C.",
+    "Notez b le nombre de bergers. Le total initial de pieds est 4 × 15 + 2b = 60 + 2b. Ceux qui partent sont 5 moutons (le tiers de 15) et b/2 bergers, soit 20 + b pieds.",
+    "Il reste (60 + 2b) − (20 + b) = 40 + b. Or ce reste vaut 50, donc b = 10. Le début était 60 + 20 = 80 pieds.",
+    "On vérifie : 5 bergers emmènent 5 moutons, soit 10 + 20 = 30 pieds ; 80 − 30 = 50. À retenir : « la moitié des bergers » suppose un effectif pair, ce que 10 confirme."
+  ],
+  "617": [
+    "Il faut échanger trois moutons noirs et trois moutons blancs, par glissement vers une case vide voisine ou par saut par-dessus un mouton, en un minimum de coups. Ce minimum est 15.",
+    "La case vide est le « jeton » qui permet tous les mouvements. Un échange complet des deux camps, avec sauts orthogonaux seulement, ne peut pas descendre sous 15 coups sur cette grille.",
+    "La figure officielle du corrigé donne une partie en 15 coups, écrite comme une suite de déplacements de cases. En la rejouant, les noirs et les blancs ont bien échangé leurs places.",
+    "Si vous trouvez plus long, ce n’est pas faux, mais ce n’est pas minimal. Quinze est le record annoncé."
+  ],
+  "618": [
+    "La terre de Collin est coupée en NO, NE, SO, SE. Les quatre nombres, formés des mêmes trois chiffres distincts, sont 263 au nord-ouest, 362 au nord-est, 326 au sud-ouest et 632 au sud-est.",
+    "Nord + sud = 625 + 958 = 1 583 moutons en tout. L’est en a 994, donc l’ouest en a 1 583 − 994 = 589. L’unité du NO est 3 ; les quatre nombres sont des anagrammes de trois chiffres distincts.",
+    "Les sommes par paires forcent le chiffre des unités du SO à 6, et celui du NE et du SE à 2. Les trois chiffres sont donc 2, 3 et 6. Au NE, 362 convient, 632 non (il casserait une des sommes). Le SE est alors 632, le NO 263, le SO 326.",
+    "Vérifications : 263 + 362 = 625, 326 + 632 = 958, 362 + 632 = 994, 263 + 326 = 589. Tout concorde."
+  ],
+  "619": [
+    "Huit enclos portent a ou b moutons selon le schéma, et chaque fenêtre de la cabane centrale en montre 501. Le troupeau compte au minimum 1 004 moutons et au maximum 2 004.",
+    "Le total est 4a + 4b. Chaque vue aligne 2a + b = 501. On en déduit 4a + 4b = 1 002 + 2b.",
+    "b ne peut pas être 0, sinon chaque fenêtre verrait 2a, pair, alors que 501 est impair. Le plus petit b entier positif est 1, d’où le minimum 1 004. Le plus grand b s’obtient pour a = 0, donc b = 501, et le maximum 2 004.",
+    "Les deux extrêmes sont atteints avec des entiers. À retenir : une parité (ici 501 impair) interdit souvent la valeur zéro d’une inconnue."
+  ],
+  "620": [
+    "Les moutons subissent Jump (passage direct), Push (empilement) et Pop (dépilement vers l’autre côté). Après Push–Jump–Push–Jump–Pop–Pop, l’ordre de l’autre côté est 1, 3, 4, 2. La plus petite suite qui produit 2, 3, 5, 4, 1 est Jump–Push–Push–Jump–Jump–Pop–Pop.",
+    "Simulez la première liste avec une file et une pile. Push empile le prochain mouton ; Jump l’envoie directement à droite ; Pop envoie le sommet de la pile à droite. On obtient bien 1 puis 3 puis 4 puis 2.",
+    "Pour la cible 2-3-5-4-1, il faut faire passer 2 tout de suite (Jump), mettre 1 et éventuellement d’autres en attente (Push), faire passer 3 et 5, puis dépiler 4 et 1. La suite officielle le réalise en sept opérations, et l’on ne peut guère raccourcir.",
+    "À retenir : Push/Pop sont une pile (dernier entré, premier sorti) ; Jump contourne la pile. Dessinez les trois zones à chaque pas."
+  ],
+  "621": [
+    "Knock Turne range ses moutons par 2, par 7 et par 9, et le nombre obtenu est une anagramme de 1989. Il en avait 9 198.",
+    "Le nombre est multiple de 2, de 7 et de 9. La somme 1 + 9 + 8 + 9 = 27 est déjà multiple de 9, donc toute anagramme l’est aussi. Le multiple de 2 doit se terminer par un chiffre pair : ici, le 8.",
+    "Les candidats sont 1998, 9198 et 9918. Parmi eux, seul 9198 se divise par 7, car 9198 = 7 × 1314. Il est aussi multiple de 2 et de 9, donc de 2 × 7 × 9 = 126.",
+    "1989 lui-même n’est pas pair. À retenir : les critères de divisibilité (pair, somme des chiffres, division par 7) éliminent très vite les anagrammes."
+  ],
+  "622": [
+    "Seize moutons sont enfermés en groupes de 8, 3, 3 et 2. En ne déplaçant que des barrières internes sur les pointillés, on veut des groupes de 6, 6 et 4. Les solutions pour 2, 3, 4, 5, 6 puis 7 déplacements sont celles des figures officielles du corrigé.",
+    "Les moutons et le cadre extérieur restent immobiles. Seules quelques cloisons intérieures changent de segment en pointillés, de façon à recouper le carré autrement.",
+    "Avec deux mouvements seulement, il faut choisir les deux cloisons dont le basculement fusionne et sépare les bons effectifs. Chaque figure supplémentaire montre une autre économie, ou un autre luxe, de déplacements.",
+    "Ne redessinez pas d’autres clôtures que celles du corrigé officiel. Chaque vignette (2 à 7 déplacements) est la réponse demandée pour ce nombre de coups."
+  ],
+  "623": [
+    "Le fermier Longmore affirme qu’on peut partager ses moutons en deux parties différentes dont la différence égale la différence de leurs carrés. Il n’avait qu’un seul mouton.",
+    "Notez a > b les deux parties. L’égalité a − b = a² − b² se réécrit a − b = (a − b)(a + b). Comme les parties sont différentes, a − b ≠ 0, on peut diviser : a + b = 1.",
+    "Les seuls entiers positifs ou nuls de somme 1, avec a ≠ b, sont 1 et 0. Le fermier possède donc un mouton d’un côté, et rien de l’autre.",
+    "L’exemple 12 et 8 de l’énoncé sert de contre-modèle : la différence des carrés y est 80, pas 4. Seul le couple (1 ; 0) vérifie l’égalité. L’humour du « fermier mathématicien » est là."
+  ],
+  "624": [
+    "Un enclos de cinquante haies contient cent moutons. Pour en contenir le double, combien de haies de plus ? On n’en a besoin d’aucune : deux obstacles supplémentaires ne sont pas nécessaires.",
+    "La réponse trop vite acceptée imagine un rectangle 24 × 1, que l’on élargirait d’une unité en ajoutant une haie à chaque bout. Cela doublerait l’aire, mais l’énoncé n’impose ni cette forme, ni d’ajouter quoi que ce soit.",
+    "En réarrangeant les cinquante haies, on peut obtenir une aire bien plus que double, donc loger beaucoup plus de deux cents moutons. Si l’on veut exactement le double, on peut même construire l’enclos avec seulement vingt-huit haies et en garder vingt-deux.",
+    "Les figures officielles du corrigé (dispositions C, D, E) montrent ces reconstructions. À retenir : un périmètre fixé n’impose pas l’aire ; la forme compte davantage que le nombre de piquets."
+  ],
+  "625": [
+    "Trois moutons doivent occuper trois enclos distincts d’un pré 4 × 4, de sorte que chaque case soit occupée ou alignée, horizontalement, verticalement ou en diagonale, avec au moins un mouton. En ne comptant pas les retournements ni les réflexions, il y a 47 dispositions.",
+    "Le problème équivaut à placer trois dames qui contrôlent tout l’échiquier 4 × 4. On énumère les paires de cases pour les deux premiers moutons, puis les cases qui achèvent la couverture.",
+    "Le tableau officiel, avec le codage A à P des enclos, regroupe ces placements par paires et indique, pour chacune, les cases possibles du troisième mouton. La somme des multiplicités vaut 47.",
+    "Deux dessins qui se déduisent par un axe ou un quart de tour n’en font qu’un. C’est ce décompte par classes que demande Dudeney."
+  ],
+  "626": [
+    "Des voleurs prennent un tiers du troupeau plus un tiers de mouton, puis un quart du reste plus un quart, puis un cinquième du reste plus trois cinquièmes, et il reste 409 moutons. Le troupeau initial était de 1 025 têtes.",
+    "Après le premier vol, il reste les deux tiers moins un tiers de mouton. Après le deuxième, il reste la moitié moins un demi-mouton. Après le troisième, il reste 2M/5 − 1.",
+    "On pose 2M/5 − 1 = 409, donc 2M/5 = 410, et M = 1 025. Chaque prise « fraction plus fraction de mouton » tombe juste, sans découper d’animal.",
+    "Comme pour l’énigme d’Alcuin, remonter le temps (ajouter la fraction, puis multiplier) est souvent plus simple que d’écrire toute la chaîne d’un coup."
+  ],
+  "627": [
+    "Alfred doit recevoir 20 % de moutons de plus que John et 25 % de plus que Charles. John a 3 600 moutons. Charles en a 3 456.",
+    "Si A, J et C sont les parts, A = 1,2 × J et A = 1,25 × C. Donc 1,2 × 3 600 = 1,25 × C.",
+    "Le produit 1,2 × 3 600 = 4 320, puis C = 4 320 ÷ 1,25 = 3 456. Alfred a 4 320 moutons, John 3 600, Charles 3 456.",
+    "Vérifiez les pourcentages : 4 320 ÷ 3 600 = 1,2, et 4 320 ÷ 3 456 = 1,25. À retenir : « 20 % de plus » multiplie par 1,2, pas par 0,2."
+  ],
+  "628": [
+    "Treize allumettes formaient six enclos égaux ; une claie a été volée. Il faut encore six enclos de même taille avec les douze allumettes restantes, sans les casser. La disposition qui convient est celle de la figure officielle du corrigé.",
+    "Avec un grillage trop « carré », douze allumettes peinent à produire six cellules égales. Il faut changer de géométrie : les enclos n’ont plus besoin d’être des carrés isolés, pourvu qu’ils aient la même aire et que chaque allumette serve de côté.",
+    "Toutes les allumettes sont utilisées, bout à bout, sans morceau perdu. Le dessin officiel montre comment les douze tiges se referment en six régions égales.",
+    "N’inventez pas un autre plan que cette figure. C’est elle, et non un croquis improvisé, qui résout l’énigme de Dudeney."
+  ],
+  "629": [
+    "Arthur veut couper son enclos 8 m × 12 m en deux parties, l’une d’aire double de l’autre, chacune contenant un arbre, à l’aide de quatre barrières de 4 m et d’une de 6 m, collées aux piquets et parallèles aux bords. Il existe 10 possibilités.",
+    "L’aire totale est 96 m², donc les moutons ont 64 m² et les chèvres 32 m². Les barrières, de longueurs 4 ou 6, s’accrochent aux piquets déjà posés tous les mètres : leurs extrémités tombent sur le quadrillage.",
+    "On explore les tracés en escalier ou en U qui séparent les deux arbres et réalisent le rapport 2 pour 1. Certaines configurations sont des variantes évidentes, d’autres changent vraiment le corridor.",
+    "Les dix dessins sont ceux de la figure officielle du corrigé. Comptez-les sur cette planche, sans en ajouter d’imaginaires."
+  ],
+  "630": [
+    "L’agriculteur veut un nouvel enclos rectangulaire, d’aire double, dont les cinq arbres restent sur la clôture. Il existe trois tels rectangles, dessinés sur la figure officielle du corrigé.",
+    "Les cinq points doivent appartenir au bord du rectangle. Cela force les côtés à s’appuyer sur certains arbres : un arbre en coin, d’autres au milieu d’un côté.",
+    "L’aire nouvelle est le double de l’aire de l’enclos provisoire visible sur le dessin. Parmi les rectangles qui passent par les cinq points, trois seulement atteignent cette aire.",
+    "Reproduisez les trois contours officiels, et aucun autre. Le piège serait d’accepter un rectangle qui oublie un arbre, ou qui n’a pas le bon double d’aire."
+  ],
+  "631": [
+    "Pierre-Marie a 120 bêtes dont 60 % de moutons, René-Pierre 180 bêtes dont 40 % de moutons. Une fois les troupeaux réunis, la part de moutons est 48 %.",
+    "Pierre-Marie a 0,60 × 120 = 72 moutons. René-Pierre a 0,40 × 180 = 72 moutons également. Le hasard des pourcentages donne le même effectif.",
+    "Ensemble : 144 moutons sur 300 bêtes. Le quotient 144 ÷ 300 = 0,48, soit 48 %.",
+    "On n’additionne pas 60 % et 40 % pour faire 50 % : les totaux 120 et 180 n’ont pas le même poids. La moyenne correcte est pondérée, et elle tire ici vers 48 %."
+  ],
+  "632": [
+    "Chaque lettre est un chiffre distinct, et les mots donnés mélangent leurs chiffres. MOUTON s’écrit 580381.",
+    "MIDI : 2256 force I = 2 (chiffre répété). TOIT : 2338 force alors T = 3. M est la seule lettre commune à MATIN et MIDI, donc M = 5. O est la seule commune à TOIT et MON, donc O = 8.",
+    "MON : 158, avec M = 5 et O = 8, donne N = 1. NUIT : 0123, avec N, U, I, T déjà en partie connus, donne U = 0.",
+    "On assemble M, O, U, T, O, N : 5, 8, 0, 3, 8, 1. Chaque mot de l’énoncé, une fois réordonné, retrouve bien ses chiffres."
+  ],
+  "633": [
+    "Mia a le même nombre de pattes dans trois enclos, puis verse des fractions de moutons plus un appoint vers un quatrième. Ce quatrième a alors autant de pattes que chacun des trois au départ. Il contient 168 moutons.",
+    "Comme tous les moutons ont quatre pattes, « même nombre de pattes » signifie le même nombre M de moutons dans chaque enclos initial. Le quatrième reçoit M/3 + 21, plus M/4 + 14, plus M/7 + 11, et cette somme vaut M.",
+    "On a M − M/3 − M/4 − M/7 = 46. Le dénominateur commun 84 donne (84 − 28 − 21 − 12)M/84 = 46, soit 23M/84 = 46, donc M = 168.",
+    "Le quatrième enclos a donc 168 moutons, autant que chaque enclos au début. Les restes dans les trois premiers sont cohérents (entiers), ce qui confirme M."
+  ],
+  "634": [
+    "Un homme voudrait avoir autant de moutons que ceux qu’il voit, puis encore autant, puis la moitié de la moitié de ce double, puis la moitié de ce dernier nombre ; avec lui-même, cela ferait 100. Il a vu 36 moutons.",
+    "Si m est le nombre vu, le « deux fois autant » fait 2m. La moitié de la moitié de ce 2m est m/2. La moitié de ce dernier nombre est m/4. La somme 2m + m/2 + m/4, plus l’homme, égale 100.",
+    "On a 2m + 0,5m + 0,25m + 1 = 100, soit 2,75m = 99, ou 11m/4 = 99, donc m = 36. Alcuin détaillait : 36 + 36 = 72, la moitié de la moitié de 72 est 18, la moitié de 18 est 9, et 72 + 18 + 9 = 99, plus l’homme = 100.",
+    "Les deux lectures — « moitié de la moitié de ceux-ci » portant sur le double — s’accordent. C’est le texte d’Alcuin, Proposition 40."
+  ],
+  "635": [
+    "Malgré les nuages, on peut dire pour chaque mouton s’il est dans l’enclos ou hors de l’enclos. A est dehors ; B, C, E et F sont dedans ; D est dehors.",
+    "Le mouton A, en bas, est clairement à l’extérieur. Chaque fois que l’on saute la clôture, on change de côté : extérieur devient intérieur, et réciproquement.",
+    "De A à B, un seul saut : B est donc à l’intérieur. De A à C, trois sauts, nombre impair : C est intérieur. De A à D, quatre sauts, nombre pair : D est extérieur. De A à E, sept sauts : E interne. De A à F, cinq sauts : F interne.",
+    "C’est le principe de la courbe de Jordan : un lacet simple sépare le plan en deux, et la parité du nombre de franchissements dit de quel côté l’on est. Les nuages n’empêchent pas de compter les sauts."
+  ],
+  "636": [
+    "Quatre bergers comparent leurs troupeaux, et une répartition égale leur donnerait 11 moutons chacun. Alex en a 3.",
+    "Le total est 4 × 11 = 44. Drew a autant que les trois autres réunis, donc Drew en a 22, et les trois autres 22 aussi. Si Alex a A moutons, Billie en a A + 4 (car A + 3 = B − 1), et Charlie en a 3A + 3 (car C − 3 = 3A).",
+    "Alors A + (A + 4) + (3A + 3) = 22, soit 5A + 7 = 22, donc A = 3. Billie a 7 moutons, Charlie 12, Drew 22.",
+    "Vérifications : 3 + 3 = 6 et 7 − 1 = 6 ; 12 − 3 = 9 et 3 × 3 = 9 ; 3 + 7 + 12 = 22. Tout est dit."
+  ],
+  "637": [
+    "Hassan dit que, dans quatre ans, sa mule aura trois fois l’âge qu’elle avait il y a quatre ans. La mule a 8 ans.",
+    "Si a est l’âge actuel, on écrit a + 4 = 3(a − 4). On développe : a + 4 = 3a − 12. On rassemble : 16 = 2a, donc a = 8.",
+    "Vérification : il y a quatre ans, elle avait 4 ans ; dans quatre ans, elle en aura 12, et 12 = 3 × 4.",
+    "Le piège est de poser a + 4 = 3a − 4, en oubliant que « il y a quatre ans » se traduit par a − 4, qu’il faut encore multiplier par 3."
+  ],
+  "638": [
+    "La mule est brune, noire ou grise. Au moins un des trois garçons a raison, et au moins un a tort. La mule est grise.",
+    "Le premier parie qu’elle n’est pas noire. Le deuxième, qu’elle est brune ou grise — ce qui revient au même que « pas noire ». Le troisième parie qu’elle est brune.",
+    "Si elle était noire, les trois se tromperaient, ce qu’Hassan exclut. Si elle était brune, les trois auraient raison, ce qu’il exclut aussi. Il reste le gris : les deux premiers ont raison, le troisième a tort. C’est exactement « au moins un vrai, au moins un faux ».",
+    "À retenir : quand on dit qu’il y a à la fois du vrai et du faux, les colorations qui rendent tout vrai ou tout faux sont éliminées d’emblée."
+  ],
+  "639": [
+    "L’âne se plaint ; le mulet réplique : s’il prenait un sac à l’âne, il porterait deux fois plus que lui ; si l’âne prenait un sac au mulet, ils seraient à égalité. Le mulet porte 7 sacs, l’âne 5.",
+    "Notez m et a les charges. La seconde phrase est la plus simple : m − 1 = a + 1, donc m = a + 2. Le mulet a deux sacs de plus que l’âne.",
+    "La première phrase : m + 1 = 2(a − 1). On remplace m : a + 3 = 2a − 2, donc a = 5 et m = 7.",
+    "Vérifications : le mulet prend un sac, 8 contre 4, le double ; l’âne prend un sac, 6 contre 6, l’égalité. À retenir : traduisez chaque fiction (« si je prenais ») avant d’additionner."
+  ],
+  "640": [
+    "Le foin nourrit cheval et vache 12 mois, vache et mouton 15 mois, cheval et mouton 20 mois. Les trois animaux ensemble tiennent 10 mois.",
+    "Appelez c, v, m les consommations mensuelles, et x le stock. Alors c + v = x/12, v + m = x/15, c + m = x/20.",
+    "En additionnant les trois égalités, chaque bête est comptée deux fois : 2(c + v + m) = x(1/12 + 1/15 + 1/20). Le crochet vaut (5 + 4 + 3)/60 = 12/60 = 1/5. Donc 2(c + v + m) = x/5, et c + v + m = x/10.",
+    "Le stock x est donc épuisé en 10 mois par les trois. À retenir : sommer les paires fait apparaître le triple, compté deux fois — d’où le 10, inverse du cinquième puis divisé par 2."
+  ],
+  "641": [
+    "Douze numérotruches, numérotées de 1 à 5, se placent dans une grille 3 × 4 : deux identiques ne se touchent jamais, même en diagonale ; chaque ligne a quatre numéros différents, chaque colonne trois. La grille est : première ligne 1, 5, 2, 3 ; deuxième ligne 2, 3, 4, 1 ; troisième ligne 4, 1, 5, 2.",
+    "Douze cases et cinq numéros : certains apparaissent trois fois. À cause du contact diagonal interdit, seuls 1 et 2 peuvent être triplés. Il n’existe qu’une façon de poser trois 1 et trois 2 sans qu’ils se touchent.",
+    "Une fois ces six cases fixées, les deux 4 se placent sans choix, puis les 3 et les 5 complètent les lignes. La grille officielle est alors entièrement déterminée.",
+    "Vérifiez qu’aucun jumeau n’est voisin, y compris par un coin, et que chaque colonne montre trois valeurs distinctes. C’est un petit « sudoku de contact »."
+  ],
+  "642": [
+    "Sur le lac, 30 % des oiseaux étaient des oies, 25 % des cygnes, 10 % des mouettes, 35 % des canards. Parmi les oiseaux qui n’étaient pas des cygnes, la part d’oies était 40 %.",
+    "Les non-cygnes représentent 100 % − 25 % = 75 % de la population. Les oies en représentent 30 %.",
+    "La question est un pourcentage dans un sous-groupe : 30 ÷ 75 = 0,4, soit 40 %. Autrement dit, 30 oies pour 75 non-cygnes, si l’on imagine 100 oiseaux.",
+    "On ne répond pas 30 % : ce 30 % est pris sur tout le lac, pas sur les seuls non-cygnes. À retenir : « quel pourcentage de ceux qui n’étaient pas… » est un quotient de deux parts."
+  ],
+  "643": [
+    "Trois oies (cases 1, 2, 3) et trois renards (10, 11, 12) doivent échanger leurs places, en jouant à tour de rôle, sans jamais se retrouver à portée. Le minimum est 22 coups : 11 pour chaque camp.",
+    "Un renard et une oie « à portée » signifie qu’un segment du diagramme les relie. Chaque déplacement doit donc maintenir une zone tampon entre les deux espèces.",
+    "La suite officielle de 22 mouvements (10 vers 5, 1 vers 8, 11 vers 6, et ainsi de suite jusqu’à 5 vers 12) réalise l’échange. On ne connaît pas de solution plus courte qui respecte l’interdiction de contact.",
+    "Rejouez la liste du corrigé sur le graphe : à aucun moment un renard n’est voisin d’une oie, et les deux camps ont bien échangé leurs trois cases. Vingt-deux est le record."
+  ],
+  "644": [
+    "Le père oie a masqué les chiffres pairs d’une multiplication, la mère les chiffres impairs. Le produit retrouvé est 286 × 379 = 108 394.",
+    "Le premier chiffre du résultat, nécessairement 1, révèle où sont les impairs et donc les pairs. Le premier chiffre du second facteur, impair, ne peut être que 3. Le premier facteur, inférieur à 400, commence alors par 2.",
+    "Les lignes intermédiaires, paires en tête, commencent par 2. Les deux derniers chiffres du second facteur, impairs et distincts, sont 7 et 9. Le premier facteur, compatible avec des produits à quatre chiffres commençant par 2, vaut 286, et c’est le 7 qui occupe le milieu de 379.",
+    "On vérifie : 286 × 9 = 2 574, 286 × 7 = 2 002, 286 × 3 = 858, et l’assemblage donne 108 394. Chaque chiffre pair est bien du côté du père, chaque impair du côté de la mère."
+  ]
+}

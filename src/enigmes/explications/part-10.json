@@ -1,0 +1,521 @@
+{
+  "829": [
+    "On vous demande de remplir les cases vides d’un tableau d’animaux. Chaque case se lit d’après le nombre de ses côtés tracés en gras : un seul côté gras donne un cheval, deux un papillon, trois un pingouin, et les quatre une tortue.",
+    "Comptez donc, case par case, les segments épais du contour. Un trait gras partagé par deux cases compte pour chacune d’elles : il appartient au bord de l’une comme de l’autre. Ne vous fiez pas à la « forme » globale du dessin, seulement à ce décompte local.",
+    "Une fois la règle posée, le remplissage n’admet plus d’hésitation : deux cases qui ont le même nombre de côtés gras reçoivent le même animal. Vérifiez ensuite qu’aucune case n’a été oubliée, y compris celles du bord dont certains côtés sont déjà le cadre du tableau.",
+    "À retenir : ici le gras n’est pas un décor, c’est un code. Traduisez d’abord le code en nombres (1, 2, 3 ou 4), puis seulement en symboles."
+  ],
+  "830": [
+    "On vous demande la distance minimale que doit parcourir Grizou, la taupe située à 1 mètre de la pièce d’or, pour rejoindre Olive, située à 3 mètres de cette pièce. La réponse est 0 mètre, soit le choix E.",
+    "La question porte sur le rendez-vous des deux taupes, pas sur la pièce. Grizou peut rester sur place : Olive, qui n’est pas plus contrainte, peut venir jusqu’à elle. Dans ce cas Grizou ne fait aucun mètre, et c’est bien un minimum, car une distance ne saurait être négative.",
+    "Les options 4 m, 3 m, 2 m ou 1 m correspondent à des lectures trop rapides : additionner les distances à la pièce, ou croire que Grizou doit aller jusqu’à Olive, ou jusqu’à l’or. Rien dans l’énoncé n’oblige Grizou à bouger.",
+    "À retenir : avant de calculer, relisez la question mot à mot. Un objet mentionné (ici la pièce d’or) peut n’être qu’un décor. Le rendez-vous le plus économe pour Grizou est de ne pas bouger."
+  ],
+  "831": [
+    "On vous demande combien de têtards se trouvent sur un tourniquet de circonférence 4,80 m, espacés de 40 cm ou de 60 cm, sans qu’aucun ne soit diamétralement opposé à un autre. Il y a deux réponses possibles : 9 têtards, ou 11 têtards.",
+    "Passez en centimètres : la circonférence vaut 480 cm. Si n désigne le nombre d’arcs de 40 cm et p le nombre d’arcs de 60 cm, on a 40n + 60p = 480, soit 2n + 3p = 24, avec n + p têtards au total (autant d’arcs que de têtards).",
+    "Les couples d’entiers positifs ou nuls (n, p) qui conviennent sont (12, 0), (9, 2), (6, 4), (3, 6) et (0, 8), donc 12, 11, 10, 9 ou 8 têtards. Reste à écarter les dispositions où deux têtards seraient à 240 cm l’un de l’autre, c’est-à-dire diamétralement opposés.",
+    "Les configurations toutes en 40 cm, toutes en 60 cm, et le mélange 6 + 4, permettent un tel alignement. Il reste les deux mélanges 9 arcs de 40 cm avec 2 arcs de 60 cm (11 têtards) et 3 arcs de 40 cm avec 6 arcs de 60 cm (9 têtards).",
+    "À retenir : sur un cercle, compter les longueurs ne suffit pas. Il faut encore interdire le diamètre, c’est-à-dire la demi-circonférence."
+  ],
+  "832": [
+    "On vous demande de résoudre deux cryptarithmes indépendants, chaque lettre représentant un chiffre distinct à l’intérieur de chaque opération, sans zéro en tête. La première addition unique est 96 351 + 867 221 = 963 572 (TIGRE + LIONNE = TIGRON). La seconde est 496 127 + 12 496 = 508 623 (CHEVAL + VACHE = OISEAU).",
+    "Pour TIGRE + LIONNE, alignez les colonnes à droite. La somme de deux E donne N, donc N est pair. La retenue de gauche force T = 9 et L = 8. En testant les valeurs paires restantes de N, un seul système tient : E = 1, N = 2, I = 6, G = 3, R = 5, O = 7.",
+    "Vérifiez : 96 351 + 867 221 = 963 572, et les lettres T, I, G, R, E, L, O, N sont bien toutes distinctes. Les autres couples (N, E) produisent une collision de lettres ou un zéro interdit.",
+    "Le second cryptogramme se traite à part, avec son propre alphabet. En colonnes, la retenue sur les dizaines impose H = 9. On obtient alors C = 4, E = 6, V = 1, A = 2, L = 7, O = 5, I = 0, S = 8, U = 3, ce qui donne 496 127 + 12 496 = 508 623.",
+    "À retenir : « chacune des deux opérations » signifie deux alphabets séparés. Ne mélangez pas les chiffres de TIGRE avec ceux de CHEVAL."
+  ],
+  "833": [
+    "On vous demande si le tigre surprendra le buffle endormi, et en combien de minutes il parviendra à 2,25 m de lui. Il lui faudra 91 minutes, soit 1 h 31 min : le buffle se réveille au bout de 1 h 30 min, donc le tigre arrive une minute trop tard.",
+    "Le tigre est à 25 m et n’attaque qu’à 2,25 m. Il lui reste donc 22,75 m à parcourir au rampement, c’est-à-dire 2 275 cm. À 25 cm par minute, le temps est 2 275 ÷ 25 = 91 minutes.",
+    "La sieste dure 90 minutes. Comparer 91 et 90 suffit : le tigre n’est pas encore à distance de saut lorsque le buffle se lève. Inutile d’imaginer une accélération que l’énoncé ne donne pas.",
+    "À retenir : convertissez tout dans la même unité (ici le centimètre et la minute) avant de diviser. La question « surprendra-t-il ? » se tranche par une simple comparaison de deux durées."
+  ],
+  "834": [
+    "On vous demande de découper la tête de tigre en deux morceaux d’un seul tenant, superposables par translation, rotation ou retournement, en ne suivant que les côtés de la grille ou les diagonales à 45°. La solution unique demandée est celle du corrigé officiel : tenez-vous-en à la figure du recueil, sans en inventer une autre.",
+    "Travaillez sur le quadrillage. Chaque petit carré (ou chaque triangle rectangle isocèle obtenu par une diagonale à 45°) doit aller tout entier à l’un ou l’autre morceau. Les deux pièces doivent avoir la même aire, donc le même nombre de ces petites cellules.",
+    "Le « d’un seul tenant » interdit qu’un morceau se casse en îlots. Le retournement recto verso est autorisé : si une pièce ne se pose pas à plat sur l’autre par simple rotation, essayez de la retourner comme une crêpe.",
+    "À retenir : ne tracez pas de coupures obliques autres que 45°, et comparez votre découpe à la figure officielle plutôt que de proposer un partage « qui se ressemble »."
+  ],
+  "835": [
+    "On vous demande l’ordre des quatre tortues dans la course. De la première à la dernière : bleue, rouge, jaune, orange.",
+    "L’orange est dernière, et la bleue est devant l’orange : cela ne fixe pas encore la place exacte de la bleue, mais cela écarte l’orange de toute autre position que la quatrième.",
+    "La rouge est juste derrière la bleue, et la jaune court derrière la rouge. On obtient donc le train bleu–rouge–jaune, qui se place nécessairement devant l’orange déjà dernière. Il ne reste aucune permutation possible.",
+    "À retenir : traduisez d’abord les phrases absolues (« est la dernière »), puis les phrases relatives (« juste derrière »). Le podium se reconstruit alors sans essai-erreur."
+  ],
+  "836": [
+    "On vous demande la somme commune des quatre groupes de trois tortues numérotées de 12 à 20. Cette somme vaut 48.",
+    "Les neuf nombres de 12 à 20 totalisent 12 + 13 + … + 20. C’est 9 × 16 = 144, car 16 est le terme du milieu. Les trois attelages « angulaires » utilisent chacun les neuf tortues exactement une fois : chacun a donc pour somme 144 ÷ 3 = 48.",
+    "Le quatrième groupe, vertical, doit lui aussi faire 48, ce qui devient une contrainte de placement et non une nouvelle somme. Une disposition possible est, par exemple, 19, 12, 17 sur une ligne d’angle, puis 18, 16, 14 et 20, 15, 13, en arrangeant le triple vertical pour retrouver 48.",
+    "À retenir : quand plusieurs groupes recouvrent exactement tout le monde une fois, la somme commune est le total divisé par le nombre de ces groupes. Inutile de chercher 48 par tâtonnement d’abord."
+  ],
+  "837": [
+    "On vous demande un chemin de la tortue qui visite toutes les cases d’un carré 4 × 4, en alternant un pas orthogonal (horizontal ou vertical) et un pas diagonal, à partir des quatre premiers pas déjà donnés. Un parcours possible, lu de la case 16 vers la case 1, est : 16, 15, 12, 11, 14, 13, 10, 9, 5, 7, 8, 2, 6, 4, 3, 1.",
+    "Les quatre premiers numéros imposent le rythme : après la case 4, le prochain pas est du type opposé au précédent. Notez sur un brouillon, pour chaque case, la parité du numéro : les pas impairs et les pas pairs n’ont pas les mêmes voisins autorisés.",
+    "Ne cherchez pas un « plus court » chemin : il s’agit d’un parcours hamiltonien sous contrainte. Si vous bloquez une case, reculez d’un ou deux coups plutôt que de casser l’alternance : un pas orthogonal suivi d’un autre pas orthogonal est interdit.",
+    "À retenir : l’alternance est plus forte que l’intuition du « voisin le plus proche ». Gardez la liste des cases encore libres et n’avancez que vers une case du bon type géométrique."
+  ],
+  "838": [
+    "On vous demande le jour et l’heure d’arrivée de Joséphine, partie le 30 décembre 2009 à 22 h 50, après un voyage de 2 010 minutes. Elle arrive le 1er janvier 2010 à 8 h 20.",
+    "Convertissez d’abord les minutes : 2 010 = 33 × 60 + 30, donc 33 h 30 min. Or 33 h 30 min = 1 jour et 9 h 30 min.",
+    "Ajoutez 1 jour au 30 décembre : vous obtenez le 31 décembre à 22 h 50, puis encore 9 h 30 min. De 22 h 50, 1 h 10 min suffisent pour atteindre minuit, donc le 1er janvier 0 h 00 ; il reste 9 h 30 min − 1 h 10 min = 8 h 20 min.",
+    "À retenir : un ajout d’heures traverse souvent minuit et parfois le changement d’année. Traitez d’abord le nombre de jours entiers, puis l’heure, plutôt que d’additionner 2 010 minutes d’un seul bloc sur une pendule."
+  ],
+  "839": [
+    "On vous demande qui, de Lento (grand cercle) ou de Lambino (tous les petits cercles une fois chacun), gagne la course à vitesse égale. Personne : les deux tortues parcourent la même distance et arrivent ensemble.",
+    "Appelez 2R le diamètre du grand cercle. Son périmètre est 2πR. Les petits cercles ont leurs centres sur ce diamètre et se suivent sans chevauchement : s’il y en a trois, chacun a pour diamètre 2R/3, donc pour périmètre 2πR/3, et les trois périmètres additionnés redonnent 2πR.",
+    "Le dessin avec trois petits cercles n’est qu’un cas ; le même argument vaut dès que les petits diamètres remplissent le grand diamètre. La constante π se factorise et disparaît de la comparaison : seules les sommes de diamètres comptent.",
+    "À retenir : à vitesse égale, comparer des tours de cercles revient à comparer des diamètres. Ici les diamètres s’ajoutent exactement jusqu’au grand diamètre, donc les longueurs sont égales."
+  ],
+  "840": [
+    "On vous demande le nombre de chemins de M vers N, sans reculer ni se déplacer verticalement, en passant par les centres des cases. Il y a 20 chemins différents.",
+    "Placez un 1 sur la case M : il n’y a qu’une façon d’« y être ». Puis, pour chaque case suivante, additionnez les nombres écrits sur les cases d’où l’on peut arriver, c’est-à-dire les voisines autorisées (pas en arrière, pas en vertical).",
+    "Cette addition de proche en proche est le principe des chemins sur un graphe sans circuit. Sur la grille de l’énoncé, le total qui arrive en N vaut 20. Un chemin déjà dessiné dans l’énoncé n’est qu’un exemple, pas le décompte.",
+    "À retenir : ne listez pas les 20 trajets un par un si la grille s’y prête. Le marquage additif des cases évite les oublis et les doubles comptes."
+  ],
+  "841": [
+    "On vous demande l’aire du bassin en forme de lune, dont le diamètre [AB] mesure 5 m. Cette aire vaut 6,25 m².",
+    "Le demi-disque de diamètre [AB] a pour rayon 2,5 m, donc pour aire 25π/8. L’autre bord est un arc tangent en A et en B aux côtés [AC] et [BC]. Son centre D forme avec A, C et B un carré : le rayon [AD] vaut 5/√2.",
+    "La portion claire à retrancher du demi-disque est la différence entre un quart de disque de rayon [AD] et le triangle (ou le secteur) correspondant du carré. Les termes en π s’annulent : il reste l’aire 25/4, c’est-à-dire 6,25 m².",
+    "Le résultat, étonnamment sans π, est typique des lunules. Vérifiez l’unité : 6,25 m², et non 6,25 m. À retenir : quand deux arcs « se compensent », calculez d’abord les aires de disques, puis soustrayez ; le π peut disparaître en cours de route."
+  ],
+  "842": [
+    "On vous demande dans combien de mois on fêtera les 100 ans de l’arrière-grand-mère. La réponse est 8 mois.",
+    "Elle a reçu la tortue le jour de ses 3 ans, à la naissance de l’animal. Quand la tortue meurt, à 93 ans et 7 mois, l’arrière-grand-mère a donc 96 ans et 7 mois.",
+    "Cette mort date d’il y a 2 ans et 9 mois. Aujourd’hui l’arrière-grand-mère a 96 ans 7 mois + 2 ans 9 mois = 99 ans et 4 mois. Il lui manque 8 mois pour atteindre 100 ans.",
+    "Attention aux reports : 7 mois + 9 mois = 16 mois = 1 an et 4 mois, d’où les 99 ans et 4 mois. À retenir : alignez les trois horloges (âge de la tortue, décalage de 3 ans, recul de 2 ans 9 mois) avant de conclure."
+  ],
+  "843": [
+    "On vous demande combien de voyages du robinet vers le réservoir Daniel doit faire, sachant qu’il renverse la moitié de chaque seau et que le réservoir vaut quatre seaux pleins. Il doit faire 8 voyages, soit le choix E.",
+    "À chaque trajet, seule une demi-seau arrive. Deux voyages sont donc nécessaires pour apporter l’équivalent d’un seau plein. Pour quatre seaux pleins, il faut 2 × 4 = 8 voyages.",
+    "Les choix 4 ou 2 reviendraient à oublier le renversement, ou à croire que le réservoir se compte en voyages bruts. 6 et 7 ne correspondent à aucun partage exact par moitiés.",
+    "À retenir : si une moitié se perd à chaque fois, le rendement est 1/2, et le nombre de voyages est le double du nombre de seaux utiles."
+  ],
+  "844": [
+    "On vous demande combien de tortues se reposent dans l’île au contour découpé. Il y en a 6, soit le choix B.",
+    "Le piège est le rivage sinueux : une tortue peut sembler « dans » l’île alors qu’elle nage dans un golfe, ou l’inverse. Coloriez d’abord la région fermée qui représente la terre, d’un seul tenant, avant de compter.",
+    "Une fois l’île coloriée, le dénombrement est immédiat : 6 tortues sont sur la terre, les autres (4) sont dans la mer. Ne comptez pas une tortue à cheval sur le trait : l’énoncé sépare nettement mer et île.",
+    "À retenir : sur une carte à fjords, colorier la région précède le compte. L’œil seul se trompe souvent d’une ou deux unités."
+  ],
+  "845": [
+    "On vous demande le temps que mettra la tortue à rattraper l’escargot, qui a une heure d’avance et va quatre fois moins vite. La tortue le rattrape en 20 minutes.",
+    "L’escargot avance à 1 cm/s, la tortue à 4 cm/s. En une heure d’avance, l’escargot a déjà parcouru 3 600 cm. L’écart de vitesse est 3 cm/s, donc le temps de rattrapage est 3 600 ÷ 3 = 1 200 s, soit 20 minutes.",
+    "Vous pouvez aussi poser x la distance parcourue par la tortue jusqu’à la rencontre : x/4 = x/1 − 3 600, ce qui redonne x = 4 800 cm et le même temps 4 800 ÷ 4 = 1 200 s.",
+    "À retenir : le rattrapage est distance d’avance divisée par l’écart des vitesses. L’heure d’avance se convertit d’abord dans l’unité de la vitesse (ici la seconde)."
+  ],
+  "846": [
+    "On vous demande ce que mange la tortue de Zoé chaque jour, pour un total hebdomadaire de 54 g. Elle mange 6 g le lundi, le mercredi et le vendredi, 12 g le mardi, le jeudi et le samedi, et rien le dimanche.",
+    "Appelez u la ration des jours « simples ». Les trois jours doubles valent 2u chacun, et le dimanche vaut 0. Sur la semaine on a 3u + 3 × 2u = 9u = 54 g, donc u = 6 g.",
+    "Les jours doubles reçoivent alors 12 g. Vérifiez la somme : 6 + 12 + 6 + 12 + 6 + 12 + 0 = 54 g. Le piège serait de croire que « le double » s’applique au total déjà mangé, ou d’oublier le dimanche à zéro.",
+    "À retenir : traduisez la semaine en un nombre de parts égales avant de diviser 54. Ici il y a neuf parts, pas sept jours « moyens »."
+  ],
+  "847": [
+    "On vous demande qui démarre le plus vite, puis qui passe en tête sous chaque banderole, à la seconde près. La tortue démarre plus vite. Sous la première banderole (3 km), le lièvre est en tête à 19 h 2 min 50 s. Sous la deuxième, la tortue est en tête à 20 h 56 min 53 s.",
+    "Les formules de l’énoncé sont des exponentielles du type (t + 1) puissance et t puissance. Pour comparer les départs, on dérive et l’on regarde t proche de 0 : la dérivée du lièvre tend vers 0, celle de la tortue vers 1. La tortue a donc une vraie vitesse initiale, le lièvre non.",
+    "Les deux fonctions sont ensuite strictement croissantes. On cherche, par essais sur le temps en secondes, le premier instant où chaque distance atteint 3 000 m. On trouve 68 570 s pour le lièvre (19 h 2 min 50 s) et 68 582 s pour la tortue : 12 secondes d’écart en faveur du lièvre.",
+    "Pour la seconde banderole, le même balayage numérique donne 75 413 s pour la tortue (20 h 56 min 53 s) et 75 455 s pour le lièvre (20 h 57 min 35 s). La tortue a alors 42 secondes d’avance. À retenir : ici l’analyse (signe des dérivées) tranche le départ, et le chronométrage à la seconde exige le calcul numérique, pas une résolution à la main."
+  ],
+  "848": [
+    "On vous demande qui est arrivé dernier parmi la tortue, le lièvre, le chien et le chat. C’est le chien.",
+    "La tortue précède le lièvre, et le lièvre précède le chien : on a déjà tortue, puis lièvre, puis chien. Le chien est donc le plus lent de ces trois-là.",
+    "Le chien arrive aussi après le chat. Il est donc derrière la tortue, derrière le lièvre et derrière le chat : personne n’est mentionné derrière lui. Il est dernier.",
+    "À retenir : une chaîne d’« avant » se transmet (si A avant B et B avant C, alors A avant C). Il n’est pas nécessaire de classer le chat par rapport à la tortue pour désigner le dernier."
+  ],
+  "849": [
+    "On vous demande le diamètre du lac circulaire. Il mesure 1 000 mètres.",
+    "La truite part du rivage, traverse 600 m vers le nord jusqu’à l’autre rive, puis 800 m vers l’est jusqu’au rivage encore. Ces deux segments sont perpendiculaires et ont leurs extrémités sur le cercle.",
+    "Un triangle rectangle inscrit dans un cercle a son hypoténuse pour diamètre (un angle droit « voit » un diamètre). L’hypoténuse vaut donc √(600² + 800²) = √(360 000 + 640 000) = √1 000 000 = 1 000 m.",
+    "Le triangle 600-800-1 000 est le triple du triangle 3-4-5, ce qui évite même le calcul des carrés si vous le reconnaissez. À retenir : deux cordes perpendiculaires aboutissant au cercle désignent un diamètre, pas un simple rayon."
+  ],
+  "850": [
+    "On vous demande comment les trois pêcheurs se partagent les 30 florins versés par les trois invités. Celui qui avait six truites reçoit 20 florins, celui qui en avait quatre reçoit 10 florins, et celui qui en avait deux ne reçoit rien.",
+    "Ils sont six à table et il y a 6 + 4 + 2 = 12 truites, donc deux truites par personne. Chaque pêcheur en mange deux, comme chaque invité.",
+    "Le premier cède 4 truites, le deuxième 2, le troisième 0. Les 30 florins paient ces 6 truites cédées, soit 5 florins par truite. D’où 4 × 5 = 20 florins, 2 × 5 = 10 florins, et 0.",
+    "Le piège classique est de partager 30 florins en trois parts égales. Ce serait injuste : on n’indemnise que le poisson réellement offert. À retenir : payez ce qui sort de l’assiette de chacun, pas le titre de « pêcheur »."
+  ],
+  "851": [
+    "On vous demande la prise de chacun. Ahmed a pêché 14 truites, Bilel 21, et Catherine 42.",
+    "Notez t le nombre d’Ahmed. Bilel en a t + 7. Catherine a le double de Bilel, donc 2(t + 7), et aussi le triple d’Ahmed, donc 3t. L’égalité 2(t + 7) = 3t donne 2t + 14 = 3t, puis t = 14.",
+    "On en déduit Bilel = 21 et Catherine = 42. Vérifiez les trois phrases : 21 = 14 + 7, 42 = 2 × 21, et 42 = 3 × 14.",
+    "À retenir : une même quantité (ici Catherine) exprimée de deux façons fournit l’équation. Un dessin en barres, 2 paquets « Bilel » contre 3 paquets « Ahmed », conduit au même 14."
+  ],
+  "852": [
+    "On vous demande de compléter le tableau des prises, qui se comporte comme un carré magique 3 × 3. Le 7 juillet : 51, 44 et 37 truites. Le 8 juillet : 39, 47 et 46 truites.",
+    "La première ligne connue, 42 + 41 + 49, vaut 132. Toutes les lignes, colonnes et diagonales font 132. La case centrale d’un carré magique 3 × 3 est le tiers de cette somme constante, donc 132 ÷ 3 = 44 : c’est la case de midi du 7 juillet.",
+    "La première colonne : 42 + ? + ? = 132. La diagonale 42, 44, dernière case du 8 juillet au soir, donne cette dernière case égale à 132 − 42 − 44 = 46. On achève ensuite chaque ligne et chaque colonne par une soustraction.",
+    "On obtient le 7 juillet : 51 le matin, 44 l’après-midi, 37 le soir ; le 8 juillet : 39, 47 et 46. À retenir : dans un 3 × 3 magique, le centre est toujours le tiers de la somme constante."
+  ],
+  "853": [
+    "On vous demande dans quel bassin l’employé a le plus de chances de pêcher une truite blanche du premier coup. Il doit choisir le bassin A.",
+    "Dans A, il y a 60 blanches sur 60 + 100 = 160 truites, soit 60/160 = 3/8 = 0,375. Dans B, il y a 80 blanches sur 80 + 140 = 220 truites, soit 80/220 = 4/11 ≈ 0,364.",
+    "Comparer 0,375 et 0,364 suffit : A est légèrement plus favorable. Vous pouvez aussi comparer les produits croisés 60 × 220 = 13 200 et 80 × 160 = 12 800, sans passer par les décimaux : le premier produit plus grand signifie que A a la plus grande proportion.",
+    "Le piège serait de choisir B parce qu’il contient davantage de blanches en nombre brut (80 contre 60). La chance du premier coup est une proportion, pas un effectif. À retenir : plus de poissons désirés ne signifie pas une meilleure probabilité s’il y a aussi beaucoup plus d’autres poissons."
+  ],
+  "854": [
+    "On vous demande le poids du poisson dont la queue pèse 9 onces, la tête autant que la queue plus la moitié du corps, et le corps autant que la tête et la queue ensemble. Le poisson pèse 72 onces : 9 onces de queue, 27 de tête et 36 de corps.",
+    "Notez q = 9, t la tête et c le corps. On a t = q + c/2 et c = t + q. Remplacez t dans la seconde : c = (q + c/2) + q = 2q + c/2. Donc c/2 = 2q = 18, et c = 36.",
+    "Alors t = 9 + 36/2 = 9 + 18 = 27. Le total est 9 + 27 + 36 = 72. Vérifiez la phrase sur le corps : 36 = 27 + 9, c’est exact.",
+    "À retenir : posez trois lettres, écrivez les deux relations, et éliminez-en une. Commencer par « le corps égale tête + queue » raccourcit souvent ce type d’énigme de poids."
+  ],
+  "855": [
+    "On vous demande de placer les nombres d’œufs dans les neuf nids, en carré 3 × 3, de sorte que les huit alignements (lignes, colonnes, deux diagonales) aient des sommes toutes différentes et consécutives de 3 à 10. Une solution, aux rotations et symétries près, est la grille : 1, 1, 1 à la première ligne ; 1, 2, 4 à la deuxième ; 3, 1, 5 à la troisième.",
+    "Ces trois lignes valent 3, 7 et 9. Les colonnes valent 5, 4 et 10. Les diagonales valent 8 et 6. On retrouve exactement {3, 4, 5, 6, 7, 8, 9, 10}.",
+    "Les œufs utilisés sont cinq fois 1, puis 2, 3, 4 et 5. Ce n’est pas un carré magique (les sommes sont volontairement inégales) mais un carré « anti-magique » à sommes consécutives, avec répétition du 1 pour rester sur de petits entiers.",
+    "À retenir : visez d’abord la plus petite somme 3, qui force une ligne de trois 1, puis placez 5 et 4 aux coins opposés pour produire 10 et les totaux intermédiaires. Les retournements de la même grille restent valides."
+  ],
+  "856": [
+    "On vous demande le nombre de bœufs dans le troupeau de 85 têtes. Il y a 13 bœufs.",
+    "Monsieur Anatole fabrique 6 720 fromages par semaine, donc 6 720 ÷ 7 = 960 fromages par jour. À 1,5 litre par fromage, il faut 960 × 1,5 = 1 440 litres de lait chaque jour.",
+    "Chaque vache donne 20 litres : il faut 1 440 ÷ 20 = 72 vaches. Les bœufs, qui ne donnent pas de lait, sont les têtes restantes : 85 − 72 = 13.",
+    "À retenir : descendez l’échelle fromages → litres → vaches, puis seulement la différence avec le troupeau. N’appliquez pas les 20 litres aux 85 têtes, car les bœufs n’en fournissent pas."
+  ],
+  "857": [
+    "On vous demande combien de temps le fermier pourra nourrir son troupeau après avoir acheté deux vaches. Il pourra le nourrir 45 jours.",
+    "Six vaches pendant 60 jours, c’est 6 × 60 = 360 rations. Avec deux vaches de plus, le troupeau passe à 8. La durée devient 360 ÷ 8 = 45 jours.",
+    "On peut aussi raisonner en « vaches-jours » : la provision est inchangée, seul le débit quotidien augmente, dans le rapport 8/6 = 4/3. Alors 60 × 6/8 = 45.",
+    "À retenir : stock = effectif × durée. Si l’effectif change et le stock non, la nouvelle durée est l’ancienne multipliée par l’ancien effectif sur le nouveau."
+  ],
+  "858": [
+    "On vous demande la taille du troupeau et le nombre de jours où Mélody a aimé la musique. Il y a 13 vaches, et Mélody a donné du lait 4 jours.",
+    "Une vache « ordinaire » donne 10 litres par jour, soit 70 litres sur 7 jours. Mélody donne 10 litres seulement les jours qui lui plaisent, donc un multiple de 10 strictement inférieur à 70, et le total de la semaine est 880 litres.",
+    "Si v est le nombre de vaches ordinaires, 70v + 10d = 880, avec d entre 0 et 7. Donc 7v + d = 88. Comme d ≤ 7, 7v est voisin de 88 : v = 12 donne d = 88 − 84 = 4, qui convient. Le troupeau compte 12 + Mélody = 13 vaches.",
+    "À retenir : séparez le multiple régulier (70 litres) du reste dû à Mélody. La division euclidienne 880 = 70 × 12 + 40 livre à la fois le nombre de vaches ordinaires et les 4 jours de musique."
+  ],
+  "859": [
+    "On vous demande le nombre de vaches au départ. Le troupeau en comptait 16.",
+    "La dépense totale est le plus petit commun multiple de 1, 2, …, 10. Comme 8 = 2³, 9 = 3² et 7 est premier, ce PPCM vaut 2³ × 3² × 5 × 7 = 2 520 francs.",
+    "Le n-ième jour, s’il reste k vaches, la dépense du jour est 15k + 30. Sur n jours, k descend de n à 1, donc le total est 15(1 + 2 + … + n) + 30n = 15n(n + 1)/2 + 30n. On égalise à 2 520.",
+    "L’équation devient n² + 5n − 336 = 0. Le discriminant 25 + 1 344 = 1 369 = 37², et la racine positive est (−5 + 37)/2 = 16. À retenir : le PPCM fixe la caisse, la somme des entiers 1 + … + n fixe le foin, et une petite équation du second degré livre n."
+  ],
+  "860": [
+    "On vous demande combien de jours durera le fourrage si l’on retire 6 des 14 vaches. Il durera 28 jours.",
+    "La mangeoire contient 14 × 16 = 224 rations. Après le retrait, il reste 8 vaches, donc 224 ÷ 8 = 28 jours.",
+    "Le rapport des effectifs est 14/8 = 7/4. La durée est multipliée par 7/4 : 16 × 7/4 = 28. Même résultat, sans écrire 224.",
+    "À retenir : moins de bouches allongent le stock dans la proportion inverse. Ici retirer 6 vaches n’est pas « enlever 6 jours », c’est changer le diviseur."
+  ],
+  "861": [
+    "On vous demande le nombre minimal de vaches qui ont à la fois vêlé, des cornes, une cloche et le pelage blanc. Ce minimum est 55.",
+    "Parmi 100 vaches, 7 n’ont pas vêlé, 16 n’ont pas de cornes, 4 n’ont pas de cloche, 18 n’ont pas le pelage blanc. Ces « défauts » totalisent 7 + 16 + 4 + 18 = 45.",
+    "Pour minimiser les vaches qui ont les quatre qualités, on maximise celles qui en manquent au moins une. Le pire cas, sans double compte, est que les 45 défauts portent sur 45 vaches distinctes. Il en reste alors 100 − 45 = 55 qui n’ont aucun défaut.",
+    "On ne peut pas descendre plus bas : s’il y avait un 46e défaut, il devrait doubler une vache déjà défectueuse, ce qui augmenterait le nombre de vaches « parfaites ». À retenir : minimum de l’intersection = total − somme des complémentaires, dès que cette somme ne dépasse pas le total."
+  ],
+  "862": [
+    "On vous demande l’aire de pâturage restante dans le pentagone VACHE une fois la mare triangulaire MEU retirée. Il reste 24 800 m².",
+    "Chaque carreau a 20 m de côté, donc 400 m² d’aire. Le théorème de Pick donne l’aire d’un polygone dessiné sur un quadrillage : i + b/2 − 1, où i est le nombre de points intérieurs et b le nombre de points du bord. Pour VACHE, on compte i = 64 et b = 11, d’où 68,5 carreaux, soit 68,5 × 400 = 27 400 m².",
+    "Pour le triangle MEU, on peut retrancher du rectangle 3 × 5 les trois coins droits : il reste 6,5 carreaux, soit 2 600 m². (Pick redonne le même 6,5.) L’herbe accessible est 27 400 − 2 600 = 24 800 m².",
+    "À retenir : sur un géoplan, Pick évite de découper le pentagone en triangles hasardeux. Convertissez à la fin seulement, en multipliant le nombre de carreaux par 20² = 400."
+  ],
+  "863": [
+    "On vous demande la longueur du tunnel. Elle vaut 250 m.",
+    "La vache est à 5 m du milieu du tunnel. Pour qu’elle ressorte « au même moment que le train » quelle que soit sa direction, elle se trouve forcément dans la moitié proche de l’entrée où le train arrive : sinon l’une des deux fuites serait trop longue.",
+    "Notez 2ℓ la longueur du tunnel, v la vitesse de la vache et V celle du train. Fuir vers l’entrée : (ℓ − 5)/v = 3 000/V. Fuir vers la sortie opposée : (ℓ + 5)/v = (3 000 + 2ℓ)/V. En divisant membre à membre, les vitesses s’en vont : (ℓ − 5)/(ℓ + 5) = 3 000/(3 000 + 2ℓ).",
+    "On obtient ℓ(ℓ − 5) = 15 000, donc ℓ = 125 (la racine utile, plus grande que 5). Le tunnel mesure 2ℓ = 250 m. À retenir : deux fuites, deux temps égaux à ceux du train, un quotient qui élimine les vitesses inconnues."
+  ],
+  "864": [
+    "On vous demande le couple vache–cheval de chacune. Karmen a Caillette et Frileux ; Justine a Rougette et Siffleux ; Luigi a Bleuette et Merveilleux.",
+    "Ni Luigi ni Justine n’ont Caillette, donc Caillette est à Karmen. Qui a Frileux a aussi Caillette : le cheval de Karmen est Frileux.",
+    "Le cheval de Luigi n’est pas Siffleux ; Frileux est déjà pris : il lui reste Merveilleux. Justine a donc Siffleux. Qui a Merveilleux a Bleuette : la vache de Luigi est Bleuette, et il reste Rougette pour Justine.",
+    "À retenir : commencez par l’attribution forcée (la seule personne encore possible pour Caillette), puis enchaînez les paires « tel cheval va avec telle vache ». Un tableau à double entrée évite de perdre une exclusion."
+  ],
+  "865": [
+    "On vous demande quelle robe donne le plus de lait. Ce sont les vaches brunes.",
+    "Quatre noires et trois brunes en cinq jours égalent trois noires et cinq brunes en quatre jours. Mettez tout en « vaches-jours » : 5 × 4 = 20 noires-jours et 5 × 3 = 15 brunes-jours d’un côté ; 4 × 3 = 12 noires-jours et 4 × 5 = 20 brunes-jours de l’autre.",
+    "Les deux productions sont égales, donc 20 N + 15 B = 12 N + 20 B, soit 8 N = 5 B. Cinq brunes produisent autant que huit noires : une brune produit plus qu’une noire (dans le rapport 8/5).",
+    "À retenir : égalisez d’abord les durées en passant aux vaches-jours, puis comparez les coefficients. Le signe de B − N se lit sur 8 N = 5 B sans calculer les litres."
+  ],
+  "866": [
+    "On vous demande le maximum de vaches que le cowboy peut compter avec quatre clous de quatre boules. Il peut aller jusqu’à 624.",
+    "Chaque clou offre cinq états : 0, 1, 2, 3 ou 4 boules. Quatre clous, c’est un compteur en base 5. Les poids sont 1, 5, 25 et 125.",
+    "Le plus grand nombre s’écrit 4 × 1 + 4 × 5 + 4 × 25 + 4 × 125 = 4 × (1 + 5 + 25 + 125) = 4 × 156 = 624. C’est aussi 5⁴ − 1, comme 9999 en base 10.",
+    "Compter en base 10 avec seulement 4 boules par tige plafonnerait bien plus bas. À retenir : le maximum d’un boulier n’est pas « 4 clous × 4 boules = 16 », c’est le plus grand mot en base (nombre de boules + 1)."
+  ],
+  "867": [
+    "On vous demande le nombre de personnes interrogées. Il y en a 735.",
+    "Classez les sondés en quatre familles : liquide seulement (L), poudre seulement (P), les deux (D = 427), et aucun lait (R). Un cinquième n’achète jamais de lait : R = x/5. Un tiers n’achète jamais de poudre : L + R = x/3, donc L = x/3 − x/5 = 2x/15.",
+    "Deux septièmes n’achètent jamais de liquide : P + R = 2x/7, donc P = 2x/7 − x/5 = 3x/35. L’équation L + P + D + R = x s’écrit 2x/15 + 3x/35 + 427 + x/5 = x.",
+    "Le plus petit commun multiple de 15, 35 et 5 est 105. On obtient 14x/105 + 9x/105 + 21x/105 + 427 = x, soit 44x/105 + 427 = x, donc 61x/105 = 427, et x = 427 × 105 / 61 = 735.",
+    "À retenir : dessinez les quatre cases (L, P, les deux, rien) avant d’écrire les fractions. Les « jamais de poudre » mélangent L et R : il faut en retirer R pour isoler L."
+  ],
+  "868": [
+    "On vous demande le nombre minimal de transvasements pour obtenir 7 litres dans le seau de 9 litres, à l’aide des seaux de 4 et 5 litres, sans rien jeter. Il en faut 7.",
+    "Les états utiles sont des triplets (9, 5, 4) dont la somme reste 9. Le but est (7, ?, ?). Comme 4 et 5 permettent de fabriquer 1 litre (5 − 4), on peut extraire 1 du grand seau, puis recommencer.",
+    "Une suite minimale : remplir 5 depuis 9 ; verser 5 dans 4 (il reste 1 dans le seau de 5) ; vider 4 dans 9 ; verser le litre restant dans 4 ; remplir 5 depuis 9 ; compléter 4 depuis 5 (3 litres passent, il reste 2 dans le 5) ; vider 4 dans 9. Le grand seau contient alors 7 litres.",
+    "On peut vérifier qu’aucune suite de 6 gestes n’atteint 7 : les quantités accessibles en peu de coups sont 4, 5, 1, 8, 3… 7 apparaît au septième. À retenir : ce sont les seaux de Gauss, où l’on engendre les combinaisons entières de 4 et 5."
+  ],
+  "869": [
+    "On vous demande un partage équitable des 10 vaches rousses (1 veau), 10 blanches (3 veaux) et 10 noires (2 veaux) entre trois fils, avec au moins une vache de chaque couleur par lot et au plus 5 de chaque couleur. Un fils reçoit 4 rousses, 4 blanches et 2 noires ; les deux autres reçoivent chacun 3 rousses, 3 blanches et 4 noires. Chaque fils a 10 vaches et 20 veaux.",
+    "Il y a 10 + 30 + 20 = 60 veaux, soit 20 par fils, et 10 vaches par fils. Si r, b, n sont les nombres d’un lot, on a r + b + n = 10 et r + 3b + 2n = 20, avec 1 ≤ r, b, n ≤ 5.",
+    "En soustrayant, 2b + n = 10. Les couples (b, n) dans {1,…,5} sont (3, 4) et (4, 2) (et (5, 0) interdit). D’où les triplets (r, b, n) = (3, 3, 4) et (4, 4, 2).",
+    "La somme des rousses doit faire 10. Seule la combinaison 4 + 3 + 3 convient (et non 4 + 4 + 2). À retenir : deux équations, trois inconnues bornées : énumérez les quelques triplets, puis assemblez-les pour retrouver les totaux 10, 10, 10."
+  ],
+  "870": [
+    "On vous demande de relier chaque vache A1, B1, … à son veau A2, B2, … par des chemins qui ne se croisent pas. Un tel tracé existe : suivez la figure du corrigé officiel, où les cinq fils contournent les autres couples sans se couper.",
+    "Le problème est celui des raccordements planaires : si vous tirez les segments droits, ils se croisent presque sûrement. Il faut courber, en glissant le long du bord du pré, pour « dénouer » les paires.",
+    "Une stratégie : reliez d’abord les couples dont les deux membres sont déjà voisins, puis faites passer les chemins restants dans les couloirs laissés libres, quitte à longer largement le cadre. Deux chemins peuvent se frôler, pas se traverser.",
+    "À retenir : l’existence d’un dessin sans croisement se voit souvent en déplaçant les fils vers l’extérieur plutôt qu’en les tendant. Comparez votre essai à la figure officielle, sans proposer un autre nœud."
+  ],
+  "871": [
+    "On vous demande le chemin de Martial, qui avance tout droit jusqu’à un obstacle puis tourne d’un quart de tour, pour ranger la botte A. Le trajet se fait en 7 étapes : c’est celui dessiné dans le corrigé officiel, à suivre sur le plan du hangar.",
+    "Martial ne choisit pas sa route : dès qu’il part dans une direction, il continue jusqu’au mur ou à une botte. Le quart de tour, à chaque choc, est unique si l’on convient du sens (par exemple toujours vers la gauche, ou selon la seule issue encore ouverte).",
+    "Dessinez sa position après chaque choc. Au bout de quelques rebonds, le couloir menant à A s’ouvre. Compter 7 étapes, c’est compter 7 segments droits, pas 7 cases.",
+    "À retenir : c’est un billard sur quadrillage. N’inventez pas un raccourci en diagonale : l’énoncé n’autorise que l’horizontale et la verticale, et jamais un recul."
+  ],
+  "872": [
+    "On vous demande un enclos de mercredi, plus grand que celui de mardi, toujours avec 8 barres (4 longues et 4 courtes) entre 8 arbres du verger. Plusieurs tracés conviennent : reprenez les figures du corrigé, qui montrent des octogones de plus en plus « ouverts » sur le même réseau de points.",
+    "Les barres ont des longueurs fixes : 4 courtes et 4 longues. Lundi, elles ferment une petite aire ; mardi, le même jeu de longueurs entoure davantage d’herbe en s’appuyant sur d’autres troncs. Mercredi, on cherche encore plus d’aire, pas d’autres barres.",
+    "Sur un réseau carré, une même collection de côtés peut enclore des aires très différentes selon que le polygone est « plié » ou proche d’un octogone convexe. Eloignez les sommets, évitez les rentrants, tout en collant chaque barre à deux arbres.",
+    "À retenir : périmètre (ici le jeu de barres) n’impose pas l’aire. Pour grandir l’enclos, changez les arbres, pas les planches, et contrôlez sur le dessin officiel que mercredi contient bien mardi au sens de l’aire, pas forcément au sens de l’inclusion."
+  ],
+  "873": [
+    "On vous demande de partager le pré en trois parcelles de même forme et de même aire, chacune touchant la mare noire. La solution est le pavage du corrigé officiel : tenez-vous-en à cette figure, sans en inventer une autre.",
+    "« Même forme » signifie homothétiques par rotation ou translation, sans retournement si le rallye ne l’autorise pas. Les trois pièces recouvrent le champ sans trou ni chevauchement, et chacune a un bord commun avec la mare pour l’abreuvage.",
+    "Une piste : découpez le champ en un nombre de carreaux divisible par 3, puis cherchez un triomino (ou un plus grand polyomino) qui se répète trois fois autour de la mare. La mare, souvent au centre ou dans un coin, force les trois pièces à « lécher » le noir.",
+    "À retenir : l’égalité d’aire est automatique si les formes sont identiques et pavent le rectangle. Le vrai défi est le contact avec l’eau, visible seulement sur la figure officielle."
+  ],
+  "874": [
+    "On vous demande quelle robe produit le plus de lait, entre quatre noires et trois brunes en cinq jours, contre trois noires et cinq brunes en quatre jours. Ce sont encore les vaches brunes.",
+    "Passez en vaches-jours : 20 noires-jours et 15 brunes-jours d’un côté, 12 noires-jours et 20 brunes-jours de l’autre. Les laits sont égaux, donc 20 N + 15 B = 12 N + 20 B.",
+    "Il reste 8 N = 5 B. Une brune « pèse » 8/5 d’une noire, donc davantage. La comparaison ne nécessite pas de connaître N ni B en litres.",
+    "À retenir : deux mélanges égaux, deux durées différentes : ramenez-vous à une journée commune, puis lisez le rapport. C’est le même problème que l’énigme 865, rédigé à l’identique dans une autre source."
+  ],
+  "875": [
+    "On vous demande comment apparier les dix paires de barrières (10 m jusqu’à 55 m, de 5 m en 5 m) en cinq enclos rectangulaires d’aire totale maximale. Il faut former 55 × 50, 45 × 40, 35 × 30, 25 × 20 et 15 × 10, pour 6 250 m² au total.",
+    "Un rectangle d’aire L × ℓ, avec L grand, gagne à prendre ℓ aussi grand que possible. Si vous couplez 55 avec un petit b < 50, et 50 avec un b′, le manque (50 − b) × 55 n’est pas compensé par le gain sur l’autre enclos : 55b + 50b′ ≤ 55 × 50 + b b′.",
+    "On commence donc par marier les deux plus grandes paires, 55 et 50. Il reste 10, 15, …, 45 : le même argument marie 45 et 40, puis 35 et 30, et ainsi de suite jusqu’à 15 × 10.",
+    "L’aire est 2 750 + 1 800 + 1 050 + 500 + 150 = 6 250 m². À retenir : pour un produit x × y sous une somme de longueurs imposée par paires, rapprochez les deux plus grands, plutôt que d’équilibrer tous les rectangles."
+  ],
+  "876": [
+    "On vous demande en combien de jours la vache, la chèvre et l’oie mangeraient tout le champ ensemble (l’herbe ne repousse pas). Il leur faudrait 40 jours.",
+    "Notez V, C, O les fractions de champ mangées par jour. On a V + C = 1/45, V + O = 1/60, C + O = 1/90. En additionnant les trois égalités, chaque animal est compté deux fois : 2(V + C + O) = 1/45 + 1/60 + 1/90.",
+    "Le commun dénominateur 180 donne 4/180 + 3/180 + 2/180 = 9/180 = 1/20. Donc V + C + O = 1/40. Ensemble, ils mangent un quarantième de champ par jour, et vident le pré en 40 jours.",
+    "Vous pouvez aussi extraire C = 1/120, O = 1/360, V = 5/360 = 1/72, puis additionner. À retenir : trois « deux à deux », on additionne tout et on divise par deux pour avoir le trio. L’hypothèse « l’herbe ne pousse pas » autorise cette simple addition de débits."
+  ],
+  "877": [
+    "On vous demande au bout de combien de jours au moins la moitié du troupeau savait la découverte de Noiraude, le troupeau entier étant au courant le neuvième jour. C’est le huitième jour.",
+    "Le premier jour, Noiraude sait. Le deuxième, elle prévient Blanquette : elles sont 2. Chaque jour, chaque vache informée en prévient une nouvelle, donc le nombre double : 1, 2, 4, 8, 16, 32, 64, 128, 256.",
+    "Le neuvième jour, 2⁸ = 256 vaches savent : c’est tout le troupeau. La moitié, 128, apparaît le huitième jour (2⁷ = 128). Avant cela, au septième jour, seules 64 vaches, le quart, sont au courant.",
+    "À retenir : « chacune prévient une autre » est une croissance exponentielle de raison 2, pas une addition de +1 par jour. La moitié d’une puissance de 2 est la puissance précédente."
+  ],
+  "878": [
+    "On vous demande de découper le champ, selon le quadrillage, en quatre pièces identiques sans retournement, chacune contenant une vache et un lapin. La solution est la figure du corrigé officiel : ne proposez pas un autre pavage.",
+    "« Identiques sans retournement » signifie que les quatre polyominos se superposent par translation ou rotation dans le plan, comme quatre tampons, jamais par retournement d’une pièce (pas de symétrie miroir).",
+    "Chaque pièce a la même aire, donc le quart des carreaux, et emporte exactement une vache et un lapin. Partez des animaux : ils indiquent quatre « centres » autour desquels construire le même motif.",
+    "À retenir : si votre pièce n’est superposable aux autres que par retournement, elle est refusée. Calquez la découpe officielle plutôt que d’inventer un tetramino plausible."
+  ],
+  "879": [
+    "On vous demande le bénéfice de l’organisateur du « loto-bouse », chaque carré d’une grille 18 × 18 ayant un parieur à 2 €, pour 100 € de prix. Le bénéfice est 548 €, soit le choix E.",
+    "Il y a 18 × 18 = 324 cases, donc 324 billets. La recette est 324 × 2 = 648 €. Après le prix de 100 €, il reste 648 − 100 = 548 €.",
+    "Les distracteurs 324 € (oublier de multiplier par 2, ou oublier le prix), 180 €, 444 € ou 628 € viennent d’erreurs de table (18 × 20, 18 × 18 − 100 mal placé, etc.).",
+    "À retenir : bénéfice = billets × prix du billet − lot. Comptez d’abord les cases, 18², avant toute monnaie."
+  ],
+  "880": [
+    "On vous demande la plus grande zone que Sophie peut enclore avec 9 rochers cubiques de 1 m, posés sur un quadrillage. Elle peut fermer 6 m².",
+    "Les exemples le montrent : 4 rochers autour d’une case donnent 1 m² ; 6 rochers peuvent déjà enclore 2 m². Les rochers occupent des sommets (ou des cases) du réseau et forment un polygone sans fuite.",
+    "Avec 9 cubes, un contour plus « étalé » (par exemple un hexagone de cases, ou un rectangle 2 × 3 dont le périmètre est partagé avec des rentrants utiles) atteint 6 m², ce que le dessin du corrigé exhibe. On ne peut pas faire 7 m² : le périmètre de 9 blocs ne suffit plus à fermer une région plus vaste sans laisser une brèche.",
+    "À retenir : maximiser l’aire pour un nombre de clôtures, c’est éviter les coins inutiles et s’approcher d’une forme ronde sur le quadrillage. La réponse se lit sur la figure officielle : 6 m², pas 9."
+  ],
+  "881": [
+    "On vous demande combien de vautours sont perchés en haut. Il y en a 19.",
+    "Notez h le nombre du haut et b celui du bas, avec h + b = 30. Si un vautour du bas rejoint le haut, on a h + 1 en haut et b − 1 en bas, et l’énoncé affirme h + 1 = 2(b − 1).",
+    "Remplacez b = 30 − h : h + 1 = 2(29 − h) = 58 − 2h, donc 3h = 57 et h = 19. Alors b = 11. Après le déplacement, on aurait 20 contre 10, le double exact.",
+    "Le piège est d’écrire h = 2b sans le « +1 » et le « −1 ». À retenir : traduisez le discours des vautours après le mouvement hypothétique, pas avant."
+  ],
+  "882": [
+    "On vous demande de répartir 44 pièces en huit piles de hauteurs toutes différentes, de sorte que cinq rangées de trois piles fassent la même somme. Les piles, dans l’ordre A à H du dessin, sont 9, 6, 4, 2, 7, 8, 5 et 3.",
+    "Huit hauteurs distinctes positives qui totalisent 44 ne peuvent être que 2, 3, 4, 5, 6, 7, 8 et 9 (la somme 2 + … + 9 = 44, et 1 forcerait un 10 qui casserait souvent les rangées).",
+    "Les indices donnent F = G + H, D + E = 9, B + D = 8, et D minimal donc D = 2. Alors B = 6 et E = 7. Comme G + H = F et G, H, F distincts dans {3, 4, 5, 8, 9}, on a F = 8 avec {G, H} = {3, 5}.",
+    "Les cinq alignements du veau (typiquement trois diamètres et deux cordes) doivent valoir chacun 16, car 5 rangées comptent certaines piles deux fois ; le placement 9, 6, 4, 2, 7, 8, 5, 3 achève la figure. À retenir : commencez par l’ensemble des hauteurs, puis les sommes à deux, avant de poser les pièces sur le dessin."
+  ],
+  "883": [
+    "On vous demande la distance parcourue par le ver né à la page 1 du tome 1 et mort à la dernière page du tome 10. Il parcourt 40,5 cm, et non l’épaisseur apparente de toute la rangée.",
+    "Sur une étagère, le tome 1 a sa première page juste après la couverture de gauche : le ver, né à cette page, n’a pas à traverser les feuilles du tome 1. De même, la dernière page du tome 10 est juste avant la couverture de droite : il ne traverse pas les feuilles du tome 10.",
+    "Il traverse donc la couverture intérieure du tome 1 (0,25 cm), les huit tomes complets du 2 au 9 (chacun 0,25 + 4,5 + 0,25 = 5 cm, soit 40 cm), et la couverture intérieure du tome 10 (0,25 cm). Total : 40,5 cm.",
+    "Le piège, classique, est 10 × 4,5 + 20 × 0,25 = 49,5 cm. À retenir : dessinez les dix livres de profil, marquez la vraie page 1 et la vraie dernière page, puis seulement mesurez."
+  ],
+  "884": [
+    "On vous demande combien de vers de terre resteront lundi prochain, sachant qu’il n’y aura plus de mulots. Il en restera 1 301.",
+    "Chaque matin, Filou mange 3 mulots (s’il en reste). Chaque après-midi, chaque mulot encore vivant avale 11 vers. On part de 21 mulots et 1 994 vers, lundi matin avant le chat.",
+    "Lundi matin : 18 mulots, 1 994 vers ; lundi soir : 18 mulots, 1 994 − 18 × 11 = 1 796 vers. Mardi : 15 mulots, puis 1 796 − 165 = 1 631 vers. Mercredi : 12, puis 1 499. Jeudi : 9, puis 1 400. Vendredi : 6, puis 1 334. Samedi : 3, puis 1 301. Dimanche matin le chat mange les 3 derniers : 0 mulot, 1 301 vers, qui ne diminuent plus.",
+    "Lundi suivant, le jardin a donc 0 mulot et 1 301 vers. À retenir : tenez un tableau jour par jour, matin puis après-midi. Un oubli d’un seul repas du chat décale tous les vers."
+  ],
+  "885": [
+    "On vous demande un chemin le long des arêtes qui passe par chaque coin une fois et une seule. Ce chemin est celui tracé sur la figure du corrigé officiel : ne l’inventez pas à partir d’un autre solide.",
+    "Le problème est un parcours eulérien ou plutôt hamiltonien sur les sommets : visiter chaque sommet une fois, en suivant les arêtes existantes. Sur un graphe de cube, de prisme ou de dessin « en perspective », certains sommets n’ont que deux arêtes : ils forcent le passage.",
+    "Partez d’un sommet de degré 1 s’il y en a un (début ou fin obligés). Sinon, partez d’un coin saillant et ne fermez pas trop tôt une boucle qui laisserait un sommet isolé. Interdiction de sauter, de longer une face en diagonale, ou de retraverser un sommet.",
+    "À retenir : numérotez les coins au crayon au fur et à mesure. Si vous bloquez, effacez le dernier choix plutôt que d’ajouter une arête absente du dessin officiel."
+  ],
+  "886": [
+    "On vous demande la masse des vers d’un maraîcher de 3 hectares, à 2 vers par dm² et 1 g par ver. Cette masse est 6 tonnes, soit le choix A.",
+    "Un mètre carré contient 100 dm², donc 200 vers, soit 200 g. Un hectare, 10 000 m², contient 2 000 000 de vers, soit 2 000 kg = 2 tonnes. Trois hectares pèsent 6 tonnes.",
+    "En une ligne : 3 × 10 000 × 100 × 2 grammes = 6 000 000 g = 6 000 kg = 6 t. Les choix 60 kg ou 600 kg viennent d’un oubli d’un facteur 10 ou 100 ; 15 t ou 150 kg d’une confusion hectare / are.",
+    "À retenir : écrivez la chaîne dm² → m² → hectare, en multipliant les facteurs 100, 10 000 et 3, avant de convertir les grammes en tonnes (diviser par 1 000 000)."
+  ],
+  "887": [
+    "On vous demande le rangement qui permet de caser 50 boîtes cylindriques au lieu de 48 dans la même caisse. C’est le calage en quinconce du corrigé officiel : reportez-vous à cette figure, sans en inventer une autre.",
+    "Alix a probablement aligné les cylindres en un quadrillage, rangées sur rangées, centres aux sommets d’un carré. Loïs décale une rangée sur deux d’un rayon : les centres forment alors des triangles équilatéraux.",
+    "Ce pavage hexagonal est plus dense : l’écart entre rangées passe de 2r à r√3 ≈ 1,73 r. Sur une caisse un peu plus longue que large, on gagne souvent une ou deux places, ici exactement deux (48 → 50).",
+    "À retenir : pour des disques identiques, le quinconce bat la grille carrée. Le dessin officiel montre comment les 50 cercles rentrent sans se chevaucher ni déborder."
+  ],
+  "888": [
+    "On vous demande de placer les étoiles A à F du « ver de terre » sachant AE > AC > EF > AF > EB > DF. Dans l’ordre de la constellation du corrigé, on lit A, D, F, B, C, E.",
+    "Sur la carte, les six points sont déjà dessinés : il s’agit de les étiqueter. Commencez par le plus long segment AE, qui relie les deux points les plus éloignés du dessin, puis le plus court DF, forcément une petite patte du ver.",
+    "Les inégalités emboîtées éliminent les permutations. AC, plus court que AE mais plus long que EF, désigne le second grand écart depuis A. AF, encore plus court, tombe sur un voisin intermédiaire, et ainsi de suite jusqu’à EB et DF.",
+    "À retenir : ordonnez d’abord toutes les distances du dessin à l’œil ou au compas, puis faites correspondre cette liste décroissante à AE, AC, EF, AF, EB, DF. La suite A–D–F–B–C–E est l’unique étiquetage compatible."
+  ],
+  "889": [
+    "On vous demande de colorier la pêche : 4 vivaneaux rouges non côte à côte, 3 chirurgiens bleus tous côte à côte, 2 perroquets verts séparés et chacun voisin de deux rouges. Une disposition qui convient, sur une grille 3 × 3, est : rouge, vert, rouge en haut ; bleu, bleu, bleu au milieu ; rouge, vert, rouge en bas.",
+    "« Côte à côte » signifie voisin orthogonal, pas diagonal. Les trois bleus forment donc un triomino (barre ou l recourbé). Les deux verts ne se touchent pas orthogonalement, et chacun a exactement deux voisins rouges.",
+    "Les quatre rouges n’ont aucun contact orthogonal entre eux : ils occupent souvent les quatre coins, que le rang du milieu (tout bleu) isole parfaitement. Chaque vert, au milieu d’un côté, a alors pour voisins gauche et droite deux rouges, et pour voisin intérieur un bleu.",
+    "D’autres placements équivalents par rotation existent ; le corrigé en liste plusieurs. À retenir : posez d’abord le bloc des trois bleus, puis les verts « entre deux rouges », et vérifiez qu’aucun rouge ne se touche par un côté."
+  ],
+  "890": [
+    "On vous demande le pourcentage minimal de participants ayant correctement écrit les trois mots wallaby, échidné et ornithorynque. Ce minimum est 40 %, soit le choix B.",
+    "Prenez 100 personnes. Alors 90, 80 et 70 ont réussi respectivement chaque mot, donc 10, 20 et 30 ont échoué à l’un d’eux. Ces 10 + 20 + 30 = 60 échecs, s’ils portent sur 60 personnes distinctes, laissent 40 personnes sans aucun échec.",
+    "On ne peut pas faire moins : s’il y avait 61 échecs « distincts », on dépasserait les 60 places hors du trio parfait, ce qui est impossible. Formellement, |W ∩ E ∩ O| ≥ 90 + 80 + 70 − 2 × 100 = 40.",
+    "Un diagramme de Venn atteint effectivement 40 au centre, avec les échecs disjoints. À retenir : le minimum de l’intersection de trois ensembles est somme des cardinaux moins deux fois le total, dès que ce nombre est positif."
+  ],
+  "891": [
+    "On vous demande le nombre de wapitis, inférieur à 500, qui laisse un reste 1 à la division par 2, 3, 4, 5 et 6, mais un reste 0 à la division par 7. Ils sont 301.",
+    "N − 1 est multiple de 2, 3, 4, 5 et 6, donc multiple de leur PPCM. Or PPCM(2, 3, 4, 5, 6) = 60, car 4 = 2². Ainsi N = 60k + 1, avec N < 500 : 61, 121, 181, 241, 301, 361, 421, 481.",
+    "Parmi ces huit valeurs, seule 301 est multiple de 7, car 7 × 43 = 301. Les autres laissent un reste non nul modulo 7.",
+    "À retenir : « reste 1 pour plusieurs modules » se traduit par N ≡ 1 modulo le PPCM. Puis on filtre par le dernier module, ici 7, qui au contraire demande un reste 0."
+  ],
+  "892": [
+    "On vous demande de reconstituer, dans chaque grille, le parcours du wombat qui avance d’une case à la fois, sans repasser, avec quelques numéros déjà posés. Sur la petite grille, le chemin numéroté est 1, 2, 3, 4, 5, 6, 7, 8, 9 en serpent : 1 en haut à gauche, 2 dessous, 3 à droite de 2 (le 3 déjà donné), puis 4, 5, 6, 9, 8, 7. Sur la grande, on part de 1, on aboutit à 16 en haut, avec 14, 4 et 9 aux places indiquées, selon le serpent 1-2-3-12-13-14-15-16 / 5-4-11-10 / 6-7-8-9.",
+    "Les numéros donnés sont des dates de passage, pas des distances. Entre deux numéros consécutifs, le wombat a fait un pas orthogonal. Entre 1 et 3, il y a donc exactement une case, le 2.",
+    "Remplissez d’abord les voisins forcés, puis les couloirs. Un numéro élevé dans un cul-de-sac doit être une fin de parcours. Le wombat ne saute pas et ne va pas en diagonale.",
+    "À retenir : un chemin hamiltonien se reconstruit par les écarts de numéros. Si deux nombres voisins ne sont pas sur des cases voisines, la piste est fausse."
+  ],
+  "893": [
+    "On vous demande l’ordre des cinq animaux sur le podium. De gauche à droite : renard, kangourou, dingo, wombat, lapin.",
+    "Le renard et le lapin sont aux deux bouts : la rangée est R _ _ _ L ou L _ _ _ R. Le lapin est à côté du wombat, donc le wombat est en 2e position depuis le bout du lapin.",
+    "Le wombat est à droite du kangourou, donc on lit … kangourou, (éventuellement le dingo), wombat … vers la droite. Le kangourou est à côté du dingo. La seule lecture cohérente, lapin à droite, est : renard, kangourou, dingo, wombat, lapin.",
+    "L’autre bout (lapin à gauche) mettrait le wombat à gauche du kangourou, contredisant « à droite ». À retenir : fixez d’abord les extrémités, puis le sens gauche-droite imposé par le wombat."
+  ],
+  "894": [
+    "On vous demande de tracer la nouvelle clôture sur le pavage hexagonal, chaque nombre indiquant combien de côtés de l’hexagone portent la clôture. Le tracé est celui du corrigé, compatible avec les chiffres 4, 2, 2, 3, 4, 2, 3, 3, 5 de la zone utile : suivez cette figure plutôt qu’un autre lacet.",
+    "C’est un puzzle de type « Slitherlink » hexagonal : une unique boucle (ou un unique réseau fermé) dont le nombre d’arêtes autour de chaque cellule égale le chiffre inscrit. Un 0 interdit tout côté ; un 5, sur un hexagone, impose cinq des six arêtes.",
+    "Partez des 0 et des 5, très contraignants, puis propagez : deux hexagones voisins ne peuvent pas se contredire sur l’arête commune. L’ancienne clôture donnée dans l’énoncé sert de modèle de lecture, pas de solution.",
+    "À retenir : ne dessinez pas de branches mortes ni de croisements. Chaque chiffre est un compte d’arêtes, pas un numéro de wombat. La boucle officielle est la référence."
+  ],
+  "895": [
+    "On vous demande la unique case où le zoologue peut garer sa camionnette dans les trois configurations de camions, sans toucher ceux-ci même en diagonale. C’est la case en bas à droite.",
+    "Superposez les trois parkings : une case occupée dans au moins un des trois cas est interdite. Il reste quelques cases toujours libres.",
+    "Autour de chaque camion, toutes les cases voisines (8 voisins, diagonales comprises) sont également interdites, dans chacun des trois scénarios. Cette « aura » élimine encore cinq candidates.",
+    "Il ne reste que le coin inférieur droit, assez loin des deux gros véhicules dans les trois placements. À retenir : l’intersection des trois plans « cases sûres » se lit par superposition, puis par une couronne d’exclusion d’épaisseur 1, diagonales incluses."
+  ],
+  "896": [
+    "On vous demande le volume du récipient B après la suite de transvasements, à partir de A plein (7 cl) et B, C vides (4 cl et 3 cl). Il y a alors 2 centilitres dans B.",
+    "La règle est celle des cruches : on verse jusqu’à vider la source ou remplir la cible. Les états successifs (A, B, C) sont : (7, 0, 0) ; A dans B → (3, 4, 0) ; B dans C → (3, 1, 3) ; C dans A → (6, 1, 0) ; B dans C → (6, 0, 1) ; A dans B → (2, 4, 1) ; B dans C → (2, 2, 3).",
+    "À la fin, B contient 2 cl (et C est plein, A a 2 cl). La somme 7 est invariante : bon contrôle contre une erreur de retenue.",
+    "À retenir : écrivez le triplet après chaque geste, sans sauter. « B dans C » alors que C a déjà 1 cl ne verse que 2 cl, pas 4."
+  ],
+  "897": [
+    "On vous demande l’écart entre le plus court circuit de Pemba et le plus long de Nyima, qui visitent les mêmes villages et reviennent. Cet écart vaut 30.",
+    "Pemba choisit la boucle minimale : A–C–B–F–D–E–A, de longueur 48. Nyima choisit la boucle maximale : A–B–C–F–E–D–A, de longueur 78. La différence est 78 − 48 = 30.",
+    "Les deux chemins passent par les six sommets de la carte (le village de départ plus les cinq autres) une fois chacun avant de fermer. Il s’agit donc de deux cycles hamiltoniens de poids extrêmes, lisibles en additionnant les arêtes du dessin.",
+    "À retenir : « se faire sa propre recherche » n’est pas un aller-retour quelconque, c’est une boucle. Additionnez toutes les arêtes du cycle, pas seulement l’aller."
+  ],
+  "898": [
+    "On vous demande à qui appartient le zèbre, et qui boit de l’eau. Le Japonais possède le zèbre, et c’est le diplomate (le Norvégien, dans la maison jaune) qui boit de l’eau.",
+    "Alignez cinq maisons de gauche à droite. Le Norvégien est à gauche, le lait au milieu, le vert immédiatement à droite du blanc, le Norvégien jouxte le bleu : les couleurs sont jaune, bleu, rouge, blanc, vert. L’Anglais est dans le rouge, le café dans le vert, le diplomate dans le jaune.",
+    "L’Ukrainien boit du thé : il ne peut tenir que dans le bleu (sinon l’acrobate japonais n’a plus de maison). Il a le cheval voisin du diplomate, donc il est médecin. L’eau reste alors au diplomate. Le Japonais acrobate prend le vert, l’Espagnol le blanc avec le chien, l’Anglais sculpteur les escargots, le diplomate le renard, et le zèbre reste au Japonais.",
+    "Le tableau final, de gauche à droite : Norvégien / eau / diplomate / renard ; Ukrainien / thé / médecin / cheval ; Anglais / lait / sculpteur / escargots ; Espagnol / jus d’orange / violoniste / chien ; Japonais / café / acrobate / zèbre. À retenir : posez d’abord positions et couleurs, puis nationalités, puis métiers, boissons et animaux, en revenant sur chaque contradiction."
+  ],
+  "899": [
+    "On vous demande où se trouve le zèbre parmi les six animaux autour de la rivière. Il occupe la dernière place du schéma : tigre, crocodile, boa, hippopotame, éléphant, zèbre — le zèbre est donc face à l’hippopotame, sur l’autre rive, à l’extrémité opposée au tigre selon l’aide.",
+    "Le tigre et l’éléphant se font face. L’éléphant est près de la forêt, sur la même rive que l’hippopotame. Le boa boit les yeux fermés (il dort), et les deux plus proches voisins du tigre dorment aussi.",
+    "Le crocodile n’est pas face au boa ; l’aide précise qu’il est à la droite du boa. L’animal le plus loin de l’hippopotame ne boit pas et regarde la forêt ; le plus loin du tigre, lui, est en train de boire.",
+    "Ces contraintes fixent les six postes : une rive tigre–crocodile–boa, l’autre hippopotame–éléphant–zèbre (ou l’ordre équivalent du corrigé). À retenir : « en face », « à droite » et « le plus éloigné » se lisent sur le schéma en deux rives, pas sur une file unique."
+  ],
+  "900": [
+    "On vous demande combien d’animaux se rendaient au point d’eau. Un seul : le zèbre.",
+    "Le zèbre allait vers l’eau. Il a croisé six girafes (et leurs passagers). « Croiser », c’est rencontrer des bêtes qui viennent en sens inverse, donc qui s’éloignaient du point d’eau, pas qui s’y rendaient.",
+    "Les singes et les oiseaux voyagent avec les girafes : eux aussi revenaient. Ils ne s’ajoutent pas au compte des animaux « qui se rendaient » à l’eau.",
+    "À retenir : le piège est d’additionner 1 + 6 + 18 + 36. La question n’est pas « combien d’animaux le zèbre a-t-il vus ? », c’est « qui allait au point d’eau ? »."
+  ],
+  "901": [
+    "On vous demande en combien de temps le lion, le léopard et le chacal dévorent le zèbre ensemble. Ils en viennent à bout en 40 minutes.",
+    "En une heure, le lion mange tout le zèbre (1 part), le léopard un tiers, le chacal un sixième. Le débit commun est 1 + 1/3 + 1/6 = 6/6 + 2/6 + 1/6 = 9/6 = 3/2 de zèbre par heure.",
+    "Pour manger 1 zèbre à ce rythme, il faut 1 ÷ (3/2) = 2/3 d’heure, soit 40 minutes. Personne ne se gêne : l’énoncé additionne les débits.",
+    "À retenir : inversez les durées pour obtenir des parts par heure, additionnez, puis reprenez l’inverse. 1, 3 et 6 heures sont choisies pour que 1/3 + 1/6 se calculent sur 6."
+  ],
+  "902": [
+    "On vous demande un chemin de la case Z à la case noire, en pas orthogonaux, en évitant les cases D. Un tel chemin existe : c’est celui indiqué dans le corrigé, qui contourne les deux D sans diagonale.",
+    "Le zèbre ne va ni en diagonale ni sur un D. Traitez les D comme des murs. Sur un labyrinthe petit, une exploration systématique (toujours la paroi gauche, par exemple) suffit.",
+    "Si un couloir se ferme, revenez au dernier carrefour. L’énoncé ne demande pas le plus court chemin, seulement un chemin valide.",
+    "À retenir : « jamais en diagonale » est aussi strict que « pas de D ». Calquez le tracé officiel plutôt que de couper au plus court à travers une case interdite."
+  ],
+  "903": [
+    "On vous demande le nombre de zèbres au bal. Il y en a 13.",
+    "Chaque éléphant est venu avec une girafe, et chaque girafe avec un éléphant : il y a autant d’éléphants que de girafes. Les zèbres sont la moitié des éléphants.",
+    "Un groupe minimal cohérent est donc 2 éléphants, 2 girafes et 1 zèbre, soit 5 animaux. Or 65 ÷ 5 = 13 de ces groupes, donc 13 zèbres (et 26 éléphants, 26 girafes).",
+    "Vérifiez : 26 + 26 + 13 = 65, et 13 = 26/2. À retenir : traduisez les phrases en un paquet-unité, puis divisez le total par la taille du paquet."
+  ],
+  "904": [
+    "On vous demande le nombre de zèbres dans la réserve. Il y en a 243.",
+    "650 yeux de lions, c’est 325 lions, donc 325 × 4 = 1 300 pattes. 203 cous de girafes, c’est 203 girafes, donc 812 pattes. 512 becs d’autruches, c’est 512 autruches, donc 512 × 2 = 1 024 pattes. 302 oreilles de gazelles, c’est 151 gazelles, donc 604 pattes.",
+    "Ces espèces totalisent 1 300 + 812 + 1 024 + 604 = 3 740 pattes. Il en reste 4 712 − 3 740 = 972, qui sont les pattes des zèbres. À 4 pattes chacun, 972 ÷ 4 = 243 zèbres.",
+    "À retenir : chaque mention (yeux, cous, becs, oreilles) sert à compter les têtes, puis on convertit en pattes. N’attribuez pas 4 pattes aux autruches : ce sont des oiseaux, 2 pattes."
+  ],
+  "905": [
+    "On vous demande combien de bébés girafes égalent un éléphant. Il en faut 7.",
+    "Notez z, g, e les poids. On a 2z + e = 9g et z + 6g = e. Remplacez e dans la première : 2z + (z + 6g) = 9g, donc 3z + 6g = 9g, puis 3z = 3g, soit z = g.",
+    "Un zébu pèse autant qu’un bébé girafe. Alors e = z + 6g = 7g. Sept bébés girafes font un éléphant.",
+    "À retenir : deux balances, trois inconnues : éliminez l’éléphant d’abord, le zébu se révèle égal à la girafe, et le coefficient 7 apparaît tout seul."
+  ],
+  "906": [
+    "On vous demande de retrouver les quatre zones identiques, chacune contenant un chat, un chien, un poisson et un perroquet. Le découpage est celui du corrigé officiel : quatre polyominos superposables qui pavent le carré, à lire sur la figure, sans en inventer un autre.",
+    "Chaque propriétaire a les quatre animaux : chaque pièce contient donc exactement un animal de chaque sorte. Les quatre pièces ont la même forme, pas seulement la même aire.",
+    "Repérez d’abord un animal rare sur le bord, puis cherchez le même motif tourné autour des trois autres. Les frontières suivent le quadrillage ; pas de coupure en diagonale si la figure est à carreaux.",
+    "À retenir : « même forme » + « un de chaque animal » fixe le pavage. La solution se compare à la figure officielle, morceau pour morceau."
+  ],
+  "907": [
+    "On vous demande les neuf parcelles de la zone, chacune avec un chat, un chien, un poisson et une tortue. La solution est le pavage officiel en neuf pièces : tenez-vous-en à cette figure.",
+    "Neuf propriétaires, neuf régions d’aire égale (le neuvième du grand carré ou rectangle), chacune emportant les quatre animaux une fois. C’est un sudoku spatial : chaque type d’animal apparaît une fois par parcelle, pas forcément une fois par ligne.",
+    "Une méthode : coloriez d’abord les neuf chats, qui marquent neuf « germes », puis agrandissez des régions identiques (ou seulement de même aire, selon l’énoncé) jusqu’à tout couvrir, en veillant à ramasser les trois autres animaux.",
+    "À retenir : ne fusionnez pas deux germes, et n’inventez pas de frontières courbes. Le dessin du recueil est la référence, pas un pavage « qui a l’air équilibré »."
+  ],
+  "908": [
+    "On vous demande de placer les 18 noms d’animaux dans la grille. La grille unique commence, en 8 horizontal, par ÉPEIRE, et en 5 horizontal par CHEVAL, avec LIÈVRE en 10 vertical ; le restant se déduit sans collision, comme dans le corrigé (ÉPONGE, HUÎTRE, LÉZARD, LUCANE, TRITON, PÉCARI, etc.).",
+    "Testez le 8 horizontal : seul ÉPEIRE permet d’accrocher quatre mots de la liste en 11, 13, 15 et 17. Pour le 5 horizontal, la dernière lettre attaque le 10 vertical. Un N donnerait NANDOU, puis aucun mot n’a N en seconde lettre pour le 7 horizontal. Un E donnerait ÉPONGE et HOMARD, mais NANDOU n’a plus d’emplacement.",
+    "Il reste L : CHEVAL en 5, puis LIÈVRE en 10 (C, M, Z n’apparaissent jamais en seconde position dans la liste). De proche en proche, chaque croisement élimine tous les candidats sauf un.",
+    "À retenir : un mot croisé « à liste fermée » se résout par les croisements les plus denses, pas par le premier mot venu. Quand un essai bloque NANDOU ou LUCANE, il faut revenir en arrière, pas forcer une lettre hors liste."
+  ],
+  "909": [
+    "On vous demande ce que paie un père au zoo avec ses deux enfants. Il paie 10 euros, soit le choix D.",
+    "L’adulte paie 4 €. L’enfant paie 1 € de moins, donc 3 €. Le père et deux enfants : 4 + 3 + 3 = 10 €.",
+    "Les choix 5 €, 6 €, 7 € ou 12 € correspondent à des lectures du type « 4 − 1 pour tout le monde », « 4 + 1 + 1 », ou « 4 × 3 ». L’énoncé ne dit pas que les enfants entrent gratuitement, ni que le père paie trois tickets adultes.",
+    "À retenir : « 1 euro de moins » se calcule sur le tarif enfant, puis on additionne les trois tickets. Relisez qui paie quoi avant de choisir dans la liste."
+  ],
+  "910": [
+    "On vous demande le plus court chemin de A à B en respectant les sens uniques des seize allées. Ce chemin est celui du corrigé, obtenu de proche en proche sur la figure : suivez les flèches officielles, sans emprunter une allée à contre-sens.",
+    "Chaque carrefour (les neuf enclos) n’est accessible que depuis certaines flèches. Marquez A avec une distance 0, puis étiquetez chaque enclos voisin par 1, 2, 3… en n’utilisant que les arcs autorisés. C’est l’algorithme des plus courts chemins sur un graphe orienté.",
+    "Dès que B reçoit un numéro, un chemin de cette longueur existe ; tout détour supplémentaire est plus long. S’il y a plusieurs chemins de même longueur, l’énoncé n’en demande qu’un, le plus court.",
+    "À retenir : sur un plan à flèches, ne « coupez » jamais à contre-sens. La numérotation par vagues depuis A évite de se perdre dans les seize allées."
+  ],
+  "911": [
+    "On vous demande le nombre représenté par chaque animal. Dans l’ordre des cinq colonnes, ce sont 7, 11, 1, 12 et 3.",
+    "Une ligne de cinq fois le même animal totalise 35 : cet animal vaut 35 ÷ 5 = 7. Une autre ligne, avec quatre 7 et un inconnu, totalise 31 : l’inconnu vaut 31 − 28 = 3.",
+    "La première ligne, un 7, trois 3 et un inconnu, totalise 27 : l’inconnu vaut 27 − 7 − 9 = 11. En poursuivant avec 40, puis 44, on obtient 12, puis 1. Chaque nouvelle ligne n’introduit qu’une inconnue, ou confirme une déjà trouvée.",
+    "À retenir : cherchez d’abord la ligne (ou colonne) la plus uniforme, qui livre un animal tout de suite, puis substituez. C’est un petit système linéaire que le dessin rend visible."
+  ],
+  "912": [
+    "On vous demande la conclusion de chacun des dix couples de prémisses. 1. Quelques lapins noirs ne sont pas âgés. 2. Les guêpes sont déplaisantes. 3. L’antilope est agréable à voir. 4. Un canari bien nourri n’est pas mélancolique (il est gai). 5. Tout pays infesté de dragons attire l’imagination. 6. Quelques chats ne savent pas siffler. 7. Aucun lézard n’a besoin d’un coup de peigne. 8. Aucun homard n’espère l’impossible. 9. Quelques créatures (cruelles, et qui ne tissent pas) ne sont pas des araignées. 10. Quelques créatures malicieuses ne sont pas des soldats.",
+    "Un sorite à deux prémisses se résout en chaîne : on identifie le terme moyen, on l’élimine, on garde le sujet et le prédicat restants. Les négations (« aucun », « ne … pas ») se conservent avec soin : « aucun quadrupède ne siffle » et « quelques chats sont quadrupèdes » donnent « quelques chats ne sifflent pas ».",
+    "Attention aux doubles négations de Carroll : « n’est pas dépourvu de gourmandise » signifie « est gourmand » ; « n’est pas disgracieuse » signifie « est gracieuse ». Traduisez d’abord en français simple, puis enchaînez.",
+    "À retenir : la conclusion n’invente pas un terme nouveau. Elle relie les deux extrémités de la chaîne, avec le quantificateur le plus faible (quelques, tous, aucun) autorisé par les prémisses."
+  ],
+  "913": [
+    "On vous demande la conclusion de chacun des trois sorites. 1. Les bébés ne peuvent pas venir à bout d’un crocodile. 2. Aucun canard gris ne porte de col en dentelle. 3. Aucun des oiseaux de la volière ne se nourrit de viande hachée.",
+    "Premier groupe : les bébés sont illogiques, les êtres illogiques sont méprisés, et nul n’est méprisé s’il vient à bout d’un crocodile. Donc un bébé, méprisé, ne vient pas à bout d’un crocodile.",
+    "Deuxième groupe : les canards « M » sont à Mme Martin ; seuls les siens portent un col ; elle n’a pas de canard gris. Un canard gris n’est donc pas à elle, et n’a pas de col. Troisième groupe : seuls les autruches mesurent trois mètres ; je n’en possède aucune de cette taille ; tous les oiseaux de la volière sont à moi ; aucune autruche ne mange de viande hachée — d’où aucun oiseau de la volière n’en mange, selon la chaîne du corrigé.",
+    "À retenir : numérotez les termes (bébé, illogique, méprisé, crocodile, etc.) et barrez-les au fur et à mesure qu’ils servent de pont. Il doit rester deux termes, reliés par une seule phrase."
+  ],
+  "914": [
+    "On vous demande la conclusion du sorite sur les chats, la lune et les kangourous. Elle s’énonce ainsi : « J’évite toujours soigneusement les kangourous. »",
+    "Enchaînez : tout chat tue les souris ; qui tue les souris est carnivore ; tout carnivore rôde la nuit ; qui rôde la nuit aime la lune ; qui aime la lune peut devenir familier. Donc tout chat peut devenir familier. Or aucun kangourou n’est apte à le devenir : aucun kangourou n’est un chat.",
+    "Les seuls animaux de la maison sont des chats, donc aucun kangourou n’est dans la maison. Seuls les animaux de la maison s’attachent à moi : aucun kangourou ne s’attache à moi. Je déteste ceux qui ne s’attachent pas à moi : je déteste les kangourous. Quand je déteste un animal, je l’évite soigneusement.",
+    "Dix prémisses, une seule phrase au bout : c’est le style de Carroll. À retenir : ne concluez pas trop tôt (« les chats aiment la lune » est vrai, mais n’est qu’un palier). La question porte sur ce que je fais des kangourous, pas sur les chats."
+  ]
+}

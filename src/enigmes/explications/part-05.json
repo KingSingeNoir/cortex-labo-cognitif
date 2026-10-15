@@ -1,0 +1,557 @@
+{
+  "369": [
+    "Deux escargots partent du même coin S d’un jardin rectangulaire, en sens inverse, l’un à 1 m/h et l’autre à 2 m/h. On vous demande en quel point marqué ils se rencontrent : la réponse est B.",
+    "La figure officielle montre un rectangle dont les côtés se comptent en mètres (carrés de 1 m). Le tour complet mesure 2 × (10 + 2) = 24 m. Comme les deux bêtes ferment la boucle à elles deux, on additionne leurs vitesses : elles « mangent » 3 m de périmètre à chaque heure.",
+    "Le temps jusqu’à la rencontre est donc 24 ÷ 3 = 8 heures. Pendant ces 8 heures, le plus lent n’a parcouru que 8 m le long de son bord. En suivant son chemin depuis S sur la figure, on arrive précisément au point B.",
+    "Le plus rapide a, lui, couvert 16 m dans l’autre sens ; il se trouve au même endroit. Inutile d’essayer les points A, C, D ou E : ils ne correspondent pas à cette répartition 8 m / 16 m du circuit."
+  ],
+  "370": [
+    "Deux escargots amoureux veulent se rejoindre sous la feuille de salade, au centre du jardin-labyrinthe, alors que leurs déplacements sont toujours opposés (quand l’un monte, l’autre descend ; quand l’un va à droite, l’autre va à gauche). Oui, ils peuvent se rencontrer : le trajet à suivre est celui de la figure officielle du recueil, sans inventer d’autre dessin.",
+    "La contrainte d’opposition signifie que si le premier se décale de (h ; v), le second se décale de (−h ; −v). Le milieu du segment qui les joint reste donc immobile. Or ce milieu est précisément le centre du jardin, là où se trouve la salade. Ils ne peuvent donc se retrouver nulle part ailleurs qu’à ce centre.",
+    "Il reste à vérifier, sur le labyrinthe imprimé, qu’il existe un chemin menant chacun jusqu’à cette case centrale tout en respectant à chaque pas la symétrie centrale. La figure officielle donne un tel couple de parcours : chaque couloir emprunté par l’un a son image, tournée d’un demi-tour autour de la salade, empruntée par l’autre.",
+    "Si vous tentez un détour qui casse cette symétrie, l’un des deux se retrouve bloqué ou s’éloigne. Restez donc collé à la figure du recueil : c’est elle, et non un schéma improvisé, qui prouve que le rendez-vous est possible."
+  ],
+  "371": [
+    "Un escargot part de (0 ; 0) dans le premier quadrant et saute d’une unité parallèle aux axes chaque minute, en visitant les points à coordonnées entières comme sur la figure. Après deux heures, il se trouve en (10 ; 0). La réponse est A.",
+    "Deux heures, c’est 120 minutes, donc 120 déplacements. Le parcours remplit le quadrant couche après couche : pour chaque entier n ≥ 1, la « couche » des points où l’une des coordonnées vaut n (et l’autre est entre 0 et n) contient 2n + 1 points.",
+    "Quand toutes les couches jusqu’à n sont terminées, le nombre de points visités (hors l’origine déjà comptée dans le départ) s’ajoute en n(n + 2). Pour n = 10, on obtient exactement 120. De plus, n pair fait terminer la couche sur l’axe des abscisses, au point (n ; 0).",
+    "Les autres propositions correspondent à d’autres couches ou à un arrêt au milieu d’une couche : (0 ; 11) serait la fin d’une couche impaire, (11 ; 11) un coin jamais atteint à la minute 120, et ainsi de suite. D’où le point (10 ; 0)."
+  ],
+  "372": [
+    "Dodo et Mimi sont placés aux deux bouts d’une planche de 90 cm. Dix minutes plus tard, Dodo a avancé de 20 cm vers Mimi et Mimi de 35 cm vers Dodo. La distance qui les sépare alors est 35 cm. La réponse est C.",
+    "Ils marchent l’un vers l’autre, donc leurs avancées s’ajoutent pour réduire l’écart. Le rapprochement total vaut 20 + 35 = 55 cm.",
+    "Il reste 90 − 55 = 35 cm entre eux. On n’a pas besoin des vitesses individuelles ni de savoir s’ils se sont croisés : en dix minutes, 55 cm ont été « consommés » sur les 90 cm initiaux, et il en reste 35.",
+    "Méfiez-vous de la proposition 55 cm, qui est le chemin parcouru à eux deux, et non l’écart restant. De même, 20 cm et 25 cm ne correspondent à aucune des deux lectures (reste ou somme)."
+  ],
+  "373": [
+    "Sept escargots ont couru avec les temps : 47 min, une demi-heure, 35 min, vingt minutes, 25 min, une heure moins dix, et 53 min. On vous demande le temps du médaillé de bronze : c’est une demi-heure, soit 30 minutes.",
+    "Pour comparer, convertissez tout en minutes : 47, 30, 35, 20, 25, 50 (car une heure moins dix, c’est 50 minutes) et 53.",
+    "Classez du plus rapide au plus lent : 20, 25, 30, 35, 47, 50, 53. L’or va au plus petit temps (20 min), l’argent au deuxième (25 min), le bronze au troisième : 30 minutes.",
+    "Le piège classique est de prendre « une heure moins dix » pour 10 minutes, ou de donner le bronze au troisième plus grand temps. Ici le bronze récompense le troisième plus rapide, donc 30 minutes."
+  ],
+  "374": [
+    "Dix escargots ont fini une course, mais le classement a disparu ; il ne reste que des comparaisons (« X est arrivé avant Y », etc.). L’ordre complet, du premier au dixième, est : Zebra Wings, Frog Flippers, Orange Berry, Apple Pie, Kippers, CD Player, Top Hat, Windy Hill, Minty Mouth, Fizzy Pop.",
+    "Dessinez une chaîne. Zebra Wings précède Orange Berry, Frog Flippers et Apple Pie ; Frog Flippers précède Windy Hill, CD Player et Orange Berry ; Apple Pie suit Zebra Wings et Orange Berry. Cela force déjà le début : Zebra Wings, puis Frog Flippers, puis Orange Berry, puis Apple Pie.",
+    "Kippers arrive après Apple Pie et Frog Flippers, donc en cinquième position. CD Player est après Frog Flippers et avant Top Hat et Fizzy Pop ; Top Hat est après CD Player, Kippers et Apple Pie. On obtient alors CD Player sixième et Top Hat septième.",
+    "Windy Hill est après Frog Flippers et doit encore se glisser après Top Hat. Minty Mouth précède Fizzy Pop, et Fizzy Pop est après Minty Mouth, Orange Berry et CD Player : les deux dernières places sont donc Minty Mouth puis Fizzy Pop, avec Windy Hill huitième. Toutes les phrases du spectateur sont alors satisfaites, et une seule permutation reste possible."
+  ],
+  "375": [
+    "Martin dispose de treize emplacements alignés (voir la figure officielle) et doit y poser six proies de sorte que chaque droite tracée porte un nombre impair de proies. Une configuration existe, unique à une rotation près : elle est donnée par la figure officielle du recueil, qu’il ne faut pas remplacer par un dessin inventé.",
+    "Un nombre impair sur chaque alignement, avec seulement six pions, oblige à placer trois proies sur au moins une des lignes. En effet, si toutes les lignes n’en avaient qu’une, on n’atteindrait pas six pions compte tenu des partages aux carrefours ; deux par ligne donnerait des totaux pairs, interdits.",
+    "Une fois une ligne à trois pions fixée, il ne reste que trois essais raisonnables pour répartir les trois autres pions. La rotation du treillage identifie ces essais. Un seul d’entre eux rend tous les alignements impairs à la fois.",
+    "Vérifiez ensuite, pion par pion, chaque droite de la figure officielle : vous devez lire 1, 3 ou 5 proies, jamais 0, 2, 4 ou 6. C’est ce contrôle, et non une intuition de « joli motif », qui confirme la solution."
+  ],
+  "376": [
+    "La comptine énumère un chien, deux poulains, trois oies, quatre poulettes, cinq cochons, six lapins, sept chats, huit vaches, neuf moutons, plus la fermière, son mari, leur fils et des amis. Le nombre de pattes animales égale le nombre de jambes humaines. On vous demande le nombre d’amis : il y en a 80.",
+    "Comptez d’abord les quadrupèdes : 1 + 2 + 5 + 6 + 7 + 8 + 9 = 38 bêtes, donc 38 × 4 = 152 pattes. Les oiseaux (3 oies et 4 poulettes) sont 7 bipèdes, soit 14 pattes. Total animal : 166 pattes.",
+    "La fermière, le mari et le fils fournissent 6 jambes. Il reste 166 − 6 = 160 jambes à attribuer aux amis. À deux jambes par personne, cela fait 80 amis.",
+    "N’oubliez pas de séparer quadrupèdes et bipèdes, et de ne pas compter les humains dans les pattes animales. Le foin, l’avoine et les sacs de grain de la comptine sont un leurre : seul le dénombrement des membres entre dans le calcul."
+  ],
+  "377": [
+    "Cinq maisons en file abritent cochons, poules n’étant pas concernées ici, moutons, chiens, lapins et vaches, d’après les indices. De gauche à droite, on trouve : moutons, lapins, cochons, chiens, vaches.",
+    "Les cochons occupent la maison du milieu, donc la troisième. Les chiens sont à droite des cochons : comme les vaches tiennent déjà l’extrême droite (cinquième maison), les chiens prennent la quatrième.",
+    "Restent les deux maisons de gauche pour les moutons et les lapins. L’indice « la maison des moutons est à gauche de celle des lapins » impose moutons en première et lapins en deuxième.",
+    "Vous obtenez ainsi la file unique : moutons — lapins — cochons — chiens — vaches. Chaque phrase est alors lue sans contradiction, et aucune permutation des deux premières maisons ne respecte l’ordre moutons puis lapins."
+  ],
+  "378": [
+    "Une colonne de fourmis longue de 50 cm avance à vitesse constante. La dernière rejoint la tête puis revient à la queue, à vitesse constante elle aussi ; pendant cet aller-retour, la colonne a elle-même avancé de 50 cm. La fourmi ravitailleuse a parcouru 50(1 + √2) cm, soit environ 120,7 cm.",
+    "Appelez v la vitesse de la colonne et V celle de la ravitailleuse. À l’aller, elle rattrape 50 cm de plus que la colonne : V t₁ = v t₁ + 50. Au retour, elle marche à contre-sens de la queue : V t₂ = 50 − v t₂. De plus t₁ + t₂ est le temps pendant lequel la colonne parcourt 50 cm.",
+    "On tire t₁ = 50 / (V − v) et t₂ = 50 / (V + v). La condition 50 = 50/(V − v) + 50/(V + v) se réécrit, en posant X = V/v, sous la forme X² − 2X − 1 = 0. La racine positive est X = 1 + √2.",
+    "La distance cherchée est V × (t₁ + t₂) = (1 + √2) × 50 cm. Le résultat ne dépend pas de la valeur particulière de v : seule compte le rapport des vitesses, fixé par le fait que la colonne a avancé d’exactement une longueur d’elle-même."
+  ],
+  "379": [
+    "Une fourmi parcourt les arêtes d’un cube en partant de a vers b, puis en suivant les consignes D, D, G, D, D, G, G, G (droite ou gauche au sommet, dans le sens de sa marche). Elle arrive au sommet f.",
+    "« Droite » et « gauche » se lisent du point de vue de la fourmi qui arrive sur le sommet, le long de l’arête qu’elle vient de parcourir. Il y a toujours exactement deux arêtes encore possibles, l’une à droite, l’autre à gauche.",
+    "En appliquant les huit lettres dans l’ordre, le chemin est a-b-g-f-c-d-a-h-g-f. Après la dernière instruction G, la fourmi se pose sur f.",
+    "Une erreur fréquente consiste à garder un « haut » et un « bas » du dessin au lieu de tourner avec l’insecte. Rejouez chaque sommet en imaginant que vous êtes la fourmi : le sommet final est alors f, sans ambiguïté."
+  ],
+  "380": [
+    "648 fourmis partent dans une fourmilière à voies à sens unique, en se répartissant équitablement à chaque carrefour ; trois sorties sur quatre sont tenues par des tamanoirs, la quatrième mène au miel. 243 fourmis goûteront le miel.",
+    "À chaque fourche, l’effectif se divise en parts égales selon le nombre de départs. En reportant ces effectifs sur le schéma officiel, on voit par exemple 648 se couper en 324 et 324, puis 162, 81, et ainsi de suite, jusqu’aux sorties T (tamanoir) et M (miel).",
+    "Les branches qui aboutissent aux tamanoirs absorbent 324 + 81 + 216, etc., selon le dessin. La branche du miel recueille 243 fourmis : c’est le seul flux qui n’est pas dévoré.",
+    "Le total 243 + (les trois flux « tamanoir ») redonne 648, ce qui contrôle qu’aucune fourmi n’a été oubliée ni créée. Sans le partage équitable à chaque nœud, on ne pourrait pas conclure."
+  ],
+  "381": [
+    "Une fourmi marche sur les arêtes d’un cube de 1 cm, part de A et y revient, sans repasser au même endroit. La distance maximale est 8 cm.",
+    "« Le même endroit » s’entend ici des sommets : un cube n’en a que huit. Un circuit qui revient à A sans répéter de sommet est un cycle hamiltonien, donc de longueur 8 arêtes.",
+    "Un tel cycle existe sur le cube (par exemple en faisant le tour d’une face, puis en passant par les quatre sommets de la face opposée avant de redescendre vers A). Huit arêtes de 1 cm donnent 8 cm.",
+    "On ne peut pas faire mieux : un neuvième sommet n’existe pas. Si l’on autorisait de revoir un sommet, on pourrait viser les 12 arêtes, mais l’énoncé l’interdit. D’où le maximum 8 cm."
+  ],
+  "382": [
+    "Quatre fourmis aux sommets d’un carré de 10 cm se poursuivent simultanément : A vers B, B vers C, C vers D, D vers A, à la même vitesse. Elles se rejoignent au centre après que chacune a parcouru 10 cm.",
+    "Par symétrie, elles restent à chaque instant aux sommets d’un carré qui tourne et rétrécit. La vitesse de A est toujours dirigée vers B, donc perpendiculaire à la vitesse de B. La composante de la vitesse de B le long de AB est nulle : B ne s’éloigne ni ne se rapproche de A dans la direction de la vitesse de A, autre que le long du côté.",
+    "Dans le repère lié à B, A avance donc droit sur B à la vitesse pleine v, sur une distance égale au côté initial, 10 cm. Le temps de rencontre est t = 10 / v.",
+    "Dans le référentiel du jardin, chaque fourmi a bougé pendant ce même temps t à la vitesse v, donc a parcouru 10 cm — le long d’une spirale, certes, mais de longueur égale au côté du carré. C’est le classique « problème des souris » : la poursuite mutuelle ne rallonge pas la distance au-delà du côté initial."
+  ],
+  "383": [
+    "Une fourmi part de −2 sur une droite graduée, va jusqu’à −6, puis rebrousse chemin jusqu’à 5. Elle a parcouru 15 unités.",
+    "La distance n’est pas la différence des extrémités du voyage, car il y a un demi-tour. Du premier trajet, de −2 vers −6, on compte |−2 − (−6)| = 4 unités.",
+    "Du second, de −6 vers 5, on compte |5 − (−6)| = 11 unités. Le total est 4 + 11 = 15.",
+    "Si l’on se contentait de −2 jusqu’à 5, on trouverait 7, ce qui oublie l’aller-retour vers −6. Le détour de 4 unités (puis le retour de ces 4 unités, déjà inclus dans les 11) est bien réel : il faut le payer deux fois dans le kilométrage."
+  ],
+  "384": [
+    "Laurie pose la fourmi en haut à gauche d’une grille. Les pas alternent : un pas orthogonal (horizontal ou vertical), puis un pas diagonal, et ainsi de suite. On vous demande un chemin d’au moins 12 cases : c’est possible, et un exemple est fourni par la numérotation officielle du recueil.",
+    "Le premier pas quitte la case 1 vers une voisine par un côté ; le deuxième va sur une case en coin ; le troisième redevient orthogonal, etc. On ne saute pas de cette alternance, faute de quoi le chemin n’est plus légal.",
+    "En explorant la grille sans trop se coincer dans un coin, on parvient à visiter douze cases distinctes. La figure officielle numérote une telle marche de 1 à 12 ; ne redessinez pas une autre grille.",
+    "Si vous bloquez avant 12, c’est souvent que deux pas de même type se sont succédé, ou qu’une case déjà visitée a été reprise trop tôt. Repartez du coin et alternez strictement : la longueur 12 n’est pas un maximum théorique, c’est le seuil demandé, et il est atteint."
+  ],
+  "385": [
+    "Deux fourmis se rencontrent en H sur des pistes AB et CD perpendiculaires, avec AH = 252, BH = 125 donc AB = 377, CH = 156, DH = 76 donc CD = 232. Les droites (BD) et (AC) se coupent en L, entrée de la fourmilière. La distance de L à la piste (AB) vaut 13 000 unités-fourmi.",
+    "Les rapports AH/BH = 252/377 et CH/DH = 156/232 ne sont pas égaux. Les droites (AC) et (BD) ne sont donc pas parallèles : elles se coupent bien en un point L, comme l’affirme la seconde fourmi.",
+    "Soit K le projeté orthogonal de L sur (AB), x = KL la hauteur cherchée, y = HK. Les triangles BKL et BDH sont semblables, de même que AKL et ACH. On en tire 377x − 232y = 232 × 377 et 252x − 156y = 156 × 252.",
+    "Ce système admet la solution x = 13 000 (et y = 20 748). La fourmilière est donc à 13 000 unités-fourmi de la piste (AB). Le « loin » de la première fourmi se traduit par un nombre grand, mais parfaitement déterminé par les similitudes."
+  ],
+  "386": [
+    "Les Bellicus-Carrus combattent toujours en carré. On réunit deux escadrons A et B en un carré C ; après défaite, la dernière rangée de C forme un carré D, scindé en carrés E et F ; il ne survit que la dernière rangée de E et celle de F, soit 23 fourmis. L’escadron C comptait 83 521 fourmis.",
+    "Si e et f sont les côtés de E et F, on a e + f = 23 et e² + f² égal à un carré d² (le côté de D). Or D est formé de la dernière rangée de C, donc d² = c, et C a c² fourmis, avec c² = a² + b².",
+    "Il suffit d’essayer les paires d’entiers (e, f) de somme 23 et de tester si e² + f² est un carré. La seule qui marche est 8 et 15 : 64 + 225 = 289 = 17². Ainsi d = 17, puis c = d² = 289, et le nombre de fourmis de C est 289² = 83 521.",
+    "Les autres paires (1 ; 22), (2 ; 21), …, (11 ; 12) donnent des sommes de carrés qui ne sont pas des carrés parfaits. D’où l’unicité. On n’a pas besoin de connaître a et b : la question porte sur C, entièrement déterminé par d."
+  ],
+  "387": [
+    "La fourmi doit faire 120 pieds jusqu’à la maison de la cigale. Elle marche à 10 pieds par jour ; la cigale vient à sa rencontre à 20 pieds par jour, puis la ramène chez elle à la même vitesse. La fourmi arrive chez la cigale au bout de 8 jours.",
+    "Tant qu’elles ne se sont pas croisées, elles couvrent à elles deux les 120 pieds, à 10 + 20 = 30 pieds par jour. La rencontre a donc lieu après 120 ÷ 30 = 4 jours. La fourmi a alors marché 40 pieds, la cigale 80 pieds.",
+    "Il reste 80 pieds jusqu’à la maison de la cigale (c’est le chemin que la cigale vient de faire). Portée sur le dos, la fourmi avance désormais à 20 pieds par jour, donc encore 80 ÷ 20 = 4 jours.",
+    "Total : 4 + 4 = 8 jours. On pourrait croire, à tort, que 120 ÷ 10 = 12 jours suffisent (fourmi seule) ou que 120 ÷ 20 = 6 jours (cigale seule depuis chez elle) : ni l’un ni l’autre ne décrit le relais réel."
+  ],
+  "388": [
+    "Une fourmi ne marche que sur les carreaux blancs. Elle avance de 2 carreaux, tourne à sa gauche de 3, puis à sa droite de 2, puis encore à sa droite de 2, et atteint le sucre. Le tracé demandé est celui de ces quatre segments sur la figure officielle, aboutissant au sucre.",
+    "Fixez d’abord l’orientation initiale d’après la figure (départ et position du sucre). « Avancer de 2 » se fait tout droit sur le damier blanc. « Sa gauche » s’entend dans le sens de sa marche au moment du virage, pas dans le sens de votre feuille.",
+    "Après le premier virage à gauche, elle parcourt 3 carreaux ; le virage suivant, à droite, en fait 2 ; le dernier, encore à droite, encore 2, et le sucre est sous ses pattes. Les carreaux noirs ne sont jamais foulés.",
+    "Si votre trait rate le sucre, vous avez probablement gardé « gauche » et « droite » collés à la page au lieu de les tourner avec la fourmi. Recommencez en pivotant réellement à chaque coin : le chemin officiel est alors unique."
+  ],
+  "389": [
+    "Les douze mots de six lettres doivent être posés, un par rangée d’une grille 9 × 12, dans six cases consécutives, sans jamais répéter une même lettre dans une colonne. Une solution est : FOURMI en colonnes 1-6, CITRON en 2-7, RIDEAU en 1-6, STYLET en 4-9, YAOURT en 2-7, ENFANT en 1-6, SIGNAL en 3-8, VOLUTE en 4-9, GLACON en 4-9, GUIDON en 3-8, ARPEGE en 2-7, ARONDE en 1-6.",
+    "Chaque rangée a 9 cases pour un mot de 6 lettres : le mot peut donc commencer à la case 1, 2, 3 ou 4. Le critère décisif n’est pas l’esthétique, c’est l’absence de doublon vertical.",
+    "On avance rangée par rangée en testant les quatre décalages possibles et en rejetant tout placement qui fait collision avec une lettre déjà posée plus haut dans la même colonne. Le premier mot, FOURMI, peut rester calé à gauche ; les suivants se décalent pour éviter les F, O, U, R, M, I déjà utilisés en haut.",
+    "En bas, ARONDE se recale à gauche, et toutes les colonnes n’ont plus que des lettres distinctes. Vous pouvez vérifier colonne par colonne : aucune lettre n’apparaît deux fois. C’est exactement la contrainte demandée."
+  ],
+  "390": [
+    "Une fourmi part de S, y revient, ne repasse par aucun autre point deux fois, et a déjà noirci certains segments. On cherche le plus petit nombre de carreaux enfermés par son trajet fermé. Ce minimum est 8. La réponse est A.",
+    "Le chemin est une courbe fermée simple dessinée sur le quadrillage, contrainte par les arêtes déjà tracées. Parmi les choix 8, 9, 10, 11 et 13, 8 est le plus petit : il suffit d’exhiber un circuit légal qui entoure 8 carreaux.",
+    "La figure officielle en propose plusieurs, tous d’aire 8. On ne peut pas descendre en dessous : les segments déjà noirs obligent le lacet à englober au moins ces 8 unités, et tout raccourci violerait soit le passage unique par les sommets, soit les arêtes imposées.",
+    "Les réponses 9 à 13 correspondent à des circuits plus larges, possibles mais non minimaux. L’énoncé demande le nombre minimal, donc 8."
+  ],
+  "391": [
+    "Une fourmi suit une ligne tracée sur les faces d’un cube et doit revenir à son point de départ. Parmi cinq patrons, seul le patron E, une fois plié, referme la ligne en un circuit. La réponse est E.",
+    "Sur un patron, deux bords qui se colleront dans l’espace doivent faire se rejoindre les extrémités du trait. Si, après identification des arêtes, le dessin donne une ou deux lignes ouvertes, la promenade ne peut pas revenir au départ.",
+    "Pour A, B, C et D, le recollement laisse au moins une extrémité orpheline : la fourmi aboutirait dans une impasse. Pour E, chaque bout de trait s’apparie avec un autre, et l’on obtient une unique boucle.",
+    "Le plus sûr est de numéroter les arêtes du patron E comme sur la figure officielle de correction, puis de vérifier la fermeture. N’inventez pas un autre cube : le critère est le recollement du patron imprimé."
+  ],
+  "392": [
+    "Une fourmi va de A à B le long des joints d’un carrelage, en plus court chemin, sans longer le carreau noir. Elle a le choix entre 14 itinéraires. La réponse est C.",
+    "Un plus court chemin sur un quadrillage n’emprunte que des pas vers B, jamais de détour qui allongerait. On compte ces chemins en marquant chaque sommet par le nombre de façons d’atteindre B depuis ce sommet, en partant de B (valeur 1) et en remontant vers A.",
+    "Quand deux arêtes aboutissent à un nœud, on additionne les nombres déjà inscrits. Le carreau noir bloque un côté : les sommets de ce côté ne reçoivent pas de contribution le long de l’arête interdite, ce qui diminue le total par rapport à une grille libre.",
+    "En achevant le remplissage jusqu’à A, on lit 14. Les valeurs 8, 10, 17 ou 20 correspondent soit à l’oubli de l’obstacle, soit à un mauvais comptage des croisements. La méthode du marquage arrière évite les oublis."
+  ],
+  "393": [
+    "Clotilde et Bérénice ont apporté le même nombre de grains ; Clotilde en a 7 de plus qu’Adeline ; il manque 5 grains à Bérénice pour atteindre le double d’Adeline. Adeline a 12 grains, Bérénice 19 et Clotilde 19.",
+    "Notez a le nombre d’Adeline. Alors Clotilde a a + 7, et Bérénice a 2a − 5. L’égalité Clotilde = Bérénice donne a + 7 = 2a − 5, d’où a = 12.",
+    "On en déduit 2 × 12 − 5 = 19 pour Bérénice et 12 + 7 = 19 pour Clotilde. Les trois conditions sont simultanément vraies.",
+    "On peut aussi tester à partir de a ≥ 3 (sinon 2a − 5 serait trop petit). Pour a = 7 par exemple, on trouverait 9 et 14, qui ne coïncident pas. Seul a = 12 aligne Bérénice et Clotilde."
+  ],
+  "394": [
+    "Une fourmi allait de G à H, distants de 5 m, en ligne droite. Un obstacle haut de 1 m l’oblige à monter puis descendre à la verticale. Son nouveau parcours mesure 7 m. La réponse est C.",
+    "Que l’obstacle soit posé droit ou de biais, la composante horizontale du trajet reste la distance GH, soit 5 m : la fourmi doit quand même avancer de 5 m « à plat ».",
+    "S’y ajoutent 1 m de montée et 1 m de descente, soit 2 m strictement verticaux. Le total est 5 + 2 = 7 m, indépendamment de l’angle d’inclinaison de l’obstacle.",
+    "Les propositions avec √2 feraient croire à une hypoténuse, comme si la fourmi gravitait la pente. Ici elle monte et descend verticalement, donc on n’a pas à prendre de diagonale. L’angle ne change rien : ce n’est pas E."
+  ],
+  "395": [
+    "Trois fourmis partent de D1(0 ; 2), D2(0 ; 3), D3(0 ; 4) vers F1(1 ; 0), F2(2 ; 0), F3(3 ; 0), par pas Est ou Sud seulement, sans que leurs chemins ne se touchent. Il y a 10 façons de le faire.",
+    "Chaque fourmi k doit faire k pas vers l’est et (k+1) pas vers le sud (pour k = 1, 2, 3). L’interdiction de se toucher, y compris aux sommets, impose que les trois polylignes restent disjointes, donc « empilées » sans croisement.",
+    "On peut énumérer les configurations en dessinant d’abord le chemin de D1 (le plus court, vers F1), puis en logeant D2 et D3 dans les couloirs restants. La figure officielle recense dix schémas, ni plus ni moins.",
+    "Si l’on autorisait un sommet commun, on en trouverait davantage ; si l’on interdisait même les adjacences d’arêtes, on en trouverait moins. Avec la consigne « aucun point commun », le décompte s’arrête à 10."
+  ],
+  "396": [
+    "Fifi, partie de la gauche, a parcouru les 2/3 d’un bout de bois ; Coco, partie de la droite, en a parcouru les 3/4. La fraction de bois qui les sépare alors est 5/12. La réponse est E.",
+    "Placez le bout de bois sur [0 ; 1], Fifi partant de 0, Coco de 1. Fifi est à l’abscisse 2/3. Coco a avancé de 3/4 depuis la droite, donc se trouve à 1 − 3/4 = 1/4.",
+    "L’écart est |2/3 − 1/4| = |8/12 − 3/12| = 5/12. Elles se sont déjà « croisées » sur le papier, mais la question demande la longueur de bois entre elles, pas de savoir qui est à gauche.",
+    "Mettez au même dénominateur 12 : il reste 4/12 du bois devant Fifi, Coco a couvert 9/12 depuis sa droite, et 4/12 + 9/12 − 1 = 1/12 d’« overlap », d’où 5/12 d’écart. Les fractions 1/8, 1/7, 1/2 ou 3/12 ne sortent d’aucun de ces calculs."
+  ],
+  "397": [
+    "2 007 fourmis doivent couvrir 15 km ; chacune a déjà mangé de quoi faire 4 km et porte une ration d’encore 4 km ; une fourmi qui n’a plus rien pond un œuf nourrissant une autre puis meurt. En s’organisant au mieux, 501 fourmis atteignent la fourmilière amie.",
+    "Les 15 km se découpent en tronçons de 4 km, plus 3 km finaux. Tout le monde tient jusqu’au km 4 grâce à la ration initiale déjà consommée, puis mange le fardeau : tout le monde tient jusqu’au km 8.",
+    "Au km 8, il faut une nouvelle ration. On sacrifie 1 004 fourmis, dont les œufs nourrissent les 1 003 autres, qui tiennent jusqu’au km 12. Là, on sacrifie 502 fourmis pour nourrir 501 survivantes, qui avalent les 3 km restants.",
+    "On vérifie les effectifs : 1 004 + 1 003 = 2 007, puis 502 + 501 = 1 003. Toute autre répartition gaspillerait des œufs ou laisserait trop de bouches au dernier palier. Le maximum de survivantes est donc 501."
+  ],
+  "398": [
+    "Une fourmi se déplace dans un labyrinthe de couloirs, en partant de A, sans emprunter deux fois le même couloir (les carrefours, eux, sont réutilisables). La plus grande distance possible est 9 dm.",
+    "Chaque couloir de la figure officielle mesure 1 dm. Le problème revient à trouver une chaîne d’arêtes la plus longue possible sans répéter d’arête, pas nécessairement fermée.",
+    "Un parcours atteignant 9 dm existe (il est dessiné dans le corrigé officiel). On ne peut pas prendre une dixième arête sans réutiliser un couloir déjà visité : le graphe n’offre pas d’eulérien plus long depuis A sous cette contrainte.",
+    "Si vous trouvez moins de 9, vous êtes probablement sorti trop tôt d’une impasse. Repartez de A en gardant les impasses pour la fin, comme dans un tracé eulérien : 9 dm est alors atteignable, et c’est le maximum."
+  ],
+  "399": [
+    "Mimi aligne 45 fourmis en rangées consécutives de N, N+1, N+2, … avec un nombre de rangées différent chaque nuit. Le premier soir, elle a déjà la cohorte à 9 rangées (1 jusqu’à 9). Elle peut former 5 cohortes différentes en tout.",
+    "La somme de k entiers consécutifs commençant à N vaut k N + (0+1+…+(k−1)) = k N + k(k−1)/2, et cette somme doit égaler 45, avec N entier ≥ 1.",
+    "On trouve des solutions entières pour k = 2 (22+23), k = 3 (14+15+16), k = 5 (7 à 11), k = 6 (5 à 10) et k = 9 (1 à 9). Pour k = 4, 7 et 8, N n’est pas entier.",
+    "Les cinq valeurs de k distinctes donnent cinq nuits différentes, y compris celle déjà donnée. On ne compte pas deux fois la même cohorte : c’est bien cinq organisations au total."
+  ],
+  "400": [
+    "Une fourmi monte de K à L en ligne droite, puis redescend de L à M en suivant les marches d’un escalier. Le rapport « longueur de la montée / longueur de la descente » vaut 1/√3. La réponse est E.",
+    "Dans le triangle KLM, les angles aux extrémités de la base se lisent sur la figure : 60° en K et 75° en L, donc 45° en M. Soit H le pied de la perpendiculaire abaissée de L sur (KM).",
+    "L’escalier, monté marche par marche, a pour longueur totale la somme de la hauteur HL et de la course horizontale HM (c’est le principe du « développement » d’un escalier). L’angle en M valant 45°, le triangle rectangle en H du côté de M est isocèle : HM = HL. La descente mesure donc 2 HL.",
+    "La montée est KL, et sin 60° = HL / KL, donc KL / (2 HL) = 1 / (2 sin 60°) = 1 / √3. Les rapports 1, √2/2 ou √3/2 décriraient d’autres angles ; ici l’escalier double la hauteur, et l’angle de 60° produit exactement 1/√3."
+  ],
+  "401": [
+    "Une fourmi doit aller de A à B sur une structure de boules d’attache, sans jamais repasser par le même endroit. Un tel chemin existe : suivez le tracé de la figure officielle du recueil, sans en inventer un autre.",
+    "« Le même endroit » désigne ici les nœuds (les boules) et les tiges déjà empruntées. Il s’agit donc d’un chemin simple dans le graphe dessiné, joignant A à B.",
+    "La structure comporte des impasses et des boucles. La stratégie consiste à n’entrer dans une impasse que si B s’y trouve, et à réserver les ponts étroits pour ne pas s’enfermer. Le corrigé officiel montre un parcours qui visite les nœuds nécessaires sans répétition et débouche en B.",
+    "Si votre essai bloque avant B, vous avez brûlé un pont trop tôt. Effacez et recommencez en copiant la figure officielle : c’est elle qui constitue la preuve demandée, pas un schéma de mémoire."
+  ],
+  "402": [
+    "Une fourmi zigzague entre deux murs, toujours perpendiculairement à l’un d’eux. Les deux premiers segments mesurent 125 cm et 100 cm, puis les longueurs décroissent régulièrement. La longueur totale du parcours est 625 cm.",
+    "Les triangles rectangles successifs sont semblables : le rapport d’un segment au suivant est constant et vaut 100/125 = 4/5 = 0,8. On a donc une série géométrique de premier terme 125 et de raison 0,8, qui se prolonge indéfiniment jusqu’au point de convergence (l’entrée).",
+    "La somme infinie d’une série géométrique de raison r, |r| < 1, vaut premier terme / (1 − r). Ici 125 / (1 − 0,8) = 125 / 0,2 = 625 cm.",
+    "Vous pouvez aussi additionner 125 + 100 + 80 + 64 + 51,2 + … : les termes deviennent vite petits, et la somme s’approche de 625 sans le dépasser. Couper trop tôt sous-estimerait le trajet ; la limite exacte est 625 cm."
+  ],
+  "403": [
+    "Une fourmi va de A à B en ne suivant que des arcs de cercles dont les centres sont alignés, avec AB = 12. Tous les trajets minimaux ont la même longueur 6π.",
+    "Les rayons visibles (1, 2, 3, 6, …) sont des parts de AB. Un demi-cercle de rayon r mesure π r. En combinant des demi-cercles (ou des quarts, selon les tangences du dessin) sans reculer, on peut relier A à B de plusieurs manières.",
+    "Quelle que soit la combinaison, la somme des rayons « utiles » projetés sur AB reste 6. En effet, chaque portion d’arc recouvre une certaine largeur sur le segment [AB], et ces largeurs s’additionnent à 12/2 = 6. D’où une longueur d’arc totale de 6π.",
+    "On pourrait croire qu’emprunter le grand cercle est plus long que d’enchaîner les petits, ou l’inverse. Ici la compensation est exacte : les détours se valent. Le plus court n’est donc pas unique, mais sa longueur est unique : 6π."
+  ],
+  "404": [
+    "Un furet s’engage dans un labyrinthe à deux étages, les escaliers étant marqués par des points. Le chemin qui mène à la sortie est celui tracé sur la figure officielle du recueil ; n’en inventez pas un autre.",
+    "Chaque étage est un plan de couloirs. Un point • est une cage d’escalier : le furet change d’étage, puis continue dans le plan de l’autre niveau. Sans cette bascule, bien des impasses du rez-de-chaussée n’ont pas d’issue.",
+    "La méthode consiste à explorer d’abord un étage jusqu’à un escalier, à noter où l’on débouche au-dessus (ou au-dessous), puis à poursuivre. La flèche d’entrée et la flèche de sortie de la figure officielle bornent le trajet.",
+    "Si vous restez sur un seul niveau, vous tournerez en rond. C’est précisément l’intérêt du palais à deux étages : la solution n’est visible que lorsque les deux plans sont lus ensemble, comme sur le dessin imprimé."
+  ],
+  "405": [
+    "Le lapgourou saute 4 m en 2 s puis se repose 1 s, et recommence. La furibarde saute 3 m chaque seconde sans pause. Elle part 32 m derrière et ne peut saisir le lapgourou que lorsqu’il est à l’arrêt. Elle le capture au bout de 20 secondes.",
+    "Placez la furibarde à 0 m et le lapgourou à 32 m. La furibarde a pour position 3t (en mètres, t en secondes). Le lapgourou avance par cycles de 3 s : +4 m pendant 2 s, puis immobile 1 s.",
+    "Les pauses du lapgourou ont lieu aux intervalles [2 ; 3], [5 ; 6], [8 ; 9], [11 ; 12], [14 ; 15], [17 ; 18], [20 ; 21], … Aux temps 3, 6, 9, 12, 18, la furibarde est encore trop loin. À t = 20 s, elle se trouve à 60 m.",
+    "À cet instant, le lapgourou vient d’achever six cycles complets (18 s, +24 m) plus un saut de 2 s (+4 m), soit 32 + 28 = 60 m, et il s’arrête. Les deux positions coïncident pendant le repos : la capture a lieu à la 20e seconde, pas avant."
+  ],
+  "406": [
+    "Sobek a trois zones d’alligators (A), trois de caïmans (K), quatre de crocodiles (C) et quatre de gavials (G) ; deux cases voisines n’ont jamais le même type. Il existe trois remplissages possibles, donnés par la figure officielle du recueil.",
+    "C’est un coloriage de carte à quatre « couleurs » avec des quotas imposés. Partez des cases déjà indiquées (un C, des A, un K, un G) et propagez : chaque arête interdit la répétition du même animal.",
+    "Les quotas (3 A, 3 K, 4 C, 4 G) éliminent beaucoup de colorations par ailleurs licites. Après avoir fixé les cases contraintes, il reste trois manières de répartir les G et les C sans créer de voisinage identique.",
+    "Vérifiez, pour chacune des trois solutions officielles, que les totaux sont respectés et qu’aucune frontière n’a deux mêmes lettres. Au-delà de ces trois grilles, on contredit soit un quota, soit une adjacence."
+  ],
+  "407": [
+    "Une girafe dans un pré triangulaire de côtés 20 m, 16 m et 12 m broute à l’extérieur jusqu’à 2 m de la clôture. L’aire broutée vaut (96 + 4π) m², soit environ 108,56 m².",
+    "Le long de chaque côté, elle atteint une bande rectangulaire de largeur 2 m. Les trois rectangles mesurent 20×2, 16×2 et 12×2, d’aire totale (20+16+12)×2 = 96 m².",
+    "À chaque sommet, elle décrit un secteur de disque de rayon 2 m. L’angle de ce secteur est l’angle extérieur du triangle, égal à 180° moins l’angle intérieur. La somme de ces trois secteurs est 3×180° − 180° = 360° : on reconstitue un disque complet de rayon 2 m, d’aire 4π m².",
+    "L’aire totale est donc 96 + 4π. On n’ajoute pas l’intérieur du pré (elle ne broute qu’à l’extérieur) et on n’oublie pas les coins, sans lesquels il manquerait 4π. D’où la valeur exacte 96 + 4π."
+  ],
+  "408": [
+    "Un girafon alterne un saut de cavalier (en L) et un pas vers une case orthogonale voisine. Les quatre premières cases sont numérotées. Il peut visiter toutes les cases sauf les deux noires : suivez la numérotation de la figure officielle.",
+    "Le 1 est un L vers le 2, le 2 un pas d’un cran vers le 3, le 3 un L vers le 4, et ainsi de suite. Rompre l’alternance rend le chemin illégal, même s’il « a l’air » de tout couvrir.",
+    "Les deux cases noires sont interdites : elles servent d’obstacles qui orientent le parcours. En respectant L / pas / L / pas, on obtient une visite complète des cases blanches, par exemple jusqu’au numéro 18 sur la grille officielle.",
+    "Si vous sautez une case blanche, revenez en arrière d’un ou deux coups : le graphe est assez étroit pour qu’une erreur précoce soit irrattrapable. La figure imprimée, et non un dessin improvisé, est le chemin à retenir."
+  ],
+  "409": [
+    "La girafe de Charles X a parcouru 800 km en 40 jours, d’abord à 17 km/j, puis à 29 km/j après avoir reçu son manteau. Elle l’a reçu à Pouilly-en-Auxois.",
+    "Soit x le nombre de jours « rapides ». Alors 29x + 17(40 − x) = 800, soit 12x + 680 = 800, donc 12x = 120 et x = 10. Les dix derniers jours couvrent 29 × 10 = 290 km.",
+    "En remontant depuis Paris : 70 km (Fontainebleau), 130 km (Auxerre), 90 km (Pouilly-en-Auxois) : 70 + 130 + 90 = 290 km. C’est exactement la distance parcourue à 29 km/j.",
+    "Les 30 jours lents représentent 510 km, ce qui mène de Marseille jusqu’à Pouilly (40+50+110+210 = 410 km depuis Marseille, plus les 290 km depuis Paris, total 800). L’étape du manteau est donc Pouilly-en-Auxois, pas Lyon ni Auxerre."
+  ],
+  "410": [
+    "Trois grenouilles vertes à gauche et trois brunes à droite doivent échanger leurs places, une à la fois, toujours vers l’avant, en glissant vers le nénuphar vide adjacent ou en sautant par-dessus une seule grenouille. L’échange se fait en 15 coups, par exemple : V glisse, B saute, B glisse, V saute, V saute, V glisse, B saute, B saute, B saute, V glisse, V saute, V saute, B glisse, B saute, V glisse.",
+    "Les vertes ne reculent pas (elles vont vers la droite), les brunes non plus (vers la gauche). Un saut n’est légal que par-dessus une seule adversaire, vers le vide. On ne saute pas un ami.",
+    "Chaque verte doit croiser chaque brune, soit 3 × 3 = 9 sauts, et les deux files doivent encore avancer de 3 crans chacune, soit 6 glissades : 15 déplacements au total. La séquence ci-dessus réalise exactement ce compte.",
+    "Si vous bloquez avec deux vides apparents ou un cul-de-sac, c’est qu’un saut a été fait trop tôt. Reprenez depuis VVV_BBB et alternez, grosso modo, une poussée de vertes et une poussée de brunes, comme dans le script des 15 coups."
+  ],
+  "411": [
+    "Neuf nénuphars forment un carré ; une grenouille part du centre et enchaîne des bonds de plus en plus longs, sans revisiter un nénuphar. Le plus long parcours comporte six poses (cinq bonds) aux longueurs 1, √2, 2, √5 et 2√2, dans cet ordre croissant ; le chemin est celui de la figure officielle.",
+    "Les distances possibles entre centres de nénuphars d’une grille 3 × 3 sont précisément 1 (côté), √2 (diagonale de carreau), 2 (deux côtés), √5 (cavalier) et 2√2 (grande diagonale du grand carré).",
+    "Partir du centre interdit la grande diagonale 2√2 comme premier saut (le centre n’atteint pas les coins en 2√2). En ordonnant les cinq longueurs croissantes, on peut néanmoins viser six nénuphars distincts, ce qui est le maximum : il n’y a que neuf pads, et certaines distances ne se recollent pas après un premier choix.",
+    "La numérotation officielle (du pad 1 au pad 6) réalise les cinq longueurs distinctes. Un autre ordre de longueurs casse tôt la croissance stricte. Restez sur la figure du recueil."
+  ],
+  "412": [
+    "Grenouille et lièvre partent de la case 0 ; la grenouille saute de 4 en 4, le lièvre de 6 en 6 ; leur dernier saut atterrit sur la dernière case, et 8 cases portent les traces des deux. Cette dernière case est la numéro 84.",
+    "Les cases visitées par les deux animaux sont les multiples communs de 4 et de 6, c’est-à-dire les multiples de 12 : 0, 12, 24, 36, 48, 60, 72, 84, …",
+    "L’énoncé compte 8 cases portant les deux traces. En incluant le départ 0, le huitième multiple de 12 est 7 × 12 = 84. C’est aussi, pour chacun, un multiple de son pas, donc un atterrissage final légal.",
+    "Si l’on excluait 0, on s’arrêterait à 96, mais 0 a bien été foulé par les deux au départ. D’où 84, et non 72 (seulement 7 traces communes) ni 96 (9 traces)."
+  ],
+  "413": [
+    "Aurélie est à 7 de ses pas d’une grenouille. Pendant qu’elle fait un pas, la grenouille fait 3 sauts ; un pas d’Aurélie égale 10 sauts de grenouille. Aurélie rattrape la grenouille en 10 pas.",
+    "Travaillez en « sauts de grenouille ». L’écart initial vaut 7 × 10 = 70 sauts. À chaque pas d’Aurélie, l’écart diminue de 10 sauts mais la grenouille en ajoute 3 : le gain net n’est que de 7 sauts par pas d’Aurélie.",
+    "Le nombre de pas nécessaires est donc 70 ÷ 7 = 10. Au dixième pas, l’écart tombe à zéro : Aurélie pose la main sur la grenouille.",
+    "On n’a pas 70 ÷ 10 = 7 (ce serait oublier la fuite) ni 70 ÷ 3. La fuite de 3 sauts à chaque pas d’Aurélie est le cœur du problème : sans elle, 7 pas suffiraient ; avec elle, il en faut 10."
+  ],
+  "414": [
+    "Une grenouille gravit 13 marches par bonds de 1 ou 2 marches. Le nombre de façons d’arriver en haut est 377.",
+    "Pour n marches, le dernier bond est soit d’une marche (et l’on a gravi n − 1 marches avant), soit de deux (après n − 2 marches). Donc le nombre uₙ de parcours vérifie uₙ = uₙ₋₁ + uₙ₋₂.",
+    "Les amorces sont u₁ = 1 (un seul bond de 1) et u₂ = 2 (1+1 ou 2). On reconnaît la suite de Fibonacci décalée : 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377.",
+    "La treizième valeur est 377. Inutile d’énumérer les 377 listes : la récurrence les compte toutes, sans double emploi ni oubli. Un escalier de 12 marches en aurait 233, ce qui fournit le contrôle u₁₃ = 233 + 144."
+  ],
+  "415": [
+    "Les crapauds disent toujours vrai, les grenouilles mentent toujours. Quatre amphibiens parlent ; on vous demande combien sont des grenouilles : il y en a trois.",
+    "Coco dit « Lolo est une grenouille » et Lolo dit « Coco est une grenouille ». Ils ne peuvent être deux grenouilles (chacun dirait alors vrai) ni deux crapauds (chacun mentirait). Donc l’un est crapaud, l’autre grenouille : exactement un des deux dit vrai.",
+    "Si Bubu était un crapaud, il dirait vrai en affirmant être d’une autre espèce que Momo : Momo serait grenouille, donc Momo mentirait. Or Momo dit qu’il y a au moins deux crapauds ; avec Bubu crapaud et l’un de Coco/Lolo crapaud, il y aurait bien deux crapauds, et Momo dirait vrai : contradiction. Bubu est donc une grenouille.",
+    "Bubu ment, donc Momo est de la même espèce que Bubu : Momo est grenouille aussi. Momo ment à son tour, donc il est faux qu’il y ait au moins deux crapauds : il n’y en a qu’un (Coco ou Lolo). On a bien trois grenouilles : Bubu, Momo, et l’un des deux Coco/Lolo."
+  ],
+  "416": [
+    "On vous demande un chemin reliant deux grenouilles en passant par tous les nénuphars, sans en fouler un deux fois. Ce chemin est celui de la figure officielle du recueil ; n’en dessinez pas un autre.",
+    "Il s’agit d’un parcours hamiltonien sur le graphe des nénuphars : chaque pad est un sommet, chaque saut autorisé une arête, et l’on veut une chaîne qui visite chaque sommet une fois, d’une grenouille à l’autre.",
+    "Les impasses (pads de degré 1) doivent être des extrémités, ce qui est heureusement le cas des deux grenouilles si la figure les place au bord. Le reste se tisse sans créer d’île isolée.",
+    "Tout raccourci qui laisse un pad au milieu de la mare échoue. Revenez à la figure imprimée : c’est elle qui matérialise le seul type de trajet demandé, sans invention de nénuphars supplémentaires."
+  ],
+  "417": [
+    "Sur l’île, les grenouilles bleues augmentent de 60 % tandis que les vertes diminuent de 60 %, et les deux proportions s’échangent. Le nombre total de grenouilles diminue de 20 %. La réponse est B.",
+    "Soient b et v les effectifs initiaux. À la fin on a 1,6 b bleues et 0,4 v vertes. L’échange des proportions s’écrit 1,6 b / (1,6 b + 0,4 v) = v / (b + v), ou de façon équivalente b / v = 0,4 v / 1,6 b.",
+    "On obtient b² = 0,25 v², donc v = 2b (effectifs positifs). Le total initial est 3b ; le total final est 1,6b + 0,8b = 2,4b.",
+    "La variation relative est (2,4b − 3b) / 3b = −0,6b / 3b = −20 %. Le total a donc diminué d’un cinquième, pas de 0 % (ce serait un simple échange sans perte) ni de 60 % (ce n’est la baisse que des vertes)."
+  ],
+  "418": [
+    "Vingt et une notes de 2 à 19 ont pour moyenne 10, pour médiane 9 et pour étendue 17. On veut hausser la moyenne d’un point en changeant le moins de notes possible, sans toucher à la médiane ni à l’étendue. Il faut modifier trois notes, par exemple remplacer 3 par 9, un 10 par 16 et l’autre 10 par 19.",
+    "La somme initiale vaut 21 × 10 = 210 ; pour une moyenne 11, il faut 231, donc +21 points. La médiane est la 11e valeur ordonnée, égale à 9. L’étendue 17 impose seulement que le nouvel écart max − min reste 17, pas forcément de garder 2 et 19.",
+    "Avec deux notes seulement, on ne peut pas ajouter 21 points sans déplacer la 11e valeur (donc la médiane) ou sans changer l’étendue. Trois notes suffisent : 6 + 6 + 9 = 21, via 3 → 9 (la médiane 9 reste la 11e, car il y a encore assez de 9), 10 → 16 et 10 → 19 (le maximum reste 19).",
+    "Une autre triplette possible est 2 → 4, 10 → 19 et 10 → 20 : le 2 disparaît, le nouveau minimum est 3, le nouveau maximum est 20, l’étendue reste 17 et la médiane 9 est inchangée. Dans tous les cas, deux notes ne suffisent pas : le minimum de modifications est trois."
+  ],
+  "419": [
+    "Pierre a moins de 10 grenouilles dans sa mare ; si l’on en tire deux au hasard, la probabilité qu’elles soient toutes deux albinos vaut exactement 1/2. Il a 4 grenouilles, dont 3 albinos.",
+    "Soient a le nombre d’albinos et g le total (g < 10, a ≤ g). Tirer deux albinos sans remise a pour probabilité [a/g] × [(a−1)/(g−1)] = a(a−1) / [g(g−1)]. On veut cette fraction égale à 1/2.",
+    "L’égalité 2a(a−1) = g(g−1) se teste sur les petits entiers. Le couple (a ; g) = (3 ; 4) donne 2×3×2 = 12 et 4×3 = 12. C’est la seule solution avec 2 ≤ g < 10 (le cas a = g = 1 est impossible : on ne tire pas deux grenouilles).",
+    "Autrement dit, parmi les C(4 ; 2) = 6 paires, C(3 ; 2) = 3 sont doublement albinos : pile la moitié. Avec 2 albinos sur 3, on n’aurait que 1 chance sur 3 ; avec 5 albinos, on dépasserait 10 grenouilles ou la fraction 1/2."
+  ],
+  "420": [
+    "Cinq grenouilles savantes s’alignent en formant un entier, à l’aide des inscriptions Cent(s), Deux, Trente, Mille et Neuf. La probabilité qu’Omar lise un nombre pair ce soir-là est 2/3.",
+    "Les alignements distincts produisent 24 entiers différents (toutes les permutations licites des cinq inscriptions). Un dénombrement soigneux, en évitant les doublons et les zéros non significatifs mal placés, aboutit à cette liste de 24 valeurs.",
+    "Parmi ces 24 nombres, 16 se terminent par un chiffre pair, donc sont pairs. La proportion est 16/24 = 2/3.",
+    "On n’est pas à 1/2, car les inscriptions ne sont pas symétriques : « Trente » et « Deux » favorisent des terminaisons paires. Inutile de tirer au sort : le décompte exhaustif des 24 files suffit."
+  ],
+  "421": [
+    "Zermito veut tracer, dans un triangle de côtés 10 cm, 8 cm et 6 cm, une ligne brisée en Z dont les sommets sont sur les côtés, partageant le triangle en quatre triangles de même aire. Trois emblèmes possibles apparaissent sur la figure officielle du recueil.",
+    "Ce triangle 6-8-10 est rectangle (car 6² + 8² = 10²). Une médiane partage tout triangle en deux triangles de même aire. En reprenant une médiane dans chacun des deux, on obtient quatre triangles d’aire égale.",
+    "Il reste à choisir quelles médianes et dans quel sens, de manière à ce que la ligne brisée ressemble à un Z (deux « barres » obliques reliées par une transversale). Plusieurs couples de médianes conviennent, d’où trois dessins distincts.",
+    "N’inventez pas d’autres sommets hors des côtés : l’énoncé les y impose. Les trois Z officiels sont les modèles à retenir ; chacun découpe bien l’aire en quatre parts égales."
+  ],
+  "422": [
+    "Géraldine arrache les pétales en cycle : « Il m’aime », « Un peu », « Beaucoup », « À la folie », « Pas du tout », puis recommence. Le dernier pétale lui fait dire « À la folie », et elle a dit exactement 7 fois « Pas du tout ». La marguerite avait 39 pétales.",
+    "Le cycle comporte 5 phrases. « Pas du tout » est la 5e ; « À la folie » est la 4e. Avoir dit 7 fois « Pas du tout » signifie que l’on a parcouru 7 cycles complets, soit 35 pétales, et que l’on a entendu 7 fois la 5e phrase.",
+    "Le tout dernier pétale n’est pas un « Pas du tout » mais un « À la folie ». Après les 35 pétales, il faut encore les 4 premières phrases d’un nouveau cycle pour s’arrêter sur la 4e. On ajoute 4 pétales : 35 + 4 = 39.",
+    "Le contrôle : 39 = 7 × 5 + 4, donc le 39e tombe bien sur la 4e phrase, et les positions 5, 10, 15, 20, 25, 30, 35 (sept fois) sont les « Pas du tout ». Avec 38 ou 40 pétales, la dernière phrase ne serait plus « À la folie »."
+  ],
+  "423": [
+    "Gertrude doit visiter toutes les pierres de l’étang (une blanche et huit grises), sans sauter par-dessus une pierre, sans revenir sur ses pas, uniquement par déplacements horizontaux ou verticaux, et rentrer à son point de départ. Le circuit à suivre est celui de la figure officielle du recueil ; n’en inventez pas un autre.",
+    "Les règles décrivent un cycle hamiltonien sur le graphe des pierres : sommets = pierres, arêtes = sauts orthogonaux vers une pierre voisine (sans enjamber).",
+    "La pierre blanche, souvent centrale ou de départ, ancre le tour. Parce que l’on doit fermer la boucle, certaines dispositions « en 3 × 3 trop naïves » sont impossibles : la figure officielle a précisément la connectivité qui rend le cycle possible.",
+    "Toute tentative qui laisse une pierre isolée ou qui exige un saut en diagonal viole l’énoncé. Copiez le chemin imprimé, pierre après pierre, jusqu’au retour : c’est la solution demandée."
+  ],
+  "424": [
+    "La grenouille doit rejoindre la fleur en ne se déplaçant verticalement que pour atterrir sur un nénuphar pair, et horizontalement que pour atterrir sur un nénuphar impair. Un chemin existe : suivez-le sur la figure officielle (la grille de nombres du recueil).",
+    "La parité de la case d’arrivée dicte la direction du saut, et non celle de la case de départ. Vers un pair : haut ou bas ; vers un impair : gauche ou droite. Un saut diagonal est interdit.",
+    "Partez de la case 7 (impaire) : le premier pas légal vers un voisin pair sera donc vertical. De proche en proche, on encadre la fleur (100, pair, donc atteinte par un dernier pas vertical).",
+    "Si vous butez, c’est qu’un pas horizontal a atterri sur un pair, ou un pas vertical sur un impair. Effacez ce saut et consultez la grille officielle : le chemin y est indiqué sans qu’il soit besoin d’inventer d’autres nombres."
+  ],
+  "425": [
+    "Dès que le bœuf beugle, la grenouille fait 3 sauts. Sur le grand nénuphar elle peut aller vers le petit ou faire un salto au-dessus du grand ; sur le petit, elle va nécessairement vers le grand. Il y a 5 manières de faire les trois sauts en partant du grand, et 3 manières en partant du petit.",
+    "Notez G et P les deux pads. Depuis G, deux choix (rester en G par salto, ou aller en P). Depuis P, un seul choix : aller en G. Un parcours de 3 sauts est une suite de 3 de ces transitions.",
+    "Départ G : les cinq suites sont GGG (trois saltos), GGP, GPG, PGG et PGP. On ne peut pas avoir, par exemple, PP quelque part, car on ne reste jamais sur P.",
+    "Départ P : le premier saut est forcé vers G, puis on retrouve les choix du grand : PGG, PGP, PPG. Ce sont bien 3 manières. Les totaux 5 et 3 se contrôlent en dessinant un petit arbre de décision à trois niveaux."
+  ],
+  "426": [
+    "Géraldine commence par un bond de 2 (elle est sur la marche 2). Ensuite, multiple de 2 → +3, multiple de 3 → +2, multiple de 5 → +4 ; en cas de choix, elle choisit ; sinon +1. Le minimum de bonds pour atteindre 20 est 8, via 2 → 5 → 9 → 11 → 12 → 15 → 19 → 20.",
+    "Sur 2 (table de 2), elle saute de 3 et atterrit sur 5. Sur 5 (table de 5), elle saute de 4 et atterrit sur 9. Sur 9 (table de 3), elle saute de 2 et atterrit sur 11. Sur 11, aucune table : +1, d’où 12.",
+    "12 est multiple de 2 et de 3 : elle peut +3 ou +2. Pour minimiser, +3 mène à 15. 15 est multiple de 3 et de 5 : +2 ou +4 ; +4 mène à 19. Puis 19 n’est dans aucune table : +1, et l’on est sur 20.",
+    "Ces 8 bonds (le premier de 2 compris) sont minimaux : chaque fois que plusieurs règles s’offrent, on a pris celle qui avance le plus sans dépasser 20. Un autre choix en 12 (aller en 14) allonge le reste."
+  ],
+  "427": [
+    "Géraldine ne saute que sur des nénuphars premiers, vers un voisin horizontal ou vertical, pour traverser la mare. Le chemin à tracer est celui de la figure officielle du recueil, le long des nombres premiers imprimés.",
+    "Rappel : un entier ≥ 2 est premier s’il n’a pas d’autre diviseur que 1 et lui-même. Dans la grille, 5, 11, 29, 3, 13, 53, 41, 43, 7, 19, 37, 23, 31, 2, 17 le sont ; 6, 10, 9, 15, 21, 4, 12, 14, 8, 18, 16, 20 ne le sont pas.",
+    "On cherche donc un chemin dans le sous-graphe des cases premières, d’un bord à l’autre. Les composites forment des murs. La figure officielle relie une entrée à une sortie en ne posant la grenouille que sur des premiers.",
+    "N’empruntez pas une diagonal, même entre deux premiers, et ne « sautez » pas un composite. Si votre trait traverse un 9 ou un 15, il est illégal. Revenez au tracé imprimé."
+  ],
+  "428": [
+    "Trois grenouilles (jaune, verte, rouge) sautent à tour de rôle ; atterrir sur une occupante la renvoie au rocher, et l’arrivante avance encore d’un nénuphar. À la fin, verte en tête, jaune un pad derrière, rouge encore un derrière. L’ordre de jeu est : verte, puis jaune, puis rouge.",
+    "Les sauts sont : rouge 6-5-6, verte 4-2-1, jaune 2-3-6. Si la rouge jouait en premier, ses grands bonds la mettraient irrémédiablement en tête ; or elle finit dernière. Quelqu’un doit donc l’avoir renvoyée au rocher dès le début.",
+    "La verte, avec 4 puis 2, atterrit sur 6 au deuxième tour, précisément là où la rouge (saut 6) s’était posée : la rouge revient au rocher, la verte avance d’un bonus et se retrouve en 7. La verte joue donc avant la rouge.",
+    "La jaune, trop petite sauteuse, ne peut finir deuxième qu’en renvoyant elle aussi quelqu’un. Ce ne peut être la verte déjà en 7 ; c’est la rouge, atteinte par 2+3 = 5. La jaune joue donc après la verte et avant la rouge. La simulation complète V-J-R donne bien l’arrivée 8, 7, 6."
+  ],
+  "429": [
+    "Ondine remplit une grille avec cinq animaux, chacun une fois par ligne et par colonne (comme un sudoku d’animaux). L’animal à placer dans la case « ? » est le lapin. La réponse est C.",
+    "C’est un carré latin. Pour la case du point d’interrogation, éliminez les animaux déjà présents sur sa ligne et sur sa colonne.",
+    "Les quatre autres espèces y apparaissent déjà, soit en ligne, soit en colonne. Il ne reste que le lapin, et précisément aucun autre lapin n’occupe encore cette ligne ni cette colonne.",
+    "Les dessins A, B, D, E reproduisent des animaux déjà en conflit avec la ligne ou la colonne du « ? ». Seul C (le lapin) respecte la règle « une fois par ligne, une fois par colonne »."
+  ],
+  "430": [
+    "Verdino a passé sept barres, chacune plus haute que la précédente selon la règle : +1/2 de la hauteur initiale, puis +1/3 de la précédente, puis +1/4, etc. La septième barre est à 60 cm. La barre de départ était à 15 cm.",
+    "Soit x la première hauteur. Les hauteurs successives valent x, (3/2)x, 2x, (5/2)x, 3x, (7/2)x, 4x. On reconnaît le motif : la n-ième hauteur est ((n+1)/2) x.",
+    "La septième est 4x, et 4x = 60, donc x = 15. Les sept valeurs sont 15, 22,5, 30, 37,5, 45, 52,5 et 60 cm, en accord avec les fractions de l’énoncé.",
+    "Le piège serait de croire que l’on ajoute toujours la même longueur, ou que 60 cm est un total de sauts et non la dernière barre. Ici 60 cm est la hauteur de la 7e barre, d’où 15 cm au départ."
+  ],
+  "431": [
+    "Jeanne a perdu l’ordre des quatre opérations « +10, ÷10, ×10, −10 » pour passer du tour de taille 108 cm à un « poids idéal ». Elle calcule les 24 ordres sur une calculette sans priorités, puis moyenne les résultats. Elle trouve 108 kg.",
+    "Une calculette solaire enchaîne de gauche à droite, sans que la multiplication passe avant l’addition. Il y a 4! = 24 permutations des quatre opérations.",
+    "Dans 16 de ces 24 ordres, +10 et −10 se détruisent, de même que ×10 et ÷10, et l’affichage reste 108. Les 8 ordres restants donnent, deux fois chacun, 198, 117, 99 et 18.",
+    "La moyenne vaut [16 × 108 + 2 × (198 + 117 + 99 + 18)] / 24 = (1728 + 864) / 24 = 2592 / 24 = 108. Le hasard des 24 chemins ramène donc Jeanne à 108 kg, coïncidence plaisante avec le tour de taille de départ."
+  ],
+  "432": [
+    "Des guêpes s’alignent en quatre rangées de N, N+1, N+4 et N+9 individus. Un jour, le tiers de la colonie est dans la quatrième rangée. Il y avait 66 guêpes en tout.",
+    "Le total est N + (N+1) + (N+4) + (N+9) = 4N + 14. La quatrième rangée compte N+9 guêpes, et l’on veut 3(N+9) = 4N + 14.",
+    "D’où 3N + 27 = 4N + 14, donc N = 13. La quatrième rangée a 22 guêpes, le total 4×13 + 14 = 66, et 22 est bien le tiers de 66.",
+    "N doit être un entier positif : la résolution de l’équation linéaire n’en laisse qu’un. Inutile de tâtonner en ajoutant 4 à chaque rangée : l’algèbre donne directement 66."
+  ],
+  "433": [
+    "John a une cuve de 8 pintes et deux récipients de 5 et 3 pintes ; il doit obtenir 4 pintes dans deux parcs. Un transvasement possible, en partant du 5, est : (8,0,0) → (3,5,0) → (3,2,3) → (6,2,0) → (6,0,2) → (1,5,2) → (1,4,3) → (4,4,0).",
+    "On ne mesure que par remplissage, vidage ou transfert jusqu’à ras bord. Les états se notent (cuve, jerrican de 5, jerrican de 3). Le but est un état du type (4,4,0) ou (4,0,4) ou (0,4,4), etc., pour servir deux parcs de 4 pintes.",
+    "En remplissant d’abord le 5, on obtient 4 et 4 en sept transvasements. On peut aussi commencer par le 3 : cela marche, mais demande une manipulation de plus.",
+    "C’est le classique problème de Bachet : les capacités 3, 5, 8 permettent d’obtenir tout entier de 1 à 8, et en particulier le partage équitable 4-4. Nul besoin d’un quatrième récipient."
+  ],
+  "434": [
+    "Deux assemblages de petits cubes identiques représentent des jeux de hamsters. On a enlevé le quart du volume de l’objet 1 pour obtenir l’objet 2 ; s’il faut 12 cL de peinture pour l’objet 1, il en faut 11 cL pour l’objet 2.",
+    "L’objet 1 est un cube 4×4×4, soit 64 petits cubes. L’objet 2 en a 64 − 16 = 48, donc on a retiré 16/64 = 1/4 du volume.",
+    "Peindre l’objet 1, c’est couvrir 6 faces de 4×4, soit 96 faces élémentaires, avec 12 cL : 1 cL recouvre 8 faces élémentaires. L’objet 2, une fois les 16 cubes ôtés, offre 88 faces élémentaires à peindre (certaines faces internes deviennent visibles, d’autres disparaissent).",
+    "88 ÷ 8 = 11, d’où 11 cL. On n’applique pas le quart à la peinture : l’aire ne diminue pas dans le même rapport que le volume, parce que creuser révèle de nouvelles faces."
+  ],
+  "435": [
+    "On vous dit : le chien est plus vieux que le hamster ; le hamster est plus jeune que le chat ; le chat est plus vieux que le chien. L’animal le plus vieux est le chat.",
+    "« Le hamster est plus jeune que le chat » signifie chat > hamster. « Le chien est plus vieux que le hamster » signifie chien > hamster. « Le chat est plus vieux que le chien » signifie chat > chien.",
+    "En enchaînant : chat > chien > hamster. Le chat est donc le plus âgé, le hamster le plus jeune.",
+    "Aucune de ces trois phrases ne se contredit. Si l’on intervertissait chat et chien, on heurterait « le chat est plus vieux que le chien ». D’où le chat, sans ambiguïté."
+  ],
+  "436": [
+    "Un hareng part de Boulogne à 20 h, file à 10 nœuds, et Douvres est à 45 km. Il arrive à 22 h 25 min 47 s.",
+    "Un nœud vaut 1 852 m/h, soit 1,852 km/h. Dix nœuds, c’est 18,52 km/h. Le temps de trajet est 45 / 18,52 heures, ou encore, en milles : 45 / 1,852 ≈ 24,298 milles, puis 24,298 / 10 ≈ 2,4298 heures.",
+    "0,4298 heure × 60 ≈ 25,79 minutes, et 0,79 minute × 60 ≈ 47 secondes. Le trajet dure donc 2 h 25 min 47 s.",
+    "Ajoutez ce délai à 20 h : 22 h 25 min 47 s. N’utilisez pas 10 km/h à la place de 10 nœuds : le nœud est plus grand que le kilomètre par heure, et l’erreur dépasserait une heure."
+  ],
+  "437": [
+    "Le hérisson affirme : « Si j’avais ramassé deux fois plus de pommes, j’en aurais 24 de plus que ce que j’ai vraiment. » Il a 24 pommes. La réponse est B.",
+    "Soit p le nombre actuel. Le double vaut 2p, et l’énoncé dit que ce double égale p + 24.",
+    "L’équation 2p = p + 24 donne p = 24. Avoir deux fois plus, c’est ajouter exactement autant que l’on a déjà ; cet ajout est 24, donc on a 24.",
+    "Les leurres 48 (le double) et 12 (la moitié de 24) naissent d’une lecture trop rapide. Ce n’est pas « 24 de plus que le double », c’est « le double égale l’actuel plus 24 »."
+  ],
+  "438": [
+    "On compare les hibernations : hérisson du 1er novembre au 1er avril, ours 5 mois, marmotte 30 semaines, loir 200 jours, kangourou 0. La plus longue est celle de la marmotte. La réponse est C.",
+    "Le hérisson dort 5 mois, comme l’ours : de novembre à avril, cela fait au plus 151 jours environ, en tout cas moins de 155 jours. Le loir, lui, totalise 200 jours.",
+    "La marmotte totalise 30 × 7 = 210 jours, ce qui dépasse 200. Le kangourou n’hiberne pas : il est hors course.",
+    "Le classement des durées est donc kangourou (0), hérisson et ours (≈ 5 mois), loir (200 j), marmotte (210 j). C’est la marmotte qui l’emporte, pas le loir malgré les 200 jours."
+  ],
+  "439": [
+    "Un hérisson part de A dans un réseau d’allées, peut repasser par un carrefour mais pas par une même allée, et n’est pas obligé de revenir en A. La distance maximale est de 9 dm (neuf fois le segment unité de 1 dm indiqué sur la figure).",
+    "Comme pour la fourmi jumelle de cette énigme, chaque allée mesure 1 dm. On cherche une chaîne d’arêtes la plus longue possible sans répétition d’arête, pas forcément fermée.",
+    "Un parcours de 9 dm existe ; il est dessiné dans la figure officielle. Une dixième allée forcerait à réemprunter un segment déjà visité.",
+    "Gardez les impasses pour la fin, afin de ne pas vous enfermer. Le maximum, lu avec l’échelle 1 dm, est 9 dm."
+  ],
+  "440": [
+    "Quatre amis de Castor — souris, loutre, lapin, héron — s’appellent Adia, Andréa, Alain et Aman. On vous demande le prénom du héron : c’est Andréa.",
+    "La souris a exactement deux voyelles : seul Aman (A, A) convient, Adia en a trois, Alain trois, Andréa quatre. La souris s’appelle donc Aman.",
+    "La loutre n’a pas de « r » : ce n’est pas Andréa. Il lui reste Adia ou Alain. Le lapin a moins de lettres que la loutre : Adia (4 lettres) est plus court qu’Alain (5) et qu’Andréa (6). Le lapin s’appelle donc Adia, ce qui force la loutre à s’appeler Alain.",
+    "Le dernier prénom, Andréa, revient au héron. Toutes les contraintes sont saturées, et aucun croisement souris/loutre/lapin n’est plus possible."
+  ],
+  "441": [
+    "Cinq animaux (chacal, dromadaire, élan, fennec, guépard) sont dans les mauvaises cages ; une cage (celle de l’hippopotame parti chez le véto) est vide ; un seul animal par cage, déplacements vers une cage voisine. Il faut au minimum 9 changements de cage pour tout rétablir.",
+    "Chaque animal a une cage cible (C, D, E, F, G) et H est le sas vide. C’est un taquin : on glisse un animal vers la case vide, une fois à la fois.",
+    "Un minorant s’obtient en comptant, pour chacun, la distance de Manhattan à sa cage, en tenant compte qu’ils ne peuvent pas s’interpénétrer. Le chacal peut s’en tirer en 1 coup, fennec, guépard, dromadaire et élan en 2 chacun : 1+2+2+2+2 = 9, et cette borne est réalisable.",
+    "La figure officielle décrit une suite de 9 glissements qui range tout le monde. Moins de 9 coups laisserait au moins un animal trop loin de chez lui. D’où le minimum 9."
+  ],
+  "442": [
+    "Un nombre d’hirondelles inférieur à 300 est triangulaire, et peut se séparer de trois façons distinctes en une somme de deux nombres triangulaires. Ce nombre est 276.",
+    "Les triangulaires sont Tₙ = n(n+1)/2 : 1, 3, 6, 10, 15, 21, … Une nuée triangulaire Tₚ se scinde en deux triangles lorsqu’on a Tₚ = Tₘ + Tₙ avec m, n ≥ 1.",
+    "On cherche Tₚ ≤ 300 admettant trois décompositions distinctes. T₂₃ = 276 = T₉ + T₂₁ = T₁₁ + T₂₀ = T₁₄ + T₁₈. Aucun triangulaire plus petit ne possède trois écritures de ce type (aux ordres près).",
+    "Pépé parle donc de 276 oiseaux. 300 lui-même est triangulaire (T₂₄) mais n’offre pas trois scissions distinctes du genre demandé ; 276 est la valeur visée."
+  ],
+  "443": [
+    "Quatre hirondelles mâles et quatre femelles alternent sur un fil. Deux voisines qui échangent leurs places se posent sur deux places vides en conservant leur ordre relatif. On arrive à grouper les quatre mâles d’un côté et les quatre femelles de l’autre en 4 étapes, comme sur la figure officielle.",
+    "C’est une adaptation du problème de Tait : on ne permute pas sur place, on « saute » un couple intact vers une paire de cases libres. L’ordre interne du couple est figé pendant le saut.",
+    "Quatre tels sauts suffisent à défaire l’alternance M F M F M F M F pour obtenir MMMMFFFF (ou FFFFMMMM). La figure officielle numérote ces quatre configurations successives.",
+    "Un cinquième saut est inutile, et trois sauts laissent encore un mélange. Ne redessinez pas d’autres cases vides que celles du recueil : le protocole tient en quatre coups."
+  ],
+  "444": [
+    "Cinq hirondelles s’envolent, puis trois reviennent, et l’on en compte alors douze sur les fils. Au début, il y en avait 14. La réponse est E.",
+    "Le bilan est : départ − 5 + 3 = départ − 2. Il manque deux hirondelles par rapport au matin.",
+    "S’il y en a 12 maintenant, il y en avait 12 + 2 = 14 au début. L’équation x − 5 + 3 = 12 donne x = 14.",
+    "Les pièges 8, 9, 10, 12 consistent à oublier les trois retours, ou à prendre 12 pour le nombre initial. Le mouvement net est une perte de 2, d’où 14."
+  ],
+  "445": [
+    "Alice est sur 12, Babette sur 34, Claudie juste au milieu. Claudie se trouve sur 23. La réponse est D.",
+    "Le milieu arithmétique de 12 et 34 est (12 + 34) / 2 = 46 / 2 = 23. On peut aussi dire : l’écart 34 − 12 = 22, la moitié 11, et 12 + 11 = 23.",
+    "Contrôle : 23 + 11 = 34, donc Claudie est bien équidistante. Ce n’est pas 22 (qui est l’écart, pas le milieu) ni 24 (un cran trop loin).",
+    "Sur une ligne graduée, le milieu de deux entiers de même parité est entier : 12 et 34 sont pairs, 23 est atteint sans « demi-case »."
+  ],
+  "446": [
+    "Six couples d’hirondelles, cinq petits en moyenne par nid, gobent 25 mouches par jour pendant 40 jours. Ils ont avalé 42 000 mouches.",
+    "Six couples, c’est 12 parents. Six nids × 5 petits = 30 jeunes. Total : 42 hirondelles.",
+    "Chaque oiseau gobe 25 mouches × 40 jours = 1 000 mouches. Pour 42 oiseaux : 42 × 1 000 = 42 000.",
+    "On peut aussi calculer (42 × 25) × 40 = 1 050 × 40 = 42 000. N’oubliez ni les 12 adultes ni les 30 petits : compter seulement les couples sous-estimerait du simple au triple."
+  ],
+  "447": [
+    "Quatre phrases dans le désordre racontent un fil tendu, une hirondelle, puis trois, puis leur départ. L’ordre chronologique est C, B, D, A.",
+    "On ne peut poser une hirondelle « sur ce fil » (B) avant que maman n’ait tendu le fil (C). C est donc la première phrase.",
+    "Ensuite B : une première hirondelle se pose. Puis D : deux autres arrivent, elles sont trois. Enfin A : les trois s’en vont. A ne peut précéder D, car « les trois » n’existent qu’après D.",
+    "Toute autre permutation casse la référence (« ce fil », « elles sont trois maintenant »). D’où C B D A, et pas autre chose."
+  ],
+  "448": [
+    "Le huit de terre, endormi, a la taille de deux cercles de la cavité. On vous demande combien d’emplacements de sommeil sont possibles : il y en a douze, comme le marque la figure officielle.",
+    "Chaque « 8 » occupe deux cercles adjacents (secants) de la cavité. Il s’agit donc de compter les paires de bulles voisines dans le dessin imprimé.",
+    "En parcourant la cavité sans double emploi, on recense douze telles paires. Deux cercles non jointifs ne forment pas un 8 d’un seul tenant ; deux cercles déjà comptés dans un autre sens ne se recomptent pas.",
+    "La figure officielle pointe les douze positions. N’inventez pas de bulles hors du dessin : le compte 12 est celui de la cavité donnée, pas d’un réseau infini."
+  ],
+  "449": [
+    "Sept zèbres, treize hyènes, deux lions ; une hyène qui mange un zèbre devient lion, un lion qui mange une hyène devient zèbre, un lion qui mange un zèbre devient hyène. À l’équilibre maximal, il reste 9 animaux.",
+    "Chaque repas diminue d’une unité le nombre total (une bête est mangée, l’autre change seulement d’espèce). Les parités du nombre de zèbres et du nombre d’hyènes restent toujours égales l’une à l’autre.",
+    "L’équilibre (plus aucun repas possible) exige qu’il ne reste qu’une seule espèce, ou seulement des zèbres, ou seulement des hyènes. Pour maximiser le reste, on vise 0 zèbre et 0 hyène, donc uniquement des lions. En notant a, b, c les nombres de repas de chaque type, a = 10 et b − c = 3, et le nombre de lions 9 − 2c est maximal pour c = 0, soit 9 lions.",
+    "On est parti de 22 bêtes, on a fait 13 repas, il en reste 9. Un équilibre avec des hyènes seules ou des zèbres seuls en laisserait moins, ou serait incompatible avec les parités. D’où 9."
+  ],
+  "450": [
+    "Marguerite empile huit cartes (âne, bélier, canard, dindon, escargot, fourmi, grenouille, hirondelle), chacune recouvrant en partie la précédente, avec l’initiale écrite quatre fois au dos. L’ordre de pose est : bélier, dindon, grenouille, fourmi, escargot, canard, âne, hirondelle.",
+    "La carte du dessus est la dernière posée : on lit les H de l’hirondelle, peu recouverts. En « pelant » les couches, les lettres les plus cachées appartiennent aux cartes les plus anciennes.",
+    "Le bélier (B) est presque entièrement recouvert : c’est le premier posé. Le dindon (D) l’est un peu moins, puis la grenouille (G), la fourmi (F), l’escargot (E), le canard (C), l’âne (A), et enfin l’hirondelle (H).",
+    "La figure officielle du recueil montre les huit étapes de l’empilement. Ne permutez pas deux couches : chaque initiale n’apparaît que sur sa carte, et le recouvrement impose un ordre unique."
+  ],
+  "451": [
+    "Chaque saison, les individus se dédoublent, mais dès que la population dépasse 18, seulement 18 d’entre eux se dédoublent désormais. Partant d’un individu, sans décès, on compte 122 individus au bout de dix saisons.",
+    "Les cinq premières saisons sont un véritable doublement : 1 → 2 → 4 → 8 → 16 → 32. À la fin de la 5e saison, on a 32 individus, déjà plus de 18.",
+    "À partir de la 6e saison, l’accroissement est constant : +18 par saison (18 se dédoublent, les autres restent). Cinq saisons supplémentaires ajoutent 5 × 18 = 90.",
+    "32 + 90 = 122. Le tableau 2, 4, 8, 16, 32, 50, 68, 86, 104, 122 le confirme. On ne continue pas à doubler après 18 : ce serait 2¹⁰ = 1024, beaucoup trop."
+  ],
+  "452": [
+    "Gaspard l’isard relie cinq points alignés par des demi-cercles, en changeant de demi-plan à chaque vol, sans recouper sa trajectoire, en partant du point 1. Il y a 10 vols possibles (à symétrie près), dessinés sur la figure officielle.",
+    "Les demi-cercles de diamètres [i j] se recouperaient s’ils étaient du même côté et s’imbriquaient mal. L’alternance de demi-plans et l’interdiction de coupure sélectionnent les « arcs non croisés », cousins des mots de Dyck ou des diagrammes de Catalan.",
+    "En énumérant les suites de sommets commençant par 1 et visitant {1,2,3,4,5}, puis en rejetant celles qui recoupent ou restent dans le même demi-plan, on en conserve 10.",
+    "Les deux contre-exemples de l’énoncé (même demi-plan, ou coupure) illustrent les interdits. Les dix dessins officiels sont les seuls à retenir : n’ajoutez pas de pentagone croisé."
+  ],
+  "453": [
+    "On remplit une grille de jars et d’oies (un Binaro / Takuzu) : autant des deux dans chaque ligne et chaque colonne ; pas plus de deux identiques d’affilée en ligne ou en colonne ; pas deux lignes identiques, pas deux colonnes identiques. La grille complète est celle de la figure officielle du recueil.",
+    "La première règle force, sur une ligne de longueur paire, exactement la moitié d’oies et la moitié de jars. La deuxième interdit les triplets OOO ou JJJ. La troisième distingue toutes les lignes (et colonnes) entre elles.",
+    "On part des cases déjà données et l’on proscrit tout troisième animal identique d’affilée. Quand une ligne n’a plus qu’une façon de rétablir la parité oies/jars, on la complète. On compare ensuite les lignes pour éviter les doublons.",
+    "La solution officielle satisfait les trois règles à la fois. Une grille qui copie deux lignes, ou qui aligne trois jars, est fausse même si les totaux sont bons."
+  ],
+  "454": [
+    "Eymeric code un kangourou par une suite de couples (déplacement horizontal, déplacement vertical). Le début est tracé ; en suivant tous les vecteurs dans l’ordre, vous terminez le dessin du kangourou, comme sur la figure officielle.",
+    "Chaque couple se lit depuis le dernier point atteint : un premier nombre positif va à droite, négatif à gauche ; un second positif va en haut, négatif en bas. On ne revient pas à l’origine entre deux couples.",
+    "En reportant à la règle et à l’équerre (ou sur un quadrillage), le polygone se ferme en silhouette de kangourou : tête, dos, queue, pattes. Un signe oublié (par exemple un −3 lu +3) déforme une patte.",
+    "N’inventez pas de raccourci : tous les couples de l’énoncé sont nécessaires. Le tracé officiel est le contrôle visuel une fois le dernier vecteur posé."
+  ],
+  "455": [
+    "Un kangourou a 3 chaussettes blanches, 2 noires et 5 grises. Pour être sûr d’avoir une paire de la même couleur, il doit en tirer 4. La réponse est C.",
+    "C’est un principe des tiroirs. Le pire cas est d’avoir une chaussette de chaque couleur, soit 3 chaussettes, et toujours aucune paire.",
+    "La quatrième, quelle que soit sa couleur, doublera forcément l’une des trois déjà tirées. D’où le minimum pour être sûr : 4.",
+    "Tirer 2 ne garantit rien (deux couleurs différentes). Tirer 7 ou 10 garantirait bien plus (voire les trois couleurs en paire), mais la question est le minimum de la certitude pour une seule paire, donc 4."
+  ],
+  "456": [
+    "Un kangourou enrhumé utilise des mouchoirs de 25 cm de côté et a consommé 3 m² de tissu en 8 jours. Il a utilisé, en moyenne, 6 mouchoirs par jour. La réponse est C.",
+    "Convertissez : 3 m² = 30 000 cm². Un mouchoir a pour aire 25 × 25 = 625 cm².",
+    "Le nombre total de mouchoirs est 30 000 ÷ 625 = 48. Sur 8 jours, la moyenne est 48 ÷ 8 = 6.",
+    "Les leurres 1, 3, 18, 24 naissent d’oublis d’unités (m² vs cm²) ou d’une division par 25 au lieu de 625. Une fois les cm² alignés, 6 s’impose."
+  ],
+  "457": [
+    "Des kangourous sont dans un enclos. Le premier dit « nous sommes 6 » et sort. Ensuite, chaque minute, un kangourou dit « tous ceux qui sont sortis avant moi sont des menteurs » et sort, jusqu’à vider l’enclos. Exactement un kangourou a dit la vérité. La réponse est B.",
+    "Si l’enclos contenait vraiment 6 kangourous, le premier dit vrai et tous les suivants, en accusant les précédents d’être des menteurs, mentent (puisque le premier n’en est pas un). Un seul véridique.",
+    "Si l’enclos n’en contenait pas 6, le premier ment. Le deuxième, en disant que tous les précédents (le premier seulement) sont des menteurs, dit alors vrai. Tous les suivants affirment que tout le monde avant eux ment, ce qui est faux puisque le deuxième a dit vrai. Encore un seul véridique.",
+    "Les deux cas de figure — 6 au départ, ou un autre nombre — aboutissent au même décompte : un seul dit la vérité. D’où B, et non 0, 2, 3 ou 4."
+  ],
+  "458": [
+    "Plus de 800 kangourous courent ; 35 % sont des femelles, et il y a 252 mâles de plus que de femelles. Le peloton compte 840 kangourous. La réponse est E.",
+    "35 % de femelles implique 65 % de mâles. L’écart 65 % − 35 % = 30 % du total correspond aux 252 mâles « en trop ».",
+    "Si 30 % du total valent 252, le total vaut 252 × 100 / 30 = 840. Les femelles sont 0,35 × 840 = 294, les mâles 546, et 546 − 294 = 252, ce qui contrôle.",
+    "Parmi les choix, 840 est le seul multiple plausible supérieur à 800 qui rende 35 % entier (294). 802, 810, 822, 824 ne reproduisent pas l’écart 252."
+  ],
+  "459": [
+    "Le plus long saut d’entraînement de Jumpy mesure 50 dm 50 cm 50 mm ; le saut en or le dépasse de 123 cm. Le saut vainqueur mesure 6 m 78 cm. La réponse est A.",
+    "Mettez tout en centimètres. 50 dm = 500 cm, 50 mm = 5 cm, plus 50 cm : l’entraînement fait 555 cm, soit 5 m 55 cm.",
+    "Le bonus 123 cm = 1 m 23 cm. Le saut en or mesure 5 m 55 cm + 1 m 23 cm = 6 m 78 cm.",
+    "Les leurres 5 m 55 cm (l’entraînement seul), 5 m 73 cm ou 7 m 23 cm viennent d’oublis de conversion (mm oubliés, ou 50 dm lus 50 cm). Une fois dm, cm et mm alignés, on obtient 6 m 78 cm."
+  ],
+  "460": [
+    "Kangourou coud une couverture de 10 carrés de large sur 15 de long, avec un bouton à chaque point où quatre carrés se rencontrent. Il lui faut 126 boutons. La réponse est C.",
+    "Sur une grille de m carrés sur n, les nœuds intérieurs où 4 carrés se touchent forment un rectangle de (m − 1) sur (n − 1) points.",
+    "Ici m = 10, n = 15, donc 9 × 14 = 126 boutons. On ne met pas de bouton sur le bord extérieur, où seulement deux carrés (ou un seul, aux coins) se joignent : l’énoncé exige la rencontre de 4 carrés.",
+    "150 serait le nombre de carrés, 140 un 10×14 mal cadré, 135 et 104 d’autres décalages d’un cran. Le bon comptage des croisements intérieurs est 126."
+  ]
+}
+
+
+

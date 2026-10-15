@@ -1,0 +1,554 @@
+{
+  "185": [
+    "On vous demande combien miser sur Acorn, Bluebottle et Capsule, aux cotes 4 contre 1, 3 contre 1 et 2 contre 1, pour gagner 13 livres quel que soit le vainqueur. Il faut placer 12 livres sur Acorn, 15 livres sur Bluebottle et 20 livres sur Capsule.",
+    "L’exemple de l’énoncé montre le piège d’une mise égale : cinq livres partout rapportent dix livres si Acorn gagne, cinq livres si Bluebottle gagne, et rien si Capsule gagne. Pour un gain constant, le remboursement du cheval gagnant doit toujours dépasser de 13 livres la somme des deux mises perdantes.",
+    "Vous écrivez donc 4a − b − c = 13, 3b − a − c = 13 et 2c − a − b = 13. Ces trois égalités disent la même chose : 4a = 3b = 2c. Le plus petit triplet d’entiers positifs est a = 12, b = 15 et c = 20, car 4 × 12 = 3 × 15 = 2 × 20 = 60. Dans chaque cas, vous encaissez 60 livres et vous avez misé 47 livres au total, d’où un bénéfice de 13 livres.",
+    "Le piège est de croire que les cotes s’additionnent comme des fractions de chances, ou de réutiliser les cinq livres de l’exemple. À retenir : un gain identique pour tous les arrivants force les mises à être inversement proportionnelles aux cotes."
+  ],
+  "186": [
+    "Un marchand a acheté des chevaux à 344 dollars et des bœufs à 265 dollars, les chevaux lui coûtant 33 dollars de plus que les bœufs. Les plus petits effectifs possibles sont 252 chevaux et 327 bœufs.",
+    "Si x désigne le nombre de chevaux et y celui des bœufs, l’énoncé se traduit par 344x = 265y + 33. C’est une équation de Diophante : deux inconnues entières, une seule relation. Les solutions, lorsqu’elles existent, se répètent à intervalles réguliers.",
+    "Vous cherchez le plus petit couple d’entiers strictement positifs. Après réduction, on trouve x = 252 et y = 327. La vérification est directe : 344 × 252 = 86 688 et 265 × 327 = 86 655, et la différence vaut bien 33 dollars. Toute autre solution positive est plus grande.",
+    "Le piège est d’essayer de petits nombres au hasard, ou d’oublier que 33 n’est pas un multiple évident de 344 ni de 265. À retenir : un écart fixe entre deux totaux à prix différents se résout par une équation linéaire en nombres entiers, dont on retient la plus petite solution positive."
+  ],
+  "187": [
+    "Scarlett a 9 chevaux et des vivres pour 30 jours ; elle accueille 3 petits cochons, sachant que 2 cochons mangent autant que 3 chevaux. Elle pourra nourrir tout le monde pendant 20 jours.",
+    "La comparaison des appétits se convertit en une même unité, la ration d’un cheval. Puisque 2 cochons valent 3 chevaux, un cochon vaut une ration et demie. Les 3 cochons consomment donc 4,5 rations de cheval chaque jour.",
+    "Au total, le haras dépense 9 + 4,5 = 13,5 rations par jour. Les réserves initiales égalent 9 × 30 = 270 rations. La durée devient 270 ÷ 13,5 = 20 jours. Autrement dit, les vivres prévus pour 9 chevaux pendant 30 jours tiennent 20 jours lorsqu’il faut en nourrir l’équivalent de 13,5.",
+    "Le piège est de compter les cochons comme des chevaux, ou d’écrire 30 × 9 ÷ 12. À retenir : on ramène tous les estomacs à une même ration, puis on divise le stock par la consommation quotidienne."
+  ],
+  "188": [
+    "Le cavalier a écrasé le panier d’œufs : il en restait 1 par paquets de 2, 3, 4, 5 ou 6, et aucun par paquets de 7. Le plus petit nombre possible est 301 œufs.",
+    "Cela signifie que le nombre x laisse un reste 1 lorsqu’on le divise par 2, 3, 4, 5 ou 6, et qu’il est multiple de 7. Autrement dit, x − 1 est un multiple commun de 2, 3, 4, 5 et 6, tandis que x lui-même est un multiple de 7.",
+    "Le plus petit commun multiple de 2, 3, 4, 5 et 6 vaut 60, donc x = 60k + 1. Il reste à choisir k pour que 60k + 1 soit divisible par 7. Le plus petit k convenable donne x = 301, puis les suivants s’obtiennent en ajoutant 420, produit de 60 et de 7. Parmi les paniers possibles, 301 est le minimum.",
+    "Le piège est de prendre 60 lui-même, qui n’est pas multiple de 7, ou d’oublier que le reste 1 est le même pour cinq diviseurs à la fois. À retenir : plusieurs restes identiques se ramènent à un multiple du PPCM, puis on impose la dernière congruence."
+  ],
+  "189": [
+    "L’un possède 300 unités et 6 chevaux, l’autre 10 chevaux du même prix et une dette de 100 unités ; les deux fortunes sont égales. Le prix d’un cheval est 100 unités.",
+    "Égales richesses signifie que l’argent plus la valeur du troupeau, dettes déduites, donne le même total des deux côtés. Si c est le prix d’un cheval, on écrit 6c + 300 = 10c − 100.",
+    "En passant les termes en c d’un côté et les constantes de l’autre, il vient 300 + 100 = 10c − 6c, donc 400 = 4c, et c = 100. Chaque cheval vaut donc 100 unités : le premier a 600 + 300 = 900, le second 1 000 − 100 = 900.",
+    "Le piège est de traiter la dette comme un avoir, ou de croire que les 300 unités sont déjà le prix d’un cheval. À retenir : une dette se soustrait, et deux patrimoines égaux fournissent une équation du premier degré."
+  ],
+  "190": [
+    "Arthur a acheté 11 sacs de 100 carottes ; plus de neuf sacs ont été mangés, chaque cheval a mangé autant de carottes qu’il y a de chevaux, et la somme du nombre de chevaux et des carottes consommées ne dépasse pas 1 100. L’écurie compte 31 ou 32 chevaux.",
+    "Si c est le nombre de chevaux, chacun a mangé c carottes, donc le tas consommé vaut c². « Plus de neuf sacs » signifie c² > 900, donc c ≥ 31 puisque c est entier. Le stock acheté est 1 100 carottes.",
+    "La seconde condition s’écrit c² + c ≤ 1 100. Pour c = 31, on a 961 + 31 = 992, qui convient. Pour c = 32, on a 1 024 + 32 = 1 056, qui convient encore. Pour c = 33, on a 1 089 + 33 = 1 122, trop grand. Seuls 31 et 32 restent possibles.",
+    "Le piège est de lire « plus de neuf sacs » comme « au moins neuf », ou d’oublier d’ajouter c aux carottes mangées. À retenir : un carré encadré par deux inégalités ne laisse en général que deux entiers à tester."
+  ],
+  "191": [
+    "Même souvenir de la fermière : un reste de 1 œuf par 2, 3, 4, 5 ou 6, et un partage exact par 7. Le plus petit panier possible contient encore 301 œufs.",
+    "Vous cherchez le plus petit entier naturel qui est à la fois un multiple de 7 et situé juste après un multiple de 60, car 60 est le plus petit commun multiple des cinq premiers diviseurs. La suite à examiner est donc 1, 61, 121, 181, 241, 301, et ainsi de suite.",
+    "Parmi ces candidats, 301 ÷ 7 = 43 exactement, tandis que les précédents laissent un reste. La période complète est 420 : tous les 420 œufs, la même configuration de restes se reproduit. Le minimum demandé est donc 301.",
+    "Le piège est de s’arrêter à 61 ou à 121 faute d’avoir vérifié la divisibilité par 7. À retenir : on dresse la liste des nombres congrus à 1 modulo 60, puis on retient le premier multiple de 7."
+  ],
+  "192": [
+    "Matthieu est sur le cheval 11, Julie sur le cheval 4, exactement à l’opposé sur un manège circulaire. Le manège a 14 chevaux, ce qui correspond à la réponse B.",
+    "« Exactement à l’opposé » signifie que les deux arcs qui relient 4 à 11 ont le même nombre de chevaux. En suivant les numéros, on rencontre 5, 6, 7, 8, 9 et 10, soit six chevaux entre Julie et Matthieu. L’autre demi-cercle doit contenir six chevaux également.",
+    "On ajoute les deux cavaliers : 6 + 6 + 2 = 14. On peut aussi apparier les opposés : 11 face à 4, 12 face à 3, 13 face à 2, 14 face à 1, et le tour est bouclé. Les propositions 13, 16, 17 et 22 ne donnent pas deux arcs égaux entre 4 et 11.",
+    "Le piège est de compter la différence 11 − 4 = 7 comme le nombre total de chevaux, ou d’oublier que le manège est une boucle. À retenir : deux places diamétralement opposées coupent le cercle en deux listes de même longueur."
+  ],
+  "193": [
+    "Sur 24 partants, le tiers arrive groupé en tête et les trois quarts du reste suivent dans les 30 secondes. Il reste 4 chevaux encore en course.",
+    "Le tiers de 24 vaut 8 : huit chevaux franchissent ensemble la ligne. Il en reste 16 derrière eux. Les trois quarts de ces 16 chevaux, soit 12, arrivent dans la demi-minute suivante.",
+    "Les 16 − 12 = 4 derniers n’ont encore ni fini dans le groupe de tête, ni dans la vague des 30 secondes. Le décompte 8 + 12 + 4 = 24 referme bien l’effectif de départ.",
+    "Le piège est de prendre les trois quarts des 24 partants au lieu des trois quarts du reste. À retenir : après un premier groupe, « le reste » désigne uniquement ceux qui n’ont pas encore été comptés."
+  ],
+  "194": [
+    "Julie, Laurie, Jeannot et Jojo choisissent chacun une figure différente parmi cabriole, courbette, levade et croupade. Jojo choisit la cabriole pour son final.",
+    "Les filles échouent à la cabriole, et le cheval de Laurie refuse la courbette autant que la levade. Laurie n’a donc plus que la croupade. Julie, qui n’a ni la cabriole ni la croupade de Laurie, se trouve restreinte à la courbette ou à la levade.",
+    "Jeannot ne prend la courbette jamais, et il ne prend la cabriole que si Julie termine par une croupade. Or Julie n’a pas la croupade : Jeannot n’a donc ni courbette, ni cabriole, ni croupade. Il lui reste la levade. Julie reçoit alors forcément la courbette, et Jojo la cabriole. La condition sur Jojo et la levade de Julie est respectée, puisque Julie n’a pas choisi la levade.",
+    "Le piège est d’attribuer la cabriole à un des filles, ou d’oublier le « seulement si » qui lie Jeannot à la croupade de Julie. À retenir : on commence par la personne la plus contrainte, ici Laurie, puis on propage les interdictions."
+  ],
+  "195": [
+    "Filou met 10 minutes de moins au trot à 10 km/h qu’au pas à 6 km/h, sur le même trajet. La distance entre la maison et le centre équestre est 2,5 km.",
+    "Le temps est le quotient de la distance par la vitesse. Au pas, la durée vaut d/6 heures ; au trot, elle vaut d/10 heures. L’écart annoncé est 10 minutes, c’est-à-dire un sixième d’heure.",
+    "Vous écrivez donc d/6 − d/10 = 1/6. Le dénominateur commun 30 donne (5d − 3d)/30 = 1/6, soit 2d/30 = 1/6, donc d/15 = 1/6, et d = 2,5 km. Contrôle : le pas demande 2,5/6 = 25 minutes, le trot 2,5/10 = 15 minutes, et l’écart est bien de 10 minutes.",
+    "Le piège est de laisser 10 minutes en minutes tout en gardant des vitesses en kilomètres par heure. À retenir : une différence de temps entre deux allures se traduit par une différence de quotients, après mise à la même unité."
+  ],
+  "196": [
+    "Deux barres joignent les sommets de murs de 1,20 m et 1,80 m et se croisent en I ; on cherche la hauteur h de ce croisement. Cette hauteur vaut 0,72 m, donc Cathy et Dadou, qui sautent jusqu’à un mètre, peuvent tenter l’obstacle.",
+    "Les deux grands triangles formés par les murs et les barres sont homothétiques. Par le théorème de Thalès, h divisé par 1,20 égale une certaine fraction de la base, et h divisé par 1,80 égale la fraction complémentaire. La somme de ces deux rapports vaut 1.",
+    "On obtient  h/1,20 + h/1,80 = 1 , donc h = 1 / (1/1,20 + 1/1,80). Cela se réécrit h = (1,20 × 1,80) / (1,20 + 1,80) = 2,16 / 3 = 0,72 m. La hauteur minimale à franchir est donc 72 cm, sous le mètre autorisé.",
+    "Le piège est de prendre la moyenne arithmétique (1,50 m) au lieu de cette moyenne harmonique des deux murs. À retenir : la hauteur du croisement de deux barres entre deux parois est l’inverse de la somme des inverses des hauteurs."
+  ],
+  "197": [
+    "Pierre veut un pré rectangulaire de 80 m de long, de largeur entière, de périmètre inférieur à 240 m et d’aire supérieure à 3 000 m². Les largeurs possibles sont 38 m et 39 m.",
+    "L’aire 80 × ℓ dépasse 3 000 lorsque ℓ > 3 000/80 = 37,5. Comme ℓ est un entier, on a ℓ ≥ 38. Le périmètre 2(80 + ℓ) reste sous 240 lorsque 80 + ℓ < 120, donc ℓ < 40.",
+    "Il reste les entiers 38 et 39. Pour 38 m, l’aire vaut 3 040 m² et le périmètre 236 m. Pour 39 m, l’aire vaut 3 120 m² et le périmètre 238 m. Les deux couples respectent les deux inégalités strictes demandées.",
+    "Le piège est d’inclure 37 m, trop étroit, ou 40 m, qui donne exactement 240 m de périmètre, donc trop. À retenir : une largeur entière coincée entre deux inégalités se lit en prenant l’entier au-dessus du minimum et l’entier au-dessous du maximum."
+  ],
+  "198": [
+    "Aristide forme des enclos rectangulaires de 30 m de périmètre, à dimensions entières, la largeur valant au moins 2 m, et le nombre d’enclos possibles égale celui de ses chevaux. Il possède 6 chevaux.",
+    "Un périmètre de 30 m donne 2(L + ℓ) = 30, donc L + ℓ = 15. Les deux côtés sont des entiers, avec 2 ≤ ℓ ≤ L. Il suffit d’énumérer les largeurs depuis 2 jusqu’à 7, car au-delà la largeur dépasserait la longueur.",
+    "Les couples (ℓ, L) sont (2, 13), (3, 12), (4, 11), (5, 10), (6, 9) et (7, 8). Cela fait six rectangles distincts, donc six chevaux. Le carré de côté 7,5 m n’est pas à dimensions entières, et une largeur de 1 m est interdite.",
+    "Le piège est de compter (8, 7) en plus de (7, 8), ce qui dédouble le même enclos, ou d’accepter le côté 1 m. À retenir : on fixe la somme des côtés, on impose largeur ≤ longueur, puis on compte les couples entiers."
+  ],
+  "199": [
+    "Éloi cloue des fers en U sur un quadrillage 6 × 6, au plus un fer par case, deux fers ne se longeant jamais par un côté. Le maximum est 27 fers ; le dessin du corrigé en donne un exemple.",
+    "Chaque fer occupe une case et « mange » ses côtés : un voisin qui partagerait une arête est interdit, alors qu’un simple contact par un coin reste permis. La figure de l’énoncé, avec 24 fers, montre déjà qu’un remplissage dense est possible, mais pas encore maximal.",
+    "Sur 36 cases, on ne peut pas tout occuper : il faut laisser des vides qui séparent les U. Le corrigé officiel atteint 27 en disposant ces vides de manière à casser tous les contacts latéraux. Sans ce dessin, on n’invente pas une grille de coordonnées.",
+    "Le piège est de croire que 24 est déjà le maximum, ou d’interdire aussi les contacts en coin. À retenir : une contrainte d’adjacence par les côtés se traite comme un pavage avec des cases vides bien placées, et le record se lit sur la figure du corrigé."
+  ],
+  "200": [
+    "Le corrigé officiel est une figure : elle montre comment découper le plan du cheval de Trois en trois morceaux qui, sans retournement, se réassemblent en un grand triangle équilatéral. L’énoncé autorise les coupes à travers les petits triangles.",
+    "Le « cheval » est un polyabolo, un assemblage de petits triangles équilatéraux. Passer de cette silhouette à un grand triangle demande de conserver l’aire — donc le même nombre de petits triangles — tout en changeant le contour. L’interdiction de retournement exclut les pièces qu’il faudrait retourner comme une crêpe.",
+    "On cherche trois pièces dont les bords s’emboîtent ensuite en un grand équilatéral. Le dessin du corrigé fixe les traits de coupe. On décrit le but — trois pièces, pas de retournement, triangle final — sans inventer des longueurs absentes de l’énoncé.",
+    "Le piège est de proposer un découpage qui n’est superposable au triangle qu’après un retournement, ou de couper en plus de trois morceaux. À retenir : un puzzle d’aire constante se juge à la figure officielle, pas à un croquis inventé."
+  ],
+  "201": [
+    "Deux chevaux ont été vendus 493,68 dollars au total, le premier avec une perte de 10 %, le second avec un gain de 12 %, et l’opération globale gagne 2 %. Butcher Boy valait 220 dollars à l’achat, l’autre cheval 264 dollars.",
+    "Si a et b sont les prix d’achat, les prix de vente sont 0,9a et 1,12b. Leur somme vaut à la fois 493,68 et 1,02(a + b), puisque le gain global est de 2 %. Vous disposez donc de deux lectures du même total.",
+    "L’égalité 0,9a + 1,12b = 1,02a + 1,02b se réduit à 0,12a = 0,1b, donc b = 1,2a. Par ailleurs a + b = 493,68 / 1,02 = 484. En remplaçant, 2,2a = 484, d’où a = 220 et b = 264. Contrôle : ventes 198 et 295,68, total 493,68, pour un achat de 484, soit bien +2 %.",
+    "Le piège est d’appliquer les +12 % et −10 % au prix de vente, ou de croire que le gain global est la moyenne de −10 % et +12 %. À retenir : on écrit le total de deux façons, l’une avec les taux individuels, l’autre avec le taux d’ensemble."
+  ],
+  "202": [
+    "Mathieu a vendu deux chevaux au même prix, l’un avec 25 % de profit, l’autre avec 25 % de perte. Par rapport à l’argent investi, il a perdu 6,25 %.",
+    "Un même prix de vente P ne correspond pas au même prix d’achat. Le cheval gagnant a été payé P / 1,25 = 0,8P. Le cheval perdant a été payé P / 0,75 = 4P/3. Les deux ventes rapportent 2P, mais les deux achats coûtent 0,8P + 4P/3 = 32P/15.",
+    "La différence 32P/15 − 2P = 2P/15 est une perte. Rapportée à la mise 32P/15, elle vaut (2P/15) ÷ (32P/15) = 2/32 = 1/16, soit 6,25 %. Les +25 % et −25 % ne se compensent pas, parce que la perte porte sur un achat plus élevé que le gain.",
+    "Le piège est de conclure à un équilibre, « plus 25 moins 25 ». À retenir : un même pourcentage appliqué à deux bases différentes ne s’annule pas ; la perte l’emporte toujours légèrement."
+  ],
+  "203": [
+    "Cinq chevaux numérotés de 1 à 5 ont fini, aucun à la place de son numéro, le premier et le dernier portent un numéro impair, et le 2 est arrivé avant le 5. Le vainqueur porte le 3, et le classement est 3, 4, 2, 5, 1.",
+    "Le premier a un numéro impair qui n’est pas 1, donc 3 ou 5. S’il était 5, le 2 ne pourrait pas être arrivé avant lui. Le vainqueur est donc le 3. Le dernier a un numéro impair restant : ce ne peut plus être 3, donc c’est 1.",
+    "Restent les places 2, 3 et 4 pour les dossards 2, 4 et 5. La place 2 n’accepte pas le dossard 2, et le 2 précède le 5 : le 2 se loge donc en troisième position, le 5 en quatrième, et le 4 en deuxième. Aucun dossard n’occupe alors son propre rang.",
+    "Le piège est d’installer le 5 en tête, ce que la troisième phrase interdit. À retenir : on fixe d’abord les places aux contraintes les plus dures (premier, dernier), puis on range le couple 2 et 5."
+  ],
+  "204": [
+    "Parmi 13 chevaux et juments, on connaît les totaux de robes blanches, de juments et de crinières tressées, ainsi que leurs intersections deux à deux. Il y a exactement 1 jument blanche à la crinière tressée.",
+    "Vous travaillez sur trois propriétés : jument, robe blanche, crinière tressée. L’énoncé donne les trois cardinaux, les trois intersections deux à deux, l’effectif total 13, et un cheval alezan sans tresse, donc extérieur aux trois ensembles.",
+    "La formule d’inclusion-exclusion s’écrit |J ∪ B ∪ T| = 8 + 6 + 5 − 3 − 3 − 2 + t, où t est le triple croisement cherché. Ce union, plus l’animal extérieur, égale 13. On a donc 11 + t + 1 = 13, d’où t = 1. Une seule jument est à la fois blanche et tressée.",
+    "Le piège est d’additionner tous les chiffres de l’énoncé sans retirer les doubles comptes. À retenir : le croisement des trois ensembles est le terme que l’inclusion-exclusion permet d’isoler une fois le reste connu."
+  ],
+  "205": [
+    "Derrière trois portes se trouvent deux chèvres et une voiture ; le présentateur ouvre toujours une porte à chèvre parmi celles que vous n’avez pas choisies, puis vous offre de changer. La meilleure stratégie est de changer de porte : vous doublez alors vos chances.",
+    "Au premier choix, la voiture a une chance sur trois d’être derrière votre porte, et deux chances sur trois d’être derrière l’une des deux autres. Le présentateur, qui sait où est la voiture, n’ouvre jamais celle-ci : il se contente d’écarter une chèvre.",
+    "Si vous aviez visé juste (une chance sur trois), changer vous fait perdre. Si vous aviez visé une chèvre (deux chances sur trois), la porte restante est forcément la voiture, et changer vous fait gagner. Rester fige vos chances à un tiers ; changer les porte à deux tiers.",
+    "Le piège est de croire que les deux portes encore fermées sont à égalité, « une chance sur deux ». À retenir : le présentateur apporte une information, et cette information se concentre sur la porte qu’il n’a pas ouverte."
+  ],
+  "206": [
+    "Daniel doit tracer des enclos triangulaires dont les sommets sont parmi quinze piquets, un enclos par chèvre, tous de dimensions différentes. Le maximum est 10 chèvres ; le dessin du corrigé montre une disposition possible.",
+    "Deux triangles ont les mêmes dimensions lorsqu’ils sont superposables, côtés égaux à côtés égaux. L’énoncé interdit donc de répéter une même forme, même tournée. L’aire totale du terrain, comptée en petits carreaux, limite aussi le nombre de triangles que l’on peut juxtaposer sans chevauchement.",
+    "Le corrigé recense d’abord les triangles distincts d’aire un demi, puis ceux d’aire 1, et montre que l’on peut en assembler dix — cinq petits et cinq moyens — en laissant un reliquat trop étroit pour une onzième chèvre. La figure officielle fixe le tracé ; on n’invente pas d’autre piquet.",
+    "Le piège est de réutiliser deux triangles isométriques, ou de laisser se chevaucher deux enclos. À retenir : un maximum sous contrainte de formes distinctes se prouve par un inventaire des types, puis par un dessin qui les réalise."
+  ],
+  "207": [
+    "Dans un champ circulaire de 90 m de diamètre, chaque chèvre est au bout d’une corde de 15 m, et l’on ne peut plus en ajouter sans qu’elles se gênent ou sortent. La part d’herbe non broutée vaut environ 22 %.",
+    "Le diamètre 90 m donne un rayon de 45 m. Sept disques de rayon 15 m se logent sans se chevaucher : un au centre et six autour, aux sommets d’un hexagone de côté 30 m, soit deux rayons de chèvre. Cette rosace est le pavage classique du cercle par sept disques égaux.",
+    "L’aire du champ est π × 45². L’aire broutée est 7 × π × 15². Il reste 45²π − 7 × 15²π = (9 − 7) × 15²π, c’est-à-dire l’équivalent de deux petits disques. Le rapport de l’herbe intacte au champ entier vaut 2/9, soit 22 % à 1 % près.",
+    "Le piège est de calculer 7/9 et d’annoncer la part broutée, alors que l’énoncé demande l’herbe non broutée. À retenir : sept disques de rayon r dans un cercle de rayon 3r laissent libre une fraction 2/9."
+  ],
+  "208": [
+    "Deux bergers ont apporté 7 et 5 fromages, les trois convives en ont mangé 4 chacun, et le randonneur laisse 12 pièces. Le partage équitable donne 9 pièces au premier berger et 3 pièces au second.",
+    "Le partage 7 contre 5, proportionnel aux fromages sortis des besaces, ignore qui a réellement nourri l’invité. Chaque berger a mangé 4 fromages de son propre apport. Le premier en a donc cédé 3, le second seulement 1. Les 4 fromages du promeneur viennent de ces dons.",
+    "Les 12 pièces paient ces 4 fromages, soit 3 pièces par fromage offert. Le premier berger, donateur de 3 fromages, reçoit 9 pièces. Le second, donateur d’un seul, reçoit 3 pièces. Ainsi chacun est remboursé au juste prix de ce qu’il a vraiment partagé.",
+    "Le piège, très classique, est de donner 7 pièces et 5 pièces « parce qu’ils ont apporté 7 et 5 ». À retenir : on ne rémunère pas ce que chacun a mangé lui-même, seulement ce qu’il a cédé à l’autre."
+  ],
+  "209": [
+    "Suzon est attachée au bord d’un pré de 30 m sur 40 m, avec 22,50 m de corde depuis le piquet A. L’aire qu’elle peut brouter vaut environ 598 m², donc un peu moins de la moitié du pré.",
+    "Depuis A, la corde dépasse le petit côté et une partie du grand côté : Suzon broute un secteur de disque à l’intérieur du pré, plus deux triangles rectangles là où la corde déborde le long des clôtures. Les distances de A aux coins utiles sont 20 m d’un côté et 10 m de l’autre.",
+    "Les deux triangles se calculent par Pythagore : leurs aires valent environ 103 m² et 101 m². L’angle au piquet, une fois les deux angles aigus retranchés de 180°, mesure à peu près 89°. Le secteur correspondant fait environ 394 m². La somme arrondie au mètre carré est 598 m², alors que le pré entier fait 1 200 m².",
+    "Le piège est de prendre un demi-disque de rayon 22,50 m, qui ignorerait les murs, ou de conclure qu’Alain est lésé. À retenir : une chèvre au bord d’un rectangle broute un secteur plus deux oreilles triangulaires, et l’arrondi se fait à la fin."
+  ],
+  "210": [
+    "Deux enclos sont dessinés dans un rectangle à l’aide de trois cercles concentriques, l’un hachuré, l’autre moucheté. Les deux chèvres sont traitées équitablement : les aires sont égales.",
+    "Appelons ℓ la largeur et L la longueur du rectangle. Le petit disque de rayon ℓ a pour aire πℓ² : c’est l’une des deux régions. L’autre région est une couronne comprise entre le cercle de rayon L et le cercle dont le rayon est la demi-diagonale.",
+    "Le théorème de Pythagore donne le carré de la diagonale : ℓ² + L². La couronne vaut alors π(ℓ² + L²) − πL² = πℓ². Les deux aires sont identiques, indépendamment des dimensions du rectangle, pourvu que la construction soit celle de l’énoncé.",
+    "Le piège est de comparer les dessins à l’œil, l’une des taches paraissant plus « étalée ». À retenir : une couronne peut cacher la même aire qu’un disque, dès que Pythagore annule le terme en L²."
+  ],
+  "211": [
+    "Vincent a coupé son champ en quatre rectangles, et les tours de deux parcelles contiguës mesurent 1 416 m, 1 500 m, 1 516 m et 1 616 m. Le périmètre du champ entier est 2 016 m.",
+    "Nommez a, b les deux largeurs et c, d les deux longueurs qui se partagent le grand rectangle. Chaque tour de deux parcelles voisines égale le double de trois de ces quatre longueurs, celle du côté non touché étant absente.",
+    "La somme des quatre tours vaut donc 6(a + b + c + d), car chaque longueur apparaît trois fois, multipliée par 2. Or 1 416 + 1 500 + 1 516 + 1 616 = 6 048, donc a + b + c + d = 1 008 m. Le périmètre du champ est 2(a + b + c + d) = 2 016 m.",
+    "Le piège est d’additionner les quatre nombres et d’annoncer 6 048 m, comme si l’on avait fait le tour du champ trois fois trop. À retenir : additionner toutes les marches doubles compte chaque côté trois fois, d’où la division par 3 pour retrouver le périmètre."
+  ],
+  "212": [
+    "Cannelle est attachée à l’angle marqué d’une croix par 4 m de corde, autour d’une remise dessinée sur quadrillage. La zone interdite aux fleurs est la réunion de trois arcs de cercles indiquée par le corrigé officiel.",
+    "La corde se tend d’abord librement, puis elle s’enroule contre les murs lorsque la chèvre contourne un coin. Chaque fois que la laisse accroche un angle, le centre du mouvement change et le rayon diminue de la longueur déjà collée au mur.",
+    "Le corrigé construit les points où ces arcs rencontrent les murs ou leurs prolongements, puis retient le petit arc d’un côté, le grand arc du côté dégagé et le petit arc de l’autre côté. On s’en tient à cette enveloppe officielle, sans inventer de mesures hors figure.",
+    "Le piège est de tracer un unique quart de disque de rayon 4 m, comme si la remise n’existait pas. À retenir : autour d’un bâtiment, le domaine d’une chèvre à la corde est une suite d’arcs dont le centre glisse d’un coin à l’autre."
+  ],
+  "213": [
+    "Monsieur Seguin a un pré triangulaire de côtés 429 m, 456 m et 273 m, et il compte 950 m² par chèvre. Il peut acheter 60 chèvres.",
+    "L’aire d’un triangle quelconque se calcule, par exemple, par la formule de Héron. Le demi-périmètre vaut (429 + 456 + 273)/2 = 579 m. L’aire est alors la racine de 579 × 150 × 123 × 306, soit environ 57 174 m².",
+    "On peut aussi abaisser une hauteur et obtenir la même aire, au mètre carré près. En divisant 57 174 par 950, on trouve un peu plus de 60,2. Comme on ne loge pas une fraction de chèvre, le maximum entier est 60, et il reste une marge d’herbe.",
+    "Le piège est d’arrondir 60,2 à 61, ce qui ferait manquer d’herbe, ou de prendre le périmètre pour une aire. À retenir : le nombre de têtes est la partie entière du quotient de l’aire par la ration d’une bête."
+  ],
+  "214": [
+    "Blanchette, dans un enclos carré qu’elle fermait en 48 sauts, regarde son chevreau dans un enclos triangulaire d’un coin, qu’elle fermait en 24 sauts. Depuis le sommet opposé, son angle de vision vaut 45°.",
+    "Le rapport des périmètres, 24 contre 48, dit que le tour du petit triangle est la moitié du tour du carré. Les sauts ayant la même longueur, les longueurs de côtés sont dans ce rapport. La chèvre se place au sommet opposé au triangle.",
+    "Une construction du corrigé prolonge un côté et fait apparaître un triangle rectangle isocèle au centre de la figure. L’angle sous lequel on voit le pré du chevreau est alors la moitié d’un angle droit, soit 45°. On s’appuie sur cette géométrie officielle, sans inventer les longueurs des sauts.",
+    "Le piège est de croire que l’angle de vision est 60° « parce que le petit enclos est triangulaire ». À retenir : un rapport de périmètres, joint à la position du sommet opposé, peut forcer un angle de 45° indépendamment de la taille du carré."
+  ],
+  "215": [
+    "Une chèvre est attachée à un sommet d’un pré triangulaire équilatéral de 2 000 m², et l’on veut qu’elle ne broute que la moitié de l’herbe. La corde doit mesurer environ 43,7 m.",
+    "Depuis un sommet, tant que la corde reste plus courte que le côté, la chèvre balaie un secteur de 60°, c’est-à-dire le sixième d’un disque. La moitié du pré vaut 1 000 m², et ce sixième de disque doit égaler 1 000 m².",
+    "On a donc πr² / 6 = 1 000, d’où r² = 6 000/π et r = √(6 000/π) ≈ 43,7 m. Le côté du triangle, lui, dépasse 67 m, donc la corde n’atteint pas le côté opposé : l’hypothèse du secteur de 60° est légitime.",
+    "Le piège est de prendre un quart de disque, comme si l’angle du triangle était droit. À retenir : dans un équilatéral, l’angle au sommet est 60°, et la moitié de l’aire se convertit en un sixième de disque."
+  ],
+  "216": [
+    "Jojo a un mur de 9 m, 27 m de grillage, un seul piquet, un côté perpendiculaire au mur, et il veut l’enclos d’aire maximale. La chèvre pourra brouter 54 m².",
+    "Le piquet et le mur forment un triangle rectangle dont l’hypoténuse et un côté de l’angle droit sont en grillage, l’autre côté de l’angle droit étant le mur de 9 m. Si x est le côté perpendiculaire au mur, le troisième côté de grillage mesure 27 − x.",
+    "Pythagore s’écrit x² + 9² = (27 − x)². Après développement, 54x = 648, donc x = 12 m, et le côté oblique vaut 15 m. L’aire du triangle rectangle est (9 × 12)/2 = 54 m². C’est le seul triangle rectangle compatible avec les 27 m de grillage.",
+    "Le piège est de coller tout le grillage en un rectangle contre le mur, ou d’oublier que le piquet unique force un triangle. À retenir : un seul piquet et un côté perpendiculaire au mur, c’est Pythagore, puis l’aire (mur × côté perpendiculaire)/2."
+  ],
+  "217": [
+    "Paula construit un hexagone aux angles de 120°, en alternant trois murs de métal (1 m, 2 m et 9 m) et trois murs de bois dont la longueur totale est 18 m. Les murs de bois mesurent 4 m, 3 m et 11 m.",
+    "Les angles de 120° permettent de tracer, à l’intérieur, trois parallélogrammes qui laissent au centre un triangle équilatéral. Les côtés de ce triangle égalent les différences entre chaque mur de bois et le mur de métal qui lui est parallèle.",
+    "Si x, y, z sont les bois opposés respectivement aux métaux 2 m, 1 m et 9 m, on a x − 2 = y − 1 = z − 9, ainsi que x + y + z = 18. On en tire y = x − 1, z = x + 7, puis x + (x − 1) + (x + 7) = 18, donc 3x + 6 = 18 et x = 4. D’où y = 3 et z = 11.",
+    "Le piège est de partager 18 m en trois parts égales de 6 m, ce qui ne fermerait pas l’hexagone aux angles imposés. À retenir : un hexagone équiongulaire se ramène à un triangle équilatéral intérieur dont les côtés sont des différences de murs parallèles."
+  ],
+  "218": [
+    "Sur l’île se trouvent 3 chèvres, 9 loups et 2 lions ; manger transforme le prédateur. L’équilibre avec le plus d’animaux possibles laisse 5 lions.",
+    "Un loup qui mange une chèvre devient lion, un lion qui mange une chèvre devient loup, un lion qui mange un loup devient chèvre. Chaque repas diminue d’une tête le total, et change la parité des trois espèces. L’équilibre n’existe que lorsqu’il ne reste plus qu’une espèce, sinon quelqu’un peut encore manger.",
+    "Au départ, chèvres et loups sont en nombre impair, les lions en nombre pair. La seule extinction compatible avec ces parités est celle des chèvres et des loups, en laissant des lions. En éliminant les 9 loups, le total passe d’au plus 14 à 5. Une suite de repas y parvient : trois loups mangent les trois chèvres, trois lions mangent trois loups, puis trois loups mangent les trois nouvelles chèvres. Il reste 5 lions.",
+    "Le piège est de laisser un lion manger une chèvre, ce qui empêche d’atteindre ce maximum. À retenir : on suit à la fois le total qui diminue d’un à chaque repas et un invariant de parité qui désigne l’espèce survivante."
+  ],
+  "219": [
+    "Une chèvre est attachée au sommet d’un angle de 120° formé par deux clôtures de 20 m, avec 15 m de corde. L’aire broutable vaut 235,5 m² si l’on prend π = 3,14.",
+    "La corde est plus courte que chaque clôture : la chèvre ne contourne aucun obstacle et reste dans le secteur de 120°. Or 120° est le tiers de 360°, donc le pâturage est le tiers d’un disque de rayon 15 m.",
+    "L’aire d’un disque est πr², ici 225π. Le tiers vaut 75π. Avec 3,14, on obtient 75 × 3,14 = 235,5 m². Une calculatrice qui prend davantage de décimales pour π donnera 235,6 m², également acceptable.",
+    "Le piège est de calculer un demi-disque, comme si l’angle était plat, ou d’utiliser les 20 m de clôture comme rayon. À retenir : une chèvre dans un angle, corde plus courte que les murs, broute exactement le secteur de cet angle."
+  ],
+  "220": [
+    "Même pré de 30 m sur 40 m, même corde de 22,50 m depuis le bord : on redemande l’aire broutée par Suzon, arrondie au mètre carré. Cette aire vaut 598 m².",
+    "Vous décomposez encore la surface en deux triangles rectangles, là où la corde dépasse le long des clôtures, et en un secteur de disque entre les deux murs. Les distances de A aux directions des murs sont 20 m et 10 m, le rayon reste 22,50 m.",
+    "Pythagore fournit les deux autres côtés, voisins de 10,3 m et 20,2 m, d’où des triangles d’environ 103 m² et 101 m². Les angles aigus valent près de 27° et 64°, donc le secteur interne approche 89° et 394 m². La somme arrondie est 598 m², inférieure à la moitié de 1 200 m².",
+    "Le piège est de réutiliser un résultat non arrondi, ou de prendre π trop tôt dans chaque morceau puis d’arrondir trois fois. À retenir : on additionne d’abord les aires exactes, puis on arrondit une seule fois au mètre carré."
+  ],
+  "221": [
+    "Blanchette broute le gazon en 6 h, Frisé en 4 h, Hortense en 3 h ; les trois travaillent ensemble. Ils terminent en 1 h 20 min.",
+    "Chaque animal a une « vitesse de tonte » égale à l’inverse de son temps : un sixième, un quart et un tiers de pelouse par heure. Ensemble, ils avancent à la somme de ces trois cadences.",
+    "Le calcul 1/6 + 1/4 + 1/3 se met au dénominateur 12 : 2/12 + 3/12 + 4/12 = 9/12 = 3/4. Ils broutent donc trois quarts de pelouse à l’heure, et il leur faut 1 ÷ (3/4) = 4/3 d’heure, c’est-à-dire 1 h 20 min. L’équation x/6 + x/4 + x/3 = 1 redonne le même x.",
+    "Le piège est de faire la moyenne des trois durées, (6 + 4 + 3)/3 = 4 h 20, ce qui n’a aucun sens. À retenir : des travailleurs simultanés additionnent leurs cadences, pas leurs temps."
+  ],
+  "222": [
+    "Chaque nuit, le chevreuil va du boisé à la rivière et en revient, sans jamais rebrousser chemin, jusqu’à avoir utilisé tous les sentiers du dessin. Il lui faut 10 nuits.",
+    "Le réseau se lit colonne par colonne. On compte, à chaque nœud, combien de sentiers y aboutissent depuis le boisé, en n’avançant que vers la rivière. Le corrigé obtient 1, 3 et 1 chemins à la première fourche, puis 4 et 4, puis 4, 11 et 4, soit 19 chemins aller en tout.",
+    "Chaque nuit consomme un aller et un retour, donc deux usages de sentiers, sauf si l’on s’arrête à la rivière. Dix-huit sentiers sont ainsi parcourus en 9 nuits. La dixième nuit emporte le dix-neuvième sentier et laisse l’animal à la rivière, tous les chemins ayant alors été utilisés.",
+    "Le piège est de compter 19 nuits, une par sentier, en oubliant que chaque nuit fait l’aller et le retour. À retenir : on dénombre d’abord les chemins simples du graphe, puis on les consomme deux par deux, nuit après nuit."
+  ],
+  "223": [
+    "Il faut passer trois chiens de tailles différentes de la première allée à la troisième, un seul à la fois, sans jamais cacher un petit derrière un plus gros, l’allée du milieu servant d’espace. Le plus rapide se fait en 7 déplacements.",
+    "C’est le problème des tours de Hanoï : le plus gros chien joue le rôle du plus grand disque, le plus petit celui du plus petit disque, et l’on n’a pas le droit de poser un gros sur un petit. Trois piquets deviennent ici trois allées de trois box.",
+    "La stratégie classique déplace d’abord les deux plus petits vers l’allée intermédiaire (3 mouvements), passe le plus gros à destination (1 mouvement), puis ramène les deux petits par-dessus (3 mouvements). Le total est 7. Pour n chiens, il faudrait 2ⁿ − 1 déplacements.",
+    "Le piège est de vouloir emmener le plus gros trop tôt, ce qui bloque ensuite les petits. À retenir : on dégage d’abord la pyramide supérieure, on transfère la base, on reconstruit la pyramide."
+  ],
+  "224": [
+    "Dans chaque quartier « dominos », chaque propriété occupe deux cases : une pour la maison, une pour le chien. Le corrigé officiel donne une disposition possible pour chacun des deux plans.",
+    "Paver par dominos, c’est couvrir le dessin par des rectangles 1 × 2 sans trou ni chevauchement. Les irrégularités du contour et les cases déjà interdites forcent souvent les premiers dominos le long des bords étroits, là où une case n’a plus qu’une voisine libre.",
+    "On enchaîne ensuite les placements forcés. S’il reste une case isolée, on revient en arrière. Les deux solutions du corrigé sont des pavages complets ; on ne dessine pas d’autre grille que celle de l’énoncé.",
+    "Le piège est de laisser une case seule au milieu, ou de poser un « domino » en L. À retenir : un pavage par dominos se décide d’abord sur les couloirs de largeur 1, où le choix est unique."
+  ],
+  "225": [
+    "Trois niches alignées, trois couleurs, trois chiens de tailles différentes, avec les cinq indices de l’énoncé. Le plus petit chien est le teckel, et la niche jaune est celle du berger allemand.",
+    "L’épagneul occupe la niche du milieu. Le plus petit habite tout à gauche. Le teckel est dans la rouge, et la rouge touche la verte. Le berger allemand est le plus grand.",
+    "Le plus petit, à gauche, est donc le teckel, ce qui place la niche rouge à gauche et, par contact, la verte au milieu. Il reste le jaune à droite pour le plus grand, le berger allemand. L’épagneul, de taille moyenne, a la niche verte du centre.",
+    "Le piège est de mettre le teckel au milieu parce qu’« il est petit », alors que c’est la taille, et non la race, qui occupe la gauche. À retenir : on ancre d’abord les places (milieu, extrême gauche), puis les couleurs qui se touchent."
+  ],
+  "226": [
+    "Hexane rapporte au plus 1 998 noix ; à chaque étape le maître partage en deux et lui donne la noix restante s’il y en a une. Pour en manger le plus possible, elle doit en apporter 1 023, 1 535, 1 791, 1 919 ou 1 983.",
+    "Le rite du maître est exactement la division euclidienne par 2 : le reste 1 est une noix pour Hexane, le quotient redevient le nouveau tas. Le nombre de noix mangées est donc le nombre de chiffres 1 dans l’écriture binaire du total apporté.",
+    "On cherche le plus grand nombre de bits valant 1, parmi les entiers de 1 à 1 998. Onze bits à 1 donneraient 2 047, trop grand. Dix bits à 1 restent possibles : en ôtant une puissance de 2 à 2 047, les valeurs qui ne dépassent pas 1 998 sont précisément 1 983, 1 919, 1 791, 1 535 et 1 023. Chacune fait déguster 10 noix, et c’est le maximum.",
+    "Le piège est de rapporter 1 998, dont l’écriture binaire a moins de dix 1, ou de s’arrêter à l’exemple 1 903 et ses 9 noix. À retenir : le nombre de restes impaires d’une suite de partages par 2 se lit sur les bits de l’entier de départ."
+  ],
+  "227": [
+    "Des chiens alignés pèsent un nombre entier de kilogrammes, et le double du poids de l’un plus le poids du suivant vaut toujours 94 kg. Au maximum, il y a 8 chiens, de 31, 32, 30, 34, 26, 42, 10 et 74 kg.",
+    "La relation aₙ₊₁ = 94 − 2aₙ est une suite récurrente. Tous les termes doivent rester des entiers strictement positifs. En exprimant chaque terme en fonction du premier, on obtient une alternance de formules 94 fois un entier, moins une puissance de 2 fois a₁.",
+    "Un neuvième chien forcerait le premier poids dans un intervalle vide. Pour huit chiens, le seul entier a₁ qui maintient tous les poids positifs est 31. On calcule alors de proche en proche : 94 − 62 = 32, 94 − 64 = 30, 94 − 60 = 34, 94 − 68 = 26, 94 − 52 = 42, 94 − 84 = 10, et 94 − 20 = 74.",
+    "Le piège est d’autoriser un poids nul, ou de s’arrêter à sept chiens faute d’avoir testé a₁ = 31. À retenir : une relation affine qui lie un terme au précédent se déroule jusqu’au premier entier qui ferait apparaître un poids négatif."
+  ],
+  "228": [
+    "Sur le damier, deux chiens sont déjà placés ; il faut ajouter quatre chiens et trois chats de sorte qu’aucun chien ne voie aucun chat, en ligne, colonne ou diagonale. Le corrigé officiel donne une configuration qui convient.",
+    "Un chien « voit » comme une reine d’échecs, mais seulement pour détecter les chats : la moindre pièce alignée sur une droite ou une diagonale trahit le chat. Les cases déjà occupées ne peuvent plus recevoir personne.",
+    "Il s’agit donc de placer sept animaux supplémentaires en mettant les chats dans les cases que les six chiens ne contrôlent pas. Le dessin du corrigé réalise cette séparation. On n’invente pas d’autres coordonnées que celles de la figure officielle.",
+    "Le piège est d’oublier les diagonales, ou de superposer deux animaux sur la même case. À retenir : « aucun chien ne voit aucun chat » signifie que chaque chat est hors de toute ligne de mire, y compris oblique."
+  ],
+  "229": [
+    "Monsieur et madame Dupont marchent à 1 m l’un de l’autre, chacun tenant le chien par une chaîne de 1 m. À chaque instant, le chien évolue dans une surface d’environ 1,23 m².",
+    "Le chien doit rester à au plus 1 m de monsieur et à au plus 1 m de madame. Son domaine est l’intersection de deux disques de rayon 1 m dont les centres sont distants de 1 m. Cette lentille est limitée par deux arcs de 120°.",
+    "On peut la calculer comme deux secteurs de 120°, soit deux tiers de disque, moins le losange central formé de deux triangles équilatéraux de côté 1 m. L’aire vaut 2π/3 − √3/2, ce qui fait un peu plus de 1,23 m².",
+    "Le piège est d’annoncer l’aire d’un disque entier, ou celle d’un losange seul. À retenir : deux laisses égales et un écart égal à une laisse dessinent une lentille dont l’angle est 120°."
+  ],
+  "230": [
+    "Cinquante-six biscuits nourrissent 10 animaux, chiens à 6 biscuits et chats à 5 biscuits. Il y a 6 chiens et 4 chats.",
+    "Si a est le nombre de chats et b celui des chiens, on a a + b = 10 et 5a + 6b = 56. C’est un système de deux équations. En remplaçant a par 10 − b, il vient 5(10 − b) + 6b = 56, donc 50 + b = 56, et b = 6, puis a = 4.",
+    "On peut aussi partir d’un extrême : dix chiens mangeraient 60 biscuits, or il n’y en a que 56, donc 4 « économies » d’un biscuit, c’est-à-dire 4 chats. Dix chats mangeraient 50 biscuits, et les 6 biscuits en trop désignent 6 chiens. Les deux lectures s’accordent.",
+    "Le piège est d’inventer une troisième espèce, ou de partager 56 en 10 parts égales. À retenir : un total de têtes et un total de rations forment un système 2 × 2, souvent plus rapide par écart à un cas extrême."
+  ],
+  "231": [
+    "Un homme parcourt 3 km aller et 3 km retour ; son chien, deux fois plus lent, part avec lui, se retourne quand ils se croisent après le demi-tour de l’homme, et rentre. Le chien a marché 4 km.",
+    "Lorsque l’homme arrive au bout des 3 km, le chien, moitié moins rapide, n’a couvert que 1,5 km. Il reste 1,5 km entre eux, et ils marchent l’un vers l’autre. Comme l’homme va deux fois plus vite, il en couvre 1 km pendant que le chien en couvre 0,5 km.",
+    "Au moment du croisement, le chien se trouve à 2 km de la maison. Il rebrousse alors chemin et rentre : encore 2 km. Au total, 1,5 + 0,5 + 2 = 4 km. On n’a pas besoin de la valeur numérique de la vitesse, seulement du rapport 2 contre 1.",
+    "Le piège est de faire rentrer le chien à la vitesse de l’homme, ou de compter 6 km comme s’il avait tout suivi. À retenir : on découpe le trajet aux instants où quelqu’un se retourne, et le rapport des vitesses fixe les parts de la distance restante."
+  ],
+  "232": [
+    "Timothée enchaîne sept observations sur les hôtels d’un pays étranger, et l’on demande si les propriétaires de chien peuvent jouir du chèvrefeuille. Oui : tout hôtel qui accepte les chiens a les murs couverts de chèvrefeuille.",
+    "Chaque phrase se réécrit en implication. Les chiens admis forcent un tarif élevé ; un tarif élevé force une bonne cuisine ; une bonne cuisine force des serveuses accortes ; des serveuses accortes forcent l’ouverture toute l’année ; l’ouverture annuelle force la vue sur mer ; la vue sur mer force une piscine ; la piscine force le chèvrefeuille.",
+    "En lisant cette chaîne dans l’ordre, l’hypothèse « les chiens sont admis » entraîne, de proche en proche, toutes les conclusions, jusqu’au chèvrefeuille. Aucune de ces implications n’est une équivalence : on ne remonte pas le fil, mais on n’en a pas besoin pour la question posée.",
+    "Le piège est d’inverser une implication, par exemple de croire que le chèvrefeuille entraîne l’admission des chiens. À retenir : une suite de « si … alors … » se compose comme un seul grand « donc », à condition de les aligner dans le bon ordre."
+  ],
+  "233": [
+    "Le corrigé officiel est une figure : parmi les photos de chiens posées sur la table, elle désigne celui avec lequel Jean-Philippe a le plus joué. Les trois indices suffisent à l’isoler sur ce dessin, sans en inventer un autre.",
+    "Le chien cherché n’apparaît qu’une fois dans sa ligne, il touche un autre chien en diagonale, et il se trouve à droite d’un troisième. Chaque indice élimine des photos : celles qui se répètent sur une ligne, celles isolées de toute diagonale, celles trop à gauche.",
+    "On croise les trois filtres sur la disposition donnée par l’énoncé. Une seule photo survit. C’est elle que le corrigé encadre. Sans cette grille, on énonce la méthode et non des coordonnées fictives.",
+    "Le piège est de lire « à droite » comme « n’importe où à droite dans toute la table », alors que le contact se juge sur les cases voisines. À retenir : trois contraintes locales, appliquées à une figure, ne laissent en général qu’un candidat."
+  ],
+  "234": [
+    "Le chien part du centre de la rangée supérieure d’un champ de 42 parcelles, descend en oblique sans reculer, et évite deux parcelles noires. Il existe 16 chemins vers la rangée inférieure.",
+    "« Obliquement, sans revenir en arrière » signifie que chaque pas gagne une rangée vers le bas, vers la gauche ou vers la droite selon les diagonales permises. Une parcelle noire coupe tous les chemins qui voudraient la traverser.",
+    "La méthode sûre consiste à écrire dans chaque case le nombre de façons d’y arriver depuis le départ. Une case reçoit la somme des cases d’où l’on peut venir. Les noires restent à zéro. En bas, on additionne toute la dernière rangée : le corrigé trouve 16.",
+    "Le piège est de compter aussi les remontées, ou d’oublier que les deux cases noires annulent des branches. À retenir : le nombre de chemins sur une grille se calcule en additionnant de proche en proche, pas en dessinant toutes les trajectoires à la main."
+  ],
+  "235": [
+    "Olivin veut 100 biscuits, en sacs de 5 et de 7, avec le moins de sacs possible. Il recevra 6 sacs de cinq biscuits et 10 sacs de sept biscuits.",
+    "On cherche des entiers x et y positifs ou nuls tels que 7x + 5y = 100, en minimisant x + y. Comme 100 et 5 sont multiples de 5, 7x doit l’être aussi, donc x lui-même est un multiple de 5.",
+    "Les candidats sont x = 0 (20 sacs de 5), x = 5 (5 sacs de 7 et 13 sacs de 5, soit 18 sacs) et x = 10 (10 sacs de 7 et 6 sacs de 5, soit 16 sacs). Au-delà, 15 × 7 = 105 dépasse 100. Le minimum est 16 sacs, avec 10 de sept et 6 de cinq.",
+    "Le piège est de prendre 20 sacs de cinq, solution exacte mais plus lourde, ou d’autoriser un nombre de sacs de 7 qui n’est pas multiple de 5. À retenir : une somme à deux types de paquets se teste sur les multiples imposés par le PGCD."
+  ],
+  "236": [
+    "Quatre balles 2, 3, 15 et 24 sont déjà sur la grille ; le chien doit la compléter pour que, dans chaque petit carré, les produits en croix soient égaux. La grille unique du corrigé se lit 2, 3, 18 en haut, 6, 9, 15 au milieu, 24, 8, 12, 20 pour la suite.",
+    "« Produits en croix égaux » dans un carré de quatre nombres a, b, c, d signifie a × d = b × c. Chaque nouveau numéro, entier entre 1 et 25 et encore libre, est donc forcé par une proportion. Les contraintes se propagent de carré en carré.",
+    "Le corrigé montre que l’un des nombres doit être multiple de 5, diviser 360, et rester entre 15 et 25 : seul 20 convient, 15 étant déjà posé. Un autre doit être multiple de 6 ; 12 est le seul qui n’engendre pas de doublon. Le reste de la grille s’en déduit, et 18, 6, 9, 8, 12 viennent occuper les cases vides.",
+    "Le piège est de réutiliser une balle déjà placée, ou d’oublier que tous les numéros restent au plus égaux à 25. À retenir : des produits en croix, ce sont des proportions, et une case déjà chiffrée suffit souvent à en forcer trois autres."
+  ],
+  "237": [
+    "On suit les arrivées et départs de chiens, du lundi au vendredi, sachant que le vendredi 5 chiens n’ont pas pu entrer parce que le chenil était plein. La capacité est de 20 chiens.",
+    "Lundi soir, il y a 6 chiens. Mardi : 6 + 4 − 5 = 5. Mercredi : 5 + 12 − 1 = 16. Jeudi : 16 − 3 = 13. Jusque-là, le chenil n’a jamais été saturé, donc ces totaux sont inférieurs à la capacité.",
+    "Vendredi, 12 chiens se présentent et 5 sont refusés : 7 seulement entrent. L’effectif devient 13 + 7 = 20, et c’est précisément le moment où « le chenil était plein ». La capacité, c’est cet effectif atteint, 20 places.",
+    "Le piège est d’ajouter les 5 refusés comme s’ils étaient dedans, ou de croire que le maximum a eu lieu mercredi (16). À retenir : un refus pour cause de saturation révèle la capacité, égale à l’effectif juste après les dernières admissions."
+  ],
+  "238": [
+    "La semaine de vitamines de Médor totalise 25 mg, à 5 mg par comprimé ; les doses de six jours sont lisibles, celle du jeudi est tachée. Le jeudi, la dose est d’un comprimé entier.",
+    "Vingt-cinq milligrammes, c’est exactement 5 comprimés pour la semaine. Les doses encore lisibles s’additionnent : 1 + 1/2 + 1/4 + 1 + 1/4 + 1. Cela fait 4 comprimés.",
+    "Il manque donc 5 − 4 = 1 comprimé pour atteindre le total prescrit. Cette dose manquante est celle du jeudi. On n’a pas besoin de connaître l’heure de la prise, seulement la somme des fractions.",
+    "Le piège est d’oublier un des quarts, ou de convertir 25 mg en comprimés de travers. À retenir : une case illisible d’un planning se reconstitue par différence entre le total et ce que l’on peut encore lire."
+  ],
+  "239": [
+    "Le chenil a 35 cases ; quatre chiens aux coins d’un carré s’épuisent à aboyer. On peut en loger 29 sans jamais former un tel carré ; le dessin du corrigé le montre.",
+    "L’interdiction vise tout carré, pas seulement les blocs 2 × 2 de cases voisines : quatre chiens aux coins d’un carré plus grand, éventuellement tourné, sont également fatals. Il faut donc briser toutes les configurations carrées.",
+    "Laisser 6 cases vides, bien choisies, suffit d’après le corrigé à tuer tous les carrés, et l’on atteint 35 − 6 = 29. La figure officielle place ces vides ; on ne propose pas d’autre schéma inventé.",
+    "Le piège est de n’éviter que les petits carrés 2 × 2, ce qui surestime le remplissage. À retenir : « quatre cases en carré » désigne toute isométrie d’un carré, et le maximum se lit sur le dessin du corrigé."
+  ],
+  "240": [
+    "Dans la cage, bassets de 8 kg, caniches de 5 kg et pékinois de 3 kg pèsent ensemble 22 kg, avec au moins un chien de chaque race. Il y a 1 basset, 1 caniche et 3 pékinois.",
+    "Le nombre de bassets ne peut être que 1 ou 2, car 3 × 8 = 24 dépasse déjà 22, et 0 serait contraire à la présence des trois races. S’il y a deux bassets, il reste 6 kg, donc un caniche et 1 kg impossible à faire avec des pékinois de 3 kg.",
+    "S’il y a un basset, il reste 14 kg. Un caniche laisse 9 kg, soit exactement 3 pékinois. Deux caniches laissent 4 kg, non divisible par 3. La seule solution admissible est donc 1 + 1 + 3. L’égalité 2 × 8 + 2 × 3 = 22, sans caniche, est mathématique mais exclue par l’énoncé.",
+    "Le piège est d’accepter une race absente, ou d’oublier que les masses sont des entiers imposés. À retenir : on borne d’abord l’espèce la plus lourde, puis on teste les restes divisibles par les masses plus légères."
+  ],
+  "241": [
+    "Fina se trouve à 119 m, 375 m et 408 m de trois des quatre coins d’un pré rectangulaire. Elle est à 200 m de la quatrième entrée.",
+    "Dans un rectangle, pour tout point intérieur F, la somme des carrés des distances à deux coins opposés égale la somme des carrés des distances aux deux autres coins. C’est le théorème du drapeau britannique, conséquence de Pythagore appliqué aux quatre projections de F sur les côtés.",
+    "Si les trois distances connues concernent, dans l’ordre, un sommet, un voisin, puis l’opposé du premier, on a 119² + 408² = 375² + d². Le calcul donne 14 161 + 166 464 = 140 625 + d², donc d² = 40 000 et d = 200 m. La distance est positive, on retient la racine positive.",
+    "Le piège est d’additionner ou de soustraire les distances brutes, sans passer par les carrés. À retenir : dans un rectangle, les diagonales « en carrés » se compensent deux à deux depuis n’importe quel point intérieur."
+  ],
+  "242": [
+    "Placide a 30 parcelles et 7 chiens ; il faut partager le terrain, sauf deux parcelles, en sept pièces superposables contenant chacune un chien. Chaque pièce réunit 4 parcelles ; le corrigé officiel en donne un tracé.",
+    "Trente moins deux égale 28, et 28 ÷ 7 = 4 : le compte des cases tombe juste. Même forme et même grandeur signifient que les sept tetraminos sont identiques, éventuellement tournés. Chaque chien doit tomber dans une copie différente.",
+    "On cherche donc un tétramino qui, répété sept fois, évite les deux parcelles laissées vides et isole les sept chiens. La figure du corrigé réalise ce pavage. On ne dessine pas d’autre découpe que celle-ci.",
+    "Le piège est de former sept régions de 4 cases mais de silhouettes différentes, ou d’oublier d’écarter deux parcelles. À retenir : l’égalité 28 = 7 × 4 fixe la taille, la figure officielle fixe la forme."
+  ],
+  "243": [
+    "Annabelle parcourt 50 m jusqu’au parc par étapes de 10 m ; à chaque pause, Caramel est déjà à l’entrée, revient, puis repart. Caramel a parcouru 250 m lorsque Annabelle arrive.",
+    "Au premier arrêt, Annabelle a fait 10 m et il lui reste 40 m : Caramel a couru 50 m jusqu’au parc puis 40 m pour revenir, soit 90 m. Au deuxième arrêt, il reste 30 m à Annabelle : Caramel fait 40 + 30 = 70 m, et ainsi de suite.",
+    "Les cinq étapes donnent 90 + 70 + 50 + 30 + 10 = 250 m. La dernière, Annabelle atteint enfin l’entrée, et Caramel n’a plus qu’à y rester, ce qui lui coûte les 10 m de l’ultime sprint. On reconnaît la somme des cinq premiers impairs à l’envers.",
+    "Le piège est de compter seulement les 50 m d’Annabelle, ou d’oublier les retours du chien pendant que sa maîtresse attend. À retenir : à chaque palier, le chien fait l’aller-retour entre l’entrée et la nouvelle position d’attente."
+  ],
+  "244": [
+    "La balance affiche 63 kg pour vous, 51 kg pour l’autre personne, 121 kg pour vous deux, et 11 kg pour Médor. Médor pèse en réalité 18 kg.",
+    "La balance commet toujours la même erreur E, une seule fois par pesée, qu’une ou deux personnes montent. La pesée double affiche donc la somme des vrais poids plus E, soit 121. La somme des deux pesées séparées, 63 + 51 = 114, compte E deux fois.",
+    "En retranchant, on trouve E = 114 − 121 = −7 : l’appareil sous-estime de 7 kg. L’affichage 11 kg de Médor est donc 7 kg trop bas, et le vrai poids est 11 + 7 = 18 kg. On retrouve aussi les vrais poids humains : 70 kg et 58 kg, dont la somme 128, affichée 121, confirme E = −7.",
+    "Le piège est de croire que Médor pèse 11 kg, ou que l’erreur change quand deux personnes montent. À retenir : deux pesées simples moins une pesée double isolent l’erreur constante de l’instrument."
+  ],
+  "245": [
+    "Un chenil de 150 chiens a deux fois plus de bergers allemands que de chow-chows, autant de bergers que de caniches, autant de lévriers et setters réunis que de chow-chows, et quatre fois plus de setters que de lévriers. Les effectifs sont 50, 25, 50, 5 et 20.",
+    "En notant C le nombre de chow-chows, on a 50 bergers si C vaut la moitié des bergers, donc B = 2C, et autant de caniches : K = 2C. Les lévriers et setters totalisent C, avec S = 4L, donc 5L = C.",
+    "Le total s’écrit 2C + C + 2C + C = 6C = 150, car L + S = C. D’où C = 25, L = 5, S = 20, B = 50 et K = 50. La somme 50 + 25 + 50 + 5 + 20 = 150 referme le compte.",
+    "Le piège est de prendre « quatre fois plus de setters que de lévriers » pour S = L + 4. À retenir : on exprime toutes les races en fonction d’une seule inconnue, ici le chow-chow, puis on utilise le total."
+  ],
+  "246": [
+    "M. et Mme Softleigh pèsent 150 livres chacun, leurs deux fils 75 livres chacun, plus le chien qui ne nage pas ; le bateau porte au plus 150 livres. Ils traversent tous en 11 passages.",
+    "Le bateau ne peut emporter qu’un adulte, ou les deux fils, ou un fils avec le chien. Envoyer d’abord la mère seule, comme dans l’énoncé, oblige à un retour à vide d’adulte et n’avance rien. Il faut donc que les fils fassent la navette du bateau.",
+    "Les deux fils croisent, l’un ramène le bateau ; le père passe, l’autre fils ramène ; les deux fils croisent, l’un ramène ; la mère passe, l’autre fils ramène ; les deux fils croisent, l’un ramène ; enfin le dernier fils emmène le chien. Onze traversées, aller et retours compris, et jamais plus de 150 livres à bord.",
+    "Le piège est de faire nager le chien, ou de charger un parent avec un fils, ce qui pèse 225 livres. À retenir : les deux demi-poids servent de passeurs, et le chien n’embarque qu’avec un fils, à la fin."
+  ],
+  "247": [
+    "Le chien part de P, le chat de Q, le long du même trait gras ; le chien va trois fois plus vite. Ils se rencontrent au point E, ce qui est la réponse E.",
+    "Le chemin de P à Q se décompose, sur la figure, en 16 côtés de carreau et 4 diagonales. Comme le chien est trois fois plus rapide, il en parcourt les trois quarts pendant que le chat en parcourt un quart.",
+    "Les trois quarts de 16 côtés et de 4 diagonales valent 12 côtés et 3 diagonales pour le chien, contre 4 côtés et 1 diagonale pour le chat. Sur le dessin, cet endroit du trait gras est le point E. Les points A, B, C et D correspondent à d’autres fractions du parcours.",
+    "Le piège est de partager le chemin en deux parts égales, comme si les vitesses étaient égales. À retenir : deux mobiles en sens inverse se rencontrent au point qui coupe la distance dans le rapport des vitesses."
+  ],
+  "248": [
+    "Un chien attaché à l’extérieur d’un enclos de 6 m sur 4 m, laisse de 9 m, ne peut pas entrer ; cinq os sont posés autour. Il peut en attraper 4, ce qui est la réponse D.",
+    "La laisse s’enroule le long des murs. D’un côté, les longueurs 1 m + 4 m + 4 m = 9 m permettent d’atteindre exactement le quatrième os. De l’autre côté, le premier os utile est à 5 + 4 + 1 = 10 m, donc hors de portée.",
+    "Les os accessibles sont donc les quatre du côté où la corde suffit, et le cinquième reste trop loin. On ne fait pas entrer le chien dans l’enclos : seuls les chemins extérieurs comptent.",
+    "Le piège est de mesurer la ligne droite à travers l’enclos, interdite, ou de conclure à 5 os parce que 9 m « paraît long ». À retenir : autour d’un obstacle, la portée est la longueur d’enroulement, pas la corde tendue en secant."
+  ],
+  "249": [
+    "Un petit chien est attaché à l’intérieur d’un rectangle de 6 m sur 5 m, laisse de 6 m ; cinq os sont alignés sur un bord. Il peut en attraper 3, ce qui est la réponse C.",
+    "Depuis le point d’attache, chaque os est à une distance à vol d’oiseau que l’on calcule par Pythagore : un côté du rectangle, 5 m, et un décalage de 1 m, 2 m, 3 m, 4 m ou 5 m le long du bord. Les carrés de ces distances valent 26, 29, 34, 41 et 50.",
+    "Le carré de la laisse est 36. Tout os dont le carré de distance dépasse 36 est hors d’atteinte. Seuls les trois premiers, 26, 29 et 34, restent sous 36. Les os à 4 m et 5 m de décalage sont trop loin.",
+    "Le piège est de comparer les 6 m de laisse aux 6 m du grand côté, sans Pythagore. À retenir : à l’intérieur d’un rectangle, la laisse travaille en ligne droite, et l’on compare des carrés pour éviter les racines."
+  ],
+  "250": [
+    "Si c chiens pèsent k kilogrammes et si e éléphants pèsent autant que m chiens, on demande le poids d’un éléphant. Ce poids vaut km / (c e), ce qui est la réponse D.",
+    "Un chien pèse k/c kilogrammes. Puisque e éléphants équivalent à m chiens, les e éléphants pèsent m × (k/c) kilogrammes. Un seul éléphant pèse donc cette quantité divisée par e.",
+    "On obtient p = (m k) / (c e). Les autres propositions permutent les lettres au numérateur ou au dénominateur, ce qui n’a plus la dimension d’une masse. Un contrôle : si l’on double c, chaque chien est plus léger, et l’éléphant aussi, donc c doit figurer au dénominateur.",
+    "Le piège est d’écrire c k e m en les multipliant tous, ou d’inverser le quotient. À retenir : on passe toujours par l’unité — le poids d’un chien — avant de convertir vers l’autre animal."
+  ],
+  "251": [
+    "Cinq amis n’ont qu’un animal, les autres en ont deux, et Yves a dessiné tous les animaux du groupe. Le groupe compte 11 amis, ce qui est la réponse A.",
+    "Le dessin de l’énoncé présente 17 animaux. Cinq d’entre eux sont des animaux uniques, un par ami. Il en reste 17 − 5 = 12, qui vont par paires : 12 ÷ 2 = 6 amis à deux animaux.",
+    "Au total, 5 + 6 = 11 amis. Les propositions 12, 13, 14 supposeraient un autre décompte du dessin. La proposition E, un seul ami, est absurde au vu de la meute dessinée.",
+    "Le piège est de compter 17 amis, un par animal, ou de diviser 17 par 2 sans retirer d’abord les cinq solitaires. À retenir : on sépare les animaux « uniques » des animaux « en paires », puis on convertit chaque paquet en nombre d’amis."
+  ],
+  "252": [
+    "Tiny a peur des deux chiens, Tany a peur de Dim mais pas de Dill. Parmi les cinq phrases, a, b, c et d sont vraies, et e est fausse.",
+    "Chacun des chats a peur d’au moins un chien : Tiny des deux, Tany de Dim. Il existe un chat, Tany, qui n’a pas peur d’au moins un chien, Dill. Il existe un chien, Dim, qui fait peur aux deux chats. Chacun des chiens fait peur à au moins un chat : Dim aux deux, Dill à Tiny.",
+    "La phrase e prétend qu’un chien ne fait peur à aucun des deux chats. Or Dim effraie Tiny et Tany, et Dill effraie Tiny. Aucun des deux chiens n’est inoffensif pour tout le monde. La phrase e est donc fausse, et elle seule.",
+    "Le piège est de lire « n’a pas peur d’au moins un chien » comme « n’a peur d’aucun chien ». À retenir : on traduit chaque phrase en un quantificateur, puis on la confronte aux quatre peurs effectivement données."
+  ],
+  "253": [
+    "Phil, Max et Malon partent le mardi 4 novembre 2004 à 8 h, pour un voyage de 100 jours pile. Ils rentrent le jeudi 12 février 2005.",
+    "Cent jours, c’est 14 semaines et 2 jours, car 14 × 7 = 98 et 100 − 98 = 2. Un départ un mardi se décale donc de deux jours dans la semaine : le retour a lieu un jeudi, à la même heure.",
+    "Pour la date, on avance de 100 jours depuis le 4 novembre. Il reste 26 jours en novembre, puis 31 jours en décembre et 31 jours en janvier, soit 88 jours, et 100 − 88 = 12. On arrive au 12 février 2005. L’année 2004 est bissextile, mais février 2004 est déjà passé au moment du départ.",
+    "Le piège est d’ajouter 100 jours au 4 novembre en restant en novembre, ou d’oublier le +2 dans la semaine. À retenir : on sépare le jour de la semaine, un modulo 7, et le calendrier, mois par mois."
+  ],
+  "254": [
+    "Malice avance de 10 m en 10 m vers un point B à 50 m, et à chaque pause Zizou va jusqu’à B puis revient. Zizou a parcouru 250 m lorsque Malice arrive en B.",
+    "Le schéma est le même que celui d’Annabelle et Caramel. Pendant que Malice fait 10 m, Zizou va au but et revient jusqu’à la nouvelle position d’arrêt. Les distances de Zizou sont 10 + 80, puis 10 + 60, puis 10 + 40, puis 10 + 20, puis 10.",
+    "On peut grouper : 10 + 2 × 40 + 10 + 2 × 30 + 10 + 2 × 20 + 10 + 2 × 10 + 10 = 250 m. Les cinq allers-retours dégressifs plus les cinq petits bouts avec Malice reconstituent ce total.",
+    "Le piège est de compter 5 × 50 = 250 pour de mauvaises raisons, ou d’oublier que Zizou accompagne aussi les 10 m d’avance. À retenir : chaque palier coûte au chien deux fois la distance restante après l’étape, plus les 10 m communs."
+  ],
+  "255": [
+    "Un chien facétieux a masqué des chiffres d’une multiplication à deux facteurs, dont un 9 visible. La multiplication reconstituée est 99 × 91 = 9 009.",
+    "Le produit dépasse 9 000, et chaque facteur a au plus deux chiffres, donc au plus 99. Or 9 000 / 99 ≈ 90,9 : les deux facteurs sont strictement plus grands que 90. La première ligne partielle n’a que deux chiffres, ce qui force le chiffre des unités du second facteur à valoir 1, car 2 × 91 dépasserait déjà 100.",
+    "Le second facteur est donc 91. Alors 9 000 / 91 ≈ 98,9, et le premier facteur, déjà supérieur à 90 et au plus 99, vaut 99. On vérifie 99 × 91 = 9 009, et la pose fait apparaître les lignes 99, 891 et 9 009, compatibles avec le 9 resté visible.",
+    "Le piège est d’essayer 90 × 100, qui n’est plus une multiplication à deux chiffres par deux chiffres. À retenir : un produit encadré et le nombre de chiffres d’une ligne intermédiaire forcent souvent les unités, puis tout le reste."
+  ],
+  "256": [
+    "Il y a cinq ans, la sœur était cinq fois plus âgée que Fido ; aujourd’hui, elle est trois fois plus âgée que lui. Fido a 10 ans.",
+    "Si f est l’âge actuel du chien et s celui de la sœur, on a s = 3f aujourd’hui, et s − 5 = 5(f − 5) il y a cinq ans. La seconde égalité devient s = 5f − 20.",
+    "En identifiant 3f et 5f − 20, on obtient 2f = 20, donc f = 10 et s = 30. Contrôle : il y a cinq ans, Fido avait 5 ans et la sœur 25 ans, et 25 = 5 × 5. Aujourd’hui, 30 = 3 × 10.",
+    "Le piège est d’écrire s = 5f sans reculer les deux âges de cinq ans, ou d’autoriser un âge passé négatif. À retenir : un rapport d’âges « il y a n années » s’applique aux âges diminués de n, pas aux âges actuels."
+  ],
+  "257": [
+    "L’ascenseur Binks est une poulie à deux seaux, différence de poids au plus 30 livres ; monsieur pèse 90, madame 210, le chien 60, le bébé 30. Toute la famille gagne le sol en treize manœuvres.",
+    "Les paires qui respectent l’écart de 30 livres sont : le bébé contre un seau vide, le chien contre le bébé, monsieur contre le chien, et madame contre monsieur, le chien et le bébé réunis (210 contre 180). Le bébé sert de contrepoids léger que l’on envoie souvent seul, puis que l’on fait remonter.",
+    "On fait d’abord descendre le bébé, puis le chien qui le remonte ; monsieur descend à son tour et remonte le chien. On rejoue le duo bébé-chien pour ramener un seau vide en haut. Alors monsieur, le chien et le bébé font monter madame. Il reste à désembouteiller le haut : on redescend le bébé, on le fait échanger avec le chien, on croise monsieur et le chien, puis le bébé redescend en dernier. Quand le chien quitte le seau du bas, tout le monde est à terre.",
+    "Le piège est de charger madame contre monsieur seul, écart de 120 livres, ce qui casserait le système. À retenir : on n’utilise que les quatre paires à 30 livres, et le plus léger sert de jeton pour repositionner les seaux."
+  ],
+  "258": [
+    "Le chien savant compte en base 4, avec O = 0, U = 1, A = 2, H = 3, et l’on demande la valeur de OUAH OUAH. Cela signifie 6 939.",
+    "Les deux aboiements collés forment le mot de huit lettres OUAHOUAH, donc huit chiffres en base 4 : 0, 1, 2, 3, 0, 1, 2, 3. La valeur d’un chiffre est son rang multiplié par la puissance de 4 correspondante, en partant de 4⁰ à droite.",
+    "On calcule 0 × 4⁷ + 1 × 4⁶ + 2 × 4⁵ + 3 × 4⁴ + 0 × 4³ + 1 × 4² + 2 × 4 + 3. Or 4⁶ = 4 096, 4⁵ = 1 024, 4⁴ = 256, 4² = 16. D’où 4 096 + 2 048 + 768 + 16 + 8 + 3 = 6 939.",
+    "Le piège est de lire OUAH deux fois en base 10, ou d’oublier que le second OUAH colle au premier, ce qui fait huit positions et non quatre. À retenir : un mot chiffré dans une base b se convertit chiffre par chiffre, puissances décroissantes de b."
+  ],
+  "259": [
+    "À Bratislava, les deux tiers des appartements n’ont pas de chat, les quatre cinquièmes n’ont pas de chien, et un septième a les deux. La probabilité de n’avoir ni chat ni chien vaut 64/105, soit environ 0,61.",
+    "Les quatre cas possibles pour un appartement sont : ni l’un ni l’autre, chats seulement, chiens seulement, les deux. On note x la part sans aucun animal. Alors la part sans chat vaut x plus la part « chiens seuls », égale à 2/3. La part sans chien vaut x plus la part « chats seuls », égale à 4/5. La part « les deux » vaut 1/7.",
+    "La somme des quatre parts égale 1 : x + (4/5 − x) + (2/3 − x) + 1/7 = 1. Il reste x = 4/5 + 2/3 + 1/7 − 1. Au dénominateur 105, cela donne (84 + 70 + 15 − 105)/105 = 64/105 ≈ 0,61. Un appartement tiré au hasard, fût-il au cinquième étage gauche, a donc un peu plus de six chances sur dix d’être vide d’animaux.",
+    "Le piège est d’additionner 2/3, 4/5 et 1/7, ce qui dépasse 1, ou de croire que « ni chat ni chien » est le produit (2/3)×(4/5). À retenir : les « sans chat » et « sans chien » se chevauchent, et le diagramme à quatre cases isole le vide."
+  ],
+  "260": [
+    "Quatre chiens de masses entières distinctes pèsent 60 kg à eux tous, et le deuxième plus lourd pèse 28 kg. Le troisième plus lourd pèse 2 kg, ce qui est la réponse A.",
+    "Les trois masses inconnues totalisent 32 kg. Le plus lourd dépasse strictement 28 kg, donc il pèse au moins 29 kg, et les deux plus légers, entiers distincts, positifs, différents de 28 et du plus lourd, pèsent moins de 28 kg.",
+    "Si le plus lourd pèse 29 kg, il reste 3 kg à partager en deux entiers distincts non nuls : seulement 1 + 2. Si l’on tente 30 kg, il reste 2 kg, soit 1 + 1, masses égales interdites. Au-delà, le reste devient trop petit. Les quatre masses sont 1 kg, 2 kg, 28 kg et 29 kg, et le troisième plus lourd est 2 kg.",
+    "Le piège est d’autoriser un chien de 0 kg, ou de placer 28 kg comme plus lourd. À retenir : « deuxième plus lourd » force un unique animal au-dessus, et le reliquat doit se casser en deux entiers distincts strictement plus petits."
+  ],
+  "261": [
+    "Le corrigé officiel est une figure : elle noircit 10 des 25 cases de la grille de sorte que, sur les 15 cases blanches restantes, chacun des trois types de chien n’apparaisse qu’une fois par ligne et par colonne.",
+    "La contrainte ressemble à un latin, ou à un sudoku miniature : après masquage, chaque symbole survit au plus une fois — et exactement une fois — dans chaque ligne et chaque colonne encore visible. Les 10 cases colorées sont celles qu’il faut « oublier » pour lever les doublons de la grille initiale.",
+    "On repère d’abord les lignes qui contiennent deux fois le même chien : l’une des deux cases doit être coloriée. On croise avec les colonnes fautives. Le dessin du corrigé donne un masque qui marche. On n’invente pas une autre grille 5 × 5.",
+    "Le piège est de colorier moins de 10 cases, ce qui laisse un doublon, ou de noircir un chien qui n’était pas en trop. À retenir : on cache le surplus, on ne déplace pas les symboles, et la figure officielle fixe le masque."
+  ],
+  "262": [
+    "Cinq chiens alignés regardent à gauche ou à droite, et chacun aboie une fois par chien visible dans sa direction. Ils aboient 10 fois en tout, ce qui est la réponse B.",
+    "Un chien qui regarde vers la droite compte les compagnons à sa droite ; un chien qui regarde vers la gauche compte ceux de sa gauche. Le dernier de la file, s’il regarde vers l’extérieur, n’aboie pas.",
+    "Sur la figure de l’énoncé, de gauche à droite, les cinq chiens voient respectivement 4, 1, 2, 3 et 0 compagnons. La somme 4 + 1 + 2 + 3 + 0 = 10. Les autres totaux 9, 12, 13, 14 correspondraient à d’autres orientations.",
+    "Le piège est de faire aboyer chaque chien pour tous les autres, ce qui donnerait 5 × 4 = 20, ou d’oublier que le regard est orienté. À retenir : on lit le sens de chaque tête sur le dessin, on compte les chiens dans ce demi-alignement, on additionne."
+  ],
+  "263": [
+    "Trois chiens et deux chats seront offerts, un animal par enfant ; Albert puis Benoît disent ne pas pouvoir déduire leur propre espèce, et Cindy, elle, le peut. Cindy recevra un chien.",
+    "Albert connaît les espèces de Benoît et de Cindy. S’ils avaient tous les deux un chat, les deux chats seraient pris et Albert serait sûr d’avoir un chien. Comme il ne sait pas, Benoît et Cindy ne sont pas tous deux des chats : l’un d’eux au moins a un chien.",
+    "Benoît, qui voit l’espèce de Cindy, utilise ce renseignement. Si Cindy avait un chat, Benoît saurait, d’après Albert, qu’il a lui-même un chien. Or Benoît ne sait toujours pas : Cindy n’a donc pas un chat. Elle a un chien, et c’est précisément ce qu’elle peut conclure en écoutant les deux camarades.",
+    "Le piège est de s’arrêter à l’information d’Albert, qui laisse encore trois cas, sans exploiter le « je ne sais toujours pas » de Benoît. À retenir : dans un puzzle de connaissance, ce que quelqu’un ne peut pas déduire est une information aussi précieuse que ce qu’il sait."
+  ],
+  "264": [
+    "Un chien va de C à N en ne se déplaçant qu’à droite et vers le bas, sans case noire. Il existe 11 chemins différents.",
+    "Chaque trajet est une suite de pas Est ou Sud qui relie C à N en évitant les cases interdites. On ne remonte jamais, ce qui empêche les boucles et rend le dénombrement fini.",
+    "On numérote les cases libres et l’on énumère les suites admissibles, ou, plus vite, on inscrit dans chaque case le nombre de façons de l’atteindre. Une case reçoit la somme de sa voisine de gauche et de sa voisine du haut, les noires valant zéro. Le corrigé aboutit à 11 arrivées sur N.",
+    "Le piège est d’autoriser un pas vers le haut ou vers la gauche, ce qui multiplierait les détours, ou de traverser une case noire. À retenir : sur une grille à sens unique, le nombre de chemins se propage par addition depuis le départ."
+  ],
+  "265": [
+    "Quatre chiens, Boby, Foxy, Médor et Rex, sont sur des balançoires dont les inclinaisons comparent leurs poids. Du plus léger au plus lourd, l’ordre est Rex, Boby, Foxy, Médor.",
+    "Chaque balançoire à deux places dit lequel des deux chiens l’emporte, ou que deux paires se compensent. En réorganisant ces comparaisons, on obtient une chaîne transitive : si A est plus léger que B et B plus léger que C, alors A est plus léger que C.",
+    "Le corrigé ordonne ainsi Rex sous Boby, Boby sous Foxy, Foxy sous Médor. On s’en tient à cet ordre, lu sur les dessins officiels, sans inventer d’autres plateaux.",
+    "Le piège est de prendre pour plus lourd le chien assis plus bas sur une balançoire mal lue, ou d’oublier une comparaison croisée. À retenir : des inégalités de poids se chaînent, et le plus léger est celui qui n’a jamais fait pencher de son côté."
+  ],
+  "266": [
+    "Chimp doit utiliser une fois chacun les charmes +1, −1 et ×2, pour maximiser ses bananes. L’ordre gagnant est +1, puis ×2, puis −1, ce qui est la réponse D.",
+    "Ajouter ou retirer 1 change le tas d’une unité, toujours la même ; multiplier par 2 double tout ce qui est déjà là. Pour que le doublement serve le plus, il faut l’appliquer au plus grand nombre possible, donc après l’ajout, et avant la soustraction.",
+    "Si le stock initial est n, l’ordre +1, ×2, −1 donne 2(n + 1) − 1 = 2n + 1. Tous les autres ordres donnent 2n ou 2n − 1. Même si n n’est pas précisé, 2n + 1 est strictement plus grand dès que l’on a au moins une banane, et il reste le meilleur pour n = 0.",
+    "Le piège est de doubler d’abord, ce qui gâche le +1, ou de soustraire avant de doubler, ce qui creuse un trou ensuite agrandi. À retenir : une multiplication s’applique au plus tard après les ajouts, et au plus tôt avant les retraits."
+  ],
+  "267": [
+    "Deux enfants et deux chimpanzés se passent une balle : un enfant commence vers un chimpanzé ; un chimpanzé ne la donne qu’à quelqu’un qui n’a jamais envoyé ; un enfant ne la renvoie pas à l’expéditeur immédiat. Au maximum, la balle part 5 fois.",
+    "Quatre joueurs, des règles d’interdiction, un départ forcé vers un chimpanzé : on cherche la plus longue suite d’envois avant blocage. Chaque chimpanzé « consomme » un nouveau lanceur ; les enfants, eux, peuvent renvoyer à plusieurs reprises, sauf vers le voisin qui vient de leur donner la balle.",
+    "Une partie de longueur 5 existe : enfant, chimpanzé, autre enfant, autre chimpanzé, retour, et la sixième passe n’a plus de destinataire légal. Le corrigé dessine un tel enchaînement. Au-delà de 5, un chimpanzé se retrouverait à viser quelqu’un qui a déjà envoyé, ce que sa règle refuse.",
+    "Le piège est de laisser un chimpanzé renvoyer à un ancien lanceur, ou de faire commencer un chimpanzé. À retenir : on simule les passes une à une en tenant la liste de ceux qui ont déjà envoyé, et l’on s’arrête à la première impasse."
+  ],
+  "268": [
+    "Un chimpanzé a 9 pièces de 2 centimes, son frère 8 pièces de 5 centimes ; ils échangent une pièce contre une pièce. Ils ne peuvent pas égaliser leurs sommes, ce qui est la réponse E.",
+    "Au départ, l’un a 18 centimes, l’autre 40, et l’écart vaut 22. Si les deux pièces échangées sont de même valeur, rien ne change. Si elles sont différentes, l’un gagne 3 centimes et l’autre en perd 3 : l’écart varie de 6, en plus ou en moins.",
+    "Après k échanges mixtes, l’écart vaut 22 plus ou moins un multiple de 6. Or 0 n’est pas congru à 22 modulo 6, puisque 22 = 3 × 6 + 4. L’écart ne sera donc jamais nul, quel que soit le nombre d’échanges.",
+    "Le piège est de compter les pièces au lieu des sommes, ou de croire que 4 échanges, réponse A, suffisent parce que 4 × 3 = 12 se rapproche de 22. À retenir : un échange de pièces de valeurs a et b modifie l’écart d’un multiple de 2|a − b|, et un invariant de congruence décide l’impossibilité."
+  ],
+  "269": [
+    "Dans le réseau, le code fléché mène la chouette à la pomme ; on demande les fruits de la tortue, du renard, puis du kangourou qui n’utilise que → et ↘. La tortue trouve la fraise, le renard la poire, le kangourou la fraise.",
+    "Chaque flèche est un pas sur la grille de l’énoncé : droite, diagonale montante ou diagonale descendante. Le même code, appliqué depuis trois départs différents, aboutit à trois cases différentes. On suit du doigt, case après case, sans sauter.",
+    "Le chemin de la chouette, déjà donné, sert de contrôle : si l’on se trompe de lecture des flèches, on n’arrive pas à la pomme. Le kangourou, lui, n’a le droit qu’à la droite et à la diagonale descendante ; parmi les fruits accessibles sous cette restriction, le corrigé désigne la fraise.",
+    "Le piège est d’appliquer le code en partant toujours du même point, ou d’inverser une diagonale. À retenir : un chemin codé se rejoue depuis la case de chaque animal, sur la figure, sans inventer de nœud."
+  ],
+  "270": [
+    "Pendant 100 jours, la fourmi ramasse 11 grains par jour et la cigale 3 ; l’hiver dure le reste de l’année, à 3 grains par jour, et la fourmi prête ce qu’elle peut. Il manquera à la cigale de quoi tenir environ 63 jours.",
+    "Ensemble, elles ont 14 × 100 = 1 400 grains. L’année a 365 jours, donc 265 jours froids. Chacune a besoin de 3 × 265 = 795 grains pour l’hiver. La fourmi, qui a récolté 1 100 grains, n’en consomme que 795 et peut prêter le surplus.",
+    "Après que la fourmi a prélevé sa ration, il reste 1 400 − 795 = 605 grains pour la cigale, qui en voudrait 795. Le déficit est de 190 grains, soit 190 / 3 ≈ 63,3 jours sans manger. La cigale aura donc faim pendant un peu plus de 63 jours.",
+    "Le piège est de prêter toute la récolte de la fourmi, y compris ce dont elle a besoin, ou de compter 265 jours d’été. À retenir : on met les grains en commun, on sert d’abord celui qui a assez, et le manque de l’autre se convertit en jours de disette."
+  ],
+  "271": [
+    "Une cigogne soulève un panier avec un bébé de 4 kg au plus ; deux cigognes soulèvent le même panier avec un bébé de 10 kg au plus. Le panier vide pèse 2 kg, ce qui est la réponse B.",
+    "Une cigogne porte, au maximum, le panier plus 4 kg. Deux cigognes porteraient donc, séparément, deux paniers plus 8 kg. Or, unies, elles portent un seul panier plus 10 kg. La comparaison des deux lectures isole le poids du panier.",
+    "Deux paniers et 8 kg égalent, en force, un panier et 10 kg, d’où un panier égal à 2 kg. Contrôle : une cigogne lève 2 + 4 = 6 kg ; deux cigognes lèvent 12 kg, c’est-à-dire le panier de 2 kg plus le bébé de 10 kg.",
+    "Le piège est de conclure que le panier pèse 4 kg, le maximum du bébé seul. À retenir : on écrit la charge maximale d’une cigogne, on la double, et l’écart avec la charge à deux révèle le contenant."
+  ],
+  "272": [
+    "L’eau monte de 45 cm/h ; on empile pignon (8,75 m), cheminée (2,30 m), pattes (1,25 m), corps (40 cm) et cou (80 cm). La cigogne aura le bec dans l’eau au bout de 30 heures.",
+    "Toutes les hauteurs doivent s’exprimer dans la même unité. En centimètres, on a 875 + 230 + 125 + 40 + 80 = 1 350 cm. C’est la hauteur du bec au-dessus du sol, si l’on ajoute vraiment tout, comme le demande cette arithmétique facétieuse.",
+    "À 45 cm par heure, le délai est 1 350 ÷ 45 = 30 heures. On n’arrondit pas : la division tombe juste. L’orage met donc une journée et quart à atteindre le bec.",
+    "Le piège est d’oublier le cou, ou de mélanger mètres et centimètres (8,75 + 2,30 + 1,25 + 40 + 80). À retenir : on convertit d’abord, on additionne la colonne entière, on divise par la vitesse de montée."
+  ],
+  "273": [
+    "Deux marcheurs voient des cigognes telles que le triple de leur nombre, plus la moitié du tiers de ce triple, plus 2, fait 100. Il y a 28 cigognes.",
+    "Si c est le nombre cherché, le triple vaut 3c. Le tiers de ce triple est c, et sa moitié est c/2. L’énoncé s’écrit donc 3c + c/2 + 2 = 100.",
+    "On retire 2 : 3c + c/2 = 98. Au dénominateur 2, 6c + c = 196, donc 7c = 196 et c = 28. Contrôle d’Alcuin : trois fois 28 font 84, la moitié du tiers de 84 est 14, 84 + 14 = 98, et 98 + 2 = 100.",
+    "Le piège est de prendre « la moitié du tiers de ce dernier nombre » pour la moitié du tiers de c, et non du triple. À retenir : on nomme l’inconnue, on traduit chaque membre de phrase dans l’ordre, on vérifie sur l’entier obtenu."
+  ],
+  "274": [
+    "La coccidécimale avance de case en case, y compris en diagonale, sur des décimaux strictement croissants, jusqu’au puceron. Le corrigé officiel trace ce chemin unique sur la grille de nombres de l’énoncé.",
+    "« Dans l’ordre croissant » interdit tout recul numérique : chaque pas va vers un voisin (les huit directions) dont la valeur est plus grande. Parmi les voisins plus grands, on choisit ceux qui permettent encore d’atteindre le puceron, souvent le plus petit disponible pour ne pas se coincer.",
+    "On part de la plus petite valeur de la grille et l’on n’avance que vers un voisin plus grand, jusqu’au puceron. Le tracé du corrigé est la référence ; on ne réinvente pas une autre suite hors de ces cases.",
+    "Le piège est de comparer 1,5 et 1,08 comme si 1,08 était plus grand, en lisant les décimales de gauche à droite sans aligner les rangs. À retenir : on compare les décimaux rang par rang, puis on ne saute que d’une case, même en biais."
+  ],
+  "275": [
+    "Trois coccinelles A, B et C occupent les galeries Est, Nord et Sud, avec lilas, marguerites et roses. A est au Sud parmi les roses, B au Nord parmi le lilas, C à l’Est parmi les marguerites.",
+    "La galerie Sud a des roses, et sa locataire voudrait visiter B, qui habite au Nord : la coccinelle des roses n’est donc pas B, c’est A ou C. Or C vit auprès des marguerites. C n’est ni au Sud (roses) ni, par conséquent, la visiteuse du Nord depuis le Sud.",
+    "Il reste A au Sud, roses. B est au Nord ; la fleur qui n’est ni rose ni marguerite est le lilas. C occupe la galerie restante, l’Est, avec ses marguerites. Chaque coccinelle, chaque galerie et chaque bouquet sont alors appariés une seule fois.",
+    "Le piège est d’attribuer les roses à C parce que C « fait des mots croisés près d’un bouquet », sans lire que ce bouquet est celui des marguerites. À retenir : on ancre les phrases les plus précises (Sud = roses, C = marguerites, B = Nord), puis le reste s’impose."
+  ],
+  "276": [
+    "Une coccinelle part de D sur [BC], va au plus court vers [AC], puis [AB], puis [BC], dans un équilatéral de côté 12 cm, et l’on veut D = G. Il faut placer D à 8 cm de C, c’est-à-dire au premier tiers de [BC] en partant de B.",
+    "Le plus court chemin d’un point à une droite est la perpendiculaire. Dans un équilatéral, cette perpendiculaire coupe le côté suivant en un point dont la position se déduit de CD par une homothétie de rapport 1/2, car l’angle est 60° et le cosinus de 60° vaut 1/2.",
+    "Si CD = x, le pied E sur [AC] vérifie CE = x/2, puis les images successives se calculent de même. Imposer que le troisième pied G coïncide avec D fournit une équation du premier degré en x, dont la solution est x = 8. Ainsi BD = 4 cm, et D se trouve au tiers de [BC] depuis B.",
+    "Le piège est de partir du milieu de [BC], ce qui ne referme pas la boucle, ou de prendre des chemins obliques plus longs que la perpendiculaire. À retenir : une suite de plus courts chemins à un côté d’équilatéral est une suite de projections, et un point périodique se calcule par une homothétie de rapport 1/2."
+  ]
+}

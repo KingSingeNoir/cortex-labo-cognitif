@@ -1,0 +1,554 @@
+{
+  "645": [
+    "On vous demande combien d’oiseaux se trouvent au total dans les huit cabanes de Marc. Il y en a 40.",
+    "Les quatre rangées obliques de trois cabanes ont chacune 16 oiseaux. Deux de ces rangées, FDB et GEC, n’ont aucune cabane en commun : leurs six cabanes réunissent donc 32 oiseaux. Il ne reste plus que les cabanes A et H, qui n’appartiennent à aucune de ces deux rangées.",
+    "La rangée FDB vaut 16 et les cabanes B et D en ont déjà 14 à elles deux : F n’en contient donc que 2. Avec A + F = 9, A en contient 7. Avec C + F = 8, C en contient 6. Comme C a 5 oiseaux de plus que H, H n’en contient qu’un seul.",
+    "A et H réunissent 8 oiseaux. En les ajoutant aux 32 déjà comptés, vous obtenez 40 oiseaux dans le jardin. Le piège consiste à additionner les quatre rangées de 16 : vous compteriez alors plusieurs cabanes deux fois."
+  ],
+  "646": [
+    "On vous demande les dimensions du drapeau où figure l’oiseau stylisé, dont l’aile mesure 192 dm². La bonne réponse est D : 24 dm sur 16 dm.",
+    "En déplaçant des quarts de cercle et des segments, l’oiseau se ramène à un rectangle de 4 carreaux sur 3, soit 12 carreaux identiques. Ces 12 carreaux partagent l’aire 192 dm², donc chaque carreau a pour aire 16 dm².",
+    "Le côté d’un carreau vaut alors 4 dm, puisque 4 × 4 = 16. Le drapeau lui-même s’étend sur 6 carreaux en longueur et 4 en largeur.",
+    "Vous multipliez : 6 × 4 = 24 dm et 4 × 4 = 16 dm. Parmi les cinq propositions, seul le rectangle 24 dm × 16 dm convient."
+  ],
+  "647": [
+    "On vous demande l’aire de l’oiseau que Valérie assemble avec des morceaux découpés dans des carrés de 4 cm². Cette aire vaut 6 cm², soit la réponse C.",
+    "Chaque carré de départ a pour aire 4 cm². Après le découpage de la figure 1, vous reconnaissez des pièces dont les aires se calculent sans instrument : un grand triangle de 2 cm², un petit carré de 1 cm², et de petits triangles de 0,5 cm².",
+    "L’oiseau de la figure 2 se compose d’un grand triangle, de deux petits carrés et de quatre petits triangles. L’aire vaut donc 2 + 2 × 1 + 4 × 0,5 = 6 cm².",
+    "Vous pouvez vérifier en comparant l’oiseau au quadrillage de la figure : il recouvre l’équivalent de trois demi-carrés de 4 cm², ce qui redonne 6 cm². Les valeurs 5,5 ou 6,5 viendraient d’un oubli ou d’un double compte d’une petite pièce."
+  ],
+  "648": [
+    "On vous demande combien d’oiseaux se trouvaient au début dans le deuxième arbre. Il y en avait 22, soit la réponse D.",
+    "Les trois arbres abritent 60 oiseaux. Il s’en envole 6 du premier, 8 du deuxième et 4 du troisième, soit 18 départs. Il en reste 42, et ces 42 oiseaux sont alors également répartis : 14 par arbre.",
+    "Le deuxième arbre, qui a perdu 8 oiseaux, en avait donc 14 + 8 = 22 au départ.",
+    "Vous pouvez contrôler les deux autres arbres : le premier avait 14 + 6 = 20 oiseaux, le troisième 14 + 4 = 18, et 20 + 22 + 18 = 60. Le piège serait de retirer 8 de 60 sans passer par le reste commun."
+  ],
+  "649": [
+    "On vous demande quel moineau, en se retournant, voit plus de camarades qu’auparavant. C’est Bertha, soit la réponse B.",
+    "Les cinq moineaux sont alignés sur la branche. Chacun ne voit que ceux qui se trouvent du côté où il regarde. Pour savoir qui gagne des voisins en pivotant, comparez, pour chaque oiseau, le nombre de moineaux à sa gauche et à sa droite.",
+    "Bertha n’en voyait qu’un du côté où elle regardait ; de l’autre côté, elle en voit trois. Elle est la seule dont le nouveau champ soit strictement plus grand que l’ancien.",
+    "Angel et Erwan, placés aux extrémités, passent de quatre voisins à zéro. David en perd en se retournant. Charlie a autant de moineaux d’un côté que de l’autre. Seule Bertha améliore sa vue."
+  ],
+  "650": [
+    "On vous demande quelle heure il était lorsque l’oiseau est entré dans la classe, exactement au milieu du cours. Il était 12 h 10.",
+    "Le cours dure 40 minutes et commence à 11 h 50. Le milieu se situe donc 20 minutes après le début.",
+    "De 11 h 50, avancez de 10 minutes jusqu’à midi, puis encore de 10 minutes : vous arrivez à 12 h 10.",
+    "Le piège fréquent est d’ajouter 20 minutes à 11 h 50 en écrivant 11 h 70, ou de prendre le milieu entre 11 h 50 et 12 h 30 sans calculer la demi-durée. Ici, 20 minutes après 11 h 50 suffisent."
+  ],
+  "651": [
+    "On vous demande, après 365 jours, combien de cages sont occupées et comment les quinze oiseaux y sont répartis. Cinq cages restent occupées, avec respectivement 1, 2, 3, 4 et 5 oiseaux.",
+    "Au départ, cinq cages contiennent 3 oiseaux. Chaque matin, Jérôme prend un oiseau dans chaque cage occupée pour en remplir une cage vide. Une cage qui n’avait plus qu’un oiseau se vide alors, tandis que la nouvelle cage reçoit autant d’oiseaux qu’il y avait de cages occupées la veille.",
+    "Si vous suivez les premiers jours, les effectifs changent, puis vous retrouvez la répartition 1, 2, 3, 4 et 5. Cette répartition est stable : cinq cages occupées donnent une nouvelle cage de 5 oiseaux, et les cinq piles deviennent 0, 1, 2, 3 et 4, ce qui, une fois la cage vide oubliée, est la même collection à un décalage près.",
+    "Comme 15 est le nombre triangulaire 1 + 2 + 3 + 4 + 5, le procédé y revient toujours et y reste. Au bout d’un an, vous observez donc encore ces cinq cages, et aucune autre."
+  ],
+  "652": [
+    "On vous demande combien d’oiseaux sont perchés sur chaque branche. Il y en a 7 en haut et 5 en bas.",
+    "Appelez H le nombre d’oiseaux du haut et B celui du bas. Si un oiseau descend, le haut devient H − 1 et le bas B + 1 ; ces deux nombres sont alors égaux. Donc H − 1 = B + 1, c’est-à-dire H = B + 2.",
+    "Si un oiseau monte, le haut devient H + 1 et le bas B − 1 ; le haut vaut alors le double du bas. Donc H + 1 = 2(B − 1), ce qui donne H = 2B − 3.",
+    "Les deux expressions de H s’égalent : B + 2 = 2B − 3, donc B = 5 et H = 7. Vérification : un oiseau qui descend laisse 6 et 6 ; un oiseau qui monte laisse 8 et 4, et 8 est bien le double de 4."
+  ],
+  "653": [
+    "On vous demande combien d’arbres compte le bois, sachant qu’il y a autant d’oiseaux sur chaque arbre que d’arbres, et entre 2 000 et 2 100 oiseaux en tout. Il y a 45 arbres.",
+    "Si chaque arbre porte autant d’oiseaux qu’il y a d’arbres, le total est un carré parfait. Vous cherchez donc un entier n tel que n² soit compris entre 2 000 et 2 100.",
+    "Le carré de 44 vaut 1 936, trop petit. Le carré de 45 vaut 2 025, qui tombe dans l’intervalle. Le carré de 46 vaut 2 116, trop grand.",
+    "Un seul carré convient, donc le bois a 45 arbres et 2 025 oiseaux. Inutile d’essayer d’autres factorisations : l’égalité « autant d’oiseaux par arbre que d’arbres » impose le carré."
+  ],
+  "654": [
+    "On vous demande quelle contrainte littéraire a guidé la rédaction du texte sur l’okapi. C’est la rigidité de l’okapi : voyelles et consonnes s’alternent sans exception, comme les rayures claires et sombres de l’animal.",
+    "Prenez une phrase du texte, par exemple « En été, samedi matin ». En ignorant les espaces et la ponctuation, vous lisez une voyelle, puis une consonne, puis une voyelle, et ainsi de suite. La même cadence se poursuit jusqu’à la fin du morceau.",
+    "Le nom même de la contrainte, « rigidité de l’okapi », obéit à la règle. C’est un bon test : si le titre la cassait, ce ne serait pas la bonne contrainte.",
+    "D’autres jeux d’écriture imposent une voyelle unique ou interdisent une lettre. Ici, rien n’est interdit sauf de faire se succéder deux voyelles ou deux consonnes. Une seule rupture suffirait à invalider l’hypothèse."
+  ],
+  "655": [
+    "On vous demande combien d’orignaux il y avait la première année, sachant qu’on passe d’une année à la suivante en retranchant 3 puis en divisant par 2, et qu’il n’en reste que 3 la cinquième année. Il y en avait 93.",
+    "Si O est l’effectif d’une année et O′ celui de l’année suivante, on a O′ = (O − 3) / 2. Pour remonter le temps, inversez l’opération : O = 2 O′ + 3.",
+    "En partant de 3 la cinquième année, vous obtenez 2 × 3 + 3 = 9 la quatrième, puis 2 × 9 + 3 = 21 la troisième, puis 2 × 21 + 3 = 45 la deuxième, puis 2 × 45 + 3 = 93 la première.",
+    "Contrôlez en redescendant : 93 − 3 = 90, la moitié fait 45 ; 45 − 3 = 42, la moitié fait 21 ; puis 9 ; puis 3. La chaîne est cohérente. Le piège serait d’appliquer encore la formule « moins 3 puis diviser » au lieu de l’inverser."
+  ],
+  "656": [
+    "On vous demande quel pourcentage des ouistitis sans puces se grattent. C’est la moitié d’entre eux, soit 50 %.",
+    "Les trois phrases lient deux groupes : ceux qui ont des puces et ceux qui se grattent. En notant les proportions, vous traduisez « cinq septièmes » et « deux tiers » par des égalités entre parties communes, puis vous éliminez les inconnues.",
+    "Après simplification, la part des ouistitis qui se grattent parmi ceux qui n’ont pas de puces vaut exactement 1/2. Autrement dit, dans le sous-groupe « sans puces », il y a autant de gratteurs que de non-gratteurs.",
+    "Le résultat n’est pas « cinq septièmes », car cette fraction décrit d’autres sous-groupes. Ici, la question isole ceux qui n’ont pas de puces, et pour eux la réponse est une moitié."
+  ],
+  "657": [
+    "On vous demande de quelle couleur était l’ours qui a ravagé le camp du chasseur. Cet ours était blanc.",
+    "Le récit semble impossible sur une carte plane : un kilomètre vers le sud, un vers l’est, puis un vers le nord ne ramène pas au point de départ, mais un kilomètre plus à l’est. Sur le globe, les méridiens se rejoignent aux pôles, et le raisonnement change.",
+    "Si le camp est au pôle Nord, le chasseur part vers le sud, suit l’ours vers l’est le long d’un parallèle, puis remonte vers le nord le long d’un autre méridien : tous les chemins « vers le nord » aboutissent au même pôle. Il rentre donc bien au camp.",
+    "Au pôle Nord, le seul ours capable de piller le camp est un ours polaire, donc blanc. Des trajectoires plus exotiques existent près du pôle Sud, mais elles n’abritent pas d’ours : la couleur demandée reste le blanc."
+  ],
+  "658": [
+    "On vous demande de replacer les neuf ours — trois familles, chacune avec un père, une mère et un petit — de sorte qu’aucune famille ne se retrouve deux fois dans une même ligne ou colonne, en respectant les nombres d’ours visibles. La disposition qui convient est celle de la figure officielle du corrigé.",
+    "Un ours plus grand cache ceux qui sont plus petits derrière lui, comme dans les grilles « gratte-ciel ». Le nombre 3 signifie que les trois ours de cette ligne (ou colonne) sont tous visibles, donc rangés du plus petit au plus grand depuis le regard. Le nombre 1 signifie que le plus grand, le père, est au premier plan et masque les deux autres.",
+    "Le 3 remplit donc la deuxième ligne. Le 1 place le père en bas de la deuxième colonne et le petit en haut de cette même colonne. Le 2 place ensuite la mère à gauche de la première ligne et le père à droite.",
+    "Une fois ces six cases fixées, les familles se placent comme dans un carré latin : jamais deux membres de la même famille en ligne ou en colonne. Le reste de la grille se déduit sans nouveau choix, et correspond à la figure du corrigé."
+  ],
+  "659": [
+    "On vous demande le mot de cette charade à tiroirs attribuée à Victor Hugo. Le tout se dit : « L’on boit du bon cidre au Faubourg Saint-Denis. »",
+    "Le premier se décrit comme « un grand serpent qui appartient à un moine tibétain qui n’aime pas l’eau ». En jeu de mots, cela donne « long bois du bonze hydrophobe », qui se prononce comme « l’on boit du bon cidre ».",
+    "Le second est « un animal plantigrade entouré d’habitations d’oiseaux », c’est-à-dire « ours ceint de nids », qui se prononce comme « au Faubourg Saint-Denis ».",
+    "En collant les deux prononciations, vous obtenez l’affiche parisienne du début du XXe siècle. La charade ne se résout pas par le sens des mots pris un à un, mais par la voix : il faut les dire à haute voix."
+  ],
+  "660": [
+    "On vous demande combien pèse chacun des trois bébés-ours. Chacun pèse 5,5 kg.",
+    "Papa-Ours pèse 333 kg, autant que Maman-Ours plus les trois bébés. Si M est le poids de la mère et B celui d’un bébé, vous avez M + 3B = 333.",
+    "Les trois bébés pèsent ensemble 300 kg de moins que la mère, donc M = 3B + 300. En remplaçant, 3B + 300 + 3B = 333, soit 6B = 33, donc B = 5,5.",
+    "La mère pèse alors 3 × 5,5 + 300 = 316,5 kg, et 316,5 + 16,5 = 333, ce qui retrouve le poids du père. Le piège serait d’attribuer 300 kg à la mère seule, ou de croire que les trois bébés pèsent 300 kg."
+  ],
+  "661": [
+    "On vous demande combien d’oursins il faut pour chacun des deux objets dont le tarif en oursins n’est pas donné. Il en faut 18 pour le jus de fruit et 30 pour le sandwich.",
+    "Les prix en coquillages sont 24, 36, 40, 60 et 100. Trois prix en oursins sont connus : 27, 45 et 75. L’échange suit une proportion unique : le nombre d’oursins vaut les trois quarts du nombre de coquillages.",
+    "Vérifiez sur les tarifs connus : 36 × 3/4 = 27, 60 × 3/4 = 45, 100 × 3/4 = 75. Les mêmes rapports 27 : 36, 45 : 60 et 75 : 100 se réduisent tous à 3 : 4.",
+    "Il reste le jus à 24 coquillages, soit 18 oursins, et le sandwich à 40 coquillages, soit 30 oursins. Vous pouvez encore contrôler avec une somme : 24 + 36 = 60 d’un côté, 18 + 27 = 45 de l’autre, et 45 est bien le tarif oursins du cerf-volant."
+  ],
+  "662": [
+    "On vous demande d’abord combien d’animaux compte le troupeau avant les naissances, puis combien il en aura au printemps. Le troupeau a 93 bêtes avant l’hiver et 174 au printemps.",
+    "Parmi les 37 ovins, un seul est le bélier, donc il y a 36 brebis. Les brebis forment les deux cinquièmes des femelles, puisque les trois cinquièmes des femelles sont des chèvres. Un cinquième des femelles vaut donc 18, et les femelles sont 90. Avec les trois mâles, le troupeau compte 93 animaux.",
+    "Les 54 chèvres femelles incluent un sixième trop jeunes pour mettre bas, soit 9. Il reste 45 chèvres qui auront un petit, plus les 36 brebis, soit 81 naissances.",
+    "Au printemps, 93 + 81 = 174 animaux, dont 36 agneaux et 45 chevreaux. N’oubliez pas les trois mâles dans le total de départ, et ne retirez le sixième que chez les chèvres, pas chez les brebis."
+  ],
+  "663": [
+    "On vous demande, pour Frédo, Michel et Agnès, combien de lots de cinq palourdes chacun a vendus, et combien de palourdes chacun a vendues à l’unité. Frédo a vendu 1 lot et 5 palourdes à l’unité, Michel 2 lots et 4 à l’unité, Agnès 3 lots et 3 à l’unité.",
+    "Chacun a gagné 6 €, avec deux tarifs : 1 € la palourde isolée, puis 1 € le lot de cinq. Si quelqu’un vend u palourdes à l’unité et ℓ lots, on a u + ℓ = 6 et u + 5ℓ égal à son stock.",
+    "Frédo a 10 palourdes : u + 5ℓ = 10 et u + ℓ = 6 donnent 4ℓ = 4, donc ℓ = 1 et u = 5. Michel a 14 palourdes : 4ℓ = 8, donc ℓ = 2 et u = 4. Agnès a 18 palourdes : 4ℓ = 12, donc ℓ = 3 et u = 3.",
+    "Dans les trois cas, le reste après les lots est bien vendu à la pièce, et la recette vaut 6 €. Le piège serait de compter 5 € pour un lot, comme si chaque palourde du lot restait à 1 €."
+  ],
+  "664": [
+    "On vous demande de retrouver la zone de vie de chacun des quatre pandas, sachant que les quatre zones ont la même forme et que chaque panda possède sa forêt de bambous. Le découpage qui convient est celui de la figure officielle du corrigé.",
+    "Vous cherchez à paver le plan du zoo avec quatre pièces superposables, éventuellement après rotation ou retournement. Chaque pièce doit contenir un panda et un bosquet, sans empiéter sur le voisin.",
+    "La contrainte de forme unique élimine les découpages où l’une des zones serait plus allongée ou plus recourbée que les autres. Une fois une pièce trouvée, les trois autres s’obtiennent par le même motif.",
+    "Inutile d’inventer un tracé : le corrigé officiel montre les quatre zones identiques. C’est cette figure, et non un autre pavage plausible, qui constitue la réponse."
+  ],
+  "665": [
+    "On vous demande combien de panthères le narrateur a tuées personnellement. Il en a tué 3.",
+    "Au départ, lions, tigres et panthères sont en nombre égal ; appelez x ce nombre, et 2 085 − 3x le nombre de zèbres. Les chasses en retirent 65 % des lions, 30 % des tigres, 40 % des panthères et 8 % des zèbres. Le total tué vaut 2 085 − 1 785 = 300.",
+    "L’équation 0,65x + 0,30x + 0,40x + 0,08(2 085 − 3x) = 300 se simplifie en 1,11x + 166,8 − 0,24x = 300, donc 0,87x = 133,2 et x = 120. Il y avait 120 lions, 120 tigres, 120 panthères et 1 725 zèbres.",
+    "Il reste 1 725 × 0,92 = 1 587 zèbres, et 78 lions ont été tués. La racine cubique de 1 587 − 20 × 78 = 27 vaut 3. Le narrateur a donc abattu 3 panthères."
+  ],
+  "666": [
+    "On vous demande le mot courant de quatre lettres qui a, avec chacun des mots RIEZ, BRUN, PAON et ILOT, deux lettres en commun, mais jamais à la bonne place. Ce mot est NOIR.",
+    "PAON et RIEZ n’ont aucune lettre en commun : à eux deux, leurs huit lettres contiennent donc les quatre lettres du mot secret, chacune apparaissant quelque part dans l’un ou l’autre. Les lettres utiles sont parmi A, O, N, P, R, I, E, Z.",
+    "Dans BRUN, B et U sont donc étrangères au mot, tandis que R et N en font partie. Dans ILOT, L et T sont étrangères, tandis que I et O en font partie. Les quatre lettres sont N, O, I et R.",
+    "Aucune n’est à sa place dans les mots qui la contiennent, ce qui écarte plusieurs arrangements. Parmi NORI, NOIR, ONRI et ONIR, seul NOIR est un mot français courant. PAON, qui sert d’intitulé, n’a justement aucune lettre bien placée dans NOIR."
+  ],
+  "667": [
+    "On vous demande combien il y avait de paons en tout. Ils étaient 48.",
+    "Si P est le total, le premier groupe, « le seizième multiplié par lui-même », vaut (P/16)². Le reste de la collection, au sens des quinze seizièmes, fournit le deuxième groupe : le neuvième de ce reste, encore multiplié par lui-même, plus 14 paons dans le bosquet.",
+    "L’égalité (P/16)² + (15P/144)² + 14 = P se ramène à une équation du second degré. Une racine n’est pas entière ; l’autre vaut 48.",
+    "Avec 48 paons, le seizième vaut 3 et son carré 9 (sur le manguier). Les quinze seizièmes valent 45, le neuvième en vaut 5, et 5² = 25 (dans les tamalas). Il reste 14, et 9 + 25 + 14 = 48. Le compte est exact, sans fraction de paon."
+  ],
+  "668": [
+    "On vous demande combien de papillons Émilien doit sortir pour être sûr d’en avoir au moins deux de la même des sept sortes listées. Il doit en sortir 8.",
+    "La serre contient sept groupes distincts, d’effectifs différents. Pour une certitude, vous vous placez dans le pire des cas : vous pouvez tirer un papillon de chaque groupe sans encore avoir de paire.",
+    "Après sept tirages, vous pouvez encore n’avoir qu’un représentant de chaque sorte. Le huitième papillon, quel qu’il soit, rejoint forcément un groupe déjà représenté.",
+    "C’est le principe des tiroirs : avec 7 tiroirs, 8 objets forcent un tiroir à en contenir deux. Les effectifs 24, 15, 12… garantissent seulement que le pire cas est possible ; ils ne changent pas le seuil de la certitude."
+  ],
+  "669": [
+    "On vous demande combien de papillons Marguerite possède maintenant. Elle en a 66.",
+    "Au départ, il lui manquait 2 spécimens pour remplir une grille carrée : si le côté mesurait C cases, elle avait C² − 2 papillons. La semaine suivante, elle en recueille 19 et les place dans la grille suivante, plus grande d’un rang, avec encore 2 spécimens de reste. Elle en a donc maintenant (C + 1)² + 2.",
+    "L’augmentation de 19 correspond au passage d’une grille à l’autre : (C + 1)² + 2 − (C² − 2) = 19. Cela donne 2C + 1 + 4 = 19, donc 2C = 14 et C = 7.",
+    "Elle possède à présent 8² + 2 = 66 papillons. Au départ, elle en avait 49 − 2 = 47, et 47 + 19 = 66. Le piège serait d’ajouter 19 à un carré sans tenir compte des deux manques, puis des deux restes."
+  ],
+  "670": [
+    "On vous demande sur quel nombre le papillon s’est posé pour cacher une valeur qui rend le calcul juste. Il s’est posé sur 1 000, soit la réponse C.",
+    "L’égalité visible se lit : 2 005 − 5 = 1 000 + le nombre caché, ou une disposition équivalente autour des deux termes 1 000 et 2 005.",
+    "Or 2 005 − 5 = 2 000, et 1 000 + 1 000 = 2 000. Le nombre caché qui rétablit l’égalité est donc 1 000.",
+    "Les autres propositions, 405, 2 000 ou 2 005, cassent l’équilibre : trop petites ou déjà utilisées comme résultat. Seul le second 1 000 ferme le calcul."
+  ],
+  "671": [
+    "On vous demande le nombre minimal de papillons dans les onze boîtes de Joël. La collection en compte au minimum 33.",
+    "Chaque boîte a au moins un papillon, ce qui donne déjà 11. Huit boîtes en ont au moins deux : il faut donc ajouter un papillon à huit d’entre elles, soit 8 de plus, pour un sous-total de 19.",
+    "Six boîtes en ont au moins quatre : parmi celles qui sont déjà à 2, il faut en porter six jusqu’à 4, soit 2 de plus sur chacune, donc 12, pour un sous-total de 31. Enfin, deux boîtes en contiennent exactement cinq : il suffit d’ajouter 1 à deux des boîtes déjà à 4.",
+    "Vous arrivez à 33, par exemple avec les effectifs 1, 1, 1, 2, 2, 4, 4, 4, 4, 5, 5. Toute autre répartition qui respecte les seuils coûte au moins autant. Le minimum n’est pas 11 × 5, car seules deux boîtes sont forcées à cinq."
+  ],
+  "672": [
+    "On vous demande si Laura et Paula ont utilisé la même quantité de carton, ou si l’une en a utilisé davantage. Elles en ont utilisé exactement la même quantité.",
+    "Le corps de chaque papillon est un axe de symétrie : il suffit de calculer l’aire des ailes d’un seul côté, puis de doubler. Les ailes sont des triangles dont les bases et les hauteurs suivent le quadrillage.",
+    "Chez Laura, la grande aile de droite a pour aire (9 × 6) / 2 = 27 carreaux. Chez Paula, la grande aile de droite vaut (9 × 4) / 2 = 18 et la petite (6 × 3) / 2 = 9, soit encore 27 carreaux d’un côté.",
+    "Les deux papillons occupent donc 54 carreaux de carton au total. L’œil peut croire le papillon de Laura plus massif, mais les deux petites ailes de Paula compensent exactement la différence."
+  ],
+  "673": [
+    "On vous demande quels entiers peuvent être cachés par les deux papillons dans le produit qui vaut 80. Les paires possibles sont (1 ; 16), (2 ; 8) et (4 ; 4), dans un ordre ou dans l’autre.",
+    "La page montre deux signes × et un signe =, avec les nombres visibles 5 et 80. Le produit des deux nombres cachés, multiplié par 5, donne 80.",
+    "Donc le produit des deux inconnus vaut 80 ÷ 5 = 16. Les couples d’entiers positifs dont le produit est 16 sont 1 et 16, 2 et 8, 4 et 4, ainsi que les paires symétriques 16 et 1, 8 et 2.",
+    "Aucune autre paire d’entiers ne convient : 3 ne divise pas 16, et 5 est déjà visible. Les papillons peuvent cacher deux facteurs égaux aussi bien que deux facteurs différents."
+  ],
+  "674": [
+    "On vous demande combien de pattes il y a en tout dans le parc de 1 992 animaux. Il y en a 3 984.",
+    "Notez Q le nombre de quadrupèdes. Les apodes sont aussi nombreux que les quadrupèdes, et les bipèdes sont dix fois plus nombreux que les quadrupèdes. Donc Q + 10Q + Q = 1 992, soit 12Q = 1 992 et Q = 166.",
+    "Il y a 166 apodes, 1 660 bipèdes et 166 quadrupèdes. Les pattes se comptent alors : 0 × 166 + 2 × 1 660 + 4 × 166 = 3 320 + 664 = 3 984.",
+    "Remarquez que 3 984 = 2 × 1 992 : en moyenne, chaque animal a deux pattes, ce qui est cohérent avec une grande majorité de bipèdes. Ne comptez pas une patte aux serpents, et n’oubliez pas les quatre pattes des quadrupèdes."
+  ],
+  "675": [
+    "On vous demande de traverser la zone du parc en rencontrant alternativement un éléphant et un kangourou. Le trajet qui convient est celui tracé sur la figure officielle du corrigé.",
+    "Vous partez dans le sens de la flèche et vous ne pouvez pas sauter une case occupée. À chaque animal rencontré doit succéder un animal de l’autre espèce, sans deux éléphants ni deux kangourous de suite.",
+    "Les impasses apparaissent dès que le prochain animal disponible est de la même espèce que le précédent, ou dès que le chemin se referme trop tôt. Il faut donc anticiper les carrefours pour garder une alternance jusqu’à la sortie.",
+    "N’inventez pas un autre parcours : la réponse attendue est le chemin indiqué par le corrigé officiel, avec son amorce en étoile et sa flèche de sortie."
+  ],
+  "676": [
+    "On vous demande combien d’autruches et d’éléphants vivent dans le parc, sachant qu’on y compte 35 têtes et 116 pattes. Il y a 12 autruches et 23 éléphants.",
+    "Chaque animal a une tête. Une autruche a deux pattes, un éléphant en a quatre. Si vous imaginez d’abord 35 autruches, vous n’auriez que 70 pattes ; or il y en a 116, soit 46 de trop.",
+    "Chaque fois que vous remplacez une autruche par un éléphant, vous ajoutez deux pattes. Il faut donc 46 ÷ 2 = 23 éléphants, et 35 − 23 = 12 autruches.",
+    "Contrôle : 12 × 2 + 23 × 4 = 24 + 92 = 116 pattes, et 12 + 23 = 35 têtes. Autre lecture : 116 pattes font 58 paires, et 58 − 35 = 23 donne directement le nombre d’éléphants, qui ont une paire de plus que les autruches."
+  ],
+  "677": [
+    "On vous demande quels perroquets ont le plus d’appétit. Ce sont les perroquets bleus, soit la réponse A.",
+    "Trois bleus mangent 3 kg en 3 jours : un bleu mange donc 1 kg en 3 jours, soit 1/3 kg par jour. Cinq verts mangent 5 kg en 5 jours : un vert mange 1/5 kg par jour. Sept orange mangent 7 kg en 7 jours : un orange mange 1/7 kg par jour.",
+    "Or 1/3 est plus grand que 1/5, lui-même plus grand que 1/7. Chaque bleu consomme davantage, chaque jour, qu’un vert ou qu’un orange.",
+    "Le piège est de croire que « 3 kg en 3 jours » et « 7 kg en 7 jours » se valent pour un individu. Ces totaux portent sur des groupes de tailles différentes et des durées différentes ; il faut ramener le tout à un oiseau et à une journée."
+  ],
+  "678": [
+    "On vous demande de ranger les cinq perroquets du plus léger au plus lourd. L’ordre est : perruche ondulée, conure veuve, perroquet à calotte rouge, nestor kéa, ara bleu.",
+    "Le kéa est plus lourd que le perroquet à calotte rouge, lui-même plus lourd que la conure. La perruche est plus légère que le kéa et que la conure, donc elle se place tout en bas de cette chaîne. Vous avez déjà : kéa > calotte rouge > conure > perruche.",
+    "L’ara est plus lourd que la perruche, mais cela ne le situe pas encore. La dernière phrase dit que le kéa n’est pas le plus lourd : le seul candidat restant au-dessus de lui est l’ara.",
+    "L’ara prend donc la première place. Les masses réelles (environ 25 g, 100 g, 250 g, 920 g et 1,2 kg) confirment cet ordre, mais vous n’en avez pas besoin : les comparaisons de l’énoncé suffisent."
+  ],
+  "679": [
+    "On vous demande combien de perroquets vivent dans la volière, et combien de chaque couleur. Il y en a 18 : 3 rouges, 6 gris, 4 verts et 5 bleus.",
+    "« Tous rouges, sauf 15 » signifie qu’il y a 15 non-rouges. De même, il y a 12 non-gris, 14 non-verts et 13 non-bleus. Si n est l’effectif total, les quatre couleurs valent n − 15, n − 12, n − 14 et n − 13.",
+    "La somme des quatre effectifs redonne n, donc 4n − (15 + 12 + 14 + 13) = n, c’est-à-dire 3n = 54 et n = 18. Les couleurs sont alors 3, 6, 4 et 5.",
+    "Si vous essayez n = 17, la somme des couleurs fait 14, trop peu ; si n = 19, elle fait 22, trop. Seul 18 referme le compte. Chaque « sauf k » décrit les trois autres couleurs réunies, pas une seule."
+  ],
+  "680": [
+    "On vous demande quel jour les deux oiseaux se sont rencontrés. Ils se sont rencontrés un mardi.",
+    "Le gris du Gabon ment le mardi, le mercredi et le jeudi ; il dit vrai les autres jours. L’amazone ment le samedi, le dimanche et le lundi ; elle dit vrai le reste de la semaine. Ce jour-là, chacun affirme : « Hier, je mentais. »",
+    "Pour chaque jour, demandez-vous si l’oiseau dit vrai ou ment, puis si la veille était effectivement un jour de mensonge. L’affirmation n’est possible que si, lorsqu’il dit vrai, la veille était un jour de mensonge, et que s’il ment, la veille n’était pas un jour de mensonge.",
+    "Le mardi, le gris ment (donc « hier je mentais » est faux : le lundi, il disait vrai, ce qui est exact). L’amazone, le mardi, dit vrai, et le lundi elle mentait effectivement. Aucun autre jour ne rend les deux phrases simultanément cohérentes."
+  ],
+  "681": [
+    "On vous demande comment, en une seule pesée, identifier le paquet de boules de 90 g parmi dix paquets censés peser 100 g pièce. Vous posez 1 boule du premier paquet, 2 du deuxième, 3 du troisième, et ainsi de suite jusqu’à 10 du dixième, puis vous lisez le déficit par rapport à 5 500 g.",
+    "Si toutes les boules pesaient 100 g, la balance afficherait 100 × (1 + 2 + … + 10) = 100 × 55 = 5 500 g. Chaque boule du mauvais paquet pèse 10 g de moins.",
+    "Si le paquet k est le mauvais, vous avez posé k boules trop légères, donc la balance affiche 5 500 − 10k grammes. Le nombre de dizaines manquantes est exactement le numéro du paquet.",
+    "Par exemple, 5 470 g signifie 3 dizaines de grammes en moins, donc le troisième paquet. Une pesée suffit parce que chaque paquet laisse une empreinte différente sur le total."
+  ],
+  "682": [
+    "On vous demande comment les perroquets blancs et gris échangent leurs places en sautant de trois branches vers une branche libre. Une suite possible est : 8 vers 5, 2 vers 7, 6 vers 3, 4 vers 1, 5 vers 2, 7 vers 4, 3 vers 8, 1 vers 6, puis à nouveau 2 vers 7, 4 vers 1, 8 vers 5, 6 vers 3, 7 vers 4, 1 vers 6, 5 vers 2 et 3 vers 8.",
+    "Un oiseau perché en k ne peut aller que trois branches plus loin, dans un sens ou dans l’autre, et seulement si la cible est vide. Ainsi le perroquet de la branche 6 n’a le choix qu’entre les branches 3 et 1.",
+    "Les huit premiers sauts font tourner les places sans coincer les oiseaux ; les huit suivants achèvent l’échange. Chaque saut libère une nouvelle case à trois branches de distance pour le suivant.",
+    "C’est une variante du solitaire à sauts déjà rencontré à l’énigme 169 : on ne cherche pas le plus court chemin à tout prix, mais une suite licite qui inverse les couleurs. Le corrigé officiel retrace ces seize déplacements sur la figure."
+  ],
+  "683": [
+    "On vous demande une disposition des huit perroquets — deux blancs, deux gris clair, deux gris foncé, deux noirs — dans la volière à neuf cases, sans que deux oiseaux de même couleur se touchent, même en diagonale. Une disposition possible est celle de la figure officielle du corrigé.",
+    "La case centrale touche les huit autres : elle ne peut donc pas accueillir un oiseau dont le jumeau serait déjà dans la volière, à moins de laisser le centre vide. Le plus simple est souvent de laisser le centre inoccupé et de placer les quatre couples sur le pourtour.",
+    "Deux oiseaux de même couleur doivent alors occuper des cases qui ne se touchent ni par un côté ni par un coin. Sur le pourtour d’un carré 3 × 3, cela revient à les placer suffisamment loin, par exemple en des positions de cavalier ou opposées avec le bon écart.",
+    "Plusieurs arrangements existent ; celui du corrigé officiel suffit. Si deux cases de même couleur se touchent ne serait-ce que par un angle, la contrainte esthétique de Simon n’est pas respectée."
+  ],
+  "684": [
+    "On vous demande trois choses sur les mots en A et R du perroquet. Oui, RRAAA s’obtient depuis RAARA ; non, RARAR ne s’obtient pas depuis RAARA ; non plus, ARARA ne s’obtient pas depuis RAARA.",
+    "La règle échange un A contre le bloc RAR, ou l’inverse. Pour la première question, remplacez le A du milieu de RAARA par RAR : vous obtenez RRARARA. Dans ce mot, le bloc RAR central se contracte en A, et il reste RRAAA.",
+    "Chaque échange conserve le nombre de A : remplacer A par RAR n’ajoute aucun A, remplacer RAR par A n’en retire aucun. RAARA a trois A, RARAR n’en a que deux : le second mot est donc inaccessible.",
+    "ARARA a bien trois A, mais un autre invariant bloque le passage. Remplacer un A décale les rangs des R suivants de deux places et insère des R dont la somme des positions augmente d’un nombre pair. La somme des rangs des R vaut 5 dans RAARA et 6 dans ARARA : ces deux parités ne se rejoignent jamais."
+  ],
+  "685": [
+    "On vous demande le prix du perroquet échappé. Il coûtait 9 000 €, soit la réponse E.",
+    "Cinq perroquets à 5 000 € en moyenne valent ensemble 25 000 €. Les quatre restants, à 4 000 € en moyenne, valent 16 000 €.",
+    "La différence, 25 000 − 16 000 = 9 000 €, est exactement le prix de l’oiseau envolé.",
+    "Le piège est de soustraire les moyennes, 5 000 − 4 000 = 1 000, ou d’ajouter 4 000 à 5 000. Une moyenne porte sur un effectif : il faut d’abord revenir aux totaux, puis seulement faire la différence."
+  ],
+  "686": [
+    "On vous demande combien il y a de perruches de chaque espèce. Il y a 2 perruches de Pennant, 2 perruches royales et 9 perruches à croupion rouge.",
+    "Deux effectifs sont égaux, le troisième est le plus grand, leur produit vaut 36, et la somme des trois est impaire. Les triplets d’entiers positifs à deux composantes égales dont le produit est 36 sont essentiellement 1 × 1 × 36, 2 × 2 × 9, 3 × 3 × 4 et 6 × 6 × 1.",
+    "Le dernier a un plus petit nombre, pas un plus grand : on l’écarte. Les sommes 1 + 1 + 36 = 38 et 3 + 3 + 4 = 10 sont paires : on les écarte aussi, car le total doit être impair.",
+    "Reste 2 + 2 + 9 = 13, impair, avec 9 bien supérieur à 2. C’est la seule combinaison compatible avec les quatre contraintes à la fois."
+  ],
+  "687": [
+    "On vous demande de quelle couleur est la pieuvre qui dit la vérité. C’est la pieuvre verte.",
+    "Une seule dit vrai, donc trois mentent. Celles qui mentent ont 7 tentacules chacune, soit 21 tentacules à elles trois. La sincère a 6 ou 8 tentacules, et le total vaut alors 27 ou 29.",
+    "La bleue avance 28, la verte 27, la jaune 26, la rouge 25. Seul 27 apparaît dans cette liste. Le total 29, qui correspondrait à une sincère à 8 tentacules, n’est proposé par personne.",
+    "Donc la sincère a 6 tentacules et le total est 27 : c’est ce que dit la verte. Les trois autres, à 7 tentacules, mentent bien, et leurs totaux 28, 26 et 25 sont tous faux."
+  ],
+  "688": [
+    "On vous demande d’abord une répartition de cinq fragments A, B, C, D, E entre huit pigeons, puis le nombre minimal de fragments si l’on ne dispose plus que de cinq pigeons. Une répartition possible pour huit pigeons consiste à donner deux fragments à chacun, de sorte que chaque fragment existe en trois ou quatre copies ; avec cinq pigeons, il faut au minimum 10 fragments.",
+    "L’ennemi n’intercepte jamais plus de deux pigeons, et deux pigeons réunis ne doivent pas posséder tout le message. En revanche, les pigeons qui arrivent doivent toujours permettre de tout reconstituer. Comme l’absence d’un seul fragment rend le texte illisible, il faut toutes les pièces pour lire.",
+    "Avec huit pigeons, 16 copies (huit fois deux fragments) suffisent : quatre fragments en trois exemplaires et un fragment en quatre. Deux pigeons tiennent au plus quatre pièces distinctes, jamais les cinq. Après deux interceptions, il reste assez de copies de chaque pièce.",
+    "Avec cinq pigeons, deux interceptions n’en laissent que trois. Chaque trio doit posséder toutes les pièces, et chaque paire doit en manquer au moins une. Le plus économe est de créer une pièce par trio de pigeons, soit 10 pièces, et de la confier exactement à ces trois-là. Toute paire ignore alors la pièce du trio complémentaire."
+  ],
+  "689": [
+    "On vous demande quelle distance sépare Juliette et Roméo. Elle est de 40 km, soit la réponse C.",
+    "Le pigeon part à 7 h 30 et arrive à 9 h 10. Entre les deux, il s’écoule 1 h 40, c’est-à-dire 100 minutes.",
+    "Il parcourt 4 km en 10 minutes, donc 40 km en 100 minutes, puisqu’il y a dix intervalles de 10 minutes dans 100 minutes.",
+    "La vitesse est constante : 4 km / 10 min = 0,4 km/min, et 0,4 × 100 = 40 km. Une réponse 100 km confondrait les minutes et les kilomètres ; 14 km ou 20 km sous-estimeraient la durée du vol."
+  ],
+  "690": [
+    "On vous demande combien de pigeons peuvent loger au maximum dans le pigeonnier, sans que deux occupent des cases voisines, même en diagonale. Le maximum est de 7 pigeons.",
+    "Deux cases se touchant par un côté ou par un coin sont interdites toutes les deux. Chaque pigeon « réserve » donc tout son voisinage, comme une tour et un fou à courte portée.",
+    "Sur le plan irrégulier de l’énoncé, on peut placer sept pigeons en les espaçant d’au moins une case dans toutes les directions. Une huitième place forcerait un contact avec l’un des sept.",
+    "Une disposition qui atteint ce maximum figure sur le corrigé officiel. D’autres placements de sept existent parfois par symétrie ; aucun n’en accueille huit."
+  ],
+  "691": [
+    "On vous demande le prix d’un ananas, d’une noix de coco et d’une pintade. L’ananas vaut 40 centimes, la noix de coco 1 € et la pintade 6 €.",
+    "Cinq ananas s’échangent contre deux noix de coco, donc une coco vaut deux ananas et demi. Un poulet s’échange contre dix ananas et une coco, soit 12,5 ananas. Or le poulet coûte 5 €, donc un ananas coûte 5 ÷ 12,5 = 0,40 €.",
+    "La noix de coco vaut alors 2,5 × 0,40 = 1 €. Une pintade s’échange contre une coco et un poulet, soit 1 + 5 = 6 €.",
+    "Vous pouvez refermer la chaîne : cinq ananas font 2 €, ce qui égale bien deux cocos. Sans le prix du poulet, les échanges donneraient seulement des rapports, pas des euros."
+  ],
+  "692": [
+    "On vous demande combien il y aura de pious-pious au bout de vingt minutes. Ils seront 52.",
+    "Dès que c’est possible, ils se groupent par trois ; chaque groupe attire 2 nouveaux pious-pious toutes les cinq minutes. Les 2 qui restent hors groupe n’attirent personne.",
+    "On part de 8 = 2 × 3 + 2. Après 5 minutes : 2 × 5 + 2 = 12. Puis 12 = 4 × 3, donc après 10 minutes : 4 × 5 = 20. Puis 20 = 6 × 3 + 2, donc après 15 minutes : 6 × 5 + 2 = 32. Puis 32 = 10 × 3 + 2, donc après 20 minutes : 10 × 5 + 2 = 52.",
+    "À chaque étape, le reste modulo 3 (0, 1 ou 2) se conserve ou se recalcule après l’arrivée des nouveaux. Compter quatre fois « plus 2 par groupe » sans mettre à jour le nombre de groupes donnerait un total faux."
+  ],
+  "693": [
+    "On vous demande de faire changer le poisson de sens en déplaçant trois des huit allumettes. La figure obtenue est celle du corrigé officiel.",
+    "Le poisson de Kobon Fujimura n’est fait que de segments : tête, corps et queue. Inverser le sens, c’est envoyer la tête à la place de la queue, sans ajouter ni retirer d’allumette.",
+    "Trois déplacements suffisent : on décroche deux allumettes de l’ancienne tête et une de la queue, puis on les repose de l’autre côté pour reconstruire une tête symétrique. Les cinq allumettes immobiles gardent le corps.",
+    "N’inventez pas un autre poisson : le corrigé officiel montre précisément quelles trois allumettes bougent et où il faut les reposer. Tout autre trio qui casserait le corps ou créerait un second poisson est hors sujet."
+  ],
+  "694": [
+    "On vous demande combien pèsent séparément le corps, la queue et la tête du poisson de 51 livres. Le corps pèse 36 livres, la tête 12 livres et la queue 3 livres.",
+    "La tête vaut un tiers du corps, donc le corps vaut trois têtes. La queue vaut un quart de la tête, donc la tête vaut quatre queues. Le corps vaut alors douze queues.",
+    "Le poisson entier pèse comme une queue, plus quatre queues (la tête), plus douze queues (le corps), soit 17 queues. Or le total est 51 livres, donc une queue pèse 51 ÷ 17 = 3 livres.",
+    "La tête pèse 12 livres et le corps 36 livres. Contrôle : 12 est bien le tiers de 36, 3 est bien le quart de 12, et 12 + 36 + 3 = 51."
+  ],
+  "695": [
+    "On vous demande à quelle distance du pied du plus grand arbre se trouvait le poisson. Il était à 20 aunes de ce pied.",
+    "Les deux oiseaux partent en même temps, à la même vitesse, et arrivent ensemble : ils parcourent donc la même distance, de chaque cime jusqu’au poisson. Si x est la distance horizontale depuis le pied du grand arbre (haut de 30 aunes) et si les pieds sont distants de 50 aunes, le petit arbre (20 aunes) est à 50 − x du poisson.",
+    "Le théorème de Pythagore donne alors 30² + x² = 20² + (50 − x)². En développant, 900 + x² = 400 + 2 500 − 100x + x², donc 100x = 2 000 et x = 20.",
+    "Les deux hypoténuses valent toutes deux √(900 + 400) = √1 300. Le poisson n’est pas au milieu du fleuve : il est plus près du grand arbre, ce qui compense la cime plus haute. (La distance des pieds, parfois écrite 5 par erreur de copie, est 50 aunes dans le problème classique.)"
+  ],
+  "696": [
+    "On vous demande combien de poissons Jean a pêchés le troisième jour, sachant que le total est 12. Il en a pêché 5.",
+    "Chaque jour, il en prend au moins un de plus que la veille, donc les trois nombres sont des entiers strictement croissants. Le troisième jour, il en prend au moins un de moins que les deux premiers réunis : si N est ce troisième nombre et S la somme des deux premiers, on a N < S et N + S = 12, donc N ≤ 5.",
+    "Les deux premiers jours, il prend à chaque fois strictement moins que N (puisque la suite croît). Donc S < 2N, et 12 = S + N < 3N, donc N > 4. L’entier N vaut alors exactement 5.",
+    "La seule triple compatible est 3, 4 et 5 : chaque jour augmente d’au moins un, 5 < 3 + 4, et 3 + 4 + 5 = 12. Une troisième journée à 4 forcerait des premiers jours trop petits pour rester strictement croissants et totaux 8."
+  ],
+  "697": [
+    "On vous demande combien pèse chacun des trois poissons qui totalisent 15 livres. Ils pèsent 3, 5 et 7 livres.",
+    "Le plus léger pèse le quart de la somme des deux autres : si x est ce plus léger, 4x égale le reste, donc 5x = 15 et x = 3. Les deux autres pèsent alors 12 livres à eux deux.",
+    "Le plus lourd pèse une livre de moins que la somme des deux autres. S’il pèse z et le médian y, on a z = x + y − 1 et x + y + z = 15. En remplaçant, 2z = 14, donc z = 7 et y = 5.",
+    "Vérifications : 3 est bien le quart de 5 + 7 = 12, et 7 est bien une livre de moins que 3 + 5 = 8. Toute autre répartition de 15 livres casse l’une des deux phrases."
+  ],
+  "698": [
+    "On vous demande la quantité de poissons au départ. Il y en avait 59.",
+    "Le marchand vend, à chaque étape, la fraction 1/n de ce qu’il a plus 1/n de poisson, pour n = 2, puis 3, puis 4, puis 5, et il lui reste 11 poissons. Pour remonter, si R est le reste après l’étape n, le stock juste avant valait (n R + 1) / (n − 1).",
+    "Depuis 11, l’étape n = 5 donne (55 + 1) / 4 = 14. Puis n = 4 donne (56 + 1) / 3 = 19. Puis n = 3 donne (57 + 1) / 2 = 29. Puis n = 2 donne 2 × 29 + 1 = 59.",
+    "Redescendez pour contrôler : la moitié de 59 plus un demi fait 30, il reste 29 ; le tiers de 29 plus un tiers fait 10, il reste 19 ; le quart de 19 plus un quart fait 5, il reste 14 ; le cinquième de 14 plus un cinquième fait 3, il reste 11. Aucun poisson n’a été coupé."
+  ],
+  "699": [
+    "On vous demande de montrer que, parmi sept pêcheurs ayant pris 100 poissons tous en nombres distincts, trois d’entre eux en ont réuni au moins 50. C’est toujours vrai.",
+    "Classez les sept prises dans l’ordre décroissant. Il suffit de regarder les trois plus grandes. Distinguez selon la troisième de ce classement.",
+    "Si cette troisième vaut au moins 16, alors les deux premières valent au moins 17 et 18, et les trois têtes totalisent au moins 51. Si au contraire la troisième vaut au plus 15, alors les quatre plus petites valent au plus 14, 13, 12 et 11, soit au plus 50 à elles quatre. Les trois plus grandes ont donc au moins 100 − 50 = 50.",
+    "Dans les deux cas, trois pêcheurs atteignent 50. Vous n’avez pas besoin de connaître les prises une à une : le classement et le total 100 forcent le résultat."
+  ],
+  "700": [
+    "On vous demande combien de poissons jaunes il faut retirer pour que les bleus représentent 2 % de l’aquarium. Il faut en retirer 100, soit la réponse E.",
+    "Sur 200 poissons, 1 % sont bleus : il y a 2 bleus et 198 jaunes. On n’enlève que des jaunes, donc les 2 bleus restent.",
+    "Pour que 2 bleus fassent 2 % de l’effectif, cet effectif doit valoir 100. Il faut donc 98 jaunes restants, et l’on en retire 198 − 98 = 100.",
+    "Enlever 2 ou 4 jaunes ne change presque pas le pourcentage. Le piège « 2 % de 200 = 4 » ferait croire qu’il suffit d’ajuster les bleus, alors qu’on ne touche qu’aux jaunes."
+  ],
+  "701": [
+    "On vous demande ce qui s’est passé le premier jour. Renart a pris 4 poissons et Ysengrin 0, soit la réponse B.",
+    "Ysengrin n’a pris qu’un seul poisson en trois jours. Le deuxième jour, c’est lui qui en a pris davantage : son unique poisson date donc forcément de ce deuxième jour, et Renart n’en a pris aucun ce jour-là.",
+    "Le troisième jour, ils ont pêché la même chose. Comme Ysengrin n’a plus de poisson à placer, ce « même chose » vaut 0 pour les deux.",
+    "Il reste le premier jour : Renart y a pris ses 4 poissons, Ysengrin 0, et Renart en a bien pris plus. Les autres propositions cassent soit le total d’Ysengrin, soit l’avantage du deuxième jour."
+  ],
+  "702": [
+    "On vous demande combien de poissons nagent dans le bocal. Il y en a 34.",
+    "Un poisson rouge a soit un rouge, soit un blanc juste devant lui. Les deux premières données se complètent : 7 + 12 = 19 poissons rouges en tout.",
+    "Douze rouges ont un blanc devant eux : cela crée 12 couples « blanc puis rouge ». Trois blancs ont un blanc devant eux : cela crée 3 couples « blanc puis blanc ». Chaque blanc est le « devant » d’exactement un poisson, donc il y a 12 + 3 = 15 blancs.",
+    "Le total est 19 + 15 = 34. Parce qu’ils tournent en rond, le nombre de couples d’une couleur égale le nombre de poissons de cette couleur qui ont tel voisin : on ne double-compte pas en refermant le cercle."
+  ],
+  "703": [
+    "On vous demande quels trois tickets Étienne a gardés pour totaliser trois poissons de chaque type. Ce sont les trois tickets indiqués sur la figure officielle du corrigé, parmi les six tickets du samedi et du dimanche.",
+    "Chaque ticket porte trois poissons tirés au hasard parmi les types dessinés. Sur six tickets, Étienne n’en conserve que trois, dont la réunion donne exactement trois poissons de chaque sorte.",
+    "Le plus sûr est de dénombrer, type par type, les poissons visibles sur chaque ticket, puis d’essayer les combinaisons de trois tickets jusqu’à obtenir 3, 3 et 3. Certaines combinaisons saturent un type et en oublient un autre.",
+    "La réponse n’est pas une invention : le corrigé officiel montre clairement les trois tickets retenus, côté samedi et côté dimanche. C’est cette sélection, et non une autre de même total, qui est attendue si plusieurs ternaires étaient possibles visuellement."
+  ],
+  "704": [
+    "On vous demande combien pèse le poisson après séchage, alors qu’il passe de 99 % à 98 % d’eau. Il pèse alors 1 kg.",
+    "Au départ, le poisson fait 2 kg dont 99 % d’eau. La matière sèche représente 1 %, soit 20 g. Le séchage retire de l’eau, mais pas de cette matière sèche : les 20 g restent.",
+    "Après séchage, ces 20 g forment 2 % du nouveau poids, puisque l’eau n’est plus que 98 %. Si P est le nouveau poids en grammes, 2 % de P valent 20 g, donc P = 1 000 g.",
+    "Le poisson a perdu la moitié de sa masse, uniquement en eau. Le piège habituel est de retirer 1 % de 2 kg, ce qui donnerait 1,98 kg et laisserait croire que presque rien n’a changé."
+  ],
+  "705": [
+    "On vous demande combien de triangles on voit sur le poisson en tuiles. On en voit 37.",
+    "Chaque tuile est un triangle rectangle isocèle, mais de nombreux triangles plus grands se forment en recollant 2, 4 ou 8 tuiles. Il faut donc compter par tailles, sans oublier les orientations.",
+    "On dénombre 16 triangles d’une tuile, 12 triangles de deux tuiles, 7 triangles de quatre tuiles et 2 triangles de huit tuiles. Le total 16 + 12 + 7 + 2 = 37.",
+    "Les exemples du corrigé officiel illustrent une pièce de chaque taille, pour éviter d’en manquer une tournée vers la queue ou vers la tête. Compter seulement les petites tuiles donnerait 16, très en dessous du réel."
+  ],
+  "706": [
+    "On vous demande combien de poissons le nouvel aquarium pourra contenir au maximum. Il pourra en contenir 345.",
+    "Chaque dimension est multipliée par 1,2. Le volume, produit des trois dimensions, est donc multiplié par 1,2 × 1,2 × 1,2 = 1,728.",
+    "L’ancien aquarium nourrissait 200 poissons. Le nouveau volume équivaut à 200 × 1,728 = 345,6 fois la ration d’un poisson. On ne peut pas introduire une fraction de poisson, et l’on ne doit pas descendre sous la ration initiale.",
+    "Le maximum entier est donc 345. Arrondir à 346 priverait chaque poisson d’un peu d’eau ; s’arrêter à 240 (une seule dimension) oublierait que les trois arêtes grandissent ensemble."
+  ],
+  "707": [
+    "On vous demande le poids du poisson en chocolat, sachant que chaque carré pèse 10 g. Il pèse 275 g.",
+    "Le dessin se décompose en carreaux entiers et en triangles. On compte 21 carrés, 9 petits triangles rectangles isocèles qui valent ensemble 4,5 carreaux, et 2 triangles plus composés qui valent ensemble 2 carreaux.",
+    "L’aire totale vaut 21 + 4,5 + 2 = 27,5 carreaux. À 10 g le carreau, le poisson pèse 275 g.",
+    "Les ailerons et la queue ne sont pas des carrés : les oublier ferait tomber le poids à 210 g. À l’inverse, compter un triangle comme un carreau entier ajouterait trop de chocolat."
+  ],
+  "708": [
+    "On vous demande combien de poissons chacun a dans le dos. Ali n’en a aucun, Lise en a 1, Sarah en a 2 et Max en a 3.",
+    "Max affirme qu’aucun ami n’a le même nombre de poissons. Quatre nombres distincts dont la somme est 6 ne peuvent être que 0, 1, 2 et 3. Lise dit que Max en a le plus : Max a donc 3 poissons.",
+    "Sarah voit 4 poissons sur les autres, donc elle-même en a 6 − 4 = 2. Ali a collé au moins un poisson à chacun des trois autres : personne d’autre n’a 0, donc le 0 est sur le dos d’Ali, et Lise a le 1 restant.",
+    "Les quatre phrases se soutiennent : Sarah voit bien 0 + 1 + 3 = 4, Max voit quatre valeurs toutes différentes, Lise voit le maximum sur Max, et Ali a bien touché Lise, Max et Sarah. Une autre permutation casserait au moins une réplique."
+  ],
+  "709": [
+    "On vous demande combien Léo aura de poissons au bout de deux mois. Il en aura 131.",
+    "Au départ : 2 mâles et 3 femelles. Chaque mois, chaque femelle donne naissance à 3 mâles et 4 femelles. Les parents restent dans l’aquarium.",
+    "Après un mois, les 3 femelles ajoutent 9 mâles et 12 femelles : on a 11 mâles et 15 femelles. Après le second mois, les 15 femelles ajoutent 45 mâles et 60 femelles : on a 56 mâles et 75 femelles.",
+    "Le total est 56 + 75 = 131. Le piège serait de ne compter que les nouveau-nés, ou de faire naître aussi les femelles du mois en cours avant la fin du mois."
+  ],
+  "710": [
+    "On vous demande comment deux mères et deux filles n’ont pêché que trois poissons, alors que chacune en ramène un. Il n’y a que trois personnes : une fille, sa mère et sa grand-mère.",
+    "La plus jeune est seulement une fille. La plus âgée est seulement une mère (et grand-mère). Celle du milieu est à la fois fille de la plus âgée et mère de la plus jeune.",
+    "En les comptant par rôles, vous voyez deux mères et deux filles, mais seulement trois femmes. Trois poissons suffisent donc : un pour chacune.",
+    "L’énigme joue sur le vocabulaire de parenté, pas sur un poisson partagé. Dès que vous dessinez trois générations, le paradoxe disparaît."
+  ],
+  "711": [
+    "On vous demande combien de jours ont duré les vacances de Pascal, qui a pêché 52 poissons. Elles ont duré 16 jours.",
+    "Les trois premiers jours, il prend 1, puis 2, puis 3 poissons. Les trois derniers, il en prend 3, puis 2, puis 1. Ces six journées totalisent 12 poissons.",
+    "Il reste 52 − 12 = 40 poissons, pêchés à raison de 4 par jour pendant la période du milieu. Cette période dure 40 ÷ 4 = 10 jours.",
+    "Au total : 3 + 10 + 3 = 16 jours. La montée et la descente sont symétriques ; il ne faut pas compter deux fois le palier à 4, ni oublier qu’un jour à 4 n’apparaît ni au début ni à la fin."
+  ],
+  "712": [
+    "On vous demande qui a raison, d’Anne ou de Bernard, au sujet de la taille de leur poisson. Aucun des deux : les deux poissons ont la même aire.",
+    "Prenez un carreau du quadrillage comme unité. Un petit triangle vaut 0,5, un triangle moyen vaut 1, un grand triangle vaut 1,5, un carré vaut 1.",
+    "Le poisson d’Anne se compose de 4 carrés, 4 petits triangles et 4 triangles moyens, soit 4 + 2 + 4 = 10. Celui de Bernard se compose de 2 carrés, 2 petits triangles, 4 triangles moyens et 2 grands triangles, soit 2 + 1 + 4 + 3 = 10.",
+    "Les deux figures occupent 10 carreaux. On peut aussi retirer les pièces communes et comparer ce qui reste : deux carrés plus deux petits triangles d’un côté, deux grands triangles de l’autre, encore égaux. L’œil se trompe sur les formes allongées."
+  ],
+  "713": [
+    "On vous demande combien de poissons Sonia a pêchés. Elle en a pêché 6, soit la réponse B.",
+    "Si elle en avait attrapé trois fois plus, elle en aurait eu 12 de plus. Trois fois plus, c’est le nombre actuel plus encore deux fois ce nombre : les 12 poissons supplémentaires représentent donc le double de sa pêche.",
+    "Ce double vaut 12, donc la pêche vaut 6. On a bien 3 × 6 = 18, et 18 = 6 + 12.",
+    "Les réponses 4 ou 3 donneraient un écart de 8 ou 6, pas de 12. « Trois fois plus » ne signifie pas « trois de plus »."
+  ],
+  "714": [
+    "On vous demande combien de poissons figurent au total sur les cinq cartes. Il y en a 3, soit la réponse C.",
+    "Chaque carte est d’un des deux types : chien d’un côté et poisson de l’autre, ou papillon d’un côté et oiseau de l’autre. Un poisson n’existe donc que sur les cartes « chien-poisson ».",
+    "Toute face chien révèle une carte de ce type, et toute face poisson aussi. Sur les cinq cartes, on voit deux chiens et un poisson : cela fait trois cartes « chien-poisson », donc trois poissons (un au dos de chaque chien, plus celui déjà visible).",
+    "Les faces papillon ou oiseau n’ont pas de poisson de l’autre côté. Compter un poisson sous chaque carte donnerait 5, trop ; n’en compter qu’un, le visible, oublierait les dos des chiens."
+  ],
+  "715": [
+    "On vous demande la masse, en grammes, de chacun des deux derniers poissons de Patrick. Chaque poisson pèse 360 g.",
+    "Le score vaut 50 points par poisson, plus 1 point par gramme. Hubert a 19 poissons et 2 430 g, soit 19 × 50 + 2 430 = 3 380 points.",
+    "Patrick, avant les deux derniers, a 14 poissons et 1 860 g, soit 700 + 1 860 = 2 560 points. Les deux poissons ajoutent 100 points de « pièces » plus 2m points de masse. L’égalité 2 560 + 100 + 2m = 3 380 donne 2m = 720, donc m = 360.",
+    "Les deux poissons pèsent 720 g à eux deux, 360 g chacun. Un oubli des 50 points par poisson ferait chercher 3 380 − 1 860 parmi 16 poissons et rater la masse."
+  ],
+  "716": [
+    "On vous demande de placer les chiffres 1 à 5 sur le poisson, déjà porteur d’un 6 et d’un 7, de sorte que deux chiffres reliés ne se suivent jamais. Le placement qui convient est 4, 6, 1, 2, 7, 5 et 3, dans l’ordre de la figure officielle.",
+    "Deux cases jointes par un trait, droit ou courbe, ne peuvent pas porter 1 et 2, 2 et 3, 3 et 4, 4 et 5, 5 et 6, ou 6 et 7. Le 6, déjà posé, interdit donc un 5 et un 7 sur ses voisins ; le 7 interdit un 6 — déjà utilisé — et un 5 sur les siens.",
+    "Le 5 se place donc loin du 6, contre le 7 seulement si le trait ne les unit pas, ce que la silhouette du poisson permet. Le 4, lui, peut jouxter le 6. Le 1 se niche près du 6, le 2 et le 3 achèvent le corps et la queue.",
+    "Le corrigé officiel montre précisément cette répartition. Toute permutation qui mettrait 5 contre 6, ou 3 contre 2 le long d’un trait, violerait la règle."
+  ],
+  "717": [
+    "On vous demande, une fois la corde tendue, combien de poissons auront la tête tournée vers l’anneau. Ils seront 4, soit la réponse C.",
+    "En suivant la corde depuis l’anneau jusqu’à l’autre bout, certains poissons sont enfilés tête la première, d’autres queue la première. Tendre la corde ne change pas cet ordre d’enfilage, elle l’aligne seulement.",
+    "Ceux dont on rencontre d’abord la tête, en partant de l’anneau, regardent vers l’anneau. Sur le dessin, ce sont le premier, le troisième, le sixième et le septième, soit quatre poissons.",
+    "Compter toutes les têtes visibles avant tension donnerait trop, car certaines regardent déjà l’autre extrémité. Après tension, seules ces quatre têtes pointent vers l’anneau."
+  ],
+  "718": [
+    "On vous demande combien de poissons compte cette ménagerie de 136 têtes et 630 pattes. Il y a 10 poissons.",
+    "Les « mulets » de l’énoncé peuvent être des quadrupèdes ou, par jeu de mots, des poissons. Notez q le nombre de quadrupèdes (mulets à quatre pattes compris) et f le nombre de mygales. Il y a autant d’oiseaux que de quadrupèdes, et deux fois plus d’insectes que d’oiseaux. Les sept cobras n’ont pas de pattes.",
+    "Les pattes donnent 4q + 2q + 12q + 8f = 630, soit 18q + 8f = 630. Donc f est un multiple de 9. Les têtes donnent 4q + 7 + f + (13 − b) = 136, où b est le nombre de mulets quadrupèdes (au plus 13).",
+    "Parmi les quelques couples (q, f) entiers, un seul reste compatible avec les minima (au moins deux hérissons, trois renards, huit chèvres, etc.) : q = 23, f = 27, b = 3. Les 10 mulets restants sont donc les 10 poissons. Les autres hypothèses donnent un b négatif, trop grand, ou trop de quadrupèdes exigés."
+  ],
+  "719": [
+    "On vous demande combien de poissons Rodolphe a rapportés pour le déjeuner. Il en a rapporté 21.",
+    "Sur 84 poissons, le quart, soit 21, étaient trop petits et sont retournés à l’eau. Il en reste 63. Les deux septièmes de 63, soit 18, sont allés chez Wilfried. Il en reste 45.",
+    "Youki en dévore 6 : il en reste 39 à partager. Romuald en a trois de moins que Rodolphe, donc si Rodolphe en a R, Romuald en a R − 3, et 2R − 3 = 39. Ainsi 2R = 42 et R = 21.",
+    "Romuald ramène 18 poissons, Rodolphe 21, et 18 + 21 = 39. Le piège serait d’inverser les deux prénoms, ou d’appliquer le quart et les deux septièmes au total initial sans retrancher au fur et à mesure."
+  ],
+  "720": [
+    "On vous demande le nom de chaque ami et la couleur de son poisson. L’ami 1 est Carlo, avec un poisson vert ; l’ami 2 est Bruce, avec un poisson rouge ; l’ami 3 est Antoine, avec un poisson blanc.",
+    "Chacun ne parle qu’à l’un des deux autres, et les trois couleurs — rouge, blanc, vert — sont distinctes. L’ami 1 dit à son interlocuteur : « Tu as un poisson rouge. » L’ami 2 parle d’Antoine et d’un poisson blanc. L’ami 3 rapporte ce que Bruce dit d’un poisson vert.",
+    "L’ami 2 ne peut pas être Antoine, puisqu’il parle d’Antoine à la troisième personne. L’ami 3, qui cite Bruce, n’est pas Bruce. Il reste donc Bruce en ami 2, et Antoine en ami 3 : l’ami 1 est Carlo.",
+    "Carlo dit à Bruce qu’il a un poisson rouge : c’est vrai. Bruce dit qu’Antoine a un poisson blanc : c’est vrai. Antoine, s’adressant à Carlo, rapporte que Bruce lui attribue un poisson vert : Carlo a bien le vert. Le cycle des trois confidences se referme sans contradiction."
+  ],
+  "721": [
+    "On vous demande combien il y avait de poissons il y a trois ans. Il y en avait 24, soit la réponse B.",
+    "Chaque année, l’effectif égale la somme des deux années précédentes, comme dans une suite de Fibonacci. Cette année il y en a 96, l’an dernier 60.",
+    "Il y a deux ans, il y en avait donc 96 − 60 = 36. Il y a trois ans, il y en avait 60 − 36 = 24.",
+    "Contrôle : 24 + 36 = 60, puis 36 + 60 = 96. Les propositions 20, 40 ou 48 ne reconstituent pas les deux dernières années données."
+  ],
+  "722": [
+    "On vous demande combien de poissons contient l’aquarium. Il y en a 21.",
+    "Il faut 11 prises pour être sûr d’avoir au moins 2 bleus : cela signifie que 9 poissons ne sont pas bleus (le pire cas est de tous les prendre avant le second bleu). De même, 16 poissons ne sont pas verts, puisqu’il en faut 18 pour garantir 2 verts. Enfin, 12 poissons suffisent à n’avoir qu’une seule couleur : le treizième force une deuxième couleur.",
+    "La couleur majoritaire compte donc 12 individus. Elle ne peut être ni le rouge ni le vert, car non-bleus = rouges + verts = 9, trop peu pour loger 12. Ce sont donc les bleus qui sont 12. Alors les non-verts, au nombre de 16, sont les 12 bleus plus 4 rouges, et les 5 restants sont verts.",
+    "Total : 12 + 4 + 5 = 21. Vérifications : pour 2 bleus, le pire est 4 rouges + 5 verts + 1 bleu = 10, et le 11ᵉ est bleu ; pour 2 verts, le pire est 12 + 4 + 1 = 17, et le 18ᵉ est vert ; pour deux couleurs, 12 d’une seule, et le 13ᵉ change."
+  ],
+  "723": [
+    "On vous demande les valeurs des deux poissons à écrire. Elles valent 6 et 2.",
+    "La première ligne de l’énoncé donne déjà un total, 4, qui relie plusieurs poissons dessinés. Chaque espèce de poisson garde la même valeur d’une égalité à l’autre.",
+    "En remplaçant les poissons déjà connus, vous isolez d’abord une espèce, puis la suivante, comme dans une petite balance à pictogrammes. L’une des deux espèces demandées vaut 6, l’autre 2.",
+    "Le corrigé officiel inscrit ces deux nombres sous les poissons concernés. Une inversion 2 puis 6 ne respecterait plus la ligne où figure le 4."
+  ],
+  "724": [
+    "On vous demande combien Cosinus aura de poissons mâles au bout de deux mois. Il en aura 43.",
+    "Au départ : 3 mâles et 4 femelles. Chaque femelle donne chaque mois 2 mâles et 3 femelles, et les parents restent.",
+    "Après un mois, les 4 femelles ajoutent 8 mâles et 12 femelles : on a 11 mâles et 16 femelles. Après le second mois, les 16 femelles ajoutent 32 mâles et 48 femelles : les mâles passent à 11 + 32 = 43.",
+    "L’aquarium contient alors 107 poissons en tout, mais la question ne porte que sur les mâles. Ne multipliez pas les 4 femelles initiales sur deux mois d’un seul coup : les filles nées au premier mois mettent bas au second."
+  ],
+  "725": [
+    "On vous demande en combien de jours le poisson rouge parcourt 30 km, puis 6 500 km. Il lui faut 18,75 jours pour la Manche et 4 062,5 jours pour l’Atlantique.",
+    "En une semaine, il fait 14 000 tours de 80 cm, soit 1 120 000 cm, c’est-à-dire 11,2 km. Sa vitesse moyenne est donc 11,2 km en 7 jours, ou 1 km en 7 ÷ 11,2 = 0,625 jour.",
+    "Pour 30 km : 0,625 × 30 = 18,75 jours. Pour 6 500 km : 0,625 × 6 500 = 4 062,5 jours.",
+    "Convertissez toujours les centimètres en kilomètres avant de comparer aux distances maritimes : 1 120 000 cm = 11,2 km, et non 1,12 km. Une erreur d’un zéro multiplierait les durées par dix."
+  ],
+  "726": [
+    "On vous demande combien de poneys possédait le cheik. Il en avait 120.",
+    "Si p est ce nombre, le quart plus le tiers égale la moitié plus 10. En écriture : p/4 + p/3 = p/2 + 10.",
+    "Le dénominateur commun 12 donne 3p/12 + 4p/12 = 6p/12 + 10, donc 7p/12 = 6p/12 + 10, puis p/12 = 10 et p = 120.",
+    "Vérification : le quart de 120 vaut 30, le tiers vaut 40, la somme 70. La moitié vaut 60, plus 10 vaut 70. Les deux membres sont égaux. Un essai à 60 ou 240 casserait l’écart de 10."
+  ],
+  "727": [
+    "On vous demande combien de milles le poney a parcourus le cinquième et dernier jour. Il en a parcouru 13.",
+    "Sur cinq jours, le total est 55 milles, soit 11 milles en moyenne par jour. Chaque jour, il fait un mille de plus que la veille, donc les cinq distances forment une suite arithmétique de raison 1.",
+    "Dans une telle suite, la moyenne est le terme du milieu. Le troisième jour, il a donc fait 11 milles. On en déduit 9, 10, 11, 12 et 13 milles.",
+    "La somme 9 + 10 + 11 + 12 + 13 = 55 referme l’énoncé. Le dernier jour, le plus long, vaut 13 milles. Partir de 11 le premier jour dépasserait largement 55."
+  ],
+  "728": [
+    "On vous demande combien de porcs, mères comprises, il y avait à la fin, après les naissances au centre, aux quatre coins, puis de nouveau au centre. Il y en avait 262 144.",
+    "Après la première portée au milieu de l’enclos, la truie et ses sept porcelets sont 8. Ensuite, à chaque étape, chacun des porcs déjà là donne naissance à sept porcelets : l’effectif est multiplié par 8.",
+    "Premier coin : 8 × 8 = 64. Deuxième coin : 8 × 64 = 512. Troisième : 8 × 512 = 4 096. Quatrième : 8 × 4 096 = 32 768. Dernière génération au centre : 8 × 32 768 = 262 144.",
+    "C’est 8⁶. Alcuin compte bien les mères successives dans chaque produit, sans retirer les générations précédentes : tous restent dans l’enclos. S’arrêter après les quatre coins oublierait la dernière portée centrale."
+  ],
+  "729": [
+    "On vous demande le nombre minimal de coups de baguette pour changer tous les hommes de l’enclos en porcs. Quatre coups suffisent, sur les alignements B, 1, 4 et D.",
+    "Chaque coup retourne les quatre êtres d’une ligne ou d’une colonne : un homme devient porc, un porc redevient homme. C’est un retournement global de toute une rangée, pas un choix case par case.",
+    "En visant d’abord la ligne B, puis la colonne 1, puis la colonne 4, puis la ligne D, chaque homme est retourné un nombre impair de fois, et chaque porc déjà présent un nombre pair de fois. À la fin, l’enclos n’a plus que des porcs.",
+    "Le corrigé officiel dessine les quatre états intermédiaires. Trois coups ne peuvent pas couvrir toutes les positions d’hommes sans en replacer d’autres ; cinq coups ne sont pas nécessaires une fois ces quatre-là trouvés."
+  ],
+  "730": [
+    "On vous demande le nom de l’épouse de chaque Hollandais. Cornelius est l’époux de Gurtrün, Elas celui de Katrün, Hendrick celui d’Anna.",
+    "Chacun achète autant de porcs qu’il paie de shillings pièce, donc dépense un nombre carré de shillings. Un mari paie 3 guinées, soit 63 shillings, de plus que sa femme. Il faut donc deux carrés dont la différence est 63.",
+    "Les seuls couples d’entiers convenables sont 8² − 1², 12² − 9² et 32² − 31². Les femmes ont donc acheté 1, 9 ou 31 porcs, les maris 8, 12 ou 32.",
+    "Hendrick en achète 23 de plus que Katrün : cela force Hendrick à 32 porcs et Katrün à 9. Elas en achète 11 de plus que Gurtrün : Elas en a 12 et Gurtrün 1. Les trois couples sont donc Cornelius avec Gurtrün (8 et 1), Elas avec Katrün (12 et 9), Hendrick avec Anna (32 et 31). Aucun autre appariement ne réalise à la fois les deux écarts et la différence de 63 shillings."
+  ],
+  "731": [
+    "On vous demande combien de types de Papous — au sens des personnages de l’histoire — existent en Papouasie. Il y en a six.",
+    "Trois critères se croisent : être Papou ou non, être papa ou non, avoir des poux ou non. Cela ferait 8 combinaisons, mais deux sont interdites : il n’y a ni papa Papou à poux, ni pas Papou pas papa à poux.",
+    "Les six types restants sont donc : Papou papa sans poux ; Papou pas papa avec poux ; Papou pas papa sans poux ; papa pas Papou avec poux ; papa pas Papou sans poux ; pas Papou pas papa sans poux.",
+    "Un arbre de choix, en coupant les deux branches interdites, redonne ces six feuilles. La phrase de Gaston empile les négations pour le plaisir : une fois les interdits retirés, le dénombrement redevient un simple produit de choix."
+  ],
+  "732": [
+    "On vous demande combien d’œufs pondent soixante poules en soixante minutes, si six poules en pondent six en six minutes. Elles en pondent 600.",
+    "Six poules, six œufs, six minutes : une poule pond un œuf toutes les six minutes. En six minutes, soixante poules — dix fois plus nombreuses — pondent soixante œufs.",
+    "Soixante minutes, c’est dix fois six minutes. Au même rythme, soixante poules pondent 10 × 60 = 600 œufs.",
+    "Le piège classique est de répondre 60, en recopiant le 60 de l’énoncé, ou 6, par fausse règle de trois globale. Il faut séparer l’effet du nombre de poules et l’effet de la durée."
+  ],
+  "733": [
+    "On vous demande combien Monsieur Desvolcans a de poules, et combien de fois il a nettoyé le poulailler en mars. Il a 12 poules, et il a nettoyé 4 fois.",
+    "Mars a 31 jours. Chaque poule noire pond un œuf chaque matin, soit 31 œufs. La poule rousse ne pond que les jours de nettoyage, au plus 31 fois.",
+    "Le total 345 s’écrit 11 × 31 + 4. Les 11 × 31 œufs viennent de onze poules noires, et les 4 œufs restants viennent de la poule rousse, donc de quatre nettoyages.",
+    "En tout, 11 noires + 1 rousse = 12 poules. Un autre reste que 4, après division par 31, ne s’interpréterait plus comme le nombre de jours de nettoyage."
+  ],
+  "734": [
+    "On vous demande de quel panier le marchand parlait. Il s’agit du panier de 29 œufs.",
+    "Les six paniers contiennent 5, 6, 12, 14, 23 et 29 œufs, soit 89 œufs. Après la vente d’un panier, les œufs de poule restants doivent être exactement le double des œufs de cane restants.",
+    "Si l’on retire le panier de 29, il reste 60 œufs, que l’on peut partager en 40 et 20. Les paniers 23, 12 et 5 totalisent 40 (œufs de poule) ; les paniers 14 et 6 totalisent 20 (œufs de cane). Le double est exact.",
+    "Retirer 23, 14 ou 5, les autres totaux divisibles par 3, ne permet pas de former deux groupes dans le rapport 2 pour 1. Seul le panier de 29 ouvre cette partition."
+  ],
+  "735": [
+    "On vous demande combien d’œufs bleus, blancs et rouges les 9 poules ont pondus en juillet 2000. Elles ont pondu 36 œufs bleus, 60 blancs et 84 rouges.",
+    "Une poule et demie, en 7,5 jours, pond 1,5 œuf bleu, 2,5 blancs et 3,5 rouges. Neuf poules, c’est six fois une poule et demie : en 7,5 jours, elles pondent 9 bleus, 15 blancs et 21 rouges.",
+    "Juillet 2000 a 31 jours, mais les poules n’ont pas pondu le 14 juillet. Il reste 30 jours, soit exactement quatre périodes de 7,5 jours. On multiplie donc encore par 4.",
+    "Vous obtenez 36, 60 et 84. Le 14 juillet n’est pas un détail folklorique : sans ce jour férié, 31 n’est pas un multiple de 7,5 et les comptes ne tomberaient pas justes."
+  ],
+  "736": [
+    "On vous demande la valeur de chaque lettre dans le système en base 5 de la poule, sachant que CCOTCOTCODET représente 41 346 460. On a C = 4, D = 3, E = 2, O = 1 et T = 0.",
+    "En base 5, un nombre à 11 chiffres est inférieur à 5¹¹ et au moins égal à son premier chiffre fois 5¹⁰. Comme 41 346 460 dépasse 4 × 5¹⁰ et reste sous 5 × 5¹⁰, le chiffre de tête C vaut 4.",
+    "Après avoir retiré 4 × 5¹⁰, il reste 2 283 960, compris entre 5⁹ et 2 × 5⁹ : le deuxième chiffre, O, vaut 1. Le chiffre des unités de 41 346 460 est 0, donc T = 0, ce que confirme la finale DET du mot.",
+    "En ôtant au fur et à mesure les contributions déjà connues, le bloc DET vaut 85 en base dix, donc DE vaut 17 en base 5, ce qui force D = 3 et E = 2. Les cinq symboles C, D, E, O, T sont alors 4, 3, 2, 1, 0, et le mot CCOTCOTCODET se relit sans reste."
+  ]
+}
