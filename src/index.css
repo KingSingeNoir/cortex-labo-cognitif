@@ -1,9 +1,26 @@
 @import 'tailwindcss';
 
+html {
+  --cx-page-max: 68rem;
+  --cx-page-pad: 1.5rem;
+  --cx-touch: 2.5rem;
+  --cx-hero-h: min(42vw, 20rem);
+  --cx-safe-t: env(safe-area-inset-top, 0px);
+  --cx-safe-r: env(safe-area-inset-right, 0px);
+  --cx-safe-b: env(safe-area-inset-bottom, 0px);
+  --cx-safe-l: env(safe-area-inset-left, 0px);
+}
+
 html,
 body,
 #root {
   min-height: 100%;
+  min-height: 100dvh;
+}
+
+html,
+body {
+  overflow-x: hidden;
 }
 
 body {
@@ -11,4 +28,49 @@ body {
   font-family: system-ui, -apple-system, sans-serif;
   background: #0b0f17;
   color: #f1f5f9;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+html[data-cx-device='smartphone'] {
+  --cx-page-max: 100%;
+  --cx-page-pad: max(0.85rem, var(--cx-safe-l));
+  --cx-touch: 2.75rem;
+  --cx-hero-h: min(46vw, 13.5rem);
+}
+
+html[data-cx-device='smartphone'][data-cx-orient='paysage'] {
+  --cx-hero-h: min(28vh, 7.5rem);
+  --cx-page-pad: max(0.7rem, var(--cx-safe-l));
+}
+
+html[data-cx-device='tablette'] {
+  --cx-page-max: 48rem;
+  --cx-page-pad: 1.35rem;
+  --cx-touch: 2.65rem;
+  --cx-hero-h: min(36vw, 18rem);
+}
+
+html[data-cx-device='tablette'][data-cx-orient='paysage'] {
+  --cx-page-max: 64rem;
+  --cx-hero-h: min(28vw, 15rem);
+}
+
+html[data-cx-device='tablette'][data-cx-band='s'] {
+  --cx-page-max: 100%;
+  --cx-page-pad: max(0.9rem, var(--cx-safe-l));
+  --cx-hero-h: min(42vw, 12rem);
+}
+
+html[data-cx-device='ordinateur'] {
+  --cx-page-max: 68rem;
+  --cx-page-pad: 1.75rem;
+  --cx-touch: 2.35rem;
+  --cx-hero-h: min(32vw, 22rem);
+}
+
+html[data-cx-device='ordinateur'][data-cx-band='s'] {
+  --cx-page-max: 100%;
+  --cx-page-pad: 1rem;
+  --cx-hero-h: min(40vw, 12rem);
 }

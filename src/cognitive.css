@@ -16,11 +16,21 @@
   background: var(--bg-primary);
   color: var(--text-main);
   font-family: system-ui, -apple-system, sans-serif;
+  padding-top: var(--cx-safe-t, 0px);
+  padding-bottom: var(--cx-safe-b, 0px);
+  -webkit-tap-highlight-color: transparent;
 }
 
+.cx-page,
 .cortex-app .t3us-cog-inner {
+  width: 100%;
+  max-width: var(--cx-page-max, 68rem);
+  margin-inline: auto;
   padding-top: 0.75rem;
-  padding-bottom: 6.5rem;
+  padding-right: max(var(--cx-page-pad, 1.25rem), var(--cx-safe-r, 0px));
+  padding-bottom: 5.5rem;
+  padding-left: max(var(--cx-page-pad, 1.25rem), var(--cx-safe-l, 0px));
+  box-sizing: border-box;
 }
 
 /* ——— Chrome ——— */
@@ -111,6 +121,22 @@
   font-weight: 700;
 }
 
+.cx-pill-btn {
+  cursor: pointer;
+  color: var(--text-main);
+}
+
+.cx-pill-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.cx-account {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0.4rem;
+}
+
 .cx-hero {
   margin: 0.2rem 0 1.4rem;
   padding: 0.7rem 0.75rem 0.8rem;
@@ -124,7 +150,7 @@
 
 .cx-hero-frame {
   overflow: hidden;
-  height: min(58vw, 22.5rem);
+  height: var(--cx-hero-h, min(42vw, 20rem));
   border-radius: 11px;
   background: #0a0d12;
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06);
@@ -920,6 +946,28 @@
   color: var(--text-main);
 }
 
+.cx-suivi-prefs {
+  margin: 0 0 1.4rem;
+  padding: 0.95rem 1.05rem;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--bg-card);
+}
+
+.cx-suivi-prefs p {
+  margin: 0 0 0.55rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.cx-suivi-prefs p:last-child {
+  margin-bottom: 0;
+}
+
+.cx-suivi-prefs strong {
+  color: var(--text-main);
+}
+
 .cx-suivi-kpis {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1060,4 +1108,91 @@
 .cx-suivi-sessions strong {
   color: var(--text-main);
   font-size: 0.9rem;
+}
+
+/* ——— Adaptation iPhone / iPad / ordinateur (en continu) ——— */
+html[data-cx-device='smartphone'] .cx-header,
+html[data-cx-device='tablette'] .cx-header {
+  padding-top: max(0.7rem, 0.15rem);
+  padding-left: max(0.75rem, var(--cx-safe-l, 0px));
+  padding-right: max(0.75rem, var(--cx-safe-r, 0px));
+}
+
+html[data-cx-device='smartphone'] .cx-header {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.5rem;
+}
+
+html[data-cx-device='smartphone'] .cx-metrics {
+  width: 100%;
+}
+
+html[data-cx-device='smartphone'] .cx-header-back,
+html[data-cx-device='smartphone'] .cx-nav-btn,
+html[data-cx-device='smartphone'] .cx-btn,
+html[data-cx-device='smartphone'] .cx-play,
+html[data-cx-device='smartphone'] .cx-pick,
+html[data-cx-device='smartphone'] .cx-enig-row,
+html[data-cx-device='smartphone'] .cx-pill-btn {
+  min-height: var(--cx-touch);
+}
+
+html[data-cx-device='smartphone'] .cx-enig-search input,
+html[data-cx-device='smartphone'] input,
+html[data-cx-device='tablette'] input {
+  font-size: 16px;
+}
+
+html[data-cx-device='smartphone'] .cx-play-hint {
+  font-size: 0.78rem;
+}
+
+html[data-cx-device='smartphone'][data-cx-orient='paysage'] .cx-header {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding-top: 0.45rem;
+  padding-bottom: 0.45rem;
+}
+
+html[data-cx-device='smartphone'][data-cx-orient='paysage'] .cx-brand span {
+  display: none;
+}
+
+html[data-cx-device='smartphone'][data-cx-orient='paysage'] .cx-arrive-lead {
+  display: none;
+}
+
+html[data-cx-device='tablette'][data-cx-band='m'] .cx-plays,
+html[data-cx-device='tablette'][data-cx-band='l'] .cx-plays,
+html[data-cx-device='ordinateur'][data-cx-band='l'] .cx-plays {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem;
+}
+
+html[data-cx-device='tablette'][data-cx-orient='paysage'] .cx-compose-list,
+html[data-cx-device='ordinateur'][data-cx-band='l'] .cx-compose-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+
+html[data-cx-device='ordinateur'] .cx-header {
+  padding-inline: max(1.25rem, var(--cx-safe-l, 0px)) max(1.25rem, var(--cx-safe-r, 0px));
+}
+
+html[data-cx-device='ordinateur'] .cx-play:hover .cx-play-name {
+  color: var(--accent);
+}
+
+html[data-cx-device='smartphone'] .cx-workspace {
+  min-height: 280px;
+  padding: 0.85rem;
+}
+
+html[data-cx-apple='iphone'] .cortex-app,
+html[data-cx-apple='ipad'] .cortex-app {
+  min-height: 100svh;
 }

@@ -295,9 +295,9 @@ export const COGNITIVE_DOMAINS = Object.freeze([
         goal:
           'Détendre le muscle qui fait la mise au point de près, sollicité en permanence devant un écran.',
         howTo: [
-          'Fixez la lettre affichée à l’écran quelques secondes.',
+          'Fixez ce qui s’affiche à l’écran quelques secondes.',
           'Levez les yeux et regardez un point réel éloigné (une fenêtre, le fond de la pièce) jusqu’à la fin du compte à rebours.',
-          'Revenez à l’écran et indiquez quelle lettre vous aviez fixée.',
+          'Revenez à l’écran et indiquez ce que vous aviez fixé.',
         ],
         scoring: 'Manche réussie si vous retrouvez la bonne lettre.',
       },
@@ -322,7 +322,7 @@ export const COGNITIVE_DOMAINS = Object.freeze([
         goal:
           'Entraîner les sauts du regard (les saccades), que l’on utilise pour lire et explorer une page.',
         howTo: [
-          'Une lettre apparaît dans l’un des quatre coins du cadre.',
+          'Une lettre apparaît dans un coin, parfois sur un bord du cadre aux niveaux plus élevés.',
           'Portez directement le regard sur elle, sans balayer tout le cadre.',
           'Touchez-la avant qu’elle ne disparaisse.',
         ],

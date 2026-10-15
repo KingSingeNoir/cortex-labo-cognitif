@@ -2,7 +2,7 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="theme-color" content="#0b0f17" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -13,6 +13,24 @@
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      (function () {
+        var ua = navigator.userAgent || '';
+        var plat = navigator.platform || '';
+        var touch = navigator.maxTouchPoints || 0;
+        var w = (window.visualViewport && visualViewport.width) || innerWidth;
+        var h = (window.visualViewport && visualViewport.height) || innerHeight;
+        var phone = /iPhone|iPod/i.test(ua) || (/Android/i.test(ua) && /Mobile/i.test(ua));
+        var pad = /iPad/i.test(ua) || ((/Macintosh|MacIntel/i.test(plat + ua)) && touch > 1) || (/Android/i.test(ua) && !/Mobile/i.test(ua));
+        var device = phone ? 'smartphone' : pad ? 'tablette' : 'ordinateur';
+        var root = document.documentElement;
+        root.dataset.cxDevice = device;
+        root.dataset.cxOrient = w >= h ? 'paysage' : 'portrait';
+        root.dataset.cxBand = w < 640 ? 's' : w < 1024 ? 'm' : 'l';
+        if (/iPhone|iPod/i.test(ua)) root.dataset.cxApple = 'iphone';
+        else if (/iPad/i.test(ua) || (/Macintosh|MacIntel/i.test(plat + ua) && touch > 1)) root.dataset.cxApple = 'ipad';
+      })();
+    </script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

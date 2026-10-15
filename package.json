@@ -5,12 +5,14 @@
   "description": "Atelier cognitif — application indépendante (hors T3US)",
   "type": "module",
   "scripts": {
-    "start": "vite --port 4100 --host",
+    "start": "node scripts/start-stack.mjs",
     "dev": "vite --port 4100 --host",
     "build": "vite build",
     "server": "node server.mjs",
+    "server:api": "node server.mjs --api",
+    "start:stack": "node scripts/start-stack.mjs",
     "preview": "vite preview --port 4100 --host",
-    "check": "node scripts/check-staircase.mjs"
+    "check": "node scripts/check-staircase.mjs && node scripts/check-platform.mjs"
   },
   "dependencies": {
     "lucide-react": "^1.31.0",

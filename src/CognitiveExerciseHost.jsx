@@ -323,6 +323,7 @@ export function RunningBoard({ trial, onComplete }) {
 
 export function DualBoard({ trial, onComplete }) {
   const { hold, secondary } = trial.data;
+  const encodeMs = trial.data.encodeMs || 2200;
   const started = useRef(Date.now());
   const [phase, setPhase] = useState('encode');
   const [si, setSi] = useState(0);
@@ -332,9 +333,9 @@ export function DualBoard({ trial, onComplete }) {
 
   useEffect(() => {
     if (phase !== 'encode') return undefined;
-    const t = setTimeout(() => setPhase('busy'), 2200);
+    const t = setTimeout(() => setPhase('busy'), encodeMs);
     return () => clearTimeout(t);
-  }, [phase]);
+  }, [phase, encodeMs]);
 
   if (phase === 'encode') {
     return (

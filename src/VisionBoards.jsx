@@ -196,6 +196,10 @@ export function VisSaccadeBoard({ trial, onComplete }) {
     'right-3 top-3',
     'left-3 bottom-3',
     'right-3 bottom-3',
+    'left-3 top-1/2 -translate-y-1/2',
+    'right-3 top-1/2 -translate-y-1/2',
+    'top-3 left-1/2 -translate-x-1/2',
+    'bottom-3 left-1/2 -translate-x-1/2',
   ];
 
   const cur = trials[i];

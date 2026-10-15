@@ -169,13 +169,21 @@ const READING_TEMPLATES = [
 
 export function generateReading(rng, difficulty) {
   const item = pick(rng, READING_TEMPLATES)(rng);
-  const distractor = pick(rng, ['visual', 'notif', difficulty >= 6 ? 'both' : 'visual']);
+  let body = item.body;
+  if (difficulty >= 5) {
+    const extra = pick(rng, READING_TEMPLATES)(rng);
+    body =
+      difficulty >= 8
+        ? `${item.body} Une note voisine, qui ne répond pas à la question, ajoute : ${extra.body}`
+        : `${item.body} ${extra.body}`;
+  }
+  const distractor = pick(rng, ['visual', 'notif', difficulty >= 5 ? 'both' : 'visual']);
   return {
     ui: 'reading',
-    prompt: 'Lisez, puis répondez — ignorez les distracteurs.',
-    timeLimitMs: mapDifficulty(difficulty, 35000, 22000),
+    prompt: 'Lisez, puis répondez — ignorez les distracteurs et les détails qui ne concernent pas la question.',
+    timeLimitMs: mapDifficulty(difficulty, 38000, 18000),
     data: {
-      body: item.body,
+      body,
       q: item.q,
       options: item.options,
       distractor,
@@ -186,10 +194,10 @@ export function generateReading(rng, difficulty) {
 }
 
 export function generateMot(rng, difficulty) {
-  const objects = mapDifficulty(difficulty, 4, 10);
-  const targets = difficulty >= 8 ? 2 : 1;
-  const speed = 0.6 + difficulty * 0.12;
-  const durationMs = mapDifficulty(difficulty, 5000, 9000);
+  const objects = mapDifficulty(difficulty, 4, 12);
+  const targets = difficulty >= 7 ? 2 : 1;
+  const speed = 0.55 + difficulty * 0.14;
+  const durationMs = mapDifficulty(difficulty, 5000, 11000);
   const seed = randInt(rng, 1, 1e9);
   return {
     ui: 'mot',
@@ -204,9 +212,9 @@ export function generateMot(rng, difficulty) {
 }
 
 export function generateFocus(rng, difficulty) {
-  const n = 10 + difficulty;
+  const n = mapDifficulty(difficulty, 8, 22);
   const stream = Array.from({ length: n }, () => randInt(rng, 1, 9));
-  const interruptEvery = mapDifficulty(difficulty, 5, 2);
+  const interruptEvery = mapDifficulty(difficulty, 6, 2);
   return {
     ui: 'focus',
     prompt: 'Additionnez mentalement. Ignorez les fausses notifications.',
@@ -233,11 +241,14 @@ export function generateBreath(rng, difficulty) {
 }
 
 export function generateDelayed(rng, difficulty) {
-  const hold = randomWord(rng) + '-' + pick(rng, LETTERS);
-  const fillers = mapDifficulty(difficulty, 1, 3);
+  const hold =
+    difficulty >= 8
+      ? `${randomWord(rng)}-${pick(rng, LETTERS)}${randInt(rng, 1, 9)}`
+      : randomWord(rng) + '-' + pick(rng, LETTERS);
+  const fillers = mapDifficulty(difficulty, 1, 4);
   const tasks = Array.from({ length: fillers }, () => ({
-    a: randInt(rng, 2, 12),
-    b: randInt(rng, 2, 9),
+    a: randInt(rng, difficulty >= 6 ? 4 : 2, difficulty >= 6 ? 14 : 12),
+    b: randInt(rng, 2, difficulty >= 6 ? 12 : 9),
   }));
   return {
     ui: 'delayed',

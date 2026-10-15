@@ -34,6 +34,8 @@ import { CognitiveExerciseHost } from './CognitiveExerciseHost.jsx';
 import { HERO_PHOTOS, heroSlotAt } from './heroPhotos.js';
 import { coverOf } from './gameCovers.js';
 import { ProgressView } from './ProgressView.jsx';
+import { AdminSuiviView } from './admin/AdminSuiviView.jsx';
+import { goPath } from './paths.js';
 import './cognitive.css';
 
 const EnigmesView = lazy(() => import('./enigmes/EnigmesView.jsx'));
@@ -80,7 +82,7 @@ function BackButton({ onClick, children = 'Retour', className = 'cx-back' }) {
   );
 }
 
-export function CognitiveView() {
+export function CognitiveView({ account, onLogout }) {
   const [store, setStore] = useState(() => loadCognitiveStore());
   const [screen, setScreen] = useState('hub');
   const [showSessionChoice, setShowSessionChoice] = useState(true);
@@ -191,9 +193,30 @@ export function CognitiveView() {
               Suivi
             </button>
           )}
+          {account ? (
+            <div className="cx-account">
+              <div className="cx-pill" title={account.email}>
+                {account.displayName}
+              </div>
+              {account.role === 'admin' && (
+                <button
+                  type="button"
+                  className="cx-pill cx-pill-btn"
+                  onClick={() => goPath('/admin')}
+                >
+                  Admin
+                </button>
+              )}
+              {typeof onLogout === 'function' && (
+                <button type="button" className="cx-pill cx-pill-btn" onClick={onLogout}>
+                  Quitter
+                </button>
+              )}
+            </div>
+          ) : null}
         </div>
       </header>
-      <div className="t3us-cog-inner relative mx-auto w-full max-w-[1100px] px-4 sm:px-6">
+      <div className="t3us-cog-inner cx-page">
         {screen === 'hub' && !enigmeOpen && <HourlyHero />}
         {(screen === 'session' || enigmeOpen) && (
           <CortexBanner
@@ -261,7 +284,10 @@ export function CognitiveView() {
             }}
           />
         )}
-        {screen === 'progress' && (
+        {screen === 'progress' && account?.role === 'admin' && (
+          <AdminSuiviView onBack={goHub} />
+        )}
+        {screen === 'progress' && account?.role !== 'admin' && (
           <ProgressView store={store} onBack={goHub} />
         )}
       </div>

@@ -1,0 +1,262 @@
+.cx-admin {
+  min-height: 100dvh;
+  background: #0b0f17;
+  color: #f1f5f9;
+}
+
+.cx-admin-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.9rem 1.1rem;
+  border-bottom: 1px solid #334155;
+  background: #151c28;
+}
+
+.cx-admin-head h1 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.cx-admin-head p {
+  margin: 0.15rem 0 0;
+  color: #94a3b8;
+  font-size: 0.82rem;
+}
+
+.cx-admin-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.cx-admin-nav button,
+.cx-admin-head .cx-admin-link {
+  min-height: 2.4rem;
+  padding: 0.35rem 0.8rem;
+  border: 1px solid #334155;
+  border-radius: 999px;
+  background: #1e293b;
+  color: #e2e8f0;
+  cursor: pointer;
+  font: inherit;
+}
+
+.cx-admin-nav button[data-on='1'] {
+  border-color: #38bdf8;
+  color: #38bdf8;
+}
+
+.cx-admin-body {
+  width: min(72rem, 100%);
+  margin: 0 auto;
+  padding: 1.1rem 1.1rem 4rem;
+  box-sizing: border-box;
+}
+
+.cx-admin-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(16rem, 22rem);
+  gap: 1rem;
+}
+
+@media (max-width: 840px) {
+  .cx-admin-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cx-admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+
+.cx-admin-table th,
+.cx-admin-table td {
+  padding: 0.55rem 0.45rem;
+  border-bottom: 1px solid #1e293b;
+  text-align: left;
+}
+
+.cx-admin-table button {
+  border: 0;
+  background: none;
+  color: #38bdf8;
+  cursor: pointer;
+  font: inherit;
+  padding: 0;
+}
+
+.cx-admin-card {
+  padding: 1rem;
+  border: 1px solid #334155;
+  border-radius: 14px;
+  background: #151c28;
+}
+
+.cx-admin-card h2 {
+  margin: 0 0 0.65rem;
+  font-size: 1rem;
+}
+
+.cx-admin-card p,
+.cx-admin-card label {
+  color: #94a3b8;
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.cx-admin-card textarea,
+.cx-admin-card input,
+.cx-admin-card select {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0.35rem 0 0.7rem;
+  padding: 0.5rem 0.65rem;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  background: #0b0f17;
+  color: #f1f5f9;
+  font: inherit;
+}
+
+.cx-admin-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.cx-admin-actions button {
+  min-height: 2.3rem;
+  padding: 0.35rem 0.75rem;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  background: #1e293b;
+  color: #f1f5f9;
+  cursor: pointer;
+}
+
+.cx-admin-status {
+  display: inline-block;
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+}
+
+.cx-admin-status[data-s='active'] {
+  background: color-mix(in srgb, #22c55e 22%, transparent);
+  color: #86efac;
+}
+
+.cx-admin-status[data-s='disabled'] {
+  background: color-mix(in srgb, #ef4444 22%, transparent);
+  color: #fca5a5;
+}
+
+.cx-admin-msg {
+  margin-top: 0.7rem;
+  font-size: 0.85rem;
+}
+
+.cx-admin-msg[data-k='ok'] {
+  color: #4ade80;
+}
+
+.cx-admin-msg[data-k='err'] {
+  color: #f87171;
+}
+
+.cx-admin-health {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 0.7rem;
+}
+
+.cx-admin-kpi {
+  padding: 0.85rem;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  background: #151c28;
+}
+
+.cx-admin-kpi p {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 0.78rem;
+}
+
+.cx-admin-kpi strong {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 1.35rem;
+}
+
+.cx-admin-mail {
+  max-height: 28rem;
+  overflow: auto;
+}
+
+.cx-admin-mail article {
+  padding: 0.7rem 0;
+  border-bottom: 1px solid #1e293b;
+}
+
+.cx-admin-mail h3 {
+  margin: 0 0 0.25rem;
+  font-size: 0.92rem;
+}
+
+.cx-admin-roster {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  gap: 0.7rem;
+  margin: 0 0 1.6rem;
+  padding: 0;
+  list-style: none;
+}
+
+.cx-admin-roster button {
+  width: 100%;
+  min-height: 6.2rem;
+  padding: 0.85rem 0.95rem;
+  border: 1px solid #334155;
+  border-radius: 14px;
+  background: #151c28;
+  color: #e2e8f0;
+  text-align: left;
+  cursor: pointer;
+}
+
+.cx-admin-roster button[data-on='1'] {
+  border-color: #38bdf8;
+  box-shadow: inset 0 0 0 1px #38bdf8;
+}
+
+.cx-admin-roster strong {
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.cx-admin-roster span {
+  display: block;
+  color: #94a3b8;
+  font-size: 0.8rem;
+  line-height: 1.45;
+}
+
+.cx-admin-suivi.is-embedded .cx-suivi {
+  padding-top: 0;
+}
+
+.cx-admin-pre {
+  max-height: 16rem;
+  overflow: auto;
+  padding: 0.65rem;
+  border-radius: 8px;
+  background: #0b0f17;
+  font-size: 0.75rem;
+  white-space: pre-wrap;
+}

@@ -1,4 +1,5 @@
 import { loadJSON, saveJSON } from '../storage.js';
+import { scopedKey } from '../cloud/scope.js';
 
 /** Progression du test psychotechnique — séparée de l’atelier cognitif. */
 const KEY = 'COG_enigmes_v1';
@@ -16,13 +17,16 @@ export const ENIGME_STATUS = Object.freeze({
   MISSED: 'non-trouvee',
 });
 
-export function loadEnigmesProgress() {
-  const raw = loadJSON(KEY, null);
+export function hydrateEnigmesProgress(raw) {
   return {
     items: raw && typeof raw.items === 'object' && raw.items ? raw.items : {},
     lastId: Number(raw?.lastId) || null,
     events: Array.isArray(raw?.events) ? raw.events : [],
   };
+}
+
+export function loadEnigmesProgress() {
+  return hydrateEnigmesProgress(loadJSON(scopedKey(KEY), null));
 }
 
 function pushEvent(progress, event) {
@@ -32,8 +36,11 @@ function pushEvent(progress, event) {
   };
 }
 
-export function saveEnigmesProgress(progress) {
-  saveJSON(KEY, progress);
+export function saveEnigmesProgress(progress, { skipFlush } = {}) {
+  saveJSON(scopedKey(KEY), progress);
+  if (!skipFlush) {
+    import('../cloud/sync.js').then((m) => m.scheduleCloudFlush()).catch(() => {});
+  }
 }
 
 export function itemOf(progress, id) {

@@ -1,15 +1,18 @@
 import React, { useMemo } from 'react';
 import { ArrowLeft, TrendingDown, TrendingUp, Minus, CircleDashed } from 'lucide-react';
 import { eloToIndex } from './persist.js';
+import { getCognitiveExercise } from './catalog.js';
 import {
   PALIER_LABEL,
   TREND_LABEL,
   formatPct,
   formatWhen,
+  recentTrialsOf,
   summarizeGlobal,
 } from './progress.js';
 import {
   ENIGME_CATALOG_SIZE,
+  hydrateEnigmesProgress,
   loadEnigmesProgress,
   summarizeEnigmes,
 } from './enigmes/enigmesStore.js';
@@ -31,27 +34,71 @@ function Trend({ id }) {
   );
 }
 
-export function ProgressView({ store, onBack }) {
+export function ProgressView({
+  store,
+  enigmes: enigmesRaw,
+  onBack,
+  title,
+  lead,
+  person,
+  showTrials = false,
+}) {
   const global = useMemo(() => summarizeGlobal(store), [store]);
   const enigmes = useMemo(
-    () => summarizeEnigmes(loadEnigmesProgress(), ENIGME_CATALOG_SIZE),
-    [store]
+    () =>
+      summarizeEnigmes(
+        enigmesRaw !== undefined
+          ? hydrateEnigmesProgress(enigmesRaw)
+          : loadEnigmesProgress(),
+        ENIGME_CATALOG_SIZE
+      ),
+    [enigmesRaw, store]
   );
   const elo = store?.elo?.global ?? 1000;
+  const prefs = store?.prefs || {};
+  const planTitles = (prefs.plan || [])
+    .map((id) => getCognitiveExercise(id)?.title || id)
+    .filter(Boolean);
+  const trials = useMemo(
+    () => (showTrials ? recentTrialsOf(store, 30) : []),
+    [showTrials, store]
+  );
 
   return (
     <section className="cx-suivi">
-      <button type="button" className="cx-back" onClick={onBack}>
-        <ArrowLeft size={16} />
-        Retour
-      </button>
+      {typeof onBack === 'function' && (
+        <button type="button" className="cx-back" onClick={onBack}>
+          <ArrowLeft size={16} />
+          Retour
+        </button>
+      )}
 
-      <p className="cx-arrive-kicker">Suivi</p>
-      <h1 className="cx-suivi-title">Votre progression</h1>
+      <p className="cx-arrive-kicker">Suivi{person ? ` · ${person}` : ''}</p>
+      <h1 className="cx-suivi-title">{title || 'Votre progression'}</h1>
       <p className="cx-arrive-lead">
-        Chaque manche et chaque énigme restent enregistrées, classées par domaine et par
-        jeu. Rien ne s’efface d’une connexion à l’autre.
+        {lead ||
+          'Chaque manche et chaque énigme restent enregistrées, classées par domaine et par jeu. Rien ne s’efface d’une connexion à l’autre.'}
       </p>
+
+      <h2 className="cx-suivi-h">Préférences</h2>
+      <div className="cx-suivi-prefs">
+        <p>
+          <strong>Manches par jeu.</strong>{' '}
+          {prefs.roundsPerGame || 3} à chaque séance composée.
+        </p>
+        <p>
+          <strong>Plan de séance.</strong>{' '}
+          {planTitles.length
+            ? planTitles.join(' · ')
+            : 'Aucun jeu n’est encore mis de côté dans une séance.'}
+        </p>
+        <p>
+          <strong>Stimuli.</strong>{' '}
+          {store?.reduceStimuli
+            ? 'Réduits (moins de mouvement à l’écran).'
+            : 'Normaux.'}
+        </p>
+      </div>
 
       <div className="cx-suivi-kpis">
         {[
@@ -149,6 +196,25 @@ export function ProgressView({ store, onBack }) {
                   {s.trialCount || 0} manche{(s.trialCount || 0) > 1 ? 's' : ''} ·{' '}
                   {formatPct(s.accuracy)} · {(s.games || []).length} jeu
                   {(s.games || []).length > 1 ? 'x' : ''}
+                </span>
+              </li>
+            ))}
+          </ol>
+        </>
+      )}
+
+      {showTrials && trials.length > 0 && (
+        <>
+          <h2 className="cx-suivi-h">Dernières manches</h2>
+          <ol className="cx-suivi-sessions">
+            {trials.map((t, i) => (
+              <li key={`${t.exerciseId}-${t.at || i}`}>
+                <strong>
+                  {getCognitiveExercise(t.exerciseId)?.title || t.exerciseId}
+                </strong>
+                <span>
+                  {t.success ? 'Réussie' : 'Manquée'} · {formatPct(t.accuracy)} ·
+                  niveau {t.levelBefore || t.difficulty || '—'} · {formatWhen(t.at)}
                 </span>
               </li>
             ))}

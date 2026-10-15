@@ -1,0 +1,204 @@
+html[data-surface='marque'] body {
+  background: #f3efe6;
+  color: #1f1b16;
+}
+
+.marque-app {
+  --ink: #1f1b16;
+  --muted: #6b6258;
+  --line: #d8d0c4;
+  --paper: #faf7f1;
+  --card: #fffdf8;
+  --accent: #8a3b24;
+  min-height: 100dvh;
+  background: #f3efe6;
+  color: var(--ink);
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.marque-shell {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 2.2rem 1.25rem 4rem;
+}
+
+.marque-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem 1.5rem;
+  padding-bottom: 1.4rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.marque-brand {
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.marque-top a {
+  color: var(--muted);
+  font-family: system-ui, sans-serif;
+  font-size: 0.86rem;
+  text-decoration: none;
+}
+
+.marque-top a:hover {
+  color: var(--accent);
+}
+
+.marque-kicker {
+  margin: 2rem 0 0.4rem;
+  font-family: system-ui, sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.marque-app h1 {
+  margin: 0 0 0.7rem;
+  font-size: 2.35rem;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+}
+
+.marque-lead {
+  max-width: 38rem;
+  margin: 0 0 2rem;
+  font-size: 1.12rem;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+.marque-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 0 0 2rem;
+}
+
+@media (min-width: 720px) {
+  .marque-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.marque-kpi {
+  padding: 1rem 1.05rem 0.95rem;
+  background: var(--card);
+  border: 1px solid var(--line);
+}
+
+.marque-kpi p {
+  margin: 0 0 0.3rem;
+  font-family: system-ui, sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.marque-kpi strong {
+  font-size: 1.55rem;
+  font-weight: 500;
+}
+
+.marque-note,
+.marque-block {
+  padding: 1.15rem 1.2rem;
+  margin: 0 0 0.85rem;
+  background: var(--card);
+  border: 1px solid var(--line);
+}
+
+.marque-app h2 {
+  margin: 2rem 0 0.7rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.marque-block p,
+.marque-note p,
+.marque-list li {
+  margin: 0 0 0.55rem;
+  font-family: system-ui, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #3f3a34;
+}
+
+.marque-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.marque-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.55rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.marque-list li:last-child {
+  border-bottom: none;
+}
+
+.marque-source {
+  font-family: system-ui, sans-serif;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.marque-gate {
+  max-width: 420px;
+  margin: 12vh auto 0;
+  padding: 2rem 1.6rem;
+  background: var(--card);
+  border: 1px solid var(--line);
+}
+
+.marque-gate label {
+  display: block;
+  margin: 1rem 0 0.35rem;
+  font-family: system-ui, sans-serif;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.marque-gate input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.7rem 0.75rem;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  color: var(--ink);
+  font-size: 1rem;
+}
+
+.marque-gate button {
+  margin-top: 1.1rem;
+  padding: 0.7rem 1.1rem;
+  border: none;
+  background: var(--ink);
+  color: #faf7f1;
+  font-family: system-ui, sans-serif;
+  font-size: 0.92rem;
+}
+
+.marque-gate button:hover {
+  background: var(--accent);
+}
+
+.marque-err {
+  margin: 0.7rem 0 0;
+  font-family: system-ui, sans-serif;
+  font-size: 0.85rem;
+  color: var(--accent);
+}

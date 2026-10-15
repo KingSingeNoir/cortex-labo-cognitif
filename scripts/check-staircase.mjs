@@ -5,6 +5,7 @@
 import { applyStaircase, clampDifficulty, xpForTrial } from '../src/staircase.js';
 import { COGNITIVE_EXERCISES } from '../src/catalog.js';
 import { generateExercise } from '../src/generate.js';
+import { detectDevice } from '../src/device.js';
 
 const fails = [];
 const proofs = [];
@@ -115,6 +116,75 @@ for (const ex of COGNITIVE_EXERCISES) {
   assert(invalid === 0, `${ex.id} : ${invalid} essai(s) invalide(s) sur ${SAMPLES}`);
   assert(ratio >= 0.9, `${ex.id} : variété ${Math.round(ratio * 100)} % (≥ 90 % attendu)`);
 }
+function volumeOf(exId, t) {
+  const d = t.data || {};
+  if (exId === 'imt-nback') return d.items.length + d.n * 5 + (2000 - d.isiMs) / 80;
+  if (exId === 'imt-span') return d.sequence.length + (d.interference ? 2 : 0);
+  if (exId === 'imt-running') return d.window + d.stream.length;
+  if (exId === 'imt-dual') return d.secondary.length + String(d.hold).length;
+  if (exId === 'irp-matrix') return d.size * 8 + (d.rules?.length || 0);
+  if (exId === 'irp-rotation') return (d.obj?.length || 0) + (d.options?.length || 0);
+  if (exId === 'irp-analogy') return (d.options?.length || 0);
+  if (exId === 'irp-series') return (d.series?.length || 0) + (d.rules?.length || 0);
+  if (exId === 'ivt-code') return d.key.length + d.items.length;
+  if (exId === 'ivt-barrage') return d.cells.length;
+  if (exId === 'ivt-stroop') return d.trials.length;
+  if (exId === 'ivt-compare') return d.trials.length + (d.trials[0]?.a?.length || 0);
+  if (exId === 'att-mix-focus') return d.trials.length;
+  if (exId === 'att-mix-reading') return (d.body?.length || 0) + (d.watch?.channels || 0);
+  if (exId === 'att-mix-watch') return (d.watch?.channels || 0) + (d.priority?.tasks?.length || 0);
+  if (exId === 'att-mix-recall') return (d.fillers?.length || 0) + String(d.hold || '').length;
+  if (exId === 'vis-accom') return String(d.letter || '').length;
+  if (exId === 'vis-pursuit') return d.probes.length + d.speed * 8;
+  if (exId === 'vis-saccade') return d.trials.length;
+  if (exId === 'vis-blink') return d.blinks + String(d.letter || '').length;
+  if (exId === 'log-matrix') return (d.options?.length || 0);
+  if (exId === 'log-sequence') return (d.sequence?.length || 0);
+  if (exId === 'log-syllogism') return 1;
+  return 0;
+}
+
+const skipVolume = new Set(['log-matrix', 'log-sequence', 'log-syllogism']);
+for (const ex of COGNITIVE_EXERCISES) {
+  if (skipVolume.has(ex.id)) continue;
+  let lo = 0;
+  let hi = 0;
+  for (let i = 0; i < 24; i += 1) {
+    lo += volumeOf(ex.id, generateExercise(ex.id, { difficulty: 1, seed: 200 + i }));
+    hi += volumeOf(ex.id, generateExercise(ex.id, { difficulty: 10, seed: 200 + i }));
+  }
+  assert(hi > lo, `${ex.id} : volume+subtilité d=10 (${hi.toFixed(0)}) > d=1 (${lo.toFixed(0)})`);
+}
+
+function fakeWin({ ua, platform = '', touch = 0, w, h, coarse = false, hover = true }) {
+  return {
+    navigator: { userAgent: ua, platform, maxTouchPoints: touch },
+    innerWidth: w,
+    innerHeight: h,
+    visualViewport: { width: w, height: h },
+    matchMedia: (q) => ({
+      matches: q.includes('coarse') ? coarse : q.includes('hover: hover') ? hover : false,
+    }),
+  };
+}
+
+const iphone = detectDevice(
+  fakeWin({ ua: 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X)', w: 390, h: 844, touch: 5, coarse: true, hover: false })
+);
+assert(iphone.device === 'smartphone' && iphone.apple === 'iphone' && iphone.orient === 'portrait', 'iPhone portrait');
+const iphoneLand = detectDevice(
+  fakeWin({ ua: 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X)', w: 844, h: 390, touch: 5, coarse: true, hover: false })
+);
+assert(iphoneLand.orient === 'paysage', 'iPhone paysage');
+const ipad = detectDevice(
+  fakeWin({ ua: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)', platform: 'MacIntel', touch: 5, w: 1024, h: 1366, coarse: true, hover: false })
+);
+assert(ipad.device === 'tablette' && ipad.apple === 'ipad', 'iPadOS (Mac + touch)');
+const desk = detectDevice(
+  fakeWin({ ua: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)', platform: 'Win32', w: 1440, h: 900, hover: true })
+);
+assert(desk.device === 'ordinateur' && desk.band === 'l', 'ordinateur');
+
 console.log('VARIÉTÉ');
 variety.forEach((v) => console.log(' -', v));
 

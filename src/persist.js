@@ -1,4 +1,5 @@
 import { loadJSON, saveJSON } from './storage.js';
+import { scopedKey } from './cloud/scope.js';
 import {
   COGNITIVE_EXERCISES,
   DEFAULT_ROUNDS_PER_GAME,
@@ -110,10 +111,9 @@ function sanitizePrefs(raw) {
   };
 }
 
-export function loadCognitiveStore() {
-  const raw = loadJSON(STORE_KEY, null);
+export function hydrateCognitiveStore(raw) {
   const base = emptyCognitiveStore();
-  if (!raw || typeof raw !== 'object') return base;
+  if (!raw || typeof raw !== 'object' || !raw.exercises) return base;
   const exercises = { ...base.exercises };
   COGNITIVE_EXERCISES.forEach((ex) => {
     const src = raw.exercises?.[ex.id];
@@ -142,8 +142,15 @@ export function loadCognitiveStore() {
   };
 }
 
-export function saveCognitiveStore(store) {
-  saveJSON(STORE_KEY, store);
+export function loadCognitiveStore() {
+  return hydrateCognitiveStore(loadJSON(scopedKey(STORE_KEY), null));
+}
+
+export function saveCognitiveStore(store, { skipFlush } = {}) {
+  saveJSON(scopedKey(STORE_KEY), store);
+  if (!skipFlush) {
+    import('./cloud/sync.js').then((m) => m.scheduleCloudFlush()).catch(() => {});
+  }
 }
 
 export function setCognitiveReduceStimuli(value) {

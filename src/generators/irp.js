@@ -78,7 +78,7 @@ function nearMisses(rng, correct) {
 
 function buildOptions(rng, correct, extra, total) {
   const list = uniqueGlyphs([correct, ...extra], () => randomGlyph(rng), total);
-  return shuffle(rng, list);
+  return shuffle(rng, list.slice(0, total));
 }
 
 /* ------------------------------------------------------------------ */
@@ -86,11 +86,15 @@ function buildOptions(rng, correct, extra, total) {
 /* ------------------------------------------------------------------ */
 
 export function generateMatrix(rng, difficulty) {
-  const size = difficulty >= 6 ? 3 : 2;
+  const size = difficulty >= 4 ? 3 : 2;
   const ruleCount = mapDifficulty(difficulty, 1, 3);
-  const axis = pick(rng, ['row', 'col', 'diag']);
+  const axes = ['row', 'col'];
+  if (difficulty >= 5) axes.push('diag');
+  const axis = pick(rng, axes);
   const maxRank = axis === 'diag' ? 2 * (size - 1) : size - 1;
-  const rules = pickRules(rng, ruleCount, ['rotate', 'color', 'shape', 'count'], maxRank);
+  const pool = ['color', 'shape', 'count'];
+  if (difficulty >= 3) pool.push('rotate');
+  const rules = pickRules(rng, ruleCount, pool, maxRank);
   const base = randomGlyph(rng, { count: 1, rotation: 0 });
   if (rules.some((r) => r.kind === 'rotate')) base.shape = 'triangle';
   const rank = (r, c) => (axis === 'row' ? c : axis === 'col' ? r : r + c);
@@ -101,7 +105,8 @@ export function generateMatrix(rng, difficulty) {
   }
   const missingIndex = size * size - 1;
   const correct = cells[missingIndex];
-  const options = buildOptions(rng, correct, nearMisses(rng, correct), 6);
+  const optionN = mapDifficulty(difficulty, 4, 6);
+  const options = buildOptions(rng, correct, nearMisses(rng, correct), optionN);
 
   return {
     ui: 'matrix',
@@ -109,7 +114,7 @@ export function generateMatrix(rng, difficulty) {
       ruleCount === 1
         ? 'D’une case à l’autre, les figures suivent une règle. Trouvez-la, puis choisissez la figure qui remplace le point d’interrogation.'
         : `D’une case à l’autre, les figures suivent ${ruleCount} règles à la fois. Trouvez-les, puis choisissez la figure qui remplace le point d’interrogation.`,
-    timeLimitMs: 35000 - difficulty * 1200,
+    timeLimitMs: mapDifficulty(difficulty, 42000, 16000),
     data: {
       size,
       rules: rules.map((r) => r.kind),
@@ -179,11 +184,16 @@ function asymmetricObject(rng, n) {
 }
 
 export function generateRotation(rng, difficulty) {
-  const n = mapDifficulty(difficulty, 3, 7);
+  const n = mapDifficulty(difficulty, 3, 8);
   const obj = asymmetricObject(rng, n);
-  const angle = pick(rng, [1, 2, 3]);
+  const angle = difficulty >= 7 ? pick(rng, [1, 3]) : pick(rng, [1, 2, 3]);
   const correct = rotateY(obj, angle);
   const okKey = voxelKey(correct);
+  const moved = obj.map((v, i) =>
+    i === 0
+      ? { ...v, x: 1 - v.x, z: v.z }
+      : v
+  );
   const pool = [
     { id: 'mirror', voxels: mirrorX(rotateY(obj, pick(rng, [0, 1, 2, 3]))) },
     { id: 'decoy', voxels: rotateY(asymmetricObject(rng, n), pick(rng, [0, 1, 2, 3])) },
@@ -195,6 +205,10 @@ export function generateRotation(rng, difficulty) {
       ),
     },
   ];
+  if (difficulty >= 6) {
+    pool.push({ id: 'moved', voxels: rotateY(moved, angle) });
+  }
+  const want = mapDifficulty(difficulty, 4, 6);
   const options = [{ id: 'ok', voxels: correct }];
   const seen = new Set([okKey]);
   pool.forEach((o) => {
@@ -203,7 +217,7 @@ export function generateRotation(rng, difficulty) {
     seen.add(k);
     options.push(o);
   });
-  for (let i = 0; options.length < 4 && i < 30; i += 1) {
+  for (let i = 0; options.length < want && i < 40; i += 1) {
     const v = rotateY(voxelSet(rng, n), randInt(rng, 0, 3));
     const k = voxelKey(v);
     if (seen.has(k)) continue;
@@ -213,8 +227,10 @@ export function generateRotation(rng, difficulty) {
   return {
     ui: 'rotation',
     prompt:
-      'Parmi les quatre vues, une seule montre l’objet de référence simplement tourné. Choisissez-la, en vous méfiant de son reflet dans un miroir.',
-    timeLimitMs: 28000,
+      options.length > 4
+        ? 'Parmi ces vues, une seule montre l’objet de référence simplement tourné. Méfiez-vous du reflet et des pièces presque identiques.'
+        : 'Parmi les quatre vues, une seule montre l’objet de référence simplement tourné. Choisissez-la, en vous méfiant de son reflet dans un miroir.',
+    timeLimitMs: mapDifficulty(difficulty, 32000, 16000),
     data: { obj, options: shuffle(rng, options) },
     expected: { id: 'ok' },
   };
@@ -275,12 +291,15 @@ export function generateAnalogy(rng, difficulty) {
     c,
     b,
   ];
-  const options = buildOptions(rng, d, misses, 5);
+  const optionN = mapDifficulty(difficulty, 4, 6);
+  const options = buildOptions(rng, d, misses, optionN);
   return {
     ui: 'analogy',
     prompt:
-      'Observez ce qui change entre A et B, appliquez la même transformation à C, puis choisissez le résultat.',
-    timeLimitMs: 25000,
+      kinds.length === 1
+        ? 'Observez ce qui change entre A et B, appliquez la même transformation à C, puis choisissez le résultat.'
+        : `Observez les ${kinds.length} changements entre A et B, appliquez la même combinaison à C, puis choisissez le résultat.`,
+    timeLimitMs: mapDifficulty(difficulty, 30000, 14000),
     data: { a, b, c, options },
     expected: { key: visualKey(d) },
   };
@@ -291,27 +310,28 @@ export function generateAnalogy(rng, difficulty) {
 /* ------------------------------------------------------------------ */
 
 export function generateSeries(rng, difficulty) {
-  const length = mapDifficulty(difficulty, 3, 5);
-  const ruleCount = mapDifficulty(difficulty, 1, 2);
-  const rules = pickRules(
-    rng,
-    ruleCount,
-    ['rotate', 'color', 'shape', 'countAlt', 'count'],
-    length
-  );
+  const length = mapDifficulty(difficulty, 3, 6);
+  const ruleCount = mapDifficulty(difficulty, 1, 3);
+  const pool = ['color', 'countAlt', 'count'];
+  if (difficulty >= 3) pool.push('shape');
+  if (difficulty >= 5) pool.push('rotate');
+  const rules = pickRules(rng, ruleCount, pool, length);
   const base = randomGlyph(rng, { count: 1, rotation: 0 });
   if (rules.some((r) => r.kind === 'rotate')) base.shape = 'triangle';
 
   const series = Array.from({ length }, (_, k) => applyRules(rules, base, k));
   const next = applyRules(rules, base, length);
-  const misses = [...nearMisses(rng, next), series[length - 1], series[length - 2]];
-  const options = buildOptions(rng, next, misses, 4);
+  const misses = [...nearMisses(rng, next), series[length - 1], series[length - 2] || series[0]];
+  const optionN = mapDifficulty(difficulty, 4, 6);
+  const options = buildOptions(rng, next, misses, optionN);
 
   return {
     ui: 'series',
     prompt:
-      'Repérez ce qui évolue d’une figure à la suivante, puis choisissez celle qui prolonge la série.',
-    timeLimitMs: 22000,
+      ruleCount === 1
+        ? 'Repérez ce qui évolue d’une figure à la suivante, puis choisissez celle qui prolonge la série.'
+        : `Plusieurs lois avancent en même temps (${ruleCount}). Repérez-les, puis choisissez la figure suivante.`,
+    timeLimitMs: mapDifficulty(difficulty, 26000, 14000),
     data: { series, options, rules: rules.map((r) => r.kind) },
     expected: { key: visualKey(next) },
   };

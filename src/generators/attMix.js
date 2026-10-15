@@ -3,15 +3,21 @@ import { generateWatch, generateSwitch, generatePriority } from './basc.js';
 import { COLOR_WORDS, mapDifficulty } from '../glyphs.js';
 import { pick } from '../rng.js';
 
-/** Concentration + bascule de règle + fausses notifications. */
+/**
+ * Focus + bascule + fausses notifications.
+ * Volume : 8 → 22 essais.
+ * Subtilité : plus de changements de règle, plus d’incongruents, plus d’interruptions.
+ */
 export function generateFocusSwitch(rng, difficulty) {
-  const n = 8 + difficulty;
+  const n = mapDifficulty(difficulty, 8, 22);
   let rule = pick(rng, ['ink', 'word']);
+  const switchP = 0.14 + difficulty * 0.04;
+  const incongruentRatio = 0.28 + difficulty * 0.055;
   const trials = [];
   for (let i = 0; i < n; i += 1) {
-    if (i > 0 && rng() < 0.4) rule = rule === 'ink' ? 'word' : 'ink';
+    if (i > 0 && rng() < switchP) rule = rule === 'ink' ? 'word' : 'ink';
     const word = pick(rng, COLOR_WORDS);
-    const congruent = rng() > 0.45;
+    const congruent = rng() > incongruentRatio;
     const ink = congruent
       ? word.ink
       : pick(rng, COLOR_WORDS.filter((c) => c.ink !== word.ink)).ink;
@@ -22,14 +28,15 @@ export function generateFocusSwitch(rng, difficulty) {
       expected: rule === 'ink' ? ink : word.ink,
     });
   }
+  const isi = mapDifficulty(difficulty, 1800, 850);
   return {
     ui: 'focusSwitch',
     prompt:
       'Répondez selon la règle affichée au-dessus du mot : la couleur de l’encre ou le mot écrit. La règle peut changer à tout moment. Ne touchez jamais les notifications.',
-    timeLimitMs: n * Math.max(900, 1700 - difficulty * 50) + 4000,
+    timeLimitMs: n * isi + 4000,
     data: {
       trials,
-      interruptEvery: mapDifficulty(difficulty, 5, 2),
+      interruptEvery: mapDifficulty(difficulty, 6, 2),
     },
     expected: { inks: trials.map((t) => t.expected) },
   };
@@ -38,7 +45,7 @@ export function generateFocusSwitch(rng, difficulty) {
 /** Lecture ciblée + surveillance d’un canal latéral. */
 export function generateReadingWatch(rng, difficulty) {
   const reading = generateReading(rng, difficulty);
-  const watch = generateWatch(rng, Math.max(2, difficulty - 1));
+  const watch = generateWatch(rng, Math.max(1, difficulty - 1));
   return {
     ui: 'readingWatch',
     prompt:
@@ -56,7 +63,7 @@ export function generateReadingWatch(rng, difficulty) {
   };
 }
 
-/** Multi-canal puis priorisation dynamique — deux flux à gérer. */
+/** Multi-canal puis priorisation dynamique. */
 export function generateWatchPriority(rng, difficulty) {
   const watch = generateWatch(rng, difficulty);
   const priority = generatePriority(rng, difficulty);
@@ -73,17 +80,22 @@ export function generateWatchPriority(rng, difficulty) {
   };
 }
 
-/** Rappel différé pendant une bascule de micro-tâches. */
+/**
+ * Rappel différé pendant une bascule.
+ * Volume : plus de tris intercalés, tenue plus longue.
+ * Subtilité : encodage plus bref, bascules plus fréquentes.
+ */
 export function generateDelayedSwitch(rng, difficulty) {
   const delayed = generateDelayed(rng, difficulty);
-  const sw = generateSwitch(rng, Math.max(2, difficulty - 1));
-  const fillers = (sw.data.trials || []).slice(0, mapDifficulty(difficulty, 4, 8));
+  const sw = generateSwitch(rng, Math.max(2, difficulty));
+  const fillers = (sw.data.trials || []).slice(0, mapDifficulty(difficulty, 4, 12));
+  const encodeMs = mapDifficulty(difficulty, 2600, 1100);
   return {
     ui: 'delayedSwitch',
     prompt:
       'Mémorisez le mot qui va s’afficher. Triez ensuite les formes selon la règle indiquée, puis tapez le mot retenu.',
-    timeLimitMs: 14000 + fillers.length * 1800,
-    data: { hold: delayed.data.hold, fillers },
+    timeLimitMs: encodeMs + 12000 + fillers.length * 1600,
+    data: { hold: delayed.data.hold, fillers, encodeMs },
     expected: { answer: delayed.expected.answer },
   };
 }

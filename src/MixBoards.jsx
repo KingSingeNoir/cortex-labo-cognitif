@@ -296,11 +296,13 @@ export function DelayedSwitchBoard({ trial, onComplete }) {
   const [buffer, setBuffer] = useState('');
   const t0 = useRef(Date.now());
 
+  const encodeMs = trial.data.encodeMs || 2000;
+
   useEffect(() => {
     if (phase !== 'encode') return undefined;
-    const t = setTimeout(() => setPhase('fill'), 2000);
+    const t = setTimeout(() => setPhase('fill'), encodeMs);
     return () => clearTimeout(t);
-  }, [phase]);
+  }, [phase, encodeMs]);
 
   if (phase === 'encode') {
     return (

@@ -4,5 +4,7 @@ dist
 *.log
 .env
 .env.*
+!.env.example
 CODE-COMPLET.txt
 .tmp-explications/
+.cortex-data

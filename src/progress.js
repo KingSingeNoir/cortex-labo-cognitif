@@ -182,3 +182,12 @@ export function formatPct(v) {
   const p = pct(v);
   return p == null ? '—' : `${p} %`;
 }
+
+export function recentTrialsOf(store, limit = 24) {
+  return Object.entries(store?.exercises || {})
+    .flatMap(([exerciseId, ex]) =>
+      (ex?.trials || []).map((t) => ({ ...t, exerciseId }))
+    )
+    .sort((a, b) => (b.at || 0) - (a.at || 0))
+    .slice(0, limit);
+}
