@@ -23,3 +23,12 @@ Ce projet est modifié **à tour de rôle** par Claude Code et par Codex (ChatGP
 ## Plan du projet (Graphify)
 
 Un plan du code est rangé dans `graphify-out/` (sur l'ordinateur uniquement, jamais envoyé sur GitHub). Pour comprendre le projet ou trouver un fichier, **interroger le plan avant de fouiller les fichiers** : `graphify query "ta question"`, `graphify explain "NomDuComposant"`, `graphify path "A" "B"`. Lire `graphify-out/GRAPH_REPORT.md` pour une vue d'ensemble. Après un `git pull` ou de grosses modifications : `graphify update .` (rapide, gratuit, sans IA).
+
+## Outils coûteux : autorisation obligatoire
+
+ECC, Strix et OmniRoute sont installés mais **éteints par défaut**, car ils consomment des tokens ou de l'argent.
+- Ne jamais allumer ECC (`plugin enable` / `plugin add ecc@ecc`), ne jamais lancer `strix` ni `omniroute`, ni modifier un réglage pour les utiliser, **sans un « oui » écrit du propriétaire dans la conversation en cours**.
+- Avant de demander : expliquer en une ou deux phrases simples à quoi ça servirait ici et ce que ça risque de coûter (tokens, clé payante).
+- Strix : uniquement sur le code local de ce projet, jamais contre un site en ligne ni une base de données réelle.
+- OmniRoute : ne jamais y brancher les abonnements Claude ou ChatGPT du propriétaire.
+- Si ECC est déjà allumé, rappeler au propriétaire de l'éteindre à la fin (raccourci « ECC - éteindre » dans Bureau > Outils coûteux).
