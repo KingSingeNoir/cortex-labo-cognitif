@@ -19,3 +19,7 @@ Ce projet est modifié **à tour de rôle** par Claude Code et par Codex (ChatGP
 **Avant de s'arrêter, ou quand le propriétaire écrit « relais » :**
 1. Mettre à jour `HANDOFF.md` (20 lignes maximum, remplacer l'ancien contenu plutôt qu'empiler).
 2. `git add -A`, `git commit`, puis `git push`.
+
+## Plan du projet (Graphify)
+
+Un plan du code est rangé dans `graphify-out/` (sur l'ordinateur uniquement, jamais envoyé sur GitHub). Pour comprendre le projet ou trouver un fichier, **interroger le plan avant de fouiller les fichiers** : `graphify query "ta question"`, `graphify explain "NomDuComposant"`, `graphify path "A" "B"`. Lire `graphify-out/GRAPH_REPORT.md` pour une vue d'ensemble. Après un `git pull` ou de grosses modifications : `graphify update .` (rapide, gratuit, sans IA).

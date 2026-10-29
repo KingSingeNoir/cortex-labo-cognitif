@@ -8,3 +8,6 @@ dist
 CODE-COMPLET.txt
 .tmp-explications/
 .cortex-data
+
+# Plan Graphify (local)
+graphify-out/
